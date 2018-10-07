@@ -1,0 +1,27 @@
+proof assistant	証明アシスタント	Coqのような、証明を記述・検証するツールの総称。特に対話型のもののみを指す場合もある。「定理証明支援系」と訳されることが多いが、個人的な好みにより「証明アシスタント」を採用した。
+judgments	判断	演繹体系の構成要素の一つ。論理的判断とも。本文書では型付け判断(x:T)のみを扱う。
+check	検査
+specification	仕様
+properties	性質
+tactic	タクティック	Coqの証明を記述するためのコマンド。
+develop	構築	証明に対して用いる。
+develop	開発	プログラムに対して用いる。
+user	ユーザ
+index	索引
+documentation	文書	使われ方を見るに「記述」みたいな言い方でも良さそうな気がする
+part	部	マニュアルの構造を示す場合
+chapter	章
+theorem	定理
+proof	証明
+proof engine	証明エンジン
+evaluation	評価
+induction principle	帰納法の原理
+batch mode	コンパイルモード
+recursive type	再帰型
+Addendum	付録
+vernacular	Vernacular	国内では常に大文字始まりにしているのでそれに従う。
+preamble	はじめに
+The language	言語	第一部
+The proof engine	証明エンジン	第二部
+User extensions	ユーザ拡張	第三部
+Practical tools	実用ツール	第四部
