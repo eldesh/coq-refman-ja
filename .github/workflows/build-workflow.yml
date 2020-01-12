@@ -1,0 +1,51 @@
+
+name: Build Coq Reference Manual (ja)
+
+on: [push, pull_request]
+
+jobs:
+  build_refman:
+    name: build refman (ja)
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+          fetch-depth: 1
+
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+
+      - uses: avsm/setup-ocaml@v1.0
+        with:
+          ocaml-version: 4.02.3
+
+      - name: Install Camlp5
+        run: |
+          eval $(opam env)
+          opam install ocamlfind
+          opam install camlp5
+
+      - name: Install Sphinx
+        run: |
+          sudo apt-get install -y python3-pip gettext
+          pip3 install sphinx
+          pip3 install sphinx-rtd-theme
+          pip3 install beautifulsoup4
+          pip3 install pexpect
+          pip3 install antlr4-python3-runtime
+          pip3 install sphinxcontrib-bibtex
+
+      - name: Install OmegaT
+        run: |
+          curl -SL https://jaist.dl.sourceforge.net/project/omegat/OmegaT%20-%20Standard/OmegaT%204.3.1/OmegaT_4.3.1_Linux_64.tar.bz2 | tar -jxf -
+
+      - name: Build source po files
+        run: |
+          eval $(opam env)
+          export PATH=$PATH:`python3 -m site --user-base`/bin
+          make source
+          make target OMEGAT=OmegaT_4.3.1_Linux_64/OmegaT.jar
+          make html
+
