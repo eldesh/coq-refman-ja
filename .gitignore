@@ -1,0 +1,6 @@
+.DS_Store
+target/*
+*.bak
+project_stats.txt
+omegat-*.tmx
+last_entry.properties
