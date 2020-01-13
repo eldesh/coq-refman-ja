@@ -49,3 +49,9 @@ jobs:
           make target OMEGAT=OmegaT_4.3.1_Linux_64/OmegaT.jar
           make html
 
+      - uses: actions/upload-artifact@v1
+        with:
+          name: refman_ja
+          path: html/refman
+
+
