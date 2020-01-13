@@ -4,6 +4,7 @@ name: Build Coq Reference Manual (ja)
 on: [push, pull_request]
 
 jobs:
+
   build_refman:
     name: build refman (ja)
     runs-on: ubuntu-18.04
@@ -54,4 +55,33 @@ jobs:
           name: refman_ja
           path: html/refman
 
+  publish_refman:
+    name: publish refman(ja) to github pages
+    runs-on: ubuntu-18.04
+    needs: build_refman
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          ref: gh-pages
+          fetch-depth: 1
 
+      - uses: actions/download-artifact@v1
+        with:
+          name: refman_ja
+
+      - name: Commit refman
+        run: |
+          git config user.email "nephits@gmail.com"
+          git config user.name "Github Action"
+          rm -rf refman/v8.8.2
+          mv refman_ja refman/v8.8.2
+          git add .
+          if ! (git diff --quiet && git diff --staged --quiet); then
+            git commit -m "Add: changes ($GITHUB_SHA)"
+          fi
+
+      - uses: ad-m/github-push-action@v0.5.0
+        with:
+          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
