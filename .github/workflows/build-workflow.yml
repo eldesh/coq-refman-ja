@@ -8,6 +8,7 @@ jobs:
   build_refman:
     name: build refman (ja)
     runs-on: ubuntu-18.04
+    if: github.ref != 'refs/heads/gh-pages'
     steps:
       - uses: actions/checkout@v1
         with:
