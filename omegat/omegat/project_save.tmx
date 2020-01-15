@@ -1062,6 +1062,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Coq, logical objects are typed to ensure their logical correctness.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T210316Z" creationid="eldesh" creationdate="20200115T205530Z">
+        <seg>Coq では、論理オブジェクトはそれらの論理的整合性を保証するために型付けられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In a Module Type, this command states that a corresponding concrete instance should exist in any implementation of this Module Type.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T183722Z" creationid="eldesh" creationdate="20200103T201606Z">
@@ -1291,6 +1299,14 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181007T034937Z" creationid="yamarten" creationdate="20181007T033312Z">
         <seg>はじめに</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It allows developing mathematical theories and to prove specifications of programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T210216Z" creationid="eldesh" creationdate="20200115T205446Z">
+        <seg>それは数学的な定理を開発したりプログラムの仕様を証明することが出来ます.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2557,6 +2573,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The language of commands, called *The Vernacular* is described in Section :ref:`vernacular`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T210248Z" creationid="eldesh" creationdate="20200115T205522Z">
+        <seg>その言語のコマンドは *Vernacular* と呼ばれ、節 :ref:`vernacular` で説明されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The language to combine these tactics into complex proof strategies is given in Chapter :ref:`ltac`.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145611Z" creationid="yamarten" creationdate="20181104T145611Z">
@@ -2717,6 +2741,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The rules implemented by the typing algorithm are described in Chapter :ref:`calculusofinductiveconstructions`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T210335Z" creationid="eldesh" creationdate="20200115T205539Z">
+        <seg>その規則は型付けアルゴリズムによって実装され、:ref:`calculusofinductiveconstructions` の章で述べられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The same objects as above;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T133526Z" creationid="eldesh" creationdate="20191222T133526Z">
@@ -2781,10 +2813,26 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The syntax of logical objects involved in theories is described in Section :ref:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T210150Z" creationid="eldesh" creationdate="20200115T205514Z">
+        <seg>定理に含まれている論理オブジェクトの構文は節 :ref:`term` で述べられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The tactic ``autoapply`` applies a term using the transparency information of the hint database ident, and does *no* typeclass resolution.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T192623Z" creationid="eldesh" creationdate="20200103T213204Z">
         <seg>タクティック ``autoapply`` はヒントデータベース ident の透過性情報を使用し term を適用し、型クラス解決は *行いません*。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The theories are built from axioms, hypotheses, parameters, lemmas, theorems and definitions of constants, functions, predicates and sets.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T205927Z" creationid="eldesh" creationdate="20200115T205459Z">
+        <seg>定理とは公理、仮定、パラメータ、補題、定理や定数、関数、命題の定義、それに集合から構築されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3109,6 +3157,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T192908Z" creationid="eldesh" creationdate="20200106T192908Z">
         <seg>これは極めて異なった証明探索の性能挙動を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This chapter describes Gallina, the specification language of Coq.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T205812Z" creationid="eldesh" creationdate="20200115T205431Z">
+        <seg>この章では Coq の仕様記述言語である Gallina について記述します。</seg>
       </tuv>
     </tu>
     <tu>
