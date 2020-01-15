@@ -2575,8 +2575,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The language of commands, called *The Vernacular* is described in Section :ref:`vernacular`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200115T210248Z" creationid="eldesh" creationdate="20200115T205522Z">
-        <seg>その言語のコマンドは *Vernacular* と呼ばれ、節 :ref:`vernacular` で説明されます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T211950Z" creationid="eldesh" creationdate="20200115T205522Z">
+        <seg>そのコマンド言語は *Vernacular* と呼ばれ、:ref:`vernacular` の節で説明されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2815,8 +2815,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The syntax of logical objects involved in theories is described in Section :ref:`term`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200115T210150Z" creationid="eldesh" creationdate="20200115T205514Z">
-        <seg>定理に含まれている論理オブジェクトの構文は節 :ref:`term` で述べられています。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200115T212000Z" creationid="eldesh" creationdate="20200115T205514Z">
+        <seg>定理に含まれている論理オブジェクトの構文は :ref:`term` の節で述べられています。</seg>
       </tuv>
     </tu>
     <tu>
