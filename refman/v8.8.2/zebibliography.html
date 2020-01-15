@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Bibliography &mdash; Coq 8.8.2 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/notations.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="_static/ansi.css" type="text/css" />
+  <link rel="stylesheet" href="_static/coqdoc.css" type="text/css" />
+  <link rel="stylesheet" href="_static/notations.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pre-text.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="prev" title="Polymorphic Universes" href="addendum/universe-polymorphism.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Coq
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                8.8.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">索引</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coq-cmdindex.html">Command index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coq-tacindex.html">Tactic index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coq-optindex.html">Flags, options and tables index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coq-exnindex.html">Errors and warnings index</a></li>
+</ul>
+<p class="caption"><span class="caption-text">はじめに</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+<p class="caption"><span class="caption-text">言語</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/cic.html">Calculus of Inductive Constructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/module-system.html">The Module System</a></li>
+</ul>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="proof-engine/vernacular-commands.html">Vernacular commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proof-engine/proof-handling.html">Proof handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proof-engine/tactics.html">Tactics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proof-engine/ltac.html">The tactic language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-extensions/proof-schemes.html">Proof schemes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practical-tools/utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/implicit-coercions.html">Implicit Coercions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/program.html">Program</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/ring.html">The ring and field tactic families</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/nsatz.html">Nsatz: tactics for proving equalities in integral domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/generalized-rewriting.html">Generalized rewriting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/parallel-proof-processing.html">Asynchronous and Parallel Proof Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Coq</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Bibliography</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/coq/coq/blob/master/doc/sphinx/zebibliography.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="math-preamble math notranslate nohighlight">
+\[\begin{split}\newcommand{\alors}{\textsf{then}}
+\newcommand{\alter}{\textsf{alter}}
+\newcommand{\as}{\kw{as}}
+\newcommand{\Assum}[3]{\kw{Assum}(#1)(#2:#3)}
+\newcommand{\bool}{\textsf{bool}}
+\newcommand{\case}{\kw{case}}
+\newcommand{\conc}{\textsf{conc}}
+\newcommand{\cons}{\textsf{cons}}
+\newcommand{\consf}{\textsf{consf}}
+\newcommand{\conshl}{\textsf{cons\_hl}}
+\newcommand{\Def}[4]{\kw{Def}(#1)(#2:=#3:#4)}
+\newcommand{\emptyf}{\textsf{emptyf}}
+\newcommand{\End}{\kw{End}}
+\newcommand{\kwend}{\kw{end}}
+\newcommand{\EqSt}{\textsf{EqSt}}
+\newcommand{\even}{\textsf{even}}
+\newcommand{\evenO}{\textsf{even}_\textsf{O}}
+\newcommand{\evenS}{\textsf{even}_\textsf{S}}
+\newcommand{\false}{\textsf{false}}
+\newcommand{\filter}{\textsf{filter}}
+\newcommand{\Fix}{\kw{Fix}}
+\newcommand{\fix}{\kw{fix}}
+\newcommand{\for}{\textsf{for}}
+\newcommand{\forest}{\textsf{forest}}
+\newcommand{\from}{\textsf{from}}
+\newcommand{\Functor}{\kw{Functor}}
+\newcommand{\haslength}{\textsf{has\_length}}
+\newcommand{\hd}{\textsf{hd}}
+\newcommand{\ident}{\textsf{ident}}
+\newcommand{\In}{\kw{in}}
+\newcommand{\Ind}[4]{\kw{Ind}[#2](#3:=#4)}
+\newcommand{\ind}[3]{\kw{Ind}~[#1]\left(#2\mathrm{~:=~}#3\right)}
+\newcommand{\Indp}[5]{\kw{Ind}_{#5}(#1)[#2](#3:=#4)}
+\newcommand{\Indpstr}[6]{\kw{Ind}_{#5}(#1)[#2](#3:=#4)/{#6}}
+\newcommand{\injective}{\kw{injective}}
+\newcommand{\kw}[1]{\textsf{#1}}
+\newcommand{\lb}{\lambda}
+\newcommand{\length}{\textsf{length}}
+\newcommand{\letin}[3]{\kw{let}~#1:=#2~\kw{in}~#3}
+\newcommand{\List}{\textsf{list}}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\Match}{\kw{match}}
+\newcommand{\Mod}[3]{{\kw{Mod}}({#1}:{#2}\,\zeroone{:={#3}})}
+\newcommand{\ModA}[2]{{\kw{ModA}}({#1}=={#2})}
+\newcommand{\ModS}[2]{{\kw{Mod}}({#1}:{#2})}
+\newcommand{\ModType}[2]{{\kw{ModType}}({#1}:={#2})}
+\newcommand{\mto}{.\;}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\nat}{\textsf{nat}}
+\newcommand{\Nil}{\textsf{nil}}
+\newcommand{\nilhl}{\textsf{nil\_hl}}
+\newcommand{\nO}{\textsf{O}}
+\newcommand{\node}{\textsf{node}}
+\newcommand{\nS}{\textsf{S}}
+\newcommand{\odd}{\textsf{odd}}
+\newcommand{\oddS}{\textsf{odd}_\textsf{S}}
+\newcommand{\ovl}[1]{\overline{#1}}
+\newcommand{\Pair}{\textsf{pair}}
+\newcommand{\Prod}{\textsf{prod}}
+\newcommand{\Prop}{\textsf{Prop}}
+\newcommand{\return}{\kw{return}}
+\newcommand{\Set}{\textsf{Set}}
+\newcommand{\si}{\textsf{if}}
+\newcommand{\sinon}{\textsf{else}}
+\newcommand{\Sort}{\cal S}
+\newcommand{\Str}{\textsf{Stream}}
+\newcommand{\Struct}{\kw{Struct}}
+\newcommand{\subst}[3]{#1\{#2/#3\}}
+\newcommand{\tl}{\textsf{tl}}
+\newcommand{\tree}{\textsf{tree}}
+\newcommand{\true}{\textsf{true}}
+\newcommand{\Type}{\textsf{Type}}
+\newcommand{\unfold}{\textsf{unfold}}
+\newcommand{\WEV}[3]{\mbox{$#1[] \vdash #2 \lra  #3$}}
+\newcommand{\WEVT}[3]{\mbox{$#1[] \vdash #2 \lra$}\\ \mbox{$ #3$}}
+\newcommand{\WF}[2]{{\cal W\!F}(#1)[#2]}
+\newcommand{\WFE}[1]{\WF{E}{#1}}
+\newcommand{\WFT}[2]{#1[] \vdash {\cal W\!F}(#2)}
+\newcommand{\WFTWOLINES}[2]{{\cal W\!F}\begin{array}{l}(#1)\\\mbox{}[{#2}]\end{array}}
+\newcommand{\with}{\kw{with}}
+\newcommand{\WS}[3]{#1[] \vdash #2 &lt;: #3}
+\newcommand{\WSE}[2]{\WS{E}{#1}{#2}}
+\newcommand{\WT}[4]{#1[#2] \vdash #3 : #4}
+\newcommand{\WTE}[3]{\WT{E}{#1}{#2}{#3}}
+\newcommand{\WTEG}[2]{\WTE{\Gamma}{#1}{#2}}
+\newcommand{\WTM}[3]{\WT{#1}{}{#2}{#3}}
+\newcommand{\zeroone}[1]{[{#1}]}
+\newcommand{\zeros}{\textsf{zeros}}
+\end{split}\]</div>
+<div class="section" id="bibliography">
+<span id="id1"></span><h1>Bibliography<a class="headerlink" href="#bibliography" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p id="bibtex-bibliography-zebibliography-0"><dl class="citation">
+<dt class="bibtex label" id="asp00"><span class="brackets">Asp00</span></dt>
+<dd><p>David Aspinall. Proof general: a generic tool for proof development. In Susanne Graf and Michael Schwartzbach, editors, <em>Tools and Algorithms for the Construction and Analysis of Systems, TACAS 2000</em>, volume 1785 of Lecture Notes in Computer Science, pages 38–43. Springer Berlin Heidelberg, 2000. <a class="reference external" href="https://doi.org/10.1007/3-540-46419-0_3">doi:10.1007/3-540-46419-0_3</a>.</p>
+</dd>
+<dt class="bibtex label" id="bar81"><span class="brackets">Bar81</span></dt>
+<dd><p>H.P. Barendregt. <em>The Lambda Calculus its Syntax and Semantics</em>. North-Holland, 1981.</p>
+</dd>
+<dt class="bibtex label" id="fullreduction"><span class="brackets">BDenesGregoire11</span></dt>
+<dd><p>Mathieu Boespflug, Maxime Dénès, and Benjamin Grégoire. Full reduction at full throttle. In Jean-Pierre Jouannaud and Zhong Shao, editors, <em>Certified Programs and Proofs - First International Conference, CPP 2011, Kenting, Taiwan, December 7-9, 2011. Proceedings</em>, volume 7086 of Lecture Notes in Computer Science, 362–377. Springer, 2011. URL: <a class="reference external" href="http://dx.doi.org/10.1007/978-3-642-25379-9_26">http://dx.doi.org/10.1007/978-3-642-25379-9_26</a>, <a class="reference external" href="https://doi.org/10.1007/978-3-642-25379-9_26">doi:10.1007/978-3-642-25379-9_26</a>.</p>
+</dd>
+<dt class="bibtex label" id="bou97"><span class="brackets">Bou97</span></dt>
+<dd><p>S. Boutin. Using reflection to build efficient and certified decision procedure s. In Martin Abadi and Takahashi Ito, editors, <em>TACS'97</em>, volume 1281 of Lecture Notes in Computer Science. Springer-Verlag, 1997.</p>
+</dd>
+<dt class="bibtex label" id="coq85"><span class="brackets">Coq85</span></dt>
+<dd><p>Th. Coquand. <em>Une Théorie des Constructions</em>. PhD thesis, Université Paris 7, January 1985.</p>
+</dd>
+<dt class="bibtex label" id="coq86"><span class="brackets">Coq86</span></dt>
+<dd><p>Th. Coquand. An Analysis of Girard's Paradox. In <em>Symposium on Logic in Computer Science</em>. Cambridge, MA, 1986. IEEE Computer Society Press.</p>
+</dd>
+<dt class="bibtex label" id="coq92"><span class="brackets">Coq92</span></dt>
+<dd><p>Th. Coquand. Pattern Matching with Dependent Types. In <em>Proceedings of the 1992 Workshop on Types for Proofs and Programs</em>. 1992.</p>
+</dd>
+<dt class="bibtex label" id="dblp-conf-types-cornest95"><span class="brackets">CT95</span></dt>
+<dd><p>Cristina Cornes and Delphine Terrasse. Automating inversion of inductive predicates in coq. In <em>TYPES</em>, 85–104. 1995.</p>
+</dd>
+<dt class="bibtex label" id="cur58"><span class="brackets">CFC58</span></dt>
+<dd><p>Haskell B. Curry, Robert Feys, and William Craig. <em>Combinatory Logic</em>. Volume 1. North-Holland, 1958. §9E.</p>
+</dd>
+<dt class="bibtex label" id="bru72"><span class="brackets">dB72</span></dt>
+<dd><p>N.J. de Bruijn. Lambda-Calculus Notation with Nameless Dummies, a Tool for Automatic Formula Manipulation, with Application to the Church-Rosser Theorem. <em>Indag. Math.</em>, 1972.</p>
+</dd>
+<dt class="bibtex label" id="del00"><span class="brackets">Del00</span></dt>
+<dd><p>D. Delahaye. A Tactic Language for the System \sf Coq. In <em>Proceedings of Logic for Programming and Automated Reasoning (LPAR), Reunion Island</em>, volume 1955 of Lecture Notes in Computer Science, 85–95. Springer-Verlag, November 2000.</p>
+</dd>
+<dt class="bibtex label" id="rc95"><span class="brackets">dC95</span></dt>
+<dd><p>R. di Cosmo. <em>Isomorphisms of Types: from λ-calculus to information retrieval and language design</em>. Progress in Theoretical Computer Science. Birkhauser, 1995. ISBN-0-8176-3763-X.</p>
+</dd>
+<dt class="bibtex label" id="dyc92"><span class="brackets">Dyc92</span></dt>
+<dd><p>Roy Dyckhoff. Contraction-free sequent calculi for intuitionistic logic. <em>The Journal of Symbolic Logic</em>, September 1992.</p>
+</dd>
+<dt class="bibtex label" id="fourier"><span class="brackets">Fou90</span></dt>
+<dd><p>Jean-Baptiste-Joseph Fourier. <em>Fourier's method to solve linear inequations/equations systems.</em> Gauthier-Villars, 1890.</p>
+</dd>
+<dt class="bibtex label" id="gim94"><span class="brackets">Gimenez94</span></dt>
+<dd><p>E. Giménez. Codifying guarded definitions with recursive schemes. In <em>Types'94 : Types for Proofs and Programs</em>, volume 996 of Lecture Notes in Computer Science. Springer-Verlag, 1994. Extended version in LIP research report 95-07, ENS Lyon.</p>
+</dd>
+<dt class="bibtex label" id="gimenez95b"><span class="brackets">Gimenez95</span></dt>
+<dd><p>E. Giménez. An application of co-inductive types in coq: verification of the alternating bit protocol. In <em>Workshop on Types for Proofs and Programs</em>, number 1158 in Lecture Notes in Computer Science, 135–152. Springer-Verlag, 1995.</p>
+</dd>
+<dt class="bibtex label" id="gim98"><span class="brackets">Gimenez98</span></dt>
+<dd><p>E. Giménez. A tutorial on recursive types in coq. Technical Report, INRIA, March 1998.</p>
+</dd>
+<dt class="bibtex label" id="gimcas05"><span class="brackets">GimenezCasteran05</span></dt>
+<dd><p>E. Giménez and P. Castéran. A tutorial on [co-]inductive types in coq. <span>available at <a class="reference external" href="#"></a></span>http://coq.inria.fr/doc, January 2005.</p>
+</dd>
+<dt class="bibtex label" id="sugar"><span class="brackets">GMN+91</span></dt>
+<dd><p>Alessandro Giovini, Teo Mora, Gianfranco Niesi, Lorenzo Robbiano, and Carlo Traverso. &quot;one sugar cube, please&quot; or selection strategies in the buchberger algorithm. In <em>Proceedings of the ISSAC'91, ACM Press</em>, 5–4. 1991.</p>
+</dd>
+<dt class="bibtex label" id="gir89"><span class="brackets">GLT89</span></dt>
+<dd><p>J.-Y. Girard, Y. Lafont, and P. Taylor. <em>Proofs and Types</em>. Cambridge Tracts in Theoretical Computer Science 7. Cambridge University Press, 1989.</p>
+</dd>
+<dt class="bibtex label" id="cslessadhoc"><span class="brackets">GZND11</span></dt>
+<dd><p>Georges Gonthier, Beta Ziliani, Aleksandar Nanevski, and Derek Dreyer. How to make ad hoc proof automation less ad hoc. <em>SIGPLAN Not.</em>, 46(9):163–175, September 2011. URL: <a class="reference external" href="http://doi.acm.org/10.1145/2034574.2034798">http://doi.acm.org/10.1145/2034574.2034798</a>, <a class="reference external" href="https://doi.org/10.1145/2034574.2034798">doi:10.1145/2034574.2034798</a>.</p>
+</dd>
+<dt class="bibtex label" id="compiledstrongreduction"><span class="brackets">GregoireL02</span></dt>
+<dd><p>Benjamin Grégoire and Xavier Leroy. A compiled implementation of strong reduction. In Mitchell Wand and Simon L. Peyton Jones, editors, <em>Proceedings of the Seventh ACM SIGPLAN International Conference on Functional Programming (ICFP '02), Pittsburgh, Pennsylvania, USA, October 4-6, 2002.</em>, 235–246. ACM, 2002. URL: <a class="reference external" href="http://doi.acm.org/10.1145/581478.581501">http://doi.acm.org/10.1145/581478.581501</a>, <a class="reference external" href="https://doi.org/10.1145/581478.581501">doi:10.1145/581478.581501</a>.</p>
+</dd>
+<dt class="bibtex label" id="how80"><span class="brackets">How80</span></dt>
+<dd><p>W.A. Howard. The formulae-as-types notion of constructions. In J.P. Seldin and J.R. Hindley, editors, <em>to H.B. Curry : Essays on Combinatory Logic, Lambda Calculus and Formalism.</em> Academic Press, 1980.</p>
+</dd>
+<dt class="bibtex label" id="hue88"><span class="brackets">Hue89</span></dt>
+<dd><p>G. Huet. The Constructive Engine. In R. Narasimhan, editor, <em>A perspective in Theoretical Computer Science. Commemorative Volume for Gift Siromoney</em>. World Scientific Publishing, 1989.</p>
+</dd>
+<dt class="bibtex label" id="leewerner11"><span class="brackets">LW11</span></dt>
+<dd><p>Gyesik Lee and Benjamin Werner. Proof-irrelevant model of CC with predicative induction and judgmental equality. <em>Logical Methods in Computer Science</em>, 2011.</p>
+</dd>
+<dt class="bibtex label" id="leroy90"><span class="brackets">Ler90</span></dt>
+<dd><p>X. Leroy. The ZINC experiment: an economical implementation of the ML language. Technical Report 117, INRIA, 1990.</p>
+</dd>
+<dt class="bibtex label" id="let02"><span class="brackets">Let02</span></dt>
+<dd><p>P. Letouzey. A new extraction for coq. In <em>TYPES</em>. 2002. URL: <a class="reference external" href="http://www.irif.fr/~letouzey/download/extraction2002.pdf">http://www.irif.fr/~letouzey/download/extraction2002.pdf</a>.</p>
+</dd>
+<dt class="bibtex label" id="luttik97specificationof"><span class="brackets">LV97</span></dt>
+<dd><p>Sebastiaan P. Luttik and Eelco Visser. Specification of rewriting strategies. In <em>2nd International Workshop on the Theory and Practice of Algebraic Specifications (ASF+SDF'97), Electronic Workshops in Computing</em>. Springer-Verlag, 1997.</p>
+</dd>
+<dt class="bibtex label" id="cswcu"><span class="brackets">MT13</span></dt>
+<dd><p>Assia Mahboubi and Enrico Tassi. Canonical Structures for the working Coq user. In Sandrine Blazy, Christine Paulin, and David Pichardie, editors, <em>ITP 2013, 4th Conference on Interactive Theorem Proving</em>, volume 7998 of LNCS, 19–34. Rennes, France, 2013. Springer. URL: <a class="reference external" href="http://hal.inria.fr/hal-00816703">http://hal.inria.fr/hal-00816703</a>, <a class="reference external" href="https://doi.org/10.1007/978-3-642-39634-2_5">doi:10.1007/978-3-642-39634-2_5</a>.</p>
+</dd>
+<dt class="bibtex label" id="dblp-conf-types-mcbride00"><span class="brackets">McB00</span></dt>
+<dd><p>Conor McBride. Elimination with a motive. In <em>TYPES</em>, 197–216. 2000.</p>
+</dd>
+<dt class="bibtex label" id="mun94"><span class="brackets">Mun94</span></dt>
+<dd><p>C. Muñoz. Démonstration automatique dans la logique propositionnelle intuitionniste. Master's thesis, DEA d'Informatique Fondamentale, Université Paris 7, September 1994.</p>
+</dd>
+<dt class="bibtex label" id="parent95b"><span class="brackets">Par95</span></dt>
+<dd><p>C. Parent. Synthesizing proofs from programs in the Calculus of Inductive Constructions. In <em>Mathematics of Program Construction'95</em>, volume 947 of LNCS. Springer-Verlag, 1995.</p>
+</dd>
+<dt class="bibtex label" id="moh93"><span class="brackets">PM93</span></dt>
+<dd><p>C. Paulin-Mohring. Inductive Definitions in the System Coq - Rules and Properties. In M. Bezem and J.-F. Groote, editors, <em>Proceedings of the conference Typed Lambda Calculi and Applications</em>, number 664 in LNCS. Springer-Verlag, 1993. Also LIP research report 92-49, ENS Lyon.</p>
+</dd>
+<dt class="bibtex label" id="pit16"><span class="brackets">PCC16</span></dt>
+<dd><p>Clément Pit-Claudel and Pierre Courtieu. Company-coq: taking proof general one step closer to a real ide. In <em>CoqPL'16: The Second International Workshop on Coq for PL</em>. January 2016. <a class="reference external" href="https://doi.org/10.5281/zenodo.44331">doi:10.5281/zenodo.44331</a>.</p>
+</dd>
+<dt class="bibtex label" id="theomegapaper"><span class="brackets">Pug92</span></dt>
+<dd><p>W. Pugh. The omega test: a fast and practical integer programming algorithm for dependence analysis. <em>Communication of the ACM</em>, pages 102–114, 1992.</p>
+</dd>
+<dt class="bibtex label" id="rushby98"><span class="brackets">ROS98</span></dt>
+<dd><p>John Rushby, Sam Owre, and N. Shankar. Subtypes for specifications: predicate subtyping in PVS. <em>IEEE Transactions on Software Engineering</em>, 24(9):709–720, September 1998.</p>
+</dd>
+<dt class="bibtex label" id="sozeau06"><span class="brackets">Soz07</span></dt>
+<dd><p>Matthieu Sozeau. Subset coercions in Coq. In <em>TYPES'06</em>, volume 4502 of LNCS, 237–252. Springer, 2007.</p>
+</dd>
+<dt class="bibtex label" id="sozeau08"><span class="brackets">SO08</span></dt>
+<dd><p>Matthieu Sozeau and Nicolas Oury. First-Class Type Classes. In <em>TPHOLs'08</em>. 2008.</p>
+</dd>
+<dt class="bibtex label" id="wer94"><span class="brackets">Wer94</span></dt>
+<dd><p>B. Werner. <em>Une théorie des constructions inductives</em>. PhD thesis, Université Paris 7, 1994.</p>
+</dd>
+</dl>
+</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="addendum/universe-polymorphism.html" class="btn btn-neutral float-left" title="Polymorphic Universes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 1999-2018, Inria
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
