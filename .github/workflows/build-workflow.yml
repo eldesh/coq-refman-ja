@@ -3,6 +3,9 @@ name: Build Coq Reference Manual (ja)
 
 on: [push, pull_request]
 
+env:
+  COQ_VER: v8.8.2
+
 jobs:
 
   build_refman:
@@ -75,8 +78,8 @@ jobs:
         run: |
           git config user.email "nephits@gmail.com"
           git config user.name "Github Action"
-          rm -rf refman/v8.8.2
-          mv refman_ja refman/v8.8.2
+          rm -rf refman/${COQ_VER}
+          mv refman_ja refman/${COQ_VER}
           git add .
           if ! (git diff --quiet && git diff --staged --quiet); then
             git commit -m "Add: changes ($GITHUB_SHA)"
