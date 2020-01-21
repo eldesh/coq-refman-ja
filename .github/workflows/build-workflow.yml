@@ -78,14 +78,17 @@ jobs:
         run: |
           git config user.email "nephits@gmail.com"
           git config user.name "Github Action"
-          rm -rf refman/${COQ_VER}
+          git rm -rf refman/${COQ_VER}
           mv refman_ja refman/${COQ_VER}
           git add .
           if ! (git diff --quiet && git diff --staged --quiet); then
             git commit -m "Add: changes ($GITHUB_SHA)"
           fi
 
-      - uses: ad-m/github-push-action@v0.5.0
-        with:
-          branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push to gh-pages branch
+        env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+        run: |
+          git push https://eldesh:${PERSONAL_TOKEN}@github.com/eldesh/coq-refman-ja
+
