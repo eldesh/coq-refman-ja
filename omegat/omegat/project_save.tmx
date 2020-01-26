@@ -118,6 +118,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>About the grammars in the manual</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T155304Z" creationid="eldesh" creationdate="20200126T155304Z">
+        <seg>マニュアル中の文法について</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Addendum</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150239Z" creationid="yamarten" creationdate="20181104T150239Z">
@@ -246,6 +254,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An expression enclosed in square brackets ``[…]`` means at most one occurrence of this expression (this corresponds to an optional component).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T173504Z" creationid="eldesh" creationdate="20200126T160812Z">
+        <seg>角カッコ ``[…]`` で囲まれた式はこの式が最大一度だけ出現することを意味します (これはオプショナルな部品に相当します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An optional priority can be declared, 0 being the highest priority as for :tacn:`auto` hints.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T182023Z" creationid="eldesh" creationdate="20200103T195111Z">
@@ -323,6 +339,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191229T130928Z" creationid="eldesh" creationdate="20191229T130928Z">
         <seg>現段階では我々は自然数の組のような具体型の上で ``==`` と ``&lt;=`` を使うことができますが、両方の関係を備えた型上の代数的理論を開発することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the end, the notation “``[entry sep … sep entry]``” stands for a possibly empty sequence of expressions parsed by the “``entry``” entry, separated by the literal “``sep``”.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T173626Z" creationid="eldesh" creationdate="20200126T172839Z">
+        <seg>最後に、 “``[entry sep … sep entry]``” という記法は “``entry``” エントリーによってパースされリテラル “``sep``” によって分割された空になり得る式の列を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -853,6 +877,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Grammars are presented in Backus-Naur form (BNF).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T155822Z" creationid="eldesh" creationdate="20200126T155822Z">
+        <seg>文法はバッカスナウアー形式 (BNF)で与えられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hence the example can also be written:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T145435Z" creationid="eldesh" creationdate="20200103T145435Z">
@@ -1083,6 +1115,14 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150007Z" creationid="yamarten" creationdate="20181104T150007Z">
         <seg>その後は、再帰型についてのチュートリアル (`RecTutorial.ps`) を読むのもいいでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition, there are special notations for regular expressions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T160746Z" creationid="eldesh" creationdate="20200126T160746Z">
+        <seg>さらに、正規表現については特別な記法があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2057,6 +2097,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly, the notation “``entry … entry``” stands for a non empty sequence of expressions parsed by the “``entry``” entry, without any separator between.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T172027Z" creationid="eldesh" creationdate="20200126T171755Z">
+        <seg>同じように、 “``entry … entry``” という記法は間にセパレータ無しに “``entry``” エントリーによってパースされた非空の列を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly, we could equip any other type with a comparison relation, and use the ``==`` notation on terms of this type.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T121502Z" creationid="eldesh" creationdate="20191227T121456Z">
@@ -2159,6 +2207,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150213Z" creationid="yamarten" creationdate="20181104T150213Z">
         <seg>目次</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Terminal symbols are set in black ``typewriter font``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T160719Z" creationid="eldesh" creationdate="20200126T160719Z">
+        <seg>終端記号は黒の ``タイプライター体`` で表されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2657,6 +2713,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200104T224434Z" creationid="eldesh" creationdate="20200103T161617Z">
         <seg>その新しいコマンドはどんな束縛コンテキストでも引数として受け入れるということを除き、:cmd:`Variables` Vernacular と同じように動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The notation “``entry sep … sep entry``” stands for a non empty sequence of expressions parsed by entry and separated by the literal “``sep``” [1]_.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200126T165629Z" creationid="eldesh" creationdate="20200126T160957Z">
+        <seg>“``entry sep … sep entry``” という記法は entry でパースされリテラル “``sep``” [1]_ で分割された式の非空の列を表します。</seg>
       </tuv>
     </tu>
     <tu>
