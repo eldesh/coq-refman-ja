@@ -126,6 +126,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Access identifiers, written :token:`access_ident`, are identifiers prefixed by `.` (dot) without blank.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095010Z" creationid="eldesh" creationdate="20200201T095010Z">
+        <seg>アクセス識別子は、:token:`access_ident` と書かれ、空白無しの `.` (ドット) が接頭辞になる識別子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Addendum</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150239Z" creationid="yamarten" creationdate="20181104T150239Z">
@@ -170,6 +178,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T220128Z" creationid="eldesh" creationdate="20200102T220128Z">
         <seg>繰り替えしますが、全ての詳細について :cite:`CSwcu` が読者の参考になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All characters are meaningful.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093707Z" creationid="eldesh" creationdate="20200201T093707Z">
+        <seg>全ての文字には意味があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -383,6 +399,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Blanks</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092653Z" creationid="eldesh" creationdate="20200201T092653Z">
+        <seg>空白</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Blanks are ignored but they separate tokens.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092805Z" creationid="eldesh" creationdate="20200201T092805Z">
+        <seg>空白は無視されますが、トークンを分割します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Building hierarchies</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T171300Z" creationid="eldesh" creationdate="20200103T171300Z">
@@ -525,6 +557,30 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T101821Z" creationid="eldesh" creationdate="20191226T190743Z">
         <seg>コアーション、暗黙引数、パターンマッチングの型、そればかりでなく表記法 (:ref:`syntaxextensionsandinterpretationscopes` 参照) もいくつかのタクティックの振る舞いを分かりにくくし得ます (典型的には部分項の出現に適用するタクティックは暗黙引数に対して敏感です)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092815Z" creationid="eldesh" creationdate="20200201T092815Z">
+        <seg>コメント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comments are treated as blanks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093021Z" creationid="eldesh" creationdate="20200201T093021Z">
+        <seg>コメントは空白として扱われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comments in Coq are enclosed between ``(*`` and ``*)``, and can be nested.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092854Z" creationid="eldesh" creationdate="20200201T092854Z">
+        <seg>Coq のコメントは ``(*`` と ``*)`` の間に囲まれ、ネストできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -949,6 +1005,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, :token:`string` literals must be correctly closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093005Z" creationid="eldesh" creationdate="20200201T093005Z">
+        <seg>しかしながら、:token:`string` リテラルは正しく閉じられていなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, one can still use it as if it had a single parameter inside generalizing binders: the generalization of superclasses will be done automatically.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200104T225819Z" creationid="eldesh" creationdate="20200103T174026Z">
@@ -977,6 +1041,22 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T160629Z" creationid="eldesh" creationdate="20191225T160438Z">
         <seg>しかし、:math:`{\delta}` フラグを考慮すると、射影は 畳み込み または 非畳み込み という二つの状態になり得ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Identifiers and access identifiers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093032Z" creationid="eldesh" creationdate="20200201T093032Z">
+        <seg>識別子とアクセス識別子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Identifiers, written :token:`ident`, are sequences of letters, digits, ``_`` and ``'``, that do not start with a digit or ``'``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093200Z" creationid="eldesh" creationdate="20200201T093200Z">
+        <seg>識別子は :token:`ident` と書かれ、文字、数字、``_``、``'`` の列であり、数字や ``'`` から始まることはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1151,6 +1231,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In grammars, the entry for quoted strings is :production:`string`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095711Z" creationid="eldesh" creationdate="20200201T095711Z">
+        <seg>文法規則では、クォートされた文字列のエントリが :production:`string` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In interactive mode, users can develop their theories and proofs step by step, and query the system for available theorems and definitions.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181007T122200Z" creationid="yamarten" creationdate="20181007T122200Z">
@@ -1179,6 +1267,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T141939Z" creationid="eldesh" creationdate="20200102T141925Z">
         <seg>特にそれは組み合わせた両立できる二つの要求を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, identifiers are case-sensitive.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093723Z" creationid="eldesh" creationdate="20200201T093723Z">
+        <seg>特に、識別子はケースセンシティブです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1331,6 +1427,14 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150013Z" creationid="yamarten" creationdate="20181104T150013Z">
         <seg>インストール方法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integers are numerals optionally preceded by a minus sign.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095321Z" creationid="eldesh" creationdate="20200201T095227Z">
+        <seg>整数は数の表記に任意にマイナス記号が前に付いたものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1535,6 +1639,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lexical conventions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092625Z" creationid="eldesh" creationdate="20200201T092625Z">
+        <seg>字句規則</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>License</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150242Z" creationid="yamarten" creationdate="20181104T150242Z">
@@ -1615,6 +1727,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Natural numbers and integers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095052Z" creationid="eldesh" creationdate="20200201T095052Z">
+        <seg>自然数と整数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No methods or instances are defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T193536Z" creationid="eldesh" creationdate="20200103T193536Z">
@@ -1651,6 +1771,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T162151Z" creationid="eldesh" creationdate="20200102T162049Z">
         <seg>注目すべきは ``nat * nat`` 型の ``n`` と m についての ``n &lt;= m -&gt; m &lt;= n -&gt; n == m`` の直接の証明はユーザから提供されていないことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Numerals are sequences of digits.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095246Z" creationid="eldesh" creationdate="20200201T095123Z">
+        <seg>数の表示は数字の列です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2121,6 +2249,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Space, newline and horizontal tabulation are considered as blanks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092720Z" creationid="eldesh" creationdate="20200201T092720Z">
+        <seg>スペース、改行、水平タブは空白とみなされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Specifies a set of qualids which are displayed as constructors.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T193816Z" creationid="eldesh" creationdate="20191221T193816Z">
@@ -2142,6 +2278,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T113031Z" creationid="eldesh" creationdate="20191227T113031Z">
         <seg>まだ ``EQ`` クラスの中には具体的な型はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Strings</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095325Z" creationid="eldesh" creationdate="20200201T095325Z">
+        <seg>文字列</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Strings are delimited by ``"`` (double quote), and enclose a sequence of any characters different from ``"`` or the sequence ``""`` to denote the double quote character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095554Z" creationid="eldesh" creationdate="20200201T095554Z">
+        <seg>文字列は ``"`` (ダブルクォート) で区切られ、``"`` やダブルクォート文字を表すための ``""`` の列と異なる任意の文字の並びを囲んだものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2240,6 +2392,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T123746Z" creationid="eldesh" creationdate="20191227T123746Z">
         <seg>``pair_EQty`` 定義のおかげで、|Coq| はそのペアの各コンポーネントの比較関数を構築することが出来るときは、いつでもペアのための比較関係を構築することが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That is, they are recognized by the following lexical class:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T093310Z" creationid="eldesh" creationdate="20200201T093310Z">
+        <seg>つまり、以下の字句クラスで認識されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2434,6 +2594,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T151338Z" creationid="eldesh" creationdate="20191226T132204Z">
         <seg>このコマンドの効果は `ident` で始まる (`ident` 自身または `ident` に一つ以上のシングルクォート、アンダースコア、数字が続く) 束縛変数の型を自動的に `type` (その束縛変数が明示的な型とともに既に定義されている場合でない限り、後者の型と見なされる) に設定するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The entry ``unicode-letter`` non-exhaustively includes Latin, Greek, Gothic, Cyrillic, Arabic, Hebrew, Georgian, Hangul, Hiragana and Katakana characters, CJK ideographs, mathematical letter-like symbols, hyphens, non-breaking space, … The entry ``unicode-id-part`` non-exhaustively includes symbols for prime letters and subscripts.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T094856Z" creationid="eldesh" creationdate="20200201T094316Z">
+        <seg>``unicode-letter`` エントリは非網羅的にラテン語、ギリシャ語、ドイツ語、キリル文字、アラビア語、ヘブライ語、グルジア語、ハングル、ひらがなとカタカナ、CJK 表意文字、記号やハイフンやハードスペースのような数学記号、… を含んでいます。``unicode-id-part`` エントリは非網羅的にプライム文字や下付き文字を含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3112,10 +3280,26 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are used in the syntax of qualified identifiers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T095044Z" creationid="eldesh" creationdate="20200201T095044Z">
+        <seg>それらは修飾された識別子の構文で使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They automatically set the maximally implicit status for typeclass arguments, making derived functions as easy to use as class methods.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T151140Z" creationid="eldesh" creationdate="20200103T151140Z">
         <seg>それらは型クラスの引数の状態を自動的に最大限暗黙に設定し、クラスメソッドのように簡単に使える派生関数を作ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They can contain any character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T092931Z" creationid="eldesh" creationdate="20200201T092931Z">
+        <seg>それは任意の文字を含むことができます。</seg>
       </tuv>
     </tu>
     <tu>
