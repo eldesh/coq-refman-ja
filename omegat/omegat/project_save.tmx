@@ -1623,6 +1623,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Keywords</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T111530Z" creationid="eldesh" creationdate="20200201T111453Z">
+        <seg>キーワード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let us define the rational :math:`1/2`:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191921Z" creationid="eldesh" creationdate="20191221T191921Z">
@@ -1635,6 +1643,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191542Z" creationid="eldesh" creationdate="20191221T190420Z">
         <seg>``Record`` マクロによって行われる動作を見てみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lexical ambiguities are resolved according to the “longest match” rule: when a sequence of non alphanumerical characters can be decomposed into several different ways, then the first token is the longest possible one (among all tokens defined at this moment), and so on.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T112753Z" creationid="eldesh" creationdate="20200201T111954Z">
+        <seg>字句的な曖昧さは “最長マッチ” 規則に沿って解決されます: 非アルファベットや非数字の列は異なる方法で分離されることがあります、したがって最初のトークンは (現段階で定義された全てのトークンの中で) 最長の可能性の一つであり、以下同様。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2257,6 +2273,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Special tokens</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T111848Z" creationid="eldesh" creationdate="20200201T111848Z">
+        <seg>スペシャルトークン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Specifies a set of qualids which are displayed as constructors.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T193816Z" creationid="eldesh" creationdate="20191221T193816Z">
@@ -2670,6 +2694,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following identifiers are reserved keywords, and cannot be employed otherwise::</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T111816Z" creationid="eldesh" creationdate="20200201T111813Z">
+        <seg>以下の識別子は予約済みキーワードであり、他のものには使えません::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following line tests that, when we assume a type ``e`` that is in theEQ class, we can relate two of its objects with ``==``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T112940Z" creationid="eldesh" creationdate="20191227T112940Z">
@@ -2682,6 +2714,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T160609Z" creationid="eldesh" creationdate="20200102T160609Z">
         <seg>以下のスクリプトは ``LEQ`` クラスに ``nat`` と型コンストラクタ ``*`` を登録します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following sequences of characters are special tokens::</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200201T111910Z" creationid="eldesh" creationdate="20200201T111910Z">
+        <seg>以下の文字の列はスペシャルトークンです::</seg>
       </tuv>
     </tu>
     <tu>
