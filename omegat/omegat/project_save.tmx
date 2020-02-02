@@ -272,8 +272,8 @@
       <tuv lang="EN-US">
         <seg>An expression enclosed in square brackets ``[…]`` means at most one occurrence of this expression (this corresponds to an optional component).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200126T173504Z" creationid="eldesh" creationdate="20200126T160812Z">
-        <seg>角カッコ ``[…]`` で囲まれた式はこの式が最大一度だけ出現することを意味します (これはオプショナルな部品に相当します)。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T095529Z" creationid="eldesh" creationdate="20200126T160812Z">
+        <seg>角カッコ ``[…]`` で囲まれた式はこの式が最大一で度だけ出現することを意味します (これはオプショナルな部品に対応します)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -935,8 +935,8 @@
       <tuv lang="EN-US">
         <seg>Grammars are presented in Backus-Naur form (BNF).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200126T155822Z" creationid="eldesh" creationdate="20200126T155822Z">
-        <seg>文法はバッカスナウアー形式 (BNF)で与えられます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T095818Z" creationid="eldesh" creationdate="20200126T155822Z">
+        <seg>文法はバッカスナウアー記法 (BNF)で与えられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2927,8 +2927,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The notation “``entry sep … sep entry``” stands for a non empty sequence of expressions parsed by entry and separated by the literal “``sep``” [1]_.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200126T165629Z" creationid="eldesh" creationdate="20200126T160957Z">
-        <seg>“``entry sep … sep entry``” という記法は entry でパースされリテラル “``sep``” [1]_ で分割された式の非空の列を表します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T095650Z" creationid="eldesh" creationdate="20200126T160957Z">
+        <seg>“``entry sep … sep entry``” という記法はエントリーでパースされリテラル “``sep``” [1]_ で分割された式の非空の列を表します。</seg>
       </tuv>
     </tu>
     <tu>
