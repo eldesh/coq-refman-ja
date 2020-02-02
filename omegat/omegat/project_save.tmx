@@ -128,8 +128,8 @@
       <tuv lang="EN-US">
         <seg>Access identifiers, written :token:`access_ident`, are identifiers prefixed by `.` (dot) without blank.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200201T095010Z" creationid="eldesh" creationdate="20200201T095010Z">
-        <seg>アクセス識別子は、:token:`access_ident` と書かれ、空白無しの `.` (ドット) が接頭辞になる識別子です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T101022Z" creationid="eldesh" creationdate="20200201T095010Z">
+        <seg>アクセス識別子は、:token:`access_ident` と書かれ、空白無しに `.` (ドット) が接頭辞になる識別子です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1649,8 +1649,8 @@
       <tuv lang="EN-US">
         <seg>Lexical ambiguities are resolved according to the “longest match” rule: when a sequence of non alphanumerical characters can be decomposed into several different ways, then the first token is the longest possible one (among all tokens defined at this moment), and so on.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200201T112753Z" creationid="eldesh" creationdate="20200201T111954Z">
-        <seg>字句的な曖昧さは “最長マッチ” 規則に沿って解決されます: 非アルファベットや非数字の列は異なる方法で分離されることがあります、したがって最初のトークンは (現段階で定義された全てのトークンの中で) 最長の可能性の一つであり、以下同様。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T105023Z" creationid="eldesh" creationdate="20200201T111954Z">
+        <seg>字句的な曖昧さは “最長マッチ” 規則に沿って解決されます: アルファベットや数字でない文字の列が幾つかの異なる方法で分離される時には、したがって最初のトークンは (その瞬間に定義されている全てのトークンの中で) 最長の可能なものなどになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1790,10 +1790,11 @@
       </tuv>
     </tu>
     <tu>
+      <note>「数は数です」になってしまう</note>
       <tuv lang="EN-US">
         <seg>Numerals are sequences of digits.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200201T095246Z" creationid="eldesh" creationdate="20200201T095123Z">
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T101218Z" creationid="eldesh" creationdate="20200201T095123Z">
         <seg>数の表示は数字の列です。</seg>
       </tuv>
     </tu>
@@ -2316,8 +2317,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>Strings are delimited by ``"`` (double quote), and enclose a sequence of any characters different from ``"`` or the sequence ``""`` to denote the double quote character.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200201T095554Z" creationid="eldesh" creationdate="20200201T095554Z">
-        <seg>文字列は ``"`` (ダブルクォート) で区切られ、``"`` やダブルクォート文字を表すための ``""`` の列と異なる任意の文字の並びを囲んだものです。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200202T101316Z" creationid="eldesh" creationdate="20200201T095554Z">
+        <seg>文字列は ``"`` (ダブルクォート) で区切られ、``"`` やダブルクォート文字を表すための列である ``""`` と異なる任意の文字の並びを囲んだものです。</seg>
       </tuv>
     </tu>
     <tu>
