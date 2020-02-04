@@ -108,8 +108,8 @@
 <p class="caption"><span class="caption-text">言語</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">仕様記述言語 Gallina</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#about-the-grammars-in-the-manual">About the grammars in the manual</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#lexical-conventions">Lexical conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-grammars-in-the-manual">マニュアル中の文法について</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lexical-conventions">字句規則</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#terms">Terms</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#syntax-of-terms">Syntax of terms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#types">Types</a></li>
@@ -355,84 +355,54 @@
 <p>この章では Coq の仕様記述言語である Gallina について記述します。それは数学的な定理を開発したりプログラムの仕様を証明することが出来ます. 定理とは公理、仮定、パラメータ、補題、定理や定数、関数、命題の定義、それに集合から構築されます。定理に含まれている論理オブジェクトの構文は <a class="reference internal" href="#term"><span class="std std-ref">Terms</span></a> の節で述べられています。そのコマンド言語は <em>Vernacular</em> と呼ばれ、<a class="reference internal" href="#vernacular"><span class="std std-ref">The Vernacular</span></a> の節で説明されます。</p>
 <p>Coq では、論理オブジェクトはそれらの論理的整合性を保証するために型付けられます。その規則は型付けアルゴリズムによって実装され、<a class="reference internal" href="cic.html#calculusofinductiveconstructions"><span class="std std-ref">Calculus of Inductive Constructions</span></a> の章で述べられています。</p>
 <div class="section" id="about-the-grammars-in-the-manual">
-<h2>About the grammars in the manual<a class="headerlink" href="#about-the-grammars-in-the-manual" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Grammars are presented in Backus-Naur form (BNF). Terminal symbols are
-set in black <code class="docutils literal notranslate"><span class="pre">typewriter</span> <span class="pre">font</span></code>. In addition, there are special notations for
-regular expressions.</p>
-<p>An expression enclosed in square brackets <code class="docutils literal notranslate"><span class="pre">[…]</span></code> means at most one
-occurrence of this expression (this corresponds to an optional
-component).</p>
-<p>The notation “<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry</span></code>” stands for a non empty sequence
-of expressions parsed by entry and separated by the literal “<code class="docutils literal notranslate"><span class="pre">sep</span></code>” <a class="footnote-reference brackets" href="#id6" id="id1">1</a>.</p>
-<p>Similarly, the notation “<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">…</span> <span class="pre">entry</span></code>” stands for a non empty
-sequence of expressions parsed by the “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” entry, without any
-separator between.</p>
-<p>At the end, the notation “<code class="docutils literal notranslate"><span class="pre">[entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry]</span></code>” stands for a
-possibly empty sequence of expressions parsed by the “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” entry,
-separated by the literal “<code class="docutils literal notranslate"><span class="pre">sep</span></code>”.</p>
+<h2>マニュアル中の文法について<a class="headerlink" href="#about-the-grammars-in-the-manual" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>文法はバッカスナウアー記法 (BNF)で与えられます。終端記号は黒の <code class="docutils literal notranslate"><span class="pre">タイプライター体</span></code> で表されます。さらに、正規表現については特別な記法があります。</p>
+<p>角カッコ <code class="docutils literal notranslate"><span class="pre">[…]</span></code> で囲まれた式はこの式が最大一で度だけ出現することを意味します (これはオプショナルな部品に対応します)。</p>
+<p>“<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry</span></code>” という記法はエントリーでパースされリテラル “<code class="docutils literal notranslate"><span class="pre">sep</span></code>” <a class="footnote-reference brackets" href="#id6" id="id1">1</a> で分割された式の非空の列を表します。</p>
+<p>同じように、 “<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">…</span> <span class="pre">entry</span></code>” という記法は間にセパレータ無しに “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” エントリーによってパースされた非空の列を表します。</p>
+<p>最後に、 “<code class="docutils literal notranslate"><span class="pre">[entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry]</span></code>” という記法は “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” エントリーによってパースされリテラル “<code class="docutils literal notranslate"><span class="pre">sep</span></code>” によって分割された空になり得る式の列を表します。</p>
 </div>
 <div class="section" id="lexical-conventions">
-<span id="id2"></span><h2>Lexical conventions<a class="headerlink" href="#lexical-conventions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<span id="id2"></span><h2>字句規則<a class="headerlink" href="#lexical-conventions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl>
-<dt>Blanks</dt><dd><p>Space, newline and horizontal tabulation are considered as blanks.
-Blanks are ignored but they separate tokens.</p>
+<dt>空白</dt><dd><p>スペース、改行、水平タブは空白とみなされます。空白は無視されますが、トークンを分割します。</p>
 </dd>
-<dt>Comments</dt><dd><p>Comments in Coq are enclosed between <code class="docutils literal notranslate"><span class="pre">(*</span></code> and <code class="docutils literal notranslate"><span class="pre">*)</span></code>, and can be nested.
-They can contain any character. However, <a class="reference internal" href="#grammar-token-string"><code class="xref std std-token docutils literal notranslate"><span class="pre">string</span></code></a> literals must be
-correctly closed. Comments are treated as blanks.</p>
+<dt>コメント</dt><dd><p>Coq のコメントは <code class="docutils literal notranslate"><span class="pre">(*</span></code> と <code class="docutils literal notranslate"><span class="pre">*)</span></code> の間に囲まれ、ネストできます。それは任意の文字を含むことができます。しかしながら、<a class="reference internal" href="#grammar-token-string"><code class="xref std std-token docutils literal notranslate"><span class="pre">string</span></code></a> リテラルは正しく閉じられていなければなりません。コメントは空白として扱われます。</p>
 </dd>
-<dt>Identifiers and access identifiers</dt><dd><p>Identifiers, written <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a>, are sequences of letters, digits, <code class="docutils literal notranslate"><span class="pre">_</span></code> and
-<code class="docutils literal notranslate"><span class="pre">'</span></code>, that do not start with a digit or <code class="docutils literal notranslate"><span class="pre">'</span></code>. That is, they are
-recognized by the following lexical class:</p>
+<dt>識別子とアクセス識別子</dt><dd><p>識別子は <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> と書かれ、文字、数字、<code class="docutils literal notranslate"><span class="pre">_</span></code>、<code class="docutils literal notranslate"><span class="pre">'</span></code> の列であり、数字や <code class="docutils literal notranslate"><span class="pre">'</span></code> から始まることはありません。つまり、以下の字句クラスで認識されます。</p>
 <pre>
 <strong id="grammar-token-first-letter">first_letter     </strong> ::=  a..z ∣ A..Z ∣ _ ∣ unicode-letter
 <strong id="grammar-token-subsequent-letter">subsequent_letter</strong> ::=  a..z ∣ A..Z ∣ 0..9 ∣ _ ∣ ' ∣ unicode-letter ∣ unicode-id-part
 <strong id="grammar-token-ident">ident            </strong> ::=  <a class="reference internal" href="#grammar-token-first-letter"><code class="xref docutils literal notranslate"><span class="pre">first_letter</span></code></a>[<a class="reference internal" href="#grammar-token-subsequent-letter"><code class="xref docutils literal notranslate"><span class="pre">subsequent_letter</span></code></a>…<a class="reference internal" href="#grammar-token-subsequent-letter"><code class="xref docutils literal notranslate"><span class="pre">subsequent_letter</span></code></a>]
 <strong id="grammar-token-access-ident">access_ident     </strong> ::=  .<a class="reference internal" href="#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a>
 </pre>
-<p>All characters are meaningful. In particular, identifiers are case-sensitive.
-The entry <code class="docutils literal notranslate"><span class="pre">unicode-letter</span></code> non-exhaustively includes Latin,
-Greek, Gothic, Cyrillic, Arabic, Hebrew, Georgian, Hangul, Hiragana
-and Katakana characters, CJK ideographs, mathematical letter-like
-symbols, hyphens, non-breaking space, … The entry <code class="docutils literal notranslate"><span class="pre">unicode-id-part</span></code>
-non-exhaustively includes symbols for prime letters and subscripts.</p>
-<p>Access identifiers, written <a class="reference internal" href="#grammar-token-access-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">access_ident</span></code></a>, are identifiers prefixed by
-<cite>.</cite> (dot) without blank. They are used in the syntax of qualified
-identifiers.</p>
+<p>全ての文字には意味があります。特に、識別子はケースセンシティブです。<code class="docutils literal notranslate"><span class="pre">unicode-letter</span></code> エントリは非網羅的にラテン語、ギリシャ語、ドイツ語、キリル文字、アラビア語、ヘブライ語、グルジア語、ハングル、ひらがなとカタカナ、CJK 表意文字、記号やハイフンやハードスペースのような数学記号、… を含んでいます。<code class="docutils literal notranslate"><span class="pre">unicode-id-part</span></code> エントリは非網羅的にプライム文字や下付き文字を含みます。</p>
+<p>アクセス識別子は、<a class="reference internal" href="#grammar-token-access-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">access_ident</span></code></a> と書かれ、空白無しに <cite>.</cite> (ドット) が接頭辞になる識別子です。それらは修飾された識別子の構文で使われます。</p>
 </dd>
-<dt>Natural numbers and integers</dt><dd><p>Numerals are sequences of digits. Integers are numerals optionally
-preceded by a minus sign.</p>
+<dt>自然数と整数</dt><dd><p>数の表示は数字の列です。整数は数の表記に任意にマイナス記号が前に付いたものです。</p>
 <pre>
 <strong id="grammar-token-digit">digit  </strong> ::=  0..9
 <strong id="grammar-token-num">num    </strong> ::=  <a class="reference internal" href="#grammar-token-digit"><code class="xref docutils literal notranslate"><span class="pre">digit</span></code></a>…<a class="reference internal" href="#grammar-token-digit"><code class="xref docutils literal notranslate"><span class="pre">digit</span></code></a>
 <strong id="grammar-token-integer">integer</strong> ::=  [-]<a class="reference internal" href="#grammar-token-num"><code class="xref docutils literal notranslate"><span class="pre">num</span></code></a>
 </pre>
 </dd>
-<dt>Strings</dt><dd><p>Strings are delimited by <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (double quote), and enclose a sequence of
-any characters different from <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> or the sequence <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> to denote the
-double quote character. In grammars, the entry for quoted strings is
-<span class="inline-grammar-production"><span class="target" id="grammar-token-string"></span><code class="docutils literal notranslate"><span class="pre">string</span></code></span>.</p>
+<dt>文字列</dt><dd><p>文字列は <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (ダブルクォート) で区切られ、<code class="docutils literal notranslate"><span class="pre">&quot;</span></code> やダブルクォート文字を表すための列である <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> と異なる任意の文字の並びを囲んだものです。文法規則では、クォートされた文字列のエントリが <span class="inline-grammar-production"><span class="target" id="grammar-token-string"></span><code class="docutils literal notranslate"><span class="pre">string</span></code></span> です。</p>
 </dd>
-<dt>Keywords</dt><dd><p>The following identifiers are reserved keywords, and cannot be
-employed otherwise:</p>
+<dt>キーワード</dt><dd><p>以下の識別子は予約済みキーワードであり、他のものには使えません:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_ as at cofix else end exists exists2 fix for
 forall fun if IF in let match mod Prop return
 Set then Type using where with
 </pre></div>
 </div>
 </dd>
-<dt>Special tokens</dt><dd><p>The following sequences of characters are special tokens:</p>
+<dt>スペシャルトークン</dt><dd><p>以下の文字の列はスペシャルトークンです:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>! % &amp; &amp;&amp; ( () ) * + ++ , - -&gt; . .( ..
 / /\ : :: :&lt; := :&gt; ; &lt; &lt;- &lt;-&gt; &lt;: &lt;= &lt;&gt; =
 =&gt; =_D &gt; &gt;-&gt; &gt;= ? ?= @ [ \/ ] ^ { | |-
 || } ~
 </pre></div>
 </div>
-<p>Lexical ambiguities are resolved according to the “longest match”
-rule: when a sequence of non alphanumerical characters can be
-decomposed into several different ways, then the first token is the
-longest possible one (among all tokens defined at this moment), and so
-on.</p>
+<p>字句的な曖昧さは “最長マッチ” 規則に沿って解決されます: アルファベットや数字でない文字の列が幾つかの異なる方法で分離される時には、したがって最初のトークンは (その瞬間に定義されている全てのトークンの中で) 最長の可能なものなどになります。</p>
 </dd>
 </dl>
 </div>
