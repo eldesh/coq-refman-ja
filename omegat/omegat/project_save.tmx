@@ -102,6 +102,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A compiled file is a particular case of module called *library file*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T192341Z" creationid="eldesh" creationdate="20200215T192341Z">
+        <seg>コンパイルされたファイルは *ライブラリファイル* と呼ばれるモジュールの特殊なケースです.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A more precise description is given below.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T131250Z" creationid="eldesh" creationdate="20191221T220812Z">
@@ -314,6 +322,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191228T145102Z" creationid="eldesh" creationdate="20191228T145057Z">
         <seg>これまでのように ``nat`` のために正準 ``LE`` クラスを登録します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As library files have dependencies in other library files, the command :cmd:`Require` :n:`@qualid` recursively requires all library files the module qualid depends on and adds the corresponding modules to the environment of |Coq| too.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T192921Z" creationid="eldesh" creationdate="20200215T192921Z">
+        <seg>他のライブラリファイルへの依存を持つライブラリファイルについても、コマンド :cmd:`Require` :n:`@qualid` はモジュール qualid の依存する全てのライブラリファイルを再帰的に要求し、対応するモジュールを |Coq| の環境へ追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -597,6 +613,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T162633Z" creationid="eldesh" creationdate="20191225T162633Z">
         <seg>互換性射影と :g:`match`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Compiled files</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T192039Z" creationid="eldesh" creationdate="20200215T192039Z">
+        <seg>コンパイルされたファイル</seg>
       </tuv>
     </tu>
     <tu>
@@ -2721,8 +2745,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The following sequences of characters are special tokens::</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200201T111910Z" creationid="eldesh" creationdate="20200201T111910Z">
-        <seg>以下の文字の列はスペシャルトークンです::</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T182752Z" creationid="eldesh" creationdate="20200201T111910Z">
+        <seg>aaaaaaaaaa以下の文字の列はスペシャルトークンです::</seg>
       </tuv>
     </tu>
     <tu>
@@ -3522,6 +3546,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This command looks in the loadpath for a file containing module :n:`@qualid` and adds the corresponding module to the environment of |Coq|.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T192539Z" creationid="eldesh" creationdate="20200215T192539Z">
+        <seg>このコマンドはロードパスの中でモジュール :n:`@qualid` を含むファイルを探し、対応するモジュールを |Coq| の環境に追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This command makes the identifiers transparent during typeclass resolution.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T123159Z" creationid="eldesh" creationdate="20200106T123159Z">
@@ -3752,6 +3784,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T114702Z" creationid="eldesh" creationdate="20191227T114702Z">
         <seg>この関係は ``==`` が nat 型の項の上で使われるときはいつでも選択されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section describes the commands used to load compiled files (see Chapter :ref:`thecoqcommands` for documentation on how to compile a file).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T192221Z" creationid="eldesh" creationdate="20200215T192221Z">
+        <seg>この節ではコンパイルされたファイル (このようにファイルをコンパイルするかについての章である :ref:`thecoqcommands` を参照) のロードに使うコマンドについて説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4462,6 +4502,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T171245Z" creationid="eldesh" creationdate="20191221T171245Z">
         <seg>最初の識別子 :token:`ident` は定義されたレコードの名前であり、:token:`sort` はその型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>|Coq| assumes that the compiled files have been produced by a valid |Coq| compiler and their contents are then not replayed nor rechecked.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200215T193129Z" creationid="eldesh" creationdate="20200215T193129Z">
+        <seg>|Coq| はコンパイルされたファイルが正しい |Coq| コンパイラによって生成されたことを仮定し、従ってそれらの内容は再実行も再検証もされません。</seg>
       </tuv>
     </tu>
     <tu>
