@@ -104,8 +104,8 @@
       <tuv lang="EN-US">
         <seg>A compiled file is a particular case of module called *library file*.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200215T192341Z" creationid="eldesh" creationdate="20200215T192341Z">
-        <seg>コンパイルされたファイルは *ライブラリファイル* と呼ばれるモジュールの特殊なケースです.</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T220632Z" creationid="eldesh" creationdate="20200215T192341Z">
+        <seg>コンパイルされたファイルは *ライブラリファイル* と呼ばれるモジュールの特殊なケースです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -772,6 +772,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Either foo.v exists but is not compiled or foo.vo is in a directory which is not in your LoadPath (see Section :ref:`libraries-and-filesystem`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T222120Z" creationid="eldesh" creationdate="20200220T214141Z">
+        <seg>foo.v は存在するがコンパイルされていないか foo.vo はあなたの LoadPath 内には無い (節 :ref:`libraries-and-filesystem` 参照) ディレクトリにあるかのどちらかです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Error messages are also quite intelligible (if one skips to the end of the message).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T220756Z" creationid="eldesh" creationdate="20200102T220756Z">
@@ -1093,6 +1101,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If ``Import`` or ``Export`` is given, it also imports these modules and all the recursive dependencies that were marked or transitively marked as ``Export``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T213219Z" creationid="eldesh" creationdate="20200220T213219Z">
+        <seg>``Import`` か ``Export`` が与えられると、それはこれらのモジュールと ``Export`` としてマークまたは推移的にマークされた全ての再帰的依存もインポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If `string` ends in ``.dot`` or ``.gv``, the constraints are printed in the DOT language, and can be processed by Graphviz tools.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T101321Z" creationid="eldesh" creationdate="20191227T101321Z">
@@ -1138,6 +1154,22 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T193126Z" creationid="eldesh" creationdate="20191221T193126Z">
         <seg>セットすると、レコード構文 (上記) をデフォルト表示形式として使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If several files match, one of them is picked in an unspecified fashion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T205935Z" creationid="eldesh" creationdate="20200220T205935Z">
+        <seg>幾つかのファイルがマッチした場合、そのうちの一つが不特定の方法で選択されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the module required has already been loaded, :cmd:`Require Import` :n:`@qualid` simply imports it, as :cmd:`Import` :n:`@qualid` would.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T211743Z" creationid="eldesh" creationdate="20200220T211743Z">
+        <seg>もし要求されたモジュールが既にロードされていたら、:cmd:`Require Import` :n:`@qualid` は :cmd:`Import` :n:`@qualid` がそうするように単にそれをインポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1519,6 +1551,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It does not import the modules on which qualid depends unless these modules were themselves required in module :n:`@qualid` using :cmd:`Require Export`, as described below, or recursively required through a sequence of :cmd:`Require Export`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T221408Z" creationid="eldesh" creationdate="20200220T211438Z">
+        <seg>それは qualid が依存するモジュールを、これらのモジュールが、以下で述べられるようにそれら自身が :cmd:`Require Export` を使う :n:`@qualid` モジュール内で要求されるか、または :cmd:`Require Export` の列を通して再帰的に要求されない限りインポートしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It does so by allowing hints that conclude in a product to apply to a goal with a matching product directly, avoiding an introduction.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T200934Z" creationid="eldesh" creationdate="20200106T200934Z">
@@ -1571,6 +1611,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200104T230512Z" creationid="eldesh" creationdate="20200103T175645Z">
         <seg>それは通常の束縛子の中で直接行う、そしてクラス束縛子の中では ``!`` 修飾子を使うことで可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is meant to describe a dependency between compilation units.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T223448Z" creationid="eldesh" creationdate="20200220T220139Z">
+        <seg>それはコンパイル単位間の依存関係を記述することを意図されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1795,6 +1843,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T105726Z" creationid="eldesh" creationdate="20191227T105726Z">
         <seg>表記法オーバーローディング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note however that the commands ``Import`` and ``Export`` alone can be used inside modules (see Section :ref:`Import &lt;import_qualid&gt;`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T220334Z" creationid="eldesh" creationdate="20200220T220215Z">
+        <seg>ただし、コマンド ``Import`` と ``Export`` 単独ではモジュール内部で使うことが出来ます (節 :ref:`Import &lt;import_qualid&gt;` 参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2077,6 +2133,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T193051Z" creationid="eldesh" creationdate="20191226T193051Z">
         <seg>ユニバースを表示する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Probably `ident.v` was not properly recompiled with the last version of the file containing module :n:`@qualid`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T222527Z" creationid="eldesh" creationdate="20200220T214910Z">
+        <seg>恐らく `ident.v` はモジュール :n:`@qualid` を含む最新のバージョンのファイルとともに正しく再コンパイルされていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2567,10 +2631,26 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The command did not find the file foo.vo.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T213911Z" creationid="eldesh" creationdate="20200220T213911Z">
+        <seg>そのコマンドはファイル foo.vo を見つけられませんでした。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The command for that is</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T132008Z" creationid="eldesh" creationdate="20191226T132008Z">
         <seg>そのためのコマンドは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The command tried to load library file :n:`@ident`.vo that depends on some specific version of library :n:`@qualid` which is not the one already loaded in the current |Coq| session.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T222338Z" creationid="eldesh" creationdate="20200220T214606Z">
+        <seg>そのコマンドは :n:`@qualid` ライブラリのいくつかの特定のバージョンに依存するライブラリファイル :n:`@ident`.vo をロードしようとしましたが、それは現在の |Coq| セッションに既にロードされているものではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2683,6 +2763,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145822Z" creationid="yamarten" creationdate="20181104T145822Z">
         <seg>第5部では、型強制・正準構造・型クラス・プログラム抽出・特殊なソルバとタクティックといった、いくつかの高度な機能について説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The file `ident.vo` was found but either it is not a |Coq| compiled module, or it was compiled with an incompatible version of |Coq|.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T222627Z" creationid="eldesh" creationdate="20200220T215108Z">
+        <seg>ファイル `ident.vo` は見つかりましたが、それは |Coq| がコンパイルしたモジュールではないか、またはそれは互換性の無いバージョンの |Coq| でコンパイルされたのいずれかです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2894,6 +2982,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The library file `dirpath’` is indirectly required by the ``Require`` command but it is bound in the current loadpath to the file `ident.vo` which was bound to a different library name `dirpath` at the time it was compiled.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T215740Z" creationid="eldesh" creationdate="20200220T215740Z">
+        <seg>ライブラリファイル `dirpath’` は ``Require`` コマンドによって間接的に要求されていますが、それは現在のロードパス内ではファイル `ident.vo` に束縛されており、これはコンパイルされた時点で異なるライブラリ名 `dirpath` へ束縛されていました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The macro generates also, when it is possible, the projection functions for destructuring an object of type `\ident`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T194125Z" creationid="eldesh" creationdate="20191221T194125Z">
@@ -2906,6 +3002,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T203433Z" creationid="eldesh" creationdate="20200103T203433Z">
         <seg>主な違いは以下です:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The mapping between physical directories and logical names at the time of requiring the file must be consistent with the mapping used to compile the file.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T205557Z" creationid="eldesh" creationdate="20200220T205557Z">
+        <seg>そのファイルを要求した時点での物理ディレクトリと論理名の間のマッピングはそのファイルのコンパイルに使われるマッピングと一貫していなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3506,6 +3610,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This command acts as :cmd:`Require Import` :n:`@qualid`, but if a further module, say `A`, contains a command :cmd:`Require Export` `B`, then the command :cmd:`Require Import` `A` also imports the module `B.`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T212019Z" creationid="eldesh" creationdate="20200220T212019Z">
+        <seg>このコマンドは :cmd:`Require Import` :n:`@qualid` のように振る舞いますが、さらなるモジュール(`A` と称する)がコマンド :cmd:`Require Export` `B` を含む場合、コマンド :cmd:`Require Import` `A` はモジュール `B.` もインポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command acts as :cmd:`Require`, but picks any library whose absolute name is of the form dirpath.dirpath’.qualid for some `dirpath’`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T221658Z" creationid="eldesh" creationdate="20200220T213546Z">
+        <seg>このコマンドは :cmd:`Require` のように振る舞いますが、その絶対名が幾つかの `dirpath'` について dirpath.dirpath’.qualid という形式であるようなライブラリを選別します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This command adds an arbitrary list of constants whose type ends with an applied typeclass to the instance database with an optional priority.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T184224Z" creationid="eldesh" creationdate="20200103T202826Z">
@@ -3542,6 +3662,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T182845Z" creationid="eldesh" creationdate="20191225T182845Z">
         <seg>このコマンドは :token:`qualid` を正準構造として定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command is not allowed inside a module or a module type being defined.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T223431Z" creationid="eldesh" creationdate="20200220T215951Z">
+        <seg>このコマンドはモジュールまたは定義されているモジュール型の中では許可されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3682,6 +3810,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is useful to ensure that the :n:`@qualid` library comes from a given package by making explicit its absolute root.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T221930Z" creationid="eldesh" creationdate="20200220T213834Z">
+        <seg>これは :n:`@qualid` ライブラリがその絶対ルートを明示することによって与えられたパッケージに由来することを保証するために有用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is very similar to the coercion mechanism of ``Structure`` declarations.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T185823Z" creationid="eldesh" creationdate="20200103T185823Z">
@@ -3702,6 +3838,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T105657Z" creationid="eldesh" creationdate="20191227T105657Z">
         <seg>後者の論文は正準構造の推論を調整するために用いることが出来るたくさんのテクニックも述べています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This loads and declares the module :n:`@qualid` and its dependencies then imports the contents of :n:`@qualid` as described :ref:`here &lt;import_qualid&gt;`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T220952Z" creationid="eldesh" creationdate="20200220T210237Z">
+        <seg>これは :n:`@qualid` モジュールとその依存をロードし宣言し、そして :ref:`ここ &lt;import_qualid&gt;` で説明されるように :n:`@qualid` の内容をインポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This loads the modules named by the :n:`qualid` sequence and their recursive dependencies.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T212858Z" creationid="eldesh" creationdate="20200220T212821Z">
+        <seg>これは :n:`qualid` の列により指名されたモジュールとそれらの再帰的な依存をロードします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3790,8 +3942,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This section describes the commands used to load compiled files (see Chapter :ref:`thecoqcommands` for documentation on how to compile a file).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200215T192221Z" creationid="eldesh" creationdate="20200215T192221Z">
-        <seg>この節ではコンパイルされたファイル (このようにファイルをコンパイルするかについての章である :ref:`thecoqcommands` を参照) のロードに使うコマンドについて説明します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T220607Z" creationid="eldesh" creationdate="20200215T192221Z">
+        <seg>この節ではコンパイルされたファイル (どのようにファイルをコンパイルするかについての記述である章 :ref:`thecoqcommands` を参照) のロードに使うコマンドについて説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3961,6 +4113,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T112207Z" creationid="eldesh" creationdate="20191227T112157Z">
         <seg>例を小さく保つため、我々が定義する代数構造 ``EQ.type`` は非常に単純でかつ、ある定義された二項関係上で項を特徴づけ、そのような関係に要求されるどんな性質の正当性の立証もありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To locate the file in the file system, :n:`@qualid` is decomposed under the form `dirpath.ident` and the file `ident.vo` is searched in the physical directory of the file system that is mapped in |Coq| loadpath to the logical path dirpath (see Section :ref:`libraries-and-filesystem`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T205406Z" creationid="eldesh" creationdate="20200220T204802Z">
+        <seg>ファイルシステム上でそのファイルの位置を探すため、:n:`@qualid` は `dirpath.ident` という形式に分解され、|Coq| のロードパスから論理パスである dirpath (節 :ref:`libraries-and-filesystem` 参照) へマップされたファイルシステムの物理ディレクトリの中でファイル `ident.vo` が検索されます。</seg>
       </tuv>
     </tu>
     <tu>
