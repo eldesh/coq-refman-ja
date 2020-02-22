@@ -42,6 +42,5 @@ canonical value	正準値
 hint application procedure	ヒント適用手続き
 hole	ホール	ターム中で(まだ)埋められていない部分。穴。証明途中のみ現れる。
 lexical convention	字句規則
-Chapter	章
-Section	節
-Subsection	小節,項
+section	節
+subsection	小節,項
