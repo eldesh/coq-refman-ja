@@ -272,8 +272,8 @@
       <tuv lang="EN-US">
         <seg>An example implementation is:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T140632Z" creationid="eldesh" creationdate="20200103T140632Z">
-        <seg>実装例は:</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T205236Z" creationid="eldesh" creationdate="20200103T140632Z">
+        <seg>一つの実装例です:</seg>
       </tuv>
     </tu>
     <tu>
@@ -774,8 +774,8 @@
       <tuv lang="EN-US">
         <seg>Each class definition gives rise to a corresponding record declaration and each instance is a regular definition whose name is given by ident and type is an instantiation of the record type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T215050Z" creationid="eldesh" creationdate="20200104T212439Z">
-        <seg>各クラス定義は対応するレコード宣言を生みだし、各インスタンスは標準の定義でありその名前は ident で与えられ、その型はレコード型のインスタンス化です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T204952Z" creationid="eldesh" creationdate="20200104T212439Z">
+        <seg>各クラス定義は対応するレコード宣言を生みだし、各インスタンスは標準の定義でありその名前は ident で与えられ、型はレコード型のインスタンス化です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -871,8 +871,8 @@
       <tuv lang="EN-US">
         <seg>Following the previous example, one can write:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T152854Z" creationid="eldesh" creationdate="20200103T152854Z">
-        <seg>以前の例に続き、次のように書くことが出来ます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T210221Z" creationid="eldesh" creationdate="20200103T152854Z">
+        <seg>以前の例に続き、次のように書くことが出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -887,8 +887,8 @@
       <tuv lang="EN-US">
         <seg>For an actual introduction to typeclasses, there is a description of the system :cite:`sozeau08` and the literature on type classes in Haskell which also applies.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T211337Z" creationid="eldesh" creationdate="20200103T135608Z">
-        <seg>実質的な型クラスの導入に付いてはシステムについての説明が :cite:`sozeau08` にあることに加え Haskell での型クラスについての論文も応用することが出来ます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T204415Z" creationid="eldesh" creationdate="20200103T135608Z">
+        <seg>実際の型クラスの導入については、システムについての説明が :cite:`sozeau08` にあることに加え Haskell での型クラスについての論文も応用することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -999,8 +999,8 @@
       <tuv lang="EN-US">
         <seg>Here ``A`` is implicitly generalized, and the resulting function is equivalent to the one above.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T153042Z" creationid="eldesh" creationdate="20200103T153042Z">
-        <seg>ここでは ``A`` は暗黙的に一般化され、結果の関数は上のそれに等しくなります。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T210305Z" creationid="eldesh" creationdate="20200103T153042Z">
+        <seg>ここでは ``A`` は暗黙的に一般化され、結果として得られる関数は上のそれに等しくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1015,8 +1015,8 @@
       <tuv lang="EN-US">
         <seg>Here the Global modifier redeclares the instance at the end of the section, once it has been generalized by the context variables it uses.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T224715Z" creationid="eldesh" creationdate="20200103T163942Z">
-        <seg>ここで Global 修飾子はセクションの終わりで、かつてそれが使う文脈変数により一般化されていたインスタンスを再宣言します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T212907Z" creationid="eldesh" creationdate="20200103T163942Z">
+        <seg>ここで Global 修飾子はセクションの終わりでインスタンスを再宣言します。それはそれまで使うコンテキスト変数により一般化されていたものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1071,8 +1071,8 @@
       <tuv lang="EN-US">
         <seg>However, the generalizing binders should be used instead as they have particular support for typeclasses:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T145940Z" creationid="eldesh" creationdate="20200103T145858Z">
-        <seg>しかしながら、替わりに型クラスの特別なサポートを持った束縛子の一般化を使うべきです。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T210024Z" creationid="eldesh" creationdate="20200103T145858Z">
+        <seg>しかしながら、替わりに型クラスの特別なサポートを持った束縛子の一般化を使うべきです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1931,8 +1931,8 @@
       <tuv lang="EN-US">
         <seg>Once a typeclass is declared, one can use it in class binders:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T222627Z" creationid="eldesh" creationdate="20200103T144158Z">
-        <seg>一度型クラスが宣言されると、それをクラス束縛子の中で使うことができます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T205548Z" creationid="eldesh" creationdate="20200103T144158Z">
+        <seg>一度型クラスが宣言されると、それをクラス束縛子の中で使うことができます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1995,8 +1995,8 @@
       <tuv lang="EN-US">
         <seg>One can use alternatively the :cmd:`Program Instance` variant which has richer facilities for dealing with obligations.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T222526Z" creationid="eldesh" creationdate="20200103T144048Z">
-        <seg>替わりに :cmd:`Program Instance` という類型を使うことが出来、これは課題の扱いについてよりリッチな機能を持っています。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T205516Z" creationid="eldesh" creationdate="20200103T144048Z">
+        <seg>替わりに :cmd:`Program Instance` という類型を使うことが出来、これは課題の扱いについてより豊富な機能を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2312,7 +2312,7 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
     </tu>
     <tu>
-      <note>型クラスに於いてはコンテキストという単語で定着している気がする</note>
+      <note>ここでのコンテキストは型クラスの文脈と異なる意味なので紛らわしい</note>
       <tuv lang="EN-US">
         <seg>Sections and contexts</seg>
       </tuv>
@@ -3435,8 +3435,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>These instances are used just as well as lemmas in the instance hint database.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T160254Z" creationid="eldesh" creationdate="20200103T160124Z">
-        <seg>これらのインスタンスはインスタンスヒントデータベースの中の補題だけでなく使われます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T210817Z" creationid="eldesh" creationdate="20200103T160124Z">
+        <seg>これらのインスタンスは単にインスタンスヒントデータベースの中の補題として使われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3644,8 +3644,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This class implements a boolean equality test which is compatible with Leibniz equality on some type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T215606Z" creationid="eldesh" creationdate="20200103T140612Z">
-        <seg>このクラスはいくつかの型上での Leibniz 等値性と互換性があるような真偽値等値性テストを実装しています。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T205204Z" creationid="eldesh" creationdate="20200103T140612Z">
+        <seg>このクラスは真偽値等値性テストを実装しており、それはある種の型上で Leibniz 等値性と互換性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4466,8 +4466,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>We’ll use the following example class in the rest of the chapter:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T215245Z" creationid="eldesh" creationdate="20200103T140229Z">
-        <seg>この章の残りでは以下の例示クラスを使います。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T205021Z" creationid="eldesh" creationdate="20200103T140229Z">
+        <seg>この章の残りでは以下の例示クラスを使います:</seg>
       </tuv>
     </tu>
     <tu>
