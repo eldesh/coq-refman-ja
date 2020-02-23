@@ -1119,8 +1119,8 @@
       <tuv lang="EN-US">
         <seg>If ``Import`` or ``Export`` is given, it also imports these modules and all the recursive dependencies that were marked or transitively marked as ``Export``.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T213219Z" creationid="eldesh" creationdate="20200220T213219Z">
-        <seg>``Import`` か ``Export`` が与えられると、それはこれらのモジュールと ``Export`` としてマークまたは推移的にマークされた全ての再帰的依存もインポートします。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T175943Z" creationid="eldesh" creationdate="20200220T213219Z">
+        <seg>``Import`` か ``Export`` が与えられると、それはさらにこれらのモジュールと ``Export`` としてマークまたは推移的にマークされた全ての再帰的依存をインポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1569,8 +1569,8 @@
       <tuv lang="EN-US">
         <seg>It does not import the modules on which qualid depends unless these modules were themselves required in module :n:`@qualid` using :cmd:`Require Export`, as described below, or recursively required through a sequence of :cmd:`Require Export`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T221408Z" creationid="eldesh" creationdate="20200220T211438Z">
-        <seg>それは qualid が依存するモジュールを、これらのモジュールが、以下で述べられるようにそれら自身が :cmd:`Require Export` を使う :n:`@qualid` モジュール内で要求されるか、または :cmd:`Require Export` の列を通して再帰的に要求されない限りインポートしません。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T175254Z" creationid="eldesh" creationdate="20200220T211438Z">
+        <seg>それは qualid が依存するモジュールを、これらのモジュールが以下で説明されるように、それら自身が :cmd:`Require Export` を使う :n:`@qualid` モジュール内で要求されるか、または再帰的に :cmd:`Require Export` の列を通して要求されない限りインポートしません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3652,8 +3652,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This command acts as :cmd:`Require Import` :n:`@qualid`, but if a further module, say `A`, contains a command :cmd:`Require Export` `B`, then the command :cmd:`Require Import` `A` also imports the module `B.`</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T212019Z" creationid="eldesh" creationdate="20200220T212019Z">
-        <seg>このコマンドは :cmd:`Require Import` :n:`@qualid` のように振る舞いますが、さらなるモジュール(`A` と称する)がコマンド :cmd:`Require Export` `B` を含む場合、コマンド :cmd:`Require Import` `A` はモジュール `B.` もインポートします。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T175517Z" creationid="eldesh" creationdate="20200220T212019Z">
+        <seg>このコマンドは :cmd:`Require Import` :n:`@qualid` のように振る舞いますが、さらなるモジュール(`A` と称する)がコマンド :cmd:`Require Export` `B` を含む場合、コマンド :cmd:`Require Import` `A` はモジュール `B` もインポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4006,8 +4006,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This section describes the commands used to load compiled files (see Chapter :ref:`thecoqcommands` for documentation on how to compile a file).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T220607Z" creationid="eldesh" creationdate="20200215T192221Z">
-        <seg>この節ではコンパイルされたファイル (どのようにファイルをコンパイルするかについての記述である章 :ref:`thecoqcommands` を参照) のロードに使うコマンドについて説明します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T172755Z" creationid="eldesh" creationdate="20200215T192221Z">
+        <seg>この節ではコンパイルされたファイルのロードに使うコマンドについて説明します (どのようにファイルをコンパイルするかについての文書については :ref:`thecoqcommands` の章を参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4199,8 +4199,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>To locate the file in the file system, :n:`@qualid` is decomposed under the form `dirpath.ident` and the file `ident.vo` is searched in the physical directory of the file system that is mapped in |Coq| loadpath to the logical path dirpath (see Section :ref:`libraries-and-filesystem`).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T205406Z" creationid="eldesh" creationdate="20200220T204802Z">
-        <seg>ファイルシステム上でそのファイルの位置を探すため、:n:`@qualid` は `dirpath.ident` という形式に分解され、|Coq| のロードパスから論理パスである dirpath (節 :ref:`libraries-and-filesystem` 参照) へマップされたファイルシステムの物理ディレクトリの中でファイル `ident.vo` が検索されます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T173712Z" creationid="eldesh" creationdate="20200220T204802Z">
+        <seg>ファイルシステム上でそのファイルの場所を探すため、:n:`@qualid` は `dirpath.ident` という形式に分解され、|Coq| のロードパスから論理パスである dirpath (節 :ref:`libraries-and-filesystem` 参照) へマップされたファイルシステムの物理ディレクトリの中でファイル `ident.vo` が検索されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4748,8 +4748,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>|Coq| assumes that the compiled files have been produced by a valid |Coq| compiler and their contents are then not replayed nor rechecked.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200215T193129Z" creationid="eldesh" creationdate="20200215T193129Z">
-        <seg>|Coq| はコンパイルされたファイルが正しい |Coq| コンパイラによって生成されたことを仮定し、従ってそれらの内容は再実行も再検証もされません。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T173431Z" creationid="eldesh" creationdate="20200215T193129Z">
+        <seg>|Coq| はコンパイルされたファイルは正しい |Coq| コンパイラによって生成されたことを仮定し、従ってそれらの内容は再実行も再検証もされません。</seg>
       </tuv>
     </tu>
     <tu>
