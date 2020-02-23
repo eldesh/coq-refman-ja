@@ -3988,6 +3988,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This prints the name of all OCaml modules loaded with ``Declare ML Module``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T172044Z" creationid="eldesh" creationdate="20200223T172044Z">
+        <seg>これは ``Declare ML Module`` で読み込まれた全ての OCaml モジュールの名前を表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This relation is selected whenever ``==`` is used on terms of type nat.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T114702Z" creationid="eldesh" creationdate="20191227T114702Z">
@@ -4177,6 +4185,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T112207Z" creationid="eldesh" creationdate="20191227T112157Z">
         <seg>例を小さく保つため、我々が定義する代数構造 ``EQ.type`` は非常に単純でかつ、ある定義された二項関係上で項を特徴づけ、そのような関係に要求されるどんな性質の正当性の立証もありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To know from where these module were loaded, the user should use the command ``Locate File`` (see :ref:`here &lt;locate-file&gt;`)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200223T172407Z" creationid="eldesh" creationdate="20200223T172137Z">
+        <seg>これらのモジュールがどこから読み込まれたのかを知るためには、ユーザは ``Locate File`` コマンド (:ref:`ここ &lt;locate-file&gt;` 参照) を使うべきです。</seg>
       </tuv>
     </tu>
     <tu>
