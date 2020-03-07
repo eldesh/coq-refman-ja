@@ -21,13 +21,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -123,7 +123,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#requests-to-the-environment">Requests to the environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#loading-files">Loading files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#compiled-files">Compiled files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compiled-files">コンパイルされたファイル</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#loadpath">Loadpath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#backtracking">Backtracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quitting-and-debugging">Quitting and debugging</a></li>
@@ -742,7 +742,7 @@ named by the given <code class="docutils literal notranslate"><span class="notat
 <dl class="exn">
 <dt id="coq:exn.module-section-qualid-not-found">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>Module/section</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a> <span>not</span> <span>found.</span></span></code><a class="headerlink" href="#coq:exn.module-section-qualid-not-found" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>No module <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> has been required (see Section <a class="reference internal" href="#compiled-files"><span class="std std-ref">Compiled files</span></a>).</p>
+<dd><p>No module <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> has been required (see Section <a class="reference internal" href="#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a>).</p>
 </dd></dl>
 
 <dl class="cmdv">
@@ -1024,68 +1024,35 @@ the loaded file.</p>
 
 </div>
 <div class="section" id="compiled-files">
-<span id="id4"></span><h2>Compiled files<a class="headerlink" href="#compiled-files" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>This section describes the commands used to load compiled files (see
-Chapter <a class="reference internal" href="../practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a> for documentation on how to compile a file). A compiled
-file is a particular case of module called <em>library file</em>.</p>
+<span id="id4"></span><h2>コンパイルされたファイル<a class="headerlink" href="#compiled-files" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>この節ではコンパイルされたファイルのロードに使うコマンドについて説明します (どのようにファイルをコンパイルするかについての文書については <a class="reference internal" href="../practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a> の章を参照)。コンパイルされたファイルは <em>ライブラリファイル</em> と呼ばれるモジュールの特殊なケースです。</p>
 <dl class="cmd">
 <dt id="coq:cmd.require">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Require</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code><a class="headerlink" href="#coq:cmd.require" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command looks in the loadpath for a file containing module <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code>
-and adds the corresponding module to the environment of <span class="smallcaps">Coq</span>. As
-library files have dependencies in other library files, the command
-<a class="reference internal" href="#coq:cmd.require" title="Require"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> recursively requires all library files the module
-qualid depends on and adds the corresponding modules to the
-environment of <span class="smallcaps">Coq</span> too. <span class="smallcaps">Coq</span> assumes that the compiled files have been
-produced by a valid <span class="smallcaps">Coq</span> compiler and their contents are then not
-replayed nor rechecked.</p>
-<p>To locate the file in the file system, <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> is decomposed under the
-form <cite>dirpath.ident</cite> and the file <cite>ident.vo</cite> is searched in the physical
-directory of the file system that is mapped in <span class="smallcaps">Coq</span> loadpath to the
-logical path dirpath (see Section <a class="reference internal" href="../language/gallina-extensions.html#libraries-and-filesystem"><span class="std std-ref">Libraries and filesystem</span></a>). The mapping between
-physical directories and logical names at the time of requiring the
-file must be consistent with the mapping used to compile the file. If
-several files match, one of them is picked in an unspecified fashion.</p>
+<dd><p>このコマンドはロードパスの中でモジュール <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> を含むファイルを探し、対応するモジュールを <span class="smallcaps">Coq</span> の環境に追加します。他のライブラリファイルへの依存を持つライブラリファイルについても、コマンド <a class="reference internal" href="#coq:cmd.require" title="Require"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> はモジュール qualid の依存する全てのライブラリファイルを再帰的に要求し、対応するモジュールを <span class="smallcaps">Coq</span> の環境へ追加します。<span class="smallcaps">Coq</span> はコンパイルされたファイルは正しい <span class="smallcaps">Coq</span> コンパイラによって生成されたことを仮定し、従ってそれらの内容は再実行も再検証もされません。</p>
+<p>ファイルシステム上でそのファイルの場所を探すため、<code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> は <cite>dirpath.ident</cite> という形式に分解され、<span class="smallcaps">Coq</span> のロードパスから論理パスである dirpath (節 <a class="reference internal" href="../language/gallina-extensions.html#libraries-and-filesystem"><span class="std std-ref">Libraries and filesystem</span></a> 参照) へマップされたファイルシステムの物理ディレクトリの中でファイル <cite>ident.vo</cite> が検索されます。そのファイルを要求した時点での物理ディレクトリと論理名の間のマッピングはそのファイルのコンパイルに使われるマッピングと一貫していなければなりません。幾つかのファイルがマッチした場合、そのうちの一つが不特定の方法で選択されます。</p>
 <dl class="cmdv">
 <dt id="coq:cmdv.require-import">
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Require</span> <span>Import</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code><a class="headerlink" href="#coq:cmdv.require-import" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This loads and declares the module <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code>
-and its dependencies then imports the contents of <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> as described
-<a class="reference internal" href="../language/gallina-extensions.html#import-qualid"><span class="std std-ref">here</span></a>. It does not import the modules on which
-qualid depends unless these modules were themselves required in module
-<code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code>
-using <a class="reference internal" href="#coq:cmdv.require-export" title="Require Export"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Export</span></code></a>, as described below, or recursively required
-through a sequence of <a class="reference internal" href="#coq:cmdv.require-export" title="Require Export"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Export</span></code></a>.  If the module required has
-already been loaded, <a class="reference internal" href="#coq:cmdv.require-import" title="Require Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> simply imports it, as
-<a class="reference internal" href="../language/gallina-extensions.html#coq:cmd.import" title="Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Import</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> would.</p>
+<dd><p>これは <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> モジュールとその依存をロードし宣言し、そして <a class="reference internal" href="../language/gallina-extensions.html#import-qualid"><span class="std std-ref">ここ</span></a> で説明されるように <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> の内容をインポートします。それは qualid が依存するモジュールを、これらのモジュールが以下で説明されるように、それら自身が <a class="reference internal" href="#coq:cmdv.require-export" title="Require Export"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Export</span></code></a> を使う <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> モジュール内で要求されるか、または再帰的に <a class="reference internal" href="#coq:cmdv.require-export" title="Require Export"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Export</span></code></a> の列を通して要求されない限りインポートしません。もし要求されたモジュールが既にロードされていたら、<a class="reference internal" href="#coq:cmdv.require-import" title="Require Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> は <a class="reference internal" href="../language/gallina-extensions.html#coq:cmd.import" title="Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Import</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> がそうするように単にそれをインポートします。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt id="coq:cmdv.require-export">
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Require</span> <span>Export</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code><a class="headerlink" href="#coq:cmdv.require-export" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command acts as <a class="reference internal" href="#coq:cmdv.require-import" title="Require Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code>,
-but if a further module, say <cite>A</cite>, contains a command <a class="reference internal" href="#coq:cmdv.require-export" title="Require Export"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Export</span></code></a> <cite>B</cite>,
-then the command <a class="reference internal" href="#coq:cmdv.require-import" title="Require Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span></code></a> <cite>A</cite> also imports the module <cite>B.</cite></p>
+<dd><p>このコマンドは <a class="reference internal" href="#coq:cmdv.require-import" title="Require Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span></code></a> <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> のように振る舞いますが、さらなるモジュール(<cite>A</cite> と称する)がコマンド <a class="reference internal" href="#coq:cmdv.require-export" title="Require Export"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Export</span></code></a> <cite>B</cite> を含む場合、コマンド <a class="reference internal" href="#coq:cmdv.require-import" title="Require Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span></code></a> <cite>A</cite> はモジュール <cite>B</cite> もインポートします。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Require</span> <span>[Import</span> <span>|</span> <span>Export]</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span><span class="notation-sup">+</span></span></span></code></dt>
-<dd><p>This loads the
-modules named by the <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">qualid</span></span></span></code> sequence and their recursive
-dependencies. If
-<code class="docutils literal notranslate"><span class="pre">Import</span></code> or <code class="docutils literal notranslate"><span class="pre">Export</span></code> is given, it also imports these modules and
-all the recursive dependencies that were marked or transitively marked
-as <code class="docutils literal notranslate"><span class="pre">Export</span></code>.</p>
+<dd><p>これは <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">qualid</span></span></span></code> の列により指名されたモジュールとそれらの再帰的な依存をロードします。<code class="docutils literal notranslate"><span class="pre">Import</span></code> か <code class="docutils literal notranslate"><span class="pre">Export</span></code> が与えられると、それはさらにこれらのモジュールと <code class="docutils literal notranslate"><span class="pre">Export</span></code> としてマークまたは推移的にマークされた全ての再帰的依存をインポートします。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>From</span> <span class="hole">dirpath</span> <span>Require</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code></dt>
-<dd><p>This command acts as <a class="reference internal" href="#coq:cmd.require" title="Require"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span></code></a>, but picks
-any library whose absolute name is of the form dirpath.dirpath’.qualid
-for some <cite>dirpath’</cite>. This is useful to ensure that the <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> library
-comes from a given package by making explicit its absolute root.</p>
+<dd><p>このコマンドは <a class="reference internal" href="#coq:cmd.require" title="Require"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Require</span></code></a> のように振る舞いますが、その絶対名が幾つかの <cite>dirpath'</cite> について dirpath.dirpath’.qualid という形式であるようなライブラリを選別します。これは <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> ライブラリがその絶対ルートを明示することによって与えられたパッケージに由来することを保証するために有用です。</p>
 </dd></dl>
 
 <dl class="exn">
@@ -1096,49 +1063,34 @@ comes from a given package by making explicit its absolute root.</p>
 <dl class="exn">
 <dt id="coq:exn.cannot-find-library-foo-in-loadpath">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>Cannot</span> <span>find</span> <span>library</span> <span>foo</span> <span>in</span> <span>loadpath.</span></span></code><a class="headerlink" href="#coq:exn.cannot-find-library-foo-in-loadpath" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>The command did not find the
-file foo.vo. Either foo.v exists but is not compiled or foo.vo is in a
-directory which is not in your LoadPath (see Section <a class="reference internal" href="../language/gallina-extensions.html#libraries-and-filesystem"><span class="std std-ref">Libraries and filesystem</span></a>).</p>
+<dd><p>そのコマンドはファイル foo.vo を見つけられませんでした。foo.v は存在するがコンパイルされていないか foo.vo はあなたの LoadPath 内には無い (節 <a class="reference internal" href="../language/gallina-extensions.html#libraries-and-filesystem"><span class="std std-ref">Libraries and filesystem</span></a> 参照) ディレクトリにあるかのどちらかです。</p>
 </dd></dl>
 
 <dl class="exn">
 <dt id="coq:exn.compiled-library-ident-vo-makes-inconsistent-assumptions-over-library-qualid">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>Compiled</span> <span>library</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a><span>.vo</span> <span>makes</span> <span>inconsistent</span> <span>assumptions</span> <span>over</span> <span>library</span> <span>qualid.</span></span></code><a class="headerlink" href="#coq:exn.compiled-library-ident-vo-makes-inconsistent-assumptions-over-library-qualid" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>The command tried to load library file <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>.vo that
-depends on some specific version of library <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> which is not the
-one already loaded in the current <span class="smallcaps">Coq</span> session. Probably <cite>ident.v</cite> was
-not properly recompiled with the last version of the file containing
-module <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code>.</p>
+<dd><p>そのコマンドは <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> ライブラリのいくつかの特定のバージョンに依存するライブラリファイル <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>.vo をロードしようとしましたが、それは現在の <span class="smallcaps">Coq</span> セッションに既にロードされているものではありません。恐らく <cite>ident.v</cite> はモジュール <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> を含む最新のバージョンのファイルとともに正しく再コンパイルされていません。</p>
 </dd></dl>
 
 <dl class="exn">
 <dt id="coq:exn.bad-magic-number">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>Bad</span> <span>magic</span> <span>number.</span></span></code><a class="headerlink" href="#coq:exn.bad-magic-number" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>The file <cite>ident.vo</cite> was found but either it is not a
-<span class="smallcaps">Coq</span> compiled module, or it was compiled with an incompatible
-version of <span class="smallcaps">Coq</span>.</p>
+<dd><p>ファイル <cite>ident.vo</cite> は見つかりましたが、それは <span class="smallcaps">Coq</span> がコンパイルしたモジュールではないか、またはそれは互換性の無いバージョンの <span class="smallcaps">Coq</span> でコンパイルされたのいずれかです。</p>
 </dd></dl>
 
 <dl class="exn">
 <dt id="coq:exn.the-file-ident-vo-contains-library-dirpath-and-not-library-dirpath">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>The</span> <span>file</span> <span>`ident.vo`</span> <span>contains</span> <span>library</span> <span>dirpath</span> <span>and</span> <span>not</span> <span>library</span> <span>dirpath’.</span></span></code><a class="headerlink" href="#coq:exn.the-file-ident-vo-contains-library-dirpath-and-not-library-dirpath" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>The library file <cite>dirpath’</cite> is indirectly required by the
-<code class="docutils literal notranslate"><span class="pre">Require</span></code> command but it is bound in the current loadpath to the
-file <cite>ident.vo</cite> which was bound to a different library name <cite>dirpath</cite> at
-the time it was compiled.</p>
+<dd><p>ライブラリファイル <cite>dirpath’</cite> は <code class="docutils literal notranslate"><span class="pre">Require</span></code> コマンドによって間接的に要求されていますが、それは現在のロードパス内ではファイル <cite>ident.vo</cite> に束縛されており、これはコンパイルされた時点で異なるライブラリ名 <cite>dirpath</cite> へ束縛されていました。</p>
 </dd></dl>
 
 <dl class="exn">
 <dt id="coq:exn.require-is-not-allowed-inside-a-module-or-a-module-type">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>Require</span> <span>is</span> <span>not</span> <span>allowed</span> <span>inside</span> <span>a</span> <span>module</span> <span>or</span> <span>a</span> <span>module</span> <span>type.</span></span></code><a class="headerlink" href="#coq:exn.require-is-not-allowed-inside-a-module-or-a-module-type" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command
-is not allowed inside a module or a module type being defined. It is
-meant to describe a dependency between compilation units. Note however
-that the commands <code class="docutils literal notranslate"><span class="pre">Import</span></code> and <code class="docutils literal notranslate"><span class="pre">Export</span></code> alone can be used inside modules
-(see Section <a class="reference internal" href="../language/gallina-extensions.html#import-qualid"><span class="std std-ref">Import</span></a>).</p>
+<dd><p>このコマンドはモジュールまたは定義されているモジュール型の中では許可されません。それはコンパイル単位間の依存関係を記述することを意図されています。ただし、コマンド <code class="docutils literal notranslate"><span class="pre">Import</span></code> と <code class="docutils literal notranslate"><span class="pre">Export</span></code> 単独ではモジュール内部で使うことが出来ます (節 <a class="reference internal" href="../language/gallina-extensions.html#import-qualid"><span class="std std-ref">Import</span></a> 参照)。</p>
 <div class="admonition seealso">
 <p class="admonition-title">参考</p>
-<p>Chapter <a class="reference internal" href="../practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a></p>
+<p>章 <a class="reference internal" href="../practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a></p>
 </div>
 </dd></dl>
 
@@ -1147,28 +1099,17 @@ that the commands <code class="docutils literal notranslate"><span class="pre">I
 <dl class="cmd">
 <dt id="coq:cmd.print-libraries">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Print</span> <span>Libraries</span></span></code><a class="headerlink" href="#coq:cmd.print-libraries" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command displays the list of library files loaded in the
-current <span class="smallcaps">Coq</span> session. For each of these libraries, it also tells if it
-is imported.</p>
+<dd><p>このコマンドは現在の <span class="smallcaps">Coq</span> セッションにロードされたライブラリファイルのリストを表示します。これらのライブラリそれぞれについて、それがインポートされているならばそれも知らせます。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt id="coq:cmd.declare-ml-module">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Declare</span> <span>ML</span> <span>Module</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole">string</span></a></span><span class="notation-sup">+</span></span></span></code><a class="headerlink" href="#coq:cmd.declare-ml-module" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This commands loads the OCaml compiled files
-with names given by the <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole"><span class="pre">string</span></span></a></span></code> sequence
-(dynamic link). It is mainly used to load tactics dynamically. The
-files are searched into the current OCaml loadpath (see the
-command <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">ML</span> <span class="pre">Path</span></code> in Section <a class="reference internal" href="../language/gallina-extensions.html#libraries-and-filesystem"><span class="std std-ref">Libraries and filesystem</span></a>).
-Loading of OCaml files is only possible under the bytecode version of
-<code class="docutils literal notranslate"><span class="pre">coqtop</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">coqtop</span></code> called with option <code class="docutils literal notranslate"><span class="pre">-byte</span></code>, see chapter
-<a class="reference internal" href="../practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a>), or when <span class="smallcaps">Coq</span> has been compiled with a
-version of OCaml that supports native Dynlink (≥ 3.11).</p>
+<dd><p>このコマンドは OCaml がコンパイルしたファイルを <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole"><span class="pre">string</span></span></a></span></code> の列で与えられた名前でロードします (動的リンク)。それは主にタクティックを動的にロードするために使用されます。そのファイルは現在の OCaml の loadpath の中も検索されます (<a class="reference internal" href="../language/gallina-extensions.html#libraries-and-filesystem"><span class="std std-ref">Libraries and filesystem</span></a> 節の <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">ML</span> <span class="pre">Path</span></code> コマンドを参照)。OCaml ファイルの読み込みはバイトコード版の <code class="docutils literal notranslate"><span class="pre">coqtop</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">coqtop</span></code> が <code class="docutils literal notranslate"><span class="pre">-byte</span></code> オプションを伴って呼ばれた、<a class="reference internal" href="../practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a> の章を参照) かまたは、<span class="smallcaps">Coq</span> がネイティブ Dynlink (≥ 3.11) をサポートする OCaml のバージョンによってコンパイルされたときのみ可能です。</p>
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Local</span> <span>Declare</span> <span>ML</span> <span>Module</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole">string</span></a></span><span class="notation-sup">+</span></span></span></code></dt>
-<dd><p>This variant is not exported to the modules that import the module
-where they occur, even if outside a section.</p>
+<dd><p>この派生版はたとえそれがセクションの外であっても、それらが現れたモジュールをインポートしたモジュールへエクスポートされません。</p>
 </dd></dl>
 
 <dl class="exn">
@@ -1186,9 +1127,7 @@ where they occur, even if outside a section.</p>
 <dl class="cmd">
 <dt id="coq:cmd.print-ml-modules">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Print</span> <span>ML</span> <span>Modules</span></span></code><a class="headerlink" href="#coq:cmd.print-ml-modules" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This prints the name of all OCaml modules loaded with <code class="docutils literal notranslate"><span class="pre">Declare</span>
-<span class="pre">ML</span> <span class="pre">Module</span></code>. To know from where these module were loaded, the user
-should use the command <code class="docutils literal notranslate"><span class="pre">Locate</span> <span class="pre">File</span></code> (see <a class="reference internal" href="#locate-file"><span class="std std-ref">here</span></a>)</p>
+<dd><p>これは <code class="docutils literal notranslate"><span class="pre">Declare</span> <span class="pre">ML</span> <span class="pre">Module</span></code> で読み込まれた全ての OCaml モジュールの名前を表示します。これらのモジュールがどこから読み込まれたのかを知るためには、ユーザは <code class="docutils literal notranslate"><span class="pre">Locate</span> <span class="pre">File</span></code> コマンド (<a class="reference internal" href="#locate-file"><span class="std std-ref">ここ</span></a> を参照) を使うべきです。</p>
 </dd></dl>
 
 </div>
@@ -1270,7 +1209,7 @@ the paths that extend the <code class="docutils literal notranslate"><span class
 <dt id="coq:cmd.add-ml-path">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Add</span> <span>ML</span> <span>Path</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole">string</span></a></span></code><a class="headerlink" href="#coq:cmd.add-ml-path" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>This command adds the path <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole"><span class="pre">string</span></span></a></span></code> to the current OCaml
-loadpath (see the command <cite>Declare ML Module`</cite> in Section <a class="reference internal" href="#compiled-files"><span class="std std-ref">Compiled files</span></a>).</p>
+loadpath (see the command <cite>Declare ML Module`</cite> in Section <a class="reference internal" href="#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a>).</p>
 </dd></dl>
 
 <dl class="cmd">
@@ -1286,7 +1225,7 @@ the current OCaml loadpath (see the command <a class="reference internal" href="
 <dd><p>This command displays the current OCaml loadpath. This
 command makes sense only under the bytecode version of <code class="docutils literal notranslate"><span class="pre">coqtop</span></code>, i.e.
 using option <code class="docutils literal notranslate"><span class="pre">-byte</span></code>
-(see the command Declare ML Module in Section <a class="reference internal" href="#compiled-files"><span class="std std-ref">Compiled files</span></a>).</p>
+(see the command Declare ML Module in Section <a class="reference internal" href="#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a>).</p>
 </dd></dl>
 
 <span class="target" id="locate-file"></span><dl class="cmd">

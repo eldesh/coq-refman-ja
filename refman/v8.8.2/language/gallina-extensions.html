@@ -21,13 +21,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -1678,14 +1678,14 @@ identical base name are present in different subdirectories of a
 recursive loadpath, which of these files is found first may be system-
 dependent and explicit qualification is recommended. The <code class="docutils literal notranslate"><span class="pre">From</span></code> argument
 of the <code class="docutils literal notranslate"><span class="pre">Require</span></code> command can be used to bypass the implicit shortening
-by providing an absolute root to the required file (see <a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">Compiled files</span></a>).</p>
+by providing an absolute root to the required file (see <a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a>).</p>
 <p>There also exists another independent loadpath mechanism attached to
 OCaml object files (<code class="docutils literal notranslate"><span class="pre">.cmo</span></code> or <code class="docutils literal notranslate"><span class="pre">.cmxs</span></code>) rather than <span class="smallcaps">Coq</span> object
 files as described above. The OCaml loadpath is managed using
 the option <code class="docutils literal notranslate"><span class="pre">-I</span></code> <cite>path</cite> (in the OCaml world, there is neither a
 notion of logical name prefix nor a way to access files in
 subdirectories of path). See the command <code class="docutils literal notranslate"><span class="pre">Declare</span></code> <code class="docutils literal notranslate"><span class="pre">ML</span></code> <code class="docutils literal notranslate"><span class="pre">Module</span></code> in
-<a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">Compiled files</span></a> to understand the need of the OCaml loadpath.</p>
+<a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a> to understand the need of the OCaml loadpath.</p>
 <p>See <a class="reference internal" href="../practical-tools/coq-commands.html#command-line-options"><span class="std std-ref">By command line options</span></a> for a more general view over the <span class="smallcaps">Coq</span> command
 line options.</p>
 </div>
