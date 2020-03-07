@@ -3740,8 +3740,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This commands loads the OCaml compiled files with names given by the :n:`@string` sequence (dynamic link).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200222T171431Z" creationid="eldesh" creationdate="20200222T171431Z">
-        <seg>このコマンドは OCaml がコンパイルしたファイルを :n:`@string` 列 (動的リンク) で与えられた名前でロードします。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T150039Z" creationid="eldesh" creationdate="20200222T171431Z">
+        <seg>このコマンドは OCaml がコンパイルしたファイルを :n:`@string` の列で与えられた名前でロードします (動的リンク)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4191,8 +4191,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>To know from where these module were loaded, the user should use the command ``Locate File`` (see :ref:`here &lt;locate-file&gt;`)</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200223T172407Z" creationid="eldesh" creationdate="20200223T172137Z">
-        <seg>これらのモジュールがどこから読み込まれたのかを知るためには、ユーザは ``Locate File`` コマンド (:ref:`ここ &lt;locate-file&gt;` 参照) を使うべきです。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T150847Z" creationid="eldesh" creationdate="20200223T172137Z">
+        <seg>これらのモジュールがどこから読み込まれたのかを知るためには、ユーザは ``Locate File`` コマンド (:ref:`ここ &lt;locate-file&gt;` を参照) を使うべきです。</seg>
       </tuv>
     </tu>
     <tu>
