@@ -44,3 +44,4 @@ hole	ホール	ターム中で(まだ)埋められていない部分。穴。証
 lexical convention	字句規則
 section	節
 subsection	小節,項
+obligation	課題	単体で証明課題を意味する場合もある

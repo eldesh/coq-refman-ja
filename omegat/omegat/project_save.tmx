@@ -272,8 +272,8 @@
       <tuv lang="EN-US">
         <seg>An example implementation is:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200222T205236Z" creationid="eldesh" creationdate="20200103T140632Z">
-        <seg>一つの実装例です:</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T154759Z" creationid="eldesh" creationdate="20200103T140632Z">
+        <seg>実装例の一つは:</seg>
       </tuv>
     </tu>
     <tu>
@@ -337,16 +337,16 @@
       <tuv lang="EN-US">
         <seg>As of Coq 8.6, ``all:once (typeclasses eauto)`` faithfully mimicks what happens during typeclass resolution when it is called during refinement/type inference, except that *only* declared class subgoals are considered at the start of resolution during type inference, while ``all`` can select non-class subgoals as well.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T190612Z" creationid="eldesh" creationdate="20200103T210850Z">
-        <seg>Coq 8.6 を基点として、 ``all:once (typeclasses eauto)`` は宣言されたクラスサブゴール *だけ* が型推論中に解消の開始と考えられる場合を除き、精細化/型推論の間にそれが呼ばれたとき型クラス解決の間に何が起きるかを忠実に模倣し、一方 ``all`` は非クラスサブゴールを選択できる。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T175920Z" creationid="eldesh" creationdate="20200103T210850Z">
+        <seg>Coq 8.6 を基点として、 ``all:once (typeclasses eauto)`` は宣言されたクラスサブゴール *だけ* が型推論中に解消の開始と考えられる場合を除き、精細化/型推論の間にそれが呼ばれたとき型クラス解決の間に何が起きるかを忠実に模倣し、一方 ``all`` は非クラスサブゴールを選択できます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>As we have seen, ``Ord`` is encoded as a record type with two parameters: a type ``A`` and an ``E`` of type ``EqDec A``.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T172715Z" creationid="eldesh" creationdate="20200103T172715Z">
-        <seg>見てきたように、``Ord`` は二つのパラメータ: ``A`` 型と ``EqDec A`` 型の ``E`` を持つレコードとして符号化されます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T162859Z" creationid="eldesh" creationdate="20200103T172715Z">
+        <seg>これまで見てきたように、``Ord`` は二つのパラメータ: ``A`` 型と ``EqDec A`` 型の ``E`` を持つレコードとして符号化されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -643,8 +643,8 @@
       <tuv lang="EN-US">
         <seg>Contrary to :tacn:`eauto` and :tacn:`auto`, the resolution is done entirely in the new proof engine (as of Coq 8.6), meaning that backtracking is available among dependent subgoals, and shelving goals is supported.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T203944Z" creationid="eldesh" creationdate="20200103T203814Z">
-        <seg>:tacn:`eauto` や :tacn:`auto` と逆に、(Coq 8.6 を基点として) 新しい証明エンジンの中で全体が完了します、依存サブゴールの中でバックトラッキングが可能で、かつゴールの見送りがサポートされていることを意味します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T175410Z" creationid="eldesh" creationdate="20200103T203814Z">
+        <seg>:tacn:`eauto` や :tacn:`auto` とは異なり、(Coq 8.6 を基点として) 新しい証明エンジンの中で(訳注: 制約)解決全体が完了し、これは依存サブゴールの中でバックトラッキングが可能で、かつゴールの見送りがサポートされていることを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -717,8 +717,8 @@
       <tuv lang="EN-US">
         <seg>Dependent subgoals are automatically shelved, and shelved goals can remain after resolution ends (following the behavior of Coq 8.5).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T205657Z" creationid="eldesh" creationdate="20200103T204659Z">
-        <seg>依存サブゴールは自動的に先送りにされ、先送りされたゴールは (Coq 8.5 の振る舞いに従うと) 解消終了の後まで残ることがあります。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T175556Z" creationid="eldesh" creationdate="20200103T204659Z">
+        <seg>依存サブゴールは自動的に先送りにされ、先送りされたゴールは (Coq 8.5 の振る舞いに従い) 解消終了の後まで残ることがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -927,8 +927,8 @@
       <tuv lang="EN-US">
         <seg>For example, forcing a constant to explicitely appear in the pattern will make it never apply on a goal where there is a hole in that place.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T195739Z" creationid="eldesh" creationdate="20200106T195739Z">
-        <seg>例えばある定数を、その場所にホールがあるゴール上でけっして適用させないパターン中に明示的に出現することを強制します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T184644Z" creationid="eldesh" creationdate="20200106T195739Z">
+        <seg>例えば、ある定数をパターン中に明示的に出現することを強制し、その場所にホールがあるゴール上でけっして適用させなくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1200,8 +1200,8 @@
       <tuv lang="EN-US">
         <seg>If the priority is not specified, it defaults to the number of non-dependent binders of the instance.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T182203Z" creationid="eldesh" creationdate="20200103T195222Z">
-        <seg>優先度が指定されないならば、デフォルトのそのインスタンスの非依存束縛子の数になります。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T173913Z" creationid="eldesh" creationdate="20200103T195222Z">
+        <seg>優先度が指定されないならば、デフォルトはそのインスタンスの非依存束縛子の数になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1433,8 +1433,8 @@
       <tuv lang="EN-US">
         <seg>In the same way, we give the superclasses as a binding context:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T171948Z" creationid="eldesh" creationdate="20200103T171904Z">
-        <seg>同様に、束縛コンテキストとしてスーパークラスを与えます:</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T162643Z" creationid="eldesh" creationdate="20200103T171904Z">
+        <seg>束縛コンテキストと同様に、スーパークラスを与えます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1577,8 +1577,8 @@
       <tuv lang="EN-US">
         <seg>It does so by allowing hints that conclude in a product to apply to a goal with a matching product directly, avoiding an introduction.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T200934Z" creationid="eldesh" creationdate="20200106T200934Z">
-        <seg>それはある積の中で直接マッチする積を伴うゴールにイントロダクションを避けて適用すると結論を出すヒントを認めることで行います。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T185524Z" creationid="eldesh" creationdate="20200106T200934Z">
+        <seg>それはある積の中でマッチする積を伴うゴールに、イントロダクションを避けて直接積を適用して結論を出すヒントを認めることで行います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1601,8 +1601,8 @@
       <tuv lang="EN-US">
         <seg>It is also useful to declare constants which should never be unfolded during proof-search, like fixpoints or anything which does not look like an abbreviation.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T184909Z" creationid="eldesh" creationdate="20200106T184603Z">
-        <seg>それは不動点や省略形のように見えない何かのような証明探索中にけっして展開されるべきではない定数を宣言するのにも便利です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T183020Z" creationid="eldesh" creationdate="20200106T184603Z">
+        <seg>それは不動点や省略形のように見えない何かのような、証明探索中にけっして展開されるべきではない定数を宣言するのにも便利です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1625,8 +1625,8 @@
       <tuv lang="EN-US">
         <seg>It is is possible to do it directly in regular binders, and using the ``!`` modifier in class binders.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T230512Z" creationid="eldesh" creationdate="20200103T175645Z">
-        <seg>それは通常の束縛子の中で直接行う、そしてクラス束縛子の中では ``!`` 修飾子を使うことで可能です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T163335Z" creationid="eldesh" creationdate="20200103T175645Z">
+        <seg>それは通常の束縛子の中では直接行い、そしてクラス束縛子の中では ``!`` 修飾子を使うことで可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1657,16 +1657,16 @@
       <tuv lang="EN-US">
         <seg>It is useful when some constants prevent some unifications and make resolution fail.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T184416Z" creationid="eldesh" creationdate="20200106T184416Z">
-        <seg>いくつかの定数がいくらかの単一化を防ぎ、(訳注: 型クラス)解決を失敗させるのに便利です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T182610Z" creationid="eldesh" creationdate="20200106T184416Z">
+        <seg>ある定数がいくつかの単一化を阻み、(訳注: 型クラス)解決を失敗させる時に有益です。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>It might move to ``all:typeclasses eauto`` in future versions when the refinement engine will be able to backtrack.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T190821Z" creationid="eldesh" creationdate="20200103T211039Z">
-        <seg>精細化エンジンがバックトラック出来るようになったとき未来のバージョンではそれは ``all:typeclasses eauto`` に移動するかもしれない。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T180119Z" creationid="eldesh" creationdate="20200103T211039Z">
+        <seg>精細化エンジンがバックトラック出来るようになったとき、未来のバージョンではそれは ``all:typeclasses eauto`` に移行するかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1995,8 +1995,8 @@
       <tuv lang="EN-US">
         <seg>One can use alternatively the :cmd:`Program Instance` variant which has richer facilities for dealing with obligations.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200222T205516Z" creationid="eldesh" creationdate="20200103T144048Z">
-        <seg>替わりに :cmd:`Program Instance` という類型を使うことが出来、これは課題の扱いについてより豊富な機能を持っています。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T161316Z" creationid="eldesh" creationdate="20200103T144048Z">
+        <seg>替わりに :cmd:`Program Instance` という類型コマンドを使うことが出来、これは証明課題の扱いについてより豊富な機能を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2583,8 +2583,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The ``!`` modifier switches the way a binder is parsed back to the regular interpretation of Coq.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200104T230725Z" creationid="eldesh" creationdate="20200103T175825Z">
-        <seg>この ``!`` 修飾子は束縛子が解析されCoqの通常の解釈に解析される方法を切り替えます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T163723Z" creationid="eldesh" creationdate="20200103T175825Z">
+        <seg>この ``!`` 修飾子は束縛子が解析される方法を切り替え、Coqの通常の解釈に戻します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2649,8 +2649,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The class constant itself is declared rigid during resolution so that the class abstraction is maintained.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T175223Z" creationid="eldesh" creationdate="20200103T193251Z">
-        <seg>そのクラス定数自身は(訳注: 制約を)解消する間は厳格に決定され、そのためそのクラスの抽象は維持されます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T173551Z" creationid="eldesh" creationdate="20200103T193251Z">
+        <seg>そのクラス定数自身は(訳注: 制約を)解消する間は固定的に指定され、そのためそのクラスの抽象は維持されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3264,8 +3264,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The tactic ``autoapply`` applies a term using the transparency information of the hint database ident, and does *no* typeclass resolution.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T192623Z" creationid="eldesh" creationdate="20200103T213204Z">
-        <seg>タクティック ``autoapply`` はヒントデータベース ident の透過性情報を使用し term を適用し、型クラス解決は *行いません*。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T181719Z" creationid="eldesh" creationdate="20200103T213204Z">
+        <seg>タクティック ``autoapply`` はヒントデータベース ident の透過性情報を使用し term を適用し、型クラス解決は *行いません* 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3547,16 +3547,16 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This also provides more control on the triggering of instances.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T195103Z" creationid="eldesh" creationdate="20200106T195103Z">
-        <seg>これはインスタンスを持ち出すことに関して更なる制御性を提供します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T184333Z" creationid="eldesh" creationdate="20200106T195103Z">
+        <seg>これはインスタンスを持ち出すことに関して更なる制御性をも提供します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>This can additionally speed up proof search as the typeclass map can be indexed by such rigid constants (see :ref:`thehintsdatabasesforautoandeauto`).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T190356Z" creationid="eldesh" creationdate="20200106T185508Z">
-        <seg>これはさらにそのような固定的な定数によってインデックス出来る型クラスマップによって証明探索を高速化出来ます (see :ref:`thehintsdatabasesforautoandeauto`)。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T183132Z" creationid="eldesh" creationdate="20200106T185508Z">
+        <seg>これはさらに、そのような固定的な定数によってインデックス出来る型クラスマップによって証明探索を高速化出来ます (see :ref:`thehintsdatabasesforautoandeauto`)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3571,8 +3571,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This can be expensive as it requires rebuilding hint clauses dynamically, and does not benefit from the invertibility status of the product introduction rule, resulting in potentially more expensive proof-search (i.e. more useless backtracking).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T202212Z" creationid="eldesh" creationdate="20200106T201120Z">
-        <seg>これはヒント節の動的な再構築を要求するため高価になりえます、そして積の導入規則の反転可能性から恩恵を得られず、結果として証明探索がより高価になる (つまり、よりバックトラッキングが役に立たなくなる) 可能性があります 。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T185709Z" creationid="eldesh" creationdate="20200106T201120Z">
+        <seg>これはヒント節の動的な再構築を要求するため高くつく可能性があります、そして積の導入規則の反転可能性から恩恵を得られず、結果として証明探索がより高価になる (つまり、よりバックトラッキングが役に立たなくなる) 可能性があります 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3588,16 +3588,16 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This can be used in :cmd:`Hint Extern`’s for typeclass instances (in the hint database ``typeclass_instances``) to allow backtracking on the typeclass subgoals created by the lemma application, rather than doing typeclass resolution locally at the hint application time.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T193000Z" creationid="eldesh" creationdate="20200103T214321Z">
-        <seg>これは :cmd:`Hint Extern` の中で (ヒントデータベース ``typeclass_instances`` の中の) 型クラスインスタンスのために、ヒントの適用時にローカルに型クラス解決を行うよりむしろ補題の適用によって作られた型クラスサブゴール上でバックトラッキングを許すために使うことができます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T182053Z" creationid="eldesh" creationdate="20200103T214321Z">
+        <seg>これは :cmd:`Hint Extern` の中で (ヒントデータベース ``typeclass_instances`` の中の) 型クラスインスタンスのために、ヒントの適用時にローカルに型クラス解決を行うのではなく、補題の適用によって作られた型クラスサブゴール上でバックトラッキングを許すために使うことができます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>This can be useful to make instances of existing objects easily and to reduce proof size by not inserting useless projections.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T192957Z" creationid="eldesh" creationdate="20200103T192957Z">
-        <seg>これは簡単に既存のオブジェクトのインスタンスを作り、そして無駄な射影を挿入しないことで証明サイズを縮小するのに便利です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T172944Z" creationid="eldesh" creationdate="20200103T192957Z">
+        <seg>これは簡単に既存のオブジェクトのインスタンスを作り、そして無駄な射影を挿入しないことで証明サイズを縮小するのに役立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3612,8 +3612,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This can result in quite different performance behaviors of proof search.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T192908Z" creationid="eldesh" creationdate="20200106T192908Z">
-        <seg>これは極めて異なった証明探索の性能挙動を示します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T184100Z" creationid="eldesh" creationdate="20200106T192908Z">
+        <seg>これは極めて異なった証明探索の性能挙動を示す可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3668,8 +3668,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This command adds an arbitrary list of constants whose type ends with an applied typeclass to the instance database with an optional priority.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T184224Z" creationid="eldesh" creationdate="20200103T202826Z">
-        <seg>このコマンドは定数の任意のリストを任意に優先度を伴ってインスタンスデータベースへ追加します。その型は適用された型クラスで終わります。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T174848Z" creationid="eldesh" creationdate="20200103T202826Z">
+        <seg>このコマンドは、その型の最後に適用された型クラスが付くような定数の任意のリストを、任意に優先度を伴ってインスタンスデータベースへ追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3820,16 +3820,16 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This is equivalent to ``Hint Resolve ident : typeclass_instances``, except it registers instances for :cmd:`Print Instances`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T184917Z" creationid="eldesh" creationdate="20200103T203059Z">
-        <seg>これは :cmd:`Print Instances` できるインスタンスを登録することを除いて ``Hint Resolve ident : typeclass_instances`` に相当します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T175036Z" creationid="eldesh" creationdate="20200103T203059Z">
+        <seg>これは :cmd:`Print Instances` のためにインスタンスを登録することを除いて ``Hint Resolve ident : typeclass_instances`` に相当します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>This is equivalent to ``Hint Transparent, Opaque ident : typeclass_instances``.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T190908Z" creationid="eldesh" creationdate="20200106T190908Z">
-        <seg>これは ``Hint Transparent, Opaque ident : typeclass_instances`` に相当します。(訳注: 相当しません)</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T183722Z" creationid="eldesh" creationdate="20200106T190908Z">
+        <seg>これは ``Hint Transparent, Opaque ident : typeclass_instances`` に相当します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3958,8 +3958,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This option (on by default) controls the ability to apply hints while avoiding (functional) eta-expansions in the generated proof term.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T200027Z" creationid="eldesh" creationdate="20200106T200027Z">
-        <seg>このオプション (デフォルトで有効) は一般的な証明項の中で (関数的な) イータ展開を避けながらヒントを適用する能力を制御します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T184803Z" creationid="eldesh" creationdate="20200106T200027Z">
+        <seg>このオプション (デフォルトで有効) は生成された証明項の中で (関数的な) イータ展開を避けながらヒントを適用する能力を制御します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3974,8 +3974,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This option allows to switch the behavior of instance declarations made through the Instance command.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T205645Z" creationid="eldesh" creationdate="20200106T205645Z">
-        <seg>このオプションは Instance コマンドを通じて行われるインスタンス宣言の振る舞いの切り替えるを認めます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T190154Z" creationid="eldesh" creationdate="20200106T205645Z">
+        <seg>このオプションは Instance コマンドを通じて行われるインスタンス宣言の振る舞いの切り替えを認めます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4046,8 +4046,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This variant declares a *singleton* class with a single method.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T192151Z" creationid="eldesh" creationdate="20200103T192151Z">
-        <seg>この類型は単一のメソッドを持つ *シングルトン* クラスを定義します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T172342Z" creationid="eldesh" creationdate="20200103T192151Z">
+        <seg>この類型コマンドは単一のメソッドを持つ *シングルトン* クラスを定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4055,8 +4055,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This variant declares a class a posteriori from a constant or inductive definition.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T181619Z" creationid="eldesh" creationdate="20200103T193452Z">
-        <seg>この派生形は定数や帰納的定義から事後的にクラスを定義します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T173628Z" creationid="eldesh" creationdate="20200103T193452Z">
+        <seg>この派生形は定数や帰納的定義から事後的にクラスを宣言します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4338,8 +4338,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>Using an empty database (created with :cmd:`Create HintDb` for example) with unfoldable variables and constants as the first argument of ``typeclasses eauto`` hence makes resolution with the local hypotheses use full conversion during unification.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200105T192254Z" creationid="eldesh" creationdate="20200103T212057Z">
-        <seg>展開可能変数と定数を伴う (例えば :cmd:`Create HintDb` で作成された) 空のデータベースを ``typeclasses eauto`` の最初の引数として使い、従って単一化の間、局所的な仮定を使う解消に完全変換を使わせます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T181408Z" creationid="eldesh" creationdate="20200103T212057Z">
+        <seg>展開可能変数と定数を伴う (例えば :cmd:`Create HintDb` で作成された) 空のデータベースを ``typeclasses eauto`` の最初の引数として使うことにより、単一化の間局所的な仮定を使う(訳注: 制約の)解消に完全変換を使わせます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4524,8 +4524,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>When called with specific databases (e.g. with), ``typeclasses eauto`` allows shelved goals to remain at any point during search and treat typeclass goals like any other.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200103T211407Z" creationid="eldesh" creationdate="20200103T211407Z">
-        <seg>特定のデータベース (例. with) を伴って呼ばれたとき、``typeclasses eauto`` は先送りにされたゴールを検索中のどの時点でもとどまることを許し、型クラスゴールを他と同じように扱います。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T180328Z" creationid="eldesh" creationdate="20200103T211407Z">
+        <seg>特定のデータベースを伴って呼ばれたとき (例. with) 、``typeclasses eauto`` は先送りにされたゴールを検索中のどの時点でも残すことを許し、型クラスゴールを他と同じように扱います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4548,8 +4548,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>When it is on (the default), instances that have unsolved holes in their proof-term silently open the proof mode with the remaining obligations to prove.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200106T210421Z" creationid="eldesh" creationdate="20200106T205951Z">
-        <seg>それが有効 (デフォルト) なとき、証明項に未解決のホールがあるインスタンスは残っている証明課題を伴って証明モードを開きます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T190459Z" creationid="eldesh" creationdate="20200106T205951Z">
+        <seg>それが有効 (デフォルト) なとき、証明項に未解決のホールを持つインスタンスは、残っている証明すべき課題を伴って無言で証明モードを開きます。</seg>
       </tuv>
     </tu>
     <tu>
