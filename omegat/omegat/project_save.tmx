@@ -2500,6 +2500,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Syntax of terms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T201957Z" creationid="eldesh" creationdate="20200307T201957Z">
+        <seg>項の構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Table of contents</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150213Z" creationid="yamarten" creationdate="20181104T150213Z">
@@ -2843,6 +2851,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T212441Z" creationid="eldesh" creationdate="20191221T212441Z">
         <seg>以下の実験的なコマンドは ``FunInd`` ライブラリが ``Require Import FunInd`` によってロードされたときに有効になります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following grammars describe the basic syntax of the terms of the *Calculus of Inductive Constructions* (also called Cic).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T202124Z" creationid="eldesh" creationdate="20200307T202124Z">
+        <seg>以下の文法は *Calculus of Inductive Constructions* (Cic とも呼ばれる) の項の基本的な構文を記述します。</seg>
       </tuv>
     </tu>
     <tu>
