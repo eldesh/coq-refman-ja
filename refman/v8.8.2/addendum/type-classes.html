@@ -328,15 +328,15 @@
 \end{split}\]</div>
 <div class="section" id="type-classes">
 <span id="typeclasses"></span><h1>型クラス<a class="headerlink" href="#type-classes" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>この章では型クラスに関連したコマンドのクイックリファレンスを提供します。実質的な型クラスの導入に付いてはシステムについての説明が <a class="bibtex reference internal" href="../zebibliography.html#sozeau08" id="id1">[SO08]</a> にあることに加え Haskell での型クラスについての論文も応用することが出来ます。</p>
+<p>この章では型クラスに関連したコマンドのクイックリファレンスを提供します。実際の型クラスの導入については、システムについての説明が <a class="bibtex reference internal" href="../zebibliography.html#sozeau08" id="id1">[SO08]</a> にあることに加え Haskell での型クラスについての論文も応用することが出来ます。</p>
 <div class="section" id="class-and-instance-declarations">
 <h2>クラスとインスタンスの宣言<a class="headerlink" href="#class-and-instance-declarations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>クラスとインスタンスの宣言の構文は Coq のレコード構文と同じです:</p>
 <p><code class="docutils literal notranslate"><span class="pre">Class</span> <span class="pre">Id</span> <span class="pre">(</span></code> <cite>p</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">)</span> <span class="pre">⋯</span> <span class="pre">(</span></code> <cite>p</cite><span class="math notranslate nohighlight">\(_{n}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{n}\)</span> <code class="docutils literal notranslate"><span class="pre">)</span> <span class="pre">[:</span>
 <span class="pre">sort]</span> <span class="pre">:=</span> <span class="pre">{</span></code> <cite>f</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>u</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">;</span> <span class="pre">⋮</span></code> <cite>f</cite><span class="math notranslate nohighlight">\(_{m}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>u</cite><span class="math notranslate nohighlight">\(_{m}\)</span> <code class="docutils literal notranslate"><span class="pre">}.</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">Instance</span> <span class="pre">ident</span> <span class="pre">:</span> <span class="pre">Id</span></code> <cite>p</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">⋯</span></code> <cite>p</cite><span class="math notranslate nohighlight">\(_{n}\)</span> <code class="docutils literal notranslate"><span class="pre">:=</span> <span class="pre">{</span></code> <cite>f</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">:=</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">;</span> <span class="pre">⋮</span></code> <cite>f</cite><span class="math notranslate nohighlight">\(_{m}\)</span> <code class="docutils literal notranslate"><span class="pre">:=</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{m}\)</span> <code class="docutils literal notranslate"><span class="pre">}.</span></code></p>
-<p>変数 <cite>p</cite><span class="math notranslate nohighlight">\(_{i}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{i}\)</span> はクラスの <em>パラメータ</em> と呼ばれ、<cite>f</cite><span class="math notranslate nohighlight">\(_{i}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{i}\)</span> は <em>メソッド</em> と呼ばれます。各クラス定義は対応するレコード宣言を生みだし、各インスタンスは標準の定義でありその名前は ident で与えられ、その型はレコード型のインスタンス化です。</p>
-<p>この章の残りでは以下の例示クラスを使います。</p>
+<p>変数 <cite>p</cite><span class="math notranslate nohighlight">\(_{i}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{i}\)</span> はクラスの <em>パラメータ</em> と呼ばれ、<cite>f</cite><span class="math notranslate nohighlight">\(_{i}\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code> <cite>t</cite><span class="math notranslate nohighlight">\(_{i}\)</span> は <em>メソッド</em> と呼ばれます。各クラス定義は対応するレコード宣言を生みだし、各インスタンスは標準の定義でありその名前は ident で与えられ、型はレコード型のインスタンス化です。</p>
+<p>この章の残りでは以下の例示クラスを使います:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Class</span><span> </span><span class="coqdoc-var">EqDec</span><span> (</span><span class="coqdoc-var">A</span><span> : </span><span class="coqdoc-keyword">Type</span><span>) := {</span><span>
@@ -346,7 +346,7 @@ eqb is defined
 eqb_leibniz is defined</span></dd>
 </dl>
 </div>
-<p>このクラスはいくつかの型上での Leibniz 等値性と互換性があるような真偽値等値性テストを実装しています。実装例は:</p>
+<p>このクラスは真偽値等値性テストを実装しており、それはある種の型上で Leibniz 等値性と互換性があります。実装例の一つは:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Instance</span><span> </span><span class="coqdoc-var">unit_EqDec</span><span> : </span><span class="coqdoc-var">EqDec</span><span> </span><span class="coqdoc-var">unit</span><span> :=</span><span>
@@ -380,11 +380,11 @@ eqb_leibniz is defined</span></dd>
 <dt><span class="coqdoc-keyword">Defined</span><span>.</span></dt><dd><span>eq_bool is defined</span></dd>
 </dl>
 </div>
-<p><a class="reference internal" href="#coq:cmd.instance" title="Instance"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Instance</span></code></a> の証明の透過性よって決まる全てのフィールドの透過性に注意するべきです。替わりに <a class="reference internal" href="#coq:cmdv.program-instance" title="Program Instance"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Program</span> <span class="pre">Instance</span></code></a> という類型を使うことが出来、これは課題の扱いについてよりリッチな機能を持っています。</p>
+<p><a class="reference internal" href="#coq:cmd.instance" title="Instance"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Instance</span></code></a> の証明の透過性よって決まる全てのフィールドの透過性に注意するべきです。替わりに <a class="reference internal" href="#coq:cmdv.program-instance" title="Program Instance"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Program</span> <span class="pre">Instance</span></code></a> という類型コマンドを使うことが出来、これは証明課題の扱いについてより豊富な機能を持っています。</p>
 </div>
 <div class="section" id="binding-classes">
 <h2>クラスの束縛<a class="headerlink" href="#binding-classes" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>一度型クラスが宣言されると、それをクラス束縛子の中で使うことができます。</p>
+<p>一度型クラスが宣言されると、それをクラス束縛子の中で使うことができます:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">neqb</span><span> {</span><span class="coqdoc-var">A</span><span>} {</span><span class="coqdoc-var">eqa</span><span> : </span><span class="coqdoc-var">EqDec</span><span> </span><span class="coqdoc-var">A</span><span>} (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">A</span><span>) := </span><span class="coqdoc-var">negb</span><span> (</span><span class="coqdoc-var">eqb</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>).</span></dt><dd><span>neqb is defined</span></dd>
@@ -408,20 +408,20 @@ x, y : </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">neqb'</span><span> </span><span class="coqdoc-var">A</span><span> (</span><span class="coqdoc-var">eqa</span><span> : </span><span class="coqdoc-var">EqDec</span><span> </span><span class="coqdoc-var">A</span><span>) (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">A</span><span>) := </span><span class="coqdoc-var">negb</span><span> (</span><span class="coqdoc-var">eqb</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>).</span></dt><dd><span>neqb' is defined</span></dd>
 </dl>
 </div>
-<p>しかしながら、替わりに型クラスの特別なサポートを持った束縛子の一般化を使うべきです。</p>
+<p>しかしながら、替わりに型クラスの特別なサポートを持った束縛子の一般化を使うべきです:</p>
 <ul class="simple">
 <li><p>それらは型クラスの引数の状態を自動的に最大限暗黙に設定し、クラスメソッドのように簡単に使える派生関数を作ります。上の例では、<code class="docutils literal notranslate"><span class="pre">A</span></code> と <code class="docutils literal notranslate"><span class="pre">eqa</span></code> が最大限暗黙に設定されるはずです。</p></li>
 <li><p>それらは部分適用された型クラスの暗黙的な量化をサポートします (<a class="reference internal" href="../language/gallina-extensions.html#implicit-generalization"><span class="std std-ref">暗黙の一般化</span></a>)。型クラスの束縛子の一部として与えられなかった引数も自動的に一般化されます。</p></li>
 <li><p>それらは <a class="reference internal" href="#superclasses"><span class="std std-ref">スーパークラス</span></a> に於ける暗黙の量化もサポートします。</p></li>
 </ul>
-<p>以前の例に続き、次のように書くことが出来ます。</p>
+<p>以前の例に続き、次のように書くことが出来ます:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Generalizable</span><span> </span><span class="coqdoc-keyword">Variables</span><span> </span><span class="coqdoc-var">A</span><span> </span><span class="coqdoc-var">B</span><span> </span><span class="coqdoc-var">C</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">neqb_implicit</span><span> `{</span><span class="coqdoc-var">eqa</span><span> : </span><span class="coqdoc-var">EqDec</span><span> </span><span class="coqdoc-var">A</span><span>} (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">A</span><span>) := </span><span class="coqdoc-var">negb</span><span> (</span><span class="coqdoc-var">eqb</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>).</span></dt><dd><span>neqb_implicit is defined</span></dd>
 </dl>
 </div>
-<p>ここでは <code class="docutils literal notranslate"><span class="pre">A</span></code> は暗黙的に一般化され、結果の関数は上のそれに等しくなります。</p>
+<p>ここでは <code class="docutils literal notranslate"><span class="pre">A</span></code> は暗黙的に一般化され、結果として得られる関数は上のそれに等しくなります。</p>
 </div>
 <div class="section" id="parameterized-instances">
 <h2>パラメータ化されたインスタンス<a class="headerlink" href="#parameterized-instances" title="このヘッドラインへのパーマリンク">¶</a></h2>
@@ -446,7 +446,7 @@ x, y : </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-
 <dt class="coqtop-hidden"><span class="coqdoc-keyword">Abort</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-<p>これらのインスタンスはインスタンスヒントデータベースの中の補題だけでなく使われます。</p>
+<p>これらのインスタンスは単にインスタンスヒントデータベースの中の補題として使われます。</p>
 </div>
 <div class="section" id="sections-and-contexts">
 <h2>セクションとコンテキスト<a class="headerlink" href="#sections-and-contexts" title="このヘッドラインへのパーマリンク">¶</a></h2>
@@ -486,13 +486,13 @@ Argument scopes are [type_scope _]
 Expands to: Constant Top.option_eqb</span></dd>
 </dl>
 </div>
-<p>ここで Global 修飾子はセクションの終わりで、かつてそれが使う文脈変数により一般化されていたインスタンスを再宣言します。</p>
+<p>ここで Global 修飾子はセクションの終わりでインスタンスを再宣言します。それはそれまで使うコンテキスト変数により一般化されていたものです。</p>
 </div>
 <div class="section" id="building-hierarchies">
 <h2>階層の構築<a class="headerlink" href="#building-hierarchies" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="superclasses">
 <span id="id2"></span><h3>スーパークラス<a class="headerlink" href="#superclasses" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>他のクラスによってクラスをパラメタライズし、クラスとスーパークラスの階層を生成することも出来ます。同様に、束縛コンテキストとしてスーパークラスを与えます:</p>
+<p>他のクラスによってクラスをパラメタライズし、クラスとスーパークラスの階層を生成することも出来ます。束縛コンテキストと同様に、スーパークラスを与えます:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Class</span><span> </span><span class="coqdoc-var">Ord</span><span> `(</span><span class="coqdoc-var">E</span><span> : </span><span class="coqdoc-var">EqDec</span><span> </span><span class="coqdoc-var">A</span><span>) := { </span><span class="coqdoc-var">le</span><span> : </span><span class="coqdoc-var">A</span><span> -&gt; </span><span class="coqdoc-var">A</span><span> -&gt; </span><span class="coqdoc-var">bool</span><span> }.</span></dt><dd><span>Ord is defined
@@ -504,19 +504,19 @@ le is defined</span></dd>
   { le : A -&gt; A -&gt; bool }.
 </pre></div>
 </div>
-<p>この定義が意味するところは <code class="docutils literal notranslate"><span class="pre">Ord</span></code> クラスのインスタンスは <code class="docutils literal notranslate"><span class="pre">EqDec</span></code> のインスタンスを持っていなければならないということです。サブクラスのパラメータは少なくともそのスーパークラスのパラメータ全てをそれらの出現順で含みます (ここでは A ただ一つです)。見てきたように、<code class="docutils literal notranslate"><span class="pre">Ord</span></code> は二つのパラメータ: <code class="docutils literal notranslate"><span class="pre">A</span></code> 型と <code class="docutils literal notranslate"><span class="pre">EqDec</span> <span class="pre">A</span></code> 型の <code class="docutils literal notranslate"><span class="pre">E</span></code> を持つレコードとして符号化されます。しかし、それでもそれを一般化束縛子の中で単一パラメータを持つかのように使うことができます: スーパークラスの一般化は自動的に行われます。</p>
+<p>この定義が意味するところは <code class="docutils literal notranslate"><span class="pre">Ord</span></code> クラスのインスタンスは <code class="docutils literal notranslate"><span class="pre">EqDec</span></code> のインスタンスを持っていなければならないということです。サブクラスのパラメータは少なくともそのスーパークラスのパラメータ全てをそれらの出現順で含みます (ここでは A ただ一つです)。これまで見てきたように、<code class="docutils literal notranslate"><span class="pre">Ord</span></code> は二つのパラメータ: <code class="docutils literal notranslate"><span class="pre">A</span></code> 型と <code class="docutils literal notranslate"><span class="pre">EqDec</span> <span class="pre">A</span></code> 型の <code class="docutils literal notranslate"><span class="pre">E</span></code> を持つレコードとして符号化されます。しかし、それでもそれを一般化束縛子の中で単一パラメータを持つかのように使うことができます: スーパークラスの一般化は自動的に行われます。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">le_eqb</span><span> `{</span><span class="coqdoc-var">Ord</span><span> </span><span class="coqdoc-var">A</span><span>} (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">A</span><span>) := </span><span class="coqdoc-var">andb</span><span> (</span><span class="coqdoc-var">le</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>) (</span><span class="coqdoc-var">le</span><span> </span><span class="coqdoc-var">y</span><span> </span><span class="coqdoc-var">x</span><span>).</span></dt><dd><span>le_eqb is defined</span></dd>
 </dl>
 </div>
-<p>場合によっては、構造の共有を指定できるようにするため、スーパークラスを明示的に与えたいかもしれません。それは通常の束縛子の中で直接行う、そしてクラス束縛子の中では <code class="docutils literal notranslate"><span class="pre">!</span></code> 修飾子を使うことで可能です。例えば:</p>
+<p>場合によっては、構造の共有を指定できるようにするため、スーパークラスを明示的に与えたいかもしれません。それは通常の束縛子の中では直接行い、そしてクラス束縛子の中では <code class="docutils literal notranslate"><span class="pre">!</span></code> 修飾子を使うことで可能です。例えば:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">lt</span><span> `{</span><span class="coqdoc-var">eqa</span><span> : </span><span class="coqdoc-var">EqDec</span><span> </span><span class="coqdoc-var">A</span><span>, ! </span><span class="coqdoc-var">Ord</span><span> </span><span class="coqdoc-var">eqa</span><span>} (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">A</span><span>) := </span><span class="coqdoc-var">andb</span><span> (</span><span class="coqdoc-var">le</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>) (</span><span class="coqdoc-var">neqb</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>).</span></dt><dd><span>lt is defined</span></dd>
 </dl>
 </div>
-<p>この <code class="docutils literal notranslate"><span class="pre">!</span></code> 修飾子は束縛子が解析されCoqの通常の解釈に解析される方法を切り替えます。特に、例で示したように、それは可能であれば暗黙引数の機構を使います。</p>
+<p>この <code class="docutils literal notranslate"><span class="pre">!</span></code> 修飾子は束縛子が解析される方法を切り替え、Coqの通常の解釈に戻します。特に、例で示したように、それは可能であれば暗黙引数の機構を使います。</p>
 </div>
 <div class="section" id="substructures">
 <h3>部分構造<a class="headerlink" href="#substructures" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -558,13 +558,13 @@ PreOrder_Transitive is defined</span></dd>
 <span class="target" id="singleton-class"></span><dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Class</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-binders"><span class="hole">binders</span></a></span><span class="notation-sup">?</span></span> <span>:</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-sort"><span class="hole">sort</span></a></span><span class="notation-sup">?</span></span> <span>:=</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>:</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole">term</span></a></span></code></dt>
-<dd><p>この類型は単一のメソッドを持つ <em>シングルトン</em> クラスを定義します。このシングルトンクラスはいわゆる定義クラスといわれ、<code class="docutils literal notranslate"><span class="pre">ident</span> <span class="pre">binders</span> <span class="pre">:=</span> <span class="pre">term</span></code> という定義として単純に表現され、そのインスタンスはこの型のオブジェクトそれ自体です。定義クラスはレコードの中に包まれておらず、そのようなクラスのインスタンスの自明な射影はそのインスタンスそれ自身と変換できます。これは簡単に既存のオブジェクトのインスタンスを作り、そして無駄な射影を挿入しないことで証明サイズを縮小するのに便利です。そのクラス定数自身は(訳注: 制約を)解消する間は厳格に決定され、そのためそのクラスの抽象は維持されます。</p>
+<dd><p>この類型コマンドは単一のメソッドを持つ <em>シングルトン</em> クラスを定義します。このシングルトンクラスはいわゆる定義クラスといわれ、<code class="docutils literal notranslate"><span class="pre">ident</span> <span class="pre">binders</span> <span class="pre">:=</span> <span class="pre">term</span></code> という定義として単純に表現され、そのインスタンスはこの型のオブジェクトそれ自体です。定義クラスはレコードの中に包まれておらず、そのようなクラスのインスタンスの自明な射影はそのインスタンスそれ自身と変換できます。これは簡単に既存のオブジェクトのインスタンスを作り、そして無駄な射影を挿入しないことで証明サイズを縮小するのに役立ちます。そのクラス定数自身は(訳注: 制約を)解消する間は固定的に指定され、そのためそのクラスの抽象は維持されます。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt id="coq:cmd.existing-class">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Existing</span> <span>Class</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.existing-class" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>この派生形は定数や帰納的定義から事後的にクラスを定義します。メソッドやインスタンスは定義されません。</p>
+<dd><p>この派生形は定数や帰納的定義から事後的にクラスを宣言します。メソッドやインスタンスは定義されません。</p>
 </dd></dl>
 
 <dl class="cmd">
@@ -573,7 +573,7 @@ PreOrder_Transitive is defined</span></dd>
 <dd></dd></dl>
 
 <p><a class="reference internal" href="#coq:cmd.instance" title="Instance"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Instance</span></code></a> コマンドは <code class="docutils literal notranslate"><span class="pre">ident</span></code> という名前の型クラスインスタンスを宣言するのに使われます。クラス <a class="reference internal" href="#coq:cmd.class" title="Class"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Class</span></code></a> はパラメータ <code class="docutils literal notranslate"><span class="pre">t1</span></code> から <code class="docutils literal notranslate"><span class="pre">tn</span></code> とフィールド <code class="docutils literal notranslate"><span class="pre">b1</span></code> から <code class="docutils literal notranslate"><span class="pre">bi</span></code> を伴い、各フィールドはそのクラスの宣言されたフィールドでなければなりません。足りないフィールドは対話証明モードで埋められなければなりません。</p>
-<p>パラメータ化されたインスタンスを宣言するためにインスタンスの名前の後かつコロンの前に <code class="docutils literal notranslate"><span class="pre">binders</span></code> の任意の文脈を置くことができます。任意に優先度を宣言することが出来、<a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.auto" title="auto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">auto</span></code></a> ヒントのためのもののように 0 が最高優先度です。優先度が指定されないならば、デフォルトのそのインスタンスの非依存束縛子の数になります。</p>
+<p>パラメータ化されたインスタンスを宣言するためにインスタンスの名前の後かつコロンの前に <code class="docutils literal notranslate"><span class="pre">binders</span></code> の任意の文脈を置くことができます。任意に優先度を宣言することが出来、<a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.auto" title="auto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">auto</span></code></a> ヒントのためのもののように 0 が最高優先度です。優先度が指定されないならば、デフォルトはそのインスタンスの非依存束縛子の数になります。</p>
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Instance</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-binders"><span class="hole">binders</span></a></span><span class="notation-sup">?</span></span> <span>:</span> <span>forall</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-binders"><span class="hole">binders</span></a></span><span class="notation-sup">?</span></span><span>,</span> <span>Class</span> <span>t1</span> <span>…</span> <span>tn</span> <span>[|</span> <span>priority]</span> <span>:=</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole">term</span></a></span></code></dt>
@@ -602,7 +602,7 @@ PreOrder_Transitive is defined</span></dd>
 <dl class="cmd">
 <dt id="coq:cmd.existing-instance">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Existing</span> <span>Instance</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span><span class="notation-sup">+</span></span> <span>[|</span> <span>priority]</span></span></code><a class="headerlink" href="#coq:cmd.existing-instance" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>このコマンドは定数の任意のリストを任意に優先度を伴ってインスタンスデータベースへ追加します。その型は適用された型クラスで終わります。それはセクションの終わりでインスタンスを再宣言したり、または構造の射影をインスタンスとして宣言するのに使えます。これは <a class="reference internal" href="generalized-rewriting.html#coq:cmd.print-instances" title="Print Instances"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Instances</span></code></a> できるインスタンスを登録することを除いて <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Resolve</span> <span class="pre">ident</span> <span class="pre">:</span> <span class="pre">typeclass_instances</span></code> に相当します。</p>
+<dd><p>このコマンドは、その型の最後に適用された型クラスが付くような定数の任意のリストを、任意に優先度を伴ってインスタンスデータベースへ追加します。それはセクションの終わりでインスタンスを再宣言したり、または構造の射影をインスタンスとして宣言するのに使えます。これは <a class="reference internal" href="generalized-rewriting.html#coq:cmd.print-instances" title="Print Instances"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Instances</span></code></a> のためにインスタンスを登録することを除いて <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Resolve</span> <span class="pre">ident</span> <span class="pre">:</span> <span class="pre">typeclass_instances</span></code> に相当します。</p>
 </dd></dl>
 
 <dl class="cmd">
@@ -616,15 +616,15 @@ PreOrder_Transitive is defined</span></dd>
 <code class="sig-name descname"><span class="notation"><span>typeclasses</span> <span>eauto</span></span></code><a class="headerlink" href="#coq:tacn.typeclasses-eauto" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>このタクティックは <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.eauto" title="eauto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">eauto</span></code></a> や <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.auto" title="auto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">auto</span></code></a> と異なる(訳注: 制約)解消エンジンを使います。主な違いは以下です:</p>
 <ul>
-<li><p><a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.eauto" title="eauto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">eauto</span></code></a> や <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.auto" title="auto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">auto</span></code></a> と逆に、(Coq 8.6 を基点として) 新しい証明エンジンの中で全体が完了します、依存サブゴールの中でバックトラッキングが可能で、かつゴールの見送りがサポートされていることを意味します。<code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> はマルチゴールタクティックです。それは完全に独立したサブゴール上でのバックトラッキングを避けるため、サブゴール間の依存を解析します。</p></li>
-<li><p>引数なしで呼ばれたときは、<code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> はデフォルトで (コアの替わりに) <code class="docutils literal notranslate"><span class="pre">typeclass_instances</span></code> データベースを使います。依存サブゴールは自動的に先送りにされ、先送りされたゴールは (Coq 8.5 の振る舞いに従うと) 解消終了の後まで残ることがあります。</p>
+<li><p><a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.eauto" title="eauto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">eauto</span></code></a> や <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.auto" title="auto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">auto</span></code></a> とは異なり、(Coq 8.6 を基点として) 新しい証明エンジンの中で(訳注: 制約)解決全体が完了し、これは依存サブゴールの中でバックトラッキングが可能で、かつゴールの見送りがサポートされていることを意味します。<code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> はマルチゴールタクティックです。それは完全に独立したサブゴール上でのバックトラッキングを避けるため、サブゴール間の依存を解析します。</p></li>
+<li><p>引数なしで呼ばれたときは、<code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> はデフォルトで (コアの替わりに) <code class="docutils literal notranslate"><span class="pre">typeclass_instances</span></code> データベースを使います。依存サブゴールは自動的に先送りにされ、先送りされたゴールは (Coq 8.5 の振る舞いに従い) 解消終了の後まで残ることがあります。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>Coq 8.6 を基点として、 <code class="docutils literal notranslate"><span class="pre">all:once</span> <span class="pre">(typeclasses</span> <span class="pre">eauto)</span></code> は宣言されたクラスサブゴール <em>だけ</em> が型推論中に解消の開始と考えられる場合を除き、精細化/型推論の間にそれが呼ばれたとき型クラス解決の間に何が起きるかを忠実に模倣し、一方 <code class="docutils literal notranslate"><span class="pre">all</span></code> は非クラスサブゴールを選択できる。精細化エンジンがバックトラック出来るようになったとき未来のバージョンではそれは <code class="docutils literal notranslate"><span class="pre">all:typeclasses</span> <span class="pre">eauto</span></code> に移動するかもしれない。</p>
+<p>Coq 8.6 を基点として、 <code class="docutils literal notranslate"><span class="pre">all:once</span> <span class="pre">(typeclasses</span> <span class="pre">eauto)</span></code> は宣言されたクラスサブゴール <em>だけ</em> が型推論中に解消の開始と考えられる場合を除き、精細化/型推論の間にそれが呼ばれたとき型クラス解決の間に何が起きるかを忠実に模倣し、一方 <code class="docutils literal notranslate"><span class="pre">all</span></code> は非クラスサブゴールを選択できます。精細化エンジンがバックトラック出来るようになったとき、未来のバージョンではそれは <code class="docutils literal notranslate"><span class="pre">all:typeclasses</span> <span class="pre">eauto</span></code> に移行するかもしれません。</p>
 </div>
 </li>
-<li><p>特定のデータベース (例. with) を伴って呼ばれたとき、<code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> は先送りにされたゴールを検索中のどの時点でもとどまることを許し、型クラスゴールを他と同じように扱います。</p></li>
-<li><p>データベースの透過性情報はそれらの中で定義された全てのヒントと一貫して使用されます。それは単一化器を呼ぶときに常に使われます。局所的な仮定を考えるとき、我々は与えられた最初のヒントデータベースの透過性状態を使います。展開可能変数と定数を伴う (例えば <a class="reference internal" href="../proof-engine/tactics.html#coq:cmd.create-hintdb" title="Create HintDb"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Create</span> <span class="pre">HintDb</span></code></a> で作成された) 空のデータベースを <code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> の最初の引数として使い、従って単一化の間、局所的な仮定を使う解消に完全変換を使わせます。</p></li>
+<li><p>特定のデータベースを伴って呼ばれたとき (例. with) 、<code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> は先送りにされたゴールを検索中のどの時点でも残すことを許し、型クラスゴールを他と同じように扱います。</p></li>
+<li><p>データベースの透過性情報はそれらの中で定義された全てのヒントと一貫して使用されます。それは単一化器を呼ぶときに常に使われます。局所的な仮定を考えるとき、我々は与えられた最初のヒントデータベースの透過性状態を使います。展開可能変数と定数を伴う (例えば <a class="reference internal" href="../proof-engine/tactics.html#coq:cmd.create-hintdb" title="Create HintDb"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Create</span> <span class="pre">HintDb</span></code></a> で作成された) 空のデータベースを <code class="docutils literal notranslate"><span class="pre">typeclasses</span> <span class="pre">eauto</span></code> の最初の引数として使うことにより、単一化の間局所的な仮定を使う(訳注: 制約の)解消に完全変換を使わせます。</p></li>
 </ul>
 <dl class="cmdv">
 <dt>
@@ -646,7 +646,7 @@ PreOrder_Transitive is defined</span></dd>
 <dl class="tacn">
 <dt id="coq:tacn.autoapply">
 <code class="sig-name descname"><span class="notation"><span>autoapply</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole">term</span></a> <span>with</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:tacn.autoapply" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>タクティック <code class="docutils literal notranslate"><span class="pre">autoapply</span></code> はヒントデータベース ident の透過性情報を使用し term を適用し、型クラス解決は <em>行いません</em>。これは <a class="reference internal" href="../proof-engine/tactics.html#coq:cmdv.hint-extern" title="Hint Extern"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Extern</span></code></a> の中で (ヒントデータベース <code class="docutils literal notranslate"><span class="pre">typeclass_instances</span></code> の中の) 型クラスインスタンスのために、ヒントの適用時にローカルに型クラス解決を行うよりむしろ補題の適用によって作られた型クラスサブゴール上でバックトラッキングを許すために使うことができます。</p>
+<dd><p>タクティック <code class="docutils literal notranslate"><span class="pre">autoapply</span></code> はヒントデータベース ident の透過性情報を使用し term を適用し、型クラス解決は <em>行いません</em> 。これは <a class="reference internal" href="../proof-engine/tactics.html#coq:cmdv.hint-extern" title="Hint Extern"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Extern</span></code></a> の中で (ヒントデータベース <code class="docutils literal notranslate"><span class="pre">typeclass_instances</span></code> の中の) 型クラスインスタンスのために、ヒントの適用時にローカルに型クラス解決を行うのではなく、補題の適用によって作られた型クラスサブゴール上でバックトラッキングを許すために使うことができます。</p>
 </dd></dl>
 
 <div class="section" id="typeclasses-transparent-typclasses-opaque">
@@ -660,36 +660,36 @@ PreOrder_Transitive is defined</span></dd>
 <dl class="cmd">
 <dt id="coq:cmd.typeclasses-opaque">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Typeclasses</span> <span>Opaque</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span><span class="notation-sup">+</span></span></span></code><a class="headerlink" href="#coq:cmd.typeclasses-opaque" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>型クラス検索のために識別子を不透明にします。いくつかの定数がいくらかの単一化を防ぎ、(訳注: 型クラス)解決を失敗させるのに便利です。それは不動点や省略形のように見えない何かのような証明探索中にけっして展開されるべきではない定数を宣言するのにも便利です。これはさらにそのような固定的な定数によってインデックス出来る型クラスマップによって証明探索を高速化出来ます (see <a class="reference internal" href="../proof-engine/tactics.html#thehintsdatabasesforautoandeauto"><span class="std std-ref">The hints databases for auto and eauto</span></a>)。</p>
+<dd><p>型クラス検索のために識別子を不透明にします。ある定数がいくつかの単一化を阻み、(訳注: 型クラス)解決を失敗させる時に有益です。それは不動点や省略形のように見えない何かのような、証明探索中にけっして展開されるべきではない定数を宣言するのにも便利です。これはさらに、そのような固定的な定数によってインデックス出来る型クラスマップによって証明探索を高速化出来ます (see <a class="reference internal" href="../proof-engine/tactics.html#thehintsdatabasesforautoandeauto"><span class="std std-ref">The hints databases for auto and eauto</span></a>)。</p>
 </dd></dl>
 
 <p>デフォルトでは、全ての定数と局所変数は透明とみなされます。以下のような、型を省略するために使われる定数を不透明にしないように注意するべきです:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>relation A := A -&gt; A -&gt; Prop.
 </pre></div>
 </div>
-<p>これは <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Transparent,</span> <span class="pre">Opaque</span> <span class="pre">ident</span> <span class="pre">:</span> <span class="pre">typeclass_instances</span></code> に相当します。(訳注: 相当しません)</p>
+<p>これは <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Transparent,</span> <span class="pre">Opaque</span> <span class="pre">ident</span> <span class="pre">:</span> <span class="pre">typeclass_instances</span></code> に相当します。</p>
 </div>
 <div class="section" id="options">
 <h3>Options<a class="headerlink" href="#options" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="flag">
 <dt id="coq:flag.typeclasses-dependency-order">
 <em class="property"><span class="sigannot">Flag</span></em> <code class="sig-name descname"><span class="notation"><span>Typeclasses</span> <span>Dependency</span> <span>Order</span></span></code><a class="headerlink" href="#coq:flag.typeclasses-dependency-order" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>このオプション (8.6 からデフォルトで有効になった) はサブゴール間の依存順序を遵守し、その意味するところは、以前 (Coq 8.5 以下) では他のサブゴールが依存するサブゴールが優先され、一方非依存サブゴールは依存するもの前に置かれるということです。これは極めて異なった証明探索の性能挙動を示します。</p>
+<dd><p>このオプション (8.6 からデフォルトで有効になった) はサブゴール間の依存順序を遵守し、その意味するところは、以前 (Coq 8.5 以下) では他のサブゴールが依存するサブゴールが優先され、一方非依存サブゴールは依存するもの前に置かれるということです。これは極めて異なった証明探索の性能挙動を示す可能性があります。</p>
 </dd></dl>
 
 <dl class="flag">
 <dt id="coq:flag.typeclasses-filtered-unification">
 <em class="property"><span class="sigannot">Flag</span></em> <code class="sig-name descname"><span class="notation"><span>Typeclasses</span> <span>Filtered</span> <span>Unification</span></span></code><a class="headerlink" href="#coq:flag.typeclasses-filtered-unification" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>このオプションは Coq 8.6 から使用可能でデフォルトで無効にされており、ヒント適用手続き filter-then-unify 戦略に切り替えます。ヒントを適用するため、まずそのゴールが推論やそのヒントによって指定されたパターンに構文的に <em>マッチする</em> かを検査し、そうなってはじめてそのヒントの結論とゴールを <em>単一化</em> しようと試みます。これは単一化を呼ぶ頻度が低くなることで劇的にパフォーマンスを改善でき、構文的パターンへのマッチングが非常に高速になります。これはインスタンスを持ち出すことに関して更なる制御性を提供します。例えばある定数を、その場所にホールがあるゴール上でけっして適用させないパターン中に明示的に出現することを強制します。</p>
+<dd><p>このオプションは Coq 8.6 から使用可能でデフォルトで無効にされており、ヒント適用手続き filter-then-unify 戦略に切り替えます。ヒントを適用するため、まずそのゴールが推論やそのヒントによって指定されたパターンに構文的に <em>マッチする</em> かを検査し、そうなってはじめてそのヒントの結論とゴールを <em>単一化</em> しようと試みます。これは単一化を呼ぶ頻度が低くなることで劇的にパフォーマンスを改善でき、構文的パターンへのマッチングが非常に高速になります。これはインスタンスを持ち出すことに関して更なる制御性をも提供します。例えば、ある定数をパターン中に明示的に出現することを強制し、その場所にホールがあるゴール上でけっして適用させなくなります。</p>
 </dd></dl>
 
 <dl class="flag">
 <dt id="coq:flag.typeclasses-limit-intros">
 <em class="property"><span class="sigannot">Flag</span></em> <code class="sig-name descname"><span class="notation"><span>Typeclasses</span> <span>Limit</span> <span>Intros</span></span></code><a class="headerlink" href="#coq:flag.typeclasses-limit-intros" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>このオプション (デフォルトで有効) は一般的な証明項の中で (関数的な) イータ展開を避けながらヒントを適用する能力を制御します。それはある積の中で直接マッチする積を伴うゴールにイントロダクションを避けて適用すると結論を出すヒントを認めることで行います。</p>
+<dd><p>このオプション (デフォルトで有効) は生成された証明項の中で (関数的な) イータ展開を避けながらヒントを適用する能力を制御します。それはある積の中でマッチする積を伴うゴールに、イントロダクションを避けて直接積を適用して結論を出すヒントを認めることで行います。</p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
-<p>これはヒント節の動的な再構築を要求するため高価になりえます、そして積の導入規則の反転可能性から恩恵を得られず、結果として証明探索がより高価になる (つまり、よりバックトラッキングが役に立たなくなる) 可能性があります 。</p>
+<p>これはヒント節の動的な再構築を要求するため高くつく可能性があります、そして積の導入規則の反転可能性から恩恵を得られず、結果として証明探索がより高価になる (つまり、よりバックトラッキングが役に立たなくなる) 可能性があります 。</p>
 </div>
 </dd></dl>
 
@@ -732,9 +732,9 @@ PreOrder_Transitive is defined</span></dd>
 <dl class="flag">
 <dt id="coq:flag.refine-instance-mode">
 <em class="property"><span class="sigannot">Flag</span></em> <code class="sig-name descname"><span class="notation"><span>Refine</span> <span>Instance</span> <span>Mode</span></span></code><a class="headerlink" href="#coq:flag.refine-instance-mode" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>このオプションは Instance コマンドを通じて行われるインスタンス宣言の振る舞いの切り替えるを認めます。</p>
+<dd><p>このオプションは Instance コマンドを通じて行われるインスタンス宣言の振る舞いの切り替えを認めます。</p>
 <ul class="simple">
-<li><p>それが有効 (デフォルト) なとき、証明項に未解決のホールがあるインスタンスは残っている証明課題を伴って証明モードを開きます。</p></li>
+<li><p>それが有効 (デフォルト) なとき、証明項に未解決のホールを持つインスタンスは、残っている証明すべき課題を伴って無言で証明モードを開きます。</p></li>
 <li><p>無効なときは、替わりにエラーを伴って失敗します。</p></li>
 </ul>
 </dd></dl>
