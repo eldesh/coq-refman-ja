@@ -118,6 +118,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A binder can also be any pattern prefixed by a quote, e.g. :g:`'(x,y)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163532Z" creationid="eldesh" creationdate="20200310T163532Z">
+        <seg>束縛子は頭にクオートの付いたどんなパターンにもなることが出来ます。例 :g:`'(x,y)`。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A binding is represented by an identifier.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162804Z" creationid="eldesh" creationdate="20200310T162804Z">
+        <seg>束縛は識別子によって表現されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A canonical structure is an instance of a record/structure type that can be used to solve unification problems involving a projection applied to an unknown structure instance (an implicit argument) and a value.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T182609Z" creationid="eldesh" creationdate="20191225T182543Z">
@@ -443,6 +459,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T202528Z" creationid="eldesh" creationdate="20200103T202528Z">
         <seg>:cmd:`Class` と :cmd:`Instance` Vernacular コマンドの他に、型クラスに関連するコマンドがいくつかあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Binders</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162558Z" creationid="eldesh" creationdate="20200310T162558Z">
+        <seg>束縛子</seg>
       </tuv>
     </tu>
     <tu>
@@ -1270,6 +1294,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the binding variable is not used in the expression, the identifier can be replaced by the symbol :g:`_`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162854Z" creationid="eldesh" creationdate="20200310T162854Z">
+        <seg>もし束縛変数がその式の中で使われないならば、その識別子は記号 :g:`_` で置き換えることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the optional ``Sorted`` option is given, each universe will be made equivalent to a numbered label reflecting its level (with a linear ordering) in the universe hierarchy.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T101123Z" creationid="eldesh" creationdate="20191226T200220Z">
@@ -1338,6 +1370,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T183722Z" creationid="eldesh" creationdate="20200103T201606Z">
         <seg>このコマンドはあるモジュール型の中で、対応する具体的なインスタンスがこのモジュール型で何らかの実装として存在するべきだということを宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a let-binder, only one variable can be introduced at the same time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T164948Z" creationid="eldesh" creationdate="20200310T164948Z">
+        <seg>let-束縛子では、高々一つの変数が同時に導入され得ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1451,6 +1491,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T143308Z" creationid="eldesh" creationdate="20191226T143308Z">
         <seg>そのような場合、恐らく文脈にいくつかの意図しない一般化された変数が含まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the case of :g:`fun` and :g:`forall`, it is intended that at least one binder of the list is an assumption otherwise fun and forall gets identical.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T170017Z" creationid="eldesh" creationdate="20200310T170017Z">
+        <seg>:g:`fun` と :g:`forall` の場合は、最低一つの束縛子のリストが前提であることが意図され、そうでなければ fun と forall は同一になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1687,6 +1735,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is also possible to give the type of the variable as follows: :n:`(@ident : @type := @term)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T165034Z" creationid="eldesh" creationdate="20200310T165034Z">
+        <seg>以下のように変数の型を与えることも出来ます: :n:`(@ident : @type := @term)` 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also useful to declare constants which should never be unfolded during proof-search, like fixpoints or anything which does not look like an abbreviation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T183020Z" creationid="eldesh" creationdate="20200106T184603Z">
@@ -1887,6 +1943,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lists of :token:`binder` are allowed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T165105Z" creationid="eldesh" creationdate="20200310T165055Z">
+        <seg>:token:`binder` のリストが認められます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Make the identifiers opaque for typeclass search.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T123228Z" creationid="eldesh" creationdate="20200106T123228Z">
@@ -1931,6 +1995,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T131318Z" creationid="eldesh" creationdate="20191221T221053Z">
         <seg>さらに以下のものが定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, parentheses can be omitted in the case of a single sequence of bindings sharing the same type (e.g.: :g:`fun (x y z : A) =&gt; t` can be shortened in :g:`fun x y z : A =&gt; t`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T170618Z" creationid="eldesh" creationdate="20200310T170152Z">
+        <seg>さらに、同じ型を共有する束縛の単一の列の場合には、括弧も除去することが出来ます (例: :g:`fun (x y z : A) =&gt; t` は :g:`fun x y z : A =&gt; t` に短縮されます)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2514,6 +2586,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some constructions allow the binding of a variable to value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163631Z" creationid="eldesh" creationdate="20200310T163631Z">
+        <seg>幾つかの構文は変数から値への束縛を認めます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Space, newline and horizontal tabulation are considered as blanks.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T092720Z" creationid="eldesh" creationdate="20200201T092720Z">
@@ -2895,6 +2975,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The entry :token:`binder` of the grammar accepts either an assumption binder as defined above or a let-binder.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T164829Z" creationid="eldesh" creationdate="20200310T164829Z">
+        <seg>文法の :token:`binder` エントリーは、束縛子は上で定義されたという仮定または let-束縛子のどちらかを受理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The entry ``unicode-letter`` non-exhaustively includes Latin, Greek, Gothic, Cyrillic, Arabic, Hebrew, Georgian, Hangul, Hiragana and Katakana characters, CJK ideographs, mathematical letter-like symbols, hyphens, non-breaking space, … The entry ``unicode-id-part`` non-exhaustively includes symbols for prime letters and subscripts.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T094856Z" creationid="eldesh" creationdate="20200201T094316Z">
@@ -3252,6 +3340,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The notation in the latter case is :n:`(@ident := @term)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T164850Z" creationid="eldesh" creationdate="20200310T164850Z">
+        <seg>後者の場合の表記法は :n:`(@ident := @term)` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The notation “``entry sep … sep entry``” stands for a non empty sequence of expressions parsed by entry and separated by the literal “``sep``” [1]_.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T095650Z" creationid="eldesh" creationdate="20200126T160957Z">
@@ -3579,6 +3675,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144950Z" creationid="yamarten" creationdate="20181104T144950Z">
         <seg>総合索引に加え、タクティックやコマンド、エラーメッセージ・警告に特化した索引があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is also a notation for a sequence of binding variables sharing the same type: :n:`({+ @ident} : @type)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163310Z" creationid="eldesh" creationdate="20200310T163244Z">
+        <seg>同じ型を共有する束縛変数の列のための表記法もあります: :n:`({+ @ident} : @type)`。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4004,6 +4108,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144930Z" creationid="yamarten" creationdate="20181104T144930Z">
         <seg>この文書はリファレンスマニュアルであり、通読するものではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is called a “let-binder”.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163647Z" creationid="eldesh" creationdate="20200310T163647Z">
+        <seg>これは “let-束縛子” と呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4558,6 +4670,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Various constructions such as :g:`fun`, :g:`forall`, :g:`fix` and :g:`cofix` *bind* variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162738Z" creationid="eldesh" creationdate="20200310T162738Z">
+        <seg>:g:`fun`、:g:`forall`、:g:`fix` それに :g:`cofix` のような様々な構文は変数を *束縛* します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Various informations can be found in the following documents:</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145944Z" creationid="yamarten" creationdate="20181104T145944Z">
@@ -4796,6 +4916,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T134252Z" creationid="eldesh" creationdate="20191225T134252Z">
         <seg>:flag:`Primitive Projections` オプションが有効な時、レコード型の定義は意味を変えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the type of a bound variable cannot be synthesized by the system, it can be specified with the notation :n:`(@ident : @type)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163152Z" creationid="eldesh" creationdate="20200310T163135Z">
+        <seg>束縛された変数の型がシステムによって合成出来ないときは、:n:`(@ident : @type)` という表記法によって指定することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
