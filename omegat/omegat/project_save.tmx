@@ -14,6 +14,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>*Qualified identifiers* (:token:`qualid`) denote *global constants* (definitions, lemmas, theorems, remarks or facts), *global variables* (parameters or axioms), *inductive types* or *constructors of inductive types*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155358Z" creationid="eldesh" creationdate="20200310T155358Z">
+        <seg>*量化された識別子* (:token:`qualid`) は *グローバル定数* (定義、補題、定理、注意、事実)、*グローバル変数* (パラメータや公理)、*帰納的型* や *帰納的型のコンストラクタ*。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Simple identifiers* (or shortly :token:`ident`) are a syntactic subset of qualified identifiers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155437Z" creationid="eldesh" creationdate="20200310T155437Z">
+        <seg>*単純識別子* (あるいは短く :token:`ident`) は量化された識別子の構文的なサブセットです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>1 is the default level.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T205330Z" creationid="eldesh" creationdate="20200106T205330Z">
@@ -26,6 +42,30 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T205435Z" creationid="eldesh" creationdate="20200106T205435Z">
         <seg>2 は追加の情報を表示します。例えばタクティックやゴールの先送りなどです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:g:`Prop` is the universe of *logical propositions*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160945Z" creationid="eldesh" creationdate="20200310T160926Z">
+        <seg>:g:`Prop` は *論理的な主張* の宇宙です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:g:`Set` is is the universe of *program types* or *specifications*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161718Z" creationid="eldesh" creationdate="20200310T161718Z">
+        <seg>:g:`Set` は *プログラム型* または *仕様* の宇宙です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:g:`Type` is the type of :g:`Prop` and :g:`Set`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161853Z" creationid="eldesh" creationdate="20200310T161853Z">
+        <seg>:g:`Type` は :g:`Prop` と :g:`Set` の型です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -675,6 +715,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Coq terms are typed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T151833Z" creationid="eldesh" creationdate="20200310T151833Z">
+        <seg>Coq の項は型付けされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Coq types are recognized by the same syntactic class as :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T152237Z" creationid="eldesh" creationdate="20200310T152237Z">
+        <seg>Coq の型は :token:`term` と同じ構文クラスと認識されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Declares variables according to the given binding context, which might use :ref:`implicit-generalization`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T185016Z" creationid="eldesh" creationdate="20200103T203306Z">
@@ -816,6 +872,14 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145621Z" creationid="yamarten" creationdate="20181104T145621Z">
         <seg>タクティックの具体例は :ref:`detailedexamplesoftactics` の章で説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Extensions of this syntax are given in Chapter :ref:`extensionsofgallina`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T150752Z" creationid="eldesh" creationdate="20200310T150752Z">
+        <seg>この構文の拡張は章 :ref:`extensionsofgallina` で与えられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1037,6 +1101,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How to customize the syntax is described in Chapter :ref:`syntaxextensionsandinterpretationscopes`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T150825Z" creationid="eldesh" creationdate="20200310T150825Z">
+        <seg>構文のカスタマイズの方法は章 :ref:`syntaxextensionsandinterpretationscopes` で説明されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>How to read this book</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144922Z" creationid="yamarten" creationdate="20181104T144922Z">
@@ -1097,6 +1169,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T093032Z" creationid="eldesh" creationdate="20200201T093032Z">
         <seg>識別子とアクセス識別子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Identifiers may also denote *local variables*, while qualified identifiers do not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155620Z" creationid="eldesh" creationdate="20200310T155620Z">
+        <seg>識別子はさらに *局所変数* を表すかも知れません。一方量化された識別子はそうではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1487,6 +1567,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Initially, numerals are bound to Peano’s representation of natural numbers (see :ref:`datatypes`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160629Z" creationid="eldesh" creationdate="20200310T160212Z">
+        <seg>初めは数字は自然数のペアノの表現に束縛されます(:ref:`datatypes` を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inside implicit generalization delimiters, free variables in the current context are automatically quantified using a product or a lambda abstraction to generate a closed term.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T161700Z" creationid="eldesh" creationdate="20191226T140503Z">
@@ -1831,6 +1919,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More on sorts can be found in Section :ref:`sorts`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162116Z" creationid="eldesh" creationdate="20200310T162116Z">
+        <seg>ソートについてより詳しくは節 :ref:`sorts` で見つけることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Moreover the following are defined:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T131318Z" creationid="eldesh" creationdate="20191221T221053Z">
@@ -1851,6 +1947,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T095052Z" creationid="eldesh" creationdate="20200201T095052Z">
         <seg>自然数と整数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Negative integers are not at the same level as :token:`num`, for this would make precedence unnatural.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160757Z" creationid="eldesh" creationdate="20200310T160551Z">
+        <seg>負の整数は :token:`num` と同じレベルにはありません、このため優先順序が不自然になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1902,12 +2006,28 @@
       </tuv>
     </tu>
     <tu>
+      <tuv lang="EN-US">
+        <seg>Numerals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155642Z" creationid="eldesh" creationdate="20200310T155642Z">
+        <seg>数字</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>「数は数です」になってしまう</note>
       <tuv lang="EN-US">
         <seg>Numerals are sequences of digits.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T101218Z" creationid="eldesh" creationdate="20200201T095123Z">
         <seg>数の表示は数字の列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Numerals have no definite semantics in the calculus.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155832Z" creationid="eldesh" creationdate="20200310T155832Z">
+        <seg>その計算の中で数字は確定された意味は持ちません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2245,6 +2365,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150315Z" creationid="yamarten" creationdate="20181104T150315Z">
         <seg>Proof-General は https://proofgeneral.github.io/から入手可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Qualified identifiers and simple identifiers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155034Z" creationid="eldesh" creationdate="20200310T155034Z">
+        <seg>量化された識別子と単純識別子</seg>
       </tuv>
     </tu>
     <tu>
@@ -2912,6 +3040,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The formal presentation of Cic is given in Chapter :ref:`calculusofinductiveconstructions`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T150729Z" creationid="eldesh" creationdate="20200310T150729Z">
+        <seg>Cic の形式的な表現は章 :ref:`calculusofinductiveconstructions` で与えられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The format is unspecified if `string` doesn’t end in ``.dot`` or ``.gv``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T101408Z" creationid="eldesh" creationdate="20191227T101408Z">
@@ -3042,6 +3178,12 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T215740Z" creationid="eldesh" creationdate="20200220T215740Z">
         <seg>ライブラリファイル `dirpath’` は ``Require`` コマンドによって間接的に要求されていますが、それは現在のロードパス内ではファイル `ident.vo` に束縛されており、これはコンパイルされた時点で異なるライブラリ名 `dirpath` へ束縛されていました。</seg>
+      </tuv>
+      <tuv lang="EN-US">
+        <seg>The logical propositions themselves are typing the proofs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161044Z" creationid="eldesh" creationdate="20200310T161044Z">
+        <seg>論理的な主張自体は証明を型付けます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3254,6 +3396,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The specifications themselves are typing the programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161748Z" creationid="eldesh" creationdate="20200310T161748Z">
+        <seg>その仕様そのものはプログラムを型付けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The syntax ``:&gt;`` indicates that each ``PreOrder`` can be seen as a ``Reflexive`` relation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T185648Z" creationid="eldesh" creationdate="20200103T185648Z">
@@ -3415,6 +3565,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
     </tu>
     <tu>
+      <tuv lang="EN-US">
+        <seg>There are three sorts :g:`Set`, :g:`Prop` and :g:`Type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160900Z" creationid="eldesh" creationdate="20200310T160900Z">
+        <seg>3つのソート :g:`Set`、:g:`Prop`、:g:`Type` があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>オプション(Setするやつ)についての索引は無視？</note>
       <tuv lang="EN-US">
         <seg>There is a global index, and a number of specific indexes for tactics, vernacular commands, and error messages and warnings.</seg>
@@ -3501,6 +3659,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T210650Z" creationid="eldesh" creationdate="20200102T210650Z">
         <seg>それらは :cite:`CSwcu` の中でより詳細に説明されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are mere notations that can be bound to objects through the notation mechanism (see Chapter :ref:`syntaxextensionsandinterpretationscopes` for details).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160613Z" creationid="eldesh" creationdate="20200310T160111Z">
+        <seg>それらは表記法機構(詳しくは章 :ref:`syntaxextensionsandinterpretationscopes` を参照)を通して(訳注: 数学的)対象に束縛され得る単なる記法にすぎません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3774,6 +3940,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T134030Z" creationid="eldesh" creationdate="20191225T134030Z">
         <seg>この互換オプションは表示時に内部的に省略されたパラメータを再構成します (たとえばそれらがカーネルに操作された実際のASTには存在しないものであっても)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This constitutes a semantic subclass of the syntactic class :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161611Z" creationid="eldesh" creationdate="20200310T161611Z">
+        <seg>これは :token:`term` の構文クラスの意味論的なサブクラスを構成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4308,6 +4482,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
     </tu>
     <tu>
+      <tuv lang="EN-US">
+        <seg>Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T151815Z" creationid="eldesh" creationdate="20200310T151815Z">
+        <seg>型</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>コードが間違っている。
 Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n == m.
 が正しい。</note>
@@ -4412,6 +4594,30 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191228T144507Z" creationid="eldesh" creationdate="20191228T144448Z">
         <seg>中置 ``&lt;=`` 記法を伴った順序関係を装備した型のクラスを選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We denote by :production:`type` the semantic subclass of types inside the syntactic class :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T154956Z" creationid="eldesh" creationdate="20200310T154956Z">
+        <seg>:production:`type` によって :token:`term` の構文クラスの中で意味論的なサブクラスの種類を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We denote propositions by :production:`form`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161327Z" creationid="eldesh" creationdate="20200310T161327Z">
+        <seg>主張は :production:`form` によって表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We denote specifications by :production:`specif`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161828Z" creationid="eldesh" creationdate="20200310T161828Z">
+        <seg>我々は仕様を :production:`specif` で表します。</seg>
       </tuv>
     </tu>
     <tu>
