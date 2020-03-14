@@ -70,6 +70,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>:n:`@term &lt;: @type` locally sets up the virtual machine for checking that :token:`term` has type :token:`type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112524Z" creationid="eldesh" creationdate="20200314T112524Z">
+        <seg>:n:`@term &lt;: @type` は :token:`term` が型 :token:`type` を持つことを検査するように局所的に仮想マシンを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:n:`@term &lt;&lt;: @type` uses native compilation for checking that :token:`term` has type :token:`type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112614Z" creationid="eldesh" creationdate="20200314T112614Z">
+        <seg>:n:`@term &lt;&lt;: @type` 項 :token:`term` が型 :token:`type` も持つことを検査するためにネイティブコンパイルを使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:n:`let @ident := @term in @term’` denotes the local binding of :token:`term` to the variable :token:`ident` in :token:`term`’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113925Z" creationid="eldesh" creationdate="20200314T113925Z">
+        <seg>:n:`let @ident := @term in @term’` は :token:`term`’ 内で :token:`term` から変数 :token:`ident` への局所束縛を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>:ref:`functional-scheme` and :tacn:`function induction`</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T220621Z" creationid="eldesh" creationdate="20191221T220621Z">
@@ -924,6 +948,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Expressions often contain redundant pieces of information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113138Z" creationid="eldesh" creationdate="20200314T113138Z">
+        <seg>しばしば式は冗長な情報の断片を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Extensions of this syntax are given in Chapter :ref:`extensionsofgallina`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T150752Z" creationid="eldesh" creationdate="20200310T150752Z">
@@ -1671,6 +1703,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inferable subterms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113043Z" creationid="eldesh" creationdate="20200314T113043Z">
+        <seg>推論可能 部分項</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Initially, numerals are bound to Peano’s representation of natural numbers (see :ref:`datatypes`).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T160629Z" creationid="eldesh" creationdate="20200310T160212Z">
@@ -1787,6 +1827,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T185524Z" creationid="eldesh" creationdate="20200106T200934Z">
         <seg>それはある積の中でマッチする積を伴うゴールに、イントロダクションを避けて直接積を適用して結論を出すヒントを認めることで行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It enforces the type of :token:`term` to be :token:`type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112312Z" creationid="eldesh" creationdate="20200314T112312Z">
+        <seg>それは :token:`term` の型を :token:`type` になるように強制します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1964,6 +2012,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191542Z" creationid="eldesh" creationdate="20191221T190420Z">
         <seg>``Record`` マクロによって行われる動作を見てみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let-in definitions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113814Z" creationid="eldesh" creationdate="20200314T113814Z">
+        <seg>Let-in 定義</seg>
       </tuv>
     </tu>
     <tu>
@@ -2772,6 +2828,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Subterms that can be automatically inferred by Coq can be replaced by the symbol ``_`` and Coq will guess the missing piece of information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113715Z" creationid="eldesh" creationdate="20200314T113715Z">
+        <seg>部分項は Coq によって自動的に推論されることがあり、記号 ``_`` で置き換えると Coq が不足している情報の断片を推測します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such notation will be overloaded, and its meaning will depend on the types of the terms that are compared.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T105847Z" creationid="eldesh" creationdate="20191227T105847Z">
@@ -3116,6 +3180,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T104711Z" creationid="eldesh" creationdate="20191227T104711Z">
         <seg>例は :cite:`CSwcu` から抜粋しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :n:`@term : @type` is a type cast expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112253Z" creationid="eldesh" creationdate="20200314T112253Z">
+        <seg>式 :n:`@term : @type` は型キャスト式です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3838,6 +3910,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144950Z" creationid="yamarten" creationdate="20181104T144950Z">
         <seg>総合索引に加え、タクティックやコマンド、エラーメッセージ・警告に特化した索引があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a syntactic sugar for let-in definition of functions: :n:`let @ident {+ @binder} := @term in @term’` stands for :n:`let @ident := fun {+ @binder} =&gt; @term in @term’`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T114033Z" creationid="eldesh" creationdate="20200314T114033Z">
+        <seg>関数の let-in 定義には糖衣構文があり、:n:`let @ident {+ @binder} := @term in @term’` が :n:`let @ident := fun {+ @binder} =&gt; @term in @term’` を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4722,6 +4802,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T135226Z" creationid="eldesh" creationdate="20200103T135226Z">
         <seg>型クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type cast</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112235Z" creationid="eldesh" creationdate="20200314T112235Z">
+        <seg>型キャスト</seg>
       </tuv>
     </tu>
     <tu>
