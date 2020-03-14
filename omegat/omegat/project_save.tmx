@@ -382,10 +382,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Applications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110743Z" creationid="eldesh" creationdate="20200314T110743Z">
+        <seg>適用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As before we register a canonical ``LE`` class for ``nat``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191228T145102Z" creationid="eldesh" creationdate="20191228T145057Z">
         <seg>これまでのように ``nat`` のために正準 ``LE`` クラスを登録します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As for abstractions, :g:`forall` is followed by a binder list, and products over several variables are equivalent to an iteration of one-variable products.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105600Z" creationid="eldesh" creationdate="20200314T105600Z">
+        <seg>抽象に関してはどうかというと、:g:`forall` に束縛リストと、1変数積の反復に同等な幾つかの変数上での積が続きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1350,6 +1366,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the variable :token:`ident` occurs in :token:`term`, the product is called *dependent product*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105723Z" creationid="eldesh" creationdate="20200314T105723Z">
+        <seg>変数 :token:`ident` が :token:`term` 中に現れる場合、その積は *依存積* と呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Implicit generalization</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T134148Z" creationid="eldesh" creationdate="20191226T134148Z">
@@ -1743,6 +1767,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It denotes either the universal quantification of the variable :g:`x` of type :g:`A` in the proposition :g:`B` or the functional dependent product from :g:`A` to :g:`B` (a construction usually written :math:`\Pi_{x:A}.B` in set theory).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110722Z" creationid="eldesh" creationdate="20200314T110416Z">
+        <seg>それは命題 :g:`B` 中での型 :g:`A` の変数 :g:`x` の全称量化または :g:`A` から :g:`B` への関数的依存積 (集合論では大抵 :math:`\Pi_{x:A}.B` と書かれる構造) のどちらかを表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It does not import the modules on which qualid depends unless these modules were themselves required in module :n:`@qualid` using :cmd:`Require Export`, as described below, or recursively required through a sequence of :cmd:`Require Export`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200223T175254Z" creationid="eldesh" creationdate="20200220T211438Z">
@@ -1803,6 +1835,15 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145403Z" creationid="yamarten" creationdate="20181104T145403Z">
         <seg>ここは6つの章に分かれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <note>: associativity is to the left の : は何？</note>
+      <tuv lang="EN-US">
+        <seg>It is equivalent to ( … ( :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ) … ) :token:`term`\ :math:`_n` : associativity is to the left.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T111554Z" creationid="eldesh" creationdate="20200314T111225Z">
+        <seg>それは ( … ( :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ) … ) :token:`term`\ :math:`_n` と同等で結合性は左です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2079,6 +2120,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Non dependent product types have a special notation: :g:`A -&gt; B` stands for :g:`forall _ : A, B`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110514Z" creationid="eldesh" creationdate="20200314T110514Z">
+        <seg>非依存積型は :g:`forall _ : A, B` を表す特別記法 :g:`A -&gt; B` を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Nonetheless, the manual has some structure that is explained below.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145002Z" creationid="yamarten" creationdate="20181104T145002Z">
@@ -2099,6 +2148,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T220334Z" creationid="eldesh" creationdate="20200220T220215Z">
         <seg>ただし、コマンド ``Import`` と ``Export`` 単独ではモジュール内部で使うことが出来ます (節 :ref:`Import &lt;import_qualid&gt;` 参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that :token:`term` is intended to be a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105633Z" creationid="eldesh" creationdate="20200314T105633Z">
+        <seg>留意すべきは :token:`term` は型になることを意図されていることです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2405,6 +2462,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T222527Z" creationid="eldesh" creationdate="20200220T214910Z">
         <seg>恐らく `ident.v` はモジュール :n:`@qualid` を含む最新のバージョンのファイルとともに正しく再コンパイルされていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Products</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105009Z" creationid="eldesh" creationdate="20200314T105009Z">
+        <seg>積</seg>
       </tuv>
     </tu>
     <tu>
@@ -2805,6 +2870,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The *non dependent product* is used both to denote the propositional implication and function types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110638Z" creationid="eldesh" creationdate="20200314T110638Z">
+        <seg>その *非依存積* は包含命題と関数型の両方を表すのに使うことが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The :cmd:`Class` command is used to declare a typeclass with parameters ``binders`` and fields the declared record fields.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T154755Z" creationid="eldesh" creationdate="20200103T192055Z">
@@ -3047,10 +3120,34 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The expression :n:`forall @ident : @type, @term` denotes the *product* of the variable :token:`ident` of type :token:`type`, over the term :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T111251Z" creationid="eldesh" creationdate="20200314T105323Z">
+        <seg>式 :n:`forall @ident : @type, @term` は項 :token:`term` 上の型 :token:`type` の変数 :token:`ident` の *積* を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The expression :n:`fun @ident : @type =&gt; @term` defines the *abstraction* of the variable :token:`ident`, of type :token:`type`, over the term :token:`term`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200314T075815Z" creationid="eldesh" creationdate="20200314T075815Z">
         <seg>式 :n:`fun @ident : @type =&gt; @term` は項 :token:`term` 上の型 :token:`type` の変数 :token:`ident` の *抽象* を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ... :token:`term`\ :math:`_n` denotes the application of the term :token:`term`\ :math:`_0` to the arguments :token:`term`\ :math:`_1` ... then :token:`term`\ :math:`_n`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110926Z" creationid="eldesh" creationdate="20200314T110926Z">
+        <seg>式 :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ... :token:`term`\ :math:`_n` は項 :token:`term`\ :math:`_0` の引数 :token:`term`\ :math:`_1` ... then :token:`term`\ :math:`_n` への適用を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` denotes the application of :token:`term`\ :math:`_0` to :token:`term`\ :math:`_1`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110823Z" creationid="eldesh" creationdate="20200314T110823Z">
+        <seg>式 :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` は :token:`term`\ :math:`_0` の :token:`term`\ :math:`_1` への適用を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3254,6 +3351,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The intention behind a dependent product :g:`forall x : A, B` is twofold.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110025Z" creationid="eldesh" creationdate="20200314T110025Z">
+        <seg>依存積 :g:`forall x : A, B` の背景にある意図には二つの側面があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The interactive mode is generally run with the help of an IDE, such as CoqIDE, documented in :ref:`coqintegrateddevelopmentenvironment`, Emacs with Proof-General :cite:`Asp00` [#PG]_, or jsCoq to run Coq in your browser (see https://github.com/ejgallego/jscoq).</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T161431Z" creationid="yamarten" creationdate="20181104T111701Z">
@@ -3386,6 +3491,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200104T224434Z" creationid="eldesh" creationdate="20200103T161617Z">
         <seg>その新しいコマンドはどんな束縛コンテキストでも引数として受け入れるということを除き、:cmd:`Variables` Vernacular と同じように動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The notation :n:`(@ident := @term)` for arguments is used for making explicit the value of implicit arguments (see Section :ref:`explicit-applications`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T111805Z" creationid="eldesh" creationdate="20200314T111805Z">
+        <seg>引数のための記法 :n:`(@ident := @term)` が暗黙引数の値を明示的にするために使われます (節 :ref:`explicit-applications` を参照)。</seg>
       </tuv>
     </tu>
     <tu>
