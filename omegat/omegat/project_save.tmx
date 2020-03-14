@@ -190,6 +190,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Abstractions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T075649Z" creationid="eldesh" creationdate="20200314T075649Z">
+        <seg>抽象</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Access identifiers, written :token:`access_ident`, are identifiers prefixed by `.` (dot) without blank.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T101022Z" creationid="eldesh" creationdate="20200201T095010Z">
@@ -1029,6 +1037,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For instance the expression “fun :token:`ident`\ :math:`_{1}` … :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” denotes the same function as “ fun :token:`ident`\ :math:`_{1}` : :token:`type` =&gt; … fun :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`”.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080509Z" creationid="eldesh" creationdate="20200314T080509Z">
+        <seg>例えば式 “fun :token:`ident`\ :math:`_{1}` … :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” は “ fun :token:`ident`\ :math:`_{1}` : :token:`type` =&gt; … fun :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” と同じ関数を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For instance, the above example gives the following output:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185236Z" creationid="eldesh" creationdate="20191225T185236Z">
@@ -1057,6 +1073,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T143555Z" creationid="eldesh" creationdate="20191221T215107Z">
         <seg>Function は定義された関数の部分適用はサポートしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Functions over several variables are equivalent to an iteration of one-variable functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T081346Z" creationid="eldesh" creationdate="20200314T080403Z">
+        <seg>複数の変数上の関数は1変数関数の反復と同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1245,6 +1269,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a let-binder occurs in the list of binders, it is expanded to a let-in definition (see Section :ref:`let-in`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080640Z" creationid="eldesh" creationdate="20200314T080640Z">
+        <seg>束縛子のリスト中に let-束縛子 が現れる場合、それは let-in 定義 (節 :ref:`let-in` 参照) に展開されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a same field occurs in several canonical structures, then only the structure declared first as canonical is considered.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185258Z" creationid="eldesh" creationdate="20191225T184830Z">
@@ -1286,18 +1318,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If the module required has already been loaded, :cmd:`Require Import` :n:`@qualid` simply imports it, as :cmd:`Import` :n:`@qualid` would.</seg>
-      </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T211743Z" creationid="eldesh" creationdate="20200220T211743Z">
-        <seg>もし要求されたモジュールが既にロードされていたら、:cmd:`Require Import` :n:`@qualid` は :cmd:`Import` :n:`@qualid` がそうするように単にそれをインポートします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>If the binding variable is not used in the expression, the identifier can be replaced by the symbol :g:`_`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T162854Z" creationid="eldesh" creationdate="20200310T162854Z">
         <seg>もし束縛変数がその式の中で使われないならば、その識別子は記号 :g:`_` で置き換えることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the module required has already been loaded, :cmd:`Require Import` :n:`@qualid` simply imports it, as :cmd:`Import` :n:`@qualid` would.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200220T211743Z" creationid="eldesh" creationdate="20200220T211743Z">
+        <seg>もし要求されたモジュールが既にロードされていたら、:cmd:`Require Import` :n:`@qualid` は :cmd:`Import` :n:`@qualid` がそうするように単にそれをインポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1703,6 +1735,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It denotes a function of the variable :token:`ident` that evaluates to the expression :token:`term` (e.g. :g:`fun x : A =&gt; x` denotes the identity function on type :g:`A`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080150Z" creationid="eldesh" creationdate="20200314T080114Z">
+        <seg>それは式 :token:`term` へ評価する変数 :token:`ident` の関数を表します(例 :g:`fun x : A =&gt; x` は型 :g:`A` 上の恒等関数を表します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It does not import the modules on which qualid depends unless these modules were themselves required in module :n:`@qualid` using :cmd:`Require Export`, as described below, or recursively required through a sequence of :cmd:`Require Export`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200223T175254Z" creationid="eldesh" creationdate="20200220T211438Z">
@@ -1935,18 +1975,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Loading of OCaml files is only possible under the bytecode version of ``coqtop`` (i.e. ``coqtop`` called with option ``-byte``, see chapter :ref:`thecoqcommands`), or when |Coq| has been compiled with a version of OCaml that supports native Dynlink (≥ 3.11).</seg>
-      </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200222T172051Z" creationid="eldesh" creationdate="20200222T172051Z">
-        <seg>OCaml ファイルの読み込みはバイトコード版の ``coqtop`` (i.e. ``coqtop`` が ``-byte`` オプションを伴って呼ばれた、:ref:`thecoqcommands` の章を参照) かまたは、|Coq| がネイティブ Dynlink (≥ 3.11) をサポートする OCaml のバージョンによってコンパイルされたときのみ可能です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Lists of :token:`binder` are allowed.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T165105Z" creationid="eldesh" creationdate="20200310T165055Z">
         <seg>:token:`binder` のリストが認められます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Loading of OCaml files is only possible under the bytecode version of ``coqtop`` (i.e. ``coqtop`` called with option ``-byte``, see chapter :ref:`thecoqcommands`), or when |Coq| has been compiled with a version of OCaml that supports native Dynlink (≥ 3.11).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200222T172051Z" creationid="eldesh" creationdate="20200222T172051Z">
+        <seg>OCaml ファイルの読み込みはバイトコード版の ``coqtop`` (i.e. ``coqtop`` が ``-byte`` オプションを伴って呼ばれた、:ref:`thecoqcommands` の章を参照) かまたは、|Coq| がネイティブ Dynlink (≥ 3.11) をサポートする OCaml のバージョンによってコンパイルされたときのみ可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2001,8 +2041,8 @@
       <tuv lang="EN-US">
         <seg>Moreover, parentheses can be omitted in the case of a single sequence of bindings sharing the same type (e.g.: :g:`fun (x y z : A) =&gt; t` can be shortened in :g:`fun x y z : A =&gt; t`).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T170618Z" creationid="eldesh" creationdate="20200310T170152Z">
-        <seg>さらに、同じ型を共有する束縛の単一の列の場合には、括弧も除去することが出来ます (例: :g:`fun (x y z : A) =&gt; t` は :g:`fun x y z : A =&gt; t` に短縮されます)。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200312T005512Z" creationid="eldesh" creationdate="20200310T170152Z">
+        <seg>さらに、同じ型を共有する束縛の単一の列の場合には、括弧も除去することが出来ます (例: :g:`fun (x y z : A) =&gt; t` は :g:`fun x y z : A =&gt; t` に短縮することができます)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3007,6 +3047,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The expression :n:`fun @ident : @type =&gt; @term` defines the *abstraction* of the variable :token:`ident`, of type :token:`type`, over the term :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T075815Z" creationid="eldesh" creationdate="20200314T075815Z">
+        <seg>式 :n:`fun @ident : @type =&gt; @term` は項 :token:`term` 上の型 :token:`type` の変数 :token:`ident` の *抽象* を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The fields do not have to be in any particular order, nor do they have to be all present if the missing ones can be inferred or prompted for (see :ref:`programs`).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T193302Z" creationid="eldesh" creationdate="20191221T192858Z">
@@ -3222,6 +3270,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The keyword :g:`fun` can be followed by several binders as given in Section :ref:`binders`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080320Z" creationid="eldesh" creationdate="20200314T080320Z">
+        <seg>キーワード :g:`fun` には節 :ref:`binders` で与えられるように幾つかの束縛子を続けることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The language</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150221Z" creationid="yamarten" creationdate="20181104T150221Z">
@@ -3261,12 +3317,6 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
     </tu>
     <tu>
-      <tuv lang="EN-US">
-        <seg>The library file `dirpath’` is indirectly required by the ``Require`` command but it is bound in the current loadpath to the file `ident.vo` which was bound to a different library name `dirpath` at the time it was compiled.</seg>
-      </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T215740Z" creationid="eldesh" creationdate="20200220T215740Z">
-        <seg>ライブラリファイル `dirpath’` は ``Require`` コマンドによって間接的に要求されていますが、それは現在のロードパス内ではファイル `ident.vo` に束縛されており、これはコンパイルされた時点で異なるライブラリ名 `dirpath` へ束縛されていました。</seg>
-      </tuv>
       <tuv lang="EN-US">
         <seg>The logical propositions themselves are typing the proofs.</seg>
       </tuv>
