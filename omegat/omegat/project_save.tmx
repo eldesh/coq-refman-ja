@@ -16,8 +16,8 @@
       <tuv lang="EN-US">
         <seg>*Qualified identifiers* (:token:`qualid`) denote *global constants* (definitions, lemmas, theorems, remarks or facts), *global variables* (parameters or axioms), *inductive types* or *constructors of inductive types*.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T155358Z" creationid="eldesh" creationdate="20200310T155358Z">
-        <seg>*量化された識別子* (:token:`qualid`) は *グローバル定数* (定義、補題、定理、注意、事実)、*グローバル変数* (パラメータや公理)、*帰納的型* や *帰納的型のコンストラクタ*。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T091553Z" creationid="eldesh" creationdate="20200310T155358Z">
+        <seg>*量化された識別子* (:token:`qualid`) は *グローバル定数* (定義、補題、定理、注意、事実)、*グローバル変数* (パラメータや公理)、*帰納的型* や *帰納的型のコンストラクタ* を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -48,8 +48,8 @@
       <tuv lang="EN-US">
         <seg>:g:`Prop` is the universe of *logical propositions*.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T160945Z" creationid="eldesh" creationdate="20200310T160926Z">
-        <seg>:g:`Prop` は *論理的な主張* の宇宙です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093021Z" creationid="eldesh" creationdate="20200310T160926Z">
+        <seg>:g:`Prop` は *論理命題* の宇宙です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -120,8 +120,8 @@
       <tuv lang="EN-US">
         <seg>A binder can also be any pattern prefixed by a quote, e.g. :g:`'(x,y)`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T163532Z" creationid="eldesh" creationdate="20200310T163532Z">
-        <seg>束縛子は頭にクオートの付いたどんなパターンにもなることが出来ます。例 :g:`'(x,y)`。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093645Z" creationid="eldesh" creationdate="20200310T163532Z">
+        <seg>束縛子は頭にクオートの付いたどんなパターンにすることも出来ます。例 :g:`'(x,y)`。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1223,8 +1223,8 @@
       <tuv lang="EN-US">
         <seg>Identifiers may also denote *local variables*, while qualified identifiers do not.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T155620Z" creationid="eldesh" creationdate="20200310T155620Z">
-        <seg>識別子はさらに *局所変数* を表すかも知れません。一方量化された識別子はそうではありません。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T091927Z" creationid="eldesh" creationdate="20200310T155620Z">
+        <seg>識別子は *局所変数* も表すことがある一方、量化された識別子はそうではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1408,8 +1408,8 @@
       <tuv lang="EN-US">
         <seg>In a let-binder, only one variable can be introduced at the same time.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T164948Z" creationid="eldesh" creationdate="20200310T164948Z">
-        <seg>let-束縛子では、高々一つの変数が同時に導入され得ます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T104159Z" creationid="eldesh" creationdate="20200310T164948Z">
+        <seg>let-束縛子では、高々一つの変数が同時に導入されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2138,8 +2138,8 @@
       <tuv lang="EN-US">
         <seg>Numerals have no definite semantics in the calculus.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T155832Z" creationid="eldesh" creationdate="20200310T155832Z">
-        <seg>その計算の中で数字は確定された意味は持ちません。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T092021Z" creationid="eldesh" creationdate="20200310T155832Z">
+        <seg>計算の中で数字は確定された意味は持ちません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2628,8 +2628,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>Some constructions allow the binding of a variable to value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T163631Z" creationid="eldesh" creationdate="20200310T163631Z">
-        <seg>幾つかの構文は変数から値への束縛を認めます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093729Z" creationid="eldesh" creationdate="20200310T163631Z">
+        <seg>幾つかの構文は変数の値への束縛を認めます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3017,8 +3017,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The entry :token:`binder` of the grammar accepts either an assumption binder as defined above or a let-binder.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T164829Z" creationid="eldesh" creationdate="20200310T164829Z">
-        <seg>文法の :token:`binder` エントリーは、束縛子は上で定義されたという仮定または let-束縛子のどちらかを受理します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T100612Z" creationid="eldesh" creationdate="20200310T164829Z">
+        <seg>文法の :token:`binder` の項目は、上で定義された仮定束縛子または let-束縛子 のどちらかを受理します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3153,8 +3153,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The following sequences of characters are special tokens::</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200215T182752Z" creationid="eldesh" creationdate="20200201T111910Z">
-        <seg>aaaaaaaaaa以下の文字の列はスペシャルトークンです::</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T090123Z" creationid="eldesh" creationdate="20200201T111910Z">
+        <seg>以下の文字の列はスペシャルトークンです::</seg>
       </tuv>
     </tu>
     <tu>
@@ -3320,8 +3320,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The logical propositions themselves are typing the proofs.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T161044Z" creationid="eldesh" creationdate="20200310T161044Z">
-        <seg>論理的な主張自体は証明を型付けます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093339Z" creationid="eldesh" creationdate="20200310T161044Z">
+        <seg>論理命題それ自体が証明を型付けます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3544,8 +3544,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The specifications themselves are typing the programs.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T161748Z" creationid="eldesh" creationdate="20200310T161748Z">
-        <seg>その仕様そのものはプログラムを型付けます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093347Z" creationid="eldesh" creationdate="20200310T161748Z">
+        <seg>その仕様それ自体がプログラムを型付けます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4778,8 +4778,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>We denote propositions by :production:`form`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200310T161327Z" creationid="eldesh" creationdate="20200310T161327Z">
-        <seg>主張は :production:`form` によって表します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093111Z" creationid="eldesh" creationdate="20200310T161327Z">
+        <seg>命題は :production:`form` によって表します。</seg>
       </tuv>
     </tu>
     <tu>
