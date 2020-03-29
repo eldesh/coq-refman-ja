@@ -198,6 +198,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A pattern matching expression is used to analyze the structure of an inductive object and to apply specific treatments accordingly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T151441Z" creationid="eldesh" creationdate="20200321T151029Z">
+        <seg>パターンマッチ式はある帰納オブジェクトの構造を解析し、特定の処理を適切に適用するために使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A text file `INSTALL` that comes with the sources explains how to install |Coq|.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150123Z" creationid="yamarten" creationdate="20181104T150123Z">
@@ -835,6 +843,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Definition by case analysis</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T145206Z" creationid="eldesh" creationdate="20200321T145206Z">
+        <seg>場合分けによる定義</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Definitional classes are not wrapped inside records, and the trivial projection of an instance of such a class is convertible to the instance itself.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T192742Z" creationid="eldesh" creationdate="20200103T192730Z">
@@ -904,6 +920,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200222T204952Z" creationid="eldesh" creationdate="20200104T212439Z">
         <seg>各クラス定義は対応するレコード宣言を生みだし、各インスタンスは標準の定義でありその名前は ident で与えられ、型はレコード型のインスタンス化です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each of :token:`pattern`:math:`_i` has a form :token:`qualid` :token:`ident` where :token:`qualid` must denote a constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193901Z" creationid="eldesh" creationdate="20200329T193138Z">
+        <seg>:token:`pattern`:math:`_i` はそれぞれ :token:`qualid` :token:`ident` という形式を持ち、ここで :token:`qualid` はコンストラクタを表していなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1093,10 +1117,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For instance, in the following example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T201249Z" creationid="eldesh" creationdate="20200329T201249Z">
+        <seg>例えば、以下の例では:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For instance, the above example gives the following output:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185236Z" creationid="eldesh" creationdate="20191225T185236Z">
         <seg>例えば、上の例は以下の出力を与えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, the following alternative definition is accepted and has the same meaning as the previous one.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T204755Z" creationid="eldesh" creationdate="20200329T204755Z">
+        <seg>例えば、以下の替わりの定義は受け付けられ、以前のそれと同じ意味を持ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1583,6 +1623,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the *dependent* case, there are three subcases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T194138Z" creationid="eldesh" creationdate="20200329T194138Z">
+        <seg>*依存* ケースでは、3つのサブケースがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the *non dependent* case, all branches have the same type, and the :token:`return_type` is the common type of branches.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193824Z" creationid="eldesh" creationdate="20200329T193824Z">
+        <seg>*非依存* ケースでは、全てのブランチは同じ型を持ち、:token:`return_type` はブランチの共通の型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the case of :g:`fun` and :g:`forall`, it is intended that at least one binder of the list is an assumption otherwise fun and forall gets identical.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T170017Z" creationid="eldesh" creationdate="20200310T170017Z">
@@ -1611,6 +1667,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T171148Z" creationid="eldesh" creationdate="20191221T171148Z">
         <seg>この式では:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the first subcase, the type in each branch may depend on the exact value being matched in the branch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T200330Z" creationid="eldesh" creationdate="20200329T200225Z">
+        <seg>最初のサブケースでは、各ブランチ内の型はブランチ内で、マッチしたまさにその値に依存してもよい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1675,6 +1739,22 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T115614Z" creationid="eldesh" creationdate="20191227T115614Z">
         <seg>この場合は nat に高々一つの正準値を関連付けました (そのクラスについても、``nat_EQcl`` はただ一つのメンバを持っています)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, :token:`return_type` can usually be omitted as it can be inferred from the type of the branches [2]_.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T194052Z" creationid="eldesh" creationdate="20200329T194052Z">
+        <seg>このケースでは、:token:`return_type` は通常ブランチの型から推論できるため省略されます [2]_。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, the whole pattern matching itself depends on the term being matched.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T200432Z" creationid="eldesh" creationdate="20200329T200432Z">
+        <seg>このケースでは、そのパターンマッチング全体それ自身がマッチされた項に依存します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2256,6 +2336,14 @@
       </tuv>
     </tu>
     <tu>
+      <tuv lang="EN-US">
+        <seg>Objects of inductive types can be destructurated by a case-analysis construction called *pattern matching* expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T150431Z" creationid="eldesh" creationdate="20200321T150431Z">
+        <seg>帰納型のオブジェクトはパターンマッチと呼ばれる場合分けの文法によって分解することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>instate は instance の typo ？</note>
       <tuv lang="EN-US">
         <seg>Of course one would like to apply results proved in the algebraic setting to any concrete instate of the algebraic structure.</seg>
@@ -2691,6 +2779,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See Section :ref:`Mult-match` and Chapter :ref:`extendedpatternmatching` for the description of the general form.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T151859Z" creationid="eldesh" creationdate="20200321T151859Z">
+        <seg>一般形の説明については節 :ref:`Mult-match` と章 :ref:`extendedpatternmatching` を参照して下さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the documentation of functional induction (:tacn:`function induction`) and ``Functional Scheme`` (:ref:`functional-scheme`) for how to use the induction principle to easily reason about the function.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T214113Z" creationid="eldesh" creationdate="20191221T214113Z">
@@ -2966,6 +3062,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The :token:`return_type` expresses the type returned by the whole match expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193518Z" creationid="eldesh" creationdate="20200329T193455Z">
+        <seg>:token:`return_type` はマッチ式全体によって返される型を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The Gallina specification language</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181110T115315Z" creationid="yamarten" creationdate="20181110T115315Z">
@@ -3019,6 +3123,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T130549Z" creationid="eldesh" creationdate="20191227T110907Z">
         <seg>この基本名前空間は代数構造の定義を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The basic form of pattern matching is characterized by a single :token:`match_item` expression, a :token:`mult_pattern` restricted to a single :token:`pattern` and :token:`pattern` restricted to the form :n:`@qualid {* @ident}`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T153218Z" creationid="eldesh" creationdate="20200321T152246Z">
+        <seg>パターンマッチの基本形は単一の :token:`match_item` 式によって特徴づけられ、:token:`mult_pattern` は単一の :token:`pattern` に、:token:`pattern` は :n:`@qualid {* @ident}` という形式に制限されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3220,6 +3332,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200314T110823Z" creationid="eldesh" creationdate="20200314T110823Z">
         <seg>式 :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` は :token:`term`\ :math:`_0` の :token:`term`\ :math:`_1` への適用を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression match ":token:`term`:math:`_0` :token:`return_type` with :token:`pattern`:math:`_1` =&gt; :token:`term`:math:`_1` :math:`|` … :math:`|` :token:`pattern`:math:`_n` =&gt; :token:`term`:math:`_n` end" denotes a *pattern matching* over the term :token:`term`:math:`_0` (expected to be of an inductive type :math:`I`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T153600Z" creationid="eldesh" creationdate="20200321T153554Z">
+        <seg>":token:`term`:math:`_0` :token:`return_type` with :token:`pattern`:math:`_1` =&gt; :token:`term`:math:`_1` :math:`|` … :math:`|` :token:`pattern`:math:`_n` =&gt; :token:`term`:math:`_n` end" にマッチする式は項 :token:`term`:math:`_0` (帰納型 :math:`I` になることが期待されます) 上の *パターンマッチング* を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3767,6 +3887,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The terms :token:`term`:math:`_1`\ …\ :token:`term`:math:`_n` are the *branches* of the pattern matching expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193833Z" creationid="eldesh" creationdate="20200329T193024Z">
+        <seg>項 :token:`term`:math:`_1`\ …\ :token:`term`:math:`_n` はパターンマッチ式の *ブランチ* です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The theories are built from axioms, hypotheses, parameters, lemmas, theorems and definitions of constants, functions, predicates and sets.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200115T205927Z" creationid="eldesh" creationdate="20200115T205459Z">
@@ -3889,6 +4017,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are several cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193612Z" creationid="eldesh" creationdate="20200329T193612Z">
+        <seg>幾つかのケースがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are several commands that specify which variables should be generalizable.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T141521Z" creationid="eldesh" creationdate="20191226T141521Z">
@@ -3942,6 +4078,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T201816Z" creationid="eldesh" creationdate="20191221T201816Z">
         <seg>3通りの可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There should be exactly one branch for every constructor of :math:`I`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193907Z" creationid="eldesh" creationdate="20200329T193359Z">
+        <seg>全てのコンストラクタ :math:`I` についてちょうど1つのブランチが存在しなくてはなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4315,6 +4459,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This dependency of the term being matched in the return type is expressed with an “as :token:`ident`” clause where :token:`ident` is dependent in the return type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T201146Z" creationid="eldesh" creationdate="20200329T200859Z">
+        <seg>このマッチされた項の返り型内の依存は、“as :token:`ident`” という節によって表されます。ここで :token:`ident` は返り型内での依存です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This displays the list of global names that are components of some canonical structure.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185111Z" creationid="eldesh" creationdate="20191225T185111Z">
@@ -4529,6 +4681,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T193544Z" creationid="eldesh" creationdate="20200106T193436Z">
         <seg>このオプションは Coq 8.6 から使用可能でデフォルトで無効にされており、ヒント適用手続き filter-then-unify 戦略に切り替えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This paragraph describes the basic form of pattern matching.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T152300Z" creationid="eldesh" creationdate="20200321T151639Z">
+        <seg>この段落ではパターンマッチの基本形を説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5171,6 +5331,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When the term being matched is a variable, the ``as`` clause can be omitted and the term being matched can serve itself as binding name in the return type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T202859Z" creationid="eldesh" creationdate="20200329T202859Z">
+        <seg>項がマッチしたのが変数の時、``as`` 節は省略でき、かつそのマッチした項は返り型内で束縛名としてそれ自身を提供することが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When the type of a bound variable cannot be synthesized by the system, it can be specified with the notation :n:`(@ident : @type)`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T163152Z" creationid="eldesh" creationdate="20200310T163135Z">
@@ -5319,6 +5487,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T143311Z" creationid="eldesh" creationdate="20191221T214431Z">
         <seg>これより良いでしょう:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the branches have respective types ":g:`or (eq bool true true) (eq bool true false)`" and ":g:`or (eq bool false true) (eq bool false false)`" while the whole pattern matching expression has type ":g:`or (eq bool b true) (eq bool b false)`", the identifier :g:`b` being used to represent the dependency.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T202204Z" creationid="eldesh" creationdate="20200329T202204Z">
+        <seg>ブランチはそれぞれの型 ":g:`or (eq bool true true) (eq bool true false)`" と ":g:`or (eq bool false true) (eq bool false false)`" であり一方、パターンマッチング式全体は型 ":g:`or (eq bool b true) (eq bool b false)`" を持ち、識別子 :g:`b` は依存を示すために使用されます。</seg>
       </tuv>
     </tu>
     <tu>
