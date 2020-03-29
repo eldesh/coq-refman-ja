@@ -14,6 +14,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>*Qualified identifiers* (:token:`qualid`) denote *global constants* (definitions, lemmas, theorems, remarks or facts), *global variables* (parameters or axioms), *inductive types* or *constructors of inductive types*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T091553Z" creationid="eldesh" creationdate="20200310T155358Z">
+        <seg>*量化された識別子* (:token:`qualid`) は *グローバル定数* (定義、補題、定理、注意、事実)、*グローバル変数* (パラメータや公理)、*帰納的型* や *帰納的型のコンストラクタ* を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Simple identifiers* (or shortly :token:`ident`) are a syntactic subset of qualified identifiers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155437Z" creationid="eldesh" creationdate="20200310T155437Z">
+        <seg>*単純識別子* (あるいは短く :token:`ident`) は量化された識別子の構文的なサブセットです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>1 is the default level.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T205330Z" creationid="eldesh" creationdate="20200106T205330Z">
@@ -26,6 +42,54 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T205435Z" creationid="eldesh" creationdate="20200106T205435Z">
         <seg>2 は追加の情報を表示します。例えばタクティックやゴールの先送りなどです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:g:`Prop` is the universe of *logical propositions*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093021Z" creationid="eldesh" creationdate="20200310T160926Z">
+        <seg>:g:`Prop` は *論理命題* の宇宙です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:g:`Set` is is the universe of *program types* or *specifications*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161718Z" creationid="eldesh" creationdate="20200310T161718Z">
+        <seg>:g:`Set` は *プログラム型* または *仕様* の宇宙です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:g:`Type` is the type of :g:`Prop` and :g:`Set`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161853Z" creationid="eldesh" creationdate="20200310T161853Z">
+        <seg>:g:`Type` は :g:`Prop` と :g:`Set` の型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:n:`@term &lt;: @type` locally sets up the virtual machine for checking that :token:`term` has type :token:`type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112524Z" creationid="eldesh" creationdate="20200314T112524Z">
+        <seg>:n:`@term &lt;: @type` は :token:`term` が型 :token:`type` を持つことを検査するように局所的に仮想マシンを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:n:`@term &lt;&lt;: @type` uses native compilation for checking that :token:`term` has type :token:`type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112614Z" creationid="eldesh" creationdate="20200314T112614Z">
+        <seg>:n:`@term &lt;&lt;: @type` 項 :token:`term` が型 :token:`type` も持つことを検査するためにネイティブコンパイルを使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:n:`let @ident := @term in @term’` denotes the local binding of :token:`term` to the variable :token:`ident` in :token:`term`’.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113925Z" creationid="eldesh" creationdate="20200314T113925Z">
+        <seg>:n:`let @ident := @term in @term’` は :token:`term`’ 内で :token:`term` から変数 :token:`ident` への局所束縛を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -78,6 +142,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A binder can also be any pattern prefixed by a quote, e.g. :g:`'(x,y)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093645Z" creationid="eldesh" creationdate="20200310T163532Z">
+        <seg>束縛子は頭にクオートの付いたどんなパターンにすることも出来ます。例 :g:`'(x,y)`。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A binding is represented by an identifier.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162804Z" creationid="eldesh" creationdate="20200310T162804Z">
+        <seg>束縛は識別子によって表現されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A canonical structure is an instance of a record/structure type that can be used to solve unification problems involving a projection applied to an unknown structure instance (an implicit argument) and a value.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T182609Z" creationid="eldesh" creationdate="20191225T182543Z">
@@ -118,6 +198,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A pattern matching expression is used to analyze the structure of an inductive object and to apply specific treatments accordingly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T151441Z" creationid="eldesh" creationdate="20200321T151029Z">
+        <seg>パターンマッチ式はある帰納オブジェクトの構造を解析し、特定の処理を適切に適用するために使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A text file `INSTALL` that comes with the sources explains how to install |Coq|.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150123Z" creationid="yamarten" creationdate="20181104T150123Z">
@@ -130,6 +218,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200126T155304Z" creationid="eldesh" creationdate="20200126T155304Z">
         <seg>マニュアル中の文法について</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Abstractions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T075649Z" creationid="eldesh" creationdate="20200314T075649Z">
+        <seg>抽象</seg>
       </tuv>
     </tu>
     <tu>
@@ -318,10 +414,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Applications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110743Z" creationid="eldesh" creationdate="20200314T110743Z">
+        <seg>適用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As before we register a canonical ``LE`` class for ``nat``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191228T145102Z" creationid="eldesh" creationdate="20191228T145057Z">
         <seg>これまでのように ``nat`` のために正準 ``LE`` クラスを登録します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As for abstractions, :g:`forall` is followed by a binder list, and products over several variables are equivalent to an iteration of one-variable products.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105600Z" creationid="eldesh" creationdate="20200314T105600Z">
+        <seg>抽象に関してはどうかというと、:g:`forall` に束縛リストと、1変数積の反復に同等な幾つかの変数上での積が続きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -403,6 +515,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T202528Z" creationid="eldesh" creationdate="20200103T202528Z">
         <seg>:cmd:`Class` と :cmd:`Instance` Vernacular コマンドの他に、型クラスに関連するコマンドがいくつかあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Binders</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162558Z" creationid="eldesh" creationdate="20200310T162558Z">
+        <seg>束縛子</seg>
       </tuv>
     </tu>
     <tu>
@@ -675,6 +795,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Coq terms are typed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T151833Z" creationid="eldesh" creationdate="20200310T151833Z">
+        <seg>Coq の項は型付けされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Coq types are recognized by the same syntactic class as :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T152237Z" creationid="eldesh" creationdate="20200310T152237Z">
+        <seg>Coq の型は :token:`term` と同じ構文クラスと認識されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Declares variables according to the given binding context, which might use :ref:`implicit-generalization`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T185016Z" creationid="eldesh" creationdate="20200103T203306Z">
@@ -703,6 +839,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T133514Z" creationid="eldesh" creationdate="20191222T133514Z">
         <seg>構造的再帰関数 `ident` を ``Fixpoint`` により定義されたかのように定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Definition by case analysis</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T145206Z" creationid="eldesh" creationdate="20200321T145206Z">
+        <seg>場合分けによる定義</seg>
       </tuv>
     </tu>
     <tu>
@@ -780,6 +924,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each of :token:`pattern`:math:`_i` has a form :token:`qualid` :token:`ident` where :token:`qualid` must denote a constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193901Z" creationid="eldesh" creationdate="20200329T193138Z">
+        <seg>:token:`pattern`:math:`_i` はそれぞれ :token:`qualid` :token:`ident` という形式を持ち、ここで :token:`qualid` はコンストラクタを表していなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Either foo.v exists but is not compiled or foo.vo is in a directory which is not in your LoadPath (see Section :ref:`libraries-and-filesystem`).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T222120Z" creationid="eldesh" creationdate="20200220T214141Z">
@@ -816,6 +968,22 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145621Z" creationid="yamarten" creationdate="20181104T145621Z">
         <seg>タクティックの具体例は :ref:`detailedexamplesoftactics` の章で説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions often contain redundant pieces of information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113138Z" creationid="eldesh" creationdate="20200314T113138Z">
+        <seg>しばしば式は冗長な情報の断片を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Extensions of this syntax are given in Chapter :ref:`extensionsofgallina`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T150752Z" creationid="eldesh" creationdate="20200310T150752Z">
+        <seg>この構文の拡張は章 :ref:`extensionsofgallina` で与えられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -941,10 +1109,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For instance the expression “fun :token:`ident`\ :math:`_{1}` … :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” denotes the same function as “ fun :token:`ident`\ :math:`_{1}` : :token:`type` =&gt; … fun :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`”.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080509Z" creationid="eldesh" creationdate="20200314T080509Z">
+        <seg>例えば式 “fun :token:`ident`\ :math:`_{1}` … :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” は “ fun :token:`ident`\ :math:`_{1}` : :token:`type` =&gt; … fun :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” と同じ関数を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, in the following example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T201249Z" creationid="eldesh" creationdate="20200329T201249Z">
+        <seg>例えば、以下の例では:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For instance, the above example gives the following output:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185236Z" creationid="eldesh" creationdate="20191225T185236Z">
         <seg>例えば、上の例は以下の出力を与えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, the following alternative definition is accepted and has the same meaning as the previous one.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T204755Z" creationid="eldesh" creationdate="20200329T204755Z">
+        <seg>例えば、以下の替わりの定義は受け付けられ、以前のそれと同じ意味を持ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -969,6 +1161,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T143555Z" creationid="eldesh" creationdate="20191221T215107Z">
         <seg>Function は定義された関数の部分適用はサポートしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Functions over several variables are equivalent to an iteration of one-variable functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T081346Z" creationid="eldesh" creationdate="20200314T080403Z">
+        <seg>複数の変数上の関数は1変数関数の反復と同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1037,6 +1237,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How to customize the syntax is described in Chapter :ref:`syntaxextensionsandinterpretationscopes`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T150825Z" creationid="eldesh" creationdate="20200310T150825Z">
+        <seg>構文のカスタマイズの方法は章 :ref:`syntaxextensionsandinterpretationscopes` で説明されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>How to read this book</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144922Z" creationid="yamarten" creationdate="20181104T144922Z">
@@ -1101,6 +1309,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Identifiers may also denote *local variables*, while qualified identifiers do not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T091927Z" creationid="eldesh" creationdate="20200310T155620Z">
+        <seg>識別子は *局所変数* も表すことがある一方、量化された識別子はそうではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Identifiers, written :token:`ident`, are sequences of letters, digits, ``_`` and ``'``, that do not start with a digit or ``'``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T093200Z" creationid="eldesh" creationdate="20200201T093200Z">
@@ -1137,6 +1353,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T194250Z" creationid="eldesh" creationdate="20191221T194250Z">
         <seg>もしフィールドの名前が `_` ならばそれのための射影は構築されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a let-binder occurs in the list of binders, it is expanded to a let-in definition (see Section :ref:`let-in`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080640Z" creationid="eldesh" creationdate="20200314T080640Z">
+        <seg>束縛子のリスト中に let-束縛子 が現れる場合、それは let-in 定義 (節 :ref:`let-in` 参照) に展開されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1182,6 +1406,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the binding variable is not used in the expression, the identifier can be replaced by the symbol :g:`_`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162854Z" creationid="eldesh" creationdate="20200310T162854Z">
+        <seg>もし束縛変数がその式の中で使われないならば、その識別子は記号 :g:`_` で置き換えることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the module required has already been loaded, :cmd:`Require Import` :n:`@qualid` simply imports it, as :cmd:`Import` :n:`@qualid` would.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T211743Z" creationid="eldesh" creationdate="20200220T211743Z">
@@ -1202,6 +1434,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T173913Z" creationid="eldesh" creationdate="20200103T195222Z">
         <seg>優先度が指定されないならば、デフォルトはそのインスタンスの非依存束縛子の数になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the variable :token:`ident` occurs in :token:`term`, the product is called *dependent product*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105723Z" creationid="eldesh" creationdate="20200314T105723Z">
+        <seg>変数 :token:`ident` が :token:`term` 中に現れる場合、その積は *依存積* と呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1258,6 +1498,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T183722Z" creationid="eldesh" creationdate="20200103T201606Z">
         <seg>このコマンドはあるモジュール型の中で、対応する具体的なインスタンスがこのモジュール型で何らかの実装として存在するべきだということを宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a let-binder, only one variable can be introduced at the same time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T104159Z" creationid="eldesh" creationdate="20200310T164948Z">
+        <seg>let-束縛子では、高々一つの変数が同時に導入されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1375,6 +1623,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the *dependent* case, there are three subcases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T194138Z" creationid="eldesh" creationdate="20200329T194138Z">
+        <seg>*依存* ケースでは、3つのサブケースがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the *non dependent* case, all branches have the same type, and the :token:`return_type` is the common type of branches.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193824Z" creationid="eldesh" creationdate="20200329T193824Z">
+        <seg>*非依存* ケースでは、全てのブランチは同じ型を持ち、:token:`return_type` はブランチの共通の型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the case of :g:`fun` and :g:`forall`, it is intended that at least one binder of the list is an assumption otherwise fun and forall gets identical.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T170017Z" creationid="eldesh" creationdate="20200310T170017Z">
+        <seg>:g:`fun` と :g:`forall` の場合は、最低一つの束縛子のリストが前提であることが意図され、そうでなければ fun と forall は同一になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the example above, ``A`` and ``eqa`` should be set maximally implicit.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T151242Z" creationid="eldesh" creationdate="20200103T151242Z">
@@ -1395,6 +1667,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T171148Z" creationid="eldesh" creationdate="20191221T171148Z">
         <seg>この式では:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the first subcase, the type in each branch may depend on the exact value being matched in the branch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T200330Z" creationid="eldesh" creationdate="20200329T200225Z">
+        <seg>最初のサブケースでは、各ブランチ内の型はブランチ内で、マッチしたまさにその値に依存してもよい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1463,6 +1743,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this case, :token:`return_type` can usually be omitted as it can be inferred from the type of the branches [2]_.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T194052Z" creationid="eldesh" creationdate="20200329T194052Z">
+        <seg>このケースでは、:token:`return_type` は通常ブランチの型から推論できるため省略されます [2]_。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, the whole pattern matching itself depends on the term being matched.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T200432Z" creationid="eldesh" creationdate="20200329T200432Z">
+        <seg>このケースでは、そのパターンマッチング全体それ自身がマッチされた項に依存します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this sense, the :cmd:`Record` construction allows defining “signatures”.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T165956Z" creationid="eldesh" creationdate="20191221T165956Z">
@@ -1483,6 +1779,22 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T201102Z" creationid="eldesh" creationdate="20191221T201102Z">
         <seg>帰納スキームは帰納的レコードについて自動的に生成される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inferable subterms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113043Z" creationid="eldesh" creationdate="20200314T113043Z">
+        <seg>推論可能 部分項</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Initially, numerals are bound to Peano’s representation of natural numbers (see :ref:`datatypes`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160629Z" creationid="eldesh" creationdate="20200310T160212Z">
+        <seg>初めは数字は自然数のペアノの表現に束縛されます(:ref:`datatypes` を参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1567,6 +1879,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It denotes a function of the variable :token:`ident` that evaluates to the expression :token:`term` (e.g. :g:`fun x : A =&gt; x` denotes the identity function on type :g:`A`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080150Z" creationid="eldesh" creationdate="20200314T080114Z">
+        <seg>それは式 :token:`term` へ評価する変数 :token:`ident` の関数を表します(例 :g:`fun x : A =&gt; x` は型 :g:`A` 上の恒等関数を表します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It denotes either the universal quantification of the variable :g:`x` of type :g:`A` in the proposition :g:`B` or the functional dependent product from :g:`A` to :g:`B` (a construction usually written :math:`\Pi_{x:A}.B` in set theory).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110722Z" creationid="eldesh" creationdate="20200314T110416Z">
+        <seg>それは命題 :g:`B` 中での型 :g:`A` の変数 :g:`x` の全称量化または :g:`A` から :g:`B` への関数的依存積 (集合論では大抵 :math:`\Pi_{x:A}.B` と書かれる構造) のどちらかを表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It does not import the modules on which qualid depends unless these modules were themselves required in module :n:`@qualid` using :cmd:`Require Export`, as described below, or recursively required through a sequence of :cmd:`Require Export`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200223T175254Z" creationid="eldesh" creationdate="20200220T211438Z">
@@ -1583,6 +1911,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It enforces the type of :token:`term` to be :token:`type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112312Z" creationid="eldesh" creationdate="20200314T112312Z">
+        <seg>それは :token:`term` の型を :token:`type` になるように強制します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It infers all the other pieces of the class ``LEQ`` and declares them as canonical values associated to the ``T`` key.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T213510Z" creationid="eldesh" creationdate="20200102T213510Z">
@@ -1595,6 +1931,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T142420Z" creationid="eldesh" creationdate="20191221T212941Z">
         <seg>それは実際には関数 *と他の便利な関連オブジェクト* を定義するいくつかの方法のラッパーであり、具体的には: その関数の再帰構造を反映する帰納法の原理 (:tacn:`function induction` 参照) とその不動点等式です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is also possible to give the type of the variable as follows: :n:`(@ident : @type := @term)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T165034Z" creationid="eldesh" creationdate="20200310T165034Z">
+        <seg>以下のように変数の型を与えることも出来ます: :n:`(@ident : @type := @term)` 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1619,6 +1963,15 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145403Z" creationid="yamarten" creationdate="20181104T145403Z">
         <seg>ここは6つの章に分かれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <note>: associativity is to the left の : は何？</note>
+      <tuv lang="EN-US">
+        <seg>It is equivalent to ( … ( :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ) … ) :token:`term`\ :math:`_n` : associativity is to the left.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T111554Z" creationid="eldesh" creationdate="20200314T111225Z">
+        <seg>それは ( … ( :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ) … ) :token:`term`\ :math:`_n` と同等で結合性は左です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1743,6 +2096,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let-in definitions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113814Z" creationid="eldesh" creationdate="20200314T113814Z">
+        <seg>Let-in 定義</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Lexical ambiguities are resolved according to the “longest match” rule: when a sequence of non alphanumerical characters can be decomposed into several different ways, then the first token is the longest possible one (among all tokens defined at this moment), and so on.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T105023Z" creationid="eldesh" creationdate="20200201T111954Z">
@@ -1791,6 +2152,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lists of :token:`binder` are allowed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T165105Z" creationid="eldesh" creationdate="20200310T165055Z">
+        <seg>:token:`binder` のリストが認められます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Loading of OCaml files is only possible under the bytecode version of ``coqtop`` (i.e. ``coqtop`` called with option ``-byte``, see chapter :ref:`thecoqcommands`), or when |Coq| has been compiled with a version of OCaml that supports native Dynlink (≥ 3.11).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200222T172051Z" creationid="eldesh" creationdate="20200222T172051Z">
@@ -1831,10 +2200,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More on sorts can be found in Section :ref:`sorts`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162116Z" creationid="eldesh" creationdate="20200310T162116Z">
+        <seg>ソートについてより詳しくは節 :ref:`sorts` で見つけることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Moreover the following are defined:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T131318Z" creationid="eldesh" creationdate="20191221T221053Z">
         <seg>さらに以下のものが定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, parentheses can be omitted in the case of a single sequence of bindings sharing the same type (e.g.: :g:`fun (x y z : A) =&gt; t` can be shortened in :g:`fun x y z : A =&gt; t`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200312T005512Z" creationid="eldesh" creationdate="20200310T170152Z">
+        <seg>さらに、同じ型を共有する束縛の単一の列の場合には、括弧も除去することが出来ます (例: :g:`fun (x y z : A) =&gt; t` は :g:`fun x y z : A =&gt; t` に短縮することができます)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1855,10 +2240,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Negative integers are not at the same level as :token:`num`, for this would make precedence unnatural.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160757Z" creationid="eldesh" creationdate="20200310T160551Z">
+        <seg>負の整数は :token:`num` と同じレベルにはありません、このため優先順序が不自然になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No methods or instances are defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T193536Z" creationid="eldesh" creationdate="20200103T193536Z">
         <seg>メソッドやインスタンスは定義されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non dependent product types have a special notation: :g:`A -&gt; B` stands for :g:`forall _ : A, B`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110514Z" creationid="eldesh" creationdate="20200314T110514Z">
+        <seg>非依存積型は :g:`forall _ : A, B` を表す特別記法 :g:`A -&gt; B` を持ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1887,6 +2288,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that :token:`term` is intended to be a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105633Z" creationid="eldesh" creationdate="20200314T105633Z">
+        <seg>留意すべきは :token:`term` は型になることを意図されていることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that in practice the user may want to declare ``EQ.obj`` as a coercion, but we will not do that here.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T112524Z" creationid="eldesh" creationdate="20191227T112524Z">
@@ -1902,12 +2311,36 @@
       </tuv>
     </tu>
     <tu>
+      <tuv lang="EN-US">
+        <seg>Numerals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155642Z" creationid="eldesh" creationdate="20200310T155642Z">
+        <seg>数字</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>「数は数です」になってしまう</note>
       <tuv lang="EN-US">
         <seg>Numerals are sequences of digits.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T101218Z" creationid="eldesh" creationdate="20200201T095123Z">
         <seg>数の表示は数字の列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Numerals have no definite semantics in the calculus.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T092021Z" creationid="eldesh" creationdate="20200310T155832Z">
+        <seg>計算の中で数字は確定された意味は持ちません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Objects of inductive types can be destructurated by a case-analysis construction called *pattern matching* expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T150431Z" creationid="eldesh" creationdate="20200321T150431Z">
+        <seg>帰納型のオブジェクトはパターンマッチと呼ばれる場合分けの文法によって分解することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2177,6 +2610,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Products</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T105009Z" creationid="eldesh" creationdate="20200314T105009Z">
+        <seg>積</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Project-Id-Version: Coq 8.8.2
 Report-Msgid-Bugs-To:
 POT-Creation-Date: 2018-10-07 10:53+0900
@@ -2245,6 +2686,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150315Z" creationid="yamarten" creationdate="20181104T150315Z">
         <seg>Proof-General は https://proofgeneral.github.io/から入手可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Qualified identifiers and simple identifiers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T155034Z" creationid="eldesh" creationdate="20200310T155034Z">
+        <seg>量化された識別子と単純識別子</seg>
       </tuv>
     </tu>
     <tu>
@@ -2330,6 +2779,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See Section :ref:`Mult-match` and Chapter :ref:`extendedpatternmatching` for the description of the general form.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T151859Z" creationid="eldesh" creationdate="20200321T151859Z">
+        <seg>一般形の説明については節 :ref:`Mult-match` と章 :ref:`extendedpatternmatching` を参照して下さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the documentation of functional induction (:tacn:`function induction`) and ``Functional Scheme`` (:ref:`functional-scheme`) for how to use the induction principle to easily reason about the function.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T214113Z" creationid="eldesh" creationdate="20191221T214113Z">
@@ -2382,6 +2839,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T112444Z" creationid="eldesh" creationdate="20200103T185747Z">
         <seg>従って反射的関係が必要になるたび、代わりに前順序を使うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some constructions allow the binding of a variable to value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093729Z" creationid="eldesh" creationdate="20200310T163631Z">
+        <seg>幾つかの構文は変数の値への束縛を認めます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2459,6 +2924,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Subterms that can be automatically inferred by Coq can be replaced by the symbol ``_`` and Coq will guess the missing piece of information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T113715Z" creationid="eldesh" creationdate="20200314T113715Z">
+        <seg>部分項は Coq によって自動的に推論されることがあり、記号 ``_`` で置き換えると Coq が不足している情報の断片を推測します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such notation will be overloaded, and its meaning will depend on the types of the terms that are compared.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T105847Z" creationid="eldesh" creationdate="20191227T105847Z">
@@ -2496,6 +2969,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T194831Z" creationid="eldesh" creationdate="20191221T194831Z">
         <seg>レコード射影構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Syntax of terms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T201957Z" creationid="eldesh" creationdate="20200307T201957Z">
+        <seg>項の構文</seg>
       </tuv>
     </tu>
     <tu>
@@ -2549,6 +3030,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The *non dependent product* is used both to denote the propositional implication and function types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110638Z" creationid="eldesh" creationdate="20200314T110638Z">
+        <seg>その *非依存積* は包含命題と関数型の両方を表すのに使うことが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The :cmd:`Class` command is used to declare a typeclass with parameters ``binders`` and fields the declared record fields.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T154755Z" creationid="eldesh" creationdate="20200103T192055Z">
@@ -2569,6 +3058,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T184600Z" creationid="eldesh" creationdate="20191221T165051Z">
         <seg>:cmd:`Record` は多くのプログラミング言語で行われるようにレコードを定義できるようにするマクロです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The :token:`return_type` expresses the type returned by the whole match expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193518Z" creationid="eldesh" creationdate="20200329T193455Z">
+        <seg>:token:`return_type` はマッチ式全体によって返される型を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2626,6 +3123,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T130549Z" creationid="eldesh" creationdate="20191227T110907Z">
         <seg>この基本名前空間は代数構造の定義を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The basic form of pattern matching is characterized by a single :token:`match_item` expression, a :token:`mult_pattern` restricted to a single :token:`pattern` and :token:`pattern` restricted to the form :n:`@qualid {* @ident}`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T153218Z" creationid="eldesh" creationdate="20200321T152246Z">
+        <seg>パターンマッチの基本形は単一の :token:`match_item` 式によって特徴づけられ、:token:`mult_pattern` は単一の :token:`pattern` に、:token:`pattern` は :n:`@qualid {* @ident}` という形式に制限されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2759,6 +3264,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The entry :token:`binder` of the grammar accepts either an assumption binder as defined above or a let-binder.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T100612Z" creationid="eldesh" creationdate="20200310T164829Z">
+        <seg>文法の :token:`binder` の項目は、上で定義された仮定束縛子または let-束縛子 のどちらかを受理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The entry ``unicode-letter`` non-exhaustively includes Latin, Greek, Gothic, Cyrillic, Arabic, Hebrew, Georgian, Hangul, Hiragana and Katakana characters, CJK ideographs, mathematical letter-like symbols, hyphens, non-breaking space, … The entry ``unicode-id-part`` non-exhaustively includes symbols for prime letters and subscripts.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T094856Z" creationid="eldesh" creationdate="20200201T094316Z">
@@ -2779,6 +3292,54 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T104711Z" creationid="eldesh" creationdate="20191227T104711Z">
         <seg>例は :cite:`CSwcu` から抜粋しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :n:`@term : @type` is a type cast expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112253Z" creationid="eldesh" creationdate="20200314T112253Z">
+        <seg>式 :n:`@term : @type` は型キャスト式です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :n:`forall @ident : @type, @term` denotes the *product* of the variable :token:`ident` of type :token:`type`, over the term :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T111251Z" creationid="eldesh" creationdate="20200314T105323Z">
+        <seg>式 :n:`forall @ident : @type, @term` は項 :token:`term` 上の型 :token:`type` の変数 :token:`ident` の *積* を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :n:`fun @ident : @type =&gt; @term` defines the *abstraction* of the variable :token:`ident`, of type :token:`type`, over the term :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T075815Z" creationid="eldesh" creationdate="20200314T075815Z">
+        <seg>式 :n:`fun @ident : @type =&gt; @term` は項 :token:`term` 上の型 :token:`type` の変数 :token:`ident` の *抽象* を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ... :token:`term`\ :math:`_n` denotes the application of the term :token:`term`\ :math:`_0` to the arguments :token:`term`\ :math:`_1` ... then :token:`term`\ :math:`_n`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110926Z" creationid="eldesh" creationdate="20200314T110926Z">
+        <seg>式 :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` ... :token:`term`\ :math:`_n` は項 :token:`term`\ :math:`_0` の引数 :token:`term`\ :math:`_1` ... then :token:`term`\ :math:`_n` への適用を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` denotes the application of :token:`term`\ :math:`_0` to :token:`term`\ :math:`_1`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110823Z" creationid="eldesh" creationdate="20200314T110823Z">
+        <seg>式 :token:`term`\ :math:`_0` :token:`term`\ :math:`_1` は :token:`term`\ :math:`_0` の :token:`term`\ :math:`_1` への適用を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression match ":token:`term`:math:`_0` :token:`return_type` with :token:`pattern`:math:`_1` =&gt; :token:`term`:math:`_1` :math:`|` … :math:`|` :token:`pattern`:math:`_n` =&gt; :token:`term`:math:`_n` end" denotes a *pattern matching* over the term :token:`term`:math:`_0` (expected to be of an inductive type :math:`I`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T153600Z" creationid="eldesh" creationdate="20200321T153554Z">
+        <seg>":token:`term`:math:`_0` :token:`return_type` with :token:`pattern`:math:`_1` =&gt; :token:`term`:math:`_1` :math:`|` … :math:`|` :token:`pattern`:math:`_n` =&gt; :token:`term`:math:`_n` end" にマッチする式は項 :token:`term`:math:`_0` (帰納型 :math:`I` になることが期待されます) 上の *パターンマッチング* を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2847,6 +3408,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following grammars describe the basic syntax of the terms of the *Calculus of Inductive Constructions* (also called Cic).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200307T202124Z" creationid="eldesh" creationdate="20200307T202124Z">
+        <seg>以下の文法は *Calculus of Inductive Constructions* (Cic とも呼ばれる) の項の基本的な構文を記述します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following identifiers are reserved keywords, and cannot be employed otherwise::</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T111816Z" creationid="eldesh" creationdate="20200201T111813Z">
@@ -2873,8 +3442,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The following sequences of characters are special tokens::</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200215T182752Z" creationid="eldesh" creationdate="20200201T111910Z">
-        <seg>aaaaaaaaaa以下の文字の列はスペシャルトークンです::</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T090123Z" creationid="eldesh" creationdate="20200201T111910Z">
+        <seg>以下の文字の列はスペシャルトークンです::</seg>
       </tuv>
     </tu>
     <tu>
@@ -2892,6 +3461,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T151755Z" creationid="eldesh" creationdate="20200102T150136Z">
         <seg>以下の二つの構成は |Coq| に ``LE.type`` と ``EQ.type`` 構造を同じ型上で与えられた ``LEQ.type`` 構造からどのように標準的に構築するかを伝えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The formal presentation of Cic is given in Chapter :ref:`calculusofinductiveconstructions`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T150729Z" creationid="eldesh" creationdate="20200310T150729Z">
+        <seg>Cic の形式的な表現は章 :ref:`calculusofinductiveconstructions` で与えられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2966,6 +3543,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The intention behind a dependent product :g:`forall x : A, B` is twofold.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T110025Z" creationid="eldesh" creationdate="20200314T110025Z">
+        <seg>依存積 :g:`forall x : A, B` の背景にある意図には二つの側面があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The interactive mode is generally run with the help of an IDE, such as CoqIDE, documented in :ref:`coqintegrateddevelopmentenvironment`, Emacs with Proof-General :cite:`Asp00` [#PG]_, or jsCoq to run Coq in your browser (see https://github.com/ejgallego/jscoq).</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T161431Z" creationid="yamarten" creationdate="20181104T111701Z">
@@ -2978,6 +3563,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T105452Z" creationid="eldesh" creationdate="20191227T105452Z">
         <seg>興味のある読者は :cite:`CSlessadhoc` にも別の、相補的な、正準構造の使用: 高度な証明探索 についての詳細な説明を発見するでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The keyword :g:`fun` can be followed by several binders as given in Section :ref:`binders`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T080320Z" creationid="eldesh" creationdate="20200314T080320Z">
+        <seg>キーワード :g:`fun` には節 :ref:`binders` で与えられるように幾つかの束縛子を続けることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3022,10 +3615,10 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The library file `dirpath’` is indirectly required by the ``Require`` command but it is bound in the current loadpath to the file `ident.vo` which was bound to a different library name `dirpath` at the time it was compiled.</seg>
+        <seg>The logical propositions themselves are typing the proofs.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20200220T215740Z" creationid="eldesh" creationdate="20200220T215740Z">
-        <seg>ライブラリファイル `dirpath’` は ``Require`` コマンドによって間接的に要求されていますが、それは現在のロードパス内ではファイル `ident.vo` に束縛されており、これはコンパイルされた時点で異なるライブラリ名 `dirpath` へ束縛されていました。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093339Z" creationid="eldesh" creationdate="20200310T161044Z">
+        <seg>論理命題それ自体が証明を型付けます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3090,6 +3683,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200104T224434Z" creationid="eldesh" creationdate="20200103T161617Z">
         <seg>その新しいコマンドはどんな束縛コンテキストでも引数として受け入れるということを除き、:cmd:`Variables` Vernacular と同じように動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The notation :n:`(@ident := @term)` for arguments is used for making explicit the value of implicit arguments (see Section :ref:`explicit-applications`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T111805Z" creationid="eldesh" creationdate="20200314T111805Z">
+        <seg>引数のための記法 :n:`(@ident := @term)` が暗黙引数の値を明示的にするために使われます (節 :ref:`explicit-applications` を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The notation in the latter case is :n:`(@ident := @term)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T164850Z" creationid="eldesh" creationdate="20200310T164850Z">
+        <seg>後者の場合の表記法は :n:`(@ident := @term)` です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3238,6 +3847,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The specifications themselves are typing the programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093347Z" creationid="eldesh" creationdate="20200310T161748Z">
+        <seg>その仕様それ自体がプログラムを型付けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The syntax ``:&gt;`` indicates that each ``PreOrder`` can be seen as a ``Reflexive`` relation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T185648Z" creationid="eldesh" creationdate="20200103T185648Z">
@@ -3266,6 +3883,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T181719Z" creationid="eldesh" creationdate="20200103T213204Z">
         <seg>タクティック ``autoapply`` はヒントデータベース ident の透過性情報を使用し term を適用し、型クラス解決は *行いません* 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The terms :token:`term`:math:`_1`\ …\ :token:`term`:math:`_n` are the *branches* of the pattern matching expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193833Z" creationid="eldesh" creationdate="20200329T193024Z">
+        <seg>項 :token:`term`:math:`_1`\ …\ :token:`term`:math:`_n` はパターンマッチ式の *ブランチ* です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3392,10 +4017,26 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are several cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193612Z" creationid="eldesh" creationdate="20200329T193612Z">
+        <seg>幾つかのケースがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are several commands that specify which variables should be generalizable.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T141521Z" creationid="eldesh" creationdate="20191226T141521Z">
         <seg>どの変数が一般化されるべきかを指定するコマンドがいくつかあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are three sorts :g:`Set`, :g:`Prop` and :g:`Type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160900Z" creationid="eldesh" creationdate="20200310T160900Z">
+        <seg>3つのソート :g:`Set`、:g:`Prop`、:g:`Type` があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3405,6 +4046,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144950Z" creationid="yamarten" creationdate="20181104T144950Z">
         <seg>総合索引に加え、タクティックやコマンド、エラーメッセージ・警告に特化した索引があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a syntactic sugar for let-in definition of functions: :n:`let @ident {+ @binder} := @term in @term’` stands for :n:`let @ident := fun {+ @binder} =&gt; @term in @term’`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T114033Z" creationid="eldesh" creationdate="20200314T114033Z">
+        <seg>関数の let-in 定義には糖衣構文があり、:n:`let @ident {+ @binder} := @term in @term’` が :n:`let @ident := fun {+ @binder} =&gt; @term in @term’` を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is also a notation for a sequence of binding variables sharing the same type: :n:`({+ @ident} : @type)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163310Z" creationid="eldesh" creationdate="20200310T163244Z">
+        <seg>同じ型を共有する束縛変数の列のための表記法もあります: :n:`({+ @ident} : @type)`。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3421,6 +4078,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T201816Z" creationid="eldesh" creationdate="20191221T201816Z">
         <seg>3通りの可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There should be exactly one branch for every constructor of :math:`I`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T193907Z" creationid="eldesh" creationdate="20200329T193359Z">
+        <seg>全てのコンストラクタ :math:`I` についてちょうど1つのブランチが存在しなくてはなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3485,6 +4150,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T210650Z" creationid="eldesh" creationdate="20200102T210650Z">
         <seg>それらは :cite:`CSwcu` の中でより詳細に説明されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are mere notations that can be bound to objects through the notation mechanism (see Chapter :ref:`syntaxextensionsandinterpretationscopes` for details).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T160613Z" creationid="eldesh" creationdate="20200310T160111Z">
+        <seg>それらは表記法機構(詳しくは章 :ref:`syntaxextensionsandinterpretationscopes` を参照)を通して(訳注: 数学的)対象に束縛され得る単なる記法にすぎません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3762,6 +4435,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This constitutes a semantic subclass of the syntactic class :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161611Z" creationid="eldesh" creationdate="20200310T161611Z">
+        <seg>これは :token:`term` の構文クラスの意味論的なサブクラスを構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This declaration means that any instance of the ``Ord`` class must have an instance of ``EqDec``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T172239Z" creationid="eldesh" creationdate="20200103T172239Z">
@@ -3774,6 +4455,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T112217Z" creationid="eldesh" creationdate="20200103T185158Z">
         <seg>これは反射的および推移的関係のシングルトンクラスを宣言します (説明は :ref:`singleton class &lt;singleton-class&gt;` 派生を見てください)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This dependency of the term being matched in the return type is expressed with an “as :token:`ident`” clause where :token:`ident` is dependent in the return type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T201146Z" creationid="eldesh" creationdate="20200329T200859Z">
+        <seg>このマッチされた項の返り型内の依存は、“as :token:`ident`” という節によって表されます。ここで :token:`ident` は返り型内での依存です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3814,6 +4503,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T144930Z" creationid="yamarten" creationdate="20181104T144930Z">
         <seg>この文書はリファレンスマニュアルであり、通読するものではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is called a “let-binder”.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163647Z" creationid="eldesh" creationdate="20200310T163647Z">
+        <seg>これは “let-束縛子” と呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3984,6 +4681,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T193544Z" creationid="eldesh" creationdate="20200106T193436Z">
         <seg>このオプションは Coq 8.6 から使用可能でデフォルトで無効にされており、ヒント適用手続き filter-then-unify 戦略に切り替えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This paragraph describes the basic form of pattern matching.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200321T152300Z" creationid="eldesh" creationdate="20200321T151639Z">
+        <seg>この段落ではパターンマッチの基本形を説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4261,6 +4966,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type cast</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T112235Z" creationid="eldesh" creationdate="20200314T112235Z">
+        <seg>型キャスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Typeclass declarations introduced when this option is set have a more efficient resolution behavior (the option is off by default).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T204841Z" creationid="eldesh" creationdate="20200106T204841Z">
@@ -4289,6 +5002,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T210545Z" creationid="eldesh" creationdate="20200106T210545Z">
         <seg>型クラスの eauto `:=`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T151815Z" creationid="eldesh" creationdate="20200310T151815Z">
+        <seg>型</seg>
       </tuv>
     </tu>
     <tu>
@@ -4360,6 +5081,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Various constructions such as :g:`fun`, :g:`forall`, :g:`fix` and :g:`cofix` *bind* variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T162738Z" creationid="eldesh" creationdate="20200310T162738Z">
+        <seg>:g:`fun`、:g:`forall`、:g:`fix` それに :g:`cofix` のような様々な構文は変数を *束縛* します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Various informations can be found in the following documents:</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145944Z" creationid="yamarten" creationdate="20181104T145944Z">
@@ -4396,6 +5125,30 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191228T144507Z" creationid="eldesh" creationdate="20191228T144448Z">
         <seg>中置 ``&lt;=`` 記法を伴った順序関係を装備した型のクラスを選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We denote by :production:`type` the semantic subclass of types inside the syntactic class :token:`term`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T154956Z" creationid="eldesh" creationdate="20200310T154956Z">
+        <seg>:production:`type` によって :token:`term` の構文クラスの中で意味論的なサブクラスの種類を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We denote propositions by :production:`form`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200314T093111Z" creationid="eldesh" creationdate="20200310T161327Z">
+        <seg>命題は :production:`form` によって表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We denote specifications by :production:`specif`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T161828Z" creationid="eldesh" creationdate="20200310T161828Z">
+        <seg>我々は仕様を :production:`specif` で表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4578,6 +5331,22 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When the term being matched is a variable, the ``as`` clause can be omitted and the term being matched can serve itself as binding name in the return type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T202859Z" creationid="eldesh" creationdate="20200329T202859Z">
+        <seg>項がマッチしたのが変数の時、``as`` 節は省略でき、かつそのマッチした項は返り型内で束縛名としてそれ自身を提供することが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the type of a bound variable cannot be synthesized by the system, it can be specified with the notation :n:`(@ident : @type)`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200310T163152Z" creationid="eldesh" creationdate="20200310T163135Z">
+        <seg>束縛された変数の型がシステムによって合成出来ないときは、:n:`(@ident : @type)` という表記法によって指定することが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>With this option on, when a unification fails, typeclass resolution is tried before launching unification once again.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T202939Z" creationid="eldesh" creationdate="20200106T202939Z">
@@ -4718,6 +5487,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T143311Z" creationid="eldesh" creationdate="20191221T214431Z">
         <seg>これより良いでしょう:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the branches have respective types ":g:`or (eq bool true true) (eq bool true false)`" and ":g:`or (eq bool false true) (eq bool false false)`" while the whole pattern matching expression has type ":g:`or (eq bool b true) (eq bool b false)`", the identifier :g:`b` being used to represent the dependency.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20200329T202204Z" creationid="eldesh" creationdate="20200329T202204Z">
+        <seg>ブランチはそれぞれの型 ":g:`or (eq bool true true) (eq bool true false)`" と ":g:`or (eq bool false true) (eq bool false false)`" であり一方、パターンマッチング式全体は型 ":g:`or (eq bool b true) (eq bool b false)`" を持ち、識別子 :g:`b` は依存を示すために使用されます。</seg>
       </tuv>
     </tu>
     <tu>
