@@ -1020,6 +1020,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Finally, the third subcase is a combination of the first and second subcase.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T124430Z" creationid="eldesh" creationdate="20211204T124430Z">
+        <seg>最後に、第3のケースは最初と2番目のケースの組み合わせである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, the |SSR| proof language is presented in Chapter :ref:`thessreflectprooflanguage`.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145630Z" creationid="yamarten" creationdate="20181104T145630Z">
@@ -1161,6 +1169,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T143648Z" creationid="eldesh" creationdate="20191221T215336Z">
         <seg>今のところ、依存ケースは非-構造的停止関数として扱われません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this third subcase, both the clauses ``as`` and ``in`` are available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T125518Z" creationid="eldesh" creationdate="20211204T125518Z">
+        <seg>この3番目のケースでは、``as`` と ``in`` 節の両方が利用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1603,6 +1619,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T093723Z" creationid="eldesh" creationdate="20200201T093723Z">
         <seg>特に、識別子はケースセンシティブです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, it only applies to pattern matching on terms in a type with annotations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T125340Z" creationid="eldesh" creationdate="20211204T125340Z">
+        <seg>特に、注釈付きの型の中でのパターンマッチにのみ適用される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4061,6 +4085,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T141521Z" creationid="eldesh" creationdate="20191226T141521Z">
         <seg>どの変数が一般化されるべきかを指定するコマンドがいくつかあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are specific notations for case analysis on types with one or two constructors: ``if … then … else …`` and ``let (…,…) := … in …`` (see Sections :ref:`if-then-else` and :ref:`irrefutable-patterns`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T130018Z" creationid="eldesh" creationdate="20211204T125716Z">
+        <seg>一つまたは二つの構築子を持つ型上の場合分けのためには特別な記法があります： ``if … then … else …`` と ``let (…,…) := … in …`` です。(節 :ref:`if-then-else` と :ref:`irrefutable-patterns` 参照)。</seg>
       </tuv>
     </tu>
     <tu>
