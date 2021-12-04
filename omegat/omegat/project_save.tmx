@@ -2048,6 +2048,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is the local counterpart of the :cmd:`CoFixpoint` command.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T140829Z" creationid="eldesh" creationdate="20211204T140829Z">
+        <seg>これはローカルの :cmd:`CoFixpoint` コマンドに対応します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is the local counterpart of the :cmd:`Fixpoint` command.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T140553Z" creationid="eldesh" creationdate="20211204T140553Z">
+        <seg>これはローカルの :cmd:`Fixpoint` コマンドに対応します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is useful when some constants prevent some unifications and make resolution fail.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T182610Z" creationid="eldesh" creationdate="20200106T184416Z">
@@ -2770,6 +2786,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Recursive functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T130124Z" creationid="eldesh" creationdate="20211204T130124Z">
+        <seg>再帰関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Reduction</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T160237Z" creationid="eldesh" creationdate="20191225T160237Z">
@@ -3167,6 +3191,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The association of a single fixpoint and a local definition have a special syntax: :n:`let fix @ident @binders := @term in` stands for :n:`let @ident := fix @ident @binders := @term in`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T141104Z" creationid="eldesh" creationdate="20211204T141052Z">
+        <seg>単一の fixpoint と局所定義の関連付けは特別な構文を持ちます：:n:`let fix @ident @binders := @term in` は :n:`let @ident := fix @ident @binders := @term in` を表す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The base namespace contains the definitions of the algebraic structure.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T130549Z" creationid="eldesh" creationdate="20191227T110907Z">
@@ -3388,6 +3420,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200321T153600Z" creationid="eldesh" creationdate="20200321T153554Z">
         <seg>":token:`term`:math:`_0` :token:`return_type` with :token:`pattern`:math:`_1` =&gt; :token:`term`:math:`_1` :math:`|` … :math:`|` :token:`pattern`:math:`_n` =&gt; :token:`term`:math:`_n` end" にマッチする式は項 :token:`term`:math:`_0` (帰納型 :math:`I` になることが期待されます) 上の *パターンマッチング* を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression “``cofix`` :token:`ident`:math:`_1` :token:`binder`:math:`_1` ``:`` :token:`type`:math:`_1` ``with … with`` :token:`ident`:math:`_n` :token:`binder`:math:`_n` : :token:`type`:math:`_n` ``for`` :token:`ident`:math:`_i`” denotes the :math:`i`-th component of a block of terms defined by a mutual guarded co-recursion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T140751Z" creationid="eldesh" creationdate="20211204T140701Z">
+        <seg>S式 “``cofix`` :token:`ident`:math:`_1` :token:`binder`:math:`_1` ``:`` :token:`type`:math:`_1` ``with … with`` :token:`ident`:math:`_n` :token:`binder`:math:`_n` : :token:`type`:math:`_n` ``for`` :token:`ident`:math:`_i`” は相互ガード付き余再帰により定義された項のブロックのi番目のコンポーネントを表す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression “``fix`` :token:`ident`:math:`_1` :token:`binder`:math:`_1` ``:`` :token:`type`:math:`_1` ``:=`` :token:`term`:math:`_1` ``with … with`` :token:`ident`:math:`_n` :token:`binder`:math:`_n` : :token:`type`:math:`_n` ``:=`` :token:`term`:math:`_n` ``for`` :token:`ident`:math:`_i`” denotes the :math:`i`-th component of a block of functions defined by mutual structural recursion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T140415Z" creationid="eldesh" creationdate="20211204T140415Z">
+        <seg>式 “``fix`` :token:`ident`:math:`_1` :token:`binder`:math:`_1` ``:`` :token:`type`:math:`_1` ``:=`` :token:`term`:math:`_1` ``with … with`` :token:`ident`:math:`_n` :token:`binder`:math:`_n` : :token:`type`:math:`_n` ``:=`` :token:`term`:math:`_n` ``for`` :token:`ident`:math:`_i`” は相互構造再帰により定義された関数のブロックのi番目のコンポーネントを表す。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3843,6 +3891,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200115T210335Z" creationid="eldesh" creationdate="20200115T205539Z">
         <seg>その規則は型付けアルゴリズムによって実装され、:ref:`calculusofinductiveconstructions` の章で述べられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The same applies for co-fixpoints.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T141131Z" creationid="eldesh" creationdate="20211204T141131Z">
+        <seg>同等のものが co-fixpoint にも適用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5301,6 +5357,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T162609Z" creationid="eldesh" creationdate="20200102T162522Z">
         <seg>ユーザが提供したものは ``n`` と ``m`` の型 ``nat`` についてのこのステートメントの証明とペアコンストラクタがこの性質を保存するという証明です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When :math:`n=1`, the “``for`` :token:`ident`:math:`_i`” clause is omitted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T140631Z" creationid="eldesh" creationdate="20211204T140631Z">
+        <seg>:math:`n=1` のとき、“``for`` :token:`ident`:math:`_i`” の節は省略されます。</seg>
       </tuv>
     </tu>
     <tu>
