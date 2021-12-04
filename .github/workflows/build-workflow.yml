@@ -22,7 +22,7 @@ jobs:
         with:
           java-version: 1.8
 
-      - uses: avsm/setup-ocaml@v1.0
+      - uses: ocaml/setup-ocaml@v1.1.12
         with:
           ocaml-version: 4.02.3
 
