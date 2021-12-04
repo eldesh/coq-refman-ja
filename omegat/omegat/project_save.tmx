@@ -70,6 +70,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>:math:`I` is the inductive type of the term being matched;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T102712Z" creationid="eldesh" creationdate="20211204T102712Z">
+        <seg>:math:`I` はマッチされた項の帰納型i;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>:n:`@term &lt;: @type` locally sets up the virtual machine for checking that :token:`term` has type :token:`type`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200314T112524Z" creationid="eldesh" creationdate="20200314T112524Z">
@@ -1759,6 +1767,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this configuration, the type of each branch can depend on the type dependencies specific to the branch and the whole pattern matching expression has a type determined by the specific dependencies in the type of the term being matched.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T102206Z" creationid="eldesh" creationdate="20211204T101756Z">
+        <seg>この場合、各ブランチの型はそのブランチに固有の型の依存関係に依存することが出来、パターンマッチング式全体はマッチした項の型内の特定の依存関係によって決まる型を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this sense, the :cmd:`Record` construction allows defining “signatures”.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T165956Z" creationid="eldesh" creationdate="20191221T165956Z">
@@ -2350,6 +2366,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T155649Z" creationid="eldesh" creationdate="20200102T152811Z">
         <seg>もちろん代数的構造のどんな具体例についても代数的な背景の中で証明された結果を適用したい人もいるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the contrary, the type of the whole pattern matching expression has type :g:`eq A y x` because the third argument of eq is y in the type of H. This dependency of the case analysis in the third argument of :g:`eq` is expressed by the identifier :g:`z` in the return type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T124141Z" creationid="eldesh" creationdate="20211204T124141Z">
+        <seg>それどころか、パターンマッチング式全体の型は :g:`eq A y x` を持ち、なぜなら H の型の eq の第3引数は y なためである。:g:`eq` の第3引数内の場合分けのこの依存性は返り型の識別子 :g:`z` によって表される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3823,6 +3847,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The second subcase is only relevant for annotated inductive types such as the equality predicate (see Section :ref:`coq-equality`), the order predicate on natural numbers or the type of lists of a given length (see Section :ref:`matching-dependent`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T095954Z" creationid="eldesh" creationdate="20211204T095954Z">
+        <seg>二つ目のサブケースは等価性述語(節 :ref:`coq-equality` 参照)や、自然数上の順序述語や,与えられた長さのリストの型(節 :ref:`matching-dependent`参照)のような注釈付き帰納型にのみ関係します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The semantics for the limit :n:`@num` is different than for auto.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T212211Z" creationid="eldesh" creationdate="20200103T212211Z">
@@ -4455,6 +4487,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T112217Z" creationid="eldesh" creationdate="20200103T185158Z">
         <seg>これは反射的および推移的関係のシングルトンクラスを宣言します (説明は :ref:`singleton class &lt;singleton-class&gt;` 派生を見てください)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This dependency of the return type in the annotations of the inductive type is expressed using a “:g:`in` :math:`I` :g:`_ … _` :token:`pattern`:math:`_1` … :token:`pattern`:math:`_n`” clause, where</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T102604Z" creationid="eldesh" creationdate="20211204T102343Z">
+        <seg>帰納型の注釈内の返り型のこの依存性は "::g:`in` :math:`I` :g:`_ … _` :token:`pattern`:math:`_1` … :token:`pattern`:math:`_n`” という節を使うことで表され、ここで</seg>
       </tuv>
     </tu>
     <tu>
@@ -5467,6 +5507,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>in the basic case which we describe below, each :token:`pattern`:math:`_i` is a name :token:`ident`:math:`_i`; see :ref:`match-in-patterns` for the general case</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T111917Z" creationid="eldesh" creationdate="20211204T111838Z">
+        <seg>以下で説明する基本的な場合には、各 :token:`pattern`:math:`_i` は :token:`ident`:math:`_i` という名称になる; 一般の場合については :ref:`match-in-patterns` を参照。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>in which case the correctness of :n:`@type₃` may rely on the instance :n:`@term₂` of :n:`@ident₂` and :n:`@term₂` may in turn depend on :n:`@ident₁`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191007Z" creationid="eldesh" creationdate="20191221T185905Z">
@@ -5487,6 +5535,22 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T143311Z" creationid="eldesh" creationdate="20191221T214431Z">
         <seg>これより良いでしょう:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the :g:`_` are matching the parameters of the inductive type: the return type is not dependent on them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T102849Z" creationid="eldesh" creationdate="20211204T102849Z">
+        <seg>:g:`_` はその帰納型のマッチするパラメータ: 返り型はそれらに依存しない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the :token:`pattern`:math:`_i` are matching the annotations of the inductive type: the return type is dependent on them</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T110832Z" creationid="eldesh" creationdate="20211204T110832Z">
+        <seg>:token:`pattern`:math:`_i` はその帰納型の注釈にマッチする：返り型はそれに依存する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5519,6 +5583,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T171245Z" creationid="eldesh" creationdate="20191221T171245Z">
         <seg>最初の識別子 :token:`ident` は定義されたレコードの名前であり、:token:`sort` はその型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the type of the branch is :g:`eq A x x` because the third argument of :g:`eq` is :g:`x` in the type of the pattern :g:`eq_refl`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211204T121233Z" creationid="eldesh" creationdate="20211204T121233Z">
+        <seg>ブランチの型は :g:`eq A x x` であり、なぜなら :g:`eq_refl` パターンの型の型内で :g:`eq` の第3引数が :g:`x` だから。</seg>
       </tuv>
     </tu>
     <tu>
