@@ -28,13 +28,14 @@ jobs:
 
       - name: Install Camlp5
         run: |
+          sudo apt-get install libstring-shellquote-perl
           eval $(opam env)
           opam install ocamlfind=1.9.1
           opam install camlp5=7.08
 
       - name: Install Sphinx
         run: |
-          sudo apt-get install -y python3-pip gettext
+          sudo apt-get install python3-pip gettext
           pip3 install sphinx
           pip3 install sphinx-rtd-theme
           pip3 install beautifulsoup4
