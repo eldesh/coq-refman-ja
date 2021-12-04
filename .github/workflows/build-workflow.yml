@@ -35,14 +35,9 @@ jobs:
 
       - name: Install Sphinx
         run: |
-          sudo apt-get install python3-pip gettext
+          sudo apt-get install python3-pip python3-setuptools gettext
           pip3 install wheel
-          pip3 install sphinx==2.2.2
-          pip3 install sphinx-rtd-theme==1.0.0
-          pip3 install beautifulsoup4==4.10.0
-          pip3 install pexpect==4.8.0
-          pip3 install antlr4-python3-runtime==4.7
-          pip3 install sphinxcontrib-bibtex==1.0.0
+          pip3 install -r requirements.txt
 
       - name: Install OmegaT
         run: |
