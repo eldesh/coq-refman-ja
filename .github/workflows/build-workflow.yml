@@ -29,8 +29,8 @@ jobs:
       - name: Install Camlp5
         run: |
           eval $(opam env)
-          opam install ocamlfind
-          opam install camlp5
+          opam install ocamlfind=1.9.1
+          opam install camlp5=7.08
 
       - name: Install Sphinx
         run: |
