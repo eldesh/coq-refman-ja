@@ -71,6 +71,8 @@ SPHINX_DIR = coq/doc/sphinx
 TARGET_POS = $(addprefix target/, $(POS))
 SOURCE_POS = $(addprefix source/, $(POS))
 
+TARGET_POS_JA = $(addprefix $(SPHINX_DIR)/locales/ja/LC_MESSAGES/, $(notdir $(TARGET_POS)))
+
 SOURCE_RSTS = $(addprefix $(SPHINX_DIR)/, $(RSTS))
 SOURCE_POTS = $(addprefix $(SPHINX_DIR)/_build/gettext/, $(POS:.po=.pot))
 
@@ -117,13 +119,16 @@ $(SOURCE_POS): source/%.po: $(SPHINX_DIR)/_build/gettext/%.pot
 	@msginit --no-translator -l ja -i $< -o $@
 
 
-.PHONY: html
-html: target
+$(TARGET_POS_JA): $(TARGET_POS)
 	@mkdir -p $(SPHINX_DIR)/locales/ja/LC_MESSAGES/
-	@for pos in $(TARGET_POS); do \
+	@for pos in $^; do \
 		echo " [COPY] $$pos $(SPHINX_DIR)/locales/ja/LC_MESSAGES/$(basename $$pos)" ; \
 		cp -f $$pos $(SPHINX_DIR)/locales/ja/LC_MESSAGES/ ; \
 	done
+
+
+.PHONY: html
+html: $(TARGET_POS_JA)
 	$(MAKE) -C coq refman-html SPHINXOPTS='-D language="ja"'
 	@echo "  [GEN] html/refman"
 	@mkdir -p html/refman
