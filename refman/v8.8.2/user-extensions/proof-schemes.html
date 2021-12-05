@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proof schemes &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,13 +14,13 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,7 +76,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Proof schemes</a><ul>
@@ -91,18 +90,18 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -114,7 +113,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -233,9 +232,9 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="proof-schemes">
+<div class="section" id="proof-schemes">
 <span id="proofschemes"></span><h1>Proof schemes<a class="headerlink" href="#proof-schemes" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<section id="generation-of-induction-principles-with-scheme">
+<div class="section" id="generation-of-induction-principles-with-scheme">
 <span id="proofschemes-induction-principles"></span><h2>Generation of induction principles with <code class="docutils literal notranslate"><span class="pre">Scheme</span></code><a class="headerlink" href="#generation-of-induction-principles-with-scheme" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">Scheme</span></code> command is a high-level tool for generating automatically
 (possibly mutual) induction principles for given types and sorts. Its
@@ -359,7 +358,7 @@ odd_even, even_odd are recursively defined</span></dd>
 <p>The type of <cite>even_odd</cite> shares the same premises but the conclusion is
 <cite>(n:nat)(even n)-&gt;(P0 n)</cite>.</p>
 </div>
-<section id="automatic-declaration-of-schemes">
+<div class="section" id="automatic-declaration-of-schemes">
 <h3>Automatic declaration of schemes<a class="headerlink" href="#automatic-declaration-of-schemes" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="flag">
 <dt id="coq:flag.elimination-schemes">
@@ -402,8 +401,8 @@ inductive types because it cannot compute a Boolean equality for them.</p>
 <dd><p>This flag governs generation of equality-related schemes such as congruence.</p>
 </dd></dl>
 
-</section>
-<section id="combined-scheme">
+</div>
+<div class="section" id="combined-scheme">
 <h3>Combined Scheme<a class="headerlink" href="#combined-scheme" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">Combined</span> <span class="pre">Scheme</span></code> command is a tool for combining induction
 principles generated by the <code class="docutils literal notranslate"><span class="pre">Scheme</span> <span class="pre">command</span></code>. Its syntax follows the
@@ -449,9 +448,9 @@ tree_forest_mutind is recursively defined</span></dd>
 </dl>
 </div>
 </div>
-</section>
-</section>
-<section id="generation-of-induction-principles-with-functional-scheme">
+</div>
+</div>
+<div class="section" id="generation-of-induction-principles-with-functional-scheme">
 <span id="functional-scheme"></span><h2>Generation of induction principles with <code class="docutils literal notranslate"><span class="pre">Functional</span></code> <code class="docutils literal notranslate"><span class="pre">Scheme</span></code><a class="headerlink" href="#generation-of-induction-principles-with-functional-scheme" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">Functional</span> <span class="pre">Scheme</span></code> command is a high-level experimental tool for
 generating automatically induction principles corresponding to
@@ -473,7 +472,7 @@ identᵢ’.</p>
 <p>There is a difference between induction schemes generated by the command
 <a class="reference internal" href="#coq:cmd.functional-scheme" title="Functional Scheme"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Functional</span> <span class="pre">Scheme</span></code></a> and these generated by the <a class="reference internal" href="../language/gallina-extensions.html#coq:cmd.function" title="Function"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Function</span></code></a>. Indeed,
 <a class="reference internal" href="../language/gallina-extensions.html#coq:cmd.function" title="Function"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Function</span></code></a> generally produces smaller principles that are closer to how
-a user would implement them. See <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a> for details.</p>
+a user would implement them. See <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a> for details.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
@@ -699,8 +698,8 @@ forest_size_ind2 is defined</span></dd>
 </dl>
 </div>
 </div>
-</section>
-<section id="generation-of-inversion-principles-with-derive-inversion">
+</div>
+<div class="section" id="generation-of-inversion-principles-with-derive-inversion">
 <span id="derive-inversion"></span><h2>Generation of inversion principles with <code class="docutils literal notranslate"><span class="pre">Derive</span></code> <code class="docutils literal notranslate"><span class="pre">Inversion</span></code><a class="headerlink" href="#generation-of-inversion-principles-with-derive-inversion" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The syntax of <code class="docutils literal notranslate"><span class="pre">Derive</span></code> <code class="docutils literal notranslate"><span class="pre">Inversion</span></code> follows the schema:</p>
 <dl class="cmd">
@@ -790,8 +789,8 @@ sort <cite>Prop</cite>, we do:</p>
 </dl>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

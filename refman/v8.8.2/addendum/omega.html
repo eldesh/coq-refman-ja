@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omega: a solver for quantifier-free problems in Presburger Arithmetic &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,18 +14,18 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Micromega: tactics for solving arithmetic goals over ordered rings" href="micromega.html" />
-    <link rel="prev" title="Type Classes" href="type-classes.html" /> 
+    <link rel="prev" title="型クラス" href="type-classes.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,23 +76,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#description-of-omega">Description of <code class="docutils literal notranslate"><span class="pre">omega</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#arithmetical-goals-recognized-by-omega">Arithmetical goals recognized by <code class="docutils literal notranslate"><span class="pre">omega</span></code></a></li>
@@ -118,7 +117,7 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -237,14 +236,14 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="omega-a-solver-for-quantifier-free-problems-in-presburger-arithmetic">
+<div class="section" id="omega-a-solver-for-quantifier-free-problems-in-presburger-arithmetic">
 <span id="omega"></span><h1>Omega: a solver for quantifier-free problems in Presburger Arithmetic<a class="headerlink" href="#omega-a-solver-for-quantifier-free-problems-in-presburger-arithmetic" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Author</dt>
 <dd class="field-odd"><p>Pierre Crégut</p>
 </dd>
 </dl>
-<section id="description-of-omega">
+<div class="section" id="description-of-omega">
 <h2>Description of <code class="docutils literal notranslate"><span class="pre">omega</span></code><a class="headerlink" href="#description-of-omega" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt>
@@ -267,8 +266,8 @@ In any case, the computation eventually stops.</p>
 <dd><p>To be documented.</p>
 </dd></dl>
 
-</section>
-<section id="arithmetical-goals-recognized-by-omega">
+</div>
+<div class="section" id="arithmetical-goals-recognized-by-omega">
 <h2>Arithmetical goals recognized by <code class="docutils literal notranslate"><span class="pre">omega</span></code><a class="headerlink" href="#arithmetical-goals-recognized-by-omega" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.omega" title="omega"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">omega</span></code></a> applies only to quantifier-free formulas built from the connectives:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>/\  \/  ~  -&gt;
@@ -289,8 +288,8 @@ In any case, the computation eventually stops.</p>
 <p>All expressions of type <code class="docutils literal notranslate"><span class="pre">nat</span></code> or <code class="docutils literal notranslate"><span class="pre">Z</span></code> not built on these
 operators are considered abstractly as if they
 were arbitrary variables of type <code class="docutils literal notranslate"><span class="pre">nat</span></code> or <code class="docutils literal notranslate"><span class="pre">Z</span></code>.</p>
-</section>
-<section id="messages-from-omega">
+</div>
+<div class="section" id="messages-from-omega">
 <h2>Messages from <code class="docutils literal notranslate"><span class="pre">omega</span></code><a class="headerlink" href="#messages-from-omega" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>When <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.omega" title="omega"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">omega</span></code></a> does not solve the goal, one of the following errors
 is generated:</p>
@@ -342,8 +341,8 @@ not true!</p>
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>omega:</span> <span>Can't</span> <span>solve</span> <span>a</span> <span>goal</span> <span>with</span> <span>equality</span> <span>on</span> <span>type</span> <span>...</span></span></code><a class="headerlink" href="#coq:exn.omega-can-t-solve-a-goal-with-equality-on-type" title="この定義へのパーマリンク">¶</a></dt>
 <dd></dd></dl>
 
-</section>
-<section id="using-omega">
+</div>
+<div class="section" id="using-omega">
 <h2>Using <code class="docutils literal notranslate"><span class="pre">omega</span></code><a class="headerlink" href="#using-omega" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">omega</span></code> tactic does not belong to the core system. It should be
 loaded by</p>
@@ -376,8 +375,8 @@ loaded by</p>
 </dl>
 </div>
 </div>
-</section>
-<section id="options">
+</div>
+<div class="section" id="options">
 <h2>Options<a class="headerlink" href="#options" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="flag">
 <dt id="coq:flag.stable-omega">
@@ -408,10 +407,10 @@ variables.</p>
 <dd><p>This option (off by default) activate the printing of debug information</p>
 </dd></dl>
 
-</section>
-<section id="technical-data">
+</div>
+<div class="section" id="technical-data">
 <h2>Technical data<a class="headerlink" href="#technical-data" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="overview-of-the-tactic">
+<div class="section" id="overview-of-the-tactic">
 <h3>Overview of the tactic<a class="headerlink" href="#overview-of-the-tactic" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
@@ -425,8 +424,8 @@ goals may result from this phase.</p></li>
 <li><p>The script of the solution is replayed.</p></li>
 </ul>
 </div></blockquote>
-</section>
-<section id="overview-of-the-omega-decision-procedure">
+</div>
+<div class="section" id="overview-of-the-omega-decision-procedure">
 <h3>Overview of the OMEGA decision procedure<a class="headerlink" href="#overview-of-the-omega-decision-procedure" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The OMEGA decision procedure involved in the <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.omega" title="omega"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">omega</span></code></a> tactic uses
 a small subset of the decision procedure presented in <a class="bibtex reference internal" href="../zebibliography.html#theomegapaper" id="id1">[Pug92]</a>
@@ -452,9 +451,9 @@ equations that can be eliminated by the Banerjee test.</p></li>
 <p>It may happen that there is a real solution and no integer one. The last
 steps of the Omega procedure are not implemented, so the
 decision procedure is only partial.</p>
-</section>
-</section>
-<section id="bugs">
+</div>
+</div>
+<div class="section" id="bugs">
 <h2>Bugs<a class="headerlink" href="#bugs" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
@@ -464,14 +463,14 @@ many redundant cases to explore.</p></li>
 <li><p>Certainly other bugs! You can report them to <a class="reference external" href="https://coq.inria.fr/bugs/">https://coq.inria.fr/bugs/</a>.</p></li>
 </ul>
 </div></blockquote>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="type-classes.html" class="btn btn-neutral float-left" title="Type Classes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="type-classes.html" class="btn btn-neutral float-left" title="型クラス" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="micromega.html" class="btn btn-neutral float-right" title="Micromega: tactics for solving arithmetic goals over ordered rings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

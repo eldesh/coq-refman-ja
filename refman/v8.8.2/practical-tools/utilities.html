@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Utilities &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,13 +14,13 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,12 +76,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Utilities</a><ul>
@@ -128,12 +127,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -145,7 +144,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -264,11 +263,11 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="utilities">
+<div class="section" id="utilities">
 <span id="id1"></span><h1>Utilities<a class="headerlink" href="#utilities" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>The distribution provides utilities to simplify some tedious works
 beside proof development, tactics writing or documentation.</p>
-<section id="using-coq-as-a-library">
+<div class="section" id="using-coq-as-a-library">
 <h2>Using Coq as a library<a class="headerlink" href="#using-coq-as-a-library" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>In previous versions, <code class="docutils literal notranslate"><span class="pre">coqmktop</span></code> was used to build custom
 toplevels - for example for better debugging or custom static
@@ -286,8 +285,8 @@ linking. Nowadays, the preferred method is to use <code class="docutils literal 
 </pre></div>
 </div>
 <p>and similarly for other plugins.</p>
-</section>
-<section id="building-a-coq-project-with-coq-makefile">
+</div>
+<div class="section" id="building-a-coq-project-with-coq-makefile">
 <h2>Building a <span class="smallcaps">Coq</span> project with coq_makefile<a class="headerlink" href="#building-a-coq-project-with-coq-makefile" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The majority of <span class="smallcaps">Coq</span> projects are very similar: a collection of <code class="docutils literal notranslate"><span class="pre">.v</span></code>
 files and eventually some <code class="docutils literal notranslate"><span class="pre">.ml</span></code> ones (a <span class="smallcaps">Coq</span> plugin). The main piece of
@@ -346,7 +345,7 @@ since it results in a “packed” plugin: All auxiliary modules (as
 <code class="docutils literal notranslate"><span class="pre">Baz</span></code> and <code class="docutils literal notranslate"><span class="pre">Bazaux</span></code>) are hidden inside the plugin’s &quot;namespace&quot;
 (<code class="docutils literal notranslate"><span class="pre">Qux_plugin</span></code>). This reduces the chances of begin unable to load two
 distinct plugins because of a clash in their auxiliary module names.</p>
-<section id="coqmakefile-local">
+<div class="section" id="coqmakefile-local">
 <span id="coqmakefilelocal"></span><h3>CoqMakefile.local<a class="headerlink" href="#coqmakefile-local" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The optional file <code class="docutils literal notranslate"><span class="pre">CoqMakefile.local</span></code> is included by the generated
 file <code class="docutils literal notranslate"><span class="pre">CoqMakefile</span></code>. It can contain two kinds of directives.</p>
@@ -411,8 +410,8 @@ suite, or compile extracted code.</p>
 target.</p>
 </dd>
 </dl>
-</section>
-<section id="timing-targets-and-performance-testing">
+</div>
+<div class="section" id="timing-targets-and-performance-testing">
 <h3>Timing targets and performance testing<a class="headerlink" href="#timing-targets-and-performance-testing" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The generated <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> supports the generation of two kinds of timing
 data: per-file build-times, and per-line times for an individual file.</p>
@@ -596,8 +595,8 @@ some <code class="docutils literal notranslate"><span class="pre">.v.before-timi
 </dl>
 </li>
 </ul>
-</section>
-<section id="reusing-extending-the-generated-makefile">
+</div>
+<div class="section" id="reusing-extending-the-generated-makefile">
 <h3>Reusing/extending the generated Makefile<a class="headerlink" href="#reusing-extending-the-generated-makefile" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Including the generated makefile with an include directive is
 discouraged. The contents of this file, including variable names and
@@ -636,8 +635,8 @@ invoke-coqmakefile: CoqMakefile
 </pre></div>
 </div>
 </div>
-</section>
-<section id="building-a-subset-of-the-targets-with-j">
+</div>
+<div class="section" id="building-a-subset-of-the-targets-with-j">
 <h3>Building a subset of the targets with <code class="docutils literal notranslate"><span class="pre">-j</span></code><a class="headerlink" href="#building-a-subset-of-the-targets-with-j" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To build, say, two targets foo.vo and bar.vo in parallel one can use
 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">only</span> <span class="pre">TGTS=&quot;foo.vo</span> <span class="pre">bar.vo&quot;</span> <span class="pre">-j</span></code>.</p>
@@ -657,9 +656,9 @@ in pre-all and post-all extension points.</p></li>
 (<code class="docutils literal notranslate"><span class="pre">.PHONY</span></code> or not) please use <code class="docutils literal notranslate"><span class="pre">CoqMakefile.local</span></code>.</p></li>
 </ul>
 </div>
-</section>
-</section>
-<section id="module-dependencies">
+</div>
+</div>
+<div class="section" id="module-dependencies">
 <h2>Module dependencies<a class="headerlink" href="#module-dependencies" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>In order to compute module dependencies (so to use <code class="docutils literal notranslate"><span class="pre">make</span></code>), <span class="smallcaps">Coq</span> comes
 with an appropriate tool, <code class="docutils literal notranslate"><span class="pre">coqdep</span></code>.</p>
@@ -678,8 +677,8 @@ done approximately and you are advised to use <code class="docutils literal notr
 <p>The build infrastructure generated by <code class="docutils literal notranslate"><span class="pre">coq_makefile</span></code> uses <code class="docutils literal notranslate"><span class="pre">coqdep</span></code> to
 automatically compute the dependencies among the files part of the
 project.</p>
-</section>
-<section id="documenting-coq-files-with-coqdoc">
+</div>
+<div class="section" id="documenting-coq-files-with-coqdoc">
 <span id="coqdoc"></span><h2>Documenting <span class="smallcaps">Coq</span> files with coqdoc<a class="headerlink" href="#documenting-coq-files-with-coqdoc" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>coqdoc is a documentation tool for the proof assistant <span class="smallcaps">Coq</span>, similar to
 <code class="docutils literal notranslate"><span class="pre">javadoc</span></code> or <code class="docutils literal notranslate"><span class="pre">ocamldoc</span></code>. The task of coqdoc is</p>
@@ -688,7 +687,7 @@ project.</p>
 readable for a human and not only for the proof assistant;</p></li>
 <li><p>to help the user navigate his own (or third-party) sources.</p></li>
 </ol>
-<section id="principles">
+<div class="section" id="principles">
 <h3>Principles<a class="headerlink" href="#principles" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Documentation is inserted into <span class="smallcaps">Coq</span> files as <em>special comments</em>. Thus
 your files will compile as usual, whether you use coqdoc or not. coqdoc
@@ -699,7 +698,7 @@ A. Coram’s <em>Almost Free Text (AFT)</em> tool: it is mainly <code class="doc
 some syntax-light controls, described below. coqdoc is robust: it
 shouldn’t fail, whatever the input is. But remember: “garbage in,
 garbage out”.</p>
-<section id="coq-material-inside-documentation">
+<div class="section" id="coq-material-inside-documentation">
 <h4><span class="smallcaps">Coq</span> material inside documentation.<a class="headerlink" href="#coq-material-inside-documentation" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p><span class="smallcaps">Coq</span> material is quoted between the delimiters <code class="docutils literal notranslate"><span class="pre">[</span></code> and <code class="docutils literal notranslate"><span class="pre">]</span></code>. Square brackets
 may be nested, the inner ones being understood as being part of the
@@ -708,8 +707,8 @@ quoted code (thus you can quote a term like <code class="docutils literal notran
 way as it is in code parts.</p>
 <p>Preformatted vernacular is enclosed by <code class="docutils literal notranslate"><span class="pre">[[</span></code> and <code class="docutils literal notranslate"><span class="pre">]]</span></code>. The former must be
 followed by a newline and the latter must follow a newline.</p>
-</section>
-<section id="pretty-printing">
+</div>
+<div class="section" id="pretty-printing">
 <h4>Pretty-printing.<a class="headerlink" href="#pretty-printing" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>coqdoc uses different faces for identifiers and keywords. The pretty-
 printing of <span class="smallcaps">Coq</span> tokens (identifiers or symbols) can be controlled
@@ -792,8 +791,8 @@ pretty-printing rules for the possible combinations, e.g.</p>
 </pre></div>
 </div>
 </div>
-</section>
-<section id="sections">
+</div>
+<div class="section" id="sections">
 <h4>Sections<a class="headerlink" href="#sections" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Sections are introduced by 1 to 4 asterisks at the beginning of a line
 followed by a space and the title of the section. One asterisk is a section,
@@ -806,8 +805,8 @@ two a subsection, etc.</p>
 </pre></div>
 </div>
 </div>
-</section>
-<section id="lists">
+</div>
+<div class="section" id="lists">
 <h4>Lists.<a class="headerlink" href="#lists" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>List items are introduced by a leading dash. coqdoc uses whitespace to
 determine the depth of a new list item and which text belongs in which
@@ -831,12 +830,12 @@ So the theorem holds.
 </pre></div>
 </div>
 </div>
-</section>
-<section id="rules">
+</div>
+<div class="section" id="rules">
 <h4>Rules.<a class="headerlink" href="#rules" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>More than 4 leading dashes produce a horizontal rule.</p>
-</section>
-<section id="emphasis">
+</div>
+<div class="section" id="emphasis">
 <h4>Emphasis.<a class="headerlink" href="#emphasis" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Text can be italicized by enclosing it in underscores. A non-identifier
 character must precede the leading underscore and follow the trailing
@@ -845,8 +844,8 @@ emphasis. Usually, these are spaces or punctuation.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>This sentence contains some _emphasized text_.
 </pre></div>
 </div>
-</section>
-<section id="escaping-to-latex-and-html">
+</div>
+<div class="section" id="escaping-to-latex-and-html">
 <h4>Escaping to <span class="smallcaps">LaTeX</span> and HTML.<a class="headerlink" href="#escaping-to-latex-and-html" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Pure <span class="smallcaps">LaTeX</span> or HTML material can be inserted using the following
 escape sequences:</p>
@@ -863,8 +862,8 @@ discarded in HTML output.</p></li>
 <p>to simply output the characters <code class="docutils literal notranslate"><span class="pre">$</span></code>, <code class="docutils literal notranslate"><span class="pre">%</span></code> and <code class="docutils literal notranslate"><span class="pre">#</span></code> and escaping
 their escaping role, these characters must be doubled.</p>
 </div>
-</section>
-<section id="verbatim">
+</div>
+<div class="section" id="verbatim">
 <h4>Verbatim<a class="headerlink" href="#verbatim" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Verbatim material is introduced by a leading <code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code> and closed by <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code>
 at the beginning of a line.</p>
@@ -878,8 +877,8 @@ at the beginning of a line.</p>
 </pre></div>
 </div>
 </div>
-</section>
-<section id="hyperlinks">
+</div>
+<div class="section" id="hyperlinks">
 <h4>Hyperlinks<a class="headerlink" href="#hyperlinks" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Hyperlinks can be inserted into the HTML output, so that any
 identifier is linked to the place of its definition.</p>
@@ -893,8 +892,8 @@ by default).</p>
 <p>Identifiers from the <span class="smallcaps">Coq</span> standard library are linked to the Coq website
 <a class="reference external" href="http://coq.inria.fr/library/">http://coq.inria.fr/library/</a>. This behavior can be changed
 using command line options <code class="docutils literal notranslate"><span class="pre">--no-externals</span></code> and <code class="docutils literal notranslate"><span class="pre">--coqlib</span></code>; see below.</p>
-</section>
-<section id="hiding-showing-parts-of-the-source">
+</div>
+<div class="section" id="hiding-showing-parts-of-the-source">
 <h4>Hiding / Showing parts of the source.<a class="headerlink" href="#hiding-showing-parts-of-the-source" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Some parts of the source can be hidden using command line options <code class="docutils literal notranslate"><span class="pre">-g</span></code>
 and <code class="docutils literal notranslate"><span class="pre">-l</span></code> (see below), or using such comments:</p>
@@ -912,9 +911,9 @@ shown using such comments:</p>
 </div>
 <p>The latter cannot be used around some inner parts of a proof, but can
 be used around a whole proof.</p>
-</section>
-</section>
-<section id="usage">
+</div>
+</div>
+<div class="section" id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>coqdoc is invoked on a shell command line as follows:
 <code class="docutils literal notranslate"><span class="pre">coqdoc</span> <span class="pre">&lt;options</span> <span class="pre">and</span> <span class="pre">files&gt;</span></code>.
@@ -941,7 +940,7 @@ options <code class="docutils literal notranslate"><span class="pre">-dvi</span>
 to be used by the TEXmacs <span class="smallcaps">Coq</span> interface.</p>
 </dd>
 </dl>
-<section id="command-line-options">
+<div class="section" id="command-line-options">
 <h4>Command line options<a class="headerlink" href="#command-line-options" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p><strong>Overall options</strong></p>
 <blockquote>
@@ -1160,9 +1159,9 @@ the HTML header.</p>
 </dd>
 </dl>
 </div></blockquote>
-</section>
-</section>
-<section id="the-coqdoc-latex-style-file">
+</div>
+</div>
+<div class="section" id="the-coqdoc-latex-style-file">
 <h3>The coqdoc <span class="smallcaps">LaTeX</span> style file<a class="headerlink" href="#the-coqdoc-latex-style-file" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In case you choose to produce a document without the default <span class="smallcaps">LaTeX</span>
 preamble (by using option <code class="docutils literal notranslate"><span class="pre">--no-preamble</span></code>), then you must insert into
@@ -1194,9 +1193,9 @@ file. Default is</p>
 <p>and you may redefine it using <code class="docutils literal notranslate"><span class="pre">\renewcommand</span></code>.</p>
 </dd>
 </dl>
-</section>
-</section>
-<section id="embedded-coq-phrases-inside-latex-documents">
+</div>
+</div>
+<div class="section" id="embedded-coq-phrases-inside-latex-documents">
 <h2>Embedded Coq phrases inside <span class="smallcaps">LaTeX</span> documents<a class="headerlink" href="#embedded-coq-phrases-inside-latex-documents" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>When writing documentation about a proof development, one may want
 to insert <span class="smallcaps">Coq</span> phrases inside a <span class="smallcaps">LaTeX</span> document, possibly together
@@ -1210,10 +1209,10 @@ filter produces a file named <code class="docutils literal notranslate"><span cl
 <p>There are options to produce the <span class="smallcaps">Coq</span> parts in smaller font, italic,
 between horizontal rules, etc. See the man page of <code class="docutils literal notranslate"><span class="pre">coq-tex</span></code> for more
 details.</p>
-</section>
-<section id="coq-and-gnu-emacs">
+</div>
+<div class="section" id="coq-and-gnu-emacs">
 <h2><span class="smallcaps">Coq</span> and GNU Emacs<a class="headerlink" href="#coq-and-gnu-emacs" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="the-coq-emacs-mode">
+<div class="section" id="the-coq-emacs-mode">
 <h3>The <span class="smallcaps">Coq</span> Emacs mode<a class="headerlink" href="#the-coq-emacs-mode" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><span class="smallcaps">Coq</span> comes with a Major mode for GNU Emacs, <code class="docutils literal notranslate"><span class="pre">gallina.el</span></code>. This mode
 provides syntax highlighting and also a rudimentary indentation
@@ -1236,8 +1235,8 @@ line above;</p></li>
 <p>An inferior mode to run <span class="smallcaps">Coq</span> under Emacs, by Marco Maggesi, is also
 included in the distribution, in file <code class="docutils literal notranslate"><span class="pre">inferior-coq.el</span></code>. Instructions to
 use it are contained in this file.</p>
-</section>
-<section id="proof-general">
+</div>
+<div class="section" id="proof-general">
 <h3>Proof-General<a class="headerlink" href="#proof-general" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Proof-General is a generic interface for proof assistants based on
 Emacs. The main idea is that the <span class="smallcaps">Coq</span> commands you are editing are sent
@@ -1247,9 +1246,9 @@ to copy-paste the <span class="smallcaps">Coq</span> material from your files to
 conversely from the <span class="smallcaps">Coq</span> toplevel to some files.</p>
 <p>Proof-General is developed and distributed independently of the system
 <span class="smallcaps">Coq</span>. It is freely available at <a class="reference external" href="https://proofgeneral.github.io/">https://proofgeneral.github.io/</a>.</p>
-</section>
-</section>
-<section id="module-specification">
+</div>
+</div>
+<div class="section" id="module-specification">
 <h2>Module specification<a class="headerlink" href="#module-specification" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Given a <span class="smallcaps">Coq</span> vernacular file, the gallina filter extracts its
 specification (inductive types declarations, definitions, type of
@@ -1257,14 +1256,14 @@ lemmas and theorems), removing the proofs parts of the file. The <span class="sm
 file <code class="docutils literal notranslate"><span class="pre">file.v</span></code> gives birth to the specification file <code class="docutils literal notranslate"><span class="pre">file.g</span></code> (where
 the suffix <code class="docutils literal notranslate"><span class="pre">.g</span></code> stands for <span class="smallcaps">Gallina</span>).</p>
 <p>See the man page of <code class="docutils literal notranslate"><span class="pre">gallina</span></code> for more details and options.</p>
-</section>
-<section id="man-pages">
+</div>
+<div class="section" id="man-pages">
 <h2>Man pages<a class="headerlink" href="#man-pages" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>There are man pages for the commands <code class="docutils literal notranslate"><span class="pre">coqdep</span></code>, <code class="docutils literal notranslate"><span class="pre">gallina</span></code> and <code class="docutils literal notranslate"><span class="pre">coq-tex</span></code>. Man
 pages are installed at installation time (see installation
 instructions in file <code class="docutils literal notranslate"><span class="pre">INSTALL</span></code>, step 6).</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

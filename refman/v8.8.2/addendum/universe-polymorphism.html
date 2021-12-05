@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Polymorphic Universes &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,13 +14,13 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,23 +76,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -121,7 +120,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -240,14 +239,14 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="polymorphic-universes">
+<div class="section" id="polymorphic-universes">
 <span id="polymorphicuniverses"></span><h1>Polymorphic Universes<a class="headerlink" href="#polymorphic-universes" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Author</dt>
 <dd class="field-odd"><p>Matthieu Sozeau</p>
 </dd>
 </dl>
-<section id="general-presentation">
+<div class="section" id="general-presentation">
 <h2>General Presentation<a class="headerlink" href="#general-presentation" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -387,8 +386,8 @@ monoid_monoid is universe polymorphic</span></dd>
 </div>
 <p>As one can see from the constraints, this monoid is “large”, it lives
 in a universe strictly higher than <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code>.</p>
-</section>
-<section id="polymorphic-monomorphic">
+</div>
+<div class="section" id="polymorphic-monomorphic">
 <h2>Polymorphic, Monomorphic<a class="headerlink" href="#polymorphic-monomorphic" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="cmd">
 <dt id="coq:cmd.polymorphic">
@@ -427,8 +426,8 @@ variable.</p></li>
 <li><p><a class="reference internal" href="../proof-engine/tactics.html#coq:cmdv.hint-resolve" title="Hint Resolve"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Resolve</span></code></a> and <a class="reference internal" href="../proof-engine/tactics.html#coq:cmd.hint-rewrite" title="Hint Rewrite"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Rewrite</span></code></a> will use the auto/rewrite hint
 polymorphically, not at a single instance.</p></li>
 </ul>
-</section>
-<section id="cumulative-noncumulative">
+</div>
+<div class="section" id="cumulative-noncumulative">
 <h2>Cumulative, NonCumulative<a class="headerlink" href="#cumulative-noncumulative" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Polymorphic inductive types, coinductive types, variants and records can be
 declared cumulative using the <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Cumulative</span></span></code> prefix.</p>
@@ -534,7 +533,7 @@ Unit_ind is defined
 Unit_rec is defined</span></dd>
 </dl>
 </div>
-<section id="an-example-of-a-proof-using-cumulativity">
+<div class="section" id="an-example-of-a-proof-using-cumulativity">
 <h3>An example of a proof using cumulativity<a class="headerlink" href="#an-example-of-a-proof-using-cumulativity" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
@@ -565,9 +564,9 @@ eq_rec is defined</span></dd>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">down</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</section>
-</section>
-<section id="cumulativity-weak-constraints">
+</div>
+</div>
+<div class="section" id="cumulativity-weak-constraints">
 <h2>Cumulativity Weak Constraints<a class="headerlink" href="#cumulativity-weak-constraints" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="flag">
 <dt id="coq:flag.cumulativity-weak-constraints">
@@ -583,16 +582,16 @@ Disabling weak constraints is more predictable but may produce
 arbitrary numbers of universes.</p>
 </dd></dl>
 
-</section>
-<section id="global-and-local-universes">
+</div>
+<div class="section" id="global-and-local-universes">
 <h2>Global and local universes<a class="headerlink" href="#global-and-local-universes" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Each universe is declared in a global or local environment before it
 can be used. To ensure compatibility, every <em>global</em> universe is set
 to be strictly greater than <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code> when it is introduced, while every
 <em>local</em> (i.e. polymorphically quantified) universe is introduced as
 greater or equal to <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code>.</p>
-</section>
-<section id="conversion-and-unification">
+</div>
+<div class="section" id="conversion-and-unification">
 <h2>Conversion and unification<a class="headerlink" href="#conversion-and-unification" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The semantics of conversion and unification have to be modified a
 little to account for the new universe instance arguments to
@@ -610,8 +609,8 @@ an equation of applicative terms fail due to a universe comparison not
 being satisfied, the terms are unfolded. This change implies that
 conversion and unification can have different unfolding behaviors on
 the same development with universe polymorphism switched on or off.</p>
-</section>
-<section id="minimization">
+</div>
+<div class="section" id="minimization">
 <h2>Minimization<a class="headerlink" href="#minimization" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Universe polymorphism with cumulativity tends to generate many useless
 inclusion constraints in general. Typically at each application of a
@@ -649,8 +648,8 @@ to the sort <code class="code Coq docutils literal notranslate"><span class="key
 themselves.</p>
 </dd></dl>
 
-</section>
-<section id="explicit-universes">
+</div>
+<div class="section" id="explicit-universes">
 <h2>Explicit Universes<a class="headerlink" href="#explicit-universes" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The syntax has been extended to allow users to explicitly bind names
 to universes and explicitly instantiate polymorphic definitions.</p>
@@ -687,7 +686,7 @@ global constraint on polymorphic universes.</p>
 
 </dd></dl>
 
-<section id="polymorphic-definitions">
+<div class="section" id="polymorphic-definitions">
 <h3>Polymorphic definitions<a class="headerlink" href="#polymorphic-definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>For polymorphic definitions, the declaration of (all) universe levels
 introduced by a definition uses the following syntax:</p>
@@ -758,9 +757,9 @@ names are not associated with the definition or proof once it has been
 defined. This is meant mainly for debugging purposes.</p>
 </dd></dl>
 
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>

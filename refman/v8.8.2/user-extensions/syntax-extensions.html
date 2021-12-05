@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Syntax extensions and interpretation scopes &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,13 +14,13 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,7 +76,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Syntax extensions and interpretation scopes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#notations">Notations</a><ul>
@@ -128,18 +127,18 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -151,7 +150,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -270,7 +269,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="syntax-extensions-and-interpretation-scopes">
+<div class="section" id="syntax-extensions-and-interpretation-scopes">
 <span id="syntaxextensionsandinterpretationscopes"></span><h1>Syntax extensions and interpretation scopes<a class="headerlink" href="#syntax-extensions-and-interpretation-scopes" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>In this chapter, we introduce advanced commands to modify the way Coq
 parses and prints objects, i.e. the translations between the concrete
@@ -289,9 +288,9 @@ The main command to provide custom notations for tactics is <a class="reference 
 <dt class="coqtop-hidden"><span class="coqdoc-keyword">Set</span><span> </span><span class="coqdoc-keyword">Printing</span><span> </span><span class="coqdoc-var">Depth</span><span> 50.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-<section id="notations">
+<div class="section" id="notations">
 <span id="id1"></span><h2>Notations<a class="headerlink" href="#notations" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="basic-notations">
+<div class="section" id="basic-notations">
 <h3>Basic notations<a class="headerlink" href="#basic-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.notation">
@@ -315,11 +314,7 @@ see <a class="reference internal" href="#abbreviations"><span class="std std-ref
 spaces. Identifiers in the string (such as <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>) are the <em>parameters</em>
 of the notation. Each of them must occur at least once in the denoted term. The
 other elements of the string (such as <code class="docutils literal notranslate"><span class="pre">/\</span></code>) are the <em>symbols</em>.</p>
-<p>An identifier can be used as a symbol but it must be surrounded by
-single quotes to avoid the confusion with a parameter. Similarly,
-every symbol of at least 3 characters and starting with a simple quote
-must be quoted (then it starts by two single quotes). Here is an
-example.</p>
+<p>An identifier can be used as a symbol but it must be surrounded by single quotes to avoid the confusion with a parameter. Similarly, every symbol of at least 3 characters and starting with a simple quote must be quoted (then it starts by two single quotes). これが例です。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl class="simple">
 <dt><span class="coqdoc-keyword">Notation</span><span> &quot;'IF' c1 'then' c2 'else' c3&quot; := (</span><span class="coqdoc-var">IF_then_else</span><span> </span><span class="coqdoc-var">c1</span><span> </span><span class="coqdoc-var">c2</span><span> </span><span class="coqdoc-var">c3</span><span>).</span></dt><dd class="coqtop-hidden"></dd>
@@ -335,8 +330,8 @@ associativity rules have to be given.</p>
 given. In particular, disambiguation of constants, <a class="reference internal" href="../language/gallina-extensions.html#implicitarguments"><span class="std std-ref">implicit arguments</span></a>, <a class="reference internal" href="../language/gallina-extensions.html#coercions"><span class="std std-ref">coercions</span></a>, etc. are resolved at the
 time of the declaration of the notation.</p>
 </div>
-</section>
-<section id="precedences-and-associativity">
+</div>
+<div class="section" id="precedences-and-associativity">
 <h3>Precedences and associativity<a class="headerlink" href="#precedences-and-associativity" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Mixing different symbolic notations in the same text may cause serious
 parsing ambiguity. To deal with the ambiguity of notations, Coq uses
@@ -381,8 +376,8 @@ canonical). The level is either a number or the phrase <code class="docutils lit
 whose meaning is obvious.
 Some <a class="reference internal" href="../language/coq-library.html#init-notations"><span class="std std-ref">associativities are predefined</span></a> in the
 <code class="docutils literal notranslate"><span class="pre">Notations</span></code> module.</p>
-</section>
-<section id="complex-notations">
+</div>
+<div class="section" id="complex-notations">
 <h3>Complex notations<a class="headerlink" href="#complex-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Notations can be made from arbitrarily complex symbols. One can for
 instance define prefix notations.</p>
@@ -424,13 +419,10 @@ definition is the following:</p>
 </div>
 <p>More generally, it is required that notations are explicitly factorized on the
 left. See the next section for more about factorization.</p>
-</section>
-<section id="simple-factorization-rules">
+</div>
+<div class="section" id="simple-factorization-rules">
 <h3>Simple factorization rules<a class="headerlink" href="#simple-factorization-rules" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Coq extensible parsing is performed by <em>Camlp5</em> which is essentially a LL1
-parser: it decides which notation to parse by looking at tokens from left to right.
-Hence, some care has to be taken not to hide already existing rules by new
-rules. Some simple left factorization work has to be done. Here is an example.</p>
+<p>Coq extensible parsing is performed by <em>Camlp5</em> which is essentially a LL1 parser: it decides which notation to parse by looking at tokens from left to right. Hence, some care has to be taken not to hide already existing rules by new rules. Some simple left factorization work has to be done. これが例です。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Notation</span><span> &quot;x &lt; y&quot; := (</span><span class="coqdoc-var">lt</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span>) (</span><span class="coqdoc-tactic">at</span><span> </span><span class="coqdoc-keyword">level</span><span> 70).</span></dt><dd class="coqtop-hidden"></dd>
@@ -473,11 +465,10 @@ of Coq predefined notations can be found in the chapter on <a class="reference i
 grammar of the match with constructions).</p>
 </dd></dl>
 
-</section>
-<section id="displaying-symbolic-notations">
+</div>
+<div class="section" id="displaying-symbolic-notations">
 <h3>Displaying symbolic notations<a class="headerlink" href="#displaying-symbolic-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>The command <a class="reference internal" href="#coq:cmd.notation" title="Notation"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Notation</span></code></a> has an effect both on the Coq parser and on the
-Coq printer. For example:</p>
+<p>The command <a class="reference internal" href="#coq:cmd.notation" title="Notation"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Notation</span></code></a> has an effect both on the Coq parser and on the Coq printer. 例えば:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Check</span><span> (</span><span class="coqdoc-var">and</span><span> </span><span class="coqdoc-var">True</span><span> </span><span class="coqdoc-var">True</span><span>).</span></dt><dd><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">True</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> /\</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">True</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">
@@ -570,8 +561,8 @@ used to declare that a notation should only be used for printing and
 should not declare a parsing rule. In particular, such notations do
 not modify the parser.</p>
 </div>
-</section>
-<section id="the-infix-command">
+</div>
+<div class="section" id="the-infix-command">
 <h3>The Infix command<a class="headerlink" href="#the-infix-command" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The <a class="reference internal" href="#coq:cmd.infix" title="Infix"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Infix</span></code></a> command is a shortening for declaring notations of infix
 symbols.</p>
@@ -582,7 +573,7 @@ symbols.</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="notation"><span><span class="pre">Notation</span></span> <span><span class="pre">&quot;x</span></span> <span class="hole"><span class="pre">symbol</span></span> <span><span class="pre">y&quot;</span></span> <span><span class="pre">:=</span></span> <span><span class="pre">(</span></span><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">x</span></span> <span><span class="pre">y)</span></span> <span><span class="pre">(</span></span><span class="repeat-wrapper"><span class="repeat"><span class="hole"><span class="pre">modifier</span></span></span><span class="notation-sup"><span class="pre">+</span></span><span class="notation-sub"><span class="pre">,</span></span></span><span><span class="pre">).</span></span></span></code></p>
 </div></blockquote>
-<p>where <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are fresh names. Here is an example.</p>
+<p>where <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are fresh names. これが例です。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl class="simple">
 <dt><span class="coqdoc-keyword">Infix</span><span> &quot;/\&quot; := </span><span class="coqdoc-var">and</span><span> (</span><span class="coqdoc-tactic">at</span><span> </span><span class="coqdoc-keyword">level</span><span> 80, </span><span class="coqdoc-tactic">right</span><span> </span><span class="coqdoc-keyword">associativity</span><span>).</span></dt><dd class="coqtop-hidden"></dd>
@@ -590,8 +581,8 @@ symbols.</p>
 </div>
 </dd></dl>
 
-</section>
-<section id="reserving-notations">
+</div>
+<div class="section" id="reserving-notations">
 <span id="reservingnotations"></span><h3>Reserving notations<a class="headerlink" href="#reserving-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A given notation may be used in different contexts. Coq expects all
 uses of the notation to be defined at the same precedence and with the
@@ -611,15 +602,15 @@ inductive type or a recursive constant and a notation for it.</p>
 <p>The notations mentioned in the module <a class="reference internal" href="../language/coq-library.html#init-notations"><span class="std std-ref">Notations</span></a> are reserved. Hence
 their precedence and associativity cannot be changed.</p>
 </div>
-</section>
-<section id="simultaneous-definition-of-terms-and-notations">
+</div>
+<div class="section" id="simultaneous-definition-of-terms-and-notations">
 <h3>Simultaneous definition of terms and notations<a class="headerlink" href="#simultaneous-definition-of-terms-and-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Thanks to reserved notations, the inductive, co-inductive, record, recursive and
 corecursive definitions can benefit from customized notations. To do this, insert
 a <code class="docutils literal notranslate"><span class="pre">where</span></code> notation clause after the definition of the (co)inductive type or
 (co)recursive term (or after the definition of each of them in case of mutual
 definitions). The exact syntax is given by <a class="reference internal" href="#grammar-token-decl-notation"><code class="xref std std-token docutils literal notranslate"><span class="pre">decl_notation</span></code></a> for inductive,
-co-inductive, recursive and corecursive definitions and in <a class="reference internal" href="../language/gallina-extensions.html#record-types"><span class="std std-ref">Record types</span></a>
+co-inductive, recursive and corecursive definitions and in <a class="reference internal" href="../language/gallina-extensions.html#record-types"><span class="std std-ref">レコード型</span></a>
 for records. Here are examples:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl class="simple">
@@ -642,8 +633,8 @@ and'_rec is defined</span></dd>
 plus is recursively defined (decreasing on 1st argument)</span></dd>
 </dl>
 </div>
-</section>
-<section id="displaying-information-about-notations">
+</div>
+<div class="section" id="displaying-information-about-notations">
 <h3>Displaying information about notations<a class="headerlink" href="#displaying-information-about-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="flag">
 <dt id="coq:flag.printing-notations">
@@ -659,8 +650,8 @@ Default is on.</p>
 </dd>
 </dl>
 </div>
-</section>
-<section id="locating-notations">
+</div>
+<div class="section" id="locating-notations">
 <span id="id4"></span><h3>Locating notations<a class="headerlink" href="#locating-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To know to which notations a given symbol belongs to, use the <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.locate" title="Locate"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Locate</span></code></a>
 command. You can call it on any (composite) symbol surrounded by double quotes.
@@ -681,13 +672,13 @@ identifiers or tokens starting with a single quote are dropped.</p>
 (default interpretation)</span></dd>
 </dl>
 </div>
-</section>
-<section id="notations-and-binders">
+</div>
+<div class="section" id="notations-and-binders">
 <h3>Notations and binders<a class="headerlink" href="#notations-and-binders" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Notations can include binders. This section lists
 different ways to deal with binders. For further examples, see also
 <a class="reference internal" href="#recursivenotationswithbinders"><span class="std std-ref">Notations with recursive patterns involving binders</span></a>.</p>
-<section id="binders-bound-in-the-notation-and-parsed-as-identifiers">
+<div class="section" id="binders-bound-in-the-notation-and-parsed-as-identifiers">
 <h4>Binders bound in the notation and parsed as identifiers<a class="headerlink" href="#binders-bound-in-the-notation-and-parsed-as-identifiers" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Here is the basic example of a notation using a binder:</p>
 <div class="coqtop literal-block docutils container">
@@ -710,8 +701,8 @@ application of the notation:</p>
 </div>
 <p>Notice the modifier <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">ident</span></code> in the declaration of the
 notation. It tells to parse <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">x</span></span></code> as a single identifier.</p>
-</section>
-<section id="binders-bound-in-the-notation-and-parsed-as-patterns">
+</div>
+<div class="section" id="binders-bound-in-the-notation-and-parsed-as-patterns">
 <h4>Binders bound in the notation and parsed as patterns<a class="headerlink" href="#binders-bound-in-the-notation-and-parsed-as-patterns" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>In the same way as patterns can be used as binders, as in
 <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="keyword"><span class="pre">'</span></span><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">,</span></span><span class="name"><span class="pre">y</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">+</span></span><span class="name"><span class="pre">y</span></span></code> or <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="keyword"><span class="pre">'</span></span><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">existT</span></span> <span class="operator"><span class="pre">_</span></span> <span class="name"><span class="pre">x</span></span> <span class="operator"><span class="pre">_)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">x</span></span></code>, notations can be
@@ -756,8 +747,8 @@ variable. Here is an example showing the difference:</p>
 <p>The default level for a <code class="docutils literal notranslate"><span class="pre">pattern</span></code> is 0. One can use a different level by
 using <code class="docutils literal notranslate"><span class="pre">pattern</span> <span class="pre">at</span> <span class="pre">level</span></code> <span class="math notranslate nohighlight">\(n\)</span> where the scale is the same as the one for
 terms (see <a class="reference internal" href="../language/coq-library.html#init-notations"><span class="std std-ref">Notations</span></a>).</p>
-</section>
-<section id="binders-bound-in-the-notation-and-parsed-as-terms">
+</div>
+<div class="section" id="binders-bound-in-the-notation-and-parsed-as-terms">
 <h4>Binders bound in the notation and parsed as terms<a class="headerlink" href="#binders-bound-in-the-notation-and-parsed-as-terms" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Sometimes, for the sake of factorization of rules, a binder has to be
 parsed as a term. This is typically the case for a notation such as
@@ -804,8 +795,8 @@ is just an identifier, one could have said
 <p>Note also that in the absence of a <code class="docutils literal notranslate"><span class="pre">as</span> <span class="pre">ident</span></code>, <code class="docutils literal notranslate"><span class="pre">as</span> <span class="pre">strict</span> <span class="pre">pattern</span></code> or
 <code class="docutils literal notranslate"><span class="pre">as</span> <span class="pre">pattern</span></code> modifiers, the default is to consider subexpressions occurring
 in binding position and parsed as terms to be <code class="docutils literal notranslate"><span class="pre">as</span> <span class="pre">ident</span></code>.</p>
-</section>
-<section id="binders-not-bound-in-the-notation">
+</div>
+<div class="section" id="binders-not-bound-in-the-notation">
 <span id="notationswithbinders"></span><h4>Binders not bound in the notation<a class="headerlink" href="#binders-not-bound-in-the-notation" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>We can also have binders in the right-hand side of a notation which
 are not themselves bound in the notation. In this case, the binders
@@ -827,9 +818,9 @@ The reference p was not found in the current environment.</span></dd>
   (</span><span class="coqdoc-var">cons</span><span> </span><span class="coqdoc-var">a</span><span> .. (</span><span class="coqdoc-var">cons</span><span> </span><span class="coqdoc-var">b</span><span> </span><span class="coqdoc-var">nil</span><span>) .., </span><span class="coqdoc-var">cons</span><span> </span><span class="coqdoc-var">b</span><span> .. (</span><span class="coqdoc-var">cons</span><span> </span><span class="coqdoc-var">a</span><span> </span><span class="coqdoc-var">nil</span><span>) ..).</span></dt><dd class="coqtop-hidden"><span>Setting notation at level 0.</span></dd>
 </dl>
 </div>
-</section>
-</section>
-<section id="notations-with-recursive-patterns">
+</div>
+</div>
+<div class="section" id="notations-with-recursive-patterns">
 <span id="recursivenotations"></span><h3>Notations with recursive patterns<a class="headerlink" href="#notations-with-recursive-patterns" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A mechanism is provided for declaring elementary notations with
 recursive patterns. The basic example is:</p>
@@ -873,8 +864,8 @@ and the terminating expression is <code class="docutils literal notranslate"><sp
 <p>Notations with recursive patterns can be reserved like standard
 notations, they can also be declared within
 <a class="reference internal" href="#scopes"><span class="std std-ref">interpretation scopes</span></a>.</p>
-</section>
-<section id="notations-with-recursive-patterns-involving-binders">
+</div>
+<div class="section" id="notations-with-recursive-patterns-involving-binders">
 <span id="recursivenotationswithbinders"></span><h3>Notations with recursive patterns involving binders<a class="headerlink" href="#notations-with-recursive-patterns-involving-binders" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Recursive notations can also be used with binders. The basic example
 is:</p>
@@ -894,7 +885,7 @@ binders, <code class="docutils literal notranslate"><span class="pre">x</span></
 of the notation. The binders of the parsed sequence are used to fill the
 occurrences of the first placeholder of the iterating pattern which is
 repeatedly nested as many times as the number of binders generated. If ever the
-generalization operator <code class="docutils literal notranslate"><span class="pre">'</span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#implicit-generalization"><span class="std std-ref">Implicit generalization</span></a>) is
+generalization operator <code class="docutils literal notranslate"><span class="pre">'</span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#implicit-generalization"><span class="std std-ref">暗黙の一般化</span></a>) is
 used in the binding list, the added binders are taken into account too.</p>
 <p>There are two flavors of binder parsing. If <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are marked as binder,
 then a sequence such as <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span> <span class="name"><span class="pre">b</span></span> <span class="name"><span class="pre">c</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">T</span></span></code> will be accepted and interpreted as
@@ -933,8 +924,8 @@ used. Here is an example:</p>
   (</span><span class="coqdoc-tactic">at</span><span> </span><span class="coqdoc-keyword">level</span><span> 200, </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">binder</span><span>).</span></dt><dd class="coqtop-hidden"><span>Identifier 'exists_non_null' now a keyword</span></dd>
 </dl>
 </div>
-</section>
-<section id="predefined-entries">
+</div>
+<div class="section" id="predefined-entries">
 <h3>Predefined entries<a class="headerlink" href="#predefined-entries" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>By default, sub-expressions are parsed as terms and the corresponding
 grammar entry is called <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">constr</span></span></span></code>. However, one may sometimes want
@@ -960,10 +951,10 @@ side. E.g.:</p>
 Identifier 'apply_id' now a keyword</span></dd>
 </dl>
 </div>
-</section>
-<section id="summary">
+</div>
+<div class="section" id="summary">
 <h3>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<section id="syntax-of-notations">
+<div class="section" id="syntax-of-notations">
 <span id="notationsyntax"></span><h4>Syntax of notations<a class="headerlink" href="#syntax-of-notations" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The different syntactic variants of the command Notation are given on the
 following figure. The optional <span class="inline-grammar-production"><span class="target" id="grammar-token-scope"></span><code class="docutils literal notranslate"><span class="pre">scope</span></code></span> is described in
@@ -1022,8 +1013,8 @@ curly brackets have been removed (e.g. the level and the associativity
 given to some notation, say <code class="docutils literal notranslate"><span class="pre">&quot;{</span> <span class="pre">y</span> <span class="pre">}</span> <span class="pre">&amp;</span> <span class="pre">{</span> <span class="pre">z</span> <span class="pre">}&quot;</span></code> in fact applies to the
 underlying <code class="docutils literal notranslate"><span class="pre">&quot;{</span> <span class="pre">x</span> <span class="pre">}&quot;</span></code>-free rule which is <code class="docutils literal notranslate"><span class="pre">&quot;y</span> <span class="pre">&amp;</span> <span class="pre">z&quot;</span></code>).</p>
 </div>
-</section>
-<section id="persistence-of-notations">
+</div>
+<div class="section" id="persistence-of-notations">
 <h4>Persistence of notations<a class="headerlink" href="#persistence-of-notations" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Notations disappear when a section is closed.</p>
 <dl class="cmd">
@@ -1033,10 +1024,10 @@ underlying <code class="docutils literal notranslate"><span class="pre">&quot;{<
 of <a class="reference internal" href="#coq:cmd.notation" title="Notation"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Notation</span></code></a>.</p>
 </dd></dl>
 
-</section>
-</section>
-</section>
-<section id="interpretation-scopes">
+</div>
+</div>
+</div>
+<div class="section" id="interpretation-scopes">
 <span id="scopes"></span><h2>Interpretation scopes<a class="headerlink" href="#interpretation-scopes" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>An <em>interpretation scope</em> is a set of notations for terms with their
 interpretations. Interpretation scopes provide a weak, purely
@@ -1060,7 +1051,7 @@ declares the notation for conjunction in the scope <code class="docutils literal
 <p>A notation not defined in a scope is called a <em>lonely</em>
 notation.</p>
 </div>
-<section id="global-interpretation-rules-for-notations">
+<div class="section" id="global-interpretation-rules-for-notations">
 <h3>Global interpretation rules for notations<a class="headerlink" href="#global-interpretation-rules-for-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>At any time, the interpretation of a notation for a term is done within
 a <em>stack</em> of interpretation scopes and lonely notations. In case a
@@ -1118,12 +1109,12 @@ they occur, even if outside a section.</p>
 not inside a section.</p>
 </dd></dl>
 
-</section>
-<section id="local-interpretation-rules-for-notations">
+</div>
+<div class="section" id="local-interpretation-rules-for-notations">
 <span id="localinterpretationrulesfornotations"></span><h3>Local interpretation rules for notations<a class="headerlink" href="#local-interpretation-rules-for-notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In addition to the global rules of interpretation of notations, some
 ways to change the interpretation of subterms are available.</p>
-<section id="local-opening-of-an-interpretation-scope">
+<div class="section" id="local-opening-of-an-interpretation-scope">
 <h4>Local opening of an interpretation scope<a class="headerlink" href="#local-opening-of-an-interpretation-scope" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>It is possible to locally extend the interpretation scope stack using the syntax
 <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">term</span></span><span class="operator"><span class="pre">)%</span></span><span class="name"><span class="pre">key</span></span></code> (or simply <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">term</span></span><span class="operator"><span class="pre">%</span></span><span class="name"><span class="pre">key</span></span></code> for atomic terms), where key is a
@@ -1144,8 +1135,8 @@ interpreted in the scope stack extended with the scope bound tokey.</p>
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">Undelimit</span></span> <span><span class="pre">Scope</span></span> <a class="reference internal" href="#grammar-token-scope"><span class="hole"><span class="pre">scope</span></span></a></span></code></p>
 </dd></dl>
 
-</section>
-<section id="binding-arguments-of-a-constant-to-an-interpretation-scope">
+</div>
+<div class="section" id="binding-arguments-of-a-constant-to-an-interpretation-scope">
 <h4>Binding arguments of a constant to an interpretation scope<a class="headerlink" href="#binding-arguments-of-a-constant-to-an-interpretation-scope" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmd">
 <dt id="coq:cmd.arguments-scopes">
@@ -1246,8 +1237,8 @@ example:</p>
 </dl>
 </div>
 </div>
-</section>
-<section id="binding-types-of-arguments-to-an-interpretation-scope">
+</div>
+<div class="section" id="binding-types-of-arguments-to-an-interpretation-scope">
 <h4>Binding types of arguments to an interpretation scope<a class="headerlink" href="#binding-types-of-arguments-to-an-interpretation-scope" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmd">
 <dt id="coq:cmd.bind-scope">
@@ -1290,9 +1281,9 @@ effect on interpretation. See the next section.</p>
 </div>
 </dd></dl>
 
-</section>
-</section>
-<section id="the-type-scope-interpretation-scope">
+</div>
+</div>
+<div class="section" id="the-type-scope-interpretation-scope">
 <h3>The <code class="docutils literal notranslate"><span class="pre">type_scope</span></code> interpretation scope<a class="headerlink" href="#the-type-scope-interpretation-scope" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p id="index-0">The scope <code class="docutils literal notranslate"><span class="pre">type_scope</span></code> has a special status. It is a primitive interpretation
 scope which is temporarily activated each time a subterm of an expression is
@@ -1304,15 +1295,15 @@ type of hypotheses within an Ltac goal match (see
 the type of a binder, the domain and codomain of implication, the codomain of
 products, and more generally any type argument of a declared or defined
 constant.</p>
-</section>
-<section id="the-function-scope-interpretation-scope">
+</div>
+<div class="section" id="the-function-scope-interpretation-scope">
 <h3>The <code class="docutils literal notranslate"><span class="pre">function_scope</span></code> interpretation scope<a class="headerlink" href="#the-function-scope-interpretation-scope" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p id="index-1">The scope <code class="docutils literal notranslate"><span class="pre">function_scope</span></code> also has a special status.
 It is temporarily activated each time the argument of a global reference is
 recognized to be a <code class="docutils literal notranslate"><span class="pre">Funclass</span></code> istance, i.e., of type <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span> <span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">B</span></span></code> or
 <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">-&gt;</span></span> <span class="name"><span class="pre">B</span></span></code>.</p>
-</section>
-<section id="interpretation-scopes-used-in-the-standard-library-of-coq">
+</div>
+<div class="section" id="interpretation-scopes-used-in-the-standard-library-of-coq">
 <h3>Interpretation scopes used in the standard library of Coq<a class="headerlink" href="#interpretation-scopes-used-in-the-standard-library-of-coq" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We give an overview of the scopes used in the standard library of Coq.
 For a complete list of notations in each scope, use the commands <a class="reference internal" href="#coq:cmd.print-scopes" title="Print Scopes"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span>
@@ -1369,7 +1360,7 @@ key <code class="docutils literal notranslate"><span class="pre">bool</span></co
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">string_scope</span></code></dt><dd><p>This scope includes notation for strings as elements of the type string.
 Special characters and escaping follow Coq conventions on strings (see
-<a class="reference internal" href="../language/gallina-specification-language.html#lexical-conventions"><span class="std std-ref">Lexical conventions</span></a>). Especially, there is no convention to visualize non
+<a class="reference internal" href="../language/gallina-specification-language.html#lexical-conventions"><span class="std std-ref">字句規則</span></a>). Especially, there is no convention to visualize non
 printable characters of a string. The file <code class="file docutils literal notranslate"><span class="pre">String.v</span></code> shows an example
 that contains quotes, a newline and a beep (i.e. the ASCII character
 of code 7).</p>
@@ -1382,8 +1373,8 @@ decimal ASCII code <code class="docutils literal notranslate"><span class="pre">
 the ASCII code 34), all of them being represented in the type <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">ascii</span></span></code>.</p>
 </dd>
 </dl>
-</section>
-<section id="displaying-information-about-scopes">
+</div>
+<div class="section" id="displaying-information-about-scopes">
 <h3>Displaying information about scopes<a class="headerlink" href="#displaying-information-about-scopes" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.print-visibility">
@@ -1420,9 +1411,9 @@ scope is bound, if any.</p>
 
 </dd></dl>
 
-</section>
-</section>
-<section id="abbreviations">
+</div>
+</div>
+<div class="section" id="abbreviations">
 <span id="id5"></span><h2>Abbreviations<a class="headerlink" href="#abbreviations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="cmd">
 <dt>
@@ -1458,10 +1449,7 @@ much as possible by the Coq printers unless the modifier <code class="docutils l
 <span class="pre">parsing)</span></code> is given.</p>
 <p>An abbreviation is bound to an absolute name as an ordinary definition is
 and it also can be referred to by a qualified name.</p>
-<p>Abbreviations are syntactic in the sense that they are bound to
-expressions which are not typed at the time of the definition of the
-abbreviation but at the time they are used. Especially, abbreviations
-can be bound to terms with holes (i.e. with “<code class="docutils literal notranslate"><span class="pre">_</span></code>”). For example:</p>
+<p>Abbreviations are syntactic in the sense that they are bound to expressions which are not typed at the time of the definition of the abbreviation but at the time they are used. Especially, abbreviations can be bound to terms with holes (i.e. with “<code class="docutils literal notranslate"><span class="pre">_</span></code>”). 例えば:</p>
 <div class="coqtop literal-block docutils container">
 <span class="coqtop-reset"></span><dl class="simple">
 <dt class="coqtop-hidden"><span class="coqdoc-keyword">Set</span><span> </span><span class="coqdoc-keyword">Strict</span><span> </span><span class="coqdoc-keyword">Implicit</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
@@ -1483,8 +1471,8 @@ denoted expression is performed at definition time. Type checking is
 done only at the time of use of the abbreviation.</p>
 </dd></dl>
 
-</section>
-<section id="tactic-notations">
+</div>
+<div class="section" id="tactic-notations">
 <span id="tacticnotation"></span><h2>Tactic Notations<a class="headerlink" href="#tactic-notations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Tactic notations allow to customize the syntax of tactics. They have the following syntax:</p>
 <pre>
@@ -1637,8 +1625,8 @@ replaces it with <code class="docutils literal notranslate"><span class="pre">le
 is in fact <code class="docutils literal notranslate"><span class="pre">left</span> <span class="pre">associativity</span></code> for the purposes of parsing</p>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

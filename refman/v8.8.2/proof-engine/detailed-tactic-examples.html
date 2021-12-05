@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detailed examples of tactics &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,13 +14,13 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proof-handling.html">Proof handling</a></li>
@@ -96,23 +95,23 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -124,7 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -243,11 +242,11 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="detailed-examples-of-tactics">
+<div class="section" id="detailed-examples-of-tactics">
 <span id="detailedexamplesoftactics"></span><h1>Detailed examples of tactics<a class="headerlink" href="#detailed-examples-of-tactics" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>This chapter presents detailed examples of certain tactics, to
 illustrate their behavior.</p>
-<section id="dependent-induction">
+<div class="section" id="dependent-induction">
 <span id="id1"></span><h2>dependent induction<a class="headerlink" href="#dependent-induction" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The tactics <code class="docutils literal notranslate"><span class="pre">dependent</span> <span class="pre">induction</span></code> and <code class="docutils literal notranslate"><span class="pre">dependent</span> <span class="pre">destruction</span></code> are another
 solution for inverting inductive predicate instances and potentially
@@ -468,7 +467,7 @@ vector_rec is defined</span></dd>
 generalized hypothesis only when it has a type of the form <code class="docutils literal notranslate"><span class="pre">vector</span> <span class="pre">(S</span> <span class="pre">n)</span></code>,
 that is only in the second case of the destruct. The first one is
 dismissed because <code class="docutils literal notranslate"><span class="pre">S</span> <span class="pre">n</span> <span class="pre">&lt;&gt;</span> <span class="pre">0</span></code>.</p>
-<section id="a-larger-example">
+<div class="section" id="a-larger-example">
 <h3>A larger example<a class="headerlink" href="#a-larger-example" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Let’s see how the technique works with induction on inductive
 predicates on a real example. We will develop an example application
@@ -802,9 +801,9 @@ subgoal 2 is:
 <p class="admonition-title">参考</p>
 <p>The <a class="reference internal" href="tactics.html#coq:tacn.induction" title="induction"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">induction</span></code></a>, <a class="reference internal" href="tactics.html#coq:tacn.case" title="case"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">case</span></code></a>, and <a class="reference internal" href="tactics.html#coq:tacn.inversion" title="inversion"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">inversion</span></code></a> tactics.</p>
 </div>
-</section>
-</section>
-<section id="autorewrite">
+</div>
+</div>
+<div class="section" id="autorewrite">
 <h2>autorewrite<a class="headerlink" href="#autorewrite" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Here are two examples of <code class="docutils literal notranslate"><span class="pre">autorewrite</span></code> use. The first one ( <em>Ackermann
 function</em>) shows actually a quite basic use where there is no
@@ -898,8 +897,8 @@ g is declared</span></dd>
 </dl>
 </div>
 </div>
-</section>
-<section id="quote">
+</div>
+<div class="section" id="quote">
 <span id="id2"></span><h2>quote<a class="headerlink" href="#quote" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The tactic <code class="docutils literal notranslate"><span class="pre">quote</span></code> allows using Barendregt’s so-called 2-level approach
 without writing any ML code. Suppose you have a language <code class="docutils literal notranslate"><span class="pre">L</span></code> of
@@ -962,7 +961,7 @@ terms. If there is no match, we are at a leaf: return the
 corresponding constructor (here <code class="docutils literal notranslate"><span class="pre">f_const</span></code>) applied to the term.</p>
 <p>When <code class="docutils literal notranslate"><span class="pre">quote</span></code> is not able to perform inversion properly, it will error out with
 <a class="reference internal" href="tactics.html#coq:exn.quote-not-a-simple-fixpoint" title="quote: not a simple fixpoint"><code class="xref coq coq-exn docutils literal notranslate"><span class="pre">quote:</span> <span class="pre">not</span> <span class="pre">a</span> <span class="pre">simple</span> <span class="pre">fixpoint</span></code></a>.</p>
-<section id="introducing-variables-map">
+<div class="section" id="introducing-variables-map">
 <h3>Introducing variables map<a class="headerlink" href="#introducing-variables-map" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The normal use of quote is to make proofs by reflection: one defines a
 function <code class="docutils literal notranslate"><span class="pre">simplify</span> <span class="pre">:</span> <span class="pre">formula</span> <span class="pre">-&gt;</span> <span class="pre">formula</span></code> and proves a theorem
@@ -1057,8 +1056,8 @@ interp_f is recursively defined (decreasing on 2nd argument)</span></dd>
 </div>
 <p>It builds <code class="docutils literal notranslate"><span class="pre">vm</span></code> and <code class="docutils literal notranslate"><span class="pre">t</span></code> such that <code class="docutils literal notranslate"><span class="pre">(f</span> <span class="pre">vm</span> <span class="pre">t)</span></code> is convertible with the
 conclusion of current goal.</p>
-</section>
-<section id="combining-variables-and-constants">
+</div>
+<div class="section" id="combining-variables-and-constants">
 <h3>Combining variables and constants<a class="headerlink" href="#combining-variables-and-constants" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>One can have both variables and constants in abstracts terms; for
 example, this is the case for the <a class="reference internal" href="tactics.html#coq:tacn.ring" title="ring"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">ring</span></code></a> tactic. Then one must provide to
@@ -1156,11 +1155,11 @@ which subterms are constants (see above).</p>
 <p class="admonition-title">参考</p>
 <p>The <a class="reference internal" href="tactics.html#coq:tacn.ring" title="ring"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">ring</span></code></a> tactic.</p>
 </div>
-</section>
-</section>
-<section id="using-the-tactic-language">
+</div>
+</div>
+<div class="section" id="using-the-tactic-language">
 <h2>Using the tactic language<a class="headerlink" href="#using-the-tactic-language" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="about-the-cardinality-of-the-set-of-natural-numbers">
+<div class="section" id="about-the-cardinality-of-the-set-of-natural-numbers">
 <h3>About the cardinality of the set of natural numbers<a class="headerlink" href="#about-the-cardinality-of-the-set-of-natural-numbers" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The first example which shows how to use pattern matching over the
 proof context is a proof of the fact that natural numbers have more
@@ -1198,8 +1197,8 @@ than two elements. This can be done as follows:</p>
 eliminations (with three distinct natural numbers) are successfully
 solved by a match goal structure and, in particular, with only one
 pattern (use of non-linear matching).</p>
-</section>
-<section id="permutations-of-lists">
+</div>
+<div class="section" id="permutations-of-lists">
 <h3>Permutations of lists<a class="headerlink" href="#permutations-of-lists" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A more complex example is the problem of permutations of
 lists. The aim is to show that a list is a permutation of
@@ -1302,8 +1301,8 @@ can now prove lemmas as follows:</p>
 <dt><span class="coqdoc-keyword">Qed</span><span>.</span></dt><dd class="coqtop-hidden"><span>solve_perm_ex2 is defined</span></dd>
 </dl>
 </div>
-</section>
-<section id="deciding-intuitionistic-propositional-logic">
+</div>
+<div class="section" id="deciding-intuitionistic-propositional-logic">
 <h3>Deciding intuitionistic propositional logic<a class="headerlink" href="#deciding-intuitionistic-propositional-logic" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Pattern matching on goals allows a powerful backtracking when returning tactic
 values. An interesting application is the problem of deciding intuitionistic
@@ -1395,8 +1394,8 @@ and the right <code class="docutils literal notranslate"><span class="pre">or</s
 <dt><span class="coqdoc-keyword">Qed</span><span>.</span></dt><dd class="coqtop-hidden"><span>my_tauto_ex2 is defined</span></dd>
 </dl>
 </div>
-</section>
-<section id="deciding-type-isomorphisms">
+</div>
+<div class="section" id="deciding-type-isomorphisms">
 <h3>Deciding type isomorphisms<a class="headerlink" href="#deciding-type-isomorphisms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A more tricky problem is to decide equalities between types modulo
 isomorphisms. Here, we choose to use the isomorphisms of the simply
@@ -1540,9 +1539,9 @@ The main tactic that puts all these components together is called <code class="d
 <dt><span class="coqdoc-keyword">Qed</span><span>.</span></dt><dd class="coqtop-hidden"><span>solve_iso_ex2 is defined</span></dd>
 </dl>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canonical Structures &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>正準構造 &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
       <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
@@ -15,17 +14,17 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="Type Classes" href="type-classes.html" />
+    <link rel="next" title="型クラス" href="type-classes.html" />
     <link rel="prev" title="Implicit Coercions" href="implicit-coercions.html" /> 
 </head>
 
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,33 +76,33 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Canonical Structures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#notation-overloading">Notation overloading</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#derived-canonical-structures">Derived Canonical Structures</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">正準構造</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#notation-overloading">表記法オーバーローディング</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#derived-canonical-structures">派生した正準構造</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#hierarchy-of-structures">Hierarchy of structures</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#compact-declaration-of-canonical-structures">Compact declaration of Canonical Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hierarchy-of-structures">構造の階層</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#compact-declaration-of-canonical-structures">正準構造のコンパクトな定義</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -115,7 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -134,7 +133,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Canonical Structures</li>
+      <li>正準構造</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/addendum/canonical-structures.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -234,26 +233,17 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="canonical-structures">
-<span id="canonicalstructures"></span><h1>Canonical Structures<a class="headerlink" href="#canonical-structures" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="canonical-structures">
+<span id="canonicalstructures"></span><h1>正準構造<a class="headerlink" href="#canonical-structures" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Authors</dt>
+<dt class="field-odd">著者</dt>
 <dd class="field-odd"><p>Assia Mahboubi and Enrico Tassi</p>
 </dd>
 </dl>
-<p>This chapter explains the basics of canonical structures and how they can be used
-to overload notations and build a hierarchy of algebraic structures. The
-examples are taken from <a class="bibtex reference internal" href="../zebibliography.html#cswcu" id="id1">[MT13]</a>. We invite the interested reader to refer
-to this paper for all the details that are omitted here for brevity. The
-interested reader shall also find in <a class="bibtex reference internal" href="../zebibliography.html#cslessadhoc" id="id2">[GZND11]</a> a detailed description
-of another, complementary, use of canonical structures: advanced proof search.
-This latter papers also presents many techniques one can employ to tune the
-inference of canonical structures.</p>
-<section id="notation-overloading">
-<h2>Notation overloading<a class="headerlink" href="#notation-overloading" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>We build an infix notation == for a comparison predicate. Such
-notation will be overloaded, and its meaning will depend on the types
-of the terms that are compared.</p>
+<p>この章では正準構造の基本とそれらが記法のオーバーロードや代数構造の階層の構築にどのように使えるかを説明します。例は <a class="bibtex reference internal" href="../zebibliography.html#cswcu" id="id1">[MT13]</a> から抜粋しています。簡潔さのためにここでは省略した全ての詳細について興味のある読者にはこの論文を参照することを勧めます。興味のある読者は <a class="bibtex reference internal" href="../zebibliography.html#cslessadhoc" id="id2">[GZND11]</a> にも別の、相補的な、正準構造の使用: 高度な証明探索 についての詳細な説明を発見するでしょう。後者の論文は正準構造の推論を調整するために用いることが出来るたくさんのテクニックも述べています。</p>
+<div class="section" id="notation-overloading">
+<h2>表記法オーバーローディング<a class="headerlink" href="#notation-overloading" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>比較述語のための中置記法 == を構築します。そのような記法はオーバーロードされ、その意味は比較される項の型に依存することになるでしょう。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">EQ</span><span>.</span></dt><dd><span>Interactive Module EQ started</span></dd>
@@ -274,19 +264,9 @@ class_of is defined</span></dd>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">EQ</span><span>.</span></dt><dd><span>Module EQ is defined</span></dd>
 </dl>
 </div>
-<p>We use Coq modules as namespaces. This allows us to follow the same
-pattern and naming convention for the rest of the chapter. The base
-namespace contains the definitions of the algebraic structure. To
-keep the example small, the algebraic structure <code class="docutils literal notranslate"><span class="pre">EQ.type</span></code> we are
-defining is very simplistic, and characterizes terms on which a binary
-relation is defined, without requiring such relation to validate any
-property. The inner theory module contains the overloaded notation <code class="docutils literal notranslate"><span class="pre">==</span></code>
-and will eventually contain lemmas holding all the instances of the
-algebraic structure (in this case there are no lemmas).</p>
-<p>Note that in practice the user may want to declare <code class="docutils literal notranslate"><span class="pre">EQ.obj</span></code> as a
-coercion, but we will not do that here.</p>
-<p>The following line tests that, when we assume a type <code class="docutils literal notranslate"><span class="pre">e</span></code> that is in
-theEQ class, we can relate two of its objects with <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p>
+<p>Coq のモジュールを名前空間として使います。これによってこの章のこれ以降では同じパターンと命名規則に従うことが出来ます。この基本名前空間は代数構造の定義を含んでいます。例を小さく保つため、我々が定義する代数構造 <code class="docutils literal notranslate"><span class="pre">EQ.type</span></code> は非常に単純でかつ、ある定義された二項関係上で項を特徴づけ、そのような関係に要求されるどんな性質の正当性の立証もありません。内部のtheoryモジュールはオーバーロードされた記法 <code class="docutils literal notranslate"><span class="pre">==</span></code> を含み、その代数構造の全てのインスタンスを保持する補題をも含みます (この場合は補題はありません)。</p>
+<p>留意すべきは、実際にはユーザは <code class="docutils literal notranslate"><span class="pre">EQ.obj</span></code> をコアーションとして定義したいかもしれませんが、ここではそれは行いません。</p>
+<p>以下の行では EQ クラス内の型 <code class="docutils literal notranslate"><span class="pre">e</span></code> を仮定したとき、<code class="docutils literal notranslate"><span class="pre">==</span></code> によってそのオブジェクト二つを関連付けることが出来ることをテストしています。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Import</span><span> </span><span class="coqdoc-var">EQ.theory</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
@@ -294,14 +274,14 @@ theEQ class, we can relate two of its objects with <code class="docutils literal
      : </span><span class="ansi-fg-yellow ansi-bg-default ansi-bold ansi-no-italic ansi-no-underline ansi-no-negative">Prop</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>Still, no concrete type is in the <code class="docutils literal notranslate"><span class="pre">EQ</span></code> class.</p>
+<p>まだ <code class="docutils literal notranslate"><span class="pre">EQ</span></code> クラスの中には具体的な型はありません。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-var">Fail</span><span> </span><span class="coqdoc-keyword">Check</span><span> 3 == 3.</span></dt><dd><span>The command has indeed failed with message:
 The term &quot;3&quot; has type &quot;</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot; while it is expected to have type &quot;</span><span class="ansi-fg-light-magenta ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">EQ</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">.</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">obj</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-blue ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">?e</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot;.</span></dd>
 </dl>
 </div>
-<p>We amend that by equipping <code class="docutils literal notranslate"><span class="pre">nat</span></code> with a comparison relation.</p>
+<p>これを <code class="docutils literal notranslate"><span class="pre">nat</span></code> に比較関係を授けることで修正します。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">nat_eq</span><span> (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">nat</span><span>) := </span><span class="coqdoc-var">Nat.compare</span><span> </span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> = </span><span class="coqdoc-var">Eq</span><span>.</span></dt><dd><span>nat_eq is defined</span></dd>
@@ -313,23 +293,11 @@ The term &quot;3&quot; has type &quot;</span><span class="ansi-fg-light-green an
      : </span><span class="ansi-fg-yellow ansi-bg-default ansi-bold ansi-no-italic ansi-no-underline ansi-no-negative">Prop</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>This last test shows that <span class="smallcaps">Coq</span> is now not only able to type check <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">==</span> <span class="pre">3</span></code>,
-but also that the infix relation was bound to the <code class="docutils literal notranslate"><span class="pre">nat_eq</span></code> relation.
-This relation is selected whenever <code class="docutils literal notranslate"><span class="pre">==</span></code> is used on terms of type nat.
-This can be read in the line declaring the canonical structure
-<code class="docutils literal notranslate"><span class="pre">nat_EQty</span></code>, where the first argument to <code class="docutils literal notranslate"><span class="pre">Pack</span></code> is the key and its second
-argument a group of canonical values associated to the key. In this
-case we associate to nat only one canonical value (since its class,
-<code class="docutils literal notranslate"><span class="pre">nat_EQcl</span></code> has just one member). The use of the projection <code class="docutils literal notranslate"><span class="pre">op</span></code> requires
-its argument to be in the class <code class="docutils literal notranslate"><span class="pre">EQ</span></code>, and uses such a member (function)
-to actually compare its arguments.</p>
-<p>Similarly, we could equip any other type with a comparison relation,
-and use the <code class="docutils literal notranslate"><span class="pre">==</span></code> notation on terms of this type.</p>
-<section id="derived-canonical-structures">
-<h3>Derived Canonical Structures<a class="headerlink" href="#derived-canonical-structures" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>We know how to use <code class="docutils literal notranslate"><span class="pre">==</span> <span class="pre">``</span> <span class="pre">on</span> <span class="pre">base</span> <span class="pre">types,</span> <span class="pre">like</span> <span class="pre">``nat</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">Z</span></code>. Here we show
-how to deal with type constructors, i.e. how to make the following
-example work:</p>
+<p>この最後のテストは <span class="smallcaps">Coq</span> がもはや <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">==</span> <span class="pre">3</span></code> の型検査が出来るだけでなく、中置関係が <code class="docutils literal notranslate"><span class="pre">nat_eq</span></code> 関係に束縛されたことを示しています。この関係は <code class="docutils literal notranslate"><span class="pre">==</span></code> が nat 型の項の上で使われるときはいつでも選択されます。これは正準構造 <code class="docutils literal notranslate"><span class="pre">nat_EQty</span></code> を定義した行の中で読み取ることが出来、ここで <code class="docutils literal notranslate"><span class="pre">Pack</span></code> の最初の引数がキーであり、二番目の引数がそのキーに関連付けられた正準値のグループです。この場合は nat に高々一つの正準値を関連付けました (そのクラスについても、<code class="docutils literal notranslate"><span class="pre">nat_EQcl</span></code> はただ一つのメンバを持っています)。射影 <code class="docutils literal notranslate"><span class="pre">op</span></code> の使用はその引数が <code class="docutils literal notranslate"><span class="pre">EQ</span></code> クラスに属していることを要求し、そのようなメンバ (関数) を実際にその引数を比較するために使います。</p>
+<p>同様に、他のどんな型でも比較関係を整えて、そしてこの型の項の上で <code class="docutils literal notranslate"><span class="pre">==</span></code> 記法を使うことが出来ます。</p>
+<div class="section" id="derived-canonical-structures">
+<h3>派生した正準構造<a class="headerlink" href="#derived-canonical-structures" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>私たちは <code class="docutils literal notranslate"><span class="pre">nat</span></code>、<code class="docutils literal notranslate"><span class="pre">bool</span></code>、<code class="docutils literal notranslate"><span class="pre">Z</span></code> のような基本型上で <code class="docutils literal notranslate"><span class="pre">==</span></code> をどのように使うかを知っています。ここでは型コンストラクタをどのように扱うか、つまり以下の例がどのように動作するかを示します:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-var">Fail</span><span> </span><span class="coqdoc-keyword">Check</span><span> </span><span class="coqdoc-keyword">forall</span><span> (</span><span class="coqdoc-var">e</span><span> : </span><span class="coqdoc-var">EQ.type</span><span>) (</span><span class="coqdoc-var">a</span><span> </span><span class="coqdoc-var">b</span><span> : </span><span class="coqdoc-var">EQ.obj</span><span> </span><span class="coqdoc-var">e</span><span>), (</span><span class="coqdoc-var">a</span><span>, </span><span class="coqdoc-var">b</span><span>) == (</span><span class="coqdoc-var">a</span><span>, </span><span class="coqdoc-var">b</span><span>).</span></dt><dd><span>The command has indeed failed with message:
@@ -341,9 +309,7 @@ The term &quot;</span><span class="ansi-fg-white ansi-bg-default ansi-no-bold an
 while it is expected to have type &quot;</span><span class="ansi-fg-light-magenta ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">EQ</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">.</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">obj</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-blue ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">?e</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot;.</span></dd>
 </dl>
 </div>
-<p>The error message is telling that <span class="smallcaps">Coq</span> has no idea on how to compare
-pairs of objects. The following construction is telling Coq exactly
-how to do that.</p>
+<p>このエラーメッセージは <span class="smallcaps">Coq</span> がオブジェクトのペアをどのように比較するかについて知らないと言っています。以下の構成は Coq にまさにそれをどのように行うかを教えています。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">pair_eq</span><span> (</span><span class="coqdoc-var">e1</span><span> </span><span class="coqdoc-var">e2</span><span> : </span><span class="coqdoc-var">EQ.type</span><span>) (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">EQ.obj</span><span> </span><span class="coqdoc-var">e1</span><span> * </span><span class="coqdoc-var">EQ.obj</span><span> </span><span class="coqdoc-var">e2</span><span>) :=</span><span>
@@ -357,19 +323,12 @@ how to do that.</p>
      : </span><span class="ansi-fg-yellow ansi-bg-default ansi-bold ansi-no-italic ansi-no-underline ansi-no-negative">Prop</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>Thanks to the <code class="docutils literal notranslate"><span class="pre">pair_EQty</span></code> declaration, <span class="smallcaps">Coq</span> is able to build a comparison
-relation for pairs whenever it is able to build a comparison relation
-for each component of the pair. The declaration associates to the key <code class="docutils literal notranslate"><span class="pre">*</span></code>
-(the type constructor of pairs) the canonical comparison
-relation <code class="docutils literal notranslate"><span class="pre">pair_eq</span></code> whenever the type constructor <code class="docutils literal notranslate"><span class="pre">*</span></code> is applied to two
-types being themselves in the <code class="docutils literal notranslate"><span class="pre">EQ</span></code> class.</p>
-</section>
-</section>
-<section id="hierarchy-of-structures">
-<h2>Hierarchy of structures<a class="headerlink" href="#hierarchy-of-structures" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>To get to an interesting example we need another base class to be
-available. We choose the class of types that are equipped with an
-order relation, to which we associate the infix <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> notation.</p>
+<p><code class="docutils literal notranslate"><span class="pre">pair_EQty</span></code> 定義のおかげで、<span class="smallcaps">Coq</span> はそのペアの各コンポーネントの比較関数を構築することが出来るときは、いつでもペアのための比較関係を構築することが出来ます。その定義は型コンストラクタ <code class="docutils literal notranslate"><span class="pre">*</span></code> がそれら自身が <code class="docutils literal notranslate"><span class="pre">EQ</span></code> クラスの中にある二つの型に適用されるときは、キーである <code class="docutils literal notranslate"><span class="pre">*</span></code> (ペアの型コンストラクタ) に正準比較関係 <code class="docutils literal notranslate"><span class="pre">pair_eq</span></code> を関連付けます。</p>
+</div>
+</div>
+<div class="section" id="hierarchy-of-structures">
+<h2>構造の階層<a class="headerlink" href="#hierarchy-of-structures" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>興味深い例を得るにはもう一つの基本クラスを必要とします。中置 <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> 記法を伴った順序関係を装備した型のクラスを選択します。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">LE</span><span>.</span></dt><dd><span>Interactive Module LE started</span></dd>
@@ -388,7 +347,7 @@ class_of is defined</span></dd>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">LE</span><span>.</span></dt><dd><span>Module LE is defined</span></dd>
 </dl>
 </div>
-<p>As before we register a canonical <code class="docutils literal notranslate"><span class="pre">LE</span></code> class for <code class="docutils literal notranslate"><span class="pre">nat</span></code>.</p>
+<p>これまでのように <code class="docutils literal notranslate"><span class="pre">nat</span></code> のために正準 <code class="docutils literal notranslate"><span class="pre">LE</span></code> クラスを登録します。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Import</span><span> </span><span class="coqdoc-var">LE.theory</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
@@ -397,7 +356,7 @@ class_of is defined</span></dd>
 <dt><span class="coqdoc-keyword">Canonical</span><span> </span><span class="coqdoc-keyword">Structure</span><span> </span><span class="coqdoc-var">nat_LEty</span><span> : </span><span class="coqdoc-var">LE.type</span><span> := </span><span class="coqdoc-var">LE.Pack</span><span> </span><span class="coqdoc-var">nat</span><span> </span><span class="coqdoc-var">nat_LEcl</span><span>.</span></dt><dd><span>nat_LEty is defined</span></dd>
 </dl>
 </div>
-<p>And we enable <span class="smallcaps">Coq</span> to relate pair of terms with <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>.</p>
+<p>そして <span class="smallcaps">Coq</span> に項のペアを <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> によって関連付けさせます。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">pair_le</span><span> </span><span class="coqdoc-var">e1</span><span> </span><span class="coqdoc-var">e2</span><span> (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">LE.obj</span><span> </span><span class="coqdoc-var">e1</span><span> * </span><span class="coqdoc-var">LE.obj</span><span> </span><span class="coqdoc-var">e2</span><span>) :=</span><span>
@@ -409,9 +368,7 @@ class_of is defined</span></dd>
      : </span><span class="ansi-fg-yellow ansi-bg-default ansi-bold ansi-no-italic ansi-no-underline ansi-no-negative">Prop</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>At the current stage we can use <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> on concrete types, like
-tuples of natural numbers, but we can’t develop an algebraic theory
-over the types that are equipped with both relations.</p>
+<p>現段階では我々は自然数の組のような具体型の上で <code class="docutils literal notranslate"><span class="pre">==</span></code> と <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> を使うことができますが、両方の関係を備えた型上の代数的理論を開発することはできません。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Check</span><span> 2 &lt;= 3 /\ 2 == 2.</span></dt><dd><span>2</span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> &lt;=</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> 3</span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> /\</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> 2</span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> ==</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> 2
@@ -432,7 +389,7 @@ The term &quot;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold 
  &quot;</span><span class="ansi-fg-light-magenta ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">EQ</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">.</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">obj</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-blue ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">?e</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot;.</span></dd>
 </dl>
 </div>
-<p>We need to define a new class that inherits from both <code class="docutils literal notranslate"><span class="pre">EQ</span></code> and <code class="docutils literal notranslate"><span class="pre">LE</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">EQ</span></code> と <code class="docutils literal notranslate"><span class="pre">LE</span></code> の両方から派生した新しいクラスを定義する必要があります。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">LEQ</span><span>.</span></dt><dd><span>Interactive Module LEQ started</span></dd>
@@ -453,11 +410,8 @@ class_of is defined</span></dd>
 <dt><span class="coqdoc-var">Arguments</span><span> </span><span class="coqdoc-keyword">Class</span><span> {</span><span class="coqdoc-var">T</span><span>} </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">_</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-<p>The mixin component of the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class contains all the extra content we
-are adding to <code class="docutils literal notranslate"><span class="pre">EQ</span></code> and <code class="docutils literal notranslate"><span class="pre">LE</span></code>. In particular it contains the requirement
-that the two relations we are combining are compatible.</p>
-<p>Unfortunately there is still an obstacle to developing the algebraic
-theory of this new class.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`LEQ`</span></code> クラスの構成部品 mixin は <code class="docutils literal notranslate"><span class="pre">EQ</span></code> と <code class="docutils literal notranslate"><span class="pre">LE</span></code> に追加している特別な内容を全て含んでいます. 特にそれは組み合わせた両立できる二つの要求を含んでいます。</p>
+<p>残念ながら未だにこの新しいクラスの代数理論の開発の障害があります。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">theory</span><span>.</span></dt><dd><span>Interactive Module theory started</span></dd>
@@ -469,12 +423,8 @@ m : </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no
 The term &quot;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">n</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot; has type &quot;</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">obj</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">le</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot; while it is expected to have type &quot;</span><span class="ansi-fg-light-magenta ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">LE</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">.</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">obj</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-blue ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">?e</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot;.</span></dd>
 </dl>
 </div>
-<p>The problem is that the two classes <code class="docutils literal notranslate"><span class="pre">LE</span></code> and <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> are not yet related by
-a subclass relation. In other words <span class="smallcaps">Coq</span> does not see that an object of
-the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class is also an object of the <code class="docutils literal notranslate"><span class="pre">LE</span></code> class.</p>
-<p>The following two constructions tell <span class="smallcaps">Coq</span> how to canonically build the
-<code class="docutils literal notranslate"><span class="pre">LE.type</span></code> and <code class="docutils literal notranslate"><span class="pre">EQ.type</span></code> structure given an <code class="docutils literal notranslate"><span class="pre">LEQ.type</span></code> structure on the same
-type.</p>
+<p>問題は <code class="docutils literal notranslate"><span class="pre">LE</span></code> と <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> という二つのクラスが未だにサブクラス関係によって関連付いてないことです。言い換えれば、<span class="smallcaps">Coq</span> は <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスのオブジェクトが <code class="docutils literal notranslate"><span class="pre">LE</span></code> クラスのオブジェクトでもあるということが分かりません。</p>
+<p>以下の二つの構成は <span class="smallcaps">Coq</span> に <code class="docutils literal notranslate"><span class="pre">LE.type</span></code> と <code class="docutils literal notranslate"><span class="pre">EQ.type</span></code> 構造を同じ型上で与えられた <code class="docutils literal notranslate"><span class="pre">LEQ.type</span></code> 構造からどのように標準的に構築するかを伝えます。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">to_EQ</span><span> (</span><span class="coqdoc-var">e</span><span> : </span><span class="coqdoc-keyword">type</span><span>) : </span><span class="coqdoc-var">EQ.type</span><span> :=</span><span>
@@ -485,8 +435,7 @@ type.</p>
 <dt><span class="coqdoc-keyword">Canonical</span><span> </span><span class="coqdoc-keyword">Structure</span><span> </span><span class="coqdoc-var">to_LE</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-<p>We can now formulate out first theorem on the objects of the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code>
-structure.</p>
+<p>我々は今や <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> 構造のオブジェクト上で最初の定理を定式化することが出来ます。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Lemma</span><span> </span><span class="coqdoc-var">lele_eq</span><span> (</span><span class="coqdoc-var">e</span><span> : </span><span class="coqdoc-keyword">type</span><span>) (</span><span class="coqdoc-var">x</span><span> </span><span class="coqdoc-var">y</span><span> : </span><span class="coqdoc-var">obj</span><span> </span><span class="coqdoc-var">e</span><span>) : </span><span class="coqdoc-var">x</span><span> &lt;= </span><span class="coqdoc-var">y</span><span> -&gt; </span><span class="coqdoc-var">y</span><span> &lt;= </span><span class="coqdoc-var">x</span><span> -&gt; </span><span class="coqdoc-var">x</span><span> == </span><span class="coqdoc-var">y</span><span>.</span></dt><dd><span>1 subgoal
@@ -507,8 +456,7 @@ where
 ?e : [ |- </span><span class="ansi-fg-light-magenta ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">LEQ</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">.</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">type</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">]</span></dd>
 </dl>
 </div>
-<p>Of course one would like to apply results proved in the algebraic
-setting to any concrete instate of the algebraic structure.</p>
+<p>もちろん代数的構造のどんな具体例についても代数的な背景の中で証明された結果を適用したい人もいるでしょう。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Example</span><span> </span><span class="coqdoc-var">test_algebraic</span><span> (</span><span class="coqdoc-var">n</span><span> </span><span class="coqdoc-var">m</span><span> : </span><span class="coqdoc-var">nat</span><span>) : </span><span class="coqdoc-var">n</span><span> &lt;= </span><span class="coqdoc-var">m</span><span> -&gt; </span><span class="coqdoc-var">m</span><span> &lt;= </span><span class="coqdoc-var">n</span><span> -&gt; </span><span class="coqdoc-var">n</span><span> == </span><span class="coqdoc-var">m</span><span>.</span></dt><dd><span>1 subgoal
@@ -537,9 +485,7 @@ while it is expected to have type &quot;</span><span class="ansi-fg-light-magent
 <dt><span class="coqdoc-keyword">Abort</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-<p>Again one has to tell <span class="smallcaps">Coq</span> that the type <code class="docutils literal notranslate"><span class="pre">nat</span></code> is in the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class, and
-how the type constructor <code class="docutils literal notranslate"><span class="pre">*</span></code> interacts with the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class. In the
-following proofs are omitted for brevity.</p>
+<p>この場合も <span class="smallcaps">Coq</span> に <code class="docutils literal notranslate"><span class="pre">nat</span></code> 型が <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスに属していること、そして型コンストラクタ <code class="docutils literal notranslate"><span class="pre">*</span></code> が <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスとどのように相互作用するのかを伝える必要があります。以下の証明は簡潔さのため省略されています。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Lemma</span><span> </span><span class="coqdoc-var">nat_LEQ_compat</span><span> (</span><span class="coqdoc-var">n</span><span> </span><span class="coqdoc-var">m</span><span> : </span><span class="coqdoc-var">nat</span><span>) : </span><span class="coqdoc-var">n</span><span> &lt;= </span><span class="coqdoc-var">m</span><span> /\ </span><span class="coqdoc-var">m</span><span> &lt;= </span><span class="coqdoc-var">n</span><span> &lt;-&gt; </span><span class="coqdoc-var">n</span><span> == </span><span class="coqdoc-var">m</span><span>.</span></dt><dd><span>1 subgoal
@@ -560,10 +506,8 @@ following proofs are omitted for brevity.</p>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">pair_LEQmx</span><span> </span><span class="coqdoc-var">l1</span><span> </span><span class="coqdoc-var">l2</span><span> := </span><span class="coqdoc-var">LEQ.Mixin</span><span> (</span><span class="coqdoc-var">pair_LEQ_compat</span><span> </span><span class="coqdoc-var">l1</span><span> </span><span class="coqdoc-var">l2</span><span>).</span></dt><dd><span>pair_LEQmx is defined</span></dd>
 </dl>
 </div>
-<p>The following script registers an <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class for <code class="docutils literal notranslate"><span class="pre">nat</span></code> and for the type
-constructor <code class="docutils literal notranslate"><span class="pre">*</span></code>. It also tests that they work as expected.</p>
-<p>Unfortunately, these declarations are very verbose. In the following
-subsection we show how to make them more compact.</p>
+<p>以下のスクリプトは <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスに <code class="docutils literal notranslate"><span class="pre">nat</span></code> と型コンストラクタ <code class="docutils literal notranslate"><span class="pre">*</span></code> を登録します。それらが期待通りに動作することをテストもします。</p>
+<p>残念ながらこれらの定義は非常に冗長です。続く項ではそれらをどのようによりコンパクトにするかを示します。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">Add_instance_attempt</span><span>.</span></dt><dd><span>Interactive Module Add_instance_attempt started</span></dd>
@@ -597,15 +541,10 @@ Toplevel input, characters 0-264:
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">Add_instance_attempt</span><span>.</span></dt><dd><span>Module Add_instance_attempt is defined</span></dd>
 </dl>
 </div>
-<p>Note that no direct proof of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">m</span> <span class="pre">-&gt;</span> <span class="pre">m</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">-&gt;</span> <span class="pre">n</span> <span class="pre">==</span> <span class="pre">m</span></code> is provided by
-the user for <code class="docutils literal notranslate"><span class="pre">n</span></code> and m of type <code class="docutils literal notranslate"><span class="pre">nat</span> <span class="pre">*</span> <span class="pre">nat</span></code>. What the user provides is a
-proof of this statement for <code class="docutils literal notranslate"><span class="pre">n</span></code> and <code class="docutils literal notranslate"><span class="pre">m</span></code> of type <code class="docutils literal notranslate"><span class="pre">nat</span></code> and a proof that the
-pair constructor preserves this property. The combination of these two
-facts is a simple form of proof search that <span class="smallcaps">Coq</span> performs automatically
-while inferring canonical structures.</p>
-<section id="compact-declaration-of-canonical-structures">
-<h3>Compact declaration of Canonical Structures<a class="headerlink" href="#compact-declaration-of-canonical-structures" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>We need some infrastructure for that.</p>
+<p>注目すべきは <code class="docutils literal notranslate"><span class="pre">nat</span> <span class="pre">*</span> <span class="pre">nat</span></code> 型の <code class="docutils literal notranslate"><span class="pre">n</span></code> と m についての <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">m</span> <span class="pre">-&gt;</span> <span class="pre">m</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">-&gt;</span> <span class="pre">n</span> <span class="pre">==</span> <span class="pre">m</span></code> の直接の証明はユーザから提供されていないことです。ユーザが提供したものは <code class="docutils literal notranslate"><span class="pre">n</span></code> と <code class="docutils literal notranslate"><span class="pre">m</span></code> の型 <code class="docutils literal notranslate"><span class="pre">nat</span></code> についてのこのステートメントの証明とペアコンストラクタがこの性質を保存するという証明です。これら二つの事実の組み合わせは正準構造を推論している間、<span class="smallcaps">Coq</span> が自動的に行う証明探索の単純な形です。</p>
+<div class="section" id="compact-declaration-of-canonical-structures">
+<h3>正準構造のコンパクトな定義<a class="headerlink" href="#compact-declaration-of-canonical-structures" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>いくらかの基盤が必要です。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Require</span><span> </span><span class="coqdoc-keyword">Import</span><span> </span><span class="coqdoc-var">Strings.String</span><span>.</span></dt><dd><span>[Loading ML file z_syntax_plugin.cmxs ... done]
@@ -631,15 +570,9 @@ phantom_rec is defined</span></dd>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">infrastructure</span><span>.</span></dt><dd><span>Module infrastructure is defined</span></dd>
 </dl>
 </div>
-<p>To explain the notation <code class="docutils literal notranslate"><span class="pre">[find</span> <span class="pre">v</span> <span class="pre">|</span> <span class="pre">t1</span> <span class="pre">~</span> <span class="pre">t2]</span></code> let us pick one of its
-instances: <code class="docutils literal notranslate"><span class="pre">[find</span> <span class="pre">e</span> <span class="pre">|</span> <span class="pre">EQ.obj</span> <span class="pre">e</span> <span class="pre">~</span> <span class="pre">T</span> <span class="pre">|</span> <span class="pre">&quot;is</span> <span class="pre">not</span> <span class="pre">an</span> <span class="pre">EQ.type&quot;</span> <span class="pre">]</span></code>. It should be
-read as: “find a class e such that its objects have type T or fail
-with message &quot;T is not an EQ.type&quot;”.</p>
-<p>The other utilities are used to ask <span class="smallcaps">Coq</span> to solve a specific unification
-problem, that will in turn require the inference of some canonical structures.
-They are explained in more details in <a class="bibtex reference internal" href="../zebibliography.html#cswcu" id="id3">[MT13]</a>.</p>
-<p>We now have all we need to create a compact “packager” to declare
-instances of the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class.</p>
+<p>記法 <code class="docutils literal notranslate"><span class="pre">[find</span> <span class="pre">v</span> <span class="pre">|</span> <span class="pre">t1</span> <span class="pre">~</span> <span class="pre">t2]</span></code> を説明するため、具体例の一つ <code class="docutils literal notranslate"><span class="pre">[find</span> <span class="pre">e</span> <span class="pre">|</span> <span class="pre">EQ.obj</span> <span class="pre">e</span> <span class="pre">~</span> <span class="pre">T</span> <span class="pre">|</span> <span class="pre">&quot;is</span> <span class="pre">not</span> <span class="pre">an</span> <span class="pre">EQ.type&quot;</span> <span class="pre">]</span></code> を取り上げます。これは以下のように読めます: “あるクラス e を見つける。そのオブジェクトは型 T を持ち、そうでない場合は &quot;T is not an EQ.type&quot; というメッセージとともに失敗する”。</p>
+<p>他のユーティリティは <span class="smallcaps">Coq</span> に正準構造の推論を必要とすることになるであろう特定的な単一化問題を解くように要求するのに使われます。それらは <a class="bibtex reference internal" href="../zebibliography.html#cswcu" id="id3">[MT13]</a> の中でより詳細に説明されています。</p>
+<p>今や我々は <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスのインスタンスを定義するためのコンパクトな &quot;荷造り業者&quot; を作るために必要なものを全て持っています。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Import</span><span> </span><span class="coqdoc-var">infrastructure</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
@@ -653,18 +586,9 @@ instances of the <code class="docutils literal notranslate"><span class="pre">LE
 <dt><span class="coqdoc-keyword">Notation</span><span> </span><span class="coqdoc-var">Pack</span><span> </span><span class="coqdoc-var">T</span><span> </span><span class="coqdoc-var">m</span><span> := (</span><span class="coqdoc-var">packager</span><span> </span><span class="coqdoc-var">T</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">m</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">id</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">id</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">id</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">id</span><span> </span><span class="coqdoc-var">_</span><span> </span><span class="coqdoc-var">id</span><span>).</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-<p>The object <code class="docutils literal notranslate"><span class="pre">Pack</span></code> takes a type <code class="docutils literal notranslate"><span class="pre">T</span></code> (the key) and a mixin <code class="docutils literal notranslate"><span class="pre">m</span></code>. It infers all
-the other pieces of the class <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> and declares them as canonical
-values associated to the <code class="docutils literal notranslate"><span class="pre">T</span></code> key. All in all, the only new piece of
-information we add in the <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> class is the mixin, all the rest is
-already canonical for <code class="docutils literal notranslate"><span class="pre">T</span></code> and hence can be inferred by <span class="smallcaps">Coq</span>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">Pack</span></code> is a notation, hence it is not type checked at the time of its
-declaration. It will be type checked when it is used, an in that case <code class="docutils literal notranslate"><span class="pre">T</span></code> is
-going to be a concrete type. The odd arguments <code class="docutils literal notranslate"><span class="pre">_</span></code> and <code class="docutils literal notranslate"><span class="pre">id</span></code> we pass to the
-packager represent respectively the classes to be inferred (like <code class="docutils literal notranslate"><span class="pre">e</span></code>, <code class="docutils literal notranslate"><span class="pre">o</span></code>,
-etc) and a token (<code class="docutils literal notranslate"><span class="pre">id</span></code>) to force their inference. Again, for all the details
-the reader can refer to <a class="bibtex reference internal" href="../zebibliography.html#cswcu" id="id4">[MT13]</a>.</p>
-<p>The declaration of canonical instances can now be way more compact:</p>
+<p>オブジェクト <code class="docutils literal notranslate"><span class="pre">Pack</span></code> は型 <code class="docutils literal notranslate"><span class="pre">T</span></code> (キー) と mixin <code class="docutils literal notranslate"><span class="pre">m</span></code> を取ります。それは <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスの他の全ての部分を推論し、キーとなる <code class="docutils literal notranslate"><span class="pre">T</span></code> に関連付けられた正準値としてそれらを定義します。結局のところ、我々が <code class="docutils literal notranslate"><span class="pre">LEQ</span></code> クラスに新たに追加した情報の断片は mixin だけであり、残りの全ては既に <code class="docutils literal notranslate"><span class="pre">T</span></code> について正準であり、従って <span class="smallcaps">Coq</span> により推論することが出来ます。</p>
+<p><code class="docutils literal notranslate"><span class="pre">Pack</span></code> は記法であり、従ってその定義時点では型検査されません。それが使われ、<code class="docutils literal notranslate"><span class="pre">T</span></code> が具体型になるときに型検査されます。packager に渡した奇妙な引数 <code class="docutils literal notranslate"><span class="pre">_</span></code> と <code class="docutils literal notranslate"><span class="pre">id</span></code> はそれぞれ推論されるべきクラス (<code class="docutils literal notranslate"><span class="pre">e</span></code> や <code class="docutils literal notranslate"><span class="pre">o</span></code> その他) とそれらの推論を強制するためのトークン (<code class="docutils literal notranslate"><span class="pre">id</span></code>) を表します。繰り替えしますが、全ての詳細について <a class="bibtex reference internal" href="../zebibliography.html#cswcu" id="id4">[MT13]</a> が読者の参考になります。</p>
+<p>正準インスタンスの定義は今やよりコンパクトになりえます。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Canonical</span><span> </span><span class="coqdoc-keyword">Structure</span><span> </span><span class="coqdoc-var">nat_LEQty</span><span> := </span><span class="coqdoc-keyword">Eval</span><span> </span><span class="coqdoc-tactic">hnf</span><span> </span><span class="coqdoc-tactic">in</span><span> </span><span class="coqdoc-var">Pack</span><span> </span><span class="coqdoc-var">nat</span><span> </span><span class="coqdoc-var">nat_LEQmx</span><span>.</span></dt><dd><span>nat_LEQty is defined</span></dd>
@@ -677,8 +601,7 @@ Toplevel input, characters 0-118:
 </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">pair_LEQty</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">: redundant with </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat_LEQty</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>Error messages are also quite intelligible (if one skips to the end of
-the message).</p>
+<p>エラーメッセージも非常に理解しやすいです (メッセージの末尾まで飛ばすなら)。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-var">Fail</span><span> </span><span class="coqdoc-var">Canonical</span><span> </span><span class="coqdoc-keyword">Structure</span><span> </span><span class="coqdoc-var">err</span><span> := </span><span class="coqdoc-keyword">Eval</span><span> </span><span class="coqdoc-tactic">hnf</span><span> </span><span class="coqdoc-tactic">in</span><span> </span><span class="coqdoc-var">Pack</span><span> </span><span class="coqdoc-var">bool</span><span> </span><span class="coqdoc-var">nat_LEQmx</span><span>.</span></dt><dd><span>The command has indeed failed with message:
@@ -686,16 +609,16 @@ The term &quot;</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-b
 while it is expected to have type &quot;</span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">'Error</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">:</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">bool</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">:</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot;is not an EQ.type&quot;&quot;.</span></dd>
 </dl>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="implicit-coercions.html" class="btn btn-neutral float-left" title="Implicit Coercions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="type-classes.html" class="btn btn-neutral float-right" title="Type Classes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="type-classes.html" class="btn btn-neutral float-right" title="型クラス" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

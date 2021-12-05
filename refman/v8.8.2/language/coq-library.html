@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Coq library &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,18 +14,18 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Calculus of Inductive Constructions" href="cic.html" />
-    <link rel="prev" title="Extensions of Gallina" href="gallina-extensions.html" /> 
+    <link rel="prev" title="Gallina の拡張" href="gallina-extensions.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,15 +54,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">The <span class="smallcaps">Coq</span> library</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#the-basic-library">The basic library</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#notations">Notations</a></li>
@@ -103,7 +102,7 @@
 <li class="toctree-l1"><a class="reference internal" href="cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -112,23 +111,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -140,7 +139,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -259,7 +258,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="the-coq-library">
+<div class="section" id="the-coq-library">
 <span id="thecoqlibrary"></span><h1>The <span class="smallcaps">Coq</span> library<a class="headerlink" href="#the-coq-library" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p id="index-0">The <span class="smallcaps">Coq</span> library is structured into two parts:</p>
 <blockquote>
@@ -271,7 +270,7 @@ available when running <span class="smallcaps">Coq</span>;</p></li>
 developments of <span class="smallcaps">Coq</span> axiomatizations about sets, lists, sorting,
 arithmetic, etc. This library comes with the system and its modules
 are directly accessible through the <code class="docutils literal notranslate"><span class="pre">Require</span></code> command (see
-Section <a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">Compiled files</span></a>);</p></li>
+Section <a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a>);</p></li>
 </ul>
 </div></blockquote>
 <p>In addition, user-provided libraries or developments are provided by
@@ -280,7 +279,7 @@ for download at <a class="reference external" href="http://coq.inria.fr">http://
 Section <a class="reference internal" href="#userscontributions"><span class="std std-ref">Users’ contributions</span></a>).</p>
 <p>This chapter briefly reviews the <span class="smallcaps">Coq</span> libraries whose contents can
 also be browsed at <a class="reference external" href="http://coq.inria.fr/stdlib">http://coq.inria.fr/stdlib</a>.</p>
-<section id="the-basic-library">
+<div class="section" id="the-basic-library">
 <h2>The basic library<a class="headerlink" href="#the-basic-library" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>This section lists the basic notions and results which are directly
 available in the standard <span class="smallcaps">Coq</span> system. Most of these constructions
@@ -294,7 +293,7 @@ at the <span class="smallcaps">Coq</span> root directory; this includes the modu
 <code class="docutils literal notranslate"><span class="pre">Wf</span></code> and
 <code class="docutils literal notranslate"><span class="pre">Tactics</span></code>.
 Module <code class="docutils literal notranslate"><span class="pre">Logic_Type</span></code> also makes it in the initial state.</p>
-<section id="notations">
+<div class="section" id="notations">
 <span id="init-notations"></span><h3>Notations<a class="headerlink" href="#notations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>This module defines the parsing and pretty-printing of many symbols
 (infixes, prefixes, etc.). However, it does not assign a meaning to
@@ -424,8 +423,8 @@ notations fixed in the initial state are :</p>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="logic">
+</div>
+<div class="section" id="logic">
 <span id="coq-library-logic"></span><h3>Logic<a class="headerlink" href="#logic" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The basic library of <span class="smallcaps">Coq</span> comes with the definitions of standard
 (intuitionistic) logical connectives (they are defined as inductive
@@ -454,7 +453,7 @@ primitive universal quantification (it is a dependent product over a
 proposition). The primitive universal quantification allows both
 first-order and higher-order quantification.</p>
 </div>
-<section id="propositional-connectives">
+<div class="section" id="propositional-connectives">
 <h4>Propositional Connectives<a class="headerlink" href="#propositional-connectives" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p id="index-1">First, we find propositional calculus connectives:</p>
 <div class="coqtop literal-block docutils container">
@@ -503,8 +502,8 @@ iff is defined</span></dd>
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">IF_then_else</span><span> (</span><span class="coqdoc-var">P</span><span> </span><span class="coqdoc-var">Q</span><span> </span><span class="coqdoc-var">R</span><span>:</span><span class="coqdoc-keyword">Prop</span><span>) := </span><span class="coqdoc-var">P</span><span> /\ </span><span class="coqdoc-var">Q</span><span> \/ ~ </span><span class="coqdoc-var">P</span><span> /\ </span><span class="coqdoc-var">R</span><span>.</span></dt><dd class="coqtop-hidden"><span>IF_then_else is defined</span></dd>
 </dl>
 </div>
-</section>
-<section id="quantifiers">
+</div>
+<div class="section" id="quantifiers">
 <h4>Quantifiers<a class="headerlink" href="#quantifiers" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p id="index-2">Then we find first-order quantifiers:</p>
 <div class="coqtop literal-block docutils container">
@@ -541,8 +540,8 @@ ex2_ind is defined</span></dd>
 </table>
 <p>The type annotation <code class="docutils literal notranslate"><span class="pre">:A</span></code> can be omitted when <code class="docutils literal notranslate"><span class="pre">A</span></code> can be
 synthesized by the system.</p>
-</section>
-<section id="equality">
+</div>
+<div class="section" id="equality">
 <span id="coq-equality"></span><h4>Equality<a class="headerlink" href="#equality" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p id="index-3">Then, we find equality, defined as an inductive relation. That is,
 given a type <code class="docutils literal notranslate"><span class="pre">A</span></code> and an <code class="docutils literal notranslate"><span class="pre">x</span></code> of type <code class="docutils literal notranslate"><span class="pre">A</span></code>, the
@@ -559,8 +558,8 @@ eq_ind is defined
 eq_rec is defined</span></dd>
 </dl>
 </div>
-</section>
-<section id="lemmas">
+</div>
+<div class="section" id="lemmas">
 <h4>Lemmas<a class="headerlink" href="#lemmas" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Finally, a few easy lemmas are provided.</p>
 <div class="coqtop literal-block docutils container" id="index-4">
@@ -672,9 +671,9 @@ For instance <code class="docutils literal notranslate"><span class="pre">f_equa
   </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">x1</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> =</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">y1</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> -&gt;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">x2</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> =</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">y2</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> -&gt;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">x3</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> =</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">y3</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> -&gt;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">f0</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">x1</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">x2</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">x3</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> =</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">f0</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">y1</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">y2</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">y3</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-</section>
-</section>
-<section id="datatypes">
+</div>
+</div>
+<div class="section" id="datatypes">
 <span id="id1"></span><h3>Datatypes<a class="headerlink" href="#datatypes" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p id="index-6">In the basic library, we find in <code class="docutils literal notranslate"><span class="pre">Datatypes.v</span></code> the definition
 of the basic data-types of programming,
@@ -692,7 +691,7 @@ the next section <a class="reference internal" href="#specification"><span class
             | { <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a> : <a class="reference internal" href="gallina-specification-language.html#grammar-token-specif"><code class="xref docutils literal notranslate"><span class="pre">specif</span></code></a> &amp; <a class="reference internal" href="gallina-specification-language.html#grammar-token-specif"><code class="xref docutils literal notranslate"><span class="pre">specif</span></code></a> &amp; <a class="reference internal" href="gallina-specification-language.html#grammar-token-specif"><code class="xref docutils literal notranslate"><span class="pre">specif</span></code></a> }    (sigT2)
 <strong id="grammar-token-term">term  </strong> ::=  (<a class="reference internal" href="gallina-specification-language.html#grammar-token-term"><code class="xref docutils literal notranslate"><span class="pre">term</span></code></a>, <a class="reference internal" href="gallina-specification-language.html#grammar-token-term"><code class="xref docutils literal notranslate"><span class="pre">term</span></code></a>)                               (pair)
 </pre>
-<section id="programming">
+<div class="section" id="programming">
 <h4>Programming<a class="headerlink" href="#programming" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="coqtop literal-block docutils container" id="index-7">
 <span></span><dl>
@@ -794,9 +793,9 @@ Use &quot;Abort All&quot; first or complete proof(s).</span></dd>
 <p>Some operations on <code class="docutils literal notranslate"><span class="pre">bool</span></code> are also provided: <code class="docutils literal notranslate"><span class="pre">andb</span></code> (with
 infix notation <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>), <code class="docutils literal notranslate"><span class="pre">orb</span></code> (with
 infix notation <code class="docutils literal notranslate"><span class="pre">||</span></code>), <code class="docutils literal notranslate"><span class="pre">xorb</span></code>, <code class="docutils literal notranslate"><span class="pre">implb</span></code> and <code class="docutils literal notranslate"><span class="pre">negb</span></code>.</p>
-</section>
-</section>
-<section id="specification">
+</div>
+</div>
+<div class="section" id="specification">
 <span id="id2"></span><h3>Specification<a class="headerlink" href="#specification" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following notions defined in module <code class="docutils literal notranslate"><span class="pre">Specif.v</span></code> allow to build new data-types and specifications.
 They are available with the syntax shown in the previous section <a class="reference internal" href="#datatypes"><span class="std std-ref">Datatypes</span></a>.</p>
@@ -982,8 +981,8 @@ realizability interpretation.</p>
  </span><span class="coqdoc-keyword">forall</span><span> (</span><span class="coqdoc-var">A</span><span> </span><span class="coqdoc-var">B</span><span>:</span><span class="coqdoc-keyword">Prop</span><span>) (</span><span class="coqdoc-var">P</span><span>:</span><span class="coqdoc-keyword">Type</span><span>), (</span><span class="coqdoc-var">A</span><span> -&gt; </span><span class="coqdoc-var">B</span><span> -&gt; </span><span class="coqdoc-var">P</span><span>) -&gt; </span><span class="coqdoc-var">A</span><span> /\ </span><span class="coqdoc-var">B</span><span> -&gt; </span><span class="coqdoc-var">P</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</section>
-<section id="basic-arithmetics">
+</div>
+<div class="section" id="basic-arithmetics">
 <h3>Basic Arithmetics<a class="headerlink" href="#basic-arithmetics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The basic library includes a few elementary properties of natural
 numbers, together with the definitions of predecessor, addition and
@@ -1270,8 +1269,8 @@ The term &quot;0&quot; has type &quot;</span><span class="ansi-fg-light-magenta 
  &quot;</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">&quot;.</span></dd>
 </dl>
 </div>
-</section>
-<section id="well-founded-recursion">
+</div>
+<div class="section" id="well-founded-recursion">
 <h3>Well-founded recursion<a class="headerlink" href="#well-founded-recursion" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The basic library contains the basics of well-founded recursion and
 well-founded induction, in module <code class="docutils literal notranslate"><span class="pre">Wf.v</span></code>.</p>
@@ -1469,8 +1468,8 @@ proj1.
 Use &quot;Abort All&quot; first or complete proof(s).</span></dd>
 </dl>
 </div>
-</section>
-<section id="accessing-the-type-level">
+</div>
+<div class="section" id="accessing-the-type-level">
 <h3>Accessing the Type level<a class="headerlink" href="#accessing-the-type-level" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The standard library includes <code class="docutils literal notranslate"><span class="pre">Type</span></code> level definitions of counterparts of some
 logic concepts and basic lemmas about them.</p>
@@ -1506,17 +1505,17 @@ provides the definition of <code class="docutils literal notranslate"><span clas
 <dt><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">notT</span><span> (</span><span class="coqdoc-var">A</span><span>:</span><span class="coqdoc-keyword">Type</span><span>) := </span><span class="coqdoc-var">A</span><span> -&gt; </span><span class="coqdoc-var">False</span><span>.</span></dt><dd class="coqtop-hidden"><span>notT is defined</span></dd>
 </dl>
 </div>
-</section>
-<section id="tactics">
+</div>
+<div class="section" id="tactics">
 <h3>Tactics<a class="headerlink" href="#tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A few tactics defined at the user level are provided in the initial
 state, in module <code class="docutils literal notranslate"><span class="pre">Tactics.v</span></code>. They are listed at
 <a class="reference external" href="http://coq.inria.fr/stdlib">http://coq.inria.fr/stdlib</a>, in paragraph <code class="docutils literal notranslate"><span class="pre">Init</span></code>, link <code class="docutils literal notranslate"><span class="pre">Tactics</span></code>.</p>
-</section>
-</section>
-<section id="the-standard-library">
+</div>
+</div>
+<div class="section" id="the-standard-library">
 <h2>The standard library<a class="headerlink" href="#the-standard-library" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="survey">
+<div class="section" id="survey">
 <h3>Survey<a class="headerlink" href="#survey" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The rest of the standard library is structured into the following
 subdirectories:</p>
@@ -1542,11 +1541,11 @@ subdirectories:</p>
 <p>These directories belong to the initial load path of the system, and
 the modules they provide are compiled at installation time. So they
 are directly accessible with the command <code class="docutils literal notranslate"><span class="pre">Require</span></code> (see
-Section <a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">Compiled files</span></a>).</p>
+Section <a class="reference internal" href="../proof-engine/vernacular-commands.html#compiled-files"><span class="std std-ref">コンパイルされたファイル</span></a>).</p>
 <p>The different modules of the <span class="smallcaps">Coq</span> standard library are documented
 online at <a class="reference external" href="http://coq.inria.fr/stdlib">http://coq.inria.fr/stdlib</a>.</p>
-</section>
-<section id="peanos-arithmetic-nat">
+</div>
+<div class="section" id="peanos-arithmetic-nat">
 <h3>Peano’s arithmetic (nat)<a class="headerlink" href="#peanos-arithmetic-nat" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p id="index-23">While in the initial state, many operations and predicates of Peano's
 arithmetic are defined, further operations and results belong to other
@@ -1600,8 +1599,8 @@ defined here. This is provided by requiring the module <code class="docutils lit
 </tr>
 </tbody>
 </table>
-</section>
-<section id="notations-for-integer-arithmetics">
+</div>
+<div class="section" id="notations-for-integer-arithmetics">
 <h3>Notations for integer arithmetics<a class="headerlink" href="#notations-for-integer-arithmetics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p id="index-24">The following table describes the syntax of expressions
 for integer arithmetics. It is provided by requiring and opening the module <code class="docutils literal notranslate"><span class="pre">ZArith</span></code> and opening scope <code class="docutils literal notranslate"><span class="pre">Z_scope</span></code>.
@@ -1720,10 +1719,10 @@ already reserved, the precedence and associativity.</p>
 </dl>
 </div>
 </div>
-</section>
-<section id="real-numbers-library">
+</div>
+<div class="section" id="real-numbers-library">
 <h3>Real numbers library<a class="headerlink" href="#real-numbers-library" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<section id="notations-for-real-numbers">
+<div class="section" id="notations-for-real-numbers">
 <h4>Notations for real numbers<a class="headerlink" href="#notations-for-real-numbers" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>This is provided by requiring and opening the module <code class="docutils literal notranslate"><span class="pre">Reals</span></code> and
 opening scope <code class="docutils literal notranslate"><span class="pre">R_scope</span></code>. This set of notations is very similar to
@@ -1801,8 +1800,8 @@ the notation for integer arithmetics. The inverse function was added.</p>
 </dl>
 </div>
 </div>
-</section>
-<section id="some-tactics-for-real-numbers">
+</div>
+<div class="section" id="some-tactics-for-real-numbers">
 <h4>Some tactics for real numbers<a class="headerlink" href="#some-tactics-for-real-numbers" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>In addition to the powerful <code class="docutils literal notranslate"><span class="pre">ring</span></code>, <code class="docutils literal notranslate"><span class="pre">field</span></code> and <code class="docutils literal notranslate"><span class="pre">fourier</span></code>
 tactics (see Chapter <a class="reference internal" href="../proof-engine/tactics.html#tactics"><span class="std std-ref">Tactics</span></a>), there are also:</p>
@@ -1886,9 +1885,9 @@ subgoal 3 is:
 </div>
 <p>These tactics has been written with the tactic language <cite>L</cite><sub>tac</sub>
 described in Chapter <a class="reference internal" href="../proof-engine/ltac.html#ltac"><span class="std std-ref">The tactic language</span></a>.</p>
-</section>
-</section>
-<section id="list-library">
+</div>
+</div>
+<div class="section" id="list-library">
 <h3>List library<a class="headerlink" href="#list-library" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p id="index-25">Some elementary operations on polymorphic lists are defined here.
 They can be accessed by requiring module <code class="docutils literal notranslate"><span class="pre">List</span></code>.</p>
@@ -1935,9 +1934,9 @@ They can be accessed by requiring module <code class="docutils literal notransla
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-<section id="users-contributions">
+</div>
+</div>
+<div class="section" id="users-contributions">
 <span id="userscontributions"></span><h2>Users’ contributions<a class="headerlink" href="#users-contributions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Numerous users' contributions have been collected and are available at
 URL <a class="reference external" href="http://coq.inria.fr/opam/www/">http://coq.inria.fr/opam/www/</a>.  On this web page, you have a list
@@ -1945,14 +1944,14 @@ of all contributions with informations (author, institution, quick
 description, etc.) and the possibility to download them one by one.
 You will also find informations on how to submit a new
 contribution.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="gallina-extensions.html" class="btn btn-neutral float-left" title="Extensions of Gallina" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gallina-extensions.html" class="btn btn-neutral float-left" title="Gallina の拡張" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="cic.html" class="btn btn-neutral float-right" title="Calculus of Inductive Constructions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

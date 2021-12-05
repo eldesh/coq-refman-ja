@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Generalized rewriting &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,13 +14,13 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/notations.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/notations.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -47,7 +46,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p><span class="caption-text">索引</span></p>
+              <p class="caption"><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -55,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p><span class="caption-text">はじめに</span></p>
+<p class="caption"><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p><span class="caption-text">言語</span></p>
+<p class="caption"><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p><span class="caption-text">証明エンジン</span></p>
+<p class="caption"><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -77,23 +76,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p><span class="caption-text">ユーザ拡張</span></p>
+<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p><span class="caption-text">実用ツール</span></p>
+<p class="caption"><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p><span class="caption-text">付録</span></p>
+<p class="caption"><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -133,7 +132,7 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p><span class="caption-text">Reference</span></p>
+<p class="caption"><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
@@ -252,7 +251,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<section id="generalized-rewriting">
+<div class="section" id="generalized-rewriting">
 <span id="generalizedrewriting"></span><h1>Generalized rewriting<a class="headerlink" href="#generalized-rewriting" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Author</dt>
@@ -301,9 +300,9 @@ allows the user to customize the proof search if necessary.</p></li>
 <dd><p>Nicolas Tabareau helped with the gluing.</p>
 </dd>
 </dl>
-<section id="introduction-to-generalized-rewriting">
+<div class="section" id="introduction-to-generalized-rewriting">
 <h2>Introduction to generalized rewriting<a class="headerlink" href="#introduction-to-generalized-rewriting" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="relations-and-morphisms">
+<div class="section" id="relations-and-morphisms">
 <h3>Relations and morphisms<a class="headerlink" href="#relations-and-morphisms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A parametric <em>relation</em> <code class="docutils literal notranslate"><span class="pre">R</span></code> is any term of type
 <code class="docutils literal notranslate"><span class="pre">forall</span> <span class="pre">(x1</span> <span class="pre">:</span> <span class="pre">T1)</span> <span class="pre">...</span> <span class="pre">(xn</span> <span class="pre">:</span> <span class="pre">Tn),</span> <span class="pre">relation</span> <span class="pre">A</span></code>.
@@ -411,8 +410,8 @@ being a composition of morphisms instances, is a morphism. However the
 tactic will fail replacing the third occurrence of <code class="docutils literal notranslate"><span class="pre">S2</span></code>  unless <code class="docutils literal notranslate"><span class="pre">f</span></code>
 has also been declared as a morphism.</p>
 </div>
-</section>
-<section id="adding-new-relations-and-morphisms">
+</div>
+<div class="section" id="adding-new-relations-and-morphisms">
 <h3>Adding new relations and morphisms<a class="headerlink" href="#adding-new-relations-and-morphisms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.add-parametric-relation">
@@ -616,8 +615,8 @@ for the corresponding class instance declaration
 definition time. When loading a compiled file or importing a module,
 all the declarations of this module will be loaded.</p>
 </div>
-</section>
-<section id="rewriting-and-non-reflexive-relations">
+</div>
+<div class="section" id="rewriting-and-non-reflexive-relations">
 <h3>Rewriting and non reflexive relations<a class="headerlink" href="#rewriting-and-non-reflexive-relations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To replace only one argument of an n-ary morphism it is necessary to
 prove that all the other arguments are related to themselves by the
@@ -646,8 +645,8 @@ morphism of signature <code class="docutils literal notranslate"><span class="pr
 <code class="docutils literal notranslate"><span class="pre">y</span></code> in <code class="docutils literal notranslate"><span class="pre">div</span> <span class="pre">x</span> <span class="pre">n</span> <span class="pre">=</span> <span class="pre">div</span> <span class="pre">y</span> <span class="pre">n</span></code> opens an additional goal <code class="docutils literal notranslate"><span class="pre">eq0</span> <span class="pre">n</span> <span class="pre">n</span></code>
 which is equivalent to <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">n</span> <span class="pre">/\</span> <span class="pre">n</span> <span class="pre">&lt;&gt;</span> <span class="pre">0</span></code>.</p>
 </div>
-</section>
-<section id="rewriting-and-non-symmetric-relations">
+</div>
+<div class="section" id="rewriting-and-non-symmetric-relations">
 <h3>Rewriting and non symmetric relations<a class="headerlink" href="#rewriting-and-non-symmetric-relations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>When the user works up to relations that are not symmetric, it is no
 longer the case that any covariant morphism argument is also
@@ -694,8 +693,8 @@ covariantly in <code class="docutils literal notranslate"><span class="pre">x</s
 transitive relation, is contravariant in its first argument with
 respect to the relation itself).</p>
 </div>
-</section>
-<section id="rewriting-in-ambiguous-setoid-contexts">
+</div>
+<div class="section" id="rewriting-in-ambiguous-setoid-contexts">
 <h3>Rewriting in ambiguous setoid contexts<a class="headerlink" href="#rewriting-in-ambiguous-setoid-contexts" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>One function can respect several different relations and thus it can
 be declared as a morphism having multiple signatures.</p>
@@ -716,11 +715,11 @@ should be used to perform the rewriting. Contrary to the previous
 implementation, the tactic will always choose the first possible
 solution to the set of constraints generated by a rewrite and will not
 try to find <em>all</em> the possible solutions to warn the user about them.</p>
-</section>
-</section>
-<section id="commands-and-tactics">
+</div>
+</div>
+<div class="section" id="commands-and-tactics">
 <h2>Commands and tactics<a class="headerlink" href="#commands-and-tactics" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="first-class-setoids-and-morphisms">
+<div class="section" id="first-class-setoids-and-morphisms">
 <span id="id2"></span><h3>First class setoids and morphisms<a class="headerlink" href="#first-class-setoids-and-morphisms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The implementation is based on a first-class representation of
 properties of relations and morphisms as typeclasses. That is, the
@@ -743,7 +742,7 @@ hint database. For example, the declaration:</p>
 record type <code class="docutils literal notranslate"><span class="pre">Coq.Classes.RelationClasses.Equivalence</span></code> and a hint added
 to the <code class="docutils literal notranslate"><span class="pre">typeclass_instances</span></code> hint database. Morphism declarations are
 also instances of a typeclass defined in <code class="docutils literal notranslate"><span class="pre">Classes.Morphisms</span></code>. See the
-documentation on <a class="reference internal" href="type-classes.html#typeclasses"><span class="std std-ref">Type Classes</span></a> and the theories files in Classes
+documentation on <a class="reference internal" href="type-classes.html#typeclasses"><span class="std std-ref">型クラス</span></a> and the theories files in Classes
 for further explanations.</p>
 <p>One can inform the rewrite tactic about morphisms and relations just
 by using the typeclass mechanism to declare them using Instance and
@@ -861,8 +860,8 @@ Unable to unify &quot;</span><span class="ansi-fg-light-green ansi-bg-default an
 </dl>
 </div>
 </div>
-</section>
-<section id="tactics-enabled-on-user-provided-relations">
+</div>
+<div class="section" id="tactics-enabled-on-user-provided-relations">
 <span id="id3"></span><h3>Tactics enabled on user provided relations<a class="headerlink" href="#tactics-enabled-on-user-provided-relations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following tactics, all prefixed by <code class="docutils literal notranslate"><span class="pre">setoid_</span></code>, deal with arbitrary
 registered relations and morphisms. Moreover, all the corresponding
@@ -911,8 +910,8 @@ For instance, it is possible to register hints for <a class="reference internal"
 are not proofs of Leibniz equalities. In particular it is possible to
 exploit <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.autorewrite" title="autorewrite"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">autorewrite</span></code></a> to simulate normalization in a term rewriting
 system up to user defined equalities.</p>
-</section>
-<section id="printing-relations-and-morphisms">
+</div>
+<div class="section" id="printing-relations-and-morphisms">
 <h3>Printing relations and morphisms<a class="headerlink" href="#printing-relations-and-morphisms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.print-instances">
@@ -926,8 +925,8 @@ of morphisms, the <a class="reference internal" href="#coq:cmd.print-instances" 
 what additional morphisms should be registered.</p>
 </dd></dl>
 
-</section>
-<section id="deprecated-syntax-and-backward-incompatibilities">
+</div>
+<div class="section" id="deprecated-syntax-and-backward-incompatibilities">
 <h3>Deprecated syntax and backward incompatibilities<a class="headerlink" href="#deprecated-syntax-and-backward-incompatibilities" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.add-setoid">
@@ -962,11 +961,11 @@ used to replace terms in contexts that were refused by the old
 implementation. As discussed in the next section, the semantics of the
 new <a class="reference internal" href="#coq:tacv.setoid-rewrite" title="setoid_rewrite"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">setoid_rewrite</span></code></a> tactic differs slightly from the old one and
 <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.rewrite" title="rewrite"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">rewrite</span></code></a>.</p>
-</section>
-</section>
-<section id="extensions">
+</div>
+</div>
+<div class="section" id="extensions">
 <h2>Extensions<a class="headerlink" href="#extensions" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="rewriting-under-binders">
+<div class="section" id="rewriting-under-binders">
 <h3>Rewriting under binders<a class="headerlink" href="#rewriting-under-binders" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -1035,8 +1034,8 @@ matching is done on each subterm separately and in its local
 environment, and all matches are rewritten <em>simultaneously</em> by
 default. The semantics of the previous <a class="reference internal" href="#coq:tacv.setoid-rewrite" title="setoid_rewrite"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">setoid_rewrite</span></code></a> implementation
 can almost be recovered using the <code class="docutils literal notranslate"><span class="pre">at</span> <span class="pre">1</span></code> modifier.</p>
-</section>
-<section id="subrelations">
+</div>
+<div class="section" id="subrelations">
 <h3>Subrelations<a class="headerlink" href="#subrelations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Subrelations can be used to specify that one relation is included in
 another, so that morphism signatures for one can be used for the
@@ -1053,8 +1052,8 @@ rewriting constraints arising from a rewrite using <code class="docutils literal
 <code class="docutils literal notranslate"><span class="pre">inverse</span> <span class="pre">impl</span></code> through <code class="docutils literal notranslate"><span class="pre">and</span></code>.</p>
 <p>Subrelations are implemented in <code class="docutils literal notranslate"><span class="pre">Classes.Morphisms</span></code> and are a prime
 example of a mostly user-space extension of the algorithm.</p>
-</section>
-<section id="constant-unfolding">
+</div>
+<div class="section" id="constant-unfolding">
 <h3>Constant unfolding<a class="headerlink" href="#constant-unfolding" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The resolution tactic is based on typeclasses and hence regards user-
 defined constants as transparent by default. This may slow down the
@@ -1062,11 +1061,11 @@ resolution due to a lot of unifications (all the declared <code class="docutils 
 instances are tried at each node of the search tree). To speed it up,
 declare your constant as rigid for proof search using the command
 <a class="reference internal" href="type-classes.html#coq:cmd.typeclasses-opaque" title="Typeclasses Opaque"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Typeclasses</span> <span class="pre">Opaque</span></code></a>.</p>
-</section>
-</section>
-<section id="strategies-for-rewriting">
+</div>
+</div>
+<div class="section" id="strategies-for-rewriting">
 <h2>Strategies for rewriting<a class="headerlink" href="#strategies-for-rewriting" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<section id="definitions">
+<div class="section" id="definitions">
 <h3>Definitions<a class="headerlink" href="#definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The generalized rewriting tactic is based on a set of strategies that can be
 combined to obtain custom rewriting procedures. Its set of strategies is based
@@ -1162,8 +1161,8 @@ expression (see <a class="reference internal" href="../proof-engine/tactics.html
 if it reduces the subterm under consideration. The <code class="docutils literal notranslate"><span class="pre">fold</span></code> strategy takes
 a term <code class="docutils literal notranslate"><span class="pre">c</span></code> and tries to <em>unify</em> it to the current subterm, converting it to <code class="docutils literal notranslate"><span class="pre">c</span></code>
 on success, it is stronger than the tactic <code class="docutils literal notranslate"><span class="pre">fold</span></code>.</p>
-</section>
-<section id="usage">
+</div>
+<div class="section" id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt id="coq:tacn.rewrite-strat">
@@ -1192,9 +1191,9 @@ corresponding rewriting constraints are not satisfied.</p>
 <code class="docutils literal notranslate"><span class="pre">rewrite_strat</span> <span class="pre">(outermost</span> <span class="pre">c)</span></code>.</p>
 </dd></dl>
 
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
