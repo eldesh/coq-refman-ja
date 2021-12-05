@@ -3929,8 +3929,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The second subcase is only relevant for annotated inductive types such as the equality predicate (see Section :ref:`coq-equality`), the order predicate on natural numbers or the type of lists of a given length (see Section :ref:`matching-dependent`).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211205T122513Z" creationid="eldesh" creationdate="20211204T095954Z">
-        <seg>二つ目のサブケースは等価性述語(節 :ref:`coq-equality` 参照)や、自然数上の順序述語や、与えられた長さのリストの型(節 :ref:`matching-dependent`参照)のような注釈付き帰納型にのみ関係します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211205T164946Z" creationid="eldesh" creationdate="20211204T095954Z">
+        <seg>二つ目のサブケースは等価性述語(節 :ref:`coq-equality` 参照)や、自然数上の順序述語や、与えられた長さのリストの型(節 :ref:`matching-dependent` 参照)のような注釈付き帰納型にのみ関係します。</seg>
       </tuv>
     </tu>
     <tu>
