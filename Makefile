@@ -87,7 +87,7 @@ all:
 target: $(TARGET_POS)
 
 
-$(TARGET_POS): omegat/omegat.project $(SOURCE_POS)
+$(TARGET_POS): omegat/omegat.project omegat/omegat/project_save.tmx omegat/glossary/glossary.txt $(SOURCE_POS)
 	@echo " [GEN] target po files.."
 	@mkdir -p target
 	$(JAVA) $(JAVAFLAGS) -jar $(OMEGAT) --mode=console-translate $<
