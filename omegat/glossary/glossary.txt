@@ -46,3 +46,5 @@ section	節
 subsection	小節,項
 obligation	課題	単体で証明課題を意味する場合もある
 logical propositions	論理命題
+qualified identifier	量化識別子
+simple identifier	単純識別子
