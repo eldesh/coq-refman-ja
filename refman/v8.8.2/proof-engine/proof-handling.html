@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Proof handling &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proof handling &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Tactics" href="tactics.html" />
     <link rel="prev" title="Vernacular commands" href="vernacular-commands.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Proof handling</a><ul>
@@ -137,23 +92,23 @@
 <li class="toctree-l1"><a class="reference internal" href="detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -165,75 +120,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Proof handling</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/proof-engine/proof-handling.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -324,7 +239,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="proof-handling">
+<section id="proof-handling">
 <span id="proofhandling"></span><h1>Proof handling<a class="headerlink" href="#proof-handling" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>In <span class="smallcaps">Coq</span>’s proof editing mode all top-level commands documented in
 Chapter <a class="reference internal" href="vernacular-commands.html#vernacularcommands"><span class="std std-ref">Vernacular commands</span></a> remain available and the user has access to specialized
@@ -357,7 +272,7 @@ terms are called <em>proof terms</em>.</p>
 out of the proof editing mode.</p>
 </dd></dl>
 
-<div class="section" id="switching-on-off-the-proof-editing-mode">
+<section id="switching-on-off-the-proof-editing-mode">
 <span id="proof-editing-mode"></span><h2>Switching on/off the proof editing mode<a class="headerlink" href="#switching-on-off-the-proof-editing-mode" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The proof editing mode is entered by asserting a statement, which typically is
 the assertion of a theorem using an assertion command like <a class="reference internal" href="../language/gallina-specification-language.html#coq:cmd.theorem" title="Theorem"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Theorem</span></code></a>. The
@@ -549,7 +464,7 @@ The <code class="docutils literal notranslate"><span class="pre">*</span></code>
 
 </dd></dl>
 
-<div class="section" id="proof-using-options">
+<section id="proof-using-options">
 <h3>Proof using options<a class="headerlink" href="#proof-using-options" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following options modify the behavior of <code class="docutils literal notranslate"><span class="pre">Proof</span> <span class="pre">using</span></code>.</p>
 <dl class="opt">
@@ -567,8 +482,8 @@ The <code class="docutils literal notranslate"><span class="pre">*</span></code>
 provide one.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="name-a-set-of-section-hypotheses-for-proof-using">
+</section>
+<section id="name-a-set-of-section-hypotheses-for-proof-using">
 <span id="nameaset"></span><h3>Name a set of section hypotheses for <code class="docutils literal notranslate"><span class="pre">Proof</span> <span class="pre">using</span></code><a class="headerlink" href="#name-a-set-of-section-hypotheses-for-proof-using" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.collection">
@@ -619,9 +534,9 @@ has remaining uninstantiated existential variables. It takes every
 uninstantiated existential variable and turns it into a goal.</p>
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="navigation-in-the-proof-tree">
+</section>
+</section>
+<section id="navigation-in-the-proof-tree">
 <h2>Navigation in the proof tree<a class="headerlink" href="#navigation-in-the-proof-tree" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="cmd">
 <dt id="coq:cmd.undo">
@@ -725,7 +640,7 @@ or focus the next one.</p>
 </div>
 </dd></dl>
 
-<div class="section" id="bullets">
+<section id="bullets">
 <span id="id5"></span><h3>Bullets<a class="headerlink" href="#bullets" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Alternatively to <code class="docutils literal notranslate"><span class="pre">{</span></code> and <code class="docutils literal notranslate"><span class="pre">}</span></code>, proofs can be structured with bullets. The
 use of a bullet <code class="docutils literal notranslate"><span class="pre">b</span></code> for the first time focuses on the first goal <code class="docutils literal notranslate"><span class="pre">g</span></code>, the
@@ -957,8 +872,8 @@ Using <code class="docutils literal notranslate"><span class="notation"><a class
 <dd><p>You just finished a goal focused by <code class="docutils literal notranslate"><span class="pre">{</span></code>, you must unfocus it with <code class="docutils literal notranslate"><span class="pre">}</span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="set-bullet-behavior">
+</section>
+<section id="set-bullet-behavior">
 <h3>Set Bullet Behavior<a class="headerlink" href="#set-bullet-behavior" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="opt">
 <dt id="coq:opt.bullet-behavior">
@@ -970,9 +885,9 @@ Using <code class="docutils literal notranslate"><span class="notation"><a class
 </ul>
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="requesting-information">
+</section>
+</section>
+<section id="requesting-information">
 <span id="requestinginformation"></span><h2>Requesting information<a class="headerlink" href="#requesting-information" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="cmd">
 <dt id="coq:cmd.show">
@@ -1128,8 +1043,8 @@ fixpoint and cofixpoint is violated at some time of the construction
 of the proof without having to wait the completion of the proof.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="controlling-the-effect-of-proof-editing-commands">
+</section>
+<section id="controlling-the-effect-of-proof-editing-commands">
 <h2>Controlling the effect of proof editing commands<a class="headerlink" href="#controlling-the-effect-of-proof-editing-commands" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="opt">
 <dt id="coq:opt.hyps-limit">
@@ -1153,8 +1068,8 @@ proved and a tactic such as <a class="reference internal" href="tactics.html#coq
 has to be used to move the assumptions to the local context.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="controlling-memory-usage">
+</section>
+<section id="controlling-memory-usage">
 <h2>Controlling memory usage<a class="headerlink" href="#controlling-memory-usage" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>When experiencing high memory usage the following commands can be used
 to force <span class="smallcaps">Coq</span> to optimize some of its internal data structures.</p>
@@ -1174,56 +1089,38 @@ See: <a class="reference external" href="http://caml.inria.fr/pub/docs/manual-oc
 There is also an analogous tactic <a class="reference internal" href="ltac.html#coq:tacn.optimize-heap" title="optimize_heap"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">optimize_heap</span></code></a>.</p>
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="tactics.html" class="btn btn-neutral float-right" title="Tactics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="vernacular-commands.html" class="btn btn-neutral float-left" title="Vernacular commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="vernacular-commands.html" class="btn btn-neutral float-left" title="Vernacular commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tactics.html" class="btn btn-neutral float-right" title="Tactics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

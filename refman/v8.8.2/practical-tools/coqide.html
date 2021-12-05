@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Coq Integrated Development Environment &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coq Integrated Development Environment &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Extended pattern matching" href="../addendum/extended-pattern-matching.html" />
     <link rel="prev" title="Utilities" href="utilities.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -122,12 +77,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a></li>
@@ -149,12 +104,12 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -166,75 +121,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li><span class="smallcaps">Coq</span> Integrated Development Environment</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/practical-tools/coqide.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -325,7 +240,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="coq-integrated-development-environment">
+<section id="coq-integrated-development-environment">
 <span id="coqintegrateddevelopmentenvironment"></span><h1><span class="smallcaps">Coq</span> Integrated Development Environment<a class="headerlink" href="#coq-integrated-development-environment" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>The Coq Integrated Development Environment is a graphical tool, to be
 used as a user-friendly replacement to <cite>coqtop</cite>. Its main purpose is to
@@ -348,7 +263,7 @@ below it. The large window on the left is displaying the various
 goals to be proven are displayed. The lower right window is the <em>message
 window</em>, where various messages resulting from commands are displayed.
 At the bottom is the status bar.</p>
-<div class="section" id="managing-files-and-buffers-basic-editing">
+<section id="managing-files-and-buffers-basic-editing">
 <h2>Managing files and buffers, basic editing<a class="headerlink" href="#managing-files-and-buffers-basic-editing" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>In the script window, you may open arbitrarily many buffers to edit.
 The <em>File</em> menu allows you to open files or create some, save them,
@@ -361,8 +276,8 @@ editing commands (Copy/Paste, …) are available in the <em>Edit</em> menu.
 <span class="smallcaps">CoqIDE</span> offers only basic editing commands, so if you need more complex
 editing commands, you may launch your favorite text editor on the
 current buffer, using the <em>Edit/External Editor</em> menu.</p>
-</div>
-<div class="section" id="interactive-navigation-into-coq-scripts">
+</section>
+<section id="interactive-navigation-into-coq-scripts">
 <h2>Interactive navigation into Coq scripts<a class="headerlink" href="#interactive-navigation-into-coq-scripts" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The running buffer is the one where navigation takes place. The toolbar offers
 five basic commands for this. The first one, represented by a down arrow icon,
@@ -407,8 +322,8 @@ have a subdued <em>being-processed</em> color (light blue by default), rather th
 processed color, though their preceding proofs have the processed color.</p>
 <p>Notice that for all these buttons, except for the &quot;gears&quot; button, their operations
 are also available in the menu, where their keyboard shortcuts are given.</p>
-</div>
-<div class="section" id="trying-tactics-automatically">
+</section>
+<section id="trying-tactics-automatically">
 <span id="try-tactics-automatically"></span><h2>Trying tactics automatically<a class="headerlink" href="#trying-tactics-automatically" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The menu Try Tactics provides some features for automatically trying
 to solve the current goal using simple tactics. If such a tactic
@@ -423,8 +338,8 @@ the goal or one of the hypotheses, by clicking with the right mouse
 button on the goal or the considered hypothesis. This is the
 “contextual menu on goals” feature, that may be disabled in the
 preferences if undesirable.</p>
-</div>
-<div class="section" id="proof-folding">
+</section>
+<section id="proof-folding">
 <h2>Proof folding<a class="headerlink" href="#proof-folding" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>As your script grows bigger and bigger, it might be useful to hide the
 proofs of your theorems and lemmas.</p>
@@ -433,16 +348,16 @@ proof shall be enclosed between <code class="docutils literal notranslate"><span
 dots. The proof that shall be hidden or revealed is the first one
 whose beginning statement (such as <code class="docutils literal notranslate"><span class="pre">Theorem</span></code>) precedes the insertion
 cursor.</p>
-</div>
-<div class="section" id="vernacular-commands-templates">
+</section>
+<section id="vernacular-commands-templates">
 <h2>Vernacular commands, templates<a class="headerlink" href="#vernacular-commands-templates" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The Templates menu allows using shortcuts to insert vernacular
 commands. This is a nice way to proceed if you are not sure of the
 syntax of the command you want.</p>
 <p>Moreover, from this menu you can automatically insert templates of complex
 commands like <code class="docutils literal notranslate"><span class="pre">Fixpoint</span></code> that you can conveniently fill afterwards.</p>
-</div>
-<div class="section" id="queries">
+</section>
+<section id="queries">
 <h2>Queries<a class="headerlink" href="#queries" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <img alt="|CoqIDE| queries" src="../_images/coqide-queries.png" />
 <p>We call <em>query</em> any vernacular command that does not change the current state,
@@ -454,8 +369,8 @@ item from the <code class="docutils literal notranslate"><span class="pre">Queri
 The image above shows the result after selecting of the phrase
 <code class="docutils literal notranslate"><span class="pre">Nat.mul</span></code> in the script window, and choosing <code class="docutils literal notranslate"><span class="pre">Print</span></code> from the <code class="docutils literal notranslate"><span class="pre">Queries</span></code>
 menu.</p>
-</div>
-<div class="section" id="compilation">
+</section>
+<section id="compilation">
 <h2>Compilation<a class="headerlink" href="#compilation" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The <cite>Compile</cite> menu offers direct commands to:</p>
 <ul class="simple">
@@ -464,8 +379,8 @@ menu.</p>
 <li><p>go to the last compilation error</p></li>
 <li><p>create a <cite>Makefile</cite> using <cite>coq_makefile</cite>.</p></li>
 </ul>
-</div>
-<div class="section" id="customizations">
+</section>
+<section id="customizations">
 <h2>Customizations<a class="headerlink" href="#customizations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>You may customize your environment using the menu Edit/Preferences. A new
 window will be displayed, with several customization sections
@@ -497,13 +412,13 @@ shortcut, go to the corresponding menu item without releasing the
 mouse button, press the key you want for the new shortcut, and release
 the mouse button afterwards. If your system does not allow it, you may
 still edit this configuration file by hand, but this is more involved.</p>
-</div>
-<div class="section" id="using-unicode-symbols">
+</section>
+<section id="using-unicode-symbols">
 <h2>Using Unicode symbols<a class="headerlink" href="#using-unicode-symbols" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><span class="smallcaps">CoqIDE</span> is based on GTK+ and inherits from it support for Unicode in
 its text windows. Consequently a large set of symbols is available for
 notations.</p>
-<div class="section" id="displaying-unicode-symbols">
+<section id="displaying-unicode-symbols">
 <h3>Displaying Unicode symbols<a class="headerlink" href="#displaying-unicode-symbols" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>You just need to define suitable notations as described in the chapter
 <a class="reference internal" href="../user-extensions/syntax-extensions.html#syntaxextensionsandinterpretationscopes"><span class="std std-ref">Syntax extensions and interpretation scopes</span></a>. For example, to use the
@@ -533,8 +448,8 @@ symbols, so you could figure out if the selected font is OK. Related
 to this, one thing you may need to do is choosing whether GTK+ should
 use antialiased fonts or not, by setting the environment variable
 <cite>GDK_USE_XFT</cite> to 1 or 0 respectively.</p>
-</div>
-<div class="section" id="defining-an-input-method-for-non-ascii-symbols">
+</section>
+<section id="defining-an-input-method-for-non-ascii-symbols">
 <h3>Defining an input method for non-ASCII symbols<a class="headerlink" href="#defining-an-input-method-for-non-ascii-symbols" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To input a Unicode symbol, a general method provided by GTK+ is to
 simultaneously press the Control, Shift and “u” keys, release, then
@@ -560,8 +475,8 @@ $ coqide
 <p>Activate the ELatin Input Method with Control-\, then type the
 sequence <cite>\Gamma</cite>. You will see the sequence being replaced by Γ as
 soon as you type the second &quot;a&quot;.</p>
-</div>
-<div class="section" id="character-encoding-for-saved-files">
+</section>
+<section id="character-encoding-for-saved-files">
 <span id="character-encoding-saved-files"></span><h3>Character encoding for saved files<a class="headerlink" href="#character-encoding-for-saved-files" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In the Files section of the preferences, the encoding option is
 related to the way files are saved.</p>
@@ -574,57 +489,39 @@ its character encoding.)</p>
 be written encoded by <cite>x{....}</cite> or <cite>x{........}</cite> where each dot is
 an hexadecimal digit: the number between braces is the hexadecimal
 Unicode index for the missing character.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../addendum/extended-pattern-matching.html" class="btn btn-neutral float-right" title="Extended pattern matching" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="utilities.html" class="btn btn-neutral float-left" title="Utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="utilities.html" class="btn btn-neutral float-left" title="Utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../addendum/extended-pattern-matching.html" class="btn btn-neutral float-right" title="Extended pattern matching" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>The SSReflect proof language &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The SSReflect proof language &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Syntax extensions and interpretation scopes" href="../user-extensions/syntax-extensions.html" />
     <link rel="prev" title="Detailed examples of tactics" href="detailed-tactic-examples.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proof-handling.html">Proof handling</a></li>
@@ -121,7 +76,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ltac.html">The tactic language</a></li>
 <li class="toctree-l1"><a class="reference internal" href="detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">The <span class="smallcaps">SSReflect</span> proof language</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">はじめに</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#acknowledgments">Acknowledgments</a></li>
 </ul>
 </li>
@@ -240,23 +195,23 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -268,75 +223,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>The <span class="smallcaps">SSReflect</span> proof language</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/proof-engine/ssreflect-proof-language.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -427,15 +342,15 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="the-ssr-proof-language">
+<section id="the-ssr-proof-language">
 <span id="thessreflectprooflanguage"></span><h1>The <span class="smallcaps">SSReflect</span> proof language<a class="headerlink" href="#the-ssr-proof-language" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">著者</dt>
+<dt class="field-odd">Authors</dt>
 <dd class="field-odd"><p>Georges Gonthier, Assia Mahboubi, Enrico Tassi</p>
 </dd>
 </dl>
-<div class="section" id="introduction">
-<h2>はじめに<a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>This chapter describes a set of tactics known as <span class="smallcaps">SSReflect</span> originally
 designed to provide support for the so-called <em>small scale reflection</em>
 proof methodology. Despite the original purpose this set of tactic is
@@ -489,15 +404,15 @@ logical view of a concept.</p>
 with non <span class="smallcaps">SSReflect</span> tactics in the same proof, or in the same Ltac
 expression. The few exceptions to this statement are described in
 section <a class="reference internal" href="#compatibility-issues-ssr"><span class="std std-ref">Compatibility issues</span></a>.</p>
-<div class="section" id="acknowledgments">
+<section id="acknowledgments">
 <h3>Acknowledgments<a class="headerlink" href="#acknowledgments" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The authors would like to thank Frédéric Blanqui, François Pottier and
 Laurence Rideau for their comments and suggestions.</p>
-</div>
-</div>
-<div class="section" id="usage">
+</section>
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="getting-started">
+<section id="getting-started">
 <h3>Getting started<a class="headerlink" href="#getting-started" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To be available, the tactics presented in this manual need the
 following minimal set of libraries to be loaded: <code class="docutils literal notranslate"><span class="pre">ssreflect.v</span></code>,
@@ -523,8 +438,8 @@ Ambiguous paths:
 <p><a class="reference internal" href="../language/gallina-extensions.html#coq:flag.implicit-arguments" title="Implicit Arguments"><code class="xref coq coq-flag docutils literal notranslate"><span class="pre">Implicit</span> <span class="pre">Arguments</span></code></a>, <a class="reference internal" href="../language/gallina-extensions.html#coq:flag.strict-implicit" title="Strict Implicit"><code class="xref coq coq-flag docutils literal notranslate"><span class="pre">Strict</span> <span class="pre">Implicit</span></code></a>,
 <a class="reference internal" href="../language/gallina-extensions.html#coq:flag.printing-implicit-defensive" title="Printing Implicit Defensive"><code class="xref coq coq-flag docutils literal notranslate"><span class="pre">Printing</span> <span class="pre">Implicit</span> <span class="pre">Defensive</span></code></a></p>
 </div>
-</div>
-<div class="section" id="compatibility-issues">
+</section>
+<section id="compatibility-issues">
 <span id="compatibility-issues-ssr"></span><h3>Compatibility issues<a class="headerlink" href="#compatibility-issues" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Requiring the above modules creates an environment which is mostly
 compatible with the rest of <span class="smallcaps">Coq</span>, up to a few discrepancies:</p>
@@ -582,9 +497,9 @@ rewrite syntax and allow reserved identifiers to appear in scripts.</p>
 </div>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="gallina-extensions">
+</section>
+</section>
+<section id="gallina-extensions">
 <h2><span class="smallcaps">Gallina</span> extensions<a class="headerlink" href="#gallina-extensions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Small-scale reflection makes an extensive use of the programming
 subset of <span class="smallcaps">Gallina</span>, <span class="smallcaps">Coq</span>’s logical specification language. This subset
@@ -594,7 +509,7 @@ programming language. The <span class="smallcaps">SSReflect</span> extension pro
 to <span class="smallcaps">Gallina</span>, for pattern assignment, pattern testing, and polymorphism;
 these mitigate minor but annoying discrepancies between <span class="smallcaps">Gallina</span> and
 ML.</p>
-<div class="section" id="pattern-assignment">
+<section id="pattern-assignment">
 <h3>Pattern assignment<a class="headerlink" href="#pattern-assignment" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The <span class="smallcaps">SSReflect</span> extension provides the following construct for
 irrefutable pattern matching, that is, destructuring assignment:</p>
@@ -659,8 +574,8 @@ in both the second <a class="reference internal" href="../language/gallina-speci
 in the optional type <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a> are bound only in the second term, and
 other variables in the first  <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a> are bound only in the third
 <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>, however.</p>
-</div>
-<div class="section" id="pattern-conditional">
+</section>
+<section id="pattern-conditional">
 <span id="pattern-conditional-ssr"></span><h3>Pattern conditional<a class="headerlink" href="#pattern-conditional" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following construct can be used for a refutable pattern matching,
 that is, pattern testing:</p>
@@ -754,8 +669,8 @@ variables in the first <a class="reference internal" href="../language/gallina-s
 
 <p>Note that <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a> eventually binds variables in the third
 <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> and not in the second <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>.</p>
-</div>
-<div class="section" id="parametric-polymorphism">
+</section>
+<section id="parametric-polymorphism">
 <span id="parametric-polymorphism-ssr"></span><h3>Parametric polymorphism<a class="headerlink" href="#parametric-polymorphism" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Unlike ML, polymorphism in core <span class="smallcaps">Gallina</span> is explicit: the type
 parameters of polymorphic functions must be declared explicitly, and
@@ -841,8 +756,8 @@ with the incantation</p>
 <dt><span class="coqdoc-keyword">Unset</span><span> </span><span class="coqdoc-keyword">Printing</span><span> </span><span class="coqdoc-keyword">Implicit</span><span> </span><span class="coqdoc-var">Defensive</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="anonymous-arguments">
+</section>
+<section id="anonymous-arguments">
 <h3>Anonymous arguments<a class="headerlink" href="#anonymous-arguments" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>When in a definition, the type of a certain argument is mandatory, but
 not its name, one usually uses “arrow” abstractions for prenex
@@ -877,8 +792,8 @@ list_rec is defined</span></dd>
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="wildcards">
+</section>
+<section id="wildcards">
 <h3>Wildcards<a class="headerlink" href="#wildcards" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The terms passed as arguments to <span class="smallcaps">SSReflect</span> tactics can contain
 <em>holes</em>, materialized by wildcards <code class="docutils literal notranslate"><span class="pre">_</span></code>. Since <span class="smallcaps">SSReflect</span> allows a more
@@ -890,8 +805,8 @@ definitions or type expressions.</p>
 <a class="reference internal" href="#definitions-ssr"><span class="std std-ref">Definitions</span></a> and ref:<cite>structure_ssr</cite>), or their content can be
 inferred from the whole context of the goal (see for example section
 <a class="reference internal" href="#abbreviations-ssr"><span class="std std-ref">Abbreviations</span></a>).</p>
-</div>
-<div class="section" id="definitions">
+</section>
+<section id="definitions">
 <span id="definitions-ssr"></span><h3>Definitions<a class="headerlink" href="#definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt id="coq:tacn.pose-ssreflect">
@@ -1036,8 +951,8 @@ The variable f is already declared.</span></dd>
 </div>
 <p>The generalization of wildcards makes the use of the pose tactic
 resemble ML-like definitions of polymorphic functions.</p>
-</div>
-<div class="section" id="abbreviations">
+</section>
+<section id="abbreviations">
 <span id="abbreviations-ssr"></span><h3>Abbreviations<a class="headerlink" href="#abbreviations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The <span class="smallcaps">SSReflect</span> set tactic performs abbreviations: it introduces a
 defined constant for a subterm appearing in the goal and/or in the
@@ -1127,7 +1042,7 @@ are replaced by <a class="reference internal" href="../language/gallina-specific
 is added to the
 context. If no <a class="reference internal" href="#grammar-token-occ_switch"><code class="xref std std-token docutils literal notranslate"><span class="pre">occ_switch</span></code></a> is present, then all the occurrences are
 abstracted.</p>
-<div class="section" id="matching">
+<section id="matching">
 <h4>Matching<a class="headerlink" href="#matching" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The matching algorithm compares a pattern <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> with a subterm of the
 goal by comparing their heads and then pairwise unifying their
@@ -1260,8 +1175,8 @@ The pattern (</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold an
 <li><p>Typeclass inference should fill in any residual hole, but matching
 should never assign a value to a global existential variable.</p></li>
 </ul>
-</div>
-<div class="section" id="occurrence-selection">
+</section>
+<section id="occurrence-selection">
 <span id="occurrence-selection-ssr"></span><h4>Occurrence selection<a class="headerlink" href="#occurrence-selection" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p><span class="smallcaps">SSReflect</span> provides a generic syntax for the selection of occurrences
 by their position indexes. These <em>occurrence switches</em> are shared by
@@ -1422,9 +1337,9 @@ Only 1 &lt; 2 occurence of (</span><span class="ansi-fg-default ansi-bg-default 
 </div>
 </div>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="basic-localization">
+</section>
+</section>
+<section id="basic-localization">
 <span id="basic-localization-ssr"></span><h3>Basic localization<a class="headerlink" href="#basic-localization" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>It is possible to define an abbreviation for a term appearing in the
 context of a goal thanks to the in tactical.</p>
@@ -1501,9 +1416,9 @@ but also folds <code class="docutils literal notranslate"><span class="pre">x</s
 <p>The use of the <code class="docutils literal notranslate"><span class="pre">in</span></code> tactical is not limited to the localization of
 abbreviations: for a complete description of the in tactical, see
 section <a class="reference internal" href="#bookkeeping-ssr"><span class="std std-ref">Bookkeeping</span></a> and <a class="reference internal" href="#localization-ssr"><span class="std std-ref">Localization</span></a>.</p>
-</div>
-</div>
-<div class="section" id="basic-tactics">
+</section>
+</section>
+<section id="basic-tactics">
 <span id="basic-tactics-ssr"></span><h2>Basic tactics<a class="headerlink" href="#basic-tactics" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>A sizable fraction of proof scripts consists of steps that do not
 &quot;prove&quot; anything new, but instead perform menial bookkeeping tasks
@@ -1528,7 +1443,7 @@ precise bookkeeping and to eliminate name generation heuristics. The
 bookkeeping features of <span class="smallcaps">SSReflect</span> are implemented as tacticals (or
 pseudo-tacticals), shared across most <span class="smallcaps">SSReflect</span> tactics, and thus form
 the foundation of the <span class="smallcaps">SSReflect</span> proof language.</p>
-<div class="section" id="bookkeeping">
+<section id="bookkeeping">
 <span id="bookkeeping-ssr"></span><h3>Bookkeeping<a class="headerlink" href="#bookkeeping" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>During the course of a proof <span class="smallcaps">Coq</span> always present the user with a
 <em>sequent</em> whose general form is:</p>
@@ -1765,12 +1680,12 @@ temporary abbreviation to hide the statement of the goal from
 <p>See section <a class="reference internal" href="#localization-ssr"><span class="std std-ref">Localization</span></a> for
 the general syntax and presentation of the in
 tactical.</p>
-</div>
-<div class="section" id="the-defective-tactics">
+</section>
+<section id="the-defective-tactics">
 <span id="the-defective-tactics-ssr"></span><h3>The defective tactics<a class="headerlink" href="#the-defective-tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In this section we briefly present the three basic tactics performing
 context manipulations and the main backward chaining tool.</p>
-<div class="section" id="the-move-tactic">
+<section id="the-move-tactic">
 <h4>The move tactic.<a class="headerlink" href="#the-move-tactic" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The move tactic, in its defective form, behaves like the primitive <code class="docutils literal notranslate"><span class="pre">hnf</span></code>
 <span class="smallcaps">Coq</span> tactic. For example, such a defective:</p>
@@ -1788,8 +1703,8 @@ product or a <code class="docutils literal notranslate"><span class="pre">let…
 bookkeeping tacticals (see section <a class="reference internal" href="#introduction-ssr"><span class="std std-ref">Introduction in the context</span></a> and <a class="reference internal" href="#discharge-ssr"><span class="std std-ref">Discharge</span></a>). These
 combinations mostly subsume the <a class="reference internal" href="tactics.html#coq:tacv.intros" title="intros"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">intros</span></code></a>, <a class="reference internal" href="tactics.html#coq:tacn.generalize" title="generalize"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">generalize</span></code></a>, <a class="reference internal" href="tactics.html#coq:tacn.revert" title="revert"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">revert</span></code></a>, <a class="reference internal" href="tactics.html#coq:tacn.rename" title="rename"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">rename</span></code></a>,
 <a class="reference internal" href="tactics.html#coq:tacn.clear" title="clear"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">clear</span></code></a> and <a class="reference internal" href="tactics.html#coq:tacn.pattern" title="pattern"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">pattern</span></code></a> tactics.</p>
-</div>
-<div class="section" id="the-case-tactic">
+</section>
+<section id="the-case-tactic">
 <h4>The case tactic<a class="headerlink" href="#the-case-tactic" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">case</span></code> tactic performs <em>primitive case analysis</em> on (co)inductive
 types; specifically, it destructs the top variable or assumption of
@@ -1812,8 +1727,8 @@ left and right hand sides, as per the tactic injection. For example,
 if no branch is generated by this case operation. Hence the command:
 <code class="docutils literal notranslate"><span class="pre">case.</span></code> on a goal of the form <code class="docutils literal notranslate"><span class="pre">False</span> <span class="pre">-&gt;</span> <span class="pre">G</span></code> will succeed and
 prove the goal.</p>
-</div>
-<div class="section" id="the-elim-tactic">
+</section>
+<section id="the-elim-tactic">
 <h4>The elim tactic<a class="headerlink" href="#the-elim-tactic" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">elim</span></code> tactic performs inductive elimination on inductive types. The
 defective:</p>
@@ -1850,8 +1765,8 @@ subgoal 2 is:
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="the-apply-tactic">
+</section>
+<section id="the-apply-tactic">
 <span id="apply-ssr"></span><h4>The apply tactic<a class="headerlink" href="#the-apply-tactic" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">apply</span></code> tactic is the main backward chaining tactic of the proof
 system. It takes as argument any <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> and applies it to the goal.
@@ -1929,9 +1844,9 @@ thus discharged generating the two goals shown above.</p>
 <p>Last, the user can replace the trivial tactic by defining an Ltac
 expression named <code class="docutils literal notranslate"><span class="pre">ssrautoprop</span></code>.</p>
 </div>
-</div>
-</div>
-<div class="section" id="discharge">
+</section>
+</section>
+<section id="discharge">
 <span id="discharge-ssr"></span><h3>Discharge<a class="headerlink" href="#discharge" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The general syntax of the discharging tactical <code class="docutils literal notranslate"><span class="pre">:</span></code> is:</p>
 <dl class="tacn">
@@ -2023,7 +1938,7 @@ prefix the name of the local definition with a <code class="docutils literal not
 <p>This is in contrast with the behavior of the in tactical (see
 section <a class="reference internal" href="#localization-ssr"><span class="std std-ref">Localization</span></a>), which preserves local
 definitions by default.</p>
-<div class="section" id="clear-rules">
+<section id="clear-rules">
 <h4>Clear rules<a class="headerlink" href="#clear-rules" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The clear step will fail if term is a proof constant that appears in
 other facts; in that case either the facts should be cleared
@@ -2039,8 +1954,8 @@ is not in the <em>proof</em> context. Note that <span class="smallcaps">SSReflec
 section constant.</p>
 <p>If tactic is <code class="docutils literal notranslate"><span class="pre">move</span></code> or <code class="docutils literal notranslate"><span class="pre">case</span></code> and an equation <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> is given, then clear
 (step 3) for <a class="reference internal" href="#grammar-token-d_item"><code class="xref std std-token docutils literal notranslate"><span class="pre">d_item</span></code></a> is suppressed (see section <a class="reference internal" href="#generation-of-equations-ssr"><span class="std std-ref">Generation of equations</span></a>).</p>
-</div>
-<div class="section" id="matching-for-apply-and-exact">
+</section>
+<section id="matching-for-apply-and-exact">
 <h4>Matching for apply and exact<a class="headerlink" href="#matching-for-apply-and-exact" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The matching algorithm for <a class="reference internal" href="#grammar-token-d_item"><code class="xref std std-token docutils literal notranslate"><span class="pre">d_item</span></code></a> of the <span class="smallcaps">SSReflect</span>
 <code class="docutils literal notranslate"><span class="pre">apply</span></code> and <code class="docutils literal notranslate"><span class="pre">exact</span></code>
@@ -2088,8 +2003,8 @@ context to interpret wildcards; in particular it can accommodate the
 <code class="docutils literal notranslate"><span class="pre">refine</span> <span class="pre">(trans_equal</span> <span class="pre">(Hfg</span> <span class="pre">_)</span> <span class="pre">_).</span></code>
 and this is a common idiom for applying transitivity on the left hand
 side of an equation.</p>
-</div>
-<div class="section" id="the-abstract-tactic">
+</section>
+<section id="the-abstract-tactic">
 <span id="abstract-ssr"></span><h4>The abstract tactic<a class="headerlink" href="#the-abstract-tactic" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="tacn">
 <dt id="coq:tacn.abstract-ssreflect">
@@ -2125,9 +2040,9 @@ abs : forall n, m &lt; 5 + n
 </div>
 <p>For a more detailed example the reader should refer to
 section <a class="reference internal" href="#structure-ssr"><span class="std std-ref">Structure</span></a>.</p>
-</div>
-</div>
-<div class="section" id="introduction-in-the-context">
+</section>
+</section>
+<section id="introduction-in-the-context">
 <span id="introduction-ssr"></span><h3>Introduction in the context<a class="headerlink" href="#introduction-in-the-context" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The application of a tactic to a given goal can generate (quantified)
 variables, assumptions, or definitions, which the user may want to
@@ -2316,8 +2231,8 @@ interpretation, e.g.:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">case;</span> <span class="pre">case=&gt;</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">c.</span></code></p></li>
 </ul>
 <p>are all equivalent.</p>
-</div>
-<div class="section" id="generation-of-equations">
+</section>
+<section id="generation-of-equations">
 <span id="generation-of-equations-ssr"></span><h3>Generation of equations<a class="headerlink" href="#generation-of-equations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The generation of named equations option stores the definition of a
 new constant as an equation. The tactic:</p>
@@ -2420,8 +2335,8 @@ tactic strengthens the power of a case analysis. On the other hand,
 when combined with the elim tactic, this feature is mostly useful for
 debug purposes, to trace the values of decomposed parameters and
 pinpoint failing branches.</p>
-</div>
-<div class="section" id="type-families">
+</section>
+<section id="type-families">
 <span id="type-families-ssr"></span><h3>Type families<a class="headerlink" href="#type-families" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>When the top assumption of a goal has an inductive type, two specific
 operations are possible: the case analysis performed by the <code class="docutils literal notranslate"><span class="pre">case</span></code>
@@ -2609,11 +2524,11 @@ has two family parameters, it is possible to have|SSR| generate an
 equation for the second one by omitting the pattern for the first;
 note however that this will fail if the type of the second parameter
 depends on the value of the first parameter.</p>
-</div>
-</div>
-<div class="section" id="control-flow">
+</section>
+</section>
+<section id="control-flow">
 <h2>Control flow<a class="headerlink" href="#control-flow" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="indentation-and-bullets">
+<section id="indentation-and-bullets">
 <span id="indentation-ssr"></span><h3>Indentation and bullets<a class="headerlink" href="#indentation-and-bullets" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A linear development of <span class="smallcaps">Coq</span> scripts gives little information on the
 structure of the proof. In addition, replaying a proof after some
@@ -2647,8 +2562,8 @@ of the time more than two levels of indentation.</p>
 ...
 </pre></div>
 </div>
-</div>
-<div class="section" id="terminators">
+</section>
+<section id="terminators">
 <span id="terminators-ssr"></span><h3>Terminators<a class="headerlink" href="#terminators" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To further structure scripts, <span class="smallcaps">SSReflect</span> supplies <em>terminating</em>
 tacticals to explicitly close off tactics. When replaying scripts, we
@@ -2803,8 +2718,8 @@ the current goal. Hence for example if the tactic:</p>
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="selectors">
+</section>
+<section id="selectors">
 <span id="selectors-ssr"></span><h3>Selectors<a class="headerlink" href="#selectors" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>When composing tactics, the two tacticals <code class="docutils literal notranslate"><span class="pre">first</span></code> and <code class="docutils literal notranslate"><span class="pre">last</span></code> let the user
 restrict the application of a tactic to only one of the subgoals
@@ -2919,8 +2834,8 @@ subgoal 4 is:
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="iteration">
+</section>
+<section id="iteration">
 <span id="iteration-ssr"></span><h3>Iteration<a class="headerlink" href="#iteration" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><span class="smallcaps">SSReflect</span> offers an accurate control on the repetition of tactics,
 thanks to the do tactical, whose general syntax is:</p>
@@ -2993,8 +2908,8 @@ subgoal.</p>
 <p>Note that the combination of multipliers and rewrite is so often used
 that multipliers are in fact integrated to the syntax of the
 <span class="smallcaps">SSReflect</span> rewrite tactic, see section <a class="reference internal" href="#rewriting-ssr"><span class="std std-ref">Rewriting</span></a>.</p>
-</div>
-<div class="section" id="localization">
+</section>
+<section id="localization">
 <span id="localization-ssr"></span><h3>Localization<a class="headerlink" href="#localization" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In sections <a class="reference internal" href="#basic-localization-ssr"><span class="std std-ref">Basic localization</span></a> and <a class="reference internal" href="#bookkeeping-ssr"><span class="std std-ref">Bookkeeping</span></a>, we have
 already presented the <em>localization</em> tactical in, whose general syntax is:</p>
@@ -3066,8 +2981,8 @@ generalizes over <code class="docutils literal notranslate"><span class="pre">x<
 name <code class="docutils literal notranslate"><span class="pre">y</span></code> (and does not clear <code class="docutils literal notranslate"><span class="pre">x</span></code>).
 For a more precise description of this form of localization refer
 to <a class="reference internal" href="#advanced-generalization-ssr"><span class="std std-ref">Advanced generalization</span></a>.</p>
-</div>
-<div class="section" id="structure">
+</section>
+<section id="structure">
 <span id="structure-ssr"></span><h3>Structure<a class="headerlink" href="#structure" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Forward reasoning structures the script by explicitly specifying some
 assumptions to be added to the proof context. It is closely associated
@@ -3079,7 +2994,7 @@ piece of script dedicated to the proof of this statement. The use of closing
 tactics (see section <a class="reference internal" href="#terminators-ssr"><span class="std std-ref">Terminators</span></a>) and of indentation makes
 syntactically explicit the portion of the script building the proof of the
 intermediate statement.</p>
-<div class="section" id="the-have-tactic">
+<section id="the-have-tactic">
 <h4>The have tactic.<a class="headerlink" href="#the-have-tactic" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The main <span class="smallcaps">SSReflect</span> forward reasoning tactic is the <code class="docutils literal notranslate"><span class="pre">have</span></code> tactic. It can
 be use in two modes: one starts a new (sub)proof for an intermediate
@@ -3421,8 +3336,8 @@ subgoal 2 is:
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">suff</span></code> modifier is not
 compatible with the presence of a list of binders.</p>
-</div>
-<div class="section" id="generating-let-in-context-entries-with-have">
+</section>
+<section id="generating-let-in-context-entries-with-have">
 <span id="generating-let-ssr"></span><h4>Generating let in context entries with have<a class="headerlink" href="#generating-let-in-context-entries-with-have" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Since <span class="smallcaps">SSReflect</span> 1.5 the <code class="docutils literal notranslate"><span class="pre">have</span></code> tactic supports a “transparent” modifier
 to generate let in context entries: the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> symbol in front of the
@@ -3559,8 +3474,8 @@ makes use of it).</p>
 </div>
 <p>Last, notice that the use of intro patterns for abstract constants is
 orthogonal to the transparent flag <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> for have.</p>
-</div>
-<div class="section" id="the-have-tactic-and-typeclass-resolution">
+</section>
+<section id="the-have-tactic-and-typeclass-resolution">
 <h4>The have tactic and typeclass resolution<a class="headerlink" href="#the-have-tactic-and-typeclass-resolution" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Since <span class="smallcaps">SSReflect</span> 1.5 the <code class="docutils literal notranslate"><span class="pre">have</span></code> tactic behaves as follows with respect to
 typeclass inference.</p>
@@ -3629,8 +3544,8 @@ quantified in the (inferred) type of <code class="docutils literal notranslate">
 <dd><p>This option restores the behavior of <span class="smallcaps">SSReflect</span> 1.4 and below (never resolve typeclasses).</p>
 </dd></dl>
 
-</div>
-<div class="section" id="variants-the-suff-and-wlog-tactics">
+</section>
+<section id="variants-the-suff-and-wlog-tactics">
 <h4>Variants: the suff and wlog tactics<a class="headerlink" href="#variants-the-suff-and-wlog-tactics" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>As it is often the case in mathematical textbooks, forward reasoning
 may be used in slightly different variants. One of these variants is
@@ -3845,7 +3760,7 @@ subgoal 2 is:
 </dl>
 </div>
 </div>
-<div class="section" id="advanced-generalization">
+<section id="advanced-generalization">
 <span id="advanced-generalization-ssr"></span><h5>Advanced generalization<a class="headerlink" href="#advanced-generalization" title="このヘッドラインへのパーマリンク">¶</a></h5>
 <p>The complete syntax for the items on the left hand side of the <code class="docutils literal notranslate"><span class="pre">/</span></code>
 separator is the following one:</p>
@@ -3935,11 +3850,11 @@ subgoal 2 is:
 </dl>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="rewriting">
+</section>
+</section>
+</section>
+</section>
+<section id="rewriting">
 <span id="rewriting-ssr"></span><h2>Rewriting<a class="headerlink" href="#rewriting" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The generalized use of reflection implies that most of the
 intermediate results handled are properties of effectively computable
@@ -3948,7 +3863,7 @@ computation and simplification of expressions involving such
 functions, i.e., rewriting. <span class="smallcaps">SSReflect</span> therefore includes an
 extended <code class="docutils literal notranslate"><span class="pre">rewrite</span></code> tactic, that unifies and combines most of the
 rewriting functionalities.</p>
-<div class="section" id="an-extended-rewrite-tactic">
+<section id="an-extended-rewrite-tactic">
 <h3>An extended rewrite tactic<a class="headerlink" href="#an-extended-rewrite-tactic" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The main features of the rewrite tactic are:</p>
 <ul class="simple">
@@ -4110,10 +4025,10 @@ fold pattern (</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold a
 </div>
 </li>
 </ul>
-</div>
-<div class="section" id="remarks-and-examples">
+</section>
+<section id="remarks-and-examples">
 <h3>Remarks and examples<a class="headerlink" href="#remarks-and-examples" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="section" id="rewrite-redex-selection">
+<section id="rewrite-redex-selection">
 <h4>Rewrite redex selection<a class="headerlink" href="#rewrite-redex-selection" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The general strategy of <span class="smallcaps">SSReflect</span> is to grasp as many redexes as
 possible and to let the user select the ones to be rewritten thanks to
@@ -4153,8 +4068,8 @@ occurrences in the goal are replaced by the right hand side of <code class="docu
 </ul>
 <p>In the case <code class="docutils literal notranslate"><span class="pre">term2</span></code> is a list of terms, the first top-down (in the
 goal) left-to-right (in the list) matching rule gets selected.</p>
-</div>
-<div class="section" id="chained-rewrite-steps">
+</section>
+<section id="chained-rewrite-steps">
 <h4>Chained rewrite steps<a class="headerlink" href="#chained-rewrite-steps" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The possibility to chain rewrite operations in a single tactic makes
 scripts more compact and gathers in a single command line a bunch of
@@ -4209,8 +4124,8 @@ proof of basic results on natural numbers arithmetic.</p>
 </div>
 <p>Note the use of the <code class="docutils literal notranslate"><span class="pre">?</span></code> switch for parallel rewrite operations in the
 proof of <code class="docutils literal notranslate"><span class="pre">addnCA</span></code>.</p>
-</div>
-<div class="section" id="explicit-redex-switches-are-matched-first">
+</section>
+<section id="explicit-redex-switches-are-matched-first">
 <h4>Explicit redex switches are matched first<a class="headerlink" href="#explicit-redex-switches-are-matched-first" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>If an <a class="reference internal" href="#grammar-token-r_prefix"><code class="xref std std-token docutils literal notranslate"><span class="pre">r_prefix</span></code></a> involves a <em>redex switch</em>, the first step is to find a
 subterm matching this redex pattern, independently from the left hand
@@ -4271,8 +4186,8 @@ pattern (</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-n
 <p>Indeed the left hand side of <code class="docutils literal notranslate"><span class="pre">H</span></code> does not match
 the redex identified by the pattern <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">*</span> <span class="pre">4</span></code>.</p>
 </div>
-</div>
-<div class="section" id="occurrence-switches-and-redex-switches">
+</section>
+<section id="occurrence-switches-and-redex-switches">
 <h4>Occurrence switches and redex switches<a class="headerlink" href="#occurrence-switches-and-redex-switches" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
@@ -4304,8 +4219,8 @@ subgoal 2 is:
 the rewrite tactic. The effect of the tactic on the initial goal is to
 rewrite this lemma at the second occurrence of the first matching
 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">+</span> <span class="pre">0</span></code> of the explicit rewrite redex <code class="docutils literal notranslate"><span class="pre">_</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">+</span> <span class="pre">0</span></code>.</p>
-</div>
-<div class="section" id="occurrence-selection-and-repetition">
+</section>
+<section id="occurrence-selection-and-repetition">
 <h4>Occurrence selection and repetition<a class="headerlink" href="#occurrence-selection-and-repetition" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Occurrence selection has priority over repetition switches. This means
 the repetition of a rewrite tactic specified by a multiplier will
@@ -4346,8 +4261,8 @@ subgoal 4 is:
 <p>This last tactic generates <em>three</em> subgoals because
 the second rewrite operation specified with the <code class="docutils literal notranslate"><span class="pre">2!</span></code> multiplier
 applies to the two subgoals generated by the first rewrite.</p>
-</div>
-<div class="section" id="multi-rule-rewriting">
+</section>
+<section id="multi-rule-rewriting">
 <h4>Multi-rule rewriting<a class="headerlink" href="#multi-rule-rewriting" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The rewrite tactic can be provided a <em>tuple</em> of rewrite rules, or more
 generally a tree of such rules, since this tuple can feature arbitrary
@@ -4555,8 +4470,8 @@ the efficient operations, we gather all these rules in the definition
 <p>The tactic: <code class="docutils literal notranslate"><span class="pre">rewrite</span> <span class="pre">!trecE.</span></code>
 restores the naive versions of each operation in a goal involving the
 efficient ones, e.g. for the purpose of a correctness proof.</p>
-</div>
-<div class="section" id="wildcards-vs-abstractions">
+</section>
+<section id="wildcards-vs-abstractions">
 <h4>Wildcards vs abstractions<a class="headerlink" href="#wildcards-vs-abstractions" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The rewrite tactic supports <code class="xref std std-token docutils literal notranslate"><span class="pre">r_items</span></code> containing holes. For example, in
 the tactic <code class="docutils literal notranslate"><span class="pre">rewrite</span> <span class="pre">(_</span> <span class="pre">:</span> <span class="pre">_</span> <span class="pre">*</span> <span class="pre">0</span> <span class="pre">=</span> <span class="pre">0).</span></code>
@@ -4613,8 +4528,8 @@ subgoal 2 is:
 lemma that was used, while the latter requires you prove the quantified
 form.</p>
 </div>
-</div>
-<div class="section" id="when-ssr-rewrite-fails-on-standard-coq-licit-rewrite">
+</section>
+<section id="when-ssr-rewrite-fails-on-standard-coq-licit-rewrite">
 <h4>When <span class="smallcaps">SSReflect</span> rewrite fails on standard <span class="smallcaps">Coq</span> licit rewrite<a class="headerlink" href="#when-ssr-rewrite-fails-on-standard-coq-licit-rewrite" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>In a few cases, the <span class="smallcaps">SSReflect</span> rewrite tactic fails rewriting some
 redexes which standard <span class="smallcaps">Coq</span> successfully rewrites. There are two main
@@ -4729,8 +4644,8 @@ Please report at http://coq.inria.fr/bugs/.</span></dd>
 </div>
 </li>
 </ul>
-</div>
-<div class="section" id="existential-metavariables-and-rewriting">
+</section>
+<section id="existential-metavariables-and-rewriting">
 <h4>Existential metavariables and rewriting<a class="headerlink" href="#existential-metavariables-and-rewriting" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The rewrite tactic will not instantiate existing existential
 metavariables when matching a redex pattern.</p>
@@ -4817,9 +4732,9 @@ solve the existential variable.</p>
 rewriting rule is stated using Leibniz equality (as opposed to setoid
 relations). It will be extended to other rewriting relations in the
 future.</p>
-</div>
-</div>
-<div class="section" id="locking-unlocking">
+</section>
+</section>
+<section id="locking-unlocking">
 <span id="locking-ssr"></span><h3>Locking, unlocking<a class="headerlink" href="#locking-unlocking" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>As program proofs tend to generate large goals, it is important to be
 able to control the partial evaluation performed by the simplification
@@ -5005,8 +4920,8 @@ arithmetic operations. We define for instance:</p>
 In addition, the unfolding step: <code class="docutils literal notranslate"><span class="pre">rewrite</span> <span class="pre">/addn</span></code>
 will replace <code class="docutils literal notranslate"><span class="pre">addn</span></code> directly with <code class="docutils literal notranslate"><span class="pre">plus</span></code>, so the <code class="docutils literal notranslate"><span class="pre">nosimpl</span></code> form is
 essentially invisible.</p>
-</div>
-<div class="section" id="congruence">
+</section>
+<section id="congruence">
 <span id="congruence-ssr"></span><h3>Congruence<a class="headerlink" href="#congruence" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Because of the way matching interferes with parameters of type families,
 the tactic:</p>
@@ -5166,9 +5081,9 @@ subgoal 3 is:
 </dl>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="contextual-patterns">
+</section>
+</section>
+<section id="contextual-patterns">
 <span id="contextual-patterns-ssr"></span><h2>Contextual patterns<a class="headerlink" href="#contextual-patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The simple form of patterns used so far, terms possibly containing
 wild cards, often require an additional <a class="reference internal" href="#grammar-token-occ_switch"><code class="xref std std-token docutils literal notranslate"><span class="pre">occ_switch</span></code></a> to be specified.
@@ -5183,7 +5098,7 @@ not really informative for the reader, since it refers to occurrence
 numbers he cannot easily see.</p>
 <p>Contextual patterns mitigate these issues allowing to specify
 occurrences according to the context they occur in.</p>
-<div class="section" id="syntax">
+<section id="syntax">
 <h3>Syntax<a class="headerlink" href="#syntax" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following table summarizes the full syntax of <a class="reference internal" href="#grammar-token-c_pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">c_pattern</span></code></a> and the
 corresponding subterm(s) identified by the pattern. In the third
@@ -5276,8 +5191,8 @@ inside <code class="docutils literal notranslate"><span class="pre">b</span></co
 variant <code class="docutils literal notranslate"><span class="pre">rewrite</span> <span class="pre">[X</span> <span class="pre">in</span> <span class="pre">_</span> <span class="pre">=</span> <span class="pre">X]rule</span></code> would have rewritten <code class="docutils literal notranslate"><span class="pre">b</span></code>
 exactly (i.e., it would only work if <code class="docutils literal notranslate"><span class="pre">b</span></code> and the left hand side
 of rule can be unified).</p>
-</div>
-<div class="section" id="matching-contextual-patterns">
+</section>
+<section id="matching-contextual-patterns">
 <h3>Matching contextual patterns<a class="headerlink" href="#matching-contextual-patterns" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The <a class="reference internal" href="#grammar-token-c_pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">c_pattern</span></code></a> and <a class="reference internal" href="#grammar-token-r_pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">r_pattern</span></code></a> involving terms
 with holes are matched
@@ -5339,10 +5254,10 @@ instantiation of <code class="docutils literal notranslate"><span class="pre">te
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="examples">
+</section>
+<section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="section" id="contextual-pattern-in-set-and-the-tactical">
+<section id="contextual-pattern-in-set-and-the-tactical">
 <h4>Contextual pattern in set and the : tactical<a class="headerlink" href="#contextual-pattern-in-set-and-the-tactical" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>As already mentioned in section <a class="reference internal" href="#abbreviations-ssr"><span class="std std-ref">Abbreviations</span></a> the <code class="docutils literal notranslate"><span class="pre">set</span></code>
 tactic takes as an
@@ -5399,7 +5314,8 @@ capture any occurrence of the term <code class="docutils literal notranslate"><s
 </span><span class="ansi-fg-white ansi-bg-red ansi-bold ansi-no-italic ansi-no-underline ansi-no-negative">Error:</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> Unknown interpretation for notation &quot;( _ in _ )&quot;.</span></dd>
 </dl>
 </div>
-<p>Contextual patterns can also be used as arguments of the <code class="docutils literal notranslate"><span class="pre">:</span></code> tactical. 例えば:</p>
+<p>Contextual patterns can also be used as arguments of the <code class="docutils literal notranslate"><span class="pre">:</span></code> tactical.
+For example:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-tactic">elim</span><span>: </span><span class="coqdoc-var">n</span><span> (</span><span class="coqdoc-var">n</span><span> </span><span class="coqdoc-tactic">in</span><span> </span><span class="coqdoc-var">_</span><span> = </span><span class="coqdoc-var">n</span><span>) (</span><span class="coqdoc-var">refl_equal</span><span> </span><span class="coqdoc-var">n</span><span>).</span></dt><dd class="coqtop-hidden"><span>Toplevel input, characters 33-34:
@@ -5409,8 +5325,8 @@ capture any occurrence of the term <code class="docutils literal notranslate"><s
        The reference n was not found in the current environment.</span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="contextual-patterns-in-rewrite">
+</section>
+<section id="contextual-patterns-in-rewrite">
 <h4>Contextual patterns in rewrite<a class="headerlink" href="#contextual-patterns-in-rewrite" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
@@ -5507,9 +5423,9 @@ the rewrite rule.</p>
 </dl>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="patterns-for-recurrent-contexts">
+</section>
+</section>
+<section id="patterns-for-recurrent-contexts">
 <h3>Patterns for recurrent contexts<a class="headerlink" href="#patterns-for-recurrent-contexts" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The user can define shortcuts for recurrent contexts corresponding to
 the <code class="docutils literal notranslate"><span class="pre">ident</span> <span class="pre">in</span> <span class="pre">term</span></code> part. The notation scope identified with
@@ -5548,9 +5464,9 @@ context shortcuts.</p>
        The variable a was not found in the current environment.</span></dd>
 </dl>
 </div>
-</div>
-</div>
-<div class="section" id="views-and-reflection">
+</section>
+</section>
+<section id="views-and-reflection">
 <span id="views-and-reflection-ssr"></span><h2>Views and reflection<a class="headerlink" href="#views-and-reflection" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The bookkeeping facilities presented in section <a class="reference internal" href="#basic-tactics-ssr"><span class="std std-ref">Basic tactics</span></a> are
 crafted to ease simultaneous introductions and generalizations of facts and
@@ -5562,7 +5478,7 @@ to a tactic for decomposition, application and so on.</p>
 interpretation operations with the proof stack operations. This <em>view
 mechanism</em> relies on the combination of the <code class="docutils literal notranslate"><span class="pre">/</span></code> view switch with
 bookkeeping tactics and tacticals.</p>
-<div class="section" id="interpreting-eliminations">
+<section id="interpreting-eliminations">
 <h3>Interpreting eliminations<a class="headerlink" href="#interpreting-eliminations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The view syntax combined with the <code class="docutils literal notranslate"><span class="pre">elim</span></code> tactic specifies an elimination
 scheme to be used instead of the default, generated, one. Hence the
@@ -5970,8 +5886,8 @@ Syntax error: [tactic:ltac_use_default] expected after [tactic:tactic] (in [vern
 <p>Note that the pattern matching algorithm instantiated all the
 variables occurring in the pattern.</p>
 </div>
-</div>
-<div class="section" id="interpreting-assumptions">
+</section>
+<section id="interpreting-assumptions">
 <span id="interpreting-assumptions-ssr"></span><h3>Interpreting assumptions<a class="headerlink" href="#interpreting-assumptions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Interpreting an assumption in the context of a proof consists in
 applying to it a lemma before generalizing, and/or decomposing this
@@ -6184,7 +6100,7 @@ script is in fact equivalent to:</p>
 </dl>
 </div>
 </div>
-<div class="section" id="specializing-assumptions">
+<section id="specializing-assumptions">
 <h4>Specializing assumptions<a class="headerlink" href="#specializing-assumptions" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The special case when the <em>head symbol</em> of the view lemma is a
 wildcard is used to interpret an assumption by <em>specializing</em> it. The
@@ -6214,9 +6130,9 @@ assumption to some given arguments.</p>
 </dl>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="interpreting-goals">
+</section>
+</section>
+<section id="interpreting-goals">
 <h3>Interpreting goals<a class="headerlink" href="#interpreting-goals" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In a similar way, it is also often convenient to
 changing a goal by turning it into an equivalent proposition. The view
@@ -6274,8 +6190,8 @@ exact/term should solve the current goal or it will fail.</p>
 the bookkeeping tactical <code class="docutils literal notranslate"><span class="pre">=&gt;</span></code> since this would be redundant with the
 <code class="docutils literal notranslate"><span class="pre">apply:</span> <span class="pre">term</span> <span class="pre">=&gt;</span> <span class="pre">_</span></code> construction.</p>
 </div>
-</div>
-<div class="section" id="boolean-reflection">
+</section>
+<section id="boolean-reflection">
 <h3>Boolean reflection<a class="headerlink" href="#boolean-reflection" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>In the Calculus of Inductive Constructions, there is an obvious
 distinction between logical propositions and boolean values. On the
@@ -6352,8 +6268,8 @@ would expect a proposition, e.g., after <code class="docutils literal notranslat
 <span class="pre">interpreted</span> <span class="pre">as</span> <span class="pre">``(is_true</span> <span class="pre">b)</span></code>, i.e., the proposition <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">=</span> <span class="pre">true</span></code>. Coercions
 are elided by the pretty-printer, so they are essentially transparent
 to the user.</p>
-</div>
-<div class="section" id="the-reflect-predicate">
+</section>
+<section id="the-reflect-predicate">
 <h3>The reflect predicate<a class="headerlink" href="#the-reflect-predicate" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To get all the benefits of the boolean reflection, it is in fact
 convenient to introduce the following inductive predicate <code class="docutils literal notranslate"><span class="pre">reflect</span></code> to
@@ -6529,10 +6445,10 @@ Ambiguous paths:
 changing a boolean conjunction into a logical one. The view mechanism
 guesses the direction of the transformation to be used i.e., the
 constructor of the reflect predicate which should be chosen.</p>
-</div>
-<div class="section" id="general-mechanism-for-interpreting-goals-and-assumptions">
+</section>
+<section id="general-mechanism-for-interpreting-goals-and-assumptions">
 <h3>General mechanism for interpreting goals and assumptions<a class="headerlink" href="#general-mechanism-for-interpreting-goals-and-assumptions" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="section" id="id10">
+<section id="id10">
 <h4>Specializing assumptions<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The <span class="smallcaps">SSReflect</span> tactic:</p>
 <div class="coqtop literal-block docutils container">
@@ -6554,8 +6470,8 @@ constructor of the reflect predicate which should be chosen.</p>
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">top</span></code> is a fresh name for introducing the top assumption of the
 current goal.</p>
-</div>
-<div class="section" id="id11">
+</section>
+<section id="id11">
 <h4>Interpreting assumptions<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The general form of an assumption view tactic is:</p>
 <dl class="tacv">
@@ -6721,9 +6637,9 @@ inserted, which corresponds to the application of a term
 are user-defined lemmas stored (see section <a class="reference internal" href="#views-and-reflection-ssr"><span class="std std-ref">Views and reflection</span></a>) in the <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">View</span></code>
 database bridging the possible gap between the type of <code class="docutils literal notranslate"><span class="pre">term</span></code> and the
 type of the goal.</p>
-</div>
-</div>
-<div class="section" id="interpreting-equivalences">
+</section>
+</section>
+<section id="interpreting-equivalences">
 <h3>Interpreting equivalences<a class="headerlink" href="#interpreting-equivalences" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Equivalent boolean propositions are simply <em>equal</em> boolean terms. A
 special construction helps the user to prove boolean equalities by
@@ -6806,8 +6722,8 @@ subgoal 2 is:
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="declaring-new-hint-views">
+</section>
+<section id="declaring-new-hint-views">
 <span id="declaring-new-hints-ssr"></span><h3>Declaring new Hint Views<a class="headerlink" href="#declaring-new-hint-views" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The database of hints for the view mechanism is extensible via a
 dedicated vernacular command. As library <code class="docutils literal notranslate"><span class="pre">ssrbool.v</span></code> already declares a
@@ -6840,8 +6756,8 @@ arguments to be considered for the declared hint view lemma.</p>
 <p>with a double slash <code class="docutils literal notranslate"><span class="pre">//</span></code>, declares hint views for right hand sides of
 double views.</p>
 <p>See the files <code class="docutils literal notranslate"><span class="pre">ssreflect.v</span></code> and <code class="docutils literal notranslate"><span class="pre">ssrbool.v</span></code> for examples.</p>
-</div>
-<div class="section" id="multiple-views">
+</section>
+<section id="multiple-views">
 <h3>Multiple views<a class="headerlink" href="#multiple-views" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The hypotheses and the goal can be interpreted by applying multiple views
 in sequence. Both move and apply can be followed by an arbitrary
@@ -6922,9 +6838,9 @@ R is declared</span></dd>
 <p>If the list of views is of length two, <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Views</span></code> for interpreting
 equivalences are indeed taken into account, otherwise only single
 <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Views</span></code> are used.</p>
-</div>
-</div>
-<div class="section" id="ssr-searching-tool">
+</section>
+</section>
+<section id="ssr-searching-tool">
 <h2><span class="smallcaps">SSReflect</span> searching tool<a class="headerlink" href="#ssr-searching-tool" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><span class="smallcaps">SSReflect</span> proposes an extension of the Search command. Its syntax is:</p>
 <dl class="cmd">
@@ -7017,10 +6933,10 @@ contains the string <code class="docutils literal notranslate"><span class="pre"
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="synopsis-and-index">
+</section>
+<section id="synopsis-and-index">
 <h2>Synopsis and Index<a class="headerlink" href="#synopsis-and-index" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="parameters">
+<section id="parameters">
 <h3>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><span class="smallcaps">SSReflect</span> tactics</p>
 <dl class="prodn">
@@ -7049,8 +6965,8 @@ contains the string <code class="docutils literal notranslate"><span class="pre"
 <p>where <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> is an Ltac variable denoting a standard <span class="smallcaps">Coq</span> numeral
 (should not be the name of a tactic which can be followed by a
 bracket <code class="docutils literal notranslate"><span class="pre">[</span></code>, like <code class="docutils literal notranslate"><span class="pre">do</span></code>, <code class="docutils literal notranslate"><span class="pre">have</span></code>,…)</p>
-</div>
-<div class="section" id="items-and-switches">
+</section>
+<section id="items-and-switches">
 <h3>Items and switches<a class="headerlink" href="#items-and-switches" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="prodn">
 <dt id="grammar-token-ssr_binder">
@@ -7148,8 +7064,8 @@ bracket <code class="docutils literal notranslate"><span class="pre">[</span></c
 <dd></dd></dl>
 
 <p>simplify switch see <a class="reference internal" href="#introduction-ssr"><span class="std std-ref">Introduction in the context</span></a></p>
-</div>
-<div class="section" id="tactics">
+</section>
+<section id="tactics">
 <h3>Tactics<a class="headerlink" href="#tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><em>Note</em>: <code class="docutils literal notranslate"><span class="pre">without</span> <span class="pre">loss</span></code> and <code class="docutils literal notranslate"><span class="pre">suffices</span></code> are synonyms for <code class="docutils literal notranslate"><span class="pre">wlog</span></code> and <code class="docutils literal notranslate"><span class="pre">suff</span></code>
 respectively.</p>
@@ -7294,8 +7210,8 @@ respectively.</p>
 <dd></dd></dl>
 
 <p>congruence <a class="reference internal" href="#congruence-ssr"><span class="std std-ref">Congruence</span></a></p>
-</div>
-<div class="section" id="tacticals">
+</section>
+<section id="tacticals">
 <h3>Tacticals<a class="headerlink" href="#tacticals" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="prodn">
 <dt>
@@ -7339,8 +7255,8 @@ respectively.</p>
 <dd></dd></dl>
 
 <p>closing see <a class="reference internal" href="#terminators-ssr"><span class="std std-ref">Terminators</span></a></p>
-</div>
-<div class="section" id="commands">
+</section>
+<section id="commands">
 <h3>Commands<a class="headerlink" href="#commands" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.hint-view-for">
@@ -7400,57 +7316,39 @@ in the metatheory</p>
 Proof command of <span class="smallcaps">Coq</span> proof mode.</p>
 </dd>
 </dl>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../user-extensions/syntax-extensions.html" class="btn btn-neutral float-right" title="Syntax extensions and interpretation scopes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="detailed-tactic-examples.html" class="btn btn-neutral float-left" title="Detailed examples of tactics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="detailed-tactic-examples.html" class="btn btn-neutral float-left" title="Detailed examples of tactics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../user-extensions/syntax-extensions.html" class="btn btn-neutral float-right" title="Syntax extensions and interpretation scopes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

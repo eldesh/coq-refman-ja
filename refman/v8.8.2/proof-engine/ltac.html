@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>The tactic language &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The tactic language &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Detailed examples of tactics" href="detailed-tactic-examples.html" />
     <link rel="prev" title="Tactics" href="tactics.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proof-handling.html">Proof handling</a></li>
@@ -174,23 +129,23 @@
 <li class="toctree-l1"><a class="reference internal" href="detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -202,75 +157,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>The tactic language</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/proof-engine/ltac.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -361,7 +276,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="the-tactic-language">
+<section id="the-tactic-language">
 <span id="ltac"></span><h1>The tactic language<a class="headerlink" href="#the-tactic-language" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>This chapter gives a compact documentation of <cite>L</cite><sub>tac</sub>, the tactic language
 available in <span class="smallcaps">Coq</span>. We start by giving the syntax, and next, we present the
@@ -369,10 +284,10 @@ informal semantics. If you want to know more regarding this language and
 especially about its foundations, you can refer to <a class="bibtex reference internal" href="../zebibliography.html#del00" id="id1">[Del00]</a>. Chapter
 <a class="reference internal" href="detailed-tactic-examples.html#detailedexamplesoftactics"><span class="std std-ref">Detailed examples of tactics</span></a> is devoted to giving small but nontrivial
 use examples of this language.</p>
-<div class="section" id="syntax">
+<section id="syntax">
 <span id="ltac-syntax"></span><h2>Syntax<a class="headerlink" href="#syntax" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The syntax of the tactic language is given below. See Chapter
-<a class="reference internal" href="../language/gallina-specification-language.html#gallinaspecificationlanguage"><span class="std std-ref">仕様記述言語 Gallina</span></a> for a description of the BNF metasyntax used
+<a class="reference internal" href="../language/gallina-specification-language.html#gallinaspecificationlanguage"><span class="std std-ref">The Gallina specification language</span></a> for a description of the BNF metasyntax used
 in these grammar rules. Various already defined entries will be used in this
 chapter: entries <a class="reference internal" href="ssreflect-proof-language.html#grammar-token-natural"><code class="xref std std-token docutils literal notranslate"><span class="pre">natural</span></code></a>, <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-integer"><code class="xref std std-token docutils literal notranslate"><span class="pre">integer</span></code></a>, <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a>,
 <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><code class="xref std std-token docutils literal notranslate"><span class="pre">qualid</span></code></a>, <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>, <code class="xref std std-token docutils literal notranslate"><span class="pre">cpattern</span></code> and <code class="xref std std-token docutils literal notranslate"><span class="pre">atomic_tactic</span></code>
@@ -388,9 +303,9 @@ instantiations and to make constraints whereas <code class="code Coq docutils li
 interested in what will be matched. On the right hand side of pattern matching
 clauses, the named metavariables are used without the question mark prefix. There
 is also a special notation for second-order pattern matching problems: in an
-applicative pattern of the form <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">&#64;?</span></span><span class="name"><span class="pre">id</span></span> <span class="name"><span class="pre">id1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">idn</span></span></code>, the variable id matches any
-complex expression with (possible) dependencies in the variables <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">id1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">idn</span></span></code>
-and returns a functional term of the form <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="name"><span class="pre">id1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">idn</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">term</span></span></code>.</p>
+applicative pattern of the form <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">&#64;?</span></span><span class="name"><span class="pre">id</span></span> <span class="name"><span class="pre">id1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">idn</span></span></code>, the variable id matches any
+complex expression with (possible) dependencies in the variables <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">id1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">idn</span></span></code>
+and returns a functional term of the form <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="name"><span class="pre">id1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">idn</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">term</span></span></code>.</p>
 <p>The main entry of the grammar is <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-expr"><span class="hole"><span class="pre">expr</span></span></a></span></code>. This language is used in proof
 mode but it can also be used in toplevel definitions as shown below.</p>
 <div class="admonition note">
@@ -523,8 +438,8 @@ Toplevel input, characters 52-53:
 <strong id="grammar-token-ltac-def">ltac_def</strong> ::=  <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a> [<a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a> ... <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a>] := <a class="reference internal" href="#grammar-token-expr"><code class="xref docutils literal notranslate"><span class="pre">expr</span></code></a>
               | <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><code class="xref docutils literal notranslate"><span class="pre">qualid</span></code></a> [<a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a> ... <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a>] ::= <a class="reference internal" href="#grammar-token-expr"><code class="xref docutils literal notranslate"><span class="pre">expr</span></code></a>
 </pre>
-</div>
-<div class="section" id="semantics">
+</section>
+<section id="semantics">
 <span id="ltac-semantics"></span><h2>Semantics<a class="headerlink" href="#semantics" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Tactic expressions can only be applied in the context of a proof. The
 evaluation yields either a term, an integer or a tactic. Intermediate
@@ -536,7 +451,7 @@ a tactic expression (never as argument of a non-recursive local
 definition or of an application).</p>
 <p>The rest of this section explains the semantics of every construction of
 <cite>L</cite><sub>tac</sub>.</p>
-<div class="section" id="sequence">
+<section id="sequence">
 <h3>Sequence<a class="headerlink" href="#sequence" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A sequence is an expression of the following form:</p>
 <dl class="tacn">
@@ -550,8 +465,8 @@ produce <code class="docutils literal notranslate"><span class="notation"><span>
 application. Sequence is associative.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="local-application-of-tactics">
+</section>
+<section id="local-application-of-tactics">
 <h3>Local application of tactics<a class="headerlink" href="#local-application-of-tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Different tactics can be applied to the different goals using the
 following form:</p>
@@ -604,8 +519,8 @@ Formally, <code class="docutils literal notranslate"><span class="notation"><a c
 
 </dd></dl>
 
-</div>
-<div class="section" id="goal-selectors">
+</section>
+<section id="goal-selectors">
 <span id="id2"></span><h3>Goal selectors<a class="headerlink" href="#goal-selectors" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can restrict the application of a tactic to a subset of the currently
 focused goals with:</p>
@@ -668,8 +583,8 @@ the toplevel of a tactic expression.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="for-loop">
+</section>
+<section id="for-loop">
 <h3>For loop<a class="headerlink" href="#for-loop" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>There is a for loop that repeats a tactic <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-num"><code class="xref std std-token docutils literal notranslate"><span class="pre">num</span></code></a> times:</p>
 <dl class="tacn">
@@ -682,8 +597,8 @@ subgoals and so on. It fails if the application of <code class="docutils literal
 applications have been completed.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="repeat-loop">
+</section>
+<section id="repeat-loop">
 <h3>Repeat loop<a class="headerlink" href="#repeat-loop" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We have a repeat loop with:</p>
 <dl class="tacn">
@@ -696,8 +611,8 @@ fails. The recursion stops in a subgoal when the tactic has failed <em>to make
 progress</em>. The tactic <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">repeat</span></span> <a class="reference internal" href="#grammar-token-expr"><span class="hole"><span class="pre">expr</span></span></a></span></code> itself never fails.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="error-catching">
+</section>
+<section id="error-catching">
 <h3>Error catching<a class="headerlink" href="#error-catching" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can catch the tactic errors with:</p>
 <dl class="tacn">
@@ -710,8 +625,8 @@ level of the exception is positive, then the exception is re-raised with its
 level decremented.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="detecting-progress">
+</section>
+<section id="detecting-progress">
 <h3>Detecting progress<a class="headerlink" href="#detecting-progress" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can check if a tactic made progress with:</p>
 <dl class="tacn">
@@ -728,8 +643,8 @@ goals (up to syntactical equality), then an error of level 0 is raised.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="backtracking-branching">
+</section>
+<section id="backtracking-branching">
 <h3>Backtracking branching<a class="headerlink" href="#backtracking-branching" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can branch with the following structure:</p>
 <dl class="tacn">
@@ -747,8 +662,8 @@ successes of <code class="docutils literal notranslate"><span class="notation"><
 <p>Branching is left-associative.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="first-tactic-to-work">
+</section>
+<section id="first-tactic-to-work">
 <h3>First tactic to work<a class="headerlink" href="#first-tactic-to-work" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Backtracking branching may be too expensive. In this case we may
 restrict to a local, left biased, branching and consider the first
@@ -788,8 +703,8 @@ allowing to write notations of the following form:</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="left-biased-branching">
+</section>
+<section id="left-biased-branching">
 <h3>Left-biased branching<a class="headerlink" href="#left-biased-branching" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Yet another way of branching without backtracking is the following
 structure:</p>
@@ -804,8 +719,8 @@ equivalent to <code class="docutils literal notranslate"><span class="notation">
 if it fails, it fails like <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">v</span><sub><span class="pre">2</span></sub></span></span></code>). Branching is left-associative.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="generalized-biased-branching">
+</section>
+<section id="generalized-biased-branching">
 <h3>Generalized biased branching<a class="headerlink" href="#generalized-biased-branching" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The tactic</p>
 <dl class="tacn">
@@ -824,8 +739,8 @@ once, <code class="docutils literal notranslate"><span class="notation"><a class
 goal.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="soft-cut">
+</section>
+<section id="soft-cut">
 <h3>Soft cut<a class="headerlink" href="#soft-cut" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Another way of restricting backtracking is to restrict a tactic to a
 single success <em>a posteriori</em>:</p>
@@ -838,8 +753,8 @@ single success <em>a posteriori</em>:</p>
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">once</span></span> <a class="reference internal" href="#grammar-token-expr"><span class="hole"><span class="pre">expr</span></span></a></span></code> succeeds once, but cannot produce more successes.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="checking-the-successes">
+</section>
+<section id="checking-the-successes">
 <h3>Checking the successes<a class="headerlink" href="#checking-the-successes" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Coq provides an experimental way to check that a tactic has <em>exactly
 one</em> success:</p>
@@ -867,8 +782,8 @@ immediately.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="checking-the-failure">
+</section>
+<section id="checking-the-failure">
 <h3>Checking the failure<a class="headerlink" href="#checking-the-failure" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Coq provides a derived tactic to check that a tactic <em>fails</em>:</p>
 <dl class="tacn">
@@ -877,8 +792,8 @@ immediately.</p>
 <dd><p>This behaves like <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">tryif</span></span> <a class="reference internal" href="#grammar-token-expr"><span class="hole"><span class="pre">expr</span></span></a> <span><span class="pre">then</span></span> <span><span class="pre">fail</span></span> <span><span class="pre">0</span></span> <span><span class="pre">tac</span></span> <span><span class="pre">&quot;succeeds&quot;</span></span> <span><span class="pre">else</span></span> <span><span class="pre">idtac</span></span></span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="checking-the-success">
+</section>
+<section id="checking-the-success">
 <h3>Checking the success<a class="headerlink" href="#checking-the-success" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Coq provides a derived tactic to check that a tactic has <em>at least one</em>
 success:</p>
@@ -889,8 +804,8 @@ success:</p>
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">tryif</span></span> <span><span class="pre">(assert</span></span><span><span class="pre">_</span></span><span><span class="pre">fails</span></span> <span><span class="pre">tac)</span></span> <span><span class="pre">then</span></span> <span><span class="pre">fail</span></span> <span><span class="pre">0</span></span> <span><span class="pre">tac</span></span> <span><span class="pre">&quot;fails&quot;</span></span> <span><span class="pre">else</span></span> <span><span class="pre">idtac</span></span></span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="solving">
+</section>
+<section id="solving">
 <h3>Solving<a class="headerlink" href="#solving" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We may consider the first to solve (i.e. which generates no subgoal)
 among a panel of tactics:</p>
@@ -916,8 +831,8 @@ tactical. See the <code class="docutils literal notranslate"><span class="notati
 
 </dd></dl>
 
-</div>
-<div class="section" id="identity">
+</section>
+<section id="identity">
 <h3>Identity<a class="headerlink" href="#identity" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The constant <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">idtac</span></span></span></code> is the identity tactic: it leaves any goal unchanged but
 it appears in the proof script.</p>
@@ -928,8 +843,8 @@ it appears in the proof script.</p>
 literally. If a (term) variable is given, its contents are printed.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="failing">
+</section>
+<section id="failing">
 <h3>Failing<a class="headerlink" href="#failing" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt id="coq:tacn.fail">
@@ -1082,8 +997,8 @@ evaluated, a tactic call like <code class="docutils literal notranslate"><span c
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="timeout">
+</section>
+<section id="timeout">
 <h3>Timeout<a class="headerlink" href="#timeout" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can force a tactic to stop if it has not finished after a certain
 amount of time:</p>
@@ -1105,8 +1020,8 @@ this tactical isn’t available on the native Windows port of Coq.</p>
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="timing-a-tactic">
+</section>
+<section id="timing-a-tactic">
 <h3>Timing a tactic<a class="headerlink" href="#timing-a-tactic" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A tactic execution can be timed:</p>
 <dl class="tacn">
@@ -1119,8 +1034,8 @@ argument is optional. When provided, it is used to identify this particular
 occurrence of time.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="timing-a-tactic-that-evaluates-to-a-term">
+</section>
+<section id="timing-a-tactic-that-evaluates-to-a-term">
 <h3>Timing a tactic that evaluates to a term<a class="headerlink" href="#timing-a-tactic-that-evaluates-to-a-term" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Tactic expressions that produce terms can be timed with the experimental
 tactic</p>
@@ -1183,8 +1098,8 @@ Tactic evaluation ran for 0. secs (0.u,0.s)
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="local-definitions">
+</section>
+<section id="local-definitions">
 <h3>Local definitions<a class="headerlink" href="#local-definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Local definitions can be done as follows:</p>
 <dl class="tacn">
@@ -1200,8 +1115,8 @@ keyword can be used also in non-recursive cases so as to avoid the eager
 evaluation of local definitions.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="application">
+</section>
+<section id="application">
 <h3>Application<a class="headerlink" href="#application" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>An application is an expression of the following form:</p>
 <dl class="tacn">
@@ -1212,8 +1127,8 @@ expecting at least as many arguments as the provided <code class="docutils liter
 expressions <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-expr"><span class="hole"><span class="pre">expr</span><sub><span class="pre">i</span></sub></span></a></span></code> are evaluated to <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">v</span><sub><span class="pre">i</span></sub></span></span></code>, for i = 1, ..., n.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="function-construction">
+</section>
+<section id="function-construction">
 <h3>Function construction<a class="headerlink" href="#function-construction" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A parameterized tactic can be built anonymously (without resorting to
 local definitions) with:</p>
@@ -1224,8 +1139,8 @@ local definitions) with:</p>
 a <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">fun</span></span></span></code> tactic to an identifier.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="pattern-matching-on-terms">
+</section>
+<section id="pattern-matching-on-terms">
 <h3>Pattern matching on terms<a class="headerlink" href="#pattern-matching-on-terms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can carry out pattern matching on terms with:</p>
 <dl class="tacn">
@@ -1340,8 +1255,8 @@ subgoal 2 is:
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="pattern-matching-on-goals">
+</section>
+<section id="pattern-matching-on-goals">
 <span id="ltac-match-goal"></span><h3>Pattern matching on goals<a class="headerlink" href="#pattern-matching-on-goals" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We can perform pattern matching on goals using the following expression:</p>
 <dl class="tacn">
@@ -1407,8 +1322,8 @@ this tactic to backtrack.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="filling-a-term-context">
+</section>
+<section id="filling-a-term-context">
 <h3>Filling a term context<a class="headerlink" href="#filling-a-term-context" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following expression is not a tactic in the sense that it does not
 produce subgoals but generates a term to be used in tactic expressions:</p>
@@ -1430,8 +1345,8 @@ value of <code class="docutils literal notranslate"><span class="notation"><a cl
 
 </dd></dl>
 
-</div>
-<div class="section" id="generating-fresh-hypothesis-names">
+</section>
+<section id="generating-fresh-hypothesis-names">
 <h3>Generating fresh hypothesis names<a class="headerlink" href="#generating-fresh-hypothesis-names" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Tactics sometimes have to generate new names for hypothesis. Letting the
 system decide a name with the intro tactic is not so good since it is
@@ -1449,8 +1364,8 @@ becomes fresh. If no component is given, the name is a fresh derivative of
 the name <code class="docutils literal notranslate"><span class="pre">H</span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="computing-in-a-constr">
+</section>
+<section id="computing-in-a-constr">
 <h3>Computing in a constr<a class="headerlink" href="#computing-in-a-constr" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Evaluation of a term can be performed with:</p>
 <dl class="tacn">
@@ -1461,8 +1376,8 @@ the name <code class="docutils literal notranslate"><span class="pre">H</span></
 <a class="reference internal" href="tactics.html#coq:tacn.fold" title="fold"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">fold</span></code></a>, <a class="reference internal" href="tactics.html#coq:tacn.pattern" title="pattern"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">pattern</span></code></a>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="recovering-the-type-of-a-term">
+</section>
+<section id="recovering-the-type-of-a-term">
 <h3>Recovering the type of a term<a class="headerlink" href="#recovering-the-type-of-a-term" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following returns the type of term:</p>
 <dl class="tacn">
@@ -1470,8 +1385,8 @@ the name <code class="docutils literal notranslate"><span class="pre">H</span></
 <code class="sig-name descname"><span class="notation"><span>type</span> <span>of</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole">term</span></a></span></code></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="manipulating-untyped-terms">
+</section>
+<section id="manipulating-untyped-terms">
 <h3>Manipulating untyped terms<a class="headerlink" href="#manipulating-untyped-terms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt>
@@ -1496,8 +1411,8 @@ untyped term and returns a well-typed term which can be used in tactics.</p>
 <a class="reference internal" href="tactics.html#coq:tacn.refine" title="refine"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">refine</span></code></a> tactic. In that case the untyped term is type
 checked against the conclusion of the goal, and the holes which are not solved
 by the typing procedure are turned into new subgoals.</p>
-</div>
-<div class="section" id="counting-the-goals">
+</section>
+<section id="counting-the-goals">
 <h3>Counting the goals<a class="headerlink" href="#counting-the-goals" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt>
@@ -1532,8 +1447,8 @@ subgoal 3 is:
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="testing-boolean-expressions">
+</section>
+<section id="testing-boolean-expressions">
 <h3>Testing boolean expressions<a class="headerlink" href="#testing-boolean-expressions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt id="coq:tacn.guard">
@@ -1575,8 +1490,8 @@ Condition not satisfied: 3=2</span></dd>
 
 </dd></dl>
 
-</div>
-<div class="section" id="proving-a-subgoal-as-a-separate-lemma">
+</section>
+<section id="proving-a-subgoal-as-a-separate-lemma">
 <h3>Proving a subgoal as a separate lemma<a class="headerlink" href="#proving-a-subgoal-as-a-separate-lemma" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt id="coq:tacn.abstract">
@@ -1632,11 +1547,11 @@ don’t play well with asynchronous proofs.</p>
 
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="tactic-toplevel-definitions">
+</section>
+</section>
+<section id="tactic-toplevel-definitions">
 <h2>Tactic toplevel definitions<a class="headerlink" href="#tactic-toplevel-definitions" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="defining-ltac-functions">
+<section id="defining-ltac-functions">
 <h3>Defining <cite>L</cite><sub>tac</sub> functions<a class="headerlink" href="#defining-ltac-functions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Basically, <cite>L</cite><sub>tac</sub> toplevel definitions are made as follows:</p>
 <dl class="cmd">
@@ -1669,8 +1584,8 @@ module boundaries.</p>
 exported outside the current module.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="printing-ltac-tactics">
+</section>
+<section id="printing-ltac-tactics">
 <h3>Printing <cite>L</cite><sub>tac</sub> tactics<a class="headerlink" href="#printing-ltac-tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.print-ltac">
@@ -1684,11 +1599,11 @@ exported outside the current module.</p>
 <dd><p>This command displays a list of all user-defined tactics, with their arguments.</p>
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="debugging-ltac-tactics">
+</section>
+</section>
+<section id="debugging-ltac-tactics">
 <h2>Debugging <cite>L</cite><sub>tac</sub> tactics<a class="headerlink" href="#debugging-ltac-tactics" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="info-trace">
+<section id="info-trace">
 <h3>Info trace<a class="headerlink" href="#info-trace" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.info">
@@ -1744,8 +1659,8 @@ tactic call. The unfolding level can be overridden by a call to the
 
 </dd></dl>
 
-</div>
-<div class="section" id="interactive-debugger">
+</section>
+<section id="interactive-debugger">
 <h3>Interactive debugger<a class="headerlink" href="#interactive-debugger" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="flag">
 <dt id="coq:flag.ltac-debug">
@@ -1798,8 +1713,8 @@ user input to generate when this option is set, can then be run through
 external tools such as diff.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="profiling-ltac-tactics">
+</section>
+<section id="profiling-ltac-tactics">
 <h3>Profiling <cite>L</cite><sub>tac</sub> tactics<a class="headerlink" href="#profiling-ltac-tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>It is possible to measure the time spent in invocations of primitive
 tactics as well as tactics defined in <cite>L</cite><sub>tac</sub> and their inner
@@ -1892,38 +1807,38 @@ performance issue.</p>
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Set</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profiling</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 <dt><span class="coqdoc-var">tac</span><span>.</span></dt><dd><span>No more subgoals.</span></dd>
-<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span>.</span></dt><dd><span>total time:      2.263s
+<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span>.</span></dt><dd><span>total time:      2.366s
 
  tactic                                   local  total   calls       max 
 ────────────────────────────────────────┴──────┴──────┴───────┴─────────┘
-─tac -----------------------------------   0.1% 100.0%       1    2.263s
-─&lt;Coq.Init.Tauto.with_uniform_flags&gt; ---   0.0%  74.3%      26    0.107s
-─&lt;Coq.Init.Tauto.tauto_gen&gt; ------------   0.0%  74.3%      26    0.107s
-─&lt;Coq.Init.Tauto.tauto_intuitionistic&gt; -   0.0%  74.2%      26    0.107s
-─t_tauto_intuit ------------------------   0.1%  74.1%      26    0.107s
-─&lt;Coq.Init.Tauto.simplif&gt; --------------  51.7%  71.7%      26    0.104s
-─omega ---------------------------------  25.3%  25.3%      28    0.238s
-─&lt;Coq.Init.Tauto.is_conj&gt; --------------  11.0%  11.0%   28756    0.008s
-─elim id -------------------------------   5.8%   5.8%     650    0.034s
-─&lt;Coq.Init.Tauto.axioms&gt; ---------------   1.9%   2.4%       0    0.003s
+─tac -----------------------------------   0.1% 100.0%       1    2.366s
+─&lt;Coq.Init.Tauto.with_uniform_flags&gt; ---   0.0%  72.4%      26    0.098s
+─&lt;Coq.Init.Tauto.tauto_gen&gt; ------------   0.0%  72.3%      26    0.098s
+─&lt;Coq.Init.Tauto.tauto_intuitionistic&gt; -   0.0%  72.3%      26    0.098s
+─t_tauto_intuit ------------------------   0.1%  72.2%      26    0.098s
+─&lt;Coq.Init.Tauto.simplif&gt; --------------  50.4%  69.6%      26    0.095s
+─omega ---------------------------------  27.3%  27.3%      28    0.278s
+─&lt;Coq.Init.Tauto.is_conj&gt; --------------  10.6%  10.6%   28756    0.002s
+─elim id -------------------------------   5.5%   5.5%     650    0.031s
+─&lt;Coq.Init.Tauto.axioms&gt; ---------------   2.0%   2.5%       0    0.004s
 
  tactic                                   local  total   calls       max 
 ────────────────────────────────────────┴──────┴──────┴───────┴─────────┘
-─tac -----------------------------------   0.1% 100.0%       1    2.263s
- ├─&lt;Coq.Init.Tauto.with_uniform_flags&gt; -   0.0%  74.3%      26    0.107s
- │└&lt;Coq.Init.Tauto.tauto_gen&gt; ----------   0.0%  74.3%      26    0.107s
- │└&lt;Coq.Init.Tauto.tauto_intuitionistic&gt;   0.0%  74.2%      26    0.107s
- │└t_tauto_intuit ----------------------   0.1%  74.1%      26    0.107s
- │ ├─&lt;Coq.Init.Tauto.simplif&gt; ----------  51.7%  71.7%      26    0.104s
- │ │ ├─&lt;Coq.Init.Tauto.is_conj&gt; --------  11.0%  11.0%   28756    0.008s
- │ │ └─elim id -------------------------   5.8%   5.8%     650    0.034s
- │ └─&lt;Coq.Init.Tauto.axioms&gt; -----------   1.9%   2.4%       0    0.003s
- └─omega -------------------------------  25.3%  25.3%      28    0.238s</span></dd>
-<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span> &quot;omega&quot;.</span></dt><dd><span>total time:      2.263s
+─tac -----------------------------------   0.1% 100.0%       1    2.366s
+ ├─&lt;Coq.Init.Tauto.with_uniform_flags&gt; -   0.0%  72.4%      26    0.098s
+ │└&lt;Coq.Init.Tauto.tauto_gen&gt; ----------   0.0%  72.3%      26    0.098s
+ │└&lt;Coq.Init.Tauto.tauto_intuitionistic&gt;   0.0%  72.3%      26    0.098s
+ │└t_tauto_intuit ----------------------   0.1%  72.2%      26    0.098s
+ │ ├─&lt;Coq.Init.Tauto.simplif&gt; ----------  50.4%  69.6%      26    0.095s
+ │ │ ├─&lt;Coq.Init.Tauto.is_conj&gt; --------  10.6%  10.6%   28756    0.002s
+ │ │ └─elim id -------------------------   5.5%   5.5%     650    0.031s
+ │ └─&lt;Coq.Init.Tauto.axioms&gt; -----------   2.0%   2.5%       0    0.004s
+ └─omega -------------------------------  27.3%  27.3%      28    0.278s</span></dd>
+<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span> &quot;omega&quot;.</span></dt><dd><span>total time:      2.366s
 
  tactic                                   local  total   calls       max 
 ────────────────────────────────────────┴──────┴──────┴───────┴─────────┘
-─omega ---------------------------------  25.3%  25.3%      28    0.238s
+─omega ---------------------------------  27.3%  27.3%      28    0.278s
 
  tactic                                   local  total   calls       max </span></dd>
 </dl>
@@ -1979,8 +1894,8 @@ and performs a <a class="reference internal" href="#coq:cmd.show-ltac-profile" t
 multi-success tactics, and issues a warning to this effect in many cases
 when such backtracking occurs.</p>
 </div>
-</div>
-<div class="section" id="run-time-optimization-tactic">
+</section>
+<section id="run-time-optimization-tactic">
 <h3>Run-time optimization tactic<a class="headerlink" href="#run-time-optimization-tactic" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt id="coq:tacn.optimize-heap">
@@ -1990,57 +1905,39 @@ when such backtracking occurs.</p>
 <p>This tactic behaves like <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">idtac</span></span></span></code>, except that running it compacts the
 heap in the OCaml run-time system. It is analogous to the Vernacular
 command <a class="reference internal" href="proof-handling.html#coq:cmd.optimize-heap" title="Optimize Heap"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Optimize</span> <span class="pre">Heap</span></code></a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="detailed-tactic-examples.html" class="btn btn-neutral float-right" title="Detailed examples of tactics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="tactics.html" class="btn btn-neutral float-left" title="Tactics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tactics.html" class="btn btn-neutral float-left" title="Tactics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="detailed-tactic-examples.html" class="btn btn-neutral float-right" title="Detailed examples of tactics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Calculus of Inductive Constructions &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculus of Inductive Constructions &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="The Module System" href="module-system.html" />
     <link rel="prev" title="The Coq library" href="coq-library.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,15 +55,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Calculus of Inductive Constructions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#the-terms">The terms</a><ul>
@@ -158,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -167,23 +122,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -195,75 +150,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Calculus of Inductive Constructions</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/language/cic.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -354,10 +269,13 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="calculus-of-inductive-constructions">
+<section id="calculus-of-inductive-constructions">
 <span id="calculusofinductiveconstructions"></span><h1>Calculus of Inductive Constructions<a class="headerlink" href="#calculus-of-inductive-constructions" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p><span class="smallcaps">Coq</span> の基礎となる形式言語は <em>Calculus of Inductive Constructions</em> (<span class="smallcaps">Cic</span>) と呼ばれる。この章では、 <span class="smallcaps">Cic</span> の推論規則について説明する。The history of this formalism as well as pointers to related work are provided in a separate chapter; see <em>Credits</em>.</p>
-<div class="section" id="the-terms">
+<p>The underlying formal language of <span class="smallcaps">Coq</span> is a <em>Calculus of Inductive
+Constructions</em> (<span class="smallcaps">Cic</span>) whose inference rules are presented in this
+chapter. The history of this formalism as well as pointers to related
+work are provided in a separate chapter; see <em>Credits</em>.</p>
+<section id="the-terms">
 <span id="id1"></span><h2>The terms<a class="headerlink" href="#the-terms" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The expressions of the <span class="smallcaps">Cic</span> are <em>terms</em> and all terms have a <em>type</em>.
 There are types for functions (or programs), there are atomic types
@@ -371,7 +289,7 @@ to a type and takes the form &quot;<em>for all x of type T, P</em> &quot;. The e
 so that terms, types and sorts are all components of a common
 syntactic language of terms which is described in Section <a class="reference internal" href="#terms"><span class="std std-ref">Terms</span></a> but,
 first, we describe sorts.</p>
-<div class="section" id="sorts">
+<section id="sorts">
 <span id="id2"></span><h3>Sorts<a class="headerlink" href="#sorts" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>All sorts have a type and there is an infinite well-founded typing
 hierarchy of sorts whose base sorts are <span class="math notranslate nohighlight">\(\Prop\)</span> and <span class="math notranslate nohighlight">\(\Set\)</span>.</p>
@@ -421,10 +339,10 @@ expressions that violate the acyclicity of the graph of constraints
 results in a Universe inconsistency error.</p>
 <div class="admonition seealso">
 <p class="admonition-title">参考</p>
-<p>Section <a class="reference internal" href="gallina-extensions.html#printing-universes"><span class="std std-ref">ユニバースを表示する</span></a>.</p>
+<p>Section <a class="reference internal" href="gallina-extensions.html#printing-universes"><span class="std std-ref">Printing universes</span></a>.</p>
 </div>
-</div>
-<div class="section" id="terms">
+</section>
+<section id="terms">
 <span id="id4"></span><h3>Terms<a class="headerlink" href="#terms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Terms are built from sorts, variables, constants, abstractions,
 applications, local definitions, and products. From a syntactic point
@@ -461,7 +379,7 @@ functional programs such as ML or Scheme.</p></li>
 </ol>
 <p id="free-variables"><strong>Free variables.</strong>
 The notion of free variables is defined as usual. In the expressions
-<code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">λ</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">.</span></span> <span class="name"><span class="pre">U</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">U</span></span></code> the occurrences of <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(U\)</span> are bound.</p>
+<code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">λ</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">.</span></span> <span class="name"><span class="pre">U</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">U</span></span></code> the occurrences of <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(U\)</span> are bound.</p>
 <p id="substitution"><strong>Substitution.</strong>
 The notion of substituting a term <span class="math notranslate nohighlight">\(t\)</span> to free occurrences of a variable
 <span class="math notranslate nohighlight">\(x\)</span> in a term <span class="math notranslate nohighlight">\(u\)</span> is defined as usual. The resulting term is written
@@ -492,9 +410,9 @@ object <span class="math notranslate nohighlight">\(P~t\)</span> of type <span c
 <p>Furthermore <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span> <span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">nat</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">P</span></span> <span class="name"><span class="pre">x</span></span></code> will represent the type of functions
 which associate to each natural number <span class="math notranslate nohighlight">\(n\)</span> an object of type <span class="math notranslate nohighlight">\((P~n)\)</span> and
 consequently represent the type of proofs of the formula “<span class="math notranslate nohighlight">\(∀ x. P(x\)</span>)”.</p>
-</div>
-</div>
-<div class="section" id="typing-rules">
+</section>
+</section>
+<section id="typing-rules">
 <span id="id9"></span><h2>Typing rules<a class="headerlink" href="#typing-rules" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>As objects of type theory, terms are subjected to <em>type discipline</em>.
 The well typing of a term depends on a global environment and a local
@@ -737,13 +655,13 @@ semantic difference between <span class="math notranslate nohighlight">\(\Prop\)
 <span class="math notranslate nohighlight">\(x\)</span> may be used in a conversion rule
 (see Section <a class="reference internal" href="#conversion-rules"><span class="std std-ref">Conversion rules</span></a>).</p>
 </div>
-</div>
-<div class="section" id="conversion-rules">
+</section>
+<section id="conversion-rules">
 <span id="id10"></span><h2>Conversion rules<a class="headerlink" href="#conversion-rules" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>In <span class="smallcaps">Cic</span>, there is an internal reduction mechanism. In particular, it
 can decide if two programs are <em>intentionally</em> equal (one says
 <em>convertible</em>). Convertibility is described in this section.</p>
-<div class="section" id="reduction">
+<section id="reduction">
 <span id="beta-reduction"></span><h3>β-reduction<a class="headerlink" href="#reduction" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We want to be able to identify some terms as we can identify the
 application of a function to a given argument with its result. For
@@ -762,8 +680,8 @@ Constructions</em> enjoy some fundamental properties such as confluence,
 strong normalization, subject reduction. These results are
 theoretically of great importance but we will not detail them here and
 refer the interested reader to <a class="bibtex reference internal" href="../zebibliography.html#coq85" id="id11">[Coq85]</a>.</p>
-</div>
-<div class="section" id="iota-reduction">
+</section>
+<section id="iota-reduction">
 <span id="id12"></span><h3>ι-reduction<a class="headerlink" href="#iota-reduction" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>A specific conversion rule is associated to the inductive objects in
 the global environment. We shall give later on (see Section
@@ -771,8 +689,8 @@ the global environment. We shall give later on (see Section
 just says that a destructor applied to an object built from a
 constructor behaves as expected. This reduction is called ι-reduction
 and is more precisely studied in <a class="bibtex reference internal" href="../zebibliography.html#moh93" id="id13">[PM93]</a><a class="bibtex reference internal" href="../zebibliography.html#wer94" id="id14">[Wer94]</a>.</p>
-</div>
-<div class="section" id="delta-reduction">
+</section>
+<section id="delta-reduction">
 <span id="id15"></span><h3>δ-reduction<a class="headerlink" href="#delta-reduction" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We may have variables defined in local contexts or constants defined
 in the global environment. It is legal to identify such a reference
@@ -800,8 +718,8 @@ E[Γ] ⊢ c~\triangleright_δ~t%
 }\]</div>
 </dd>
 </dl>
-</div>
-<div class="section" id="zeta-reduction">
+</section>
+<section id="zeta-reduction">
 <span id="id16"></span><h3>ζ-reduction<a class="headerlink" href="#zeta-reduction" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><span class="smallcaps">Coq</span> allows also to remove local definitions occurring in terms by
 replacing the defined variable by its value. The declaration being
@@ -820,8 +738,8 @@ E[Γ] ⊢ \letin{x}{u}{t}~\triangleright_ζ~\subst{t}{x}{u}%
 }\]</div>
 </dd>
 </dl>
-</div>
-<div class="section" id="expansion">
+</section>
+<section id="expansion">
 <span id="eta-expansion"></span><h3>η-expansion<a class="headerlink" href="#expansion" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Another important concept is η-expansion. It is legal to identify any
 term <span class="math notranslate nohighlight">\(t\)</span> of functional type <span class="math notranslate nohighlight">\(∀ x:T, U\)</span> with its so-called η-expansion</p>
@@ -846,8 +764,8 @@ to the type of <span class="math notranslate nohighlight">\(λ x:T. (t~x)\)</spa
 <p>because the type of the reduced term <span class="math notranslate nohighlight">\(∀ x:\Type(2),\Type(1)\)</span> would not be
 convertible to the type of the original term <span class="math notranslate nohighlight">\(∀ x:\Type(1),\Type(1).\)</span></p>
 </div>
-</div>
-<div class="section" id="convertibility">
+</section>
+<section id="convertibility">
 <span id="id17"></span><h3>Convertibility<a class="headerlink" href="#convertibility" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Let us write <span class="math notranslate nohighlight">\(E[Γ] ⊢ t \triangleright u\)</span> for the contextual closure of the
 relation <span class="math notranslate nohighlight">\(t\)</span> reduces to <span class="math notranslate nohighlight">\(u\)</span> in the global environment
@@ -894,9 +812,9 @@ types (differing only in universe levels) such that</p>
 \[E[Γ] ⊢ t~w_1 … w_m =_{βδιζη} t~w_1' … w_m'.\]</div>
 <p>The convertibility relation allows introducing a new typing rule which
 says that two convertible well-formed types have the same inhabitants.</p>
-</div>
-</div>
-<div class="section" id="subtyping-rules">
+</section>
+</section>
+<section id="subtyping-rules">
 <span id="id18"></span><h2>Subtyping rules<a class="headerlink" href="#subtyping-rules" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>At the moment, we did not take into account one rule between universes
 which says that any term in a universe of index i is also a term in
@@ -976,8 +894,8 @@ term is no more an abstraction leads to the <em>β-head normal form</em> of <spa
 normal form must not be confused with the normal form since some <span class="math notranslate nohighlight">\(u_i\)</span>
 can be reducible. Similar notions of head-normal forms involving δ, ι
 and ζ reductions or any combination of those can also be defined.</p>
-</div>
-<div class="section" id="inductive-definitions">
+</section>
+<section id="inductive-definitions">
 <span id="id19"></span><h2>Inductive Definitions<a class="headerlink" href="#inductive-definitions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Formally, we can represent any <em>inductive definition</em> as
 <span class="math notranslate nohighlight">\(\ind{p}{Γ_I}{Γ_C}\)</span> where:</p>
@@ -1069,7 +987,7 @@ forest_rec is defined</span></dd>
 </dl>
 </div>
 </div>
-<div class="section" id="types-of-inductive-objects">
+<section id="types-of-inductive-objects">
 <span id="id20"></span><h3>Types of inductive objects<a class="headerlink" href="#types-of-inductive-objects" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We have to give the type of constants in a global environment E which
 contains an inductive declaration.</p>
@@ -1112,14 +1030,14 @@ E[Γ] ⊢ \even\_S : \forall~n:\nat, \odd~n → \even~(S~n)\\
 E[Γ] ⊢ \odd\_S : \forall~n:\nat, \even~n → \odd~(S~n)
 \end{array}\end{split}\]</div>
 </div>
-</div>
-<div class="section" id="well-formed-inductive-definitions">
+</section>
+<section id="well-formed-inductive-definitions">
 <span id="id21"></span><h3>Well-formed inductive definitions<a class="headerlink" href="#well-formed-inductive-definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We cannot accept any inductive declaration because some of them lead
 to inconsistent systems. We restrict ourselves to definitions which
 satisfy a syntactic criterion of positivity. Before giving the formal
 rules, we need a few definitions:</p>
-<div class="section" id="arity-of-a-given-sort">
+<section id="arity-of-a-given-sort">
 <h4>Arity of a given sort<a class="headerlink" href="#arity-of-a-given-sort" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>A type <span class="math notranslate nohighlight">\(T\)</span> is an <em>arity of sort</em> <span class="math notranslate nohighlight">\(s\)</span> if it converts to the sort <span class="math notranslate nohighlight">\(s\)</span> or to a
 product <span class="math notranslate nohighlight">\(∀ x:T,U\)</span> with <span class="math notranslate nohighlight">\(U\)</span> an arity of sort <span class="math notranslate nohighlight">\(s\)</span>.</p>
@@ -1128,8 +1046,8 @@ product <span class="math notranslate nohighlight">\(∀ x:T,U\)</span> with <sp
 <p><span class="math notranslate nohighlight">\(A→\Set\)</span> is an arity of sort <span class="math notranslate nohighlight">\(\Set\)</span>. <span class="math notranslate nohighlight">\(∀ A:\Prop,A→ \Prop\)</span> is an arity of sort
 <span class="math notranslate nohighlight">\(\Prop\)</span>.</p>
 </div>
-</div>
-<div class="section" id="arity">
+</section>
+<section id="arity">
 <h4>Arity<a class="headerlink" href="#arity" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>A type <span class="math notranslate nohighlight">\(T\)</span> is an <em>arity</em> if there is a <span class="math notranslate nohighlight">\(s∈ \Sort\)</span> such that <span class="math notranslate nohighlight">\(T\)</span> is an arity of
 sort <span class="math notranslate nohighlight">\(s\)</span>.</p>
@@ -1137,8 +1055,8 @@ sort <span class="math notranslate nohighlight">\(s\)</span>.</p>
 <p class="admonition-title">Example</p>
 <p><span class="math notranslate nohighlight">\(A→ Set\)</span> and <span class="math notranslate nohighlight">\(∀ A:\Prop,A→ \Prop\)</span> are arities.</p>
 </div>
-</div>
-<div class="section" id="type-constructor">
+</section>
+<section id="type-constructor">
 <h4>Type constructor<a class="headerlink" href="#type-constructor" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>We say that T is a <em>type of constructor of I</em> in one of the following
 two cases:</p>
@@ -1151,8 +1069,8 @@ two cases:</p>
 <p><span class="math notranslate nohighlight">\(\nat\)</span> and <span class="math notranslate nohighlight">\(\nat→\nat\)</span> are types of constructor of <span class="math notranslate nohighlight">\(\nat\)</span>.
 <span class="math notranslate nohighlight">\(∀ A:Type,\List~A\)</span> and <span class="math notranslate nohighlight">\(∀ A:Type,A→\List~A→\List~A\)</span> are types of constructor of <span class="math notranslate nohighlight">\(\List\)</span>.</p>
 </div>
-</div>
-<div class="section" id="positivity-condition">
+</section>
+<section id="positivity-condition">
 <span id="positivity"></span><h4>Positivity Condition<a class="headerlink" href="#positivity-condition" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The type of constructor <span class="math notranslate nohighlight">\(T\)</span> will be said to <em>satisfy the positivity
 condition</em> for a constant <span class="math notranslate nohighlight">\(X\)</span> in the following cases:</p>
@@ -1161,8 +1079,8 @@ condition</em> for a constant <span class="math notranslate nohighlight">\(X\)</
 <li><p><span class="math notranslate nohighlight">\(T=∀ x:U,V\)</span> and <span class="math notranslate nohighlight">\(X\)</span> occurs only strictly positively in <span class="math notranslate nohighlight">\(U\)</span> and the type <span class="math notranslate nohighlight">\(V\)</span>
 satisfies the positivity condition for <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
 </ul>
-</div>
-<div class="section" id="strict-positivity">
+</section>
+<section id="strict-positivity">
 <h4>Strict positivity<a class="headerlink" href="#strict-positivity" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The constant <span class="math notranslate nohighlight">\(X\)</span> <em>occurs strictly positively</em> in <span class="math notranslate nohighlight">\(T\)</span> in the following
 cases:</p>
@@ -1181,8 +1099,8 @@ any of the <span class="math notranslate nohighlight">\(t_i\)</span>, and the (i
 <span class="math notranslate nohighlight">\(\subst{C_i}{p_j}{a_j}_{j=1… m}\)</span> of <span class="math notranslate nohighlight">\(I\)</span> satisfy the nested positivity condition for <span class="math notranslate nohighlight">\(X\)</span></p>
 </li>
 </ul>
-</div>
-<div class="section" id="nested-positivity">
+</section>
+<section id="nested-positivity">
 <h4>Nested Positivity<a class="headerlink" href="#nested-positivity" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The type of constructor <span class="math notranslate nohighlight">\(T\)</span> of <span class="math notranslate nohighlight">\(I\)</span> <em>satisfies the nested positivity
 condition</em> for a constant <span class="math notranslate nohighlight">\(X\)</span> in the following cases:</p>
@@ -1227,8 +1145,8 @@ positivity condition for <code class="docutils literal notranslate"><span class=
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="correctness-rules">
+</section>
+<section id="correctness-rules">
 <span id="id22"></span><h4>Correctness rules<a class="headerlink" href="#correctness-rules" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>We shall now describe the rules allowing the introduction of a new
 inductive definition.</p>
@@ -1299,8 +1217,8 @@ exType_rec is defined</span></dd>
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="template-polymorphism">
+</section>
+<section id="template-polymorphism">
 <span id="id23"></span><h4>Template polymorphism<a class="headerlink" href="#template-polymorphism" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Inductive types declared in <span class="math notranslate nohighlight">\(\Type\)</span> are polymorphic over their arguments
 in <span class="math notranslate nohighlight">\(\Type\)</span>. If <span class="math notranslate nohighlight">\(A\)</span> is an arity of some sort and <span class="math notranslate nohighlight">\(s\)</span> is a sort, we write <span class="math notranslate nohighlight">\(A_{/s}\)</span>
@@ -1458,9 +1376,9 @@ eliminations schemes are allowed.</p>
 inductive types” before universe polymorphism
 (see Chapter <a class="reference internal" href="../addendum/universe-polymorphism.html#polymorphicuniverses"><span class="std std-ref">Polymorphic Universes</span></a>) was introduced.</p>
 </div>
-</div>
-</div>
-<div class="section" id="destructors">
+</section>
+</section>
+<section id="destructors">
 <span id="id24"></span><h3>Destructors<a class="headerlink" href="#destructors" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The specification of inductive definitions with arities and
 constructors is quite natural. But we still have to say how to use an
@@ -1492,18 +1410,18 @@ constructor.</p>
 want to capture the extra property that we have built the smallest
 fixed point of this recursive equation. This says that we are only
 manipulating finite objects. This analysis provides induction
-principles. For instance, in order to prove <code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">list</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">l</span></span>
+principles. For instance, in order to prove <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">list</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">l</span></span>
 <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">))</span></span></code> it is enough to prove:</p>
 <ul class="simple">
 <li><p><code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">nil</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">nil</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">)))</span></span></code></p></li>
-<li><p><code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">a</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">list</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">l</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">))</span></span> <span class="error"><span class="pre">→</span></span></code>
+<li><p><code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">a</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">list</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">l</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">))</span></span> <span class="operator"><span class="pre">→</span></span></code>
 <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">cons</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">a</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">cons</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">a</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">)))</span></span></code></p></li>
 </ul>
 <p>which given the conversion equalities satisfied by length is the same
 as proving:</p>
 <ul class="simple">
 <li><p><code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">nil</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">)</span></span> <span class="name"><span class="pre">O</span></span><span class="operator"><span class="pre">)</span></span></code></p></li>
-<li><p><code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">a</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">list</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">l</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">))</span></span> <span class="error"><span class="pre">→</span></span></code>
+<li><p><code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">a</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">list</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">l</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">))</span></span> <span class="operator"><span class="pre">→</span></span></code>
 <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">has_length</span></span> <span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">cons</span></span> <span class="name"><span class="pre">A</span></span> <span class="name"><span class="pre">a</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">S</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">length</span></span> <span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">)))</span></span></code></p></li>
 </ul>
 <p>One conceptually simple way to do that, following the basic scheme
@@ -1517,7 +1435,7 @@ this version of <span class="smallcaps">Coq</span> to factorize the operator for
 into two more primitive operations as was first suggested by Th.
 Coquand in <a class="bibtex reference internal" href="../zebibliography.html#coq92" id="id25">[Coq92]</a>. One is the definition by pattern matching. The
 second one is a definition by guarded fixpoints.</p>
-<div class="section" id="the-match-with-end-construction">
+<section id="the-match-with-end-construction">
 <span id="match-construction"></span><h4>The match ... with ... end construction<a class="headerlink" href="#the-match-with-end-construction" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The basic idea of this operator is that we have an object <span class="math notranslate nohighlight">\(m\)</span> in an
 inductive type <span class="math notranslate nohighlight">\(I\)</span> and we want to prove a property which possibly
@@ -1804,9 +1722,9 @@ parameters.</p>
 general reduction rule:</p>
 <div class="math notranslate nohighlight">
 \[\case((c_{p_i}~q_1 … q_r~a_1 … a_m ),P,f_1 |… |f_n ) \triangleright_ι (f_i~a_1 … a_m )\]</div>
-</div>
-</div>
-<div class="section" id="fixpoint-definitions">
+</section>
+</section>
+<section id="fixpoint-definitions">
 <span id="id26"></span><h3>Fixpoint definitions<a class="headerlink" href="#fixpoint-definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The second operator for elimination is fixpoint definition. This
 fixpoint may involve several mutually recursive definitions. The basic
@@ -1824,7 +1742,7 @@ and are written</p>
 <p>with <span class="math notranslate nohighlight">\(t_i'\)</span> (resp. <span class="math notranslate nohighlight">\(A_i'\)</span>) representing the term <span class="math notranslate nohighlight">\(t_i\)</span> abstracted (resp.
 generalized) with respect to the bindings in the context Γ_i , namely
 <span class="math notranslate nohighlight">\(t_i'=λ Γ_i . t_i\)</span> and <span class="math notranslate nohighlight">\(A_i'=∀ Γ_i , A_i\)</span>.</p>
-<div class="section" id="id27">
+<section id="id27">
 <h4>Typing rule<a class="headerlink" href="#id27" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The typing rule is the expected one for a fixpoint.</p>
 <dl>
@@ -1950,8 +1868,8 @@ sizet, sizef are recursively defined (decreasing respectively on 1st,
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="reduction-rule">
+</section>
+<section id="reduction-rule">
 <span id="id29"></span><h4>Reduction rule<a class="headerlink" href="#reduction-rule" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>Let <span class="math notranslate nohighlight">\(F\)</span> be the set of declarations:
 <span class="math notranslate nohighlight">\(f_1 /k_1 :A_1 :=t_1 …f_n /k_n :A_n:=t_n\)</span>.
@@ -1972,10 +1890,10 @@ possible:</p>
  \end{eqnarray*}}</div><p id="mutual-induction"><strong>Mutual induction</strong></p>
 <p>The principles of mutual induction can be automatically generated
 using the Scheme command described in Section <a class="reference internal" href="../user-extensions/proof-schemes.html#proofschemes-induction-principles"><span class="std std-ref">Generation of induction principles with Scheme</span></a>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="admissible-rules-for-global-environments">
+</section>
+</section>
+</section>
+<section id="admissible-rules-for-global-environments">
 <span id="id30"></span><h2>Admissible rules for global environments<a class="headerlink" href="#admissible-rules-for-global-environments" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>From the original rules of the type system, one can show the
 admissibility of rules which change the local context of definition of
@@ -2046,14 +1964,14 @@ c~\kw{does not occur in}~E′~\kw{and}~Γ%
 }\]</div>
 </dd>
 </dl>
-</div>
-<div class="section" id="co-inductive-types">
+</section>
+<section id="co-inductive-types">
 <span id="id31"></span><h2>Co-inductive types<a class="headerlink" href="#co-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The implementation contains also co-inductive definitions, which are
 types inhabited by infinite objects. More information on co-inductive
 definitions can be found in <a class="bibtex reference internal" href="../zebibliography.html#gimenez95b" id="id32">[Gimenez95]</a><a class="bibtex reference internal" href="../zebibliography.html#gim98" id="id33">[Gimenez98]</a><a class="bibtex reference internal" href="../zebibliography.html#gimcas05" id="id34">[GimenezCasteran05]</a>.</p>
-</div>
-<div class="section" id="the-calculus-of-inductive-constructions-with-impredicative-set">
+</section>
+<section id="the-calculus-of-inductive-constructions-with-impredicative-set">
 <span id="the-calculus-of-inductive-construction-with-impredicative-set"></span><h2>The Calculus of Inductive Constructions with impredicative Set<a class="headerlink" href="#the-calculus-of-inductive-constructions-with-impredicative-set" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><span class="smallcaps">Coq</span> can be used as a type checker for the Calculus of Inductive
 Constructions with an impredicative sort <span class="math notranslate nohighlight">\(\Set\)</span> by using the compiler
@@ -2113,56 +2031,38 @@ s ∈ \{\Type(i)\}%
 }\]</div>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="module-system.html" class="btn btn-neutral float-right" title="The Module System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="coq-library.html" class="btn btn-neutral float-left" title="The Coq library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="coq-library.html" class="btn btn-neutral float-left" title="The Coq library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="module-system.html" class="btn btn-neutral float-right" title="The Module System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

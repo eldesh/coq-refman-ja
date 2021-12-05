@@ -1,78 +1,43 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>はじめに &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/notations.js"></script>
-        <script src="_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/notations.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
     <link rel="next" title="Index" href="genindex.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="#" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -80,18 +45,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coq-cmdindex.html">Command index</a></li>
@@ -99,20 +54,20 @@
 <li class="toctree-l1"><a class="reference internal" href="coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">はじめに</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proof-engine/proof-handling.html">Proof handling</a></li>
@@ -121,23 +76,23 @@
 <li class="toctree-l1"><a class="reference internal" href="proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -149,75 +104,35 @@
 <li class="toctree-l1"><a class="reference internal" href="addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="#">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
-      <li>はじめに</li>
-    
-    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Introduction</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/index.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -308,46 +223,116 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="introduction">
-<span id="id1"></span><h1>はじめに<a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>この文書は証明アシスタント <span class="smallcaps">Coq</span> のリファレンスマニュアルです。Coqを初めて使う方は、まずチュートリアルを読むことをお勧めします。<a class="reference external" href="https://coq.inria.fr/documentation">https://coq.inria.fr/documentation</a> や <a class="reference external" href="https://github.com/coq/coq/wiki#coq-tutorials">https://github.com/coq/coq/wiki#coq-tutorials</a> には、幾つかのチュートリアルへのリンクがあります。</p>
-<p><span class="smallcaps">Coq</span> は、数学的な証明を構築するためにデザインされました。特に、形式仕様やプログラムを記述したり、プログラムが仕様に沿っていることを検証することを目的としています。Coqは、 <span class="smallcaps">Gallina</span> と呼ばれる仕様記述言語を提供します。<span class="smallcaps">Gallina</span> の項はプログラム・プログラムの性質・性質の証明を表現できます。<em>カリー・ハワード同型対応</em> を使えば、プログラム・性質・証明は全て <em>Calculus of Inductive Constructions</em> という一つの言語で表現できます。これは <span class="math notranslate nohighlight">\(\lambda\)</span> 計算にリッチな型システムが付いたものです。<span class="smallcaps">Coq</span> における論理的判断は全て型付け判断です。<span class="smallcaps">Coq</span> システムの心臓部は型検査アルゴリズムで、これは証明の正しさを検査します。言い換えれば、このアルゴリズムはプログラムがその仕様に準拠するか検査します。また、<span class="smallcaps">Coq</span> は、 <em>タクティック</em> と呼ばれるプログラムを用いて証明を構築する、対話的証明アシスタントも提供します。</p>
-<p><span class="smallcaps">Coq</span> が提供する全てのサービスは、 <em>Vernacular</em> と呼ばれるコマンド言語を読み込ませることで利用できます。</p>
-<p>Coq には、ユーザが入力した端からコマンドを実行していく対話モードと、ファイルに書かれたコマンドを順に実行していくコンパイルモードがあります。</p>
+<section id="introduction">
+<span id="id1"></span><h1>Introduction<a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>This document is the Reference Manual of the <span class="smallcaps">Coq</span> proof assistant.
+To start using Coq, it is advised to first read a tutorial.
+Links to several tutorials can be found at
+<a class="reference external" href="https://coq.inria.fr/documentation">https://coq.inria.fr/documentation</a> and
+<a class="reference external" href="https://github.com/coq/coq/wiki#coq-tutorials">https://github.com/coq/coq/wiki#coq-tutorials</a></p>
+<p>The <span class="smallcaps">Coq</span> system is designed to develop mathematical proofs, and
+especially to write formal specifications, programs and to verify that
+programs are correct with respect to their specifications. It provides a
+specification language named <span class="smallcaps">Gallina</span>. Terms of <span class="smallcaps">Gallina</span> can represent
+programs as well as properties of these programs and proofs of these
+properties. Using the so-called <em>Curry-Howard isomorphism</em>, programs,
+properties and proofs are formalized in the same language called
+<em>Calculus of Inductive Constructions</em>, that is a
+<span class="math notranslate nohighlight">\(\lambda\)</span>-calculus with a rich type system. All logical judgments
+in <span class="smallcaps">Coq</span> are typing judgments. The very heart of the <span class="smallcaps">Coq</span> system is the
+type checking algorithm that checks the correctness of proofs, in other
+words that checks that a program complies to its specification. <span class="smallcaps">Coq</span> also
+provides an interactive proof assistant to build proofs using specific
+programs called <em>tactics</em>.</p>
+<p>All services of the <span class="smallcaps">Coq</span> proof assistant are accessible by interpretation
+of a command language called <em>the vernacular</em>.</p>
+<p>Coq has an interactive mode in which commands are interpreted as the
+user types them in from the keyboard and a compiled mode where commands
+are processed from a file.</p>
 <ul class="simple">
-<li><p>対話モードでは、ユーザは順を追って証明を構築したり、利用できる定理や定義をシステムに問い合わせたりできます。対話モードは一般的に, CoqIDE (<a class="reference internal" href="practical-tools/coqide.html#coqintegrateddevelopmentenvironment"><span class="std std-ref">Coq Integrated Development Environment</span></a> にて記載)やProof-General <a class="bibtex reference internal" href="zebibliography.html#asp00" id="id2">[Asp00]</a> <a class="footnote-reference brackets" href="#pg" id="id3">1</a> を入れた Emacs 、またはブラウザ上で動作する jsCoq (<a class="reference external" href="https://github.com/ejgallego/jscoq">https://github.com/ejgallego/jscoq</a>) のようなIDEの助けを借りて実行されます。デバッグのために、 read-eval-print-loop である <cite>coqtop</cite> を直接用いることもできます。</p></li>
-<li><p>コンパイルモードは、開発したもの全てを受け取り、その正当性を保証する証明チェッカとして機能します。さらに、 <span class="smallcaps">Coq</span> コンパイラは、入力のコンパクトな表現を持つ出力ファイルを生成します。コンパイルモードは <cite>coqc</cite> コマンドで実行されます。</p></li>
+<li><p>In interactive mode, users can develop their theories and proofs step by
+step, and query the system for available theorems and definitions. The
+interactive mode is generally run with the help of an IDE, such
+as CoqIDE, documented in <a class="reference internal" href="practical-tools/coqide.html#coqintegrateddevelopmentenvironment"><span class="std std-ref">Coq Integrated Development Environment</span></a>,
+Emacs with Proof-General <a class="bibtex reference internal" href="zebibliography.html#asp00" id="id2">[Asp00]</a> <a class="footnote-reference brackets" href="#pg" id="id3">1</a>,
+or jsCoq to run Coq in your browser (see <a class="reference external" href="https://github.com/ejgallego/jscoq">https://github.com/ejgallego/jscoq</a>).
+The <cite>coqtop</cite> read-eval-print-loop can also be used directly, for debugging
+purposes.</p></li>
+<li><p>The compiled mode acts as a proof checker taking a file containing a
+whole development in order to ensure its correctness. Moreover,
+<span class="smallcaps">Coq</span>’s compiler provides an output file containing a compact
+representation of its input. The compiled mode is run with the <cite>coqc</cite>
+command.</p></li>
 </ul>
 <div class="admonition seealso">
 <p class="admonition-title">参考</p>
 <p><a class="reference internal" href="practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a>.</p>
 </div>
-<div class="section" id="how-to-read-this-book">
-<h2>この文書の読み方<a class="headerlink" href="#how-to-read-this-book" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>この文書はリファレンスマニュアルであり、通読するものではありません。目的の文書を素早く見つけるために、色々な索引を使うことをお勧めします。総合索引に加え、タクティックやコマンド、エラーメッセージ・警告に特化した索引があります。とはいえ、このマニュアルも以下のような構造を持っています。</p>
+<section id="how-to-read-this-book">
+<h2>How to read this book<a class="headerlink" href="#how-to-read-this-book" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This is a Reference Manual, so it is not intended for continuous reading.
+We recommend using the various indexes to quickly locate the documentation
+you are looking for. There is a global index, and a number of specific indexes
+for tactics, vernacular commands, and error messages and warnings.
+Nonetheless, the manual has some structure that is explained below.</p>
 <ul class="simple">
-<li><p>第1部では、仕様記述言語 <span class="smallcaps">Gallina</span> について説明します。<a class="reference internal" href="language/gallina-specification-language.html#gallinaspecificationlanguage"><span class="std std-ref">仕様記述言語 Gallina</span></a> および <a class="reference internal" href="language/gallina-extensions.html#extensionsofgallina"><span class="std std-ref">Gallina の拡張</span></a> の章では、構文および Calculus of Inductive Constructions におけるプログラムや証明・定理の意味について説明します。<a class="reference internal" href="language/coq-library.html#thecoqlibrary"><span class="std std-ref">The Coq library</span></a> の章では <span class="smallcaps">Coq</span> の標準ライブラリについて説明します。<a class="reference internal" href="language/cic.html#calculusofinductiveconstructions"><span class="std std-ref">Calculus of Inductive Constructions</span></a> の章は数学の形式的な説明です。<a class="reference internal" href="language/module-system.html#themodulesystem"><span class="std std-ref">The Module System</span></a> の章ではモジュールシステムについて説明します。</p></li>
-<li><p>第2部では、証明エンジンについて説明します。ここは6つの章に分かれています。<a class="reference internal" href="proof-engine/vernacular-commands.html#vernacularcommands"><span class="std std-ref">Vernacular commands</span></a> の章では、対話的証明と直接的には関係のないコマンド (<em>Vernacular コマンド</em>) を全て挙げます。コマンドは、環境への要求、完全/部分的な評価、ファイルの読み込みやコンパイルなどを行います。どのように証明を始め、終わればいいのか、どうすれば証明を並行して進めることができるかは、 <a class="reference internal" href="proof-engine/proof-handling.html#proofhandling"><span class="std std-ref">Proof handling</span></a> の章で説明しています。<a class="reference internal" href="proof-engine/tactics.html#tactics"><span class="std std-ref">Tactics</span></a> の章では、証明の1つまたは複数のステップを成すコマンド (<em>タクティック</em>) を全て挙げます。これらのタクティックを組み合わせて複雑な証明戦略を作るための言語については <a class="reference internal" href="proof-engine/ltac.html#ltac"><span class="std std-ref">The tactic language</span></a> の章で述べています。タクティックの具体例は <a class="reference internal" href="proof-engine/detailed-tactic-examples.html#detailedexamplesoftactics"><span class="std std-ref">Detailed examples of tactics</span></a> の章で説明します。最後に、証明言語 <span class="smallcaps">SSReflect</span> について <a class="reference internal" href="proof-engine/ssreflect-proof-language.html#thessreflectprooflanguage"><span class="std std-ref">The SSReflect proof language</span></a> の章で説明します。</p></li>
-<li><p>第3部は、 <a class="reference internal" href="user-extensions/syntax-extensions.html#syntaxextensionsandinterpretationscopes"><span class="std std-ref">Syntax extensions and interpretation scopes</span></a> の章で|Coq| の構文の拡張方法を、 <a class="reference internal" href="user-extensions/proof-schemes.html#proofschemes"><span class="std std-ref">Proof schemes</span></a> の章で帰納法の原理を新たに定義する方法を説明しています。</p></li>
-<li><p>第4部はより実用的なツールについて文書化しています。まず、 <a class="reference internal" href="practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a> の章で、<cite>coqc</cite> (コンパイルモード) と <cite>coqtop</cite> (対話モード) の使い方およびオプションについて説明します。次に、 <a class="reference internal" href="practical-tools/utilities.html#utilities"><span class="std std-ref">Utilities</span></a> の章で、 <span class="smallcaps">Coq</span> ディストリビューションに付属する様々なユーティリティについて説明します。最後に、 <a class="reference internal" href="practical-tools/coqide.html#coqintegrateddevelopmentenvironment"><span class="std std-ref">Coq Integrated Development Environment</span></a> の章で、 CoqIDE について説明します。</p></li>
-<li><p>第5部では、型強制・正準構造・型クラス・プログラム抽出・特殊なソルバとタクティックといった、いくつかの高度な機能について説明します。全ての項目を知りたい場合は、目次を参照してください。</p></li>
+<li><p>The first part describes the specification language, <span class="smallcaps">Gallina</span>.
+Chapters <a class="reference internal" href="language/gallina-specification-language.html#gallinaspecificationlanguage"><span class="std std-ref">The Gallina specification language</span></a> and <a class="reference internal" href="language/gallina-extensions.html#extensionsofgallina"><span class="std std-ref">Extensions of Gallina</span></a> describe the concrete
+syntax as well as the meaning of programs, theorems and proofs in the
+Calculus of Inductive Constructions. Chapter <a class="reference internal" href="language/coq-library.html#thecoqlibrary"><span class="std std-ref">The Coq library</span></a> describes the
+standard library of <span class="smallcaps">Coq</span>. Chapter <a class="reference internal" href="language/cic.html#calculusofinductiveconstructions"><span class="std std-ref">Calculus of Inductive Constructions</span></a> is a mathematical description
+of the formalism. Chapter <a class="reference internal" href="language/module-system.html#themodulesystem"><span class="std std-ref">The Module System</span></a> describes the module
+system.</p></li>
+<li><p>The second part describes the proof engine. It is divided in six
+chapters. Chapter <a class="reference internal" href="proof-engine/vernacular-commands.html#vernacularcommands"><span class="std std-ref">Vernacular commands</span></a> presents all commands (we
+call them <em>vernacular commands</em>) that are not directly related to
+interactive proving: requests to the environment, complete or partial
+evaluation, loading and compiling files. How to start and stop
+proofs, do multiple proofs in parallel is explained in
+Chapter <a class="reference internal" href="proof-engine/proof-handling.html#proofhandling"><span class="std std-ref">Proof handling</span></a>. In Chapter <a class="reference internal" href="proof-engine/tactics.html#tactics"><span class="std std-ref">Tactics</span></a>, all commands that
+realize one or more steps of the proof are presented: we call them
+<em>tactics</em>. The language to combine these tactics into complex proof
+strategies is given in Chapter <a class="reference internal" href="proof-engine/ltac.html#ltac"><span class="std std-ref">The tactic language</span></a>. Examples of tactics
+are described in Chapter <a class="reference internal" href="proof-engine/detailed-tactic-examples.html#detailedexamplesoftactics"><span class="std std-ref">Detailed examples of tactics</span></a>.
+Finally, the <span class="smallcaps">SSReflect</span> proof language is presented in
+Chapter <a class="reference internal" href="proof-engine/ssreflect-proof-language.html#thessreflectprooflanguage"><span class="std std-ref">The SSReflect proof language</span></a>.</p></li>
+<li><p>The third part describes how to extend the syntax of <span class="smallcaps">Coq</span> in
+Chapter <a class="reference internal" href="user-extensions/syntax-extensions.html#syntaxextensionsandinterpretationscopes"><span class="std std-ref">Syntax extensions and interpretation scopes</span></a> and how to define
+new induction principles in Chapter <a class="reference internal" href="user-extensions/proof-schemes.html#proofschemes"><span class="std std-ref">Proof schemes</span></a>.</p></li>
+<li><p>In the fourth part more practical tools are documented. First in
+Chapter <a class="reference internal" href="practical-tools/coq-commands.html#thecoqcommands"><span class="std std-ref">The Coq commands</span></a>, the usage of <cite>coqc</cite> (batch mode) and
+<cite>coqtop</cite> (interactive mode) with their options is described. Then,
+in Chapter <a class="reference internal" href="practical-tools/utilities.html#utilities"><span class="std std-ref">Utilities</span></a>, various utilities that come with the
+<span class="smallcaps">Coq</span> distribution are presented. Finally, Chapter <a class="reference internal" href="practical-tools/coqide.html#coqintegrateddevelopmentenvironment"><span class="std std-ref">Coq Integrated Development Environment</span></a>
+describes CoqIDE.</p></li>
+<li><p>The fifth part documents a number of advanced features, including coercions,
+canonical structures, typeclasses, program extraction, and specialized
+solvers and tactics. See the table of contents for a complete list.</p></li>
 </ul>
-</div>
-<div class="section" id="list-of-additional-documentation">
-<h2>その他の文書一覧<a class="headerlink" href="#list-of-additional-documentation" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>このマニュアルは <span class="smallcaps">Coq</span> についてユーザが求める文書が全て含まれているわけではありません。以下の文書からも様々な情報を得ることができます。</p>
+</section>
+<section id="list-of-additional-documentation">
+<h2>List of additional documentation<a class="headerlink" href="#list-of-additional-documentation" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This manual does not contain all the documentation the user may need
+about <span class="smallcaps">Coq</span>. Various informations can be found in the following documents:</p>
 <dl class="simple">
-<dt>チュートリアル</dt><dd><p>このマニュアルと対を成す <span class="smallcaps">Coq</span> チュートリアルは、新規ユーザが型理論の知識なしに <span class="smallcaps">Coq</span> で証明を構築できるようになるまで、優しく導入することを目的としています。その後は、再帰型についてのチュートリアル (<cite>RecTutorial.ps</cite>) を読むのもいいでしょう。</p>
+<dt>Tutorial</dt><dd><p>A companion volume to this reference manual, the <span class="smallcaps">Coq</span> Tutorial, is
+aimed at gently introducing new users to developing proofs in <span class="smallcaps">Coq</span>
+without assuming prior knowledge of type theory. In a second step,
+the user can read also the tutorial on recursive types (document
+<cite>RecTutorial.ps</cite>).</p>
 </dd>
-<dt>インストール方法</dt><dd><p>ソースに付属するテキストファイル <cite>INSTALL</cite> では、 <span class="smallcaps">Coq</span> をインストールする方法について説明しています。</p>
+<dt>Installation</dt><dd><p>A text file <cite>INSTALL</cite> that comes with the sources explains how to
+install <span class="smallcaps">Coq</span>.</p>
 </dd>
-<dt><span class="smallcaps">Coq</span> 標準ライブラリ</dt><dd><p><span class="smallcaps">Coq</span> 標準ライブラリのコメント付きソースコード (仕様のみで、証明を省いたもの)は <a class="reference external" href="https://coq.inria.fr/stdlib/">https://coq.inria.fr/stdlib/</a> で閲覧できます。</p>
+<dt>The <span class="smallcaps">Coq</span> standard library</dt><dd><p>A commented version of sources of the <span class="smallcaps">Coq</span> standard library
+(including only the specifications, the proofs are removed) is
+available at <a class="reference external" href="https://coq.inria.fr/stdlib/">https://coq.inria.fr/stdlib/</a>.</p>
 </dd>
 </dl>
-<div class="section" id="table-of-contents">
-<h3>目次<a class="headerlink" href="#table-of-contents" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="table-of-contents">
+<h3>Table of contents<a class="headerlink" href="#table-of-contents" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">索引</span></p>
+<p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coq-cmdindex.html">Command index</a></li>
@@ -357,9 +342,9 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">はじめに</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="credits.html#credits-addendum-for-version-6-1">Credits: addendum for version 6.1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="credits.html#credits-addendum-for-version-6-2">Credits: addendum for version 6.2</a></li>
@@ -379,11 +364,11 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="language/gallina-specification-language.html">仕様記述言語 Gallina</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-specification-language.html#about-the-grammars-in-the-manual">マニュアル中の文法について</a></li>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-specification-language.html#lexical-conventions">字句規則</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/gallina-specification-language.html">The Gallina specification language</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-specification-language.html#about-the-grammars-in-the-manual">About the grammars in the manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-specification-language.html#lexical-conventions">Lexical conventions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language/gallina-specification-language.html#terms">Terms</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-specification-language.html#syntax-of-terms">Syntax of terms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-specification-language.html#types">Types</a></li>
@@ -423,12 +408,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#record-types">レコード型</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#primitive-projections">プリミティブ射影</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="language/gallina-extensions.html#primitive-record-types">プリミティブレコード型</a></li>
-<li class="toctree-l4"><a class="reference internal" href="language/gallina-extensions.html#reduction">簡約</a></li>
-<li class="toctree-l4"><a class="reference internal" href="language/gallina-extensions.html#compatibility-projections-and-match">互換性射影と <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">match</span></span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#record-types">Record types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#primitive-projections">Primitive Projections</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="language/gallina-extensions.html#primitive-record-types">Primitive Record Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="language/gallina-extensions.html#reduction">Reduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="language/gallina-extensions.html#compatibility-projections-and-match">Compatibility Projections and <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">match</span></span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -453,7 +438,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#advanced-recursive-functions">高度な再帰関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#advanced-recursive-functions">Advanced recursive functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#section-mechanism">Section mechanism</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#module-system">Module system</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#reserved-commands-inside-an-interactive-module">Reserved commands inside an interactive module</a></li>
@@ -491,14 +476,14 @@
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#explicit-displaying-of-implicit-arguments-for-pretty-printing">Explicit displaying of implicit arguments for pretty-printing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#interaction-with-subtyping">Interaction with subtyping</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#deactivation-of-implicit-arguments-for-parsing">Deactivation of implicit arguments for parsing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#canonical-structures">正準構造</a></li>
-<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#implicit-types-of-variables">変数の暗黙の型</a></li>
-<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#implicit-generalization">暗黙の一般化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#canonical-structures">Canonical structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#implicit-types-of-variables">Implicit types of variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#implicit-generalization">Implicit generalization</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#coercions">コアーション</a></li>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#printing-constructions-in-full">全ての構成を表示する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#printing-universes">ユニバースを表示する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#coercions">Coercions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#printing-constructions-in-full">Printing constructions in full</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#printing-universes">Printing universes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language/gallina-extensions.html#existential-variables">Existential variables</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#explicit-displaying-of-existential-instances-for-pretty-printing">Explicit displaying of existential instances for pretty-printing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/gallina-extensions.html#solving-existential-variables-using-tactics">Solving existential variables using tactics</a></li>
@@ -596,7 +581,7 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="proof-engine/vernacular-commands.html">Vernacular commands</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#displaying">Displaying</a></li>
@@ -606,7 +591,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#requests-to-the-environment">Requests to the environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#loading-files">Loading files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#compiled-files">コンパイルされたファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#compiled-files">Compiled files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#loadpath">Loadpath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#backtracking">Backtracking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="proof-engine/vernacular-commands.html#quitting-and-debugging">Quitting and debugging</a></li>
@@ -742,7 +727,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="proof-engine/ssreflect-proof-language.html#introduction">はじめに</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="proof-engine/ssreflect-proof-language.html#introduction">Introduction</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="proof-engine/ssreflect-proof-language.html#acknowledgments">Acknowledgments</a></li>
 </ul>
 </li>
@@ -866,7 +851,7 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="user-extensions/syntax-extensions.html#notations">Notations</a><ul>
@@ -928,7 +913,7 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="practical-tools/coq-commands.html#interactive-use-coqtop">Interactive use (coqtop)</a></li>
@@ -1003,7 +988,7 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="addendum/extended-pattern-matching.html">Extended pattern matching</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="addendum/extended-pattern-matching.html#patterns">Patterns</a></li>
@@ -1033,7 +1018,7 @@
 <li class="toctree-l1"><a class="reference internal" href="addendum/implicit-coercions.html">Implicit Coercions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#general-presentation">General Presentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#classes">Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#coercions">コアーション</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#coercions">Coercions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#identity-coercions">Identity Coercions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#inheritance-graph">Inheritance Graph</a></li>
 <li class="toctree-l2"><a class="reference internal" href="addendum/implicit-coercions.html#declaring-coercions">Declaring Coercions</a></li>
@@ -1050,31 +1035,31 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="addendum/canonical-structures.html">正準構造</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="addendum/canonical-structures.html#notation-overloading">表記法オーバーローディング</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="addendum/canonical-structures.html#derived-canonical-structures">派生した正準構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/canonical-structures.html">Canonical Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="addendum/canonical-structures.html#notation-overloading">Notation overloading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="addendum/canonical-structures.html#derived-canonical-structures">Derived Canonical Structures</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/canonical-structures.html#hierarchy-of-structures">構造の階層</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="addendum/canonical-structures.html#compact-declaration-of-canonical-structures">正準構造のコンパクトな定義</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/canonical-structures.html#hierarchy-of-structures">Hierarchy of structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="addendum/canonical-structures.html#compact-declaration-of-canonical-structures">Compact declaration of Canonical Structures</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="addendum/type-classes.html">型クラス</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#class-and-instance-declarations">クラスとインスタンスの宣言</a></li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#binding-classes">クラスの束縛</a></li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#parameterized-instances">パラメータ化されたインスタンス</a></li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#sections-and-contexts">セクションとコンテキスト</a></li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#building-hierarchies">階層の構築</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#superclasses">スーパークラス</a></li>
-<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#substructures">部分構造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addendum/type-classes.html">Type Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#class-and-instance-declarations">Class and Instance declarations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#binding-classes">Binding classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#parameterized-instances">Parameterized Instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#sections-and-contexts">Sections and contexts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#building-hierarchies">Building hierarchies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#superclasses">Superclasses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#substructures">Substructures</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#summary-of-the-commands">コマンドの概要</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#typeclasses-transparent-typclasses-opaque">透明な型クラス、不透明な型クラス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addendum/type-classes.html#summary-of-the-commands">Summary of the commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#typeclasses-transparent-typclasses-opaque">Typeclasses Transparent, Typclasses Opaque</a></li>
 <li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#options">Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#typeclasses-eauto">型クラスの eauto <cite>:=</cite></a></li>
+<li class="toctree-l3"><a class="reference internal" href="addendum/type-classes.html#typeclasses-eauto">Typeclasses eauto <cite>:=</cite></a></li>
 </ul>
 </li>
 </ul>
@@ -1227,69 +1212,58 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="zebibliography.html">Bibliography</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="license">
-<h3>ライセンス<a class="headerlink" href="#license" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>この作品 (Coq リファレンスマニュアル) はオープン・パブリケーション利用許諾契約書 (v1.0 かそれ以降) で指定された条件と制約に従う限り配布することができる(契約書の最新の版は現在のところ <a class="reference external" href="http://www.opencontent.org/openpub">http://www.opencontent.org/openpub</a>/で入手可能である)。オプションAおよびBは選択しない。</p>
+</section>
+<section id="license">
+<h3>License<a class="headerlink" href="#license" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>This material (the Coq Reference Manual) may be distributed only subject to the
+terms and conditions set forth in the Open Publication License, v1.0 or later
+(the latest version is presently available at
+<a class="reference external" href="http://www.opencontent.org/openpub">http://www.opencontent.org/openpub</a>). Options A and B are not elected.</p>
 <dl class="footnote brackets">
 <dt class="label" id="pg"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
-<dd><p>Proof-General は <a class="reference external" href="https://proofgeneral.github.io">https://proofgeneral.github.io</a>/から入手可能です。また、マイナーモード Company-Coq <a class="bibtex reference internal" href="zebibliography.html#pit16" id="id4">[PCC16]</a> (<a class="reference external" href="https://github.com/cpitclaudel/company-coq">https://github.com/cpitclaudel/company-coq</a>) で拡張することもできます。</p>
+<dd><p>Proof-General is available at <a class="reference external" href="https://proofgeneral.github.io/">https://proofgeneral.github.io/</a>.
+Optionally, you can enhance it with the minor mode
+Company-Coq <a class="bibtex reference internal" href="zebibliography.html#pit16" id="id4">[PCC16]</a>
+(see <a class="reference external" href="https://github.com/cpitclaudel/company-coq">https://github.com/cpitclaudel/company-coq</a>).</p>
 </dd>
 </dl>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="genindex.html" class="btn btn-neutral float-right" title="Index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="genindex.html" class="btn btn-neutral float-right" title="Index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

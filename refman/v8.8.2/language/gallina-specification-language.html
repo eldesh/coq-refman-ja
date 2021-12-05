@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>仕様記述言語 Gallina &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gallina specification language &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="Gallina の拡張" href="gallina-extensions.html" />
+    <link rel="next" title="Extensions of Gallina" href="gallina-extensions.html" />
     <link rel="prev" title="Credits" href="../credits.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,16 +55,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">仕様記述言語 Gallina</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#about-the-grammars-in-the-manual">マニュアル中の文法について</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#lexical-conventions">字句規則</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Gallina specification language</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-grammars-in-the-manual">About the grammars in the manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lexical-conventions">Lexical conventions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#terms">Terms</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#syntax-of-terms">Syntax of terms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#types">Types</a></li>
@@ -149,12 +104,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -163,23 +118,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -191,75 +146,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>仕様記述言語 Gallina</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>The Gallina specification language</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/language/gallina-specification-language.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -350,70 +265,107 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="the-gallina-specification-language">
-<span id="gallinaspecificationlanguage"></span><h1>仕様記述言語 Gallina<a class="headerlink" href="#the-gallina-specification-language" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>この章では Coq の仕様記述言語である Gallina について記述します。それは数学的な定理を開発したりプログラムの仕様を証明することが出来ます. 定理とは公理、仮定、パラメータ、補題、定理や定数、関数、命題の定義、それに集合から構築されます。定理に含まれている論理オブジェクトの構文は <a class="reference internal" href="#term"><span class="std std-ref">Terms</span></a> の節で述べられています。そのコマンド言語は <em>Vernacular</em> と呼ばれ、<a class="reference internal" href="#vernacular"><span class="std std-ref">The Vernacular</span></a> の節で説明されます。</p>
-<p>Coq では、論理オブジェクトはそれらの論理的整合性を保証するために型付けられます。その規則は型付けアルゴリズムによって実装され、<a class="reference internal" href="cic.html#calculusofinductiveconstructions"><span class="std std-ref">Calculus of Inductive Constructions</span></a> の章で述べられています。</p>
-<div class="section" id="about-the-grammars-in-the-manual">
-<h2>マニュアル中の文法について<a class="headerlink" href="#about-the-grammars-in-the-manual" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>文法はバッカスナウアー記法 (BNF)で与えられます。終端記号は黒の <code class="docutils literal notranslate"><span class="pre">タイプライター体</span></code> で表されます。さらに、正規表現については特別な記法があります。</p>
-<p>角カッコ <code class="docutils literal notranslate"><span class="pre">[…]</span></code> で囲まれた式はこの式が最大一で度だけ出現することを意味します (これはオプショナルな部品に対応します)。</p>
-<p>“<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry</span></code>” という記法はエントリーでパースされリテラル “<code class="docutils literal notranslate"><span class="pre">sep</span></code>” <a class="footnote-reference brackets" href="#id6" id="id1">1</a> で分割された式の非空の列を表します。</p>
-<p>同じように、 “<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">…</span> <span class="pre">entry</span></code>” という記法は間にセパレータ無しに “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” エントリーによってパースされた非空の列を表します。</p>
-<p>最後に、 “<code class="docutils literal notranslate"><span class="pre">[entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry]</span></code>” という記法は “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” エントリーによってパースされリテラル “<code class="docutils literal notranslate"><span class="pre">sep</span></code>” によって分割された空になり得る式の列を表します。</p>
-</div>
-<div class="section" id="lexical-conventions">
-<span id="id2"></span><h2>字句規則<a class="headerlink" href="#lexical-conventions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="the-gallina-specification-language">
+<span id="gallinaspecificationlanguage"></span><h1>The Gallina specification language<a class="headerlink" href="#the-gallina-specification-language" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>This chapter describes Gallina, the specification language of Coq. It allows
+developing mathematical theories and to prove specifications of programs. The
+theories are built from axioms, hypotheses, parameters, lemmas, theorems and
+definitions of constants, functions, predicates and sets. The syntax of logical
+objects involved in theories is described in Section <a class="reference internal" href="#term"><span class="std std-ref">Terms</span></a>. The
+language of commands, called <em>The Vernacular</em> is described in Section
+<a class="reference internal" href="#vernacular"><span class="std std-ref">The Vernacular</span></a>.</p>
+<p>In Coq, logical objects are typed to ensure their logical correctness.  The
+rules implemented by the typing algorithm are described in Chapter <a class="reference internal" href="cic.html#calculusofinductiveconstructions"><span class="std std-ref">Calculus of Inductive Constructions</span></a>.</p>
+<section id="about-the-grammars-in-the-manual">
+<h2>About the grammars in the manual<a class="headerlink" href="#about-the-grammars-in-the-manual" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Grammars are presented in Backus-Naur form (BNF). Terminal symbols are
+set in black <code class="docutils literal notranslate"><span class="pre">typewriter</span> <span class="pre">font</span></code>. In addition, there are special notations for
+regular expressions.</p>
+<p>An expression enclosed in square brackets <code class="docutils literal notranslate"><span class="pre">[…]</span></code> means at most one
+occurrence of this expression (this corresponds to an optional
+component).</p>
+<p>The notation “<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry</span></code>” stands for a non empty sequence
+of expressions parsed by entry and separated by the literal “<code class="docutils literal notranslate"><span class="pre">sep</span></code>” <a class="footnote-reference brackets" href="#id6" id="id1">1</a>.</p>
+<p>Similarly, the notation “<code class="docutils literal notranslate"><span class="pre">entry</span> <span class="pre">…</span> <span class="pre">entry</span></code>” stands for a non empty
+sequence of expressions parsed by the “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” entry, without any
+separator between.</p>
+<p>At the end, the notation “<code class="docutils literal notranslate"><span class="pre">[entry</span> <span class="pre">sep</span> <span class="pre">…</span> <span class="pre">sep</span> <span class="pre">entry]</span></code>” stands for a
+possibly empty sequence of expressions parsed by the “<code class="docutils literal notranslate"><span class="pre">entry</span></code>” entry,
+separated by the literal “<code class="docutils literal notranslate"><span class="pre">sep</span></code>”.</p>
+</section>
+<section id="lexical-conventions">
+<span id="id2"></span><h2>Lexical conventions<a class="headerlink" href="#lexical-conventions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl>
-<dt>空白</dt><dd><p>スペース、改行、水平タブは空白とみなされます。空白は無視されますが、トークンを分割します。</p>
+<dt>Blanks</dt><dd><p>Space, newline and horizontal tabulation are considered as blanks.
+Blanks are ignored but they separate tokens.</p>
 </dd>
-<dt>コメント</dt><dd><p>Coq のコメントは <code class="docutils literal notranslate"><span class="pre">(*</span></code> と <code class="docutils literal notranslate"><span class="pre">*)</span></code> の間に囲まれ、ネストできます。それは任意の文字を含むことができます。しかしながら、<a class="reference internal" href="#grammar-token-string"><code class="xref std std-token docutils literal notranslate"><span class="pre">string</span></code></a> リテラルは正しく閉じられていなければなりません。コメントは空白として扱われます。</p>
+<dt>Comments</dt><dd><p>Comments in Coq are enclosed between <code class="docutils literal notranslate"><span class="pre">(*</span></code> and <code class="docutils literal notranslate"><span class="pre">*)</span></code>, and can be nested.
+They can contain any character. However, <a class="reference internal" href="#grammar-token-string"><code class="xref std std-token docutils literal notranslate"><span class="pre">string</span></code></a> literals must be
+correctly closed. Comments are treated as blanks.</p>
 </dd>
-<dt>識別子とアクセス識別子</dt><dd><p>識別子は <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> と書かれ、文字、数字、<code class="docutils literal notranslate"><span class="pre">_</span></code>、<code class="docutils literal notranslate"><span class="pre">'</span></code> の列であり、数字や <code class="docutils literal notranslate"><span class="pre">'</span></code> から始まることはありません。つまり、以下の字句クラスで認識されます。</p>
+<dt>Identifiers and access identifiers</dt><dd><p>Identifiers, written <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a>, are sequences of letters, digits, <code class="docutils literal notranslate"><span class="pre">_</span></code> and
+<code class="docutils literal notranslate"><span class="pre">'</span></code>, that do not start with a digit or <code class="docutils literal notranslate"><span class="pre">'</span></code>. That is, they are
+recognized by the following lexical class:</p>
 <pre>
 <strong id="grammar-token-first-letter">first_letter     </strong> ::=  a..z ∣ A..Z ∣ _ ∣ unicode-letter
 <strong id="grammar-token-subsequent-letter">subsequent_letter</strong> ::=  a..z ∣ A..Z ∣ 0..9 ∣ _ ∣ ' ∣ unicode-letter ∣ unicode-id-part
 <strong id="grammar-token-ident">ident            </strong> ::=  <a class="reference internal" href="#grammar-token-first-letter"><code class="xref docutils literal notranslate"><span class="pre">first_letter</span></code></a>[<a class="reference internal" href="#grammar-token-subsequent-letter"><code class="xref docutils literal notranslate"><span class="pre">subsequent_letter</span></code></a>…<a class="reference internal" href="#grammar-token-subsequent-letter"><code class="xref docutils literal notranslate"><span class="pre">subsequent_letter</span></code></a>]
 <strong id="grammar-token-access-ident">access_ident     </strong> ::=  .<a class="reference internal" href="#grammar-token-ident"><code class="xref docutils literal notranslate"><span class="pre">ident</span></code></a>
 </pre>
-<p>全ての文字には意味があります。特に、識別子はケースセンシティブです。<code class="docutils literal notranslate"><span class="pre">unicode-letter</span></code> エントリは非網羅的にラテン語、ギリシャ語、ドイツ語、キリル文字、アラビア語、ヘブライ語、グルジア語、ハングル、ひらがなとカタカナ、CJK 表意文字、記号やハイフンやハードスペースのような数学記号、… を含んでいます。<code class="docutils literal notranslate"><span class="pre">unicode-id-part</span></code> エントリは非網羅的にプライム文字や下付き文字を含みます。</p>
-<p>アクセス識別子は、<a class="reference internal" href="#grammar-token-access-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">access_ident</span></code></a> と書かれ、空白無しに <cite>.</cite> (ドット) が接頭辞になる識別子です。それらは修飾された識別子の構文で使われます。</p>
+<p>All characters are meaningful. In particular, identifiers are case-sensitive.
+The entry <code class="docutils literal notranslate"><span class="pre">unicode-letter</span></code> non-exhaustively includes Latin,
+Greek, Gothic, Cyrillic, Arabic, Hebrew, Georgian, Hangul, Hiragana
+and Katakana characters, CJK ideographs, mathematical letter-like
+symbols, hyphens, non-breaking space, … The entry <code class="docutils literal notranslate"><span class="pre">unicode-id-part</span></code>
+non-exhaustively includes symbols for prime letters and subscripts.</p>
+<p>Access identifiers, written <a class="reference internal" href="#grammar-token-access-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">access_ident</span></code></a>, are identifiers prefixed by
+<cite>.</cite> (dot) without blank. They are used in the syntax of qualified
+identifiers.</p>
 </dd>
-<dt>自然数と整数</dt><dd><p>数の表示は数字の列です。整数は数の表記に任意にマイナス記号が前に付いたものです。</p>
+<dt>Natural numbers and integers</dt><dd><p>Numerals are sequences of digits. Integers are numerals optionally
+preceded by a minus sign.</p>
 <pre>
 <strong id="grammar-token-digit">digit  </strong> ::=  0..9
 <strong id="grammar-token-num">num    </strong> ::=  <a class="reference internal" href="#grammar-token-digit"><code class="xref docutils literal notranslate"><span class="pre">digit</span></code></a>…<a class="reference internal" href="#grammar-token-digit"><code class="xref docutils literal notranslate"><span class="pre">digit</span></code></a>
 <strong id="grammar-token-integer">integer</strong> ::=  [-]<a class="reference internal" href="#grammar-token-num"><code class="xref docutils literal notranslate"><span class="pre">num</span></code></a>
 </pre>
 </dd>
-<dt>文字列</dt><dd><p>文字列は <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (ダブルクォート) で区切られ、<code class="docutils literal notranslate"><span class="pre">&quot;</span></code> やダブルクォート文字を表すための列である <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> と異なる任意の文字の並びを囲んだものです。文法規則では、クォートされた文字列のエントリが <span class="inline-grammar-production"><span class="target" id="grammar-token-string"></span><code class="docutils literal notranslate"><span class="pre">string</span></code></span> です。</p>
+<dt>Strings</dt><dd><p>Strings are delimited by <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (double quote), and enclose a sequence of
+any characters different from <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> or the sequence <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> to denote the
+double quote character. In grammars, the entry for quoted strings is
+<span class="inline-grammar-production"><span class="target" id="grammar-token-string"></span><code class="docutils literal notranslate"><span class="pre">string</span></code></span>.</p>
 </dd>
-<dt>キーワード</dt><dd><p>以下の識別子は予約済みキーワードであり、他のものには使えません:</p>
+<dt>Keywords</dt><dd><p>The following identifiers are reserved keywords, and cannot be
+employed otherwise:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>_ as at cofix else end exists exists2 fix for
 forall fun if IF in let match mod Prop return
 Set then Type using where with
 </pre></div>
 </div>
 </dd>
-<dt>スペシャルトークン</dt><dd><p>aaaaaaaaaa以下の文字の列はスペシャルトークンです:</p>
+<dt>Special tokens</dt><dd><p>The following sequences of characters are special tokens:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>! % &amp; &amp;&amp; ( () ) * + ++ , - -&gt; . .( ..
 / /\ : :: :&lt; := :&gt; ; &lt; &lt;- &lt;-&gt; &lt;: &lt;= &lt;&gt; =
 =&gt; =_D &gt; &gt;-&gt; &gt;= ? ?= @ [ \/ ] ^ { | |-
 || } ~
 </pre></div>
 </div>
-<p>字句的な曖昧さは “最長マッチ” 規則に沿って解決されます: アルファベットや数字でない文字の列が幾つかの異なる方法で分離される時には、したがって最初のトークンは (その瞬間に定義されている全てのトークンの中で) 最長の可能なものなどになります。</p>
+<p>Lexical ambiguities are resolved according to the “longest match”
+rule: when a sequence of non alphanumerical characters can be
+decomposed into several different ways, then the first token is the
+longest possible one (among all tokens defined at this moment), and so
+on.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="terms">
+</section>
+<section id="terms">
 <span id="term"></span><h2>Terms<a class="headerlink" href="#terms" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="syntax-of-terms">
+<section id="syntax-of-terms">
 <h3>Syntax of terms<a class="headerlink" href="#syntax-of-terms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following grammars describe the basic syntax of the terms of the
 <em>Calculus of Inductive Constructions</em> (also called Cic). The formal
 presentation of Cic is given in Chapter <a class="reference internal" href="cic.html#calculusofinductiveconstructions"><span class="std std-ref">Calculus of Inductive Constructions</span></a>. Extensions of this syntax
-are given in Chapter <a class="reference internal" href="gallina-extensions.html#extensionsofgallina"><span class="std std-ref">Gallina の拡張</span></a>. How to customize the syntax
+are given in Chapter <a class="reference internal" href="gallina-extensions.html#extensionsofgallina"><span class="std std-ref">Extensions of Gallina</span></a>. How to customize the syntax
 is described in Chapter <a class="reference internal" href="../user-extensions/syntax-extensions.html#syntaxextensionsandinterpretationscopes"><span class="std std-ref">Syntax extensions and interpretation scopes</span></a>.</p>
 <pre>
 <strong id="grammar-token-term">term        </strong> ::=  forall <a class="reference internal" href="#grammar-token-binders"><code class="xref docutils literal notranslate"><span class="pre">binders</span></code></a> , <a class="reference internal" href="#grammar-token-term"><code class="xref docutils literal notranslate"><span class="pre">term</span></code></a>
@@ -472,14 +424,14 @@ is described in Chapter <a class="reference internal" href="../user-extensions/s
                   | ( <a class="reference internal" href="#grammar-token-or-pattern"><code class="xref docutils literal notranslate"><span class="pre">or_pattern</span></code></a> , … , <a class="reference internal" href="#grammar-token-or-pattern"><code class="xref docutils literal notranslate"><span class="pre">or_pattern</span></code></a> )
 <strong id="grammar-token-or-pattern">or_pattern  </strong> ::=  <a class="reference internal" href="#grammar-token-pattern"><code class="xref docutils literal notranslate"><span class="pre">pattern</span></code></a> | … | <a class="reference internal" href="#grammar-token-pattern"><code class="xref docutils literal notranslate"><span class="pre">pattern</span></code></a>
 </pre>
-</div>
-<div class="section" id="types">
+</section>
+<section id="types">
 <h3>Types<a class="headerlink" href="#types" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Coq terms are typed. Coq types are recognized by the same syntactic
 class as <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>. We denote by <span class="inline-grammar-production"><span class="target" id="grammar-token-type"></span><code class="docutils literal notranslate"><span class="pre">type</span></code></span> the semantic subclass
 of types inside the syntactic class <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>.</p>
-</div>
-<div class="section" id="qualified-identifiers-and-simple-identifiers">
+</section>
+<section id="qualified-identifiers-and-simple-identifiers">
 <span id="gallina-identifiers"></span><h3>Qualified identifiers and simple identifiers<a class="headerlink" href="#qualified-identifiers-and-simple-identifiers" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><em>Qualified identifiers</em> (<a class="reference internal" href="#grammar-token-qualid"><code class="xref std std-token docutils literal notranslate"><span class="pre">qualid</span></code></a>) denote <em>global constants</em>
 (definitions, lemmas, theorems, remarks or facts), <em>global variables</em>
@@ -487,8 +439,8 @@ of types inside the syntactic class <a class="reference internal" href="#grammar
 types</em>. <em>Simple identifiers</em> (or shortly <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a>) are a syntactic subset
 of qualified identifiers. Identifiers may also denote <em>local variables</em>,
 while qualified identifiers do not.</p>
-</div>
-<div class="section" id="numerals">
+</section>
+<section id="numerals">
 <h3>Numerals<a class="headerlink" href="#numerals" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Numerals have no definite semantics in the calculus. They are mere
 notations that can be bound to objects through the notation mechanism
@@ -500,32 +452,20 @@ numbers (see <a class="reference internal" href="coq-library.html#datatypes"><s
 <p>Negative integers are not at the same level as <a class="reference internal" href="#grammar-token-num"><code class="xref std std-token docutils literal notranslate"><span class="pre">num</span></code></a>, for this
 would make precedence unnatural.</p>
 </div>
-</div>
-<div class="section" id="sorts">
+</section>
+<section id="sorts">
 <span id="index-0"></span><h3>Sorts<a class="headerlink" href="#sorts" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>There are three sorts <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code>, <code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Prop</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Type</span></span></code>.</p>
 <ul class="simple">
-<li><p><code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Prop</span></span></code> is the universe of <em>logical propositions</em>. The logical propositions
-themselves are typing the proofs. We denote propositions by <span class="inline-grammar-production"><span class="target" id="grammar-token-form"></span><code class="docutils literal notranslate"><span class="pre">form</span></code></span>.
-This constitutes a semantic subclass of the syntactic class <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>.</p></li>
-<li><p><code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code> is is the universe of <em>program types</em> or <em>specifications</em>. The
-specifications themselves are typing the programs. We denote
-specifications by <span class="inline-grammar-production"><span class="target" id="grammar-token-specif"></span><code class="docutils literal notranslate"><span class="pre">specif</span></code></span>. This constitutes a semantic subclass of
-the syntactic class <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>.</p></li>
-<li><p><code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Type</span></span></code> is the type of <code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Prop</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code></p></li>
+<li><p><code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Prop</span></span></code> は <em>論理命題</em> の宇宙です。論理命題それ自体が証明を型付けます。命題は <span class="inline-grammar-production"><span class="target" id="grammar-token-form"></span><code class="docutils literal notranslate"><span class="pre">form</span></code></span> によって表します。これは <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> の構文クラスの意味論的なサブクラスを構成します。</p></li>
+<li><p><code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code> は <em>プログラムの型</em> または <em>仕様</em> の宇宙です。その仕様それ自体がプログラムを型付けます。我々は仕様を <span class="inline-grammar-production"><span class="target" id="grammar-token-specif"></span><code class="docutils literal notranslate"><span class="pre">specif</span></code></span> で表します。これは <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> の構文クラスの意味論的なサブクラスを構成します。</p></li>
+<li><p><code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Type</span></span></code> は <code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Prop</span></span></code> と <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Set</span></span></code> の型です。</p></li>
 </ul>
 <p>More on sorts can be found in Section <a class="reference internal" href="cic.html#sorts"><span class="std std-ref">Sorts</span></a>.</p>
-</div>
-<div class="section" id="binders">
+</section>
+<section id="binders">
 <span id="id3"></span><h3>Binders<a class="headerlink" href="#binders" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Various constructions such as <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span></code>, <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span></code>, <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fix</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">cofix</span></span></code>
-<em>bind</em> variables. A binding is represented by an identifier. If the binding
-variable is not used in the expression, the identifier can be replaced by the
-symbol <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">_</span></span></code>. When the type of a bound variable cannot be synthesized by the
-system, it can be specified with the notation <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(</span></span><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a><span><span class="pre">)</span></span></span></code>. There is also
-a notation for a sequence of binding variables sharing the same type:
-<code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(</span></span><span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a><span><span class="pre">)</span></span></span></code>. A
-binder can also be any pattern prefixed by a quote, e.g. <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">'</span></span><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">,</span></span><span class="name"><span class="pre">y</span></span><span class="operator"><span class="pre">)</span></span></code>.</p>
+<p><code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span></code>、<code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span></code>、<code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fix</span></span></code> それに <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">cofix</span></span></code> のような様々な構文が変数を <em>束縛</em> します。束縛は識別子によって表現されます。もし束縛変数がその式の中で使われないならば、その識別子は記号 <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">_</span></span></code> で置き換えることができます。束縛された変数の型がシステムによって生成出来ないときは、<code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(</span></span><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a><span><span class="pre">)</span></span></span></code> という表記法によって指定することが出来ます。同じ型を共有する束縛変数の列のための表記法もあります: <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(</span></span><span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a><span><span class="pre">)</span></span></span></code>。頭にクオートの付いたどんなパターンでも束縛子にすることが出来ます。例 <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">'</span></span><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">,</span></span><span class="name"><span class="pre">y</span></span><span class="operator"><span class="pre">)</span></span></code>。</p>
 <p>Some constructions allow the binding of a variable to value. This is
 called a “let-binder”. The entry <a class="reference internal" href="#grammar-token-binder"><code class="xref std std-token docutils literal notranslate"><span class="pre">binder</span></code></a> of the grammar accepts
 either an assumption binder as defined above or a let-binder. The notation in
@@ -533,13 +473,9 @@ the latter case is <code class="docutils literal notranslate"><span class="notat
 variable can be introduced at the same time. It is also possible to give
 the type of the variable as follows:
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(</span></span><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a><span><span class="pre"> := </span></span><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">)</span></span></span></code>.</p>
-<p>Lists of <a class="reference internal" href="#grammar-token-binder"><code class="xref std std-token docutils literal notranslate"><span class="pre">binder</span></code></a> are allowed. In the case of <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span></code>,
-it is intended that at least one binder of the list is an assumption otherwise
-fun and forall gets identical. Moreover, parentheses can be omitted in
-the case of a single sequence of bindings sharing the same type (e.g.:
-<code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span> <span class="name"><span class="pre">y</span></span> <span class="name"><span class="pre">z</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">t</span></span></code> can be shortened in <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="name"><span class="pre">x</span></span> <span class="name"><span class="pre">y</span></span> <span class="name"><span class="pre">z</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">t</span></span></code>).</p>
-</div>
-<div class="section" id="abstractions">
+<p><a class="reference internal" href="#grammar-token-binder"><code class="xref std std-token docutils literal notranslate"><span class="pre">binder</span></code></a> のリストが認められます。<code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span></code> と <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span></code> の場合は、リストの最低一つの束縛子が前提であることが意図されており、そうでなければ fun と forall は同一になります。さらに、同じ型を共有する束縛の単一の列の場合には、括弧も除去することが出来ます (例: <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span> <span class="name"><span class="pre">y</span></span> <span class="name"><span class="pre">z</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">t</span></span></code> は <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="name"><span class="pre">x</span></span> <span class="name"><span class="pre">y</span></span> <span class="name"><span class="pre">z</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">t</span></span></code> に短縮することができます)。</p>
+</section>
+<section id="abstractions">
 <span id="index-1"></span><h3>Abstractions<a class="headerlink" href="#abstractions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The expression <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">fun</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span><span class="pre">:</span></span> <a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a> <span><span class="pre">=&gt;</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a></span></code> defines the
 <em>abstraction</em> of the variable <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a>, of type <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a>, over the term
@@ -556,8 +492,8 @@ fun <a class="reference internal" href="#grammar-token-ident"><code class="xref
 a let-binder occurs in
 the list of binders, it is expanded to a let-in definition (see
 Section <a class="reference internal" href="#let-in"><span class="std std-ref">Let-in definitions</span></a>).</p>
-</div>
-<div class="section" id="products">
+</section>
+<section id="products">
 <span id="index-2"></span><h3>Products<a class="headerlink" href="#products" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The expression <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">forall </span></span><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a><span><span class="pre">, </span></span><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a></span></code> denotes the
 <em>product</em> of the variable <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> of type <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a>, over the term <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>.
@@ -574,8 +510,8 @@ in the proposition <code class="code Coq docutils literal notranslate"><span cla
 <p>Non dependent product types have a special notation: <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">A</span></span> <span class="operator"><span class="pre">-&gt;</span></span> <span class="name"><span class="pre">B</span></span></code> stands for
 <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span> <span class="operator"><span class="pre">_</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">B</span></span></code>. The <em>non dependent product</em> is used both to denote
 the propositional implication and function types.</p>
-</div>
-<div class="section" id="applications">
+</section>
+<section id="applications">
 <h3>Applications<a class="headerlink" href="#applications" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The expression <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a><span class="math notranslate nohighlight">\(_0\)</span> <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> denotes the
 application of <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a><span class="math notranslate nohighlight">\(_0\)</span> to <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a><span class="math notranslate nohighlight">\(_1\)</span>.</p>
@@ -588,31 +524,25 @@ left.</p>
 <p>The notation <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(</span></span><a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a><span><span class="pre"> := </span></span><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">)</span></span></span></code> for arguments is used for making
 explicit the value of implicit arguments (see
 Section <a class="reference internal" href="gallina-extensions.html#explicit-applications"><span class="std std-ref">Explicit applications</span></a>).</p>
-</div>
-<div class="section" id="type-cast">
+</section>
+<section id="type-cast">
 <span id="index-3"></span><h3>Type cast<a class="headerlink" href="#type-cast" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The expression <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre"> : </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a></span></code> is a type cast expression. It enforces
 the type of <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> to be <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a>.</p>
-<p><code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre"> &lt;: </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a></span></code> locally sets up the virtual machine for checking that
-<a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> has type <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a>.</p>
-<p><code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre"> &lt;&lt;: </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a></span></code> uses native compilation for checking that <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>
-has type <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a>.</p>
-</div>
-<div class="section" id="inferable-subterms">
+<p><code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre"> &lt;: </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a></span></code> は <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> が型 <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a> を持つことを検査するように局所的に仮想マシンを設定します。</p>
+<p><code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre"> &lt;&lt;: </span></span><a class="reference internal" href="#grammar-token-type"><span class="hole"><span class="pre">type</span></span></a></span></code> 項 <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> が型 <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a> も持つことを検査するためにネイティブコンパイルを使います。</p>
+</section>
+<section id="inferable-subterms">
 <span id="index-4"></span><h3>Inferable subterms<a class="headerlink" href="#inferable-subterms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Expressions often contain redundant pieces of information. Subterms that can be
 automatically inferred by Coq can be replaced by the symbol <code class="docutils literal notranslate"><span class="pre">_</span></code> and Coq will
 guess the missing piece of information.</p>
-</div>
-<div class="section" id="let-in-definitions">
+</section>
+<section id="let-in-definitions">
 <span id="let-in"></span><span id="index-5"></span><h3>Let-in definitions<a class="headerlink" href="#let-in-definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span><span class="pre">:=</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">’</span></span></span></code>
-denotes the local binding of <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> to the variable
-<a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> in <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>’. There is a syntactic sugar for let-in
-definition of functions: <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-binder"><span class="hole"><span class="pre">binder</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span> <span><span class="pre">:=</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">’</span></span></span></code>
-stands for <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span><span class="pre">:=</span></span> <span><span class="pre">fun</span></span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-binder"><span class="hole"><span class="pre">binder</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span> <span><span class="pre">=&gt;</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">’</span></span></span></code>.</p>
-</div>
-<div class="section" id="definition-by-case-analysis">
+<p><code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span><span class="pre">:=</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">’</span></span></span></code> は <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a>’ 内で <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> から変数 <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> への局所束縛を表します。関数の let-in 定義には糖衣構文があり、<code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-binder"><span class="hole"><span class="pre">binder</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span> <span><span class="pre">:=</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">’</span></span></span></code> が <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span><span class="pre">:=</span></span> <span><span class="pre">fun</span></span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-binder"><span class="hole"><span class="pre">binder</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span> <span><span class="pre">=&gt;</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">’</span></span></span></code> を表します。</p>
+</section>
+<section id="definition-by-case-analysis">
 <span id="index-6"></span><h3>Definition by case analysis<a class="headerlink" href="#definition-by-case-analysis" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Objects of inductive types can be destructurated by a case-analysis
 construction called <em>pattern matching</em> expression. A pattern matching
@@ -632,11 +562,7 @@ of an inductive type <span class="math notranslate nohighlight">\(I\)</span>). T
 expression. Each of <a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_i\)</span> has a form <a class="reference internal" href="#grammar-token-qualid"><code class="xref std std-token docutils literal notranslate"><span class="pre">qualid</span></code></a>
 <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> where <a class="reference internal" href="#grammar-token-qualid"><code class="xref std std-token docutils literal notranslate"><span class="pre">qualid</span></code></a> must denote a constructor. There should be
 exactly one branch for every constructor of <span class="math notranslate nohighlight">\(I\)</span>.</p>
-<p>The <a class="reference internal" href="#grammar-token-return-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">return_type</span></code></a> expresses the type returned by the whole match
-expression. There are several cases. In the <em>non dependent</em> case, all
-branches have the same type, and the <a class="reference internal" href="#grammar-token-return-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">return_type</span></code></a> is the common type of
-branches. In this case, <a class="reference internal" href="#grammar-token-return-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">return_type</span></code></a> can usually be omitted as it can be
-inferred from the type of the branches <a class="footnote-reference brackets" href="#id7" id="id4">2</a>.</p>
+<p><a class="reference internal" href="#grammar-token-return-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">return_type</span></code></a> はマッチ式全体によって返される型を表します。幾つかのケースがあります。<em>非依存</em> ケースでは、全てのブランチは同じ型を持ち、<a class="reference internal" href="#grammar-token-return-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">return_type</span></code></a> はブランチの共通の型です。このケースでは、<a class="reference internal" href="#grammar-token-return-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">return_type</span></code></a> は通常ブランチの型から推論できるため省略されます <a class="footnote-reference brackets" href="#id7" id="id4">2</a>。</p>
 <p>In the <em>dependent</em> case, there are three subcases. In the first subcase,
 the type in each branch may depend on the exact value being matched in
 the branch. In this case, the whole pattern matching itself depends on
@@ -695,14 +621,12 @@ type of each branch can depend on the type dependencies specific to the
 branch and the whole pattern matching expression has a type determined
 by the specific dependencies in the type of the term being matched. This
 dependency of the return type in the annotations of the inductive type
-is expressed using a “<code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">in</span></span></code> <span class="math notranslate nohighlight">\(I\)</span> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">_</span></span> <span class="error"><span class="pre">…</span></span> <span class="operator"><span class="pre">_</span></span></code> <a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> …
+is expressed using a “<code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">in</span></span></code> <span class="math notranslate nohighlight">\(I\)</span> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">_</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="operator"><span class="pre">_</span></span></code> <a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> …
 <a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_n\)</span>” clause, where</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(I\)</span> is the inductive type of the term being matched;</p></li>
-<li><p>the <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">_</span></span></code> are matching the parameters of the inductive type: the
-return type is not dependent on them.</p></li>
-<li><p>the <a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_i\)</span> are matching the annotations of the
-inductive type: the return type is dependent on them</p></li>
+<li><p><span class="math notranslate nohighlight">\(I\)</span> はマッチされた項の帰納型;</p></li>
+<li><p><code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">_</span></span></code> はその帰納型のマッチするパラメータ：返り型はそれらに依存しない。</p></li>
+<li><p><a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_i\)</span> はその帰納型の注釈にマッチする：返り型はそれに依存する。</p></li>
 <li><p>in the basic case which we describe below, each <a class="reference internal" href="#grammar-token-pattern"><code class="xref std std-token docutils literal notranslate"><span class="pre">pattern</span></code></a><span class="math notranslate nohighlight">\(_i\)</span>
 is a name <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a><span class="math notranslate nohighlight">\(_i\)</span>; see <a class="reference internal" href="../addendum/extended-pattern-matching.html#match-in-patterns"><span class="std std-ref">Patterns in in</span></a> for the
 general case</p></li>
@@ -732,8 +656,8 @@ a type with annotations. For this third subcase, both the clauses <code class="d
 <p>There are specific notations for case analysis on types with one or two
 constructors: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">…</span> <span class="pre">then</span> <span class="pre">…</span> <span class="pre">else</span> <span class="pre">…</span></code> and <code class="docutils literal notranslate"><span class="pre">let</span> <span class="pre">(…,…)</span> <span class="pre">:=</span> <span class="pre">…</span> <span class="pre">in</span> <span class="pre">…</span></code> (see
 Sections <a class="reference internal" href="gallina-extensions.html#if-then-else"><span class="std std-ref">Pattern-matching on boolean values: the if expression</span></a> and <a class="reference internal" href="gallina-extensions.html#irrefutable-patterns"><span class="std std-ref">Irrefutable patterns: the destructuring let variants</span></a>).</p>
-</div>
-<div class="section" id="recursive-functions">
+</section>
+<section id="recursive-functions">
 <span id="index-7"></span><h3>Recursive functions<a class="headerlink" href="#recursive-functions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The expression “<code class="docutils literal notranslate"><span class="pre">fix</span></code> <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> <a class="reference internal" href="#grammar-token-binder"><code class="xref std std-token docutils literal notranslate"><span class="pre">binder</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> <code class="docutils literal notranslate"><span class="pre">:</span></code>
 <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> <code class="docutils literal notranslate"><span class="pre">:=</span></code> <a class="reference internal" href="#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a><span class="math notranslate nohighlight">\(_1\)</span> <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">…</span> <span class="pre">with</span></code>
@@ -751,9 +675,9 @@ co-recursion. It is the local counterpart of the <a class="reference internal" h
 <p>The association of a single fixpoint and a local definition have a special
 syntax: <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <span><span class="pre">fix</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <a class="reference internal" href="#grammar-token-binders"><span class="hole"><span class="pre">binders</span></span></a> <span><span class="pre">:=</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span></span></code> stands for
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">let</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <span><span class="pre">:=</span></span> <span><span class="pre">fix</span></span> <a class="reference internal" href="#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a> <a class="reference internal" href="#grammar-token-binders"><span class="hole"><span class="pre">binders</span></span></a> <span><span class="pre">:=</span></span> <a class="reference internal" href="#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">in</span></span></span></code>. The same applies for co-fixpoints.</p>
-</div>
-</div>
-<div class="section" id="the-vernacular">
+</section>
+</section>
+<section id="the-vernacular">
 <span id="vernacular"></span><h2>The Vernacular<a class="headerlink" href="#the-vernacular" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <pre>
 <strong id="grammar-token-sentence">sentence          </strong> ::=  <a class="reference internal" href="#grammar-token-assumption"><code class="xref docutils literal notranslate"><span class="pre">assumption</span></code></a>
@@ -791,7 +715,7 @@ many natural languages, begins with a capital letter and ends with a
 dot.</p>
 <p>The different kinds of command are described hereafter. They all suppose
 that the terms occurring in the sentences are well-typed.</p>
-<div class="section" id="assumptions">
+<section id="assumptions">
 <span id="gallina-assumptions"></span><h3>Assumptions<a class="headerlink" href="#assumptions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Assumptions extend the environment with axioms, parameters, hypotheses
 or variables. An assumption binds an <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> to a <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a>. It is accepted
@@ -893,8 +817,8 @@ the assertion <a class="reference internal" href="#grammar-token-type"><code cla
 <a class="reference internal" href="#coq:cmd.parameter" title="Parameter"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Parameter</span></code></a> and <a class="reference internal" href="#coq:cmd.variable" title="Variable"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Variable</span></code></a> (and their plural forms) in other cases
 (corresponding to the declaration of an abstract mathematical entity).</p>
 </div>
-</div>
-<div class="section" id="definitions">
+</section>
+<section id="definitions">
 <span id="gallina-definitions"></span><h3>Definitions<a class="headerlink" href="#definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Definitions extend the environment with associations of names to terms.
 A definition can be seen as a way to give a meaning to a name or as a
@@ -996,13 +920,13 @@ Using the <a class="reference internal" href="#coq:cmd.let" title="Let"><code cl
 <p>Section <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">Section mechanism</span></a>, commands <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.opaque" title="Opaque"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Opaque</span></code></a>,
 <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.transparent" title="Transparent"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Transparent</span></code></a>, and tactic <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.unfold" title="unfold"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">unfold</span></code></a>.</p>
 </div>
-</div>
-<div class="section" id="inductive-definitions">
+</section>
+<section id="inductive-definitions">
 <span id="gallina-inductive-definitions"></span><h3>Inductive definitions<a class="headerlink" href="#inductive-definitions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>We gradually explain simple inductive types, simple annotated inductive
 types, simple parametric inductive types, mutually inductive types. We
 explain also co-inductive types.</p>
-<div class="section" id="simple-inductive-types">
+<section id="simple-inductive-types">
 <h4>Simple inductive types<a class="headerlink" href="#simple-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmd">
 <dt id="coq:cmd.inductive">
@@ -1094,8 +1018,8 @@ by only giving the type of its arguments.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="simple-annotated-inductive-types">
+</section>
+<section id="simple-annotated-inductive-types">
 <h4>Simple annotated inductive types<a class="headerlink" href="#simple-annotated-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>In an annotated inductive types, the universe where the inductive type
 is defined is no longer a simple sort, but what is called an arity,
@@ -1132,8 +1056,8 @@ and to prove that if any natural number <code class="code Coq docutils literal n
 successor <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">S</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">S</span></span> <span class="name"><span class="pre">n</span></span><span class="operator"><span class="pre">))</span></span></code> satisfies also <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">P</span></span></code>. This is indeed analogous to the
 structural induction principle we got for <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">nat</span></span></code>.</p>
 </div>
-</div>
-<div class="section" id="parametrized-inductive-types">
+</section>
+<section id="parametrized-inductive-types">
 <h4>Parametrized inductive types<a class="headerlink" href="#parametrized-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmdv">
 <dt>
@@ -1233,8 +1157,8 @@ rule for case elimination.</p></li>
 <p class="admonition-title">参考</p>
 <p>Section <a class="reference internal" href="cic.html#inductive-definitions"><span class="std std-ref">Inductive Definitions</span></a> and the <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.induction" title="induction"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">induction</span></code></a> tactic.</p>
 </div>
-</div>
-<div class="section" id="variants">
+</section>
+<section id="variants">
 <h4>Variants<a class="headerlink" href="#variants" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmd">
 <dt id="coq:cmd.variant">
@@ -1250,8 +1174,8 @@ this variant, unless option <a class="reference internal" href="../user-extensio
 
 </dd></dl>
 
-</div>
-<div class="section" id="mutually-defined-inductive-types">
+</section>
+<section id="mutually-defined-inductive-types">
 <h4>Mutually defined inductive types<a class="headerlink" href="#mutually-defined-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmdv">
 <dt>
@@ -1346,8 +1270,8 @@ parameters to the inductive definition.</p>
 <p>A generic command <a class="reference internal" href="../user-extensions/proof-schemes.html#coq:cmd.scheme" title="Scheme"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Scheme</span></code></a> is useful to build automatically various
 mutual induction principles.</p>
 </div>
-</div>
-<div class="section" id="co-inductive-types">
+</section>
+<section id="co-inductive-types">
 <span id="coinductive-types"></span><h4>Co-inductive types<a class="headerlink" href="#co-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The objects of an inductive type are well-founded with respect to the
 constructors of the type. In other words, such objects contain only a
@@ -1402,11 +1326,11 @@ we have to construct an infinite proof of equality, that is, an infinite
 object of type <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">EqSt</span></span> <span class="name"><span class="pre">s1</span></span> <span class="name"><span class="pre">s2</span></span><span class="operator"><span class="pre">)</span></span></code>. We will see how to introduce infinite
 objects in Section <a class="reference internal" href="#cofixpoint"><span class="std std-ref">Definitions of recursive objects in co-inductive types</span></a>.</p>
 </div>
-</div>
-</div>
-<div class="section" id="definition-of-recursive-functions">
+</section>
+</section>
+<section id="definition-of-recursive-functions">
 <h3>Definition of recursive functions<a class="headerlink" href="#definition-of-recursive-functions" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="section" id="definition-of-functions-by-recursion-over-inductive-objects">
+<section id="definition-of-functions-by-recursion-over-inductive-objects">
 <h4>Definition of functions by recursion over inductive objects<a class="headerlink" href="#definition-of-functions-by-recursion-over-inductive-objects" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>This section describes the primitive form of definition by recursion over
 inductive objects. See the <a class="reference internal" href="gallina-extensions.html#coq:cmd.function" title="Function"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Function</span></code></a> command for more advanced
@@ -1557,8 +1481,8 @@ tree_size, forest_size are recursively defined
 
 </dd></dl>
 
-</div>
-<div class="section" id="definitions-of-recursive-objects-in-co-inductive-types">
+</section>
+<section id="definitions-of-recursive-objects-in-co-inductive-types">
 <span id="cofixpoint"></span><h4>Definitions of recursive objects in co-inductive types<a class="headerlink" href="#definitions-of-recursive-objects-in-co-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <dl class="cmd">
 <dt id="coq:cmd.cofixpoint">
@@ -1624,9 +1548,9 @@ mutually dependent methods.</p>
 
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="assertions-and-proofs">
+</section>
+</section>
+<section id="assertions-and-proofs">
 <span id="assertions"></span><h3>Assertions and proofs<a class="headerlink" href="#assertions-and-proofs" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>An assertion states a proposition (or a type) of which the proof (or an
 inhabitant of the type) is interactively built using tactics. The interactive
@@ -1764,57 +1688,39 @@ current asserted statement into an axiom and exit the proof editing mode.</p></l
 equation that can be used to infer the return type.</p>
 </dd>
 </dl>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="gallina-extensions.html" class="btn btn-neutral float-right" title="Gallina の拡張" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../credits.html" class="btn btn-neutral float-left" title="Credits" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../credits.html" class="btn btn-neutral float-left" title="Credits" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gallina-extensions.html" class="btn btn-neutral float-right" title="Extensions of Gallina" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

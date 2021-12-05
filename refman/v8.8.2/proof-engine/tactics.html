@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Tactics &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tactics &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="The tactic language" href="ltac.html" />
     <link rel="prev" title="Proof handling" href="proof-handling.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proof-handling.html">Proof handling</a></li>
@@ -158,23 +113,23 @@
 <li class="toctree-l1"><a class="reference internal" href="detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addendum/type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -186,75 +141,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../addendum/miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../addendum/universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Tactics</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/proof-engine/tactics.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -345,7 +260,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="tactics">
+<section id="tactics">
 <span id="id1"></span><h1>Tactics<a class="headerlink" href="#tactics" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>A deduction rule is a link between some (unique) formula, that we call
 the <em>conclusion</em> and (several) formulas that we call the <em>premises</em>. A
@@ -373,7 +288,7 @@ satisfied. If it is not the case, the tactic raises an error message.</p>
 extends the folklore notion of tactical) to combine those atomic
 tactics. This chapter is devoted to atomic tactics. The tactic
 language will be described in Chapter <a class="reference internal" href="ltac.html#ltac"><span class="std std-ref">The tactic language</span></a>.</p>
-<div class="section" id="invocation-of-tactics">
+<section id="invocation-of-tactics">
 <span id="id2"></span><h2>Invocation of tactics<a class="headerlink" href="#invocation-of-tactics" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>A tactic is applied as an ordinary command. It may be preceded by a
 goal selector (see Section <a class="reference internal" href="ltac.html#ltac-semantics"><span class="std std-ref">Semantics</span></a>). If no selector is
@@ -396,7 +311,7 @@ only, you can write <code class="docutils literal notranslate"><span class="pre"
 <code class="docutils literal notranslate"><span class="pre">all</span></code> or a single natural number are valid default goal selectors.</p>
 </dd></dl>
 
-<div class="section" id="bindings-list">
+<section id="bindings-list">
 <span id="bindingslist"></span><h3>Bindings list<a class="headerlink" href="#bindings-list" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Tactics that take a term as argument may also support a bindings list,
 so as to instantiate some parameters of the term by name or position.
@@ -437,8 +352,8 @@ are required.</p>
 
 </li>
 </ul>
-</div>
-<div class="section" id="occurrence-sets-and-occurrence-clauses">
+</section>
+<section id="occurrence-sets-and-occurrence-clauses">
 <span id="occurencessets"></span><h3>Occurrence sets and occurrence clauses<a class="headerlink" href="#occurrence-sets-and-occurrence-clauses" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>An occurrence clause is a modifier to some tactics that obeys the
 following syntax:</p>
@@ -460,7 +375,7 @@ occurrences of <a class="reference internal" href="../language/gallina-specifica
 given, they refer to occurrences of <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> when the term is printed
 using option <a class="reference internal" href="../language/gallina-extensions.html#coq:flag.printing-all" title="Printing All"><code class="xref coq coq-flag docutils literal notranslate"><span class="pre">Printing</span> <span class="pre">All</span></code></a>, counting from left to right. In particular,
 occurrences of <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><code class="xref std std-token docutils literal notranslate"><span class="pre">term</span></code></a> in implicit arguments
-(see <a class="reference internal" href="../language/gallina-extensions.html#implicitarguments"><span class="std std-ref">Implicit arguments</span></a>) or coercions (see <a class="reference internal" href="../language/gallina-extensions.html#coercions"><span class="std std-ref">コアーション</span></a>) are
+(see <a class="reference internal" href="../language/gallina-extensions.html#implicitarguments"><span class="std std-ref">Implicit arguments</span></a>) or coercions (see <a class="reference internal" href="../language/gallina-extensions.html#coercions"><span class="std std-ref">Coercions</span></a>) are
 counted.</p>
 <p>If a minus sign is given between <code class="docutils literal notranslate"><span class="pre">at</span></code> and the list of occurrences, it
 negates the condition so that the clause denotes all the occurrences
@@ -481,11 +396,11 @@ that <code class="docutils literal notranslate"><span class="pre">|-</span></cod
 <div class="admonition seealso">
 <p class="admonition-title">参考</p>
 <p><a class="reference internal" href="#managingthelocalcontext"><span class="std std-ref">Managing the local context</span></a>, <a class="reference internal" href="#caseanalysisandinduction"><span class="std std-ref">Case analysis and induction</span></a>,
-<a class="reference internal" href="../language/gallina-extensions.html#printing-constructions-full"><span class="std std-ref">全ての構成を表示する</span></a>.</p>
+<a class="reference internal" href="../language/gallina-extensions.html#printing-constructions-full"><span class="std std-ref">Printing constructions in full</span></a>.</p>
 </div>
-</div>
-</div>
-<div class="section" id="applying-theorems">
+</section>
+</section>
+<section id="applying-theorems">
 <span id="applyingtheorems"></span><h2>Applying theorems<a class="headerlink" href="#applying-theorems" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.exact">
@@ -1087,8 +1002,8 @@ when the instantiation of a variable cannot be found
 
 </dd></dl>
 
-</div>
-<div class="section" id="managing-the-local-context">
+</section>
+<section id="managing-the-local-context">
 <span id="managingthelocalcontext"></span><h2>Managing the local context<a class="headerlink" href="#managing-the-local-context" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.intro">
@@ -1253,7 +1168,7 @@ syntax is in experimental stage)</p></li>
 </li>
 <li><p>the wildcard: <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">_</span></span></span></code></p></li>
 </ul>
-<p>Assuming a goal of type <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Q</span></span> <span class="error"><span class="pre">→</span></span> <span class="name"><span class="pre">P</span></span></code> (non-dependent product), or of type
+<p>Assuming a goal of type <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Q</span></span> <span class="operator"><span class="pre">→</span></span> <span class="name"><span class="pre">P</span></span></code> (non-dependent product), or of type
 <span class="math notranslate nohighlight">\(\forall\)</span><code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">P</span></span></code> (dependent product), the behavior of
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">intros</span></span> <span><span class="pre">p</span></span></span></code> is defined inductively over the structure of the introduction
 pattern <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">p</span></span></span></code>:</p>
@@ -1767,8 +1682,8 @@ command.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="controlling-the-proof-flow">
+</section>
+<section id="controlling-the-proof-flow">
 <span id="controllingtheproofflow"></span><h2>Controlling the proof flow<a class="headerlink" href="#controlling-the-proof-flow" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.assert">
@@ -2007,7 +1922,7 @@ respect to some term.</p>
 </div>
 </div>
 <p>If the goal is <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">G</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">t</span></span></code> is a subterm of type <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">T</span></span></code> in the goal,
-then <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">generalize</span></span> <span><span class="pre">t</span></span></span></code> replaces the goal by <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">),</span></span> <span class="name"><span class="pre">G</span></span><span class="error"><span class="pre">′</span></span></code> where <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">G</span></span><span class="error"><span class="pre">′</span></span></code>
+then <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">generalize</span></span> <span><span class="pre">t</span></span></span></code> replaces the goal by <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">T</span></span><span class="operator"><span class="pre">),</span></span> <span class="name"><span class="pre">G</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code> where <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">G</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code>
 is obtained from <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">G</span></span></code> by replacing all occurrences of <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">t</span></span></code> by <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">x</span></span></code>. The
 name of the variable (here <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">n</span></span></code>) is chosen based on <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">T</span></span></code>.</p>
 <dl class="tacv">
@@ -2117,7 +2032,7 @@ they are sequenced by semicolons.</p>
 
 <p>The admit tactic allows temporarily skipping a subgoal so as to
 progress further in the rest of the proof. A proof containing admitted
-goals cannot be closed with <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Qed</span></span></code> but only with <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Admitted</span></span></code>.</p>
+goals cannot be closed with <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Qed</span></span></code> but only with <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Admitted</span></span></code>.</p>
 <dl class="tacv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>give</span><span>_</span><span>up</span></span></code></dt>
@@ -2129,9 +2044,9 @@ goals cannot be closed with <code class="code Coq docutils literal notranslate">
 <code class="sig-name descname"><span class="notation"><span>absurd</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole">term</span></a></span></code><a class="headerlink" href="#coq:tacn.absurd" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>This tactic applies to any goal. The argument term is any proposition
 <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">P</span></span></code> of type <code class="code Coq docutils literal notranslate"><span class="keyword type"><span class="pre">Prop</span></span></code>. This tactic applies False elimination, that is it
-deduces the current goal from False, and generates as subgoals <code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∼</span></span><span class="name"><span class="pre">P</span></span></code> and
+deduces the current goal from False, and generates as subgoals <code class="code Coq docutils literal notranslate"><span class="name builtin pseudo"><span class="pre">∼</span></span><span class="name"><span class="pre">P</span></span></code> and
 <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">P</span></span></code>. It is very useful in proofs by cases, where some cases are
-impossible. In most cases, <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">P</span></span></code> or <code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∼</span></span><span class="name"><span class="pre">P</span></span></code> is one of the hypotheses of the
+impossible. In most cases, <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">P</span></span></code> or <code class="code Coq docutils literal notranslate"><span class="name builtin pseudo"><span class="pre">∼</span></span><span class="name"><span class="pre">P</span></span></code> is one of the hypotheses of the
 local context.</p>
 </dd></dl>
 
@@ -2179,8 +2094,8 @@ then required to prove that False is indeed provable in the current
 context. This tactic is a macro for <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">elimtype</span></span> <span><span class="pre">False</span></span></span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="case-analysis-and-induction">
+</section>
+<section id="case-analysis-and-induction">
 <span id="caseanalysisandinduction"></span><h2>Case analysis and induction<a class="headerlink" href="#case-analysis-and-induction" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The tactics presented in this section implement induction or case
 analysis on inductive or co-inductive objects (see <a class="reference internal" href="../language/cic.html#inductive-definitions"><span class="std std-ref">Inductive Definitions</span></a>).</p>
@@ -2739,7 +2654,7 @@ and an explanation of the underlying technique.</p>
 <code class="sig-name descname"><span class="notation"><span>function</span> <span>induction</span> <span>(</span><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole">term</span></a></span><span class="notation-sup">+</span></span><span>)</span></span></code><a class="headerlink" href="#coq:tacn.function-induction" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>The tactic functional induction performs case analysis and induction
 following the definition of a function. It makes use of a principle
-generated by <code class="docutils literal notranslate"><span class="pre">Function</span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a>) or
+generated by <code class="docutils literal notranslate"><span class="pre">Function</span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a>) or
 <code class="docutils literal notranslate"><span class="pre">Functional</span> <span class="pre">Scheme</span></code> (see <a class="reference internal" href="../user-extensions/proof-schemes.html#functional-scheme"><span class="std std-ref">Generation of induction principles with Functional Scheme</span></a>).
 Note that this tactic is only available after a <code class="docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span> <span class="pre">FunInd</span></code>.</p>
 </dd></dl>
@@ -2786,24 +2701,24 @@ arguments explicitly.</p>
 <p><code class="docutils literal notranslate"><span class="notation"><span><span class="pre">functional</span></span> <span><span class="pre">induction</span></span> <span><span class="pre">(f</span></span> <span><span class="pre">x1</span></span> <span><span class="pre">x2</span></span> <span><span class="pre">x3)</span></span></span></code> is actually a wrapper for
 <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">induction</span></span> <span><span class="pre">x1,</span></span> <span><span class="pre">x2,</span></span> <span><span class="pre">x3,</span></span> <span><span class="pre">(f</span></span> <span><span class="pre">x1</span></span> <span><span class="pre">x2</span></span> <span><span class="pre">x3)</span></span> <span><span class="pre">using</span></span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> followed by a cleaning
 phase, where <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> is the induction principle registered for <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span></code>
-(by the <code class="docutils literal notranslate"><span class="pre">Function</span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a>) or
+(by the <code class="docutils literal notranslate"><span class="pre">Function</span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a>) or
 <code class="docutils literal notranslate"><span class="pre">Functional</span> <span class="pre">Scheme</span></code> (see <a class="reference internal" href="../user-extensions/proof-schemes.html#functional-scheme"><span class="std std-ref">Generation of induction principles with Functional Scheme</span></a>)
 command) corresponding to the sort of the goal. Therefore
 <code class="docutils literal notranslate"><span class="pre">functional</span> <span class="pre">induction</span></code> may fail if the induction scheme <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> is not
-defined. See also <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a> for the function
+defined. See also <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a> for the function
 terms accepted by <code class="docutils literal notranslate"><span class="pre">Function</span></code>.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>There is a difference between obtaining an induction scheme
-for a function by using <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Function</span></span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a>)
+for a function by using <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Function</span></span></code> (see <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a>)
 and by using <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Functional</span></span> <span class="name"><span class="pre">Scheme</span></span></code> after a normal definition using
-<code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Fixpoint</span></span></code> or <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Definition</span></span></code>. See <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a>
+<code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Fixpoint</span></span></code> or <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Definition</span></span></code>. See <a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a>
 for details.</p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">参考</p>
-<p><a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a>, <a class="reference internal" href="../user-extensions/proof-schemes.html#functional-scheme"><span class="std std-ref">Generation of induction principles with Functional Scheme</span></a> and <a class="reference internal" href="#coq:tacn.inversion" title="inversion"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">inversion</span></code></a></p>
+<p><a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a>, <a class="reference internal" href="../user-extensions/proof-schemes.html#functional-scheme"><span class="std std-ref">Generation of induction principles with Functional Scheme</span></a> and <a class="reference internal" href="#coq:tacn.inversion" title="inversion"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">inversion</span></code></a></p>
 </div>
 <dl class="exn">
 <dt id="coq:exn.cannot-find-induction-information-on-qualid">
@@ -3133,7 +3048,28 @@ where <code class="docutils literal notranslate"><span class="notation"><a class
 <dl class="tacv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>inversion</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>as</span> <span class="hole">intro_pattern</span></span></code></dt>
-<dd><p>This generally behaves as inversion but using names in <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">intro_pattern</span></span></span></code> for naming hypotheses. The <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">intro_pattern</span></span></span></code> must have the form <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">[p</span></span></span></code><sub>11</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>1n</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">|</span></span> <span><span class="pre">...</span></span> <span><span class="pre">|</span></span> <span><span class="pre">p</span></span></span></code><sub>m1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>mn</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">]</span></span></span></code> with <cite>m</cite> being the number of constructors of the type of <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>. Be careful that the list must be of length <cite>m</cite> even if <code class="docutils literal notranslate"><span class="pre">inversion</span></code> discards some cases (which is precisely one of its roles): for the discarded cases, just use an empty list (i.e. <cite>n = 0</cite>).The arguments of the i-th constructor and the equalities that <code class="docutils literal notranslate"><span class="pre">inversion</span></code> introduces in the context of the goal corresponding to the i-th constructor, if it exists, get their names from the list <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">p</span></span></span></code><sub>i1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>in</sub> in order. If there are not enough names, <code class="docutils literal notranslate"><span class="pre">inversion</span></code> invents names for the remaining variables to introduce. In case an equation splits into several equations (because <code class="docutils literal notranslate"><span class="pre">inversion</span></code> applies <code class="docutils literal notranslate"><span class="pre">injection</span></code> on the equalities it generates), the corresponding name <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">p</span></span></span></code><sub>ij</sub> in the list must be replaced by a sublist of the form <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">[p</span></span></span></code><sub>ij1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>ijq</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">]</span></span></span></code> (or, equivalently, <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(p</span></span></span></code><sub>ij1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">,</span></span> <span><span class="pre">...,</span></span> <span><span class="pre">p</span></span></span></code><sub>ijq</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">)</span></span></span></code>) where <cite>q</cite> is the number of subequalities obtained from splitting the original equation. これが例です。The <code class="docutils literal notranslate"><span class="pre">inversion</span> <span class="pre">...</span> <span class="pre">as</span></code> variant of <code class="docutils literal notranslate"><span class="pre">inversion</span></code> generally behaves in a slightly more expectable way than <code class="docutils literal notranslate"><span class="pre">inversion</span></code> (no artificial duplication of some hypotheses referring to other hypotheses). To take benefit of these improvements, it is enough to use <code class="docutils literal notranslate"><span class="pre">inversion</span> <span class="pre">...</span> <span class="pre">as</span> <span class="pre">[]</span></code>, letting the names being finally chosen by Coq.</p>
+<dd><p>This generally behaves as inversion but using names in <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">intro_pattern</span></span></span></code>
+for naming hypotheses. The <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">intro_pattern</span></span></span></code> must have the form
+<code class="docutils literal notranslate"><span class="notation"><span><span class="pre">[p</span></span></span></code><sub>11</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>1n</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">|</span></span> <span><span class="pre">...</span></span> <span><span class="pre">|</span></span> <span><span class="pre">p</span></span></span></code><sub>m1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>mn</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">]</span></span></span></code>
+with <cite>m</cite> being the number of constructors of the type of <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>. Be
+careful that the list must be of length <cite>m</cite> even if <code class="docutils literal notranslate"><span class="pre">inversion</span></code> discards
+some cases (which is precisely one of its roles): for the discarded
+cases, just use an empty list (i.e. <cite>n = 0</cite>).The arguments of the i-th
+constructor and the equalities that <code class="docutils literal notranslate"><span class="pre">inversion</span></code> introduces in the
+context of the goal corresponding to the i-th constructor, if it
+exists, get their names from the list <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">p</span></span></span></code><sub>i1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>in</sub> in
+order. If there are not enough names, <code class="docutils literal notranslate"><span class="pre">inversion</span></code> invents names for the
+remaining variables to introduce. In case an equation splits into several
+equations (because <code class="docutils literal notranslate"><span class="pre">inversion</span></code> applies <code class="docutils literal notranslate"><span class="pre">injection</span></code> on the equalities it
+generates), the corresponding name <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">p</span></span></span></code><sub>ij</sub> in the list must be
+replaced by a sublist of the form <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">[p</span></span></span></code><sub>ij1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">...</span></span> <span><span class="pre">p</span></span></span></code><sub>ijq</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">]</span></span></span></code>
+(or, equivalently, <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">(p</span></span></span></code><sub>ij1</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">,</span></span> <span><span class="pre">...,</span></span> <span><span class="pre">p</span></span></span></code><sub>ijq</sub> <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">)</span></span></span></code>) where
+<cite>q</cite> is the number of subequalities obtained from splitting the original
+equation. Here is an example. The <code class="docutils literal notranslate"><span class="pre">inversion</span> <span class="pre">...</span> <span class="pre">as</span></code> variant of
+<code class="docutils literal notranslate"><span class="pre">inversion</span></code> generally behaves in a slightly more expectable way than
+<code class="docutils literal notranslate"><span class="pre">inversion</span></code> (no artificial duplication of some hypotheses referring to
+other hypotheses). To take benefit of these improvements, it is enough to use
+<code class="docutils literal notranslate"><span class="pre">inversion</span> <span class="pre">...</span> <span class="pre">as</span> <span class="pre">[]</span></code>, letting the names being finally chosen by Coq.</p>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <div class="coqtop literal-block docutils container">
@@ -3630,8 +3566,8 @@ simultaneously proved are respectively <code class="code Coq docutils literal no
 The identifiers <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code> are the names of the coinduction hypotheses.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="rewriting-expressions">
+</section>
+<section id="rewriting-expressions">
 <span id="rewritingexpressions"></span><h2>Rewriting expressions<a class="headerlink" href="#rewriting-expressions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>These tactics use the equality <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">eq</span></span><span class="operator"><span class="pre">:</span></span><span class="keyword"><span class="pre">forall</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">:</span></span><span class="keyword type"><span class="pre">Type</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">-&gt;</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">-&gt;</span></span><span class="keyword type"><span class="pre">Prop</span></span></code> defined in
 file <code class="docutils literal notranslate"><span class="pre">Logic.v</span></code> (see <a class="reference internal" href="../language/coq-library.html#coq-library-logic"><span class="std std-ref">Logic</span></a>). The notation for <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">eq</span></span> <span class="name"><span class="pre">T</span></span> <span class="name"><span class="pre">t</span></span> <span class="name"><span class="pre">u</span></span></code> is
@@ -3955,8 +3891,8 @@ in the current goal. The terms <code class="docutils literal notranslate"><span 
 </div>
 </dd></dl>
 
-</div>
-<div class="section" id="performing-computations">
+</section>
+<section id="performing-computations">
 <span id="performingcomputations"></span><h2>Performing computations<a class="headerlink" href="#performing-computations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>This set of tactics implements different specialized usages of the
 tactic <a class="reference internal" href="#coq:tacn.change" title="change"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">change</span></code></a>.</p>
@@ -4227,8 +4163,8 @@ arguments. The number of arguments required can be specified using the
 </dl>
 </div>
 </div>
-<p>After that command the expression <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">f</span></span> <span class="error"><span class="pre">\</span></span><span class="name"><span class="pre">o</span></span> <span class="name"><span class="pre">g</span></span><span class="operator"><span class="pre">)</span></span></code> is left untouched by
-<code class="docutils literal notranslate"><span class="pre">simpl</span></code> while <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">((</span></span><span class="name"><span class="pre">f</span></span> <span class="error"><span class="pre">\</span></span><span class="name"><span class="pre">o</span></span> <span class="name"><span class="pre">g</span></span><span class="operator"><span class="pre">)</span></span> <span class="name"><span class="pre">t</span></span><span class="operator"><span class="pre">)</span></span></code> is reduced to <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">f</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">g</span></span> <span class="name"><span class="pre">t</span></span><span class="operator"><span class="pre">))</span></span></code>.
+<p>After that command the expression <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">f</span></span> <span class="name builtin pseudo"><span class="pre">\</span></span><span class="name"><span class="pre">o</span></span> <span class="name"><span class="pre">g</span></span><span class="operator"><span class="pre">)</span></span></code> is left untouched by
+<code class="docutils literal notranslate"><span class="pre">simpl</span></code> while <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">((</span></span><span class="name"><span class="pre">f</span></span> <span class="name builtin pseudo"><span class="pre">\</span></span><span class="name"><span class="pre">o</span></span> <span class="name"><span class="pre">g</span></span><span class="operator"><span class="pre">)</span></span> <span class="name"><span class="pre">t</span></span><span class="operator"><span class="pre">)</span></span></code> is reduced to <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">f</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">g</span></span> <span class="name"><span class="pre">t</span></span><span class="operator"><span class="pre">))</span></span></code>.
 The same mechanism can be used to make a constant volatile, i.e.
 always unfolded.</p>
 <div class="admonition note">
@@ -4489,7 +4425,7 @@ occurrences will also be considered and possibly abstracted.</p>
 <dd><p>This is the most general syntax that combines the different variants.</p>
 </dd></dl>
 
-<div class="section" id="conversion-tactics-applied-to-hypotheses">
+<section id="conversion-tactics-applied-to-hypotheses">
 <h3>Conversion tactics applied to hypotheses<a class="headerlink" href="#conversion-tactics-applied-to-hypotheses" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="tacn">
 <dt>
@@ -4508,9 +4444,9 @@ definition.</p>
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>No</span> <span>such</span> <span>hypothesis:</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a><span>.</span></span></code></dt>
 <dd></dd></dl>
 
-</div>
-</div>
-<div class="section" id="automation">
+</section>
+</section>
+<section id="automation">
 <span id="id10"></span><h2>Automation<a class="headerlink" href="#automation" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.auto">
@@ -4770,10 +4706,10 @@ unsatisfiable hypotheses, and simple equality goals are usually solved by this t
 <dd><p>Run <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">tactic</span></span></span></code> followed by <a class="reference internal" href="#coq:tacn.easy" title="easy"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">easy</span></code></a>. This is a notation for <code class="docutils literal notranslate"><span class="notation"><span class="hole"><span class="pre">tactic</span></span><span><span class="pre">;</span></span> <span><span class="pre">easy</span></span></span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="controlling-automation">
+</section>
+<section id="controlling-automation">
 <h2>Controlling automation<a class="headerlink" href="#controlling-automation" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="the-hints-databases-for-auto-and-eauto">
+<section id="the-hints-databases-for-auto-and-eauto">
 <span id="thehintsdatabasesforautoandeauto"></span><h3>The hints databases for auto and eauto<a class="headerlink" href="#the-hints-databases-for-auto-and-eauto" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The hints for <a class="reference internal" href="#coq:tacn.auto" title="auto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">auto</span></code></a> and <a class="reference internal" href="#coq:tacn.eauto" title="eauto"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">eauto</span></code></a> are stored in databases. Each database
 maps head symbols to a list of hints.</p>
@@ -4788,7 +4724,7 @@ hint is tried by <a class="reference internal" href="#coq:tacn.auto" title="auto
 pattern or when it has no pattern.</p>
 </dd></dl>
 
-<div class="section" id="creating-hint-databases">
+<section id="creating-hint-databases">
 <h4>Creating Hint databases<a class="headerlink" href="#creating-hint-databases" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>One can optionally declare a hint database using the command
 <a class="reference internal" href="#coq:cmd.create-hintdb" title="Create HintDb"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Create</span> <span class="pre">HintDb</span></code></a>. If a hint is added to an unknown database, it will be
@@ -5061,9 +4997,9 @@ hypotheses using <code class="docutils literal notranslate"><span class="pre">ma
 </div>
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="hint-databases-defined-in-the-coq-standard-library">
+</section>
+</section>
+<section id="hint-databases-defined-in-the-coq-standard-library">
 <h3>Hint databases defined in the Coq standard library<a class="headerlink" href="#hint-databases-defined-in-the-coq-standard-library" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Several hint databases are defined in the Coq standard library. The
 actual content of a database is the collection of hints declared
@@ -5184,8 +5120,8 @@ excluded.</p>
 <dd><p>This command displays all rewrite hints contained in <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="hint-locality">
+</section>
+<section id="hint-locality">
 <h3>Hint locality<a class="headerlink" href="#hint-locality" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Hints provided by the <code class="docutils literal notranslate"><span class="pre">Hint</span></code> commands are erased when closing a section.
 Conversely, all hints of a module <code class="docutils literal notranslate"><span class="pre">A</span></code> that are not defined inside a
@@ -5223,8 +5159,8 @@ tactic, allowing to emulate an import-scoped hint mechanism.</p></li>
 </ul>
 </dd></dl>
 
-</div>
-<div class="section" id="setting-implicit-automation-tactics">
+</section>
+<section id="setting-implicit-automation-tactics">
 <span id="tactics-implicit-automation"></span><h3>Setting implicit automation tactics<a class="headerlink" href="#setting-implicit-automation-tactics" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.proof-with">
@@ -5289,9 +5225,9 @@ by <code class="docutils literal notranslate"><span class="pre">assumption</span
 </div>
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="decision-procedures">
+</section>
+</section>
+<section id="decision-procedures">
 <span id="decisionprocedures"></span><h2>Decision procedures<a class="headerlink" href="#decision-procedures" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.tauto">
@@ -5580,8 +5516,8 @@ terms given in the error message, using the <a class="reference internal" href="
 <dd><p>This option makes <a class="reference internal" href="#coq:tacn.congruence" title="congruence"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">congruence</span></code></a> print debug information.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="checking-properties-of-terms">
+</section>
+<section id="checking-properties-of-terms">
 <h2>Checking properties of terms<a class="headerlink" href="#checking-properties-of-terms" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Each of the following tactics acts as the identity if the check
 succeeds, and results in an error otherwise.</p>
@@ -5654,8 +5590,8 @@ the current goal context or in the opened sections.</p>
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>Not</span> <span>a</span> <span>variable</span> <span>or</span> <span>hypothesis.</span></span></code><a class="headerlink" href="#coq:exn.not-a-variable-or-hypothesis" title="この定義へのパーマリンク">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="equality">
+</section>
+<section id="equality">
 <span id="id14"></span><h2>Equality<a class="headerlink" href="#equality" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.f-equal">
@@ -5663,9 +5599,9 @@ the current goal context or in the opened sections.</p>
 <dd></dd></dl>
 
 <p>This tactic applies to a goal of the form <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span> <span class="name"><span class="pre">a</span></span></code><sub>1</sub> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">...</span></span> <span class="name"><span class="pre">a</span></span></code><sub>n</sub>
-<code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">=</span></span> <span class="name"><span class="pre">f</span></span><span class="error"><span class="pre">′</span></span><span class="name"><span class="pre">a</span></span><span class="error"><span class="pre">′</span></span></code><sub>1</sub> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">...</span></span> <span class="name"><span class="pre">a</span></span><span class="error"><span class="pre">′</span></span></code><sub>n</sub>.  Using <a class="reference internal" href="#coq:tacn.f-equal" title="f_equal"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">f_equal</span></code></a> on such a goal
-leads to subgoals <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span><span class="operator"><span class="pre">=</span></span><span class="name"><span class="pre">f</span></span><span class="error"><span class="pre">′</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span></code><sub>1</sub> = <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span><span class="error"><span class="pre">′</span></span></code><sub>1</sub> and so on up
-to <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span></code><sub>n</sub> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">=</span></span> <span class="name"><span class="pre">a</span></span><span class="error"><span class="pre">′</span></span></code><sub>n</sub>. Amongst these subgoals, the simple ones
+<code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">=</span></span> <span class="name"><span class="pre">f</span></span><span class="name builtin pseudo"><span class="pre">′</span></span><span class="name"><span class="pre">a</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code><sub>1</sub> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">...</span></span> <span class="name"><span class="pre">a</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code><sub>n</sub>.  Using <a class="reference internal" href="#coq:tacn.f-equal" title="f_equal"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">f_equal</span></code></a> on such a goal
+leads to subgoals <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span><span class="operator"><span class="pre">=</span></span><span class="name"><span class="pre">f</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span></code><sub>1</sub> = <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code><sub>1</sub> and so on up
+to <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span></code><sub>n</sub> <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">=</span></span> <span class="name"><span class="pre">a</span></span><span class="name builtin pseudo"><span class="pre">′</span></span></code><sub>n</sub>. Amongst these subgoals, the simple ones
 (e.g. provable by <a class="reference internal" href="#coq:tacn.reflexivity" title="reflexivity"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">reflexivity</span></code></a> or <a class="reference internal" href="#coq:tacn.congruence" title="congruence"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">congruence</span></code></a>) are automatically
 solved by <a class="reference internal" href="#coq:tacn.f-equal" title="f_equal"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">f_equal</span></code></a>.</p>
 <dl class="tacn">
@@ -5707,8 +5643,8 @@ changes it to <code class="code Coq docutils literal notranslate"><span class="n
 
 <p>This tactic applies to a goal that has the form <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">t</span></span><span class="operator"><span class="pre">=</span></span><span class="name"><span class="pre">u</span></span></code> and transforms it
 into the two subgoals <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">t=</span></span><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a></span></code> and <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a><span><span class="pre">=u</span></span></span></code>.</p>
-</div>
-<div class="section" id="equality-and-inductive-sets">
+</section>
+<section id="equality-and-inductive-sets">
 <h2>Equality and inductive sets<a class="headerlink" href="#equality-and-inductive-sets" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We describe in this section some special purpose tactics dealing with
 equality and inductive sets or types. These tactics use the
@@ -5803,8 +5739,8 @@ equalities between dependent pairs may be derived by the
 left.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="inversion">
+</section>
+<section id="inversion">
 <h2>Inversion<a class="headerlink" href="#inversion" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.functional-inversion">
@@ -5814,7 +5750,7 @@ left.</p>
 <p><a class="reference internal" href="#coq:tacn.functional-inversion" title="functional inversion"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">functional</span> <span class="pre">inversion</span></code></a> is a tactic that performs inversion on hypothesis
 <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code> of the form <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span> <span><span class="pre">=</span></span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a></span></code> or <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a> <span><span class="pre">=</span></span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a><span>
 </span><span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-term"><span class="hole"><span class="pre">term</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span></span></code> where <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole"><span class="pre">qualid</span></span></a></span></code> must have been defined using Function (see
-<a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">高度な再帰関数</span></a>). Note that this tactic is only
+<a class="reference internal" href="../language/gallina-extensions.html#advanced-recursive-functions"><span class="std std-ref">Advanced recursive functions</span></a>). Note that this tactic is only
 available after a <code class="docutils literal notranslate"><span class="pre">Require</span> <span class="pre">Import</span> <span class="pre">FunInd</span></code>.</p>
 <dl class="exn">
 <dt id="coq:exn.hypothesis-ident-must-contain-at-least-one-function">
@@ -5875,8 +5811,8 @@ datatype: see <a class="reference internal" href="detailed-tactic-examples.html#
 as constants rather than variables.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="classical-tactics">
+</section>
+<section id="classical-tactics">
 <h2>Classical tactics<a class="headerlink" href="#classical-tactics" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>In order to ease the proving process, when the Classical module is
 loaded. A few more tactics are available. Make sure to load the module
@@ -5897,8 +5833,8 @@ Use <code class="docutils literal notranslate"><span class="pre">classical_right
 the assumption that the negation of left part holds.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="automating">
+</section>
+<section id="automating">
 <span id="tactics-automating"></span><h2>Automating<a class="headerlink" href="#automating" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.btauto">
@@ -6048,8 +5984,8 @@ Goal forall x y:R, (x &lt; y)%R -&gt; (y + 1 &gt;= x - 1)%R.
 intros; fourier.</p>
 </div></blockquote>
 </div>
-</div>
-<div class="section" id="non-logical-tactics">
+</section>
+<section id="non-logical-tactics">
 <h2>Non-logical tactics<a class="headerlink" href="#non-logical-tactics" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="tacn">
 <dt id="coq:tacn.cycle">
@@ -6266,8 +6202,8 @@ solved, the proof cannot be closed.</p>
 write the proof script in a non-sequential order.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="simple-tactic-macros">
+</section>
+<section id="simple-tactic-macros">
 <h2>Simple tactic macros<a class="headerlink" href="#simple-tactic-macros" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>A simple example has more value than a long explanation:</p>
 <div class="admonition note">
@@ -6306,56 +6242,38 @@ drawback of the re-engineering of the code, this tactic has also been
 completely revised to get a very compact and readable version.</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="ltac.html" class="btn btn-neutral float-right" title="The tactic language" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="proof-handling.html" class="btn btn-neutral float-left" title="Proof handling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="proof-handling.html" class="btn btn-neutral float-left" title="Proof handling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ltac.html" class="btn btn-neutral float-right" title="The tactic language" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

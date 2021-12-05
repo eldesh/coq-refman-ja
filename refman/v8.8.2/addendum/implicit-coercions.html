@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Implicit Coercions &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Implicit Coercions &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="正準構造" href="canonical-structures.html" />
+    <link rel="next" title="Canonical Structures" href="canonical-structures.html" />
     <link rel="prev" title="Extended pattern matching" href="extended-pattern-matching.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -122,24 +77,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Implicit Coercions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general-presentation">General Presentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coercions">コアーション</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coercions">Coercions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#identity-coercions">Identity Coercions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#inheritance-graph">Inheritance Graph</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#declaring-coercions">Declaring Coercions</a></li>
@@ -156,8 +111,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -169,75 +124,35 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Implicit Coercions</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/addendum/implicit-coercions.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -328,14 +243,14 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="implicit-coercions">
+<section id="implicit-coercions">
 <span id="implicitcoercions"></span><h1>Implicit Coercions<a class="headerlink" href="#implicit-coercions" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Author</dt>
 <dd class="field-odd"><p>Amokrane Saïbi</p>
 </dd>
 </dl>
-<div class="section" id="general-presentation">
+<section id="general-presentation">
 <h2>General Presentation<a class="headerlink" href="#general-presentation" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>This section describes the inheritance mechanism of <span class="smallcaps">Coq</span>. In <span class="smallcaps">Coq</span> with
 inheritance, we are not interested in adding any expressive power to
@@ -352,8 +267,8 @@ a certain sense as a type: set, group, category etc.</p></li>
 as a function: bijection, functor, any structure morphism etc.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="classes">
+</section>
+<section id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>A class with <cite>n</cite> parameters is any defined name with a type
 <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">forall</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x₁</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A₁</span></span><span class="operator"><span class="pre">)..(</span></span><span class="name"><span class="pre">xₙ</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">Aₙ</span></span><span class="operator"><span class="pre">),</span></span><span class="name"><span class="pre">s</span></span></code> where <code class="docutils literal notranslate"><span class="pre">s</span></code> is a sort.  Thus a class with
@@ -374,9 +289,9 @@ type, i.e. of form <code class="code Coq docutils literal notranslate"><span cla
            | <code class="xref docutils literal notranslate"><span class="pre">Sortclass</span></code>
            | <code class="xref docutils literal notranslate"><span class="pre">Funclass</span></code>
 </pre>
-</div>
-<div class="section" id="coercions">
-<h2>コアーション<a class="headerlink" href="#coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+<section id="coercions">
+<h2>Coercions<a class="headerlink" href="#coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>A name <code class="docutils literal notranslate"><span class="pre">f</span></code> can be declared as a coercion between a source user-defined class
 <code class="docutils literal notranslate"><span class="pre">C</span></code> with <cite>n</cite> parameters and a target class <code class="docutils literal notranslate"><span class="pre">D</span></code> if one of these
 conditions holds:</p>
@@ -401,8 +316,8 @@ the built-in class <code class="docutils literal notranslate"><span class="pre">
 <p>To coerce an object <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">t</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">C</span></span> <span class="name"><span class="pre">t₁</span></span><span class="operator"><span class="pre">..</span></span><span class="name"><span class="pre">tₙ</span></span></code> of <code class="docutils literal notranslate"><span class="pre">C</span></code> towards <code class="docutils literal notranslate"><span class="pre">D</span></code>, we have to
 apply the coercion <code class="docutils literal notranslate"><span class="pre">f</span></code> to it; the obtained term <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span> <span class="name"><span class="pre">t₁</span></span><span class="operator"><span class="pre">..</span></span><span class="name"><span class="pre">tₙ</span></span> <span class="name"><span class="pre">t</span></span></code> is
 then an object of <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p>
-</div>
-<div class="section" id="identity-coercions">
+</section>
+<section id="identity-coercions">
 <h2>Identity Coercions<a class="headerlink" href="#identity-coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Identity coercions are special cases of coercions used to go around
 the uniform inheritance condition. Let <code class="docutils literal notranslate"><span class="pre">C</span></code> and <code class="docutils literal notranslate"><span class="pre">D</span></code> be two classes
@@ -427,8 +342,8 @@ since <code class="code Coq docutils literal notranslate"><span class="name"><sp
 &quot;rewrite&quot; the type of <code class="docutils literal notranslate"><span class="pre">t</span></code> to become an object of <code class="docutils literal notranslate"><span class="pre">C</span></code>; in this case,
 it becomes <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">C</span></span> <span class="name"><span class="pre">uₙ'</span></span><span class="operator"><span class="pre">..</span></span><span class="name"><span class="pre">uₖ'</span></span></code> where each <code class="docutils literal notranslate"><span class="pre">uᵢ'</span></code> is the result of the
 substitution in <code class="docutils literal notranslate"><span class="pre">uᵢ</span></code> of the variables <code class="docutils literal notranslate"><span class="pre">xⱼ</span></code> by <code class="docutils literal notranslate"><span class="pre">tⱼ</span></code>.</p>
-</div>
-<div class="section" id="inheritance-graph">
+</section>
+<section id="inheritance-graph">
 <h2>Inheritance Graph<a class="headerlink" href="#inheritance-graph" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Coercions form an inheritance graph with classes as nodes.  We call
 <em>coercion path</em> an ordered list of coercions between two nodes of
@@ -444,8 +359,8 @@ of declaration of coercions is important.</p>
 <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">[</span></span><span class="name"><span class="pre">f₁</span></span><span class="operator"><span class="pre">;..;</span></span><span class="name"><span class="pre">fₖ</span></span><span class="operator"><span class="pre">]</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">C</span></span> <span class="operator"><span class="pre">&gt;-&gt;</span></span> <span class="name"><span class="pre">D</span></span></code> is the coercion path composed
 by the coercions <code class="docutils literal notranslate"><span class="pre">f₁..fₖ</span></code>.  The application of a coercion path to a
 term consists of the successive application of its coercions.</p>
-</div>
-<div class="section" id="declaring-coercions">
+</section>
+<section id="declaring-coercions">
 <h2>Declaring Coercions<a class="headerlink" href="#declaring-coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="cmd">
 <dt id="coq:cmd.coercion">
@@ -595,8 +510,8 @@ declared. Otherwise said, this is an abbreviation for</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="displaying-available-coercions">
+</section>
+<section id="displaying-available-coercions">
 <h2>Displaying Available Coercions<a class="headerlink" href="#displaying-available-coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="cmd">
 <dt id="coq:cmd.print-classes">
@@ -622,8 +537,8 @@ declared. Otherwise said, this is an abbreviation for</p>
 <dd><p>Print the list of valid coercion paths between the two given classes.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="activating-the-printing-of-coercions">
+</section>
+<section id="activating-the-printing-of-coercions">
 <h2>Activating the Printing of Coercions<a class="headerlink" href="#activating-the-printing-of-coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="flag">
 <dt id="coq:flag.printing-coercions">
@@ -635,11 +550,12 @@ By default, coercions are not printed.</p>
 <dl class="table">
 <dt id="coq:table.printing-coercion">
 <em class="property"><span class="sigannot">Table</span></em> <code class="sig-name descname"><span class="notation"><span>Printing</span> <span>Coercion</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code><a class="headerlink" href="#coq:table.printing-coercion" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>Specifies a set of qualids for which coercions are always displayed.  qualid の集合を更新するには <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.add-table" title="Add &#64;table"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Add</span> <span class="pre">&#64;table</span></code></a> と <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.remove-table" title="Remove &#64;table"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">&#64;table</span></code></a> コマンドを使います。</p>
+<dd><p>Specifies a set of qualids for which coercions are always displayed.  Use the
+<a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.add-table" title="Add &#64;table"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Add</span> <span class="pre">&#64;table</span></code></a> and <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.remove-table" title="Remove &#64;table"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">&#64;table</span></code></a> commands to update the set of qualids.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="classes-as-records">
+</section>
+<section id="classes-as-records">
 <span id="coercions-classes-as-records"></span><h2>Classes as Records<a class="headerlink" href="#classes-as-records" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We allow the definition of <em>Structures with Inheritance</em> (or classes as records)
 by extending the existing <a class="reference internal" href="../language/gallina-extensions.html#coq:cmd.record" title="Record"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Record</span></code></a> macro. Its new syntax is:</p>
@@ -667,8 +583,8 @@ satisfied).</p>
 <dd><p>This is a synonym of <a class="reference internal" href="../language/gallina-extensions.html#coq:cmd.record" title="Record"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Record</span></code></a>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="coercions-and-sections">
+</section>
+<section id="coercions-and-sections">
 <h2>Coercions and Sections<a class="headerlink" href="#coercions-and-sections" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The inheritance mechanism is compatible with the section
 mechanism. The global classes and coercions defined inside a section
@@ -678,8 +594,8 @@ simply forgotten.
 Coercions with a local source class or a local target class, and
 coercions which do not verify the uniform inheritance condition any longer
 are also forgotten.</p>
-</div>
-<div class="section" id="coercions-and-modules">
+</section>
+<section id="coercions-and-modules">
 <h2>Coercions and Modules<a class="headerlink" href="#coercions-and-modules" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="flag">
 <dt id="coq:flag.automatic-coercions-import">
@@ -692,11 +608,11 @@ imported or not.</p>
 <span class="smallcaps">Coq</span> prior to 8.3.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="examples">
+</section>
+<section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>There are three situations:</p>
-<div class="section" id="coercion-at-function-application">
+<section id="coercion-at-function-application">
 <h3>Coercion at function application<a class="headerlink" href="#coercion-at-function-application" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span> <span class="name"><span class="pre">a</span></span></code> is ill-typed where <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span><span class="operator"><span class="pre">:</span></span><span class="keyword"><span class="pre">forall</span></span> <span class="name"><span class="pre">x</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A</span></span><span class="operator"><span class="pre">,</span></span><span class="name"><span class="pre">B</span></span></code> and <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">a</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">A'</span></span></code>. If there is a
 coercion path between <code class="docutils literal notranslate"><span class="pre">A'</span></code> and <code class="docutils literal notranslate"><span class="pre">A</span></code>, then <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">f</span></span> <span class="name"><span class="pre">a</span></span></code> is transformed into
@@ -795,8 +711,8 @@ previous example.</p>
 <dt><span class="coqdoc-keyword">Unset Printing Coercions</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="coercion-to-a-type">
+</section>
+<section id="coercion-to-a-type">
 <h3>Coercion to a type<a class="headerlink" href="#coercion-to-a-type" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>An assumption <code class="docutils literal notranslate"><span class="pre">x:A</span></code> when <code class="docutils literal notranslate"><span class="pre">A</span></code> is not a type, is ill-typed.  It is
 replaced by <code class="docutils literal notranslate"><span class="pre">x:A'</span></code> where <code class="docutils literal notranslate"><span class="pre">A'</span></code> is the result of the application to
@@ -824,8 +740,8 @@ to <code class="docutils literal notranslate"><span class="pre">B</span></code> 
 <dt><span class="coqdoc-keyword">Unset Printing Coercions</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="coercion-to-a-function">
+</section>
+<section id="coercion-to-a-function">
 <h3>Coercion to a function<a class="headerlink" href="#coercion-to-a-function" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">a</span></code> is ill-typed because <code class="docutils literal notranslate"><span class="pre">f:A</span></code> is not a function. The term
 <code class="docutils literal notranslate"><span class="pre">f</span></code> is replaced by the term obtained by applying to <code class="docutils literal notranslate"><span class="pre">f</span></code> the
@@ -858,57 +774,39 @@ coercion path between <code class="docutils literal notranslate"><span class="pr
 [</span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">ap</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">] : bij &gt;-&gt; Funclass</span></dd>
 </dl>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="canonical-structures.html" class="btn btn-neutral float-right" title="正準構造" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="extended-pattern-matching.html" class="btn btn-neutral float-left" title="Extended pattern matching" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="extended-pattern-matching.html" class="btn btn-neutral float-left" title="Extended pattern matching" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="canonical-structures.html" class="btn btn-neutral float-right" title="Canonical Structures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

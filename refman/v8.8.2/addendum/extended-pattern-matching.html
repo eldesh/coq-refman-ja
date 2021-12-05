@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Extended pattern matching &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extended pattern matching &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Implicit Coercions" href="implicit-coercions.html" />
     <link rel="prev" title="Coq Integrated Development Environment" href="../practical-tools/coqide.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -122,18 +77,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Extended pattern matching</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#patterns">Patterns</a></li>
@@ -161,8 +116,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -174,75 +129,35 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Extended pattern matching</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/addendum/extended-pattern-matching.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -333,15 +248,15 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="extended-pattern-matching">
+<section id="extended-pattern-matching">
 <span id="extendedpatternmatching"></span><h1>Extended pattern matching<a class="headerlink" href="#extended-pattern-matching" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">著者</dt>
+<dt class="field-odd">Authors</dt>
 <dd class="field-odd"><p>Cristina Cornes and Hugo Herbelin</p>
 </dd>
 </dl>
 <p>This section describes the full form of pattern matching in <span class="smallcaps">Coq</span> terms.</p>
-<div class="section" id="patterns">
+<section id="patterns">
 <h2>Patterns<a class="headerlink" href="#patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The full syntax of match is presented in Figures 1.1 and 1.2.
 Identifiers in patterns are either constructor names or variables. Any
@@ -395,8 +310,8 @@ by:</p>
 max is recursively defined (decreasing on 2nd argument)</span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="multiple-patterns">
+</section>
+<section id="multiple-patterns">
 <h2>Multiple patterns<a class="headerlink" href="#multiple-patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Using multiple patterns in the definition of <code class="docutils literal notranslate"><span class="pre">max</span></code> lets us write:</p>
 <div class="coqtop literal-block docutils container">
@@ -425,8 +340,8 @@ does not build a match expression.</p>
      : </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> -&gt;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="aliasing-subpatterns">
+</section>
+<section id="aliasing-subpatterns">
 <h2>Aliasing subpatterns<a class="headerlink" href="#aliasing-subpatterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We can also use <code class="docutils literal notranslate"><span class="notation"><span><span class="pre">as</span></span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code> to associate a name to a sub-pattern:</p>
 <div class="coqtop literal-block docutils container">
@@ -442,8 +357,8 @@ does not build a match expression.</p>
 </span><span class="ansi-fg-white ansi-bg-red ansi-bold ansi-no-italic ansi-no-underline ansi-no-negative">Error:</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> max already exists.</span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="nested-patterns">
+</section>
+<section id="nested-patterns">
 <h2>Nested patterns<a class="headerlink" href="#nested-patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Here is now an example of nested patterns:</p>
 <div class="coqtop literal-block docutils container">
@@ -528,8 +443,8 @@ example:</p>
 This clause is redundant.</span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="disjunctive-patterns">
+</section>
+<section id="disjunctive-patterns">
 <h2>Disjunctive patterns<a class="headerlink" href="#disjunctive-patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Multiple patterns that share the same right-hand-side can be
 factorized using the notation <code class="docutils literal notranslate"><span class="notation"><span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-mult-pattern"><span class="hole"><span class="pre">mult_pattern</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span><span class="notation-sub"><span class="pre">|</span></span></span></span></code>. For
@@ -568,10 +483,10 @@ Here is an example:</p>
   </span><span class="coqdoc-keyword">end</span><span>.</span></dt><dd class="coqtop-hidden"><span>filter_some_square_corners is defined</span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="about-patterns-of-parametric-types">
+</section>
+<section id="about-patterns-of-parametric-types">
 <h2>About patterns of parametric types<a class="headerlink" href="#about-patterns-of-parametric-types" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="parameters-in-patterns">
+<section id="parameters-in-patterns">
 <h3>Parameters in patterns<a class="headerlink" href="#parameters-in-patterns" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>When matching objects of a parametric type, parameters do not bind in
 patterns. They must be substituted by “<code class="docutils literal notranslate"><span class="pre">_</span></code>”. Consider for example the
@@ -639,9 +554,9 @@ The term &quot;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold 
 <dt><span class="coqdoc-keyword">Unset</span><span> </span><span class="coqdoc-var">Asymmetric</span><span> </span><span class="coqdoc-var">Patterns</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</div>
-</div>
-<div class="section" id="implicit-arguments-in-patterns">
+</section>
+</section>
+<section id="implicit-arguments-in-patterns">
 <h2>Implicit arguments in patterns<a class="headerlink" href="#implicit-arguments-in-patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>By default, implicit arguments are omitted in patterns. So we write:</p>
 <div class="coqtop literal-block docutils container">
@@ -676,8 +591,8 @@ explicitations (as for terms 2.7.11).</p>
      : </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">List</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span><span class="ansi-fg-white ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> -&gt;</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">List</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"> </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="matching-objects-of-dependent-types">
+</section>
+<section id="matching-objects-of-dependent-types">
 <span id="matching-dependent"></span><h2>Matching objects of dependent types<a class="headerlink" href="#matching-objects-of-dependent-types" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The previous examples illustrate pattern matching on objects of non-
 dependent types, but we can also use the expansion strategy to
@@ -693,8 +608,8 @@ listn_ind is defined
 listn_rec is defined</span></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="understanding-dependencies-in-patterns">
+</section>
+<section id="understanding-dependencies-in-patterns">
 <h2>Understanding dependencies in patterns<a class="headerlink" href="#understanding-dependencies-in-patterns" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We can define the function length over <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">listn</span></span></code> by:</p>
 <div class="coqtop literal-block docutils container">
@@ -718,10 +633,10 @@ analysis:</p>
 </div>
 <p>We can understand the meaning of this definition using the same
 notions of usual pattern matching.</p>
-</div>
-<div class="section" id="when-the-elimination-predicate-must-be-provided">
+</section>
+<section id="when-the-elimination-predicate-must-be-provided">
 <h2>When the elimination predicate must be provided<a class="headerlink" href="#when-the-elimination-predicate-must-be-provided" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="dependent-pattern-matching">
+<section id="dependent-pattern-matching">
 <h3>Dependent pattern matching<a class="headerlink" href="#dependent-pattern-matching" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The examples given so far do not need an explicit elimination
 predicate because all the right hand sides have the same type and Coq
@@ -742,15 +657,15 @@ concat is recursively defined (decreasing on 2nd argument)</span></dd>
 </dl>
 </div>
 <p>The elimination predicate is <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">n</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">nat</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">l</span></span><span class="operator"><span class="pre">:</span></span><span class="name"><span class="pre">listn</span></span> <span class="name"><span class="pre">n</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">listn</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">n</span></span><span class="operator"><span class="pre">+</span></span><span class="name"><span class="pre">m</span></span><span class="operator"><span class="pre">)</span></span></code>.
-In general if <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">m</span></span></code> has type <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">I</span></span> <span class="name"><span class="pre">q1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">qr</span></span> <span class="name"><span class="pre">t1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">ts</span></span><span class="operator"><span class="pre">)</span></span></code> where <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">q1</span></span><span class="operator"><span class="pre">,</span></span> <span class="error"><span class="pre">…</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">qr</span></span></code>
-are parameters, the elimination predicate should be of the form <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="name"><span class="pre">y1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">ys</span></span> <span class="name"><span class="pre">x</span></span> <span class="operator"><span class="pre">:</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">I</span></span> <span class="name"><span class="pre">q1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">qr</span></span> <span class="name"><span class="pre">y1</span></span> <span class="error"><span class="pre">…</span></span> <span class="name"><span class="pre">ys</span></span> <span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">Q</span></span></code>.</p>
+In general if <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">m</span></span></code> has type <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">I</span></span> <span class="name"><span class="pre">q1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">qr</span></span> <span class="name"><span class="pre">t1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">ts</span></span><span class="operator"><span class="pre">)</span></span></code> where <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">q1</span></span><span class="operator"><span class="pre">,</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span><span class="operator"><span class="pre">,</span></span> <span class="name"><span class="pre">qr</span></span></code>
+are parameters, the elimination predicate should be of the form <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">fun</span></span> <span class="name"><span class="pre">y1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">ys</span></span> <span class="name"><span class="pre">x</span></span> <span class="operator"><span class="pre">:</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">I</span></span> <span class="name"><span class="pre">q1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">qr</span></span> <span class="name"><span class="pre">y1</span></span> <span class="name builtin pseudo"><span class="pre">…</span></span> <span class="name"><span class="pre">ys</span></span> <span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">=&gt;</span></span> <span class="name"><span class="pre">Q</span></span></code>.</p>
 <p>In the concrete syntax, it should be written :
 <code class="docutils literal notranslate"><span class="pre">match</span> <span class="pre">m</span> <span class="pre">as</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">(I</span> <span class="pre">_</span> <span class="pre">…</span> <span class="pre">_</span> <span class="pre">y1</span> <span class="pre">…</span> <span class="pre">ys)</span> <span class="pre">return</span> <span class="pre">Q</span> <span class="pre">with</span> <span class="pre">…</span> <span class="pre">end</span></code>.
 The variables which appear in the <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">as</span></code> clause are new and bounded
 in the property <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Q</span></span></code> in the return clause. The parameters of the
 inductive definitions should not be mentioned and are replaced by <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p>
-</div>
-<div class="section" id="multiple-dependent-pattern-matching">
+</section>
+<section id="multiple-dependent-pattern-matching">
 <h3>Multiple dependent pattern matching<a class="headerlink" href="#multiple-dependent-pattern-matching" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Recall that a list of patterns is also a pattern. So, when we
 destructure several terms at the same time and the branches have
@@ -789,8 +704,8 @@ length, by writing</p>
 </dl>
 </div>
 <p>we have a copy of <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">b</span></span></code> in type <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">listn</span></span> <span class="literal number integer"><span class="pre">0</span></span></code> resp. <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">listn</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">S</span></span> <span class="name"><span class="pre">n'</span></span><span class="operator"><span class="pre">)</span></span></code>.</p>
-</div>
-<div class="section" id="patterns-in-in">
+</section>
+<section id="patterns-in-in">
 <span id="match-in-patterns"></span><h3>Patterns in <code class="docutils literal notranslate"><span class="pre">in</span></code><a class="headerlink" href="#patterns-in-in" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>If the type of the matched term is more precise than an inductive
 applied to variables, arguments of the inductive in the <code class="docutils literal notranslate"><span class="pre">in</span></code> branch can
@@ -810,9 +725,9 @@ anything.</p>
 </dl>
 </div>
 <p>and <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">tail</span></span> <span class="name"><span class="pre">n</span></span> <span class="name"><span class="pre">v</span></span></code> will be subterm of <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">v</span></span></code>.</p>
-</div>
-</div>
-<div class="section" id="using-pattern-matching-to-write-proofs">
+</section>
+</section>
+<section id="using-pattern-matching-to-write-proofs">
 <h2>Using pattern matching to write proofs<a class="headerlink" href="#using-pattern-matching-to-write-proofs" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>In all the previous examples the elimination predicate does not depend
 on the object(s) matched. But it may depend and the typical case is
@@ -863,8 +778,8 @@ is not.</p>
 <p>The user can also use match in combination with the tactic <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.refine" title="refine"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">refine</span></code></a> (see
 Section 8.2.3) to build incomplete proofs beginning with a match
 construction.</p>
-</div>
-<div class="section" id="pattern-matching-on-inductive-objects-involving-local-definitions">
+</section>
+<section id="pattern-matching-on-inductive-objects-involving-local-definitions">
 <h2>Pattern-matching on inductive objects involving local definitions<a class="headerlink" href="#pattern-matching-on-inductive-objects-involving-local-definitions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>If local definitions occur in the type of a constructor, then there
 are two ways to match on this constructor. Either the local
@@ -924,8 +839,8 @@ variables and so you have to use <code class="docutils literal notranslate"><spa
 cannot be caught and consequently is somehow hidden. For example,
 there is no mention of it in error messages.</p>
 </div>
-</div>
-<div class="section" id="pattern-matching-and-coercions">
+</section>
+<section id="pattern-matching-and-coercions">
 <h2>Pattern-matching and coercions<a class="headerlink" href="#pattern-matching-and-coercions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>If a mismatch occurs between the expected type of a pattern and its
 actual type, a coercion made from constructors is sought. If such a
@@ -954,8 +869,8 @@ I_rec is defined</span></dd>
 </dl>
 </div>
 </div>
-</div>
-<div class="section" id="when-does-the-expansion-strategy-fail">
+</section>
+<section id="when-does-the-expansion-strategy-fail">
 <h2>When does the expansion strategy fail?<a class="headerlink" href="#when-does-the-expansion-strategy-fail" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The strategy works very like in ML languages when treating patterns of
 non-dependent types. But there are new cases of failure that are due to
@@ -1004,56 +919,38 @@ arguments, because they are not linear or they are wrongly typed).</p>
 provide an elimination predicate.</p>
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="implicit-coercions.html" class="btn btn-neutral float-right" title="Implicit Coercions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../practical-tools/coqide.html" class="btn btn-neutral float-left" title="Coq Integrated Development Environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../practical-tools/coqide.html" class="btn btn-neutral float-left" title="Coq Integrated Development Environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="implicit-coercions.html" class="btn btn-neutral float-right" title="Implicit Coercions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

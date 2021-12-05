@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Extraction of programs in OCaml and Haskell &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extraction of programs in OCaml and Haskell &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Program" href="program.html" />
     <link rel="prev" title="Micromega: tactics for solving arithmetic goals over ordered rings" href="micromega.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -122,23 +77,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a><ul>
@@ -169,75 +124,35 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/addendum/extraction.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -328,10 +243,10 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="extraction-of-programs-in-ocaml-and-haskell">
+<section id="extraction-of-programs-in-ocaml-and-haskell">
 <span id="extraction"></span><h1>Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell<a class="headerlink" href="#extraction-of-programs-in-ocaml-and-haskell" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">著者</dt>
+<dt class="field-odd">Authors</dt>
 <dd class="field-odd"><p>Jean-Christophe Filliâtre and Pierre Letouzey</p>
 </dd>
 </dl>
@@ -352,7 +267,7 @@ directly available without any preliminary <code class="docutils literal notrans
 <dt><span class="coqdoc-keyword">Require</span><span> </span><span class="coqdoc-keyword">Extraction</span><span>.</span></dt><dd class="coqtop-hidden"><span>[Loading ML file extraction_plugin.cmxs ... done]</span></dd>
 </dl>
 </div>
-<div class="section" id="generating-ml-code">
+<section id="generating-ml-code">
 <h2>Generating ML Code<a class="headerlink" href="#generating-ml-code" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -432,10 +347,10 @@ if the extraction and the <span class="smallcaps">OCaml</span> compilation succe
 if the current target language of the extraction is not <span class="smallcaps">OCaml</span>.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="extraction-options">
+</section>
+<section id="extraction-options">
 <h2>Extraction Options<a class="headerlink" href="#extraction-options" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="setting-the-target-language">
+<section id="setting-the-target-language">
 <h3>Setting the target language<a class="headerlink" href="#setting-the-target-language" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The ability to fix target language is the first and more important
 of the extraction options. Default is <code class="docutils literal notranslate"><span class="pre">OCaml</span></code>.</p>
@@ -454,8 +369,8 @@ of the extraction options. Default is <code class="docutils literal notranslate"
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Extraction</span> <span>Language</span> <span>Scheme</span></span></code><a class="headerlink" href="#coq:cmd.extraction-language-scheme" title="この定義へのパーマリンク">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="inlining-and-optimizations">
+</section>
+<section id="inlining-and-optimizations">
 <h3>Inlining and optimizations<a class="headerlink" href="#inlining-and-optimizations" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Since <span class="smallcaps">OCaml</span> is a strict language, the extracted code has to
 be optimized in order to be efficient (for instance, when using
@@ -564,8 +479,8 @@ and this constant is not declared in the generated file.</p></li>
 declared in the produced file.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="extra-elimination-of-useless-arguments">
+</section>
+<section id="extra-elimination-of-useless-arguments">
 <h3>Extra elimination of useless arguments<a class="headerlink" href="#extra-elimination-of-useless-arguments" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The following command provides some extra manual control on the
 code elimination performed during extraction, in a way which
@@ -598,8 +513,8 @@ Note that this extracted code might not compile or run properly,
 depending of the use of these remaining implicit arguments.</p>
 </dd></dl>
 
-</div>
-<div class="section" id="realizing-axioms">
+</section>
+<section id="realizing-axioms">
 <h3>Realizing axioms<a class="headerlink" href="#realizing-axioms" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Extraction will fail if it encounters an informative axiom not realized.
 A warning will be issued if it encounters a logical axiom, to remind the
@@ -633,7 +548,11 @@ will have an effect on the realized and inlined axiom.</p>
 
 <div class="admonition caution">
 <p class="admonition-title">ご用心</p>
-<p>It is the responsibility of the user to ensure that the ML terms given to realize the axioms do have the expected types. In fact, the strings containing realizing code are just copied to the extracted files. The extraction recognizes whether the realized axiom should become a ML type constant or a ML object declaration. 例えば:</p>
+<p>It is the responsibility of the user to ensure that the ML
+terms given to realize the axioms do have the expected types. In
+fact, the strings containing realizing code are just copied to the
+extracted files. The extraction recognizes whether the realized axiom
+should become a ML type constant or a ML object declaration. For example:</p>
 </div>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
@@ -651,7 +570,7 @@ variables have to be given (as quoted strings). The syntax is then:</p>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Extract</span> <span>Constant</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole">string</span></a> <span>...</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole">string</span></a> <span>=&gt;</span> <a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-string"><span class="hole">string</span></a></span></code></dt>
 <dd></dd></dl>
 
-<p>The number of type variables is checked by the system. 例えば:</p>
+<p>The number of type variables is checked by the system. For example:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Axiom</span><span> </span><span class="coqdoc-var">Y</span><span> : </span><span class="coqdoc-keyword">Set</span><span> -&gt; </span><span class="coqdoc-keyword">Set</span><span> -&gt; </span><span class="coqdoc-keyword">Set</span><span>.</span></dt><dd class="coqtop-hidden"><span>Y is declared</span></dd>
@@ -669,8 +588,8 @@ warning is also issued and the definition of the axiom is filled with
 an exception labeled <code class="docutils literal notranslate"><span class="pre">AXIOM</span> <span class="pre">TO</span> <span class="pre">BE</span> <span class="pre">REALIZED</span></code>. The user must then
 search these exceptions inside the extracted file and replace them by
 real code.</p>
-</div>
-<div class="section" id="realizing-inductive-types">
+</section>
+<section id="realizing-inductive-types">
 <h3>Realizing inductive types<a class="headerlink" href="#realizing-inductive-types" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The system also provides a mechanism to specify ML terms for inductive
 types and constructors. For instance, the user may want to use the ML
@@ -752,8 +671,8 @@ used as an infix constructor or type.</p>
 <dt><span class="coqdoc-keyword">Extract</span><span> </span><span class="coqdoc-keyword">Inductive</span><span> </span><span class="coqdoc-var">nat</span><span> =&gt; </span><span class="coqdoc-var">int</span><span> [ &quot;0&quot; &quot;succ&quot; ] &quot;(fun fO fS n -&gt; if n=0 then fO () else fS (n-1))&quot;.</span></dt><dd class="coqtop-hidden"></dd>
 </dl>
 </div>
-</div>
-<div class="section" id="avoiding-conflicts-with-existing-filenames">
+</section>
+<section id="avoiding-conflicts-with-existing-filenames">
 <h3>Avoiding conflicts with existing filenames<a class="headerlink" href="#avoiding-conflicts-with-existing-filenames" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>When using <a class="reference internal" href="#coq:cmd.extraction-library" title="Extraction Library"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Extraction</span> <span class="pre">Library</span></code></a>, the names of the extracted files
 directly depend on the names of the <span class="smallcaps">Coq</span> files. It may happen that
@@ -783,9 +702,9 @@ for extracted code.</p>
 
 <p>For <span class="smallcaps">OCaml</span>, a typical use of these commands is
 <code class="docutils literal notranslate"><span class="pre">Extraction</span> <span class="pre">Blacklist</span> <span class="pre">String</span> <span class="pre">List</span></code>.</p>
-</div>
-</div>
-<div class="section" id="differences-between-coq-and-ml-type-systems">
+</section>
+</section>
+<section id="differences-between-coq-and-ml-type-systems">
 <h2>Differences between <span class="smallcaps">Coq</span> and ML type systems<a class="headerlink" href="#differences-between-coq-and-ml-type-systems" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Due to differences between <span class="smallcaps">Coq</span> and ML type systems,
 some extracted programs are not directly typable in ML.
@@ -841,15 +760,15 @@ found in <a class="bibtex reference internal" href="../zebibliography.html#let02
 <p>We have to say, though, that in most &quot;realistic&quot; programs, these problems do not
 occur. For example all the programs of Coq library are accepted by the <span class="smallcaps">OCaml</span>
 type checker without any <code class="docutils literal notranslate"><span class="pre">Obj.magic</span></code> (see examples below).</p>
-</div>
-<div class="section" id="some-examples">
+</section>
+<section id="some-examples">
 <h2>Some examples<a class="headerlink" href="#some-examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We present here two examples of extraction, taken from the
 <span class="smallcaps">Coq</span> Standard Library. We choose <span class="smallcaps">OCaml</span> as the target language,
 but everything, with slight modifications, can also be done in the
 other languages supported by extraction.
 We then indicate where to find other examples and tests of extraction.</p>
-<div class="section" id="a-detailed-example-euclidean-division">
+<section id="a-detailed-example-euclidean-division">
 <h3>A detailed example: Euclidean division<a class="headerlink" href="#a-detailed-example-euclidean-division" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The file <code class="docutils literal notranslate"><span class="pre">Euclid</span></code> contains the proof of Euclidean division.
 The natural numbers used here are unary, represented by the type``nat``,
@@ -957,13 +876,13 @@ available via a mere <code class="docutils literal notranslate"><span class="pre
 adding these functions to the list of functions to extract. This file
 <code class="docutils literal notranslate"><span class="pre">ExtrOcamlIntConv.v</span></code> and some others in <code class="docutils literal notranslate"><span class="pre">plugins/extraction/</span></code>
 are meant to help building concrete program via extraction.</p>
-</div>
-<div class="section" id="extraction-s-horror-museum">
+</section>
+<section id="extraction-s-horror-museum">
 <h3>Extraction's horror museum<a class="headerlink" href="#extraction-s-horror-museum" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Some pathological examples of extraction are grouped in the file
 <code class="docutils literal notranslate"><span class="pre">test-suite/success/extraction.v</span></code> of the sources of <span class="smallcaps">Coq</span>.</p>
-</div>
-<div class="section" id="users-contributions">
+</section>
+<section id="users-contributions">
 <h3>Users' Contributions<a class="headerlink" href="#users-contributions" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Several of the <span class="smallcaps">Coq</span> Users' Contributions use extraction to produce
 certified programs. In particular the following ones have an automatic
@@ -993,57 +912,39 @@ examples of developments where <code class="docutils literal notranslate"><span 
 probably due to a heavy use of impredicativity. After compilation, those
 two examples run nonetheless, thanks to the correction of the
 extraction <a class="bibtex reference internal" href="../zebibliography.html#let02" id="id2">[Let02]</a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="program.html" class="btn btn-neutral float-right" title="Program" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="micromega.html" class="btn btn-neutral float-left" title="Micromega: tactics for solving arithmetic goals over ordered rings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="micromega.html" class="btn btn-neutral float-left" title="Micromega: tactics for solving arithmetic goals over ordered rings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="program.html" class="btn btn-neutral float-right" title="Program" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

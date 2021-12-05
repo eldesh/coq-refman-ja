@@ -1,79 +1,44 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Program &mdash; Coq 8.8.2 ドキュメント</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/notations.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program &mdash; Coq 8.8.2 ドキュメント</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ansi.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/coqdoc.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/notations.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pre-text.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/notations.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="The ring and field tactic families" href="ring.html" />
     <link rel="prev" title="Extraction of programs in OCaml and Haskell" href="extraction.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Coq
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 8.8.2
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +46,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">索引</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p><span class="caption-text">索引</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-cmdindex.html">Command index</a></li>
@@ -100,20 +55,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../coq-optindex.html">Flags, options and tables index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../coq-exnindex.html">Errors and warnings index</a></li>
 </ul>
-<p class="caption"><span class="caption-text">はじめに</span></p>
+<p><span class="caption-text">はじめに</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
 </ul>
-<p class="caption"><span class="caption-text">言語</span></p>
+<p><span class="caption-text">言語</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">仕様記述言語 Gallina</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html"><span class="smallcaps">Gallina</span> の拡張</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-specification-language.html">The Gallina specification language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language/gallina-extensions.html">Extensions of <span class="smallcaps">Gallina</span></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/coq-library.html">The <span class="smallcaps">Coq</span> library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/cic.html">Calculus of Inductive Constructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language/module-system.html">The Module System</a></li>
 </ul>
-<p class="caption"><span class="caption-text">証明エンジン</span></p>
+<p><span class="caption-text">証明エンジン</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/vernacular-commands.html">Vernacular commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/proof-handling.html">Proof handling</a></li>
@@ -122,23 +77,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/detailed-tactic-examples.html">Detailed examples of tactics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../proof-engine/ssreflect-proof-language.html">The <span class="smallcaps">SSReflect</span> proof language</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ユーザ拡張</span></p>
+<p><span class="caption-text">ユーザ拡張</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/syntax-extensions.html">Syntax extensions and interpretation scopes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-extensions/proof-schemes.html">Proof schemes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">実用ツール</span></p>
+<p><span class="caption-text">実用ツール</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coq-commands.html">The <span class="smallcaps">Coq</span> commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/utilities.html">Utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../practical-tools/coqide.html"><span class="smallcaps">Coq</span> Integrated Development Environment</a></li>
 </ul>
-<p class="caption"><span class="caption-text">付録</span></p>
+<p><span class="caption-text">付録</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="extended-pattern-matching.html">Extended pattern matching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicit-coercions.html">Implicit Coercions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">正準構造</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type-classes.html">型クラス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical-structures.html">Canonical Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-classes.html">Type Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="omega.html">Omega: a solver for quantifier-free problems in Presburger Arithmetic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="micromega.html">Micromega: tactics for solving arithmetic goals over ordered rings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction of programs in <span class="smallcaps">OCaml</span> and Haskell</a></li>
@@ -161,75 +116,35 @@
 <li class="toctree-l1"><a class="reference internal" href="miscellaneous-extensions.html">Miscellaneous extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="universe-polymorphism.html">Polymorphic Universes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference</span></p>
+<p><span class="caption-text">Reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zebibliography.html">Bibliography</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Coq</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Program</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <a href="https://github.com/coq/coq/blob/master/doc/sphinx/addendum/program.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="math-preamble math notranslate nohighlight">
 \[\begin{split}\newcommand{\alors}{\textsf{then}}
 \newcommand{\alter}{\textsf{alter}}
@@ -320,7 +235,7 @@
 \newcommand{\zeroone}[1]{[{#1}]}
 \newcommand{\zeros}{\textsf{zeros}}
 \end{split}\]</div>
-<div class="section" id="program">
+<section id="program">
 <span id="programs"></span><h1>Program<a class="headerlink" href="#program" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Author</dt>
@@ -347,7 +262,7 @@ implicit arguments and the existing coercion mechanism. Input terms
 and types are typed in an extended system (Russell) and interpreted
 into <span class="smallcaps">Coq</span> terms. The interpretation process may produce some proof
 obligations which need to be resolved to create the final term.</p>
-<div class="section" id="elaborating-programs">
+<section id="elaborating-programs">
 <span id="id4"></span><h2>Elaborating programs<a class="headerlink" href="#elaborating-programs" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The main difference from <span class="smallcaps">Coq</span> is that an object in a type <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">T</span></span> <span class="operator"><span class="pre">:</span></span> <span class="keyword namespace"><span class="pre">Set</span></span></code> can
 be considered as an object of type <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">{</span></span><span class="name"><span class="pre">x</span></span> <span class="operator"><span class="pre">:</span></span> <span class="name"><span class="pre">T</span></span> <span class="operator"><span class="pre">|</span></span> <span class="name"><span class="pre">P</span></span><span class="operator"><span class="pre">}</span></span></code> for any well-formed
@@ -380,7 +295,7 @@ obligations inside clauses, without which reasoning is very limited.</p>
 <li><p>Generation of disequalities. If a pattern intersects with a previous
 one, a disequality is added in the context of the second branch. See
 for example the definition of div2 below, where the second branch is
-typed in a context where <code class="code Coq docutils literal notranslate"><span class="error"><span class="pre">∀</span></span> <span class="name"><span class="pre">p</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">_</span></span> <span class="operator"><span class="pre">&lt;&gt;</span></span> <span class="name"><span class="pre">S</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">S</span></span> <span class="name"><span class="pre">p</span></span><span class="operator"><span class="pre">)</span></span></code>.</p></li>
+typed in a context where <code class="code Coq docutils literal notranslate"><span class="operator"><span class="pre">∀</span></span> <span class="name"><span class="pre">p</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">_</span></span> <span class="operator"><span class="pre">&lt;&gt;</span></span> <span class="name"><span class="pre">S</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">S</span></span> <span class="name"><span class="pre">p</span></span><span class="operator"><span class="pre">)</span></span></code>.</p></li>
 <li><p>Coercion. If the object being matched is coercible to an inductive
 type, the corresponding coercion will be automatically inserted. This
 also works with the previous mechanism.</p></li>
@@ -405,7 +320,7 @@ deactivated.</p>
 active in this case.</p>
 </dd></dl>
 
-<div class="section" id="syntactic-control-over-equalities">
+<section id="syntactic-control-over-equalities">
 <span id="syntactic-control"></span><h3>Syntactic control over equalities<a class="headerlink" href="#syntactic-control-over-equalities" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>To give more control over the generation of equalities, the
 type checker will fall back directly to <span class="smallcaps">Coq</span>’s usual typing of dependent
@@ -436,7 +351,7 @@ Obligation 2 of id:
 </dl>
 </div>
 <p>The <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">let</span></span></code> tupling construct <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">let</span></span> <span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x1</span></span><span class="operator"><span class="pre">,</span></span> <span class="operator"><span class="pre">...,</span></span> <span class="name"><span class="pre">xn</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">:=</span></span> <span class="name"><span class="pre">t</span></span> <span class="keyword"><span class="pre">in</span></span> <span class="name"><span class="pre">b</span></span></code> does not
-produce an equality, contrary to the let pattern construct <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">let</span></span> <span class="error"><span class="pre">’</span></span><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x1</span></span><span class="operator"><span class="pre">,</span></span>
+produce an equality, contrary to the let pattern construct <code class="code Coq docutils literal notranslate"><span class="keyword"><span class="pre">let</span></span> <span class="name builtin pseudo"><span class="pre">’</span></span><span class="operator"><span class="pre">(</span></span><span class="name"><span class="pre">x1</span></span><span class="operator"><span class="pre">,</span></span>
 <span class="operator"><span class="pre">...,</span></span> <span class="name"><span class="pre">xn</span></span><span class="operator"><span class="pre">)</span></span> <span class="operator"><span class="pre">:=</span></span> <span class="name"><span class="pre">t</span></span> <span class="keyword"><span class="pre">in</span></span> <span class="name"><span class="pre">b</span></span></code>. Also, <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">term</span></span> <span class="operator"><span class="pre">:&gt;</span></span></code> explicitly asks the system to
 coerce term to its support type. It can be useful in notations, for
 example:</p>
@@ -452,8 +367,8 @@ when reasoning with equality on the subset types themselves.</p>
 <a class="reference internal" href="../language/gallina-specification-language.html#coq:cmd.definition" title="Definition"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Definition</span></code></a> and <a class="reference internal" href="../language/gallina-specification-language.html#coq:cmd.fixpoint" title="Fixpoint"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Fixpoint</span></code></a>
 in that they define constants. However, they may require the user to
 prove some goals to construct the final definitions.</p>
-</div>
-<div class="section" id="program-definition">
+</section>
+<section id="program-definition">
 <span id="id5"></span><h3>Program Definition<a class="headerlink" href="#program-definition" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.program-definition">
@@ -496,8 +411,8 @@ and the aforementioned coercion derivation are solved.</p>
 <p class="admonition-title">参考</p>
 <p>Sections <a class="reference internal" href="../proof-engine/vernacular-commands.html#vernac-controlling-the-reduction-strategies"><span class="std std-ref">Controlling the reduction strategies and the conversion algorithm</span></a>, <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.unfold" title="unfold"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">unfold</span></code></a></p>
 </div>
-</div>
-<div class="section" id="program-fixpoint">
+</section>
+<section id="program-fixpoint">
 <span id="id6"></span><h3>Program Fixpoint<a class="headerlink" href="#program-fixpoint" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.program-fixpoint">
@@ -645,8 +560,8 @@ it is not necessary, so that the obligation can be declared opaque
 proof of the obligation is <em>required</em> to be declared transparent.</p>
 <p>No such problems arise when using measures or well-founded recursion.</p>
 </div>
-</div>
-<div class="section" id="program-lemma">
+</section>
+<section id="program-lemma">
 <span id="id7"></span><h3>Program Lemma<a class="headerlink" href="#program-lemma" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.program-lemma">
@@ -661,9 +576,9 @@ will be started with the elaborated version as a goal. The
 <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Variable</span></span></code>, <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Hypothesis</span></span></code>, <code class="code Coq docutils literal notranslate"><span class="keyword namespace"><span class="pre">Axiom</span></span></code> etc.</p>
 </dd></dl>
 
-</div>
-</div>
-<div class="section" id="solving-obligations">
+</section>
+</section>
+<section id="solving-obligations">
 <span id="id8"></span><h2>Solving obligations<a class="headerlink" href="#solving-obligations" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The following commands are available to manipulate obligations. The
 optional identifier is used when multiple functions have unsolved
@@ -760,8 +675,8 @@ the obligation, to avoid unnecessary dependencies.</p>
 <p>The module <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Coq</span></span><span class="operator"><span class="pre">.</span></span><span class="name"><span class="pre">Program</span></span><span class="operator"><span class="pre">.</span></span><span class="name"><span class="pre">Tactics</span></span></code> defines the default tactic for solving
 obligations called <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">program_simpl</span></span></code>. Importing <code class="code Coq docutils literal notranslate"><span class="name"><span class="pre">Coq</span></span><span class="operator"><span class="pre">.</span></span><span class="name"><span class="pre">Program</span></span><span class="operator"><span class="pre">.</span></span><span class="name"><span class="pre">Program</span></span></code> also
 adds some useful notations, as documented in the file itself.</p>
-</div>
-<div class="section" id="frequently-asked-questions">
+</section>
+<section id="frequently-asked-questions">
 <span id="program-faq"></span><h2>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="exn">
 <dt id="coq:exn.ill-formed-recursive-definition">
@@ -793,56 +708,38 @@ anymore, but nested mutual recursion is always possible.</p></li>
 </div></blockquote>
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="ring.html" class="btn btn-neutral float-right" title="The ring and field tactic families" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="extraction.html" class="btn btn-neutral float-left" title="Extraction of programs in OCaml and Haskell" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="extraction.html" class="btn btn-neutral float-left" title="Extraction of programs in OCaml and Haskell" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ring.html" class="btn btn-neutral float-right" title="The ring and field tactic families" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 1999-2018, Inria
-
-    </p>
+    <p>&#169; Copyright 1999-2018, Inria.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
