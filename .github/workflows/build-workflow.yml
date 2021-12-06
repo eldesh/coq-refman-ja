@@ -12,6 +12,8 @@ jobs:
     name: build refman (ja)
     runs-on: ubuntu-18.04
     if: github.ref != 'refs/heads/gh-pages'
+    env:
+      OMEGAT_VERSION: 4.3.1
     steps:
       - uses: actions/checkout@v1
         with:
@@ -39,16 +41,24 @@ jobs:
           pip3 install wheel
           pip3 install -r requirements.txt
 
+      - name: Cache OmegaT
+        id: cache-omegat
+        uses: actions/cache@v2
+        with:
+          key: cache-omegat-${{ env.OMEGAT_VERSION }}
+          path: OmegaT_${{ env.OMEGAT_VERSION }}_Linux_64
+
       - name: Install OmegaT
+        if: steps.cache-omegat.outputs.cache-hit != 'true'
         run: |
-          curl -SL https://jaist.dl.sourceforge.net/project/omegat/OmegaT%20-%20Standard/OmegaT%204.3.1/OmegaT_4.3.1_Linux_64.tar.bz2 | tar -jxf -
+          curl -SL https://jaist.dl.sourceforge.net/project/omegat/OmegaT%20-%20Standard/OmegaT%20${{ env.OMEGAT_VERSION }}/OmegaT_${{ env.OMEGAT_VERSION }}_Linux_64.tar.bz2 | tar -jxf -
 
       - name: Build source po files
         run: |
           eval $(opam env)
           export PATH=$PATH:`python3 -m site --user-base`/bin
           make source
-          make target OMEGAT=OmegaT_4.3.1_Linux_64/OmegaT.jar
+          make target OMEGAT=OmegaT_${{ env.OMEGAT_VERSION }}_Linux_64/OmegaT.jar
           make html
 
       - uses: actions/upload-artifact@v1
