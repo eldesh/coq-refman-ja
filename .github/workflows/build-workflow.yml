@@ -33,8 +33,8 @@ jobs:
         run: |
           sudo apt-get install libstring-shellquote-perl
           eval $(opam env)
-          opam pin add ocamlfind ${{ env.OCAMLFIND }} --yes
-          opam pin add camlp5 ${{ env.CAMLP5 }} --yes
+          opam pin add ocamlfind ${{ env.OCAMLFIND_VERSION }} --yes
+          opam pin add camlp5 ${{ env.CAMLP5_VERSION }} --yes
 
       - name: Install Sphinx
         run: |
