@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  builder:
+    image: coq-refman-ja-builder:${IMAGE_VERSION}
+    build:
+      context: ./context
+      labels:
+        org.opencontainers.image.ref.name: "coq-refman-ja-builder"
+        org.opencontainers.image.title: "Coq リファレンスマニュアル(非公式日本語訳) ビルダー"
+      args:
+        - IMAGE_VERSION
+        - OMEGAT_VERSION
+        - OMEGAT_URL
+        - OCAML_VERSION
+        - OCAMLFIND_VERSION
+        - CAMLP5_VERSION
+    volumes:
+      - .:/home/refman
