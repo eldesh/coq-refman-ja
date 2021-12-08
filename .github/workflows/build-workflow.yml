@@ -12,13 +12,14 @@ jobs:
     name: build refman (ja)
     runs-on: ubuntu-18.04
     if: github.ref != 'refs/heads/gh-pages'
-    env:
-      OMEGAT_VERSION: 4.3.1
     steps:
       - uses: actions/checkout@v1
         with:
           submodules: true
           fetch-depth: 1
+
+      - name: Set environment variables
+        run: cat .env >> $GITHUB_ENV
 
       - uses: actions/setup-java@v1
         with:
@@ -26,14 +27,14 @@ jobs:
 
       - uses: ocaml/setup-ocaml@v1.1.12
         with:
-          ocaml-version: 4.02.3
+          ocaml-version: ${{ env.OCAML_VERSION }}
 
-      - name: Install Camlp5
+      - name: Install OCaml packages
         run: |
           sudo apt-get install libstring-shellquote-perl
           eval $(opam env)
-          opam install ocamlfind=1.8.0
-          opam install camlp5=7.06
+          opam pin add ocamlfind ${{ env.OCAMLFIND }} --yes
+          opam pin add camlp5 ${{ env.CAMLP5 }} --yes
 
       - name: Install Sphinx
         run: |
@@ -51,9 +52,9 @@ jobs:
       - name: Install OmegaT
         if: steps.cache-omegat.outputs.cache-hit != 'true'
         run: |
-          curl -SL https://jaist.dl.sourceforge.net/project/omegat/OmegaT%20-%20Standard/OmegaT%20${{ env.OMEGAT_VERSION }}/OmegaT_${{ env.OMEGAT_VERSION }}_Linux_64.tar.bz2 | tar -jxf -
+          curl -SL ${{ env.OMEGAT_URL }} | tar -jxf -
 
-      - name: Build source po files
+      - name: Build html documents
         run: |
           eval $(opam env)
           export PATH=$PATH:`python3 -m site --user-base`/bin
