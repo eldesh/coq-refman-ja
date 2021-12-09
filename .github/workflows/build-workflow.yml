@@ -40,7 +40,7 @@ jobs:
         run: |
           sudo apt-get install python3-pip python3-setuptools gettext
           pip3 install wheel
-          pip3 install -r requirements.txt
+          pip3 install -r context/requirements.txt
 
       - name: Cache OmegaT
         id: cache-omegat
