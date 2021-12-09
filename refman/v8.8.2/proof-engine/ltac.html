@@ -1806,38 +1806,38 @@ performance issue.</p>
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Set</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profiling</span><span>.</span></dt><dd class="coqtop-hidden"></dd>
 <dt><span class="coqdoc-var">tac</span><span>.</span></dt><dd><span>No more subgoals.</span></dd>
-<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span>.</span></dt><dd><span>total time:      1.985s
+<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span>.</span></dt><dd><span>total time:      1.992s
 
  tactic                                   local  total   calls       max 
 ────────────────────────────────────────┴──────┴──────┴───────┴─────────┘
-─tac -----------------------------------   0.1% 100.0%       1    1.985s
-─&lt;Coq.Init.Tauto.with_uniform_flags&gt; ---   0.0%  73.9%      26    0.095s
-─&lt;Coq.Init.Tauto.tauto_gen&gt; ------------   0.0%  73.9%      26    0.095s
-─&lt;Coq.Init.Tauto.tauto_intuitionistic&gt; -   0.0%  73.8%      26    0.095s
-─t_tauto_intuit ------------------------   0.1%  73.7%      26    0.095s
-─&lt;Coq.Init.Tauto.simplif&gt; --------------  51.3%  71.3%      26    0.093s
-─omega ---------------------------------  25.7%  25.7%      28    0.217s
+─tac -----------------------------------   0.1% 100.0%       1    1.992s
+─&lt;Coq.Init.Tauto.with_uniform_flags&gt; ---   0.0%  73.4%      26    0.096s
+─&lt;Coq.Init.Tauto.tauto_gen&gt; ------------   0.0%  73.4%      26    0.096s
+─&lt;Coq.Init.Tauto.tauto_intuitionistic&gt; -   0.0%  73.3%      26    0.096s
+─t_tauto_intuit ------------------------   0.1%  73.2%      26    0.096s
+─&lt;Coq.Init.Tauto.simplif&gt; --------------  50.8%  70.9%      26    0.094s
+─omega ---------------------------------  26.2%  26.2%      28    0.220s
 ─&lt;Coq.Init.Tauto.is_conj&gt; --------------  11.2%  11.2%   28756    0.000s
 ─elim id -------------------------------   6.0%   6.0%     650    0.036s
-─&lt;Coq.Init.Tauto.axioms&gt; ---------------   1.8%   2.4%       0    0.003s
+─&lt;Coq.Init.Tauto.axioms&gt; ---------------   1.8%   2.3%       0    0.003s
 
  tactic                                   local  total   calls       max 
 ────────────────────────────────────────┴──────┴──────┴───────┴─────────┘
-─tac -----------------------------------   0.1% 100.0%       1    1.985s
- ├─&lt;Coq.Init.Tauto.with_uniform_flags&gt; -   0.0%  73.9%      26    0.095s
- │└&lt;Coq.Init.Tauto.tauto_gen&gt; ----------   0.0%  73.9%      26    0.095s
- │└&lt;Coq.Init.Tauto.tauto_intuitionistic&gt;   0.0%  73.8%      26    0.095s
- │└t_tauto_intuit ----------------------   0.1%  73.7%      26    0.095s
- │ ├─&lt;Coq.Init.Tauto.simplif&gt; ----------  51.3%  71.3%      26    0.093s
+─tac -----------------------------------   0.1% 100.0%       1    1.992s
+ ├─&lt;Coq.Init.Tauto.with_uniform_flags&gt; -   0.0%  73.4%      26    0.096s
+ │└&lt;Coq.Init.Tauto.tauto_gen&gt; ----------   0.0%  73.4%      26    0.096s
+ │└&lt;Coq.Init.Tauto.tauto_intuitionistic&gt;   0.0%  73.3%      26    0.096s
+ │└t_tauto_intuit ----------------------   0.1%  73.2%      26    0.096s
+ │ ├─&lt;Coq.Init.Tauto.simplif&gt; ----------  50.8%  70.9%      26    0.094s
  │ │ ├─&lt;Coq.Init.Tauto.is_conj&gt; --------  11.2%  11.2%   28756    0.000s
  │ │ └─elim id -------------------------   6.0%   6.0%     650    0.036s
- │ └─&lt;Coq.Init.Tauto.axioms&gt; -----------   1.8%   2.4%       0    0.003s
- └─omega -------------------------------  25.7%  25.7%      28    0.217s</span></dd>
-<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span> &quot;omega&quot;.</span></dt><dd><span>total time:      1.985s
+ │ └─&lt;Coq.Init.Tauto.axioms&gt; -----------   1.8%   2.3%       0    0.003s
+ └─omega -------------------------------  26.2%  26.2%      28    0.220s</span></dd>
+<dt><span class="coqdoc-keyword">Show</span><span> </span><span class="coqdoc-keyword">Ltac</span><span> </span><span class="coqdoc-var">Profile</span><span> &quot;omega&quot;.</span></dt><dd><span>total time:      1.992s
 
  tactic                                   local  total   calls       max 
 ────────────────────────────────────────┴──────┴──────┴───────┴─────────┘
-─omega ---------------------------------  25.7%  25.7%      28    0.217s
+─omega ---------------------------------  26.2%  26.2%      28    0.220s
 
  tactic                                   local  total   calls       max </span></dd>
 </dl>
