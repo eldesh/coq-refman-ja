@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>**Remarks:**</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T163553Z" creationid="eldesh" creationdate="20211216T163553Z">
+        <seg>**備考:**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>*Limitations*</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T214708Z" creationid="eldesh" creationdate="20191221T214708Z">
@@ -274,6 +282,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T212337Z" creationid="eldesh" creationdate="20191221T212337Z">
         <seg>高度な再帰関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After closing of the section, the local declarations (variables and local definitions) get *discharged*, meaning that they stop being visible and that all global objects defined in the section are generalized with respect to the variables and local definitions they each depended on in the section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T162944Z" creationid="eldesh" creationdate="20211216T162944Z">
+        <seg>セクションを閉じた後、局所定義 (変数と局所定義) は *解放* され、それらの可視状態が停止され、そのセクション内で定義されたすべてのグローバルオブジェクトはセクション内で各々が依存していた変数と局所定義に沿って一般化されることを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2288,6 +2304,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most commands, like ``Hint``, ``Notation``, option management, … which appear inside a section are canceled when the section is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T163724Z" creationid="eldesh" creationdate="20211216T163724Z">
+        <seg>``Hint``、 ``Notation``、オプション管理のようなほとんどのコマンドはセクション内で現れたものはそのセクションが閉じられたときにキャンセルされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Natural numbers and integers</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T095052Z" creationid="eldesh" creationdate="20200201T095052Z">
@@ -2364,6 +2388,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T162151Z" creationid="eldesh" creationdate="20200102T162049Z">
         <seg>注目すべきは ``nat * nat`` 型の ``n`` と m についての ``n &lt;= m -&gt; m &lt;= n -&gt; n == m`` の直接の証明はユーザから提供されていないことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice the difference between the value of `x’` and `x’’` inside section `s1` and outside.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T163521Z" creationid="eldesh" creationdate="20211216T163521Z">
+        <seg>セクションs1の内側と外側のx'とx''の値の違いに注目してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2830,6 +2862,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T214637Z" creationid="eldesh" creationdate="20191221T214118Z">
         <seg>注意: 正しい原理を得るには、第一引数として関数の固定されたパラメータを与えるのがより良いでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Section mechanism</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T161635Z" creationid="eldesh" creationdate="20211216T161635Z">
+        <seg>セクション機構</seg>
       </tuv>
     </tu>
     <tu>
@@ -3935,6 +3975,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The sectioning mechanism can be used to to organize a proof in structured sections.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T161829Z" creationid="eldesh" creationdate="20211216T161829Z">
+        <seg>セクション機構により構造化されたセクション内で証明を体系化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The semantics for the limit :n:`@num` is different than for auto.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T212211Z" creationid="eldesh" creationdate="20200103T212211Z">
@@ -4092,6 +4140,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T135902Z" creationid="eldesh" creationdate="20200103T135902Z">
         <seg>変数 |p_i| ``:`` |t_i| はクラスの *パラメータ* と呼ばれ、|f_i| ``:`` |t_i| は *メソッド* と呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then local declarations become available (see Section :ref:`gallina-definitions`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T161936Z" creationid="eldesh" creationdate="20211216T161936Z">
+        <seg>したがって局所定義も可能になります (セクション :ref:`gallina-definitions` 参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4491,6 +4547,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This command closes the section named `ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T162424Z" creationid="eldesh" creationdate="20211216T162424Z">
+        <seg>このコマンドは `ident` という名前のセクションを閉じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This command declares :token:`qualid` as a canonical structure.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T182845Z" creationid="eldesh" creationdate="20191225T182845Z">
@@ -4511,6 +4575,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T223431Z" creationid="eldesh" creationdate="20200220T215951Z">
         <seg>このコマンドはモジュールまたは定義されているモジュール型の中では許可されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command is used to open a section named `ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211216T162341Z" creationid="eldesh" creationdate="20211216T162341Z">
+        <seg>このコマンドは `ident` という名前のセクションを開くことができます。</seg>
       </tuv>
     </tu>
     <tu>
