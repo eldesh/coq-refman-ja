@@ -46,8 +46,11 @@ USER refman
 WORKDIR /home/refman
 
 COPY ./requirements.txt /home/refman/
+COPY ./entrypoint.sh    /home/refman/
 
-RUN sudo apt-get update -y \
+RUN sudo chown refman:refman requirements.txt \
+ && sudo chown refman:refman entrypoint.sh \
+ && sudo apt-get update -y \
  && sudo apt-get install --no-install-recommends -y m4 gettext make patch unzip curl ca-certificates bubblewrap ocaml mccs python3-pip python3-setuptools default-jre-headless \
  # setup opam
  && curl -SL https://github.com/ocaml/opam/releases/download/${OPAM_VERSION}/opam-full-${OPAM_VERSION}.tar.gz | tar -zxf - \
@@ -68,7 +71,6 @@ RUN sudo apt-get update -y \
  && opam pin add ocamlfind ${OCAMLFIND_VERSION} --yes \
  && opam pin add camlp5 ${CAMLP5_VERSION} --yes \
  # install Python package
- && sudo chown refman:refman requirements.txt \
  && pip3 install wheel \
  && pip3 install -r requirements.txt \
  # install OmegaT
@@ -76,5 +78,6 @@ RUN sudo apt-get update -y \
  && sudo apt-get autoremove -y \
  && sudo apt-get autoclean -y
 
+ENTRYPOINT ["/home/refman/entrypoint.sh"]
 CMD ["make"]
 
