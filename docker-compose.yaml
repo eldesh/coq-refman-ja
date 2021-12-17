@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   builder:
-    image: coq-refman-ja-builder:${IMAGE_VERSION}
+    image: eldesh/coq-refman-ja-builder:${IMAGE_VERSION}
     build:
       context: ./context
       labels:
