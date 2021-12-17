@@ -58,7 +58,7 @@ RUN sudo apt-get update -y \
    && sudo make install \
    && sudo make distclean \
    && echo '# OPAM configuration' >> ~refman/.profile \
-   && echo 'test -r ~/.opam/opam-init/init.sh && ~/.opam/opam-init/init.sh >/dev/null 2>&1 || true' >> ~refman/.profile \
+   && echo 'test -r ~/.opam/opam-init/init.sh && . ~/.opam/opam-init/init.sh >/dev/null 2>&1 || true' >> ~refman/.profile \
    && cd .. \
  # install OCaml compiler
  && opam init --yes --solver=mccs --comp=${OCAML_VERSION} --disable-sandboxing \
