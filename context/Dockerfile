@@ -68,6 +68,7 @@ RUN sudo apt-get update -y \
  && opam pin add ocamlfind ${OCAMLFIND_VERSION} --yes \
  && opam pin add camlp5 ${CAMLP5_VERSION} --yes \
  # install Python package
+ && sudo chown refman:refman requirements.txt \
  && pip3 install wheel \
  && pip3 install -r requirements.txt \
  # install OmegaT
