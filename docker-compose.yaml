@@ -15,4 +15,6 @@ services:
         - OCAMLFIND_VERSION
         - CAMLP5_VERSION
     volumes:
-      - .:/home/refman
+      - .:/home/refman/coq-refman-ja
+    working_dir: /home/refman/coq-refman-ja
+
