@@ -51,7 +51,7 @@ COPY ./entrypoint.sh    /home/refman/
 RUN sudo chown refman:refman requirements.txt \
  && sudo chown refman:refman entrypoint.sh \
  && sudo apt-get update -y \
- && sudo apt-get install --no-install-recommends -y m4 gettext make patch unzip curl ca-certificates bubblewrap ocaml mccs python3-pip python3-setuptools default-jre-headless \
+ && sudo apt-get install --no-install-recommends -y m4 gettext make patch unzip curl ca-certificates bubblewrap gcc ocaml mccs python3-pip python3-setuptools default-jre-headless \
  # setup opam
  && curl -SL https://github.com/ocaml/opam/releases/download/${OPAM_VERSION}/opam-full-${OPAM_VERSION}.tar.gz | tar -zxf - \
  && cd opam-full-${OPAM_VERSION} \
