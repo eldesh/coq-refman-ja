@@ -535,6 +535,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Behaves like ``Module``, but automatically imports or exports the module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093215Z" creationid="eldesh" creationdate="20211218T093215Z">
+        <seg>``Module`` のように振る舞いますが、自動でそのモジュールをインポートまたはエクスポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Besides the :cmd:`Class` and :cmd:`Instance` vernacular commands, there are a few other commands related to typeclasses.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T202528Z" creationid="eldesh" creationdate="20200103T202528Z">
@@ -839,6 +847,30 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T185016Z" creationid="eldesh" creationdate="20200103T203306Z">
         <seg>与えられた束縛コンテキストに従って変数を宣言します。それは :ref:`implicit-generalization` を使うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Defines a functor with parameters given by module_bindings (possibly none) with body `module_expression`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T100954Z" creationid="eldesh" creationdate="20211218T100954Z">
+        <seg>(無い場合もある) module_bindings で与えられるパラメータと `module_expression` のボディを持つファンクタを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Defines a functor with parameters given by the list of `module_binding` (possibly none), and output module type `module_type`, with body `module_expression`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T100700Z" creationid="eldesh" creationdate="20211218T100211Z">
+        <seg>`module_binding` の(空になりうる)リストによって与えられるパラメータ、それに出力型 `module_type` を伴い、`module_expression` のボディを持つファンクタを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Defines a functor with parameters given by the list of `module_binding` and body `module_expression`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T100219Z" creationid="eldesh" creationdate="20211218T100024Z">
+        <seg>`module_binding` のリストと `module_expression` のボディで与えられるパラメータを伴うファンクタを定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1253,6 +1285,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here module can be a module expression or a module type expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093635Z" creationid="eldesh" creationdate="20211218T093635Z">
+        <seg>このモジュールはモジュール式またはモジュール型式を指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here the Global modifier redeclares the instance at the end of the section, once it has been generalized by the context variables it uses.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200222T212907Z" creationid="eldesh" creationdate="20200103T163942Z">
@@ -1420,6 +1460,14 @@
       </tuv>
     </tu>
     <tu>
+      <tuv lang="EN-US">
+        <seg>If module is a high-order module or module type expression then the system tries to instantiate module by the current interactive module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093933Z" creationid="eldesh" creationdate="20211218T093759Z">
+        <seg>モジュールが高階モジュールやモジュール型式の場合、システムはモジュールの現在の対話モジュールによるインスタンス化を試みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>inhabitantsとは？</note>
       <tuv lang="EN-US">
         <seg>If one does not give all the members in the Instance declaration, Coq enters the proof-mode and the user is asked to build inhabitants of the remaining fields, e.g.:</seg>
@@ -1454,10 +1502,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the module is basic (is not a functor) its components (constants, inductive types, submodules etc.) are now available through the dot notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T095743Z" creationid="eldesh" creationdate="20211218T095743Z">
+        <seg>モジュールが(ファンクタではなく)ベーシックな場合、そのコンポーネント(定数、帰納型、サブモジュールなど)にはドット表記法通して利用可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the module required has already been loaded, :cmd:`Require Import` :n:`@qualid` simply imports it, as :cmd:`Import` :n:`@qualid` would.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T211743Z" creationid="eldesh" creationdate="20200220T211743Z">
         <seg>もし要求されたモジュールが既にロードされていたら、:cmd:`Require Import` :n:`@qualid` は :cmd:`Import` :n:`@qualid` がそうするように単にそれをインポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the module type was given the content of the module is matched against it and an error is signaled if the matching fails.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T094932Z" creationid="eldesh" creationdate="20211218T094932Z">
+        <seg>モジュールタイプが指定された場合、モジュールの内容がそれにマッチングされ、マッチングに失敗した場合はエラーが通知されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1767,6 +1831,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the syntax of module application, the !</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T091357Z" creationid="eldesh" creationdate="20211218T091357Z">
+        <seg>モジュールアプリケーションの構文中では、!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In these binders, the binding name for the bound object is optional, whereas the type is mandatory, dually to regular binders.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T162836Z" creationid="eldesh" creationdate="20191226T150243Z">
@@ -1819,6 +1891,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T165956Z" creationid="eldesh" creationdate="20191221T165956Z">
         <seg>この場合、:cmd:`Record` は ”シグネチャ” の定義をすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Includes the content of module in the current interactive module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093612Z" creationid="eldesh" creationdate="20211218T093612Z">
+        <seg>現在の対話的モジュール内にモジュールの内容を含めます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2252,6 +2332,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T194335Z" creationid="eldesh" creationdate="20200103T194335Z">
         <seg>足りないフィールドは対話証明モードで埋められなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Module system</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T085912Z" creationid="eldesh" creationdate="20211218T085912Z">
+        <seg>モジュールシステム</seg>
       </tuv>
     </tu>
     <tu>
@@ -2866,6 +2954,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reserved commands inside an interactive module</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093527Z" creationid="eldesh" creationdate="20211218T093523Z">
+        <seg>対話的モジュール内の予約済みコマンド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Section mechanism</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211216T161635Z" creationid="eldesh" creationdate="20211216T161635Z">
@@ -2996,6 +3092,54 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Starts an interactive functor type with parameters given by `module_bindings`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101252Z" creationid="eldesh" creationdate="20211218T101252Z">
+        <seg>`module_bindings` で与えられるパラメータを伴う対話的ファンクタ型を開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starts an interactive functor with parameters given by module_bindings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T091925Z" creationid="eldesh" creationdate="20211218T091925Z">
+        <seg>module_bindings で与えられたパラメータを伴う対話的ファンクタを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starts an interactive functor with parameters given by the list of `module binding`, and output module type `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T092358Z" creationid="eldesh" creationdate="20211218T092358Z">
+        <seg>`module binding` のリストと出力モジュール型 `module_type` で与えられるパラメータを伴う対話的ファンクタを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starts an interactive functor with parameters given by the list of `module_binding`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093013Z" creationid="eldesh" creationdate="20211218T093013Z">
+        <seg>`module_binding` のリストで与えられるパラメータを伴った対話的ファンクタを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starts an interactive module satisfying each `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T092416Z" creationid="eldesh" creationdate="20211218T092416Z">
+        <seg>各 `module_type` を満たす対話的モジュールを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starts an interactive module specifying its module type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T092147Z" creationid="eldesh" creationdate="20211218T092011Z">
+        <seg>モジュール型を指定して対話的モジュールを開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Still, no concrete type is in the ``EQ`` class.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T113031Z" creationid="eldesh" creationdate="20191227T113031Z">
@@ -3081,6 +3225,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T194831Z" creationid="eldesh" creationdate="20191221T194831Z">
         <seg>レコード射影構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Syntax of modules</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T090815Z" creationid="eldesh" creationdate="20211218T090815Z">
+        <seg>モジュールの構文</seg>
       </tuv>
     </tu>
     <tu>
@@ -3259,6 +3411,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T160326Z" creationid="eldesh" creationdate="20191225T160326Z">
         <seg>プリミティブ射影の基本的な簡約規則は |p_i| ``(Build_``\ `R` |t_1| … |t_n|\ ``)`` :math:`{\rightarrow_{\iota}}` |t_i| です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The body is checked against each |module_type_i|.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101036Z" creationid="eldesh" creationdate="20211218T101036Z">
+        <seg>ボディは各 |module_type_i| に沿って検証されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3807,6 +3967,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The module system provides a way of packaging related elements together, as well as a means of massive abstraction.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T090806Z" creationid="eldesh" creationdate="20211218T090806Z">
+        <seg>モジュールシステムは関連する要素を総合してパッケージングする方法を提供し、大規模な抽象化の手段でもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The name `ident` already exists in the environment (see :cmd:`Axiom`).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T202047Z" creationid="eldesh" creationdate="20191221T201857Z">
@@ -3883,6 +4051,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T210602Z" creationid="eldesh" creationdate="20200102T210556Z">
         <seg>他のユーティリティは |Coq| に正準構造の推論を必要とすることになるであろう特定的な単一化問題を解くように要求するのに使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The output module type is verified against each `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T093048Z" creationid="eldesh" creationdate="20211218T093048Z">
+        <seg>出力モジュール型は各 `module_type` に沿って検証されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4547,6 +4723,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This command closes the interactive module `ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T094056Z" creationid="eldesh" creationdate="20211218T094056Z">
+        <seg>このコマンドは対話的モジュール `ident` を閉じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This command closes the section named `ident`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211216T162424Z" creationid="eldesh" creationdate="20211216T162424Z">
@@ -4559,6 +4743,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T182845Z" creationid="eldesh" creationdate="20191225T182845Z">
         <seg>このコマンドは :token:`qualid` を正準構造として定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command defines the module identifier `ident` to be equal to `module_expression`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T095851Z" creationid="eldesh" creationdate="20211218T095851Z">
+        <seg>このコマンドはモジュール識別子 `ident` を `module_expression` と等しくなるように定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4583,6 +4775,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211216T162341Z" creationid="eldesh" creationdate="20211216T162341Z">
         <seg>このコマンドは `ident` という名前のセクションを開くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command is used to start an interactive module named `ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T091813Z" creationid="eldesh" creationdate="20211218T091813Z">
+        <seg>このコマンドは `ident` という名前の対話的モジュールの開始に仕様します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command is used to start an interactive module type `ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101214Z" creationid="eldesh" creationdate="20211218T101214Z">
+        <seg>このコマンドは対話的モジュール型 `ident` を開始します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5691,10 +5899,34 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>is a shortcut for the commands ``Include`` `module` for each `module`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T094023Z" creationid="eldesh" creationdate="20211218T094023Z">
+        <seg>各 `module` について ``Include`` `module` するショートカットコマンドです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is equivalent to an interactive module where each `module_expression` is included.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101146Z" creationid="eldesh" creationdate="20211218T101146Z">
+        <seg>各 `module_expression` が含まれている対話的モジュールに等しくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>manifest) fields.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T185315Z" creationid="eldesh" creationdate="20191221T185315Z">
         <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>prefix indicates that any `Inline` directive in the type of the functor arguments will be ignored (see the ``Module Type`` command below).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T091741Z" creationid="eldesh" creationdate="20211218T091741Z">
+        <seg>プレフィックスはファンクター引数の型内ではどの `Inline` ディレクティブも無視されることを意味します (下記の ``Module Type`` コマンドを参照)。</seg>
       </tuv>
     </tu>
     <tu>
