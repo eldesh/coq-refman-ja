@@ -4146,8 +4146,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>Then local declarations become available (see Section :ref:`gallina-definitions`).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211216T161936Z" creationid="eldesh" creationdate="20211216T161936Z">
-        <seg>したがって局所定義も可能になります (セクション :ref:`gallina-definitions` 参照)。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T140859Z" creationid="eldesh" creationdate="20211216T161936Z">
+        <seg>そして局所定義も可能になります (セクション :ref:`gallina-definitions` 参照)。</seg>
       </tuv>
     </tu>
     <tu>
