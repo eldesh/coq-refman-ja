@@ -618,7 +618,7 @@ qualified name to refer to them.</p>
 <dt id="coq:cmd.variable">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Variable</span> <a class="reference internal" href="#grammar-token-ident"><span class="hole">ident</span></a> <span>:</span> <a class="reference internal" href="#grammar-token-type"><span class="hole">type</span></a></span></code><a class="headerlink" href="#coq:cmd.variable" title="この定義へのパーマリンク">¶</a></dt>
 <dd><p>This command links <a class="reference internal" href="#grammar-token-type"><code class="xref std std-token docutils literal notranslate"><span class="pre">type</span></code></a> to the name <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a> in the context of
-the current section (see Section <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">Section mechanism</span></a> for a description of
+the current section (see Section <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">セクション機構</span></a> for a description of
 the section mechanism). When the current section is closed, name <a class="reference internal" href="#grammar-token-ident"><code class="xref std std-token docutils literal notranslate"><span class="pre">ident</span></code></a>
 will be unknown and every object using this variable will be explicitly
 parametrized (the variable is <em>discharged</em>). Using the <a class="reference internal" href="#coq:cmd.variable" title="Variable"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Variable</span></code></a> command out
@@ -760,7 +760,7 @@ Using the <a class="reference internal" href="#coq:cmd.let" title="Let"><code cl
 
 <div class="admonition seealso">
 <p class="admonition-title">参考</p>
-<p>Section <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">Section mechanism</span></a>, commands <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.opaque" title="Opaque"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Opaque</span></code></a>,
+<p>Section <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">セクション機構</span></a>, commands <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.opaque" title="Opaque"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Opaque</span></code></a>,
 <a class="reference internal" href="../proof-engine/vernacular-commands.html#coq:cmd.transparent" title="Transparent"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Transparent</span></code></a>, and tactic <a class="reference internal" href="../proof-engine/tactics.html#coq:tacn.unfold" title="unfold"><code class="xref coq coq-tacn docutils literal notranslate"><span class="pre">unfold</span></code></a>.</p>
 </div>
 </div>
@@ -1104,7 +1104,7 @@ done the following way:</p>
 </dl>
 </div>
 <p>Assume we define an inductive definition inside a section
-(cf. <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">Section mechanism</span></a>). When the section is closed, the variables
+(cf. <a class="reference internal" href="gallina-extensions.html#section-mechanism"><span class="std std-ref">セクション機構</span></a>). When the section is closed, the variables
 declared in the section and occurring free in the declaration are added as
 parameters to the inductive definition.</p>
 </div>

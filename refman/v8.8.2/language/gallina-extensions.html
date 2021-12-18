@@ -93,7 +93,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#advanced-recursive-functions">高度な再帰関数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#section-mechanism">Section mechanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#section-mechanism">セクション機構</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-system">Module system</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#reserved-commands-inside-an-interactive-module">Reserved commands inside an interactive module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#reserved-commands-inside-an-interactive-module-type">Reserved commands inside an interactive module type:</a></li>
@@ -954,24 +954,18 @@ The reference List.hd was not found in the current environment.</span></dd>
 
 </div>
 <div class="section" id="section-mechanism">
-<span id="id4"></span><h2>Section mechanism<a class="headerlink" href="#section-mechanism" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>The sectioning mechanism can be used to to organize a proof in
-structured sections. Then local declarations become available (see
-Section <a class="reference internal" href="gallina-specification-language.html#gallina-definitions"><span class="std std-ref">Definitions</span></a>).</p>
+<span id="id4"></span><h2>セクション機構<a class="headerlink" href="#section-mechanism" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>セクション機構により構造化されたセクション内で証明を体系化することができます。そして局所定義も可能になります (セクション <a class="reference internal" href="gallina-specification-language.html#gallina-definitions"><span class="std std-ref">Definitions</span></a> 参照)。</p>
 <dl class="cmd">
 <dt id="coq:cmd.section">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Section</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.section" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command is used to open a section named <cite>ident</cite>.</p>
+<dd><p>このコマンドは <cite>ident</cite> という名前のセクションを開くことができます。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt id="coq:cmd.end">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>End</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.end" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command closes the section named <cite>ident</cite>. After closing of the
-section, the local declarations (variables and local definitions) get
-<em>discharged</em>, meaning that they stop being visible and that all global
-objects defined in the section are generalized with respect to the
-variables and local definitions they each depended on in the section.</p>
+<dd><p>このコマンドは <cite>ident</cite> という名前のセクションを閉じます。セクションを閉じた後、局所定義 (変数と局所定義) は <em>解放</em> され、それらの可視状態が停止され、そのセクション内で定義されたすべてのグローバルオブジェクトはセクション内で各々が依存していた変数と局所定義に沿って一般化されることを意味します。</p>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <div class="coqtop literal-block docutils container">
@@ -996,8 +990,7 @@ Argument scopes are [nat_scope nat_scope]</span></dd>
 </dl>
 </div>
 </div>
-<p>Notice the difference between the value of <cite>x’</cite> and <cite>x’’</cite> inside section
-<cite>s1</cite> and outside.</p>
+<p>セクションs1の内側と外側のx'とx''の値の違いに注目してください。</p>
 <dl class="exn">
 <dt id="coq:exn.this-is-not-the-last-opened-section">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>This</span> <span>is</span> <span>not</span> <span>the</span> <span>last</span> <span>opened</span> <span>section.</span></span></code><a class="headerlink" href="#coq:exn.this-is-not-the-last-opened-section" title="この定義へのパーマリンク">¶</a></dt>
@@ -1005,10 +998,9 @@ Argument scopes are [nat_scope nat_scope]</span></dd>
 
 </dd></dl>
 
-<p><strong>Remarks:</strong></p>
+<p><strong>備考:</strong></p>
 <ol class="arabic simple">
-<li><p>Most commands, like <code class="docutils literal notranslate"><span class="pre">Hint</span></code>, <code class="docutils literal notranslate"><span class="pre">Notation</span></code>, option management, … which
-appear inside a section are canceled when the section is closed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Hint</span></code>、 <code class="docutils literal notranslate"><span class="pre">Notation</span></code>、オプション管理のようなほとんどのコマンドはセクション内で現れたものはそのセクションが閉じられたときにキャンセルされます。</p></li>
 </ol>
 </div>
 <div class="section" id="module-system">

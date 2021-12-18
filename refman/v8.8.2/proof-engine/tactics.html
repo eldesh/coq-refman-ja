@@ -5063,7 +5063,7 @@ fail if no goal is being edited.</p>
 equalities) in the rewriting bases <code class="docutils literal notranslate"><span class="notation"><span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="../language/gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span><span class="notation-sup"><span class="pre">+</span></span></span></span></code> with the default orientation
 (left to right). Notice that the rewriting bases are distinct from the <code class="docutils literal notranslate"><span class="pre">auto</span></code>
 hint bases and thatauto does not take them into account.</p>
-<p>This command is synchronous with the section mechanism (see <a class="reference internal" href="../language/gallina-extensions.html#section-mechanism"><span class="std std-ref">Section mechanism</span></a>):
+<p>This command is synchronous with the section mechanism (see <a class="reference internal" href="../language/gallina-extensions.html#section-mechanism"><span class="std std-ref">セクション機構</span></a>):
 when closing a section, all aliases created by <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Rewrite</span></code> in that
 section are lost. Conversely, when loading a module, all <code class="docutils literal notranslate"><span class="pre">Hint</span> <span class="pre">Rewrite</span></code>
 declarations at the global level of that module are loaded.</p>
@@ -6196,7 +6196,7 @@ write the proof script in a non-sequential order.</p>
 </div>
 <p>The tactics macros are synchronous with the Coq section mechanism: a
 tactic definition is deleted from the current environment when you
-close the section (see also <a class="reference internal" href="../language/gallina-extensions.html#section-mechanism"><span class="std std-ref">Section mechanism</span></a>) where it was
+close the section (see also <a class="reference internal" href="../language/gallina-extensions.html#section-mechanism"><span class="std std-ref">セクション機構</span></a>) where it was
 defined. If you want that a tactic macro defined in a module is usable in the
 modules that require it, you should put it outside of any section.</p>
 <p><a class="reference internal" href="ltac.html#ltac"><span class="std std-ref">The tactic language</span></a> gives examples of more complex
