@@ -1815,6 +1815,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the end, let us define a module type with two sub-modules, sharing some of the fields and give one of its possible implementations:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T160914Z" creationid="eldesh" creationdate="20211218T154018Z">
+        <seg>最後に、二つのサブモジュールを持つモジュール型を定義しましょう。いくつかのフィールドを共有し可能な実装のうち一つを与えます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the example above, ``A`` and ``eqa`` should be set maximally implicit.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T151242Z" creationid="eldesh" creationdate="20200103T151242Z">
@@ -2552,6 +2560,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Notice that ``M`` is a correct body for the component ``M2`` since its ``T`` component is equal ``nat`` and hence ``M1.T`` as specified.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T164427Z" creationid="eldesh" creationdate="20211218T154439Z">
+        <seg>``M`` は ``M2`` コンポーネントの正しいボディであり、 なぜならその ``T`` コンポーネントは ``nat`` に等しく、``M1.T`` に特定されているためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice the difference between the value of `x’` and `x’’` inside section `s1` and outside.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211216T163521Z" creationid="eldesh" creationdate="20211216T163521Z">
@@ -2560,10 +2576,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now let us create a functor, i.e. a parametric module</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T153737Z" creationid="eldesh" creationdate="20211218T153737Z">
+        <seg>それではファンクタつまりパラメトリックモジュールを作りましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now we can create a new module from M, giving it a less precise specification: the y component is dropped as well as the body of x.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T103847Z" creationid="eldesh" creationdate="20211218T103423Z">
-        <seg>ここで詳細さで劣る: x のボディだけでなくコンポーネント y も捨象する 仕様を与えることで、M から新たなモジュールを作ることができます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T155317Z" creationid="eldesh" creationdate="20211218T103423Z">
+        <seg>ここでM から新たなモジュールを作ることができます。詳細さで劣る仕様を与えます: x のボディだけでなくコンポーネント y も捨象します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3634,8 +3658,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The definition of ``N`` using the module type expression ``SIG`` with ``Definition T := nat`` is equivalent to the following one:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T104033Z" creationid="eldesh" creationdate="20211218T104033Z">
-        <seg>モジュール型式 ``SIG`` と ``Definition T := nat`` を仕様する ``N`` の定義は以下と同等です:</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T160812Z" creationid="eldesh" creationdate="20211218T104033Z">
+        <seg>モジュール型式 ``SIG`` と ``Definition T := nat`` を使用する ``N`` の定義は以下と同等です:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5999,6 +6023,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T131331Z" creationid="eldesh" creationdate="20191221T221217Z">
         <seg>`ident_rect` と `ident_rec` と `ident_ind` は `term` (:cmd:`Inductive` 参照) のパターンマッチ構造を反映します;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and apply it to our modules and do some computations:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T160832Z" creationid="eldesh" creationdate="20211218T153840Z">
+        <seg>そして、それをモジュールに適用し、いくらか計算も行います。</seg>
       </tuv>
     </tu>
     <tu>
