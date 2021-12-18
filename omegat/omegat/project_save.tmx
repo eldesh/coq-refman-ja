@@ -222,6 +222,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A simple module type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T103032Z" creationid="eldesh" creationdate="20211218T103032Z">
+        <seg>単純なモジュール型:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A text file `INSTALL` that comes with the sources explains how to install |Coq|.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150123Z" creationid="yamarten" creationdate="20181104T150123Z">
@@ -785,6 +793,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Components of a closed module can be accessed using the dot notation:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T103035Z" creationid="eldesh" creationdate="20211218T103010Z">
+        <seg>閉じられたモジュールのコンポーネントにはドット記法を使うことでアクセスすることができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Contrary to :tacn:`auto`, introduction steps are counted, which might result in larger limits being necessary when searching with ``typeclasses eauto`` than with :tacn:`auto`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T192404Z" creationid="eldesh" creationdate="20200103T212438Z">
@@ -843,10 +859,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Declares a functor with parameters given by the list of `module_binding` and output module type `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102652Z" creationid="eldesh" creationdate="20211218T102652Z">
+        <seg>`module_binding` のリストによって与えられるパラメータと出力モジュール型 `module_type` を伴うファンクタを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declares a module `ident` of type `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102558Z" creationid="eldesh" creationdate="20211218T102558Z">
+        <seg>型が `module_type` のモジュール `ident` を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Declares variables according to the given binding context, which might use :ref:`implicit-generalization`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T185016Z" creationid="eldesh" creationdate="20200103T203306Z">
         <seg>与えられた束縛コンテキストに従って変数を宣言します。それは :ref:`implicit-generalization` を使うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Defines a functor type `ident` specifying functors taking arguments `module_bindings` and returning `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102329Z" creationid="eldesh" creationdate="20211218T102329Z">
+        <seg>引数 `module_bindings` を受け取り、`module_type` を返すファンクタを指定するファンクタ型を定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -871,6 +911,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T100219Z" creationid="eldesh" creationdate="20211218T100024Z">
         <seg>`module_binding` のリストと `module_expression` のボディで与えられるパラメータを伴うファンクタを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Defines a module type `ident` equal to `module_type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102051Z" creationid="eldesh" creationdate="20211218T102051Z">
+        <seg>`module_type` と等しいモジュール型 `ident` を定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1550,6 +1598,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If we just want to be sure that our implementation satisfies a given module type without restricting the interface, we can use a transparent constraint</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T104554Z" creationid="eldesh" creationdate="20211218T104554Z">
+        <seg>実装がインターフェースを制限することなく与えられたモジュール型を満たすことだけを確認したい場合、透過制約を使うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Implicit generalization</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T134148Z" creationid="eldesh" creationdate="20191226T134148Z">
@@ -1935,6 +1991,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inside a module one can define constants, prove theorems and do any other things that can be done in the toplevel.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102935Z" creationid="eldesh" creationdate="20211218T102935Z">
+        <seg>モジュール内では定数の定義、定理の証明、そしてトップレベルで可能な他のどんなことでもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inside implicit generalization delimiters, free variables in the current context are automatically quantified using a product or a lambda abstraction to generate a closed term.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T161700Z" creationid="eldesh" creationdate="20191226T140503Z">
@@ -2232,6 +2296,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let us define a simple module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102705Z" creationid="eldesh" creationdate="20211218T102705Z">
+        <seg>単純なモジュールを定義してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let us define the rational :math:`1/2`:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191921Z" creationid="eldesh" creationdate="20191221T191921Z">
@@ -2484,6 +2556,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211216T163521Z" creationid="eldesh" creationdate="20211216T163521Z">
         <seg>セクションs1の内側と外側のx'とx''の値の違いに注目してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now we can create a new module from M, giving it a less precise specification: the y component is dropped as well as the body of x.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T103847Z" creationid="eldesh" creationdate="20211218T103423Z">
+        <seg>ここで詳細さで劣る: x のボディだけでなくコンポーネント y も捨象する 仕様を与えることで、M から新たなモジュールを作ることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2958,6 +3038,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T093527Z" creationid="eldesh" creationdate="20211218T093523Z">
         <seg>対話的モジュール内の予約済みコマンド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reserved commands inside an interactive module type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101609Z" creationid="eldesh" creationdate="20211218T101609Z">
+        <seg>対話的モジュール型内の予約済みコマンド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Same as ``Include`` inside a module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101632Z" creationid="eldesh" creationdate="20211218T101632Z">
+        <seg>モジュールないの ``Include`` と同じです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3536,6 +3632,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The definition of ``N`` using the module type expression ``SIG`` with ``Definition T := nat`` is equivalent to the following one:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T104033Z" creationid="eldesh" creationdate="20211218T104033Z">
+        <seg>モジュール型式 ``SIG`` と ``Definition T := nat`` を仕様する ``N`` の定義は以下と同等です:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The effect of the command is to automatically set the type of bound variables starting with `ident` (either `ident` itself or `ident` followed by one or more single quotes, underscore or digits) to be `type` (unless the bound variable is already declared with an explicit type in which case, this latter type is considered).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T151338Z" creationid="eldesh" creationdate="20191226T132204Z">
@@ -3835,6 +3939,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T130750Z" creationid="eldesh" creationdate="20191227T112354Z">
         <seg>内部のtheoryモジュールはオーバーロードされた記法 ``==`` を含み、その代数構造の全てのインスタンスを保持する補題をも含みます (この場合は補題はありません)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The instance of this assumption will be automatically expanded at functor application, except when this functor application is prefixed by a ``!`` annotation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101941Z" creationid="eldesh" creationdate="20211218T101941Z">
+        <seg>この前提の実例はファンクタ適用で自動的に展開されますが、このファンクタ適用が注釈 ``!`` が接頭辞になっている時を除きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4727,6 +4839,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T094056Z" creationid="eldesh" creationdate="20211218T094056Z">
         <seg>このコマンドは対話的モジュール `ident` を閉じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command closes the interactive module type `ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102007Z" creationid="eldesh" creationdate="20211218T102007Z">
+        <seg>このコマンドは対話的モジュール型 `ident` を閉じます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5899,10 +6019,26 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>is a shortcut for the command ``Include`` `module` for each `module`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T101652Z" creationid="eldesh" creationdate="20211218T101652Z">
+        <seg>各 `module` に対して ``Include`` `module` するショートカットです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>is a shortcut for the commands ``Include`` `module` for each `module`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T094023Z" creationid="eldesh" creationdate="20211218T094023Z">
         <seg>各 `module` について ``Include`` `module` するショートカットコマンドです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is equivalent to an interactive module type were each `module_type` is included.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211218T102521Z" creationid="eldesh" creationdate="20211218T102439Z">
+        <seg>は各 `module_type` が含まれるような対話的モジュール型に等しくなります。</seg>
       </tuv>
     </tu>
     <tu>
