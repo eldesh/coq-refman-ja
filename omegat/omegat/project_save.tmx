@@ -745,6 +745,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Commands like ``Hint`` or ``Notation`` can also appear inside modules and module types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211220T173651Z" creationid="eldesh" creationdate="20211220T173651Z">
+        <seg>``Hint`` や ``Notation`` のようなコマンドはモジュールやモジュール型の内部にも現れることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Comments</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T092815Z" creationid="eldesh" creationdate="20200201T092815Z">
@@ -2424,6 +2432,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Modules and module types can be nested components of each other.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211220T173400Z" creationid="eldesh" creationdate="20211220T173400Z">
+        <seg>モジュールとモジュール型はお互いにネストすることが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More details and examples, and a description of the commands related to coercions are provided in :ref:`implicitcoercions`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T185249Z" creationid="eldesh" creationdate="20191226T185249Z">
@@ -2710,6 +2726,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T164349Z" creationid="eldesh" creationdate="20191225T164222Z">
         <seg>:flag`Printing Primitive Projection Parameters` オプションがオフになっているとそれらとプリミティブ射影の適用と区別することが出来ます。プリミティブ射影適用のときは、パラメータはアンダースコアとして表示される一方、互換性射影は普通に表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One can have sections inside a module or a module type, but not a module or a module type inside a section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211220T173453Z" creationid="eldesh" creationdate="20211220T173453Z">
+        <seg>モジュールやモジュール型の内部にセクションを持つことが出来ますが、セクションの内部にモジュールやモジュール型を持つことは出来ません。</seg>
       </tuv>
     </tu>
     <tu>
