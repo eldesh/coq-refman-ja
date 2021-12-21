@@ -867,6 +867,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Declarations made with the ``Local`` flag are never imported by the :cmd:`Import` command.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153628Z" creationid="eldesh" creationdate="20211221T153618Z">
+        <seg>``Local`` フラグを伴って行われた宣言は :cmd:`Import` コマンドによってインポートされることはなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Declares a functor with parameters given by the list of `module_binding` and output module type `module_type`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T102652Z" creationid="eldesh" creationdate="20211218T102652Z">
@@ -1473,6 +1481,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200223T175943Z" creationid="eldesh" creationdate="20200220T213219Z">
         <seg>``Import`` か ``Export`` が与えられると、それはさらにこれらのモジュールと ``Export`` としてマークまたは推移的にマークされた全ての再帰的依存をインポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If `qualid` denotes a valid basic module (i.e. its module type is a signature), makes its components available by their short names.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153253Z" creationid="eldesh" creationdate="20211221T153253Z">
+        <seg>`qualid` が有効で基本的なモジュール(つまり、そのジュール型がシグネチャ)を示している場合は、短い名前でそのコンポーネントが有効になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2560,6 +2576,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that in case of a module definition like:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T152416Z" creationid="eldesh" creationdate="20211221T152416Z">
+        <seg>以下のようなモジュール定義について注意してください:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that in practice the user may want to declare ``EQ.obj`` as a coercion, but we will not do that here.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T112524Z" creationid="eldesh" creationdate="20191227T112524Z">
@@ -2914,6 +2938,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Prints the module type and (optionally) the body of the module :n:`@ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T154042Z" creationid="eldesh" creationdate="20211221T154042Z">
+        <seg>モジュール型と(オプショナルで)そのモジュール :n:`@ident` の本体を表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Prints the module type corresponding to :n:`@ident`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T154118Z" creationid="eldesh" creationdate="20211221T154118Z">
+        <seg>:n:`@ident` に対応するモジュール型を表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Probably `ident.v` was not properly recompiled with the last version of the file containing module :n:`@qualid`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T222527Z" creationid="eldesh" creationdate="20200220T214910Z">
@@ -3203,6 +3243,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some features defined in modules are activated only when a module is imported.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153334Z" creationid="eldesh" creationdate="20211221T153334Z">
+        <seg>モジュール内で定義された機能にはモジュールがインポートされたときのみ有効化されるものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Space, newline and horizontal tabulation are considered as blanks.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T092720Z" creationid="eldesh" creationdate="20200201T092720Z">
@@ -3328,6 +3376,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200314T113715Z" creationid="eldesh" creationdate="20200314T113715Z">
         <seg>部分項は Coq によって自動的に推論されることがあり、記号 ``_`` で置き換えると Coq が不足している情報の断片を推測します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such declarations are only accessible through their fully qualified name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153710Z" creationid="eldesh" creationdate="20211221T153710Z">
+        <seg>そのような宣言は完全修飾名を通してのみアクセスできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5115,6 +5171,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is for instance the case of notations (see :ref:`Notations`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153440Z" creationid="eldesh" creationdate="20211221T153440Z">
+        <seg>これは例えば記法の場合です(:ref:`Notations` 参照).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is similar to the distinction between :cmd:`Parameter` vs. :cmd:`Definition`, or between :cmd:`Declare Module` and :cmd:`Module`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T215124Z" creationid="eldesh" creationdate="20200103T201912Z">
@@ -5217,6 +5281,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T201627Z" creationid="eldesh" creationdate="20191221T201627Z">
         <seg>このメッセージにはこの不可能性の説明が続きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This option (off by default) disables the printing of the types of fields, leaving only their names, for the commands :cmd:`Print Module` and :cmd:`Print Module Type`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T154546Z" creationid="eldesh" creationdate="20211221T154546Z">
+        <seg>このオプション (デフォルトでオフ) はコマンド  :cmd:`Print Module` と :cmd:`Print Module Type` について、名前だけ残してフィールドの型の表示を無効にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5915,6 +5987,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When the module containing the command Export qualid is imported, qualid is imported as well.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153931Z" creationid="eldesh" creationdate="20211221T153837Z">
+        <seg>Export qualid コマンドを含んだモジュールがインポートされた場合は、qualid もインポートされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When the term being matched is a variable, the ``as`` clause can be omitted and the term being matched can serve itself as binding name in the return type.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200329T202859Z" creationid="eldesh" creationdate="20200329T202859Z">
@@ -6059,6 +6139,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>hints and the like valid for ``N`` are not those defined in ``M`` (or the module body) but the ones defined in ``SIG``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T153011Z" creationid="eldesh" creationdate="20211221T153011Z">
+        <seg>が ``N`` に与える有効なヒントなどは ``M`` (やモジュール本体)で定義されたものではなく、``SIG`` で定義されたものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>in the basic case which we describe below, each :token:`pattern`:math:`_i` is a name :token:`ident`:math:`_i`; see :ref:`match-in-patterns` for the general case</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211204T111917Z" creationid="eldesh" creationdate="20211204T111838Z">
@@ -6111,6 +6199,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T185315Z" creationid="eldesh" creationdate="20191221T185315Z">
         <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>or::</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20211221T152420Z" creationid="eldesh" creationdate="20211221T152420Z">
+        <seg>あるいは::</seg>
       </tuv>
     </tu>
     <tu>
