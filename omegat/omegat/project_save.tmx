@@ -1576,8 +1576,8 @@
       <tuv lang="EN-US">
         <seg>If the module is basic (is not a functor) its components (constants, inductive types, submodules etc.) are now available through the dot notation.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T095743Z" creationid="eldesh" creationdate="20211218T095743Z">
-        <seg>モジュールが(ファンクタではなく)ベーシックな場合、そのコンポーネント(定数、帰納型、サブモジュールなど)にはドット表記法通して利用可能です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211224T124627Z" creationid="eldesh" creationdate="20211218T095743Z">
+        <seg>モジュールが(ファンクタではなく)ベーシックな場合、そのコンポーネント(定数、帰納型、サブモジュールなど)はドット表記を通して利用可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3140,8 +3140,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>Same as ``Include`` inside a module.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T101632Z" creationid="eldesh" creationdate="20211218T101632Z">
-        <seg>モジュールないの ``Include`` と同じです。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211224T124838Z" creationid="eldesh" creationdate="20211218T101632Z">
+        <seg>モジュール内の ``Include`` と同じです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4185,8 +4185,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>The module system provides a way of packaging related elements together, as well as a means of massive abstraction.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T090806Z" creationid="eldesh" creationdate="20211218T090806Z">
-        <seg>モジュールシステムは関連する要素を総合してパッケージングする方法を提供し、大規模な抽象化の手段でもあります。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211224T122819Z" creationid="eldesh" creationdate="20211218T090806Z">
+        <seg>モジュールシステムは関連する要素を総合してパッケージングする方法を提供するだけでなく、大規模な抽象化の手段でもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5005,8 +5005,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This command is used to start an interactive module named `ident`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T091813Z" creationid="eldesh" creationdate="20211218T091813Z">
-        <seg>このコマンドは `ident` という名前の対話的モジュールの開始に仕様します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211224T122958Z" creationid="eldesh" creationdate="20211218T091813Z">
+        <seg>このコマンドは `ident` という名前の対話的モジュールを開始します。</seg>
       </tuv>
     </tu>
     <tu>
