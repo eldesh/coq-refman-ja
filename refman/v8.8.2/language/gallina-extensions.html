@@ -94,9 +94,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#advanced-recursive-functions">高度な再帰関数</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#section-mechanism">セクション機構</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-system">Module system</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#reserved-commands-inside-an-interactive-module">Reserved commands inside an interactive module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#reserved-commands-inside-an-interactive-module-type">Reserved commands inside an interactive module type:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-system">モジュールシステム</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reserved-commands-inside-an-interactive-module">対話的モジュール内の予約済みコマンド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reserved-commands-inside-an-interactive-module-type">対話的モジュール型内の予約済みコマンド</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#libraries-and-qualified-names">Libraries and qualified names</a><ul>
@@ -1004,9 +1004,8 @@ Argument scopes are [nat_scope nat_scope]</span></dd>
 </ol>
 </div>
 <div class="section" id="module-system">
-<h2>Module system<a class="headerlink" href="#module-system" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>The module system provides a way of packaging related elements
-together, as well as a means of massive abstraction.</p>
+<h2>モジュールシステム<a class="headerlink" href="#module-system" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>モジュールシステムは関連する要素を総合してパッケージングする方法を提供するだけでなく、大規模な抽象化の手段でもあります。</p>
 <blockquote>
 <div><pre>
 <strong id="grammar-token-module-type">module_type      </strong> ::=  qualid
@@ -1019,48 +1018,43 @@ together, as well as a means of massive abstraction.</p>
 <strong id="grammar-token-module-expression">module_expression</strong> ::=  qualid … qualid
                        | !qualid … qualid
 </pre>
-<p>Syntax of modules</p>
+<p>モジュールの構文</p>
 </div></blockquote>
-<p>In the syntax of module application, the ! prefix indicates that any
-<cite>Inline</cite> directive in the type of the functor arguments will be ignored
-(see the <code class="docutils literal notranslate"><span class="pre">Module</span> <span class="pre">Type</span></code> command below).</p>
+<p>モジュールアプリケーションの構文中では、!プレフィックスはファンクター引数の型内ではどの <cite>Inline</cite> ディレクティブも無視されることを意味します (下記の <code class="docutils literal notranslate"><span class="pre">Module</span> <span class="pre">Type</span></code> コマンドを参照)。</p>
 <dl class="cmd">
 <dt id="coq:cmd.module">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.module" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This command is used to start an interactive module named <cite>ident</cite>.</p>
+<dd><p>このコマンドは <cite>ident</cite> という名前の対話的モジュールを開始します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span></span></code></dt>
-<dd><p>Starts an interactive functor with
-parameters given by module_bindings.</p>
+<dd><p>module_bindings で与えられたパラメータを伴う対話的ファンクタを開始します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code></dt>
-<dd><p>Starts an interactive module specifying its module type.</p>
+<dd><p>モジュール型を指定して対話的モジュールを開始します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code></dt>
-<dd><p>Starts an interactive functor with parameters given by the list of <cite>module binding</cite>, and output module
-type <cite>module_type</cite>.</p>
+<dd><p><cite>module binding</cite> のリストと出力モジュール型 <cite>module_type</cite> で与えられるパラメータを伴う対話的ファンクタを開始します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>&lt;:</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span><span class="notation-sup">+</span><span class="notation-sub">&lt;:</span></span></span></code></dt>
 <dd><blockquote>
-<div><p>Starts an interactive module satisfying each <cite>module_type</cite>.</p>
+<div><p>各 <cite>module_type</cite> を満たす対話的モジュールを開始します。</p>
 </div></blockquote>
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>&lt;:</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span><span class="notation-sup">+</span><span class="notation-sub">&lt;:</span></span><span>.</span></span></code></dt>
-<dd><p>Starts an interactive functor with parameters given by the list of <cite>module_binding</cite>. The output module type
-is verified against each <cite>module_type</cite>.</p>
+<dd><p><cite>module_binding</cite> のリストで与えられるパラメータを伴った対話的ファンクタを開始します。出力モジュール型は各 <cite>module_type</cite> に沿って検証されます。</p>
 </dd></dl>
 
 </dd></dl>
@@ -1068,35 +1062,27 @@ is verified against each <cite>module_type</cite>.</p>
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <span>[</span> <span>Import</span> <span>|</span> <span>Export</span> <span>]</span></span></code></dt>
-<dd><p>Behaves like <code class="docutils literal notranslate"><span class="pre">Module</span></code>, but automatically imports or exports the module.</p>
+<dd><p><code class="docutils literal notranslate"><span class="pre">Module</span></code> のように振る舞いますが、自動でそのモジュールをインポートまたはエクスポートします。</p>
 </dd></dl>
 
 <div class="section" id="reserved-commands-inside-an-interactive-module">
-<h3>Reserved commands inside an interactive module<a class="headerlink" href="#reserved-commands-inside-an-interactive-module" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>対話的モジュール内の予約済みコマンド<a class="headerlink" href="#reserved-commands-inside-an-interactive-module" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt id="coq:cmd.include">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Include</span> <span class="hole">module</span></span></code><a class="headerlink" href="#coq:cmd.include" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>Includes the content of module in the current
-interactive module. Here module can be a module expression or a module
-type expression. If module is a high-order module or module type
-expression then the system tries to instantiate module by the current
-interactive module.</p>
+<dd><p>現在の対話的モジュール内にモジュールの内容を含めます。このモジュールはモジュール式またはモジュール型式を指定できます。モジュールが高階モジュールやモジュール型式の場合、システムはモジュールの現在の対話モジュールによるインスタンス化を試みます。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Include</span> <span class="repeat-wrapper"><span class="repeat"><span class="hole">module</span></span><span class="notation-sup">+</span><span class="notation-sub">&lt;+</span></span></span></code></dt>
-<dd><p>is a shortcut for the commands <code class="docutils literal notranslate"><span class="pre">Include</span></code> <cite>module</cite> for each <cite>module</cite>.</p>
+<dd><p>各 <cite>module</cite> について <code class="docutils literal notranslate"><span class="pre">Include</span></code> <cite>module</cite> するショートカットコマンドです。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>End</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code></dt>
-<dd><p>This command closes the interactive module <cite>ident</cite>. If the module type
-was given the content of the module is matched against it and an error
-is signaled if the matching fails. If the module is basic (is not a
-functor) its components (constants, inductive types, submodules etc.)
-are now available through the dot notation.</p>
+<dd><p>このコマンドは対話的モジュール <cite>ident</cite> を閉じます。モジュールタイプが指定された場合、モジュールの内容がそれにマッチングされ、マッチングに失敗した場合はエラーが通知されます。モジュールが(ファンクタではなく)ベーシックな場合、そのコンポーネント(定数、帰納型、サブモジュールなど)はドット表記を通して利用可能です。</p>
 <blockquote>
 <div><dl class="exn">
 <dt id="coq:exn.no-such-label-ident">
@@ -1119,32 +1105,29 @@ are now available through the dot notation.</p>
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>:=</span> <a class="reference internal" href="#grammar-token-module-expression"><span class="hole">module_expression</span></a></span></code></dt>
-<dd><p>This command defines the module identifier <cite>ident</cite> to be equal
-to <cite>module_expression</cite>.</p>
+<dd><p>このコマンドはモジュール識別子 <cite>ident</cite> を <cite>module_expression</cite> と等しくなるように定義します。</p>
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:=</span> <a class="reference internal" href="#grammar-token-module-expression"><span class="hole">module_expression</span></a></span></code></dt>
-<dd><p>Defines a functor with parameters given by the list of <cite>module_binding</cite> and body <cite>module_expression</cite>.</p>
+<dd><p><cite>module_binding</cite> のリストと <cite>module_expression</cite> のボディで与えられるパラメータを伴うファンクタを定義します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a> <span>:=</span> <a class="reference internal" href="#grammar-token-module-expression"><span class="hole">module_expression</span></a></span></code></dt>
-<dd><p>Defines a functor with parameters given by the list of <cite>module_binding</cite> (possibly none), and output module type <cite>module_type</cite>,
-with body <cite>module_expression</cite>.</p>
+<dd><p><cite>module_binding</cite> の(空になりうる)リストによって与えられるパラメータ、それに出力型 <cite>module_type</cite> を伴い、<cite>module_expression</cite> のボディを持つファンクタを定義します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>&lt;:</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span><span class="notation-sup">+</span><span class="notation-sub">&lt;:</span></span> <span>:=</span> <a class="reference internal" href="#grammar-token-module-expression"><span class="hole">module_expression</span></a></span></code></dt>
-<dd><p>Defines a functor with parameters given by module_bindings (possibly none) with body <cite>module_expression</cite>.
-The body is checked against each <cite>module_type</cite><span class="math notranslate nohighlight">\(_{i}\)</span>.</p>
+<dd><p>(無い場合もある) module_bindings で与えられるパラメータと <cite>module_expression</cite> のボディを持つファンクタを定義します。ボディは各 <cite>module_type</cite><span class="math notranslate nohighlight">\(_{i}\)</span> に沿って検証されます。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:=</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-expression"><span class="hole">module_expression</span></a></span><span class="notation-sup">+</span><span class="notation-sub">&lt;+</span></span></span></code></dt>
-<dd><p>is equivalent to an interactive module where each <cite>module_expression</cite> is included.</p>
+<dd><p>各 <cite>module_expression</cite> が含まれている対話的モジュールに等しくなります。</p>
 </dd></dl>
 
 </dd></dl>
@@ -1154,41 +1137,40 @@ The body is checked against each <cite>module_type</cite><span class="math notra
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <span>Type</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.module-type" title="この定義へのパーマリンク">¶</a></dt>
 <dd></dd></dl>
 
-<p>This command is used to start an interactive module type <cite>ident</cite>.</p>
+<p>このコマンドは対話的モジュール型 <cite>ident</cite> を開始します。</p>
 <blockquote>
 <div><dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <span>Type</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span></span></code></dt>
-<dd><p>Starts an interactive functor type with parameters given by <cite>module_bindings</cite>.</p>
+<dd><p><cite>module_bindings</cite> で与えられるパラメータを伴う対話的ファンクタ型を開始します。</p>
 </dd></dl>
 
 </div></blockquote>
 </div>
 <div class="section" id="reserved-commands-inside-an-interactive-module-type">
-<h3>Reserved commands inside an interactive module type:<a class="headerlink" href="#reserved-commands-inside-an-interactive-module-type" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>対話的モジュール型内の予約済みコマンド<a class="headerlink" href="#reserved-commands-inside-an-interactive-module-type" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Include</span> <span class="hole">module</span></span></code></dt>
-<dd><p>Same as <code class="docutils literal notranslate"><span class="pre">Include</span></code> inside a module.</p>
+<dd><p>モジュール内の <code class="docutils literal notranslate"><span class="pre">Include</span></code> と同じです。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Include</span> <span class="repeat-wrapper"><span class="repeat"><span class="hole">module</span></span><span class="notation-sup">+</span><span class="notation-sub">&lt;+</span></span></span></code></dt>
-<dd><p>is a shortcut for the command <code class="docutils literal notranslate"><span class="pre">Include</span></code> <cite>module</cite> for each <cite>module</cite>.</p>
+<dd><p>各 <cite>module</cite> に対して <code class="docutils literal notranslate"><span class="pre">Include</span></code> <cite>module</cite> するショートカットです。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt id="coq:cmd.inline">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><a class="reference internal" href="gallina-specification-language.html#grammar-token-assumption-keyword"><span class="hole">assumption_keyword</span></a> <span>Inline</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-assums"><span class="hole">assums</span></a></span></code><a class="headerlink" href="#coq:cmd.inline" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>The instance of this assumption will be automatically expanded at functor application, except when
-this functor application is prefixed by a <code class="docutils literal notranslate"><span class="pre">!</span></code> annotation.</p>
+<dd><p>この前提の実例はファンクタ適用で自動的に展開されますが、このファンクタ適用が注釈 <code class="docutils literal notranslate"><span class="pre">!</span></code> が接頭辞になっている時を除きます。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>End</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code></dt>
-<dd><p>This command closes the interactive module type <cite>ident</cite>.</p>
+<dd><p>このコマンドは対話的モジュール型 <cite>ident</cite> を閉じます。</p>
 <dl class="exn">
 <dt id="coq:exn.this-is-not-the-last-opened-module-type">
 <em class="property"><span class="sigannot">Error</span></em> <code class="sig-name descname"><span class="notation"><span>This</span> <span>is</span> <span>not</span> <span>the</span> <span>last</span> <span>opened</span> <span>module</span> <span>type.</span></span></code><a class="headerlink" href="#coq:exn.this-is-not-the-last-opened-module-type" title="この定義へのパーマリンク">¶</a></dt>
@@ -1199,19 +1181,18 @@ this functor application is prefixed by a <code class="docutils literal notransl
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <span>Type</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>:=</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code></dt>
-<dd><p>Defines a module type <cite>ident</cite> equal to <cite>module_type</cite>.</p>
+<dd><p><cite>module_type</cite> と等しいモジュール型 <cite>ident</cite> を定義します。</p>
 <blockquote>
 <div><dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <span>Type</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:=</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code></dt>
-<dd><p>Defines a functor type <cite>ident</cite> specifying functors taking arguments <cite>module_bindings</cite> and
-returning <cite>module_type</cite>.</p>
+<dd><p>引数 <cite>module_bindings</cite> を受け取り、<cite>module_type</cite> を返すファンクタを指定するファンクタ型を定義します。</p>
 </dd></dl>
 
 <dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Module</span> <span>Type</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:=</span> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span><span class="notation-sup">+</span><span class="notation-sub">&lt;+</span></span></span></code></dt>
-<dd><p>is equivalent to an interactive module type were each <cite>module_type</cite> is included.</p>
+<dd><p>は各 <cite>module_type</cite> が含まれるような対話的モジュール型に等しくなります。</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1220,13 +1201,12 @@ returning <cite>module_type</cite>.</p>
 <dl class="cmd">
 <dt id="coq:cmd.declare-module">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Declare</span> <span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code><a class="headerlink" href="#coq:cmd.declare-module" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>Declares a module <cite>ident</cite> of type <cite>module_type</cite>.</p>
+<dd><p>型が <cite>module_type</cite> のモジュール <cite>ident</cite> を定義します。</p>
 <blockquote>
 <div><dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Declare</span> <span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code></dt>
-<dd><p>Declares a functor with parameters given by the list of <cite>module_binding</cite> and output module type
-<cite>module_type</cite>.</p>
+<dd><p><cite>module_binding</cite> のリストによって与えられるパラメータと出力モジュール型 <cite>module_type</cite> を伴うファンクタを定義します。</p>
 </dd></dl>
 
 </div></blockquote>
@@ -1234,7 +1214,7 @@ returning <cite>module_type</cite>.</p>
 
 <div class="admonition note">
 <p class="admonition-title">Example</p>
-<p>Let us define a simple module.</p>
+<p>単純なモジュールを定義してみましょう。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">M</span><span>.</span></dt><dd><span>Interactive Module M started</span></dd>
@@ -1250,16 +1230,14 @@ returning <cite>module_type</cite>.</p>
 </dl>
 </div>
 </div>
-<p>Inside a module one can define constants, prove theorems and do any
-other things that can be done in the toplevel. Components of a closed
-module can be accessed using the dot notation:</p>
+<p>モジュール内では定数の定義、定理の証明、そしてトップレベルで可能な他のどんなことでもできます。閉じられたモジュールのコンポーネントにはドット記法を使うことでアクセスすることができます:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Print</span><span> </span><span class="coqdoc-var">M.x</span><span>.</span></dt><dd><span>M.x = 0
      : </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>A simple module type:</p>
+<p>単純なモジュール型:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-keyword">Type</span><span> </span><span class="coqdoc-var">SIG</span><span>.</span></dt><dd><span>Interactive Module Type SIG started</span></dd>
@@ -1268,8 +1246,7 @@ module can be accessed using the dot notation:</p>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">SIG</span><span>.</span></dt><dd><span>Module Type SIG is defined</span></dd>
 </dl>
 </div>
-<p>Now we can create a new module from M, giving it a less precise
-specification: the y component is dropped as well as the body of x.</p>
+<p>ここでM から新たなモジュールを作ることができます。詳細さで劣る仕様を与えます: x のボディだけでなくコンポーネント y も捨象します。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">N</span><span> : </span><span class="coqdoc-var">SIG</span><span> </span><span class="coqdoc-keyword">with</span><span> </span><span class="coqdoc-keyword">Definition</span><span> </span><span class="coqdoc-var">T</span><span> := </span><span class="coqdoc-var">nat</span><span> := </span><span class="coqdoc-var">M</span><span>.</span></dt><dd><span>Module N is defined</span></dd>
@@ -1298,8 +1275,7 @@ N.y not a defined object.</span></dd>
 <dt class="coqtop-hidden"><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">SIG</span><span>.</span></dt><dd class="coqtop-hidden"><span>Module Type SIG is defined</span></dd>
 </dl>
 </div>
-<p>The definition of <code class="docutils literal notranslate"><span class="pre">N</span></code> using the module type expression <code class="docutils literal notranslate"><span class="pre">SIG</span></code> with
-<code class="docutils literal notranslate"><span class="pre">Definition</span> <span class="pre">T</span> <span class="pre">:=</span> <span class="pre">nat</span></code> is equivalent to the following one:</p>
+<p>モジュール型式 <code class="docutils literal notranslate"><span class="pre">SIG</span></code> と <code class="docutils literal notranslate"><span class="pre">Definition</span> <span class="pre">T</span> <span class="pre">:=</span> <span class="pre">nat</span></code> を使用する <code class="docutils literal notranslate"><span class="pre">N</span></code> の定義は以下と同等です:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-keyword">Type</span><span> </span><span class="coqdoc-var">SIG'</span><span>.</span></dt><dd><span>Interactive Module Type SIG' started</span></dd>
@@ -1309,9 +1285,7 @@ N.y not a defined object.</span></dd>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">N</span><span> : </span><span class="coqdoc-var">SIG'</span><span> := </span><span class="coqdoc-var">M</span><span>.</span></dt><dd><span>Module N is defined</span></dd>
 </dl>
 </div>
-<p>If we just want to be sure that our implementation satisfies a
-given module type without restricting the interface, we can use a
-transparent constraint</p>
+<p>実装がインターフェースを制限することなく与えられたモジュール型を満たすことだけを確認したい場合、透過制約を使うことができます。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">P</span><span> &lt;: </span><span class="coqdoc-var">SIG</span><span> := </span><span class="coqdoc-var">M</span><span>.</span></dt><dd><span>Module P is defined</span></dd>
@@ -1319,7 +1293,7 @@ transparent constraint</p>
      : </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">bool</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>Now let us create a functor, i.e. a parametric module</p>
+<p>それではファンクタつまりパラメトリックモジュールを作りましょう。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">Two</span><span> (</span><span class="coqdoc-var">X</span><span> </span><span class="coqdoc-var">Y</span><span>: </span><span class="coqdoc-var">SIG</span><span>).</span></dt><dd><span>Interactive Module Two started</span></dd>
@@ -1328,7 +1302,7 @@ transparent constraint</p>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">Two</span><span>.</span></dt><dd><span>Module Two is defined</span></dd>
 </dl>
 </div>
-<p>and apply it to our modules and do some computations:</p>
+<p>そして、それをモジュールに適用し、いくらか計算も行います。</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-var">Q</span><span> := </span><span class="coqdoc-var">Two</span><span> </span><span class="coqdoc-var">M</span><span> </span><span class="coqdoc-var">N</span><span>.</span></dt><dd><span>Module Q is defined</span></dd>
@@ -1336,8 +1310,7 @@ transparent constraint</p>
      : </span><span class="ansi-fg-light-green ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative">nat</span><span class="ansi-fg-default ansi-bg-default ansi-no-bold ansi-no-italic ansi-no-underline ansi-no-negative"></span></dd>
 </dl>
 </div>
-<p>In the end, let us define a module type with two sub-modules, sharing
-some of the fields and give one of its possible implementations:</p>
+<p>最後に、いくつかのフィールドを共有する二つのサブモジュールを持つモジュール型を定義し、可能な実装のうちの一つを挙げてみましょう:</p>
 <div class="coqtop literal-block docutils container">
 <span></span><dl>
 <dt><span class="coqdoc-keyword">Module</span><span> </span><span class="coqdoc-keyword">Type</span><span> </span><span class="coqdoc-var">SIG2</span><span>.</span></dt><dd><span>Interactive Module Type SIG2 started</span></dd>
@@ -1356,32 +1329,27 @@ some of the fields and give one of its possible implementations:</p>
 <dt><span class="coqdoc-keyword">End</span><span> </span><span class="coqdoc-var">Mod</span><span>.</span></dt><dd><span>Module Mod is defined</span></dd>
 </dl>
 </div>
-<p>Notice that <code class="docutils literal notranslate"><span class="pre">M</span></code> is a correct body for the component <code class="docutils literal notranslate"><span class="pre">M2</span></code> since its <code class="docutils literal notranslate"><span class="pre">T</span></code>
-component is equal <code class="docutils literal notranslate"><span class="pre">nat</span></code> and hence <code class="docutils literal notranslate"><span class="pre">M1.T</span></code> as specified.</p>
+<p><code class="docutils literal notranslate"><span class="pre">M</span></code> は <code class="docutils literal notranslate"><span class="pre">M2</span></code> コンポーネントの正しいボディであり、 なぜならその <code class="docutils literal notranslate"><span class="pre">T</span></code> コンポーネントは <code class="docutils literal notranslate"><span class="pre">nat</span></code> に等しく、<code class="docutils literal notranslate"><span class="pre">M1.T</span></code> に特定されているためです。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <ol class="arabic simple">
-<li><p>Modules and module types can be nested components of each other.</p></li>
-<li><p>One can have sections inside a module or a module type, but not a
-module or a module type inside a section.</p></li>
-<li><p>Commands like <code class="docutils literal notranslate"><span class="pre">Hint</span></code> or <code class="docutils literal notranslate"><span class="pre">Notation</span></code> can also appear inside modules and
-module types. Note that in case of a module definition like:</p></li>
+<li><p>モジュールとモジュール型はお互いにネストすることが出来ます。</p></li>
+<li><p>モジュールやモジュール型の内部にセクションを持つことが出来ますが、セクションの内部にモジュールやモジュール型を持つことは出来ません。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Hint</span></code> や <code class="docutils literal notranslate"><span class="pre">Notation</span></code> のようなコマンドはモジュールやモジュール型の内部にも現れることがあります。以下のようなモジュール定義について注意してください:</p></li>
 </ol>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Module N : SIG := M.
 </pre></div>
 </div>
-<p>or:</p>
+<p>あるいは:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Module N : SIG. … End N.
 </pre></div>
 </div>
-<p>hints and the like valid for <code class="docutils literal notranslate"><span class="pre">N</span></code> are not those defined in <code class="docutils literal notranslate"><span class="pre">M</span></code>
-(or the module body) but the ones defined in <code class="docutils literal notranslate"><span class="pre">SIG</span></code>.</p>
+<p>が <code class="docutils literal notranslate"><span class="pre">N</span></code> に与える有効なヒントなどは <code class="docutils literal notranslate"><span class="pre">M</span></code> (やモジュール本体)で定義されたものではなく、<code class="docutils literal notranslate"><span class="pre">SIG</span></code> で定義されたものです。</p>
 </div>
 <span class="target" id="import-qualid"></span><dl class="cmd">
 <dt id="coq:cmd.import">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Import</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code><a class="headerlink" href="#coq:cmd.import" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>If <cite>qualid</cite> denotes a valid basic module (i.e. its module type is a
-signature), makes its components available by their short names.</p>
+<dd><p><cite>qualid</cite> が有効で基本的なモジュール(つまり、そのジュール型がシグネチャ)を示している場合は、短い名前でそのコンポーネントが有効になります。</p>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <div class="coqtop literal-block docutils container">
@@ -1401,11 +1369,8 @@ The reference T was not found in the current environment.</span></dd>
 </dl>
 </div>
 </div>
-<p>Some features defined in modules are activated only when a module is
-imported. This is for instance the case of notations (see <a class="reference internal" href="../user-extensions/syntax-extensions.html#notations"><span class="std std-ref">Notations</span></a>).</p>
-<p>Declarations made with the <code class="docutils literal notranslate"><span class="pre">Local</span></code> flag are never imported by the <a class="reference internal" href="#coq:cmd.import" title="Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Import</span></code></a>
-command. Such declarations are only accessible through their fully
-qualified name.</p>
+<p>モジュール内で定義された機能にはモジュールがインポートされたときのみ有効化されるものがあります。これは例えば記法の場合です(<a class="reference internal" href="../user-extensions/syntax-extensions.html#notations"><span class="std std-ref">Notations</span></a> 参照).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Local</span></code> フラグを伴って行われた宣言は <a class="reference internal" href="#coq:cmd.import" title="Import"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Import</span></code></a> コマンドによってインポートされることはなくなります。そのような宣言は完全修飾名を通してのみアクセスできます。</p>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
 <div class="coqtop literal-block docutils container">
@@ -1424,8 +1389,7 @@ The reference B.T was not found in the current environment.</span></dd>
 <dl class="cmdv">
 <dt id="coq:cmdv.export">
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Export</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-qualid"><span class="hole">qualid</span></a></span></code><a class="headerlink" href="#coq:cmdv.export" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>When the module containing the command Export qualid
-is imported, qualid is imported as well.</p>
+<dd><p>Export qualid コマンドを含んだモジュールがインポートされた場合は、qualid もインポートされます。</p>
 </dd></dl>
 
 <dl class="exn">
@@ -1443,21 +1407,19 @@ is imported, qualid is imported as well.</p>
 <dl class="cmd">
 <dt id="coq:cmd.print-module">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Print</span> <span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.print-module" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>Prints the module type and (optionally) the body of the module <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>.</p>
+<dd><p>モジュール型と(オプショナルで)そのモジュール <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code> の本体を表示します。</p>
 </dd></dl>
 
 <dl class="cmd">
 <dt id="coq:cmd.print-module-type">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Print</span> <span>Module</span> <span>Type</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code><a class="headerlink" href="#coq:cmd.print-module-type" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>Prints the module type corresponding to <code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code>.</p>
+<dd><p><code class="docutils literal notranslate"><span class="notation"><a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole"><span class="pre">ident</span></span></a></span></code> に対応するモジュール型を表示します。</p>
 </dd></dl>
 
 <dl class="flag">
 <dt id="coq:flag.short-module-printing">
 <em class="property"><span class="sigannot">Flag</span></em> <code class="sig-name descname"><span class="notation"><span>Short</span> <span>Module</span> <span>Printing</span></span></code><a class="headerlink" href="#coq:flag.short-module-printing" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>This option (off by default) disables the printing of the types of fields,
-leaving only their names, for the commands <a class="reference internal" href="#coq:cmd.print-module" title="Print Module"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Module</span></code></a> and
-<a class="reference internal" href="#coq:cmd.print-module-type" title="Print Module Type"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Module</span> <span class="pre">Type</span></code></a>.</p>
+<dd><p>このオプション (デフォルトでオフ) はコマンド  <a class="reference internal" href="#coq:cmd.print-module" title="Print Module"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Module</span></code></a> と <a class="reference internal" href="#coq:cmd.print-module-type" title="Print Module Type"><code class="xref coq coq-cmd docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Module</span> <span class="pre">Type</span></code></a> について、名前だけ残してフィールドの型の表示を無効にします。</p>
 </dd></dl>
 
 </div>
