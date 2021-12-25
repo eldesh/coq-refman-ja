@@ -1841,8 +1841,8 @@
       <tuv lang="EN-US">
         <seg>In the end, let us define a module type with two sub-modules, sharing some of the fields and give one of its possible implementations:</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T160914Z" creationid="eldesh" creationdate="20211218T154018Z">
-        <seg>最後に、二つのサブモジュールを持つモジュール型を定義しましょう。いくつかのフィールドを共有し可能な実装のうち一つを与えます:</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20211225T113559Z" creationid="eldesh" creationdate="20211218T154018Z">
+        <seg>最後に、いくつかのフィールドを共有する二つのサブモジュールを持つモジュール型を定義し、可能な実装のうちの一つを挙げてみましょう:</seg>
       </tuv>
     </tu>
     <tu>
