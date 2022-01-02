@@ -1082,7 +1082,7 @@ Argument scopes are [nat_scope nat_scope]</span></dd>
 <dl class="cmd">
 <dt>
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>End</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a></span></code></dt>
-<dd><p>このコマンドは対話的モジュール <cite>ident</cite> を閉じます。モジュールタイプが指定された場合、モジュールの内容がそれにマッチングされ、マッチングに失敗した場合はエラーが通知されます。モジュールが(ファンクタではなく)ベーシックな場合、そのコンポーネント(定数、帰納型、サブモジュールなど)はドット表記を通して利用可能です。</p>
+<dd><p>このコマンドは対話的モジュール <cite>ident</cite> を閉じます。モジュールタイプが指定された場合、モジュールの内容がそれにマッチングされ、マッチングに失敗した場合はエラーが通知されます。(ファンクタではなく)基本的なモジュールの場合、そのコンポーネント(定数、帰納型、サブモジュールなど)はドット表記を通して利用可能です。</p>
 <blockquote>
 <div><dl class="exn">
 <dt id="coq:exn.no-such-label-ident">
@@ -1201,12 +1201,12 @@ Argument scopes are [nat_scope nat_scope]</span></dd>
 <dl class="cmd">
 <dt id="coq:cmd.declare-module">
 <em class="property"><span class="sigannot">Command</span></em> <code class="sig-name descname"><span class="notation"><span>Declare</span> <span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code><a class="headerlink" href="#coq:cmd.declare-module" title="この定義へのパーマリンク">¶</a></dt>
-<dd><p>型が <cite>module_type</cite> のモジュール <cite>ident</cite> を定義します。</p>
+<dd><p>型が <cite>module_type</cite> のモジュール <cite>ident</cite> を宣言します。</p>
 <blockquote>
 <div><dl class="cmdv">
 <dt>
 <em class="property"><span class="sigannot">Variant</span></em> <code class="sig-name descname"><span class="notation"><span>Declare</span> <span>Module</span> <a class="reference internal" href="gallina-specification-language.html#grammar-token-ident"><span class="hole">ident</span></a> <span class="repeat-wrapper"><span class="repeat"><a class="reference internal" href="#grammar-token-module-binding"><span class="hole">module_binding</span></a></span><span class="notation-sup">*</span></span> <span>:</span> <a class="reference internal" href="#grammar-token-module-type"><span class="hole">module_type</span></a></span></code></dt>
-<dd><p><cite>module_binding</cite> のリストによって与えられるパラメータと出力モジュール型 <cite>module_type</cite> を伴うファンクタを定義します。</p>
+<dd><p><cite>module_binding</cite> のリストによって与えられるパラメータと出力モジュール型 <cite>module_type</cite> を伴うファンクタを宣言します。</p>
 </dd></dl>
 
 </div></blockquote>
