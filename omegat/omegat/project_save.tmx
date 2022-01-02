@@ -877,16 +877,16 @@
       <tuv lang="EN-US">
         <seg>Declares a functor with parameters given by the list of `module_binding` and output module type `module_type`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T102652Z" creationid="eldesh" creationdate="20211218T102652Z">
-        <seg>`module_binding` のリストによって与えられるパラメータと出力モジュール型 `module_type` を伴うファンクタを定義します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220102T112719Z" creationid="eldesh" creationdate="20211218T102652Z">
+        <seg>`module_binding` のリストによって与えられるパラメータと出力モジュール型 `module_type` を伴うファンクタを宣言します。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Declares a module `ident` of type `module_type`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211218T102558Z" creationid="eldesh" creationdate="20211218T102558Z">
-        <seg>型が `module_type` のモジュール `ident` を定義します。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220102T112700Z" creationid="eldesh" creationdate="20211218T102558Z">
+        <seg>型が `module_type` のモジュール `ident` を宣言します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1576,8 +1576,8 @@
       <tuv lang="EN-US">
         <seg>If the module is basic (is not a functor) its components (constants, inductive types, submodules etc.) are now available through the dot notation.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20211224T124627Z" creationid="eldesh" creationdate="20211218T095743Z">
-        <seg>モジュールが(ファンクタではなく)ベーシックな場合、そのコンポーネント(定数、帰納型、サブモジュールなど)はドット表記を通して利用可能です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220102T113454Z" creationid="eldesh" creationdate="20211218T095743Z">
+        <seg>(ファンクタではなく)基本的なモジュールの場合、そのコンポーネント(定数、帰納型、サブモジュールなど)はドット表記を通して利用可能です。</seg>
       </tuv>
     </tu>
     <tu>
