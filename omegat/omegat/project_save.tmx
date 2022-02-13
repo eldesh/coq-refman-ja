@@ -214,6 +214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A notation not defined in a scope is called a *lonely* notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T093213Z" creationid="eldesh" creationdate="20220213T093213Z">
+        <seg>スコープの中で定義されていない表記法は *孤独な* 表記法と呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A pattern matching expression is used to analyze the structure of an inductive object and to apply specific treatments accordingly.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200321T151441Z" creationid="eldesh" creationdate="20200321T151029Z">
@@ -382,6 +390,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An *interpretation scope* is a set of notations for terms with their interpretations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T085803Z" creationid="eldesh" creationdate="20220213T085803Z">
+        <seg>*解釈スコープ* とは項とそれらの解釈のための記法の集合です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An alternative syntax for projections based on a dot notation is available:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T194622Z" creationid="eldesh" creationdate="20191221T194622Z">
@@ -507,6 +523,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T183129Z" creationid="eldesh" creationdate="20191225T183129Z">
         <seg>:token:`qualid` がフィールドが |x_1|, …, |x_n| であるような構造 :g:`struct` の中のあるオブジェクト ``(Build_struct`` |c_1| … |c_n| ``)`` を示すと仮定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At any time, the interpretation of a notation for a term is done within a *stack* of interpretation scopes and lonely notations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T093359Z" creationid="eldesh" creationdate="20220213T093359Z">
+        <seg>常に、ある項の表記法の解釈は解釈スコープと孤独な表記法の *スタック* 内で行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1003,6 +1027,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Depending on which interpretation scopes are currently open, the interpretation is different.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091018Z" creationid="eldesh" creationdate="20220213T091018Z">
+        <seg>現在開かれている解釈スコープがどれなのにかに依存して解釈は異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Derived Canonical Structures</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T122037Z" creationid="eldesh" creationdate="20191227T122037Z">
@@ -1317,6 +1349,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Global interpretation rules for notations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T093234Z" creationid="eldesh" creationdate="20220213T093234Z">
+        <seg>表記法の大域解釈規則</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Grammars are presented in Backus-Naur form (BNF).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T095818Z" creationid="eldesh" creationdate="20200126T155822Z">
@@ -1337,6 +1377,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200222T210305Z" creationid="eldesh" creationdate="20200103T153042Z">
         <seg>ここでは ``A`` は暗黙的に一般化され、結果として得られる関数は上のそれに等しくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a typical example which declares the notation for conjunction in the scope ``type_scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091818Z" creationid="eldesh" creationdate="20220213T091818Z">
+        <seg>これは ``type_scope`` スコープで論理積の表記法を定義する典型的な例です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1433,6 +1481,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T213839Z" creationid="eldesh" creationdate="20191221T213839Z">
         <seg>しかし、この帰納は非-構造的再帰関数については動きません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, this is only made possible at the Objective Caml level.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091124Z" creationid="eldesh" creationdate="20220213T091124Z">
+        <seg>しかし、これはObjective Camlのレベルでのみ可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1703,10 +1759,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition to the global rules of interpretation of notations, some ways to change the interpretation of subterms are available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123151Z" creationid="eldesh" creationdate="20220213T123151Z">
+        <seg>表記法の解釈のグローバル規則に加え、サブタームの解釈を変更する方法がいくつか用意されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition, there are special notations for regular expressions.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200126T160746Z" creationid="eldesh" creationdate="20200126T160746Z">
         <seg>さらに、正規表現については特別な記法があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In case a notation has several interpretations, the actual interpretation is the one defined by (or in) the more recently declared (or opened) lonely notation (or interpretation scope) which defines this notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T094023Z" creationid="eldesh" creationdate="20220213T094023Z">
+        <seg>ある表記法がいくつかの解釈を持つ場合、実際の解釈は、 より新しく宣言(あるいはオープン)された、この表記法を定義する孤独な表記法(または解釈スコープ)により(あるいはその中で)定義されたものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1803,6 +1875,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T174607Z" creationid="eldesh" creationdate="20200103T174607Z">
         <seg>場合によっては、構造の共有を指定できるようにするため、スーパークラスを明示的に与えたいかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such a situation, the term term, and all its subterms, are interpreted in the scope stack extended with the scope bound tokey.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123852Z" creationid="eldesh" creationdate="20220213T123707Z">
+        <seg>そのような場面では、タームとその全てのサブタームはキーを束縛したスコープにより拡張されたスコープスタック内で解釈されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2055,6 +2135,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Interpretation scopes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T085636Z" creationid="eldesh" creationdate="20220213T085636Z">
+        <seg>解釈スコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpretation scopes can include an interpretation for numerals and strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091043Z" creationid="eldesh" creationdate="20220213T091043Z">
+        <seg>解釈スコープは数字と文字列の解釈を含むことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpretation scopes provide a weak, purely syntactical form of notation overloading: the same notation, for instance the infix symbol ``+``, can be used to denote distinct definitions of the additive operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T090932Z" creationid="eldesh" creationdate="20220213T090113Z">
+        <seg>解釈スコープは弱く、純粋に構文的な形式の記法オーバーローディング：同じ記法を提供します。例えば中置演算子 ``+`` は加法演算子特別な定義を表示するのに使うことが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Introduction</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181007T034937Z" creationid="yamarten" creationdate="20181007T033312Z">
@@ -2175,6 +2279,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is also possible to remove a scope from the interpretation scope stack by using the command :n:`Close Scope @scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121813Z" creationid="eldesh" creationdate="20220213T121813Z">
+        <seg>コマンド :n:`Close Scope @scope` を使うことでその解釈スコープスタックからスコープを削除することも出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also useful to declare constants which should never be unfolded during proof-search, like fixpoints or anything which does not look like an abbreviation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T183020Z" creationid="eldesh" creationdate="20200106T184603Z">
@@ -2236,6 +2348,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T131945Z" creationid="eldesh" creationdate="20191226T131935Z">
         <seg>変数名を与えられた型に束縛することが可能です (例: 算術を使う開発の中で、名前 `n` や `m` を自然数である ``nat`` 型に束縛すると便利かもしれません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is possible to locally extend the interpretation scope stack using the syntax :g:`(term)%key` (or simply :g:`term%key` for atomic terms), where key is a special identifier called *delimiting key* and bound to a given scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T124009Z" creationid="eldesh" creationdate="20220213T123522Z">
+        <seg>構文 :g:`(term)%key` (あるいは原始項については単純に :g:`term%key`) を使うことで解釈スコープスタックを局所的に拡張することが出来ます。ここで key は *区切りキー* と呼ばれる特別識別子であり、与えられたスコープに束縛されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2424,6 +2544,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Local interpretation rules for notations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123101Z" creationid="eldesh" creationdate="20220213T123101Z">
+        <seg>表記法のローカル解釈規則</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Local opening of an interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123230Z" creationid="eldesh" creationdate="20220213T123230Z">
+        <seg>解釈スコープのローカルオープン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Make the identifiers opaque for typeclass search.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T123228Z" creationid="eldesh" creationdate="20200106T123228Z">
@@ -2604,6 +2740,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T164427Z" creationid="eldesh" creationdate="20211218T154439Z">
         <seg>``M`` は ``M2`` コンポーネントの正しいボディであり、 なぜならその ``T`` コンポーネントは ``nat`` に等しく、``M1.T`` に特定されているためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that this command does not only cancel the last :n:`Open Scope @scope` but all its invocations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122212Z" creationid="eldesh" creationdate="20220213T122212Z">
+        <seg>このコマンドは最新の :n:`Open Scope @scope` だけでなく、全ての呼び出しをキャンセルすることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3171,6 +3315,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See :ref:`above &lt;NotationSyntax&gt;` for the syntax of notations including the possibility to declare them in a given scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091601Z" creationid="eldesh" creationdate="20220213T091601Z">
+        <seg>与えられたスコープ中でそれらを定義する可能性のたる記法の構文については :ref:`上 &lt;NotationSyntax&gt;` を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See Section :ref:`Mult-match` and Chapter :ref:`extendedpatternmatching` for the description of the general form.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200321T151859Z" creationid="eldesh" creationdate="20200321T151859Z">
@@ -3664,6 +3816,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The command to add a scope to the interpretation scope stack is :n:`Open Scope @scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121716Z" creationid="eldesh" creationdate="20220213T121716Z">
+        <seg>解釈スコープスタックにスコープを追加するコマンドは :n:`Open Scope @scope` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The command tried to load library file :n:`@ident`.vo that depends on some specific version of library :n:`@qualid` which is not the one already loaded in the current |Coq| session.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T222338Z" creationid="eldesh" creationdate="20200220T214606Z">
@@ -4035,6 +4195,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T133242Z" creationid="eldesh" creationdate="20191222T133242Z">
         <seg>帰納的 `R_ident` は (暗黙に) `ident` のグラフに対応します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The initial state of Coq declares three interpretation scopes and no lonely notations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121500Z" creationid="eldesh" creationdate="20220213T121500Z">
+        <seg>Coqの初期状態では3つの解釈スコープを宣言し、孤独な表記法はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4706,6 +4874,30 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These scopes, in opening order, are ``core_scope``, ``type_scope`` and ``nat_scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121544Z" creationid="eldesh" creationdate="20220213T121544Z">
+        <seg>これらのスコープは開いている順に、``core_scope``、``type_scope``、``nat_scope`` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These variants are not exported to the modules that import the module where they occur, even if outside a section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122651Z" creationid="eldesh" creationdate="20220213T122651Z">
+        <seg>これらの派生はそれらが現れたモジュールをインポートするモジュールへエクスポートされません。節の外側でも同様です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These variants survive sections.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122745Z" creationid="eldesh" creationdate="20220213T122726Z">
+        <seg>これらの派生はセクションを生き延びます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They also support implicit quantification on :ref:`superclasses`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T152232Z" creationid="eldesh" creationdate="20200103T152232Z">
@@ -4742,6 +4934,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T151140Z" creationid="eldesh" creationdate="20200103T151140Z">
         <seg>それらは型クラスの引数の状態を自動的に最大限暗黙に設定し、クラスメソッドのように簡単に使える派生関数を作ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They behave as if Global were absent when not inside a section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122959Z" creationid="eldesh" creationdate="20220213T122959Z">
+        <seg>セクション内でない時は Global が欠けているように振る舞います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5478,6 +5678,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To bind a delimiting key to a scope, use the command :n:`Delimit Scope @scope with @ident`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T124054Z" creationid="eldesh" creationdate="20220213T124054Z">
+        <seg>区切りキーをスコープに束縛するには、コマンド :n:`Delimit Scope @scope with @ident` を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To build an object of type :n:`@ident`, one should provide the constructor :n:`@ident₀` with the appropriate number of terms filling the fields of the record.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191844Z" creationid="eldesh" creationdate="20191221T191844Z">
@@ -5562,6 +5770,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T101906Z" creationid="eldesh" creationdate="20191226T192844Z">
         <seg>高レベル表示機能を再度有効化するには、``Unset Printing All`` コマンドを使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To remove a delimiting key of a scope, use the command :n:`Undelimit Scope @scope`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T124125Z" creationid="eldesh" creationdate="20220213T124125Z">
+        <seg>区切りキーをスコープから削除するには、コマンド :n:`Undelimit Scope @scope` を使います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5658,6 +5874,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T151815Z" creationid="eldesh" creationdate="20200310T151815Z">
         <seg>型</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Typically if a given notation is defined in some scope ``scope`` but has also an interpretation not assigned to a scope, then, if ``scope`` is open before the lonely interpretation is declared, then the lonely interpretation is used (and this is the case even if the interpretation of the notation in scope is given after the lonely interpretation: otherwise said, only the order of lonely interpretations and opening of scopes matters, and not the declaration of interpretations within a scope).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121359Z" creationid="eldesh" creationdate="20220213T120620Z">
+        <seg>通常与えられた表記法がいくつかのスコープ ``scope`` 内で定義されているが、スコープに割り当てられていない解釈を持つ場合、孤独な解釈が宣言されるより前に ``scope`` が開かれると、その孤独な解釈が使われます (これは、スコープ内のその表記法の解釈が孤独な解釈より後に与えられても同様です: さもないと、孤独な解釈と開いているスコープの順序だけが重要となり、スコープ内の解釈の宣言は問題ではなくなります)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5947,6 +6171,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When defined outside of a section, they are exported to the modules that import the module where they occur.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122503Z" creationid="eldesh" creationdate="20220213T122503Z">
+        <seg>節の外側で定義されたときは、それらが現れたモジュールをインポートしたモジュールへエクスポートされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When it is off, they fail with an error instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T210502Z" creationid="eldesh" creationdate="20200106T210502Z">
@@ -6039,6 +6271,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T135758Z" creationid="eldesh" creationdate="20200103T135758Z">
         <seg>``Instance ident : Id`` |p_1| ``⋯`` |p_n| ``:= {`` |f_1| ``:=`` |t_1| ``; ⋮`` |f_m| ``:=`` |t_m| ``}.``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``Open Scope`` and ``Close Scope`` do not survive the end of sections where they occur.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122347Z" creationid="eldesh" creationdate="20220213T122347Z">
+        <seg>``Open Scope`` と ``Close Scope`` それらの現れるセクションの終わりを生き残ることはありません。</seg>
       </tuv>
     </tu>
     <tu>
