@@ -49,3 +49,5 @@ logical propositions	論理命題
 qualified identifier	量化識別子
 simple identifier	単純識別子
 interpretation scopes	解釈スコープ
+qualid	修飾された識別子	qualified idの略
+modifier	修飾子
