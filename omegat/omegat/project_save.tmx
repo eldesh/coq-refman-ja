@@ -607,6 +607,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Binding types of arguments to an interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092723Z" creationid="eldesh" creationdate="20220223T092723Z">
+        <seg>解釈スコープに引数の型を束縛する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Blanks</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T092653Z" creationid="eldesh" creationdate="20200201T092653Z">
@@ -1297,6 +1305,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200314T080509Z" creationid="eldesh" creationdate="20200314T080509Z">
         <seg>例えば式 “fun :token:`ident`\ :math:`_{1}` … :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” は “ fun :token:`ident`\ :math:`_{1}` : :token:`type` =&gt; … fun :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” と同じ関数を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if ``f`` is a polymorphic function of type :g:`forall X:Type, X -&gt; X` and type :g:`t` is bound to a scope ``scope``, then :g:`a` of type :g:`t` in :g:`f t a` is not recognized as an argument to be interpreted in scope ``scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T095935Z" creationid="eldesh" creationdate="20220223T095935Z">
+        <seg>例えば、``f`` が型 :g:`forall X:Type, X -&gt; X` の多相関数であり、型 :g:`t` がスコープ ``scope`` に束縛されているならば、 :g:`f t a` の中の :g:`t` 型の :g:`a` スコープ ``scope`` 中で解釈される引数とは認識されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2680,6 +2696,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More generally, any coercion :n:`@class` (see the :ref:`implicitcoercions` chapter) can be bound to an interpretation scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T100903Z" creationid="eldesh" creationdate="20220223T100903Z">
+        <seg>より一般的には、任意のコアーション :n:`@class` (章 :ref:`implicitcoercions` を参照) は解釈スコープに束縛することが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More on sorts can be found in Section :ref:`sorts`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T162116Z" creationid="eldesh" creationdate="20200310T162116Z">
@@ -3411,6 +3435,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See the next section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101500Z" creationid="eldesh" creationdate="20220223T101500Z">
+        <seg>次の節を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the table of contents for a complete list.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145836Z" creationid="yamarten" creationdate="20181104T145836Z">
@@ -3916,6 +3948,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20220213T121716Z" creationid="eldesh" creationdate="20220213T121716Z">
         <seg>解釈スコープスタックにスコープを追加するコマンドは :n:`Open Scope @scope` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The command to do it is :n:`Bind Scope @scope with @class`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T100926Z" creationid="eldesh" creationdate="20220223T100926Z">
+        <seg>それをするためのコマンドは :n:`Bind Scope @scope with @class` です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4619,6 +4659,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T145922Z" creationid="eldesh" creationdate="20191222T135519Z">
         <seg>struct を用いたときと同じオブジェクト;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The scopes ``type_scope`` and ``function_scope`` also have a local effect on interpretation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101016Z" creationid="eldesh" creationdate="20220223T101016Z">
+        <seg>スコープ ``type_scope`` と ``function_scope`` はさらに解釈について局所的な効果を持ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6249,6 +6297,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a scope ``scope`` is bound to a type ``type``, any new function defined later on gets its arguments of type ``type`` interpreted by default in scope scope (this default behavior can however be overwritten by explicitly using the command :cmd:`Arguments`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T095229Z" creationid="eldesh" creationdate="20220223T095229Z">
+        <seg>スコープ ``scope`` が型 ``type`` に束縛されているとき、型 ``type`` の引数を受け取る後から定義される新しい関数はデフォルトでそのスコープ scope 中で解釈されます (しかしこのデフォルトの振る舞いはコマンド :cmd:`Arguments` を明示的に使用することで上書きすることが出来ます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When a solution to the typeclass goal of this class is found, we never backtrack on it, assuming that it is canonical.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T205007Z" creationid="eldesh" creationdate="20200106T205007Z">
@@ -6270,6 +6326,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T204558Z" creationid="eldesh" creationdate="20200106T204530Z">
         <seg>型クラス解決が起きた時、それが単一の解を持たないならば失敗することを保証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When an interpretation scope is naturally associated to a type (e.g.  the scope of operations on the natural numbers), it may be convenient to bind it to this type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T093841Z" creationid="eldesh" creationdate="20220223T093841Z">
+        <seg>ある解釈スコープが自然にある型を伴う場合 (例: 自然数上の操作のスコープ)、この型に束縛すると便利かもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6375,6 +6439,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211205T115228Z" creationid="eldesh" creationdate="20200310T163135Z">
         <seg>束縛された変数の型がシステムによって生成出来ないときは、:n:`(@ident : @type)` という表記法によって指定することが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whether the argument of a function has some type ``type`` is determined statically.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T095424Z" creationid="eldesh" creationdate="20220223T095424Z">
+        <seg>ある関数の引数が型 ``type`` を持つかどうかは静的に決定されます。</seg>
       </tuv>
     </tu>
     <tu>
