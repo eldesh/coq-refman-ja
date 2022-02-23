@@ -1429,6 +1429,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is an example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T090408Z" creationid="eldesh" creationdate="20220223T090408Z">
+        <seg>これはその例です:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here module can be a module expression or a module type expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T093635Z" creationid="eldesh" creationdate="20211218T093635Z">
@@ -4980,16 +4988,16 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>These variants are not exported to the modules that import the module where they occur, even if outside a section.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220213T122651Z" creationid="eldesh" creationdate="20220213T122651Z">
-        <seg>これらの派生はそれらが現れたモジュールをインポートするモジュールへエクスポートされません。節の外側でも同様です。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092427Z" creationid="eldesh" creationdate="20220213T122651Z">
+        <seg>これらの派生はそれらが現れたモジュールをインポートするモジュールへエクスポートされません。セクションの外側でも同様です。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>These variants survive sections.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220213T122745Z" creationid="eldesh" creationdate="20220213T122726Z">
-        <seg>これらの派生はセクションを生き延びます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092455Z" creationid="eldesh" creationdate="20220213T122726Z">
+        <seg>これらの派生はセクションを超えて生き延びます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5253,8 +5261,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>This command can be used to clear argument scopes of :token:`qualid`.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220220T170936Z" creationid="eldesh" creationdate="20220220T170936Z">
-        <seg>この子万度は :token:`qualid` の引数スコープをクリアするのに使うことが出来ます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T090520Z" creationid="eldesh" creationdate="20220220T170936Z">
+        <seg>このコマンドは :token:`qualid` の引数スコープをクリアするのに使うことが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6000,8 +6008,8 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       <tuv lang="EN-US">
         <seg>Typically if a given notation is defined in some scope ``scope`` but has also an interpretation not assigned to a scope, then, if ``scope`` is open before the lonely interpretation is declared, then the lonely interpretation is used (and this is the case even if the interpretation of the notation in scope is given after the lonely interpretation: otherwise said, only the order of lonely interpretations and opening of scopes matters, and not the declaration of interpretations within a scope).</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220213T121359Z" creationid="eldesh" creationdate="20220213T120620Z">
-        <seg>通常与えられた表記法がいくつかのスコープ ``scope`` 内で定義されているが、スコープに割り当てられていない解釈を持つ場合、孤独な解釈が宣言されるより前に ``scope`` が開かれると、その孤独な解釈が使われます (これは、スコープ内のその表記法の解釈が孤独な解釈より後に与えられても同様です: さもないと、孤独な解釈と開いているスコープの順序だけが重要となり、スコープ内の解釈の宣言は問題ではなくなります)。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T091943Z" creationid="eldesh" creationdate="20220213T120620Z">
+        <seg>通常与えられた表記法がいくつかのスコープ ``scope`` 内で定義されているが、スコープに割り当てられていない解釈を持つ場合、孤独な解釈が宣言されるより前に ``scope`` が開かれると、その孤独な解釈が使われます (これは、スコープ内でその表記法の解釈が孤独な解釈より後に与えられたとしても同様です: 別の言い方をすると、孤独な解釈と、スコープ内の解釈の宣言ではなくスコープを開く順序のみが重要です)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6293,8 +6301,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>When defined outside of a section, they are exported to the modules that import the module where they occur.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220213T122503Z" creationid="eldesh" creationdate="20220213T122503Z">
-        <seg>節の外側で定義されたときは、それらが現れたモジュールをインポートしたモジュールへエクスポートされます。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092408Z" creationid="eldesh" creationdate="20220213T122503Z">
+        <seg>セクションの外側で定義されたときは、それらが現れたモジュールをインポートしたモジュールへエクスポートされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6421,8 +6429,8 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       <tuv lang="EN-US">
         <seg>``Open Scope`` and ``Close Scope`` do not survive the end of sections where they occur.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220213T122347Z" creationid="eldesh" creationdate="20220213T122347Z">
-        <seg>``Open Scope`` と ``Close Scope`` それらの現れるセクションの終わりを生き残ることはありません。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092321Z" creationid="eldesh" creationdate="20220213T122347Z">
+        <seg>``Open Scope`` と ``Close Scope`` それらの現れるセクションの終わりを超えて存続することはありません。</seg>
       </tuv>
     </tu>
     <tu>
