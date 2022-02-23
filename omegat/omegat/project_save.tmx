@@ -1311,8 +1311,8 @@
       <tuv lang="EN-US">
         <seg>For instance, if ``f`` is a polymorphic function of type :g:`forall X:Type, X -&gt; X` and type :g:`t` is bound to a scope ``scope``, then :g:`a` of type :g:`t` in :g:`f t a` is not recognized as an argument to be interpreted in scope ``scope``.</seg>
       </tuv>
-      <tuv lang="JA" changeid="eldesh" changedate="20220223T095935Z" creationid="eldesh" creationdate="20220223T095935Z">
-        <seg>例えば、``f`` が型 :g:`forall X:Type, X -&gt; X` の多相関数であり、型 :g:`t` がスコープ ``scope`` に束縛されているならば、 :g:`f t a` の中の :g:`t` 型の :g:`a` スコープ ``scope`` 中で解釈される引数とは認識されません。</seg>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101600Z" creationid="eldesh" creationdate="20220223T095935Z">
+        <seg>例えば、``f`` が型 :g:`forall X:Type, X -&gt; X` の多相関数であり、型 :g:`t` がスコープ ``scope`` に束縛されているならば、 :g:`f t a` の中の :g:`t` 型の :g:`a` はスコープ ``scope`` 中で解釈される引数とは認識されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2231,6 +2231,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Interpretation scopes used in the standard library of Coq</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T103220Z" creationid="eldesh" creationdate="20220223T103220Z">
+        <seg>Coqの標準ライブラリ中で使用される解釈スコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Introduction</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181007T034937Z" creationid="yamarten" creationdate="20181007T033312Z">
@@ -2343,6 +2351,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is a primitive interpretation scope which is temporarily activated each time a subterm of an expression is expected to be a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101900Z" creationid="eldesh" creationdate="20220223T101900Z">
+        <seg>これはプリミティブな解釈スコープであり、それは式のサブタームが型になることが期待される度に一時的に有効化されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is actually a wrapper for several ways of defining a function *and other useful related objects*, namely: an induction principle that reflects the recursive structure of the function (see :tacn:`function induction`) and its fixpoint equality.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T142420Z" creationid="eldesh" creationdate="20191221T212941Z">
@@ -2367,6 +2383,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is also used in certain situations where an expression is statically known to be a type, including the conclusion and the type of hypotheses within an Ltac goal match (see :ref:`ltac-match-goal`), the statement of a theorem, the type of a definition, the type of a binder, the domain and codomain of implication, the codomain of products, and more generally any type argument of a declared or defined constant.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102839Z" creationid="eldesh" creationdate="20220223T102820Z">
+        <seg>それはまた特定の状況でも使用され、それはある式が型になることが静的に知られている状況で、Ltac ゴールマッチ (:ref:`ltac-match-goal` 参照) 中の結論と仮定の型、定理のステートメント、定義の型、束縛子の型、包含のドメインとコドメイン、積のコドメイン、より一般には定数の宣言または定義の型引数を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also useful to declare constants which should never be unfolded during proof-search, like fixpoints or anything which does not look like an abbreviation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T183020Z" creationid="eldesh" creationdate="20200106T184603Z">
@@ -2379,6 +2403,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T211615Z" creationid="eldesh" creationdate="20200103T211615Z">
         <seg>それは単一化器を呼ぶときに常に使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``type``, and bound to the coercion class ``Sortclass``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101946Z" creationid="eldesh" creationdate="20220223T101946Z">
+        <seg>それはキー ``type`` で区切られ、コアーションクラス ``Sortclass`` に束縛されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2444,6 +2476,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20220220T163710Z" creationid="eldesh" creationdate="20220220T163710Z">
         <seg>与えられたスコープ内で解釈される必要のある与えられた引数のいくつかの引数をあらかじめ設定することが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is temporarily activated each time the argument of a global reference is recognized to be a ``Funclass`` istance, i.e., of type :g:`forall x:A, B` or :g:`A -&gt; B`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T103153Z" creationid="eldesh" creationdate="20220223T103153Z">
+        <seg>グローバル参照の引数が ``Funclass`` インスタンス、つまり型 :g:`forall x:A, B` または :g:`A -&gt; B`、になることが認識される度に一時的に有効化されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3822,6 +3862,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ``function_scope`` interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102916Z" creationid="eldesh" creationdate="20220223T102916Z">
+        <seg> 解釈スコープ ``function_scope``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ``type_scope`` interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102933Z" creationid="eldesh" creationdate="20220223T101621Z">
+        <seg>解釈スコープ ``type_scope``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The ``{}`` annotation is mandatory and must be one of the following:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T134030Z" creationid="eldesh" creationdate="20191222T134030Z">
@@ -4659,6 +4715,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T145922Z" creationid="eldesh" creationdate="20191222T135519Z">
         <seg>struct を用いたときと同じオブジェクト;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The scope ``function_scope`` also has a special status.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102954Z" creationid="eldesh" creationdate="20220223T102954Z">
+        <seg>スコープ ``function_scope`` もまた特別な状態を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The scope ``type_scope`` has a special status.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101642Z" creationid="eldesh" creationdate="20220223T101642Z">
+        <seg>スコープ ``type_scope`` は特別な状態を持ちます。</seg>
       </tuv>
     </tu>
     <tu>
