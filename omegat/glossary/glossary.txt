@@ -51,3 +51,6 @@ simple identifier	単純識別子
 interpretation scopes	解釈スコープ
 qualid	修飾された識別子	qualified idの略
 modifier	修飾子
+product type	積型
+sum type	和型
+coercion	コアーション

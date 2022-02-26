@@ -486,6 +486,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As for numerals, only 0 and 1 have an interpretation in scope ``Q_scope`` (their interpretations are 0/1 and 1/1 respectively).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T125611Z" creationid="eldesh" creationdate="20220226T125611Z">
+        <seg>数値として、0 と 1 のみが ``Q_scope`` スコープ中で解釈を持ちます (それらの解釈はそれぞれ 0/1 と 1/1 です)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As library files have dependencies in other library files, the command :cmd:`Require` :n:`@qualid` recursively requires all library files the module qualid depends on and adds the corresponding modules to the environment of |Coq| too.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200215T192921Z" creationid="eldesh" creationdate="20200215T192921Z">
@@ -1124,6 +1132,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Especially, there is no convention to visualize non printable characters of a string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131153Z" creationid="eldesh" creationdate="20220226T131153Z">
+        <seg>特に、文字列の非印字可能文字を可視化する規則はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Eta-conversion allows to define dependent elimination for these types as well.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T145640Z" creationid="eldesh" creationdate="20191225T145640Z">
@@ -1225,6 +1241,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200222T210221Z" creationid="eldesh" creationdate="20200103T152854Z">
         <seg>以前の例に続き、次のように書くことが出来ます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For a complete list of notations in each scope, use the commands :cmd:`Print Scopes` or :cmd:`Print Scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123012Z" creationid="eldesh" creationdate="20220226T123012Z">
+        <seg>各スコープ中の表記法の完全なリストについては、:cmd:`Print Scopes` または  :cmd:`Print Scope` コマンドを使用してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2407,6 +2431,70 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is delimited by key ``positive`` and comes with an interpretation for numerals as closed terms of type :g:`positive`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T125020Z" creationid="eldesh" creationdate="20220226T125020Z">
+        <seg>それは ``positive`` キーで区切られ、:g:`positive` 型の閉じた項としての数値の解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``N`` and comes with an interpretation for numerals as closed terms of type :g:`N`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124450Z" creationid="eldesh" creationdate="20220226T124450Z">
+        <seg>それは ``N`` キーで区切られ、:g:`N` 型の閉じた項としての数値の解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``R`` and comes with an interpretation for numerals using the :g:`IZR` morphism from binary integer numbers to :g:`R`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130637Z" creationid="eldesh" creationdate="20220226T130637Z">
+        <seg>それは ``R`` キーで区切られ、2進整数から :g:`R` への :g:`IZR` 射を使用する数値としての解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``Z`` and comes with an interpretation for numerals as closed terms of type :g:`Z`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124650Z" creationid="eldesh" creationdate="20220226T124650Z">
+        <seg>それは ``Z`` キーで区切られ、:g:`Z` 型の閉じた項としての数値の解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``bool``, and bound to the type :g:`bool` (see above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130733Z" creationid="eldesh" creationdate="20220226T130733Z">
+        <seg>それは ``bool`` キーで区切られ、:g:`bool` 型に束縛されます (上を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``core``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130834Z" creationid="eldesh" creationdate="20220226T130834Z">
+        <seg>それは ``core`` キーで区切られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``list``, and bound to the type :g:`list` (see above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130813Z" creationid="eldesh" creationdate="20220226T130813Z">
+        <seg>それは ``list`` キーで区切られ、:g:`list` 型に束縛されます (上を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``type``, and bound to the coercion class ``Sortclass``, as described above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123553Z" creationid="eldesh" creationdate="20220226T123404Z">
+        <seg>それは上で述べたように ``type`` キーで区切られ、コアーションクラス ``Sortclass`` に束縛されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is delimited by the key ``type``, and bound to the coercion class ``Sortclass``.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20220223T101946Z" creationid="eldesh" creationdate="20220223T101946Z">
@@ -3162,6 +3250,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Positive numerals in this scope are mapped to their canonical representent built from :g:`O` and :g:`S`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123827Z" creationid="eldesh" creationdate="20220226T123827Z">
+        <seg>このスコープ中の正数は :g:`O` と :g:`S` から構築される正準な表現へマップされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Practical tools</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T150232Z" creationid="yamarten" creationdate="20181104T150232Z">
@@ -3551,6 +3647,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T092720Z" creationid="eldesh" creationdate="20200201T092720Z">
         <seg>スペース、改行、水平タブは空白とみなされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Special characters and escaping follow Coq conventions on strings (see :ref:`lexical-conventions`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131025Z" creationid="eldesh" creationdate="20220226T131025Z">
+        <seg>特殊文字やエスケープは文字列に関する Coq の慣習に従います (:ref:`lexical-conventions` 参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4224,6 +4328,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The file :file:`String.v` shows an example that contains quotes, a newline and a beep (i.e. the ASCII character of code 7).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131414Z" creationid="eldesh" creationdate="20220226T131414Z">
+        <seg>:file:`String.v` ファイルでは引用符、改行、ビープ (つまり ASCII 文字の符号7) を含む例が示されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The file `ident.vo` was found but either it is not a |Coq| compiled module, or it was compiled with an incompatible version of |Coq|.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T222627Z" creationid="eldesh" creationdate="20200220T215108Z">
@@ -4735,6 +4847,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The scope is delimited by the key ``nat``, and bound to the type :g:`nat` (see above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123940Z" creationid="eldesh" creationdate="20220226T123940Z">
+        <seg>スコープは ``nat`` キーで区切られ、:g:`nat` 型へ束縛されます(上を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The scopes ``type_scope`` and ``function_scope`` also have a local effect on interpretation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20220223T101016Z" creationid="eldesh" creationdate="20220223T101016Z">
@@ -4924,6 +5044,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T135902Z" creationid="eldesh" creationdate="20200103T135902Z">
         <seg>変数 |p_i| ``:`` |t_i| はクラスの *パラメータ* と呼ばれ、|f_i| ``:`` |t_i| は *メソッド* と呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Their respective denotations are the ASCII code of :g:`c`, the decimal ASCII code ``nnn``, or the ascii code of the character ``"`` (i.e. the ASCII code 34), all of them being represented in the type :g:`ascii`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135044Z" creationid="eldesh" creationdate="20220226T135044Z">
+        <seg>それぞれの表示は :g:`c` の ASCII コード、```nnn``` は ASCII コードの10進表記、文字 ``"`` の ASCII コード (つまり ASCII コード 34) であり、それら全ては :g:`ascii` 型で表現されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5805,6 +5933,118 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This scope includes infix * for product types and infix + for sum types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123530Z" creationid="eldesh" creationdate="20220226T123234Z">
+        <seg>このスコープには積型のための中置記号 * と和型のための中置記号 + が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes interpretation for all strings of the form ``"c"`` where :g:`c` is an ASCII character, or of the form ``"nnn"`` where nnn is a three-digits number (possibly with leading 0's), or of the form ``""""``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131705Z" creationid="eldesh" creationdate="20220226T131705Z">
+        <seg>このスコープは、``"c"`` 形式ここで :g:`c` は ASCII 文字、または ``"nnn"`` 形式ここで nnn は3桁の数字 (0続きでもよい)、または ``""""`` 形式の全ての文字列の解釈を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes notation for strings as elements of the type string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130856Z" creationid="eldesh" creationdate="20220226T130856Z">
+        <seg>このスコープは string 型の要素としての文字列のための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes notations for the boolean operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130703Z" creationid="eldesh" creationdate="20220226T130659Z">
+        <seg>このスコープはブーリアン演算のための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes notations for the list operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130745Z" creationid="eldesh" creationdate="20220226T130745Z">
+        <seg>このスコープはリスト演算のための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the notation for pairs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130824Z" creationid="eldesh" creationdate="20220226T130824Z">
+        <seg>このスコープはペアのための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on the type :g:`Qc` of rational numbers defined as the type of irreducible fractions of an integer and a strictly positive integer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130347Z" creationid="eldesh" creationdate="20220226T130347Z">
+        <seg>このスコープには正数と真の正数による既約分数の型として定義された有利数である :g:`Qc` 型上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`N` (binary natural numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124551Z" creationid="eldesh" creationdate="20220226T124034Z">
+        <seg>このスコープには :g:`N` 型 (2進自然数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`Q` (rational numbers defined as fractions of an integer and a strictly positive integer modulo the equality of the numerator- denominator cross-product).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T125430Z" creationid="eldesh" creationdate="20220226T125430Z">
+        <seg>このスコープには :g:`Q` 型 (整数と真の正数の分子-分母の外積の等値性によるモジュロの分数として定義された有理数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`R` (axiomatic real numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130425Z" creationid="eldesh" creationdate="20220226T130425Z">
+        <seg>このスコープには :g:`R` 型 (公理的実数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`Z` (binary integer numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124611Z" creationid="eldesh" creationdate="20220226T124546Z">
+        <seg>このスコープには :g:`Z` 型 (2進整数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`positive` (binary strictly positive numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124951Z" creationid="eldesh" creationdate="20220226T124951Z">
+        <seg>このスコープには :g:`positive` 型 (2進の真の正数) 上の標準的な算術演算と関係を含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type nat.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123634Z" creationid="eldesh" creationdate="20220226T123634Z">
+        <seg>このスコープには nat 型上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope is delimited by the key ``function``, and bound to the coercion class ``Funclass``, as described above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123518Z" creationid="eldesh" creationdate="20220226T123518Z">
+        <seg>このスコープは上で述べたように ``function`` キーで区切られ、コアーションクラス ``Funclass`` に束縛されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes the commands used to load compiled files (see Chapter :ref:`thecoqcommands` for documentation on how to compile a file).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200223T172755Z" creationid="eldesh" creationdate="20200215T192221Z">
@@ -6277,6 +6517,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T184246Z" creationid="eldesh" creationdate="20191221T184246Z">
         <seg>ここでは |Gallina| の構文の拡張について説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We give an overview of the scopes used in the standard library of Coq.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T122936Z" creationid="eldesh" creationdate="20220226T122936Z">
+        <seg>Coqの標準ライブラリで使用されているスコープの概要を示します。</seg>
       </tuv>
     </tu>
     <tu>
