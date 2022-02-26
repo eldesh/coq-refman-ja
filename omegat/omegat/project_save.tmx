@@ -1091,6 +1091,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Displaying information about scopes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135225Z" creationid="eldesh" creationdate="20220226T135225Z">
+        <seg>スコープについての情報の表示</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>During the definition of the one-constructor inductive definition, all the errors of inductive definitions, as described in Section :ref:`gallina-inductive-definitions`, may also occur.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T203528Z" creationid="eldesh" creationdate="20191221T203528Z">
@@ -1433,6 +1441,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20220220T164042Z" creationid="eldesh" creationdate="20220220T164042Z">
         <seg>同じスコープで複数の引数を修飾するために丸括弧で囲ってグルーピングすることが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hence each notation is displayed only once.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135608Z" creationid="eldesh" creationdate="20220226T135608Z">
+        <seg>従って各表記法は高々一回表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2279,6 +2295,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also displays the delimiting key if any and the class to which the scope is bound, if any.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152204Z" creationid="eldesh" creationdate="20220226T152204Z">
+        <seg>さらにもしあれば区切りキーとスコープが束縛されたクラスも表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also displays the lonely notations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152029Z" creationid="eldesh" creationdate="20220226T152029Z">
+        <seg>さらに孤独な表記法も表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It also tests that they work as expected.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T160634Z" creationid="eldesh" creationdate="20200102T160634Z">
@@ -2916,6 +2948,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T105726Z" creationid="eldesh" creationdate="20191227T105726Z">
         <seg>表記法オーバーローディング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notations in scopes whose interpretation is hidden by the same notation in a more recently opened scope are not displayed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135546Z" creationid="eldesh" creationdate="20220226T135546Z">
+        <seg>スコープ中の表記法の解釈が、より新しくオープンされたスコープ内の同じ表記法によって隠蔽された場合は表示されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4975,6 +5015,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The top of the stack is displayed last.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135445Z" creationid="eldesh" creationdate="20220226T135445Z">
+        <seg>スタックのトップは最後に表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The transparency information of databases is used consistently for all hints declared in them.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T211537Z" creationid="eldesh" creationdate="20200103T211537Z">
@@ -5675,6 +5723,38 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This displays all the notations defined in the interpretation scope :token:`scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152108Z" creationid="eldesh" creationdate="20220226T152108Z">
+        <seg>これは解釈スコープ :token:`scope` 内で定義された表記法を全て表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This displays all the notations, delimiting keys and corresponding classes of all the existing interpretation scopes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152017Z" creationid="eldesh" creationdate="20220226T152017Z">
+        <seg>これは既存の全ての解釈スコープの、全ての表記法、区切りキー、出現クラスを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This displays the current stack of notations in scopes and lonely notations assuming that :token:`scope` is pushed on top of the stack.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T151734Z" creationid="eldesh" creationdate="20220226T135739Z">
+        <seg>これはスコープ中の表記法と弧度な表記法について、その :token:`scope` がスタックのトップにプッシュされたと仮定して現在のスタックを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This displays the current stack of notations in scopes and lonely notations that is used to interpret a notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135428Z" creationid="eldesh" creationdate="20220226T135428Z">
+        <seg>これはスコープ中の表記法と、表記法を解釈するために使われる孤独な表記法の現在のスタックを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This displays the list of global names that are components of some canonical structure.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185111Z" creationid="eldesh" creationdate="20191225T185111Z">
@@ -5783,6 +5863,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T221930Z" creationid="eldesh" creationdate="20200220T213834Z">
         <seg>これは :n:`@qualid` ライブラリがその絶対ルートを明示することによって与えられたパッケージに由来することを保証するために有用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is useful to know how a subterm locally occurring in the scope :token:`scope` is interpreted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T151926Z" creationid="eldesh" creationdate="20220226T151926Z">
+        <seg>これは :token:`scope` スコープ内でローカルに出現するサブタームがどのように解釈されるかを知るのに便利です。</seg>
       </tuv>
     </tu>
     <tu>
