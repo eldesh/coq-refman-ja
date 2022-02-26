@@ -214,6 +214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A notation not defined in a scope is called a *lonely* notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T093213Z" creationid="eldesh" creationdate="20220213T093213Z">
+        <seg>スコープの中で定義されていない表記法は *孤独な* 表記法と呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A pattern matching expression is used to analyze the structure of an inductive object and to apply specific treatments accordingly.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200321T151441Z" creationid="eldesh" creationdate="20200321T151029Z">
@@ -382,6 +390,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An *interpretation scope* is a set of notations for terms with their interpretations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T085803Z" creationid="eldesh" creationdate="20220213T085803Z">
+        <seg>*解釈スコープ* とは項とそれらの解釈のための記法の集合です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An alternative syntax for projections based on a dot notation is available:</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T194622Z" creationid="eldesh" creationdate="20191221T194622Z">
@@ -470,6 +486,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As for numerals, only 0 and 1 have an interpretation in scope ``Q_scope`` (their interpretations are 0/1 and 1/1 respectively).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T125611Z" creationid="eldesh" creationdate="20220226T125611Z">
+        <seg>数値として、0 と 1 のみが ``Q_scope`` スコープ中で解釈を持ちます (それらの解釈はそれぞれ 0/1 と 1/1 です)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As library files have dependencies in other library files, the command :cmd:`Require` :n:`@qualid` recursively requires all library files the module qualid depends on and adds the corresponding modules to the environment of |Coq| too.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200215T192921Z" creationid="eldesh" creationdate="20200215T192921Z">
@@ -507,6 +531,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T183129Z" creationid="eldesh" creationdate="20191225T183129Z">
         <seg>:token:`qualid` がフィールドが |x_1|, …, |x_n| であるような構造 :g:`struct` の中のあるオブジェクト ``(Build_struct`` |c_1| … |c_n| ``)`` を示すと仮定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At any time, the interpretation of a notation for a term is done within a *stack* of interpretation scopes and lonely notations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T093359Z" creationid="eldesh" creationdate="20220213T093359Z">
+        <seg>常に、ある項の表記法の解釈は解釈スコープと孤独な表記法の *スタック* 内で行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -567,10 +599,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Binding arguments of a constant to an interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T163503Z" creationid="eldesh" creationdate="20220220T163503Z">
+        <seg>解釈スコープへの定数引数の束縛</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binding classes</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T144116Z" creationid="eldesh" creationdate="20200103T144116Z">
         <seg>クラスの束縛</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Binding types of arguments to an interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092723Z" creationid="eldesh" creationdate="20220223T092723Z">
+        <seg>解釈スコープに引数の型を束縛する</seg>
       </tuv>
     </tu>
     <tu>
@@ -947,6 +995,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Defines extra argument scopes, to be used in case of coercion to ``Funclass`` (see the :ref:`implicitcoercions` chapter) or with a computed type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T171405Z" creationid="eldesh" creationdate="20220220T171405Z">
+        <seg>拡張引数スコープを定義します。``Funclass``  へのコアーション (章 :ref:`implicitcoercions` 参照) あるいは計算された型の場合に使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Defines the not recursive function `ident` as if declared with `Definition`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T131308Z" creationid="eldesh" creationdate="20191221T221023Z">
@@ -1003,6 +1059,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Depending on which interpretation scopes are currently open, the interpretation is different.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T172556Z" creationid="eldesh" creationdate="20220213T091018Z">
+        <seg>現在開かれている解釈スコープがどれなのかに依存して解釈は異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Derived Canonical Structures</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T122037Z" creationid="eldesh" creationdate="20191227T122037Z">
@@ -1023,6 +1087,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T143335Z" creationid="eldesh" creationdate="20191226T143335Z">
         <seg>暗黙の一般化を完全に無効にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Displaying information about scopes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135225Z" creationid="eldesh" creationdate="20220226T135225Z">
+        <seg>スコープについての情報の表示</seg>
       </tuv>
     </tu>
     <tu>
@@ -1064,6 +1136,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T220756Z" creationid="eldesh" creationdate="20200102T220756Z">
         <seg>エラーメッセージも非常に理解しやすいです (メッセージの末尾まで飛ばすなら)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Especially, there is no convention to visualize non printable characters of a string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131153Z" creationid="eldesh" creationdate="20220226T131153Z">
+        <seg>特に、文字列の非印字可能文字を可視化する規則はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1173,6 +1253,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For a complete list of notations in each scope, use the commands :cmd:`Print Scopes` or :cmd:`Print Scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123012Z" creationid="eldesh" creationdate="20220226T123012Z">
+        <seg>各スコープ中の表記法の完全なリストについては、:cmd:`Print Scopes` または  :cmd:`Print Scope` コマンドを使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a given field :token:`ident`, its type is :g:`forall binders, type`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T183456Z" creationid="eldesh" creationdate="20191221T183448Z">
@@ -1221,6 +1309,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example the following command puts the first two arguments of :g:`plus_fct` in the scope delimited by the key ``F`` (``Rfun_scope``) and the last argument in the scope delimited by the key ``R`` (``R_scope``).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T164535Z" creationid="eldesh" creationdate="20220220T164535Z">
+        <seg>例えば以下のコマンドでは :g:`plus_fct` の最初の二つの引数を ``F`` (``Rfun_scope``) キーで区切られたスコープ内へ、``R`` (``R_scope``) キーで区切られたスコープ内へ最後の引数を渡しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, forcing a constant to explicitely appear in the pattern will make it never apply on a goal where there is a hole in that place.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T184644Z" creationid="eldesh" creationdate="20200106T195739Z">
@@ -1241,6 +1337,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200314T080509Z" creationid="eldesh" creationdate="20200314T080509Z">
         <seg>例えば式 “fun :token:`ident`\ :math:`_{1}` … :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” は “ fun :token:`ident`\ :math:`_{1}` : :token:`type` =&gt; … fun :token:`ident`\ :math:`_{n}` : :token:`type` =&gt; :token:`term`” と同じ関数を表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if ``f`` is a polymorphic function of type :g:`forall X:Type, X -&gt; X` and type :g:`t` is bound to a scope ``scope``, then :g:`a` of type :g:`t` in :g:`f t a` is not recognized as an argument to be interpreted in scope ``scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101600Z" creationid="eldesh" creationdate="20220223T095935Z">
+        <seg>例えば、``f`` が型 :g:`forall X:Type, X -&gt; X` の多相関数であり、型 :g:`t` がスコープ ``scope`` に束縛されているならば、 :g:`f t a` の中の :g:`t` 型の :g:`a` はスコープ ``scope`` 中で解釈される引数とは認識されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1317,10 +1421,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Global interpretation rules for notations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T093234Z" creationid="eldesh" creationdate="20220213T093234Z">
+        <seg>表記法の大域解釈規則</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Grammars are presented in Backus-Naur form (BNF).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200202T095818Z" creationid="eldesh" creationdate="20200126T155822Z">
         <seg>文法はバッカスナウアー記法 (BNF)で与えられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Grouping round parentheses can be used to decorate multiple arguments with the same scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T164042Z" creationid="eldesh" creationdate="20220220T164042Z">
+        <seg>同じスコープで複数の引数を修飾するために丸括弧で囲ってグルーピングすることが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hence each notation is displayed only once.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135608Z" creationid="eldesh" creationdate="20220226T135608Z">
+        <seg>従って各表記法は高々一回表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1341,10 +1469,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a typical example which declares the notation for conjunction in the scope ``type_scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T172735Z" creationid="eldesh" creationdate="20220213T091818Z">
+        <seg>以下は ``type_scope`` スコープで論理積の表記法を宣言する典型的な例です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is an example.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T184307Z" creationid="eldesh" creationdate="20191225T184307Z">
         <seg>これが例です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is an example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T090408Z" creationid="eldesh" creationdate="20220223T090408Z">
+        <seg>これはその例です:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1433,6 +1577,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T213839Z" creationid="eldesh" creationdate="20191221T213839Z">
         <seg>しかし、この帰納は非-構造的再帰関数については動きません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, this is only made possible at the Objective Caml level.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091124Z" creationid="eldesh" creationdate="20220213T091124Z">
+        <seg>しかし、これはObjective Camlのレベルでのみ可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1703,10 +1855,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition to the global rules of interpretation of notations, some ways to change the interpretation of subterms are available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123151Z" creationid="eldesh" creationdate="20220213T123151Z">
+        <seg>表記法の解釈のグローバル規則に加え、サブタームの解釈を変更する方法がいくつか用意されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition, there are special notations for regular expressions.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200126T160746Z" creationid="eldesh" creationdate="20200126T160746Z">
         <seg>さらに、正規表現については特別な記法があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In case a notation has several interpretations, the actual interpretation is the one defined by (or in) the more recently declared (or opened) lonely notation (or interpretation scope) which defines this notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T094023Z" creationid="eldesh" creationdate="20220213T094023Z">
+        <seg>ある表記法がいくつかの解釈を持つ場合、実際の解釈は、 より新しく宣言(あるいはオープン)された、この表記法を定義する孤独な表記法(または解釈スコープ)により(あるいはその中で)定義されたものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1747,6 +1915,14 @@
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181007T122200Z" creationid="yamarten" creationdate="20181007T122200Z">
         <seg>対話モードでは、ユーザは順を追って証明を構築したり、利用できる定理や定義をシステムに問い合わせたりできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In notations, the subterms matching the identifiers of the notations are interpreted in the scope in which the identifiers occurred at the time of the declaration of the notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T172129Z" creationid="eldesh" creationdate="20220220T172129Z">
+        <seg>表記法では、その表記法の識別子にマッチするサブタームは、その表記法の宣言時点でその識別子が現れたスコープ内で解釈されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1803,6 +1979,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T174607Z" creationid="eldesh" creationdate="20200103T174607Z">
         <seg>場合によっては、構造の共有を指定できるようにするため、スーパークラスを明示的に与えたいかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such a situation, the term term, and all its subterms, are interpreted in the scope stack extended with the scope bound tokey.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123852Z" creationid="eldesh" creationdate="20220213T123707Z">
+        <seg>そのような場面では、タームとその全てのサブタームはキーを束縛したスコープにより拡張されたスコープスタック内で解釈されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1875,6 +2059,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211205T122116Z" creationid="eldesh" creationdate="20200329T200225Z">
         <seg>最初のサブケースでは、各ブランチ内の型はブランチ内で、マッチしたまさにその値に依存することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the following example arguments A and B are marked as maximally inserted implicit arguments and are put into the type_scope scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T165000Z" creationid="eldesh" creationdate="20220220T164917Z">
+        <seg>以下の例では、引数 A と B は暗黙の引数が最大限挿入されたものとしてマークされ、type_scope スコープへ渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2055,6 +2247,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Interpretation scopes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T085636Z" creationid="eldesh" creationdate="20220213T085636Z">
+        <seg>解釈スコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpretation scopes can include an interpretation for numerals and strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T091043Z" creationid="eldesh" creationdate="20220213T091043Z">
+        <seg>解釈スコープは数字と文字列の解釈を含むことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpretation scopes provide a weak, purely syntactical form of notation overloading: the same notation, for instance the infix symbol ``+``, can be used to denote distinct definitions of the additive operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T172541Z" creationid="eldesh" creationdate="20220213T090113Z">
+        <seg>解釈スコープは弱く、純粋に構文的な形式の記法オーバーローディング：同じ記法 を提供します。例えば中置演算子 ``+`` を加法演算子の特別な定義を示すために使うことが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpretation scopes used in the standard library of Coq</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T103220Z" creationid="eldesh" creationdate="20220223T103220Z">
+        <seg>Coqの標準ライブラリ中で使用される解釈スコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Introduction</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181007T034937Z" creationid="yamarten" creationdate="20181007T033312Z">
@@ -2067,6 +2291,22 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200115T210216Z" creationid="eldesh" creationdate="20200115T205446Z">
         <seg>それは数学的な定理を開発したりプログラムの仕様を証明することが出来ます.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also displays the delimiting key if any and the class to which the scope is bound, if any.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152204Z" creationid="eldesh" creationdate="20220226T152204Z">
+        <seg>さらにもしあれば区切りキーとスコープが束縛されたクラスも表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also displays the lonely notations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152029Z" creationid="eldesh" creationdate="20220226T152029Z">
+        <seg>さらに孤独な表記法も表示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2135,6 +2375,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It does not propagate to subterms but the subterms that, after interpretation of the notation, turn to be themselves arguments of a reference are interpreted accordingly to the argument scopes bound to this reference.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T170900Z" creationid="eldesh" creationdate="20220220T170613Z">
+        <seg>それはサブタームに伝播しませんが、その表記法の解釈の後、そのサブタームが参照の引数それ自身になった場合は、この参照に束縛された引数スコープに従って解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It does so by allowing hints that conclude in a product to apply to a goal with a matching product directly, avoiding an introduction.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T185524Z" creationid="eldesh" creationdate="20200106T200934Z">
@@ -2159,6 +2407,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is a primitive interpretation scope which is temporarily activated each time a subterm of an expression is expected to be a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101900Z" creationid="eldesh" creationdate="20220223T101900Z">
+        <seg>これはプリミティブな解釈スコープであり、それは式のサブタームが型になることが期待される度に一時的に有効化されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is actually a wrapper for several ways of defining a function *and other useful related objects*, namely: an induction principle that reflects the recursive structure of the function (see :tacn:`function induction`) and its fixpoint equality.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T142420Z" creationid="eldesh" creationdate="20191221T212941Z">
@@ -2175,6 +2431,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is also possible to remove a scope from the interpretation scope stack by using the command :n:`Close Scope @scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121813Z" creationid="eldesh" creationdate="20220213T121813Z">
+        <seg>コマンド :n:`Close Scope @scope` を使うことでその解釈スコープスタックからスコープを削除することも出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is also used in certain situations where an expression is statically known to be a type, including the conclusion and the type of hypotheses within an Ltac goal match (see :ref:`ltac-match-goal`), the statement of a theorem, the type of a definition, the type of a binder, the domain and codomain of implication, the codomain of products, and more generally any type argument of a declared or defined constant.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102839Z" creationid="eldesh" creationdate="20220223T102820Z">
+        <seg>それはまた特定の状況でも使用され、それはある式が型になることが静的に知られている状況で、Ltac ゴールマッチ (:ref:`ltac-match-goal` 参照) 中の結論と仮定の型、定理のステートメント、定義の型、束縛子の型、包含のドメインとコドメイン、積のコドメイン、より一般には定数の宣言または定義の型引数を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also useful to declare constants which should never be unfolded during proof-search, like fixpoints or anything which does not look like an abbreviation.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T183020Z" creationid="eldesh" creationdate="20200106T184603Z">
@@ -2187,6 +2459,78 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T211615Z" creationid="eldesh" creationdate="20200103T211615Z">
         <seg>それは単一化器を呼ぶときに常に使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by key ``positive`` and comes with an interpretation for numerals as closed terms of type :g:`positive`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T125020Z" creationid="eldesh" creationdate="20220226T125020Z">
+        <seg>それは ``positive`` キーで区切られ、:g:`positive` 型の閉じた項としての数値の解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``N`` and comes with an interpretation for numerals as closed terms of type :g:`N`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124450Z" creationid="eldesh" creationdate="20220226T124450Z">
+        <seg>それは ``N`` キーで区切られ、:g:`N` 型の閉じた項としての数値の解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``R`` and comes with an interpretation for numerals using the :g:`IZR` morphism from binary integer numbers to :g:`R`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130637Z" creationid="eldesh" creationdate="20220226T130637Z">
+        <seg>それは ``R`` キーで区切られ、2進整数から :g:`R` への :g:`IZR` 射を使用する数値としての解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``Z`` and comes with an interpretation for numerals as closed terms of type :g:`Z`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124650Z" creationid="eldesh" creationdate="20220226T124650Z">
+        <seg>それは ``Z`` キーで区切られ、:g:`Z` 型の閉じた項としての数値の解釈を伴います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``bool``, and bound to the type :g:`bool` (see above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130733Z" creationid="eldesh" creationdate="20220226T130733Z">
+        <seg>それは ``bool`` キーで区切られ、:g:`bool` 型に束縛されます (上を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``core``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130834Z" creationid="eldesh" creationdate="20220226T130834Z">
+        <seg>それは ``core`` キーで区切られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``list``, and bound to the type :g:`list` (see above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130813Z" creationid="eldesh" creationdate="20220226T130813Z">
+        <seg>それは ``list`` キーで区切られ、:g:`list` 型に束縛されます (上を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``type``, and bound to the coercion class ``Sortclass``, as described above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123553Z" creationid="eldesh" creationdate="20220226T123404Z">
+        <seg>それは上で述べたように ``type`` キーで区切られ、コアーションクラス ``Sortclass`` に束縛されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is delimited by the key ``type``, and bound to the coercion class ``Sortclass``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101946Z" creationid="eldesh" creationdate="20220223T101946Z">
+        <seg>それはキー ``type`` で区切られ、コアーションクラス ``Sortclass`` に束縛されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2236,6 +2580,30 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T131945Z" creationid="eldesh" creationdate="20191226T131935Z">
         <seg>変数名を与えられた型に束縛することが可能です (例: 算術を使う開発の中で、名前 `n` や `m` を自然数である ``nat`` 型に束縛すると便利かもしれません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is possible to locally extend the interpretation scope stack using the syntax :g:`(term)%key` (or simply :g:`term%key` for atomic terms), where key is a special identifier called *delimiting key* and bound to a given scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T124009Z" creationid="eldesh" creationdate="20220213T123522Z">
+        <seg>構文 :g:`(term)%key` (あるいは原始項については単純に :g:`term%key`) を使うことで解釈スコープスタックを局所的に拡張することが出来ます。ここで key は *区切りキー* と呼ばれる特別識別子であり、与えられたスコープに束縛されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is possible to set in advance that some arguments of a given constant have to be interpreted in a given scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T163710Z" creationid="eldesh" creationdate="20220220T163710Z">
+        <seg>与えられたスコープ内で解釈される必要のある与えられた引数のいくつかの引数をあらかじめ設定することが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is temporarily activated each time the argument of a global reference is recognized to be a ``Funclass`` istance, i.e., of type :g:`forall x:A, B` or :g:`A -&gt; B`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T103153Z" creationid="eldesh" creationdate="20220223T103153Z">
+        <seg>グローバル参照の引数が ``Funclass`` インスタンス、つまり型 :g:`forall x:A, B` または :g:`A -&gt; B`、になることが認識される度に一時的に有効化されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2424,6 +2792,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Local interpretation rules for notations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123101Z" creationid="eldesh" creationdate="20220213T123101Z">
+        <seg>表記法のローカル解釈規則</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Local opening of an interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T123230Z" creationid="eldesh" creationdate="20220213T123230Z">
+        <seg>解釈スコープのローカルオープン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Make the identifiers opaque for typeclass search.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T123228Z" creationid="eldesh" creationdate="20200106T123228Z">
@@ -2468,6 +2852,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T190931Z" creationid="eldesh" creationdate="20191221T185102Z">
         <seg>より一般的には、レコードは明示的に定義されたフィールド (別名 マニフェスト) を持ち得ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More generally, any coercion :n:`@class` (see the :ref:`implicitcoercions` chapter) can be bound to an interpretation scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T100903Z" creationid="eldesh" creationdate="20220223T100903Z">
+        <seg>より一般的には、任意のコアーション :n:`@class` (章 :ref:`implicitcoercions` を参照) は解釈スコープに束縛することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2560,6 +2952,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Notations in scopes whose interpretation is hidden by the same notation in a more recently opened scope are not displayed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135546Z" creationid="eldesh" creationdate="20220226T135546Z">
+        <seg>スコープ中の表記法の解釈が、より新しくオープンされたスコープ内の同じ表記法によって隠蔽された場合は表示されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note however that the commands ``Import`` and ``Export`` alone can be used inside modules (see Section :ref:`Import &lt;import_qualid&gt;`).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T220334Z" creationid="eldesh" creationdate="20200220T220215Z">
@@ -2604,6 +3004,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20211218T164427Z" creationid="eldesh" creationdate="20211218T154439Z">
         <seg>``M`` は ``M2`` コンポーネントの正しいボディであり、 なぜならその ``T`` コンポーネントは ``nat`` に等しく、``M1.T`` に特定されているためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that this command does not only cancel the last :n:`Open Scope @scope` but all its invocations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122212Z" creationid="eldesh" creationdate="20220213T122212Z">
+        <seg>このコマンドは最新の :n:`Open Scope @scope` だけでなく、全ての呼び出しをキャンセルすることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2878,6 +3286,14 @@
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T220449Z" creationid="eldesh" creationdate="20191221T220449Z">
         <seg>報告してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Positive numerals in this scope are mapped to their canonical representent built from :g:`O` and :g:`S`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123827Z" creationid="eldesh" creationdate="20220226T123827Z">
+        <seg>このスコープ中の正数は :g:`O` と :g:`S` から構築される正準な表現へマップされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3171,6 +3587,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See :ref:`above &lt;NotationSyntax&gt;` for the syntax of notations including the possibility to declare them in a given scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T172651Z" creationid="eldesh" creationdate="20220213T091601Z">
+        <seg>与えられたスコープ中でそれらを宣言する可能性のある表記法の構文については :ref:`上 &lt;NotationSyntax&gt;` を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See Section :ref:`Mult-match` and Chapter :ref:`extendedpatternmatching` for the description of the general form.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200321T151859Z" creationid="eldesh" creationdate="20200321T151859Z">
@@ -3183,6 +3607,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T214113Z" creationid="eldesh" creationdate="20191221T214113Z">
         <seg>どのように帰納法の原理を使って簡単にその関数について論じるかについては関数的帰納法 (:tacn:`function induction`) と ``Functional Scheme`` (:ref:`functional-scheme`) のドキュメントを見てください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the next section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101500Z" creationid="eldesh" creationdate="20220223T101500Z">
+        <seg>次の節を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3255,6 +3687,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200201T092720Z" creationid="eldesh" creationdate="20200201T092720Z">
         <seg>スペース、改行、水平タブは空白とみなされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Special characters and escaping follow Coq conventions on strings (see :ref:`lexical-conventions`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131025Z" creationid="eldesh" creationdate="20220226T131025Z">
+        <seg>特殊文字やエスケープは文字列に関する Coq の慣習に従います (:ref:`lexical-conventions` 参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3550,10 +3990,34 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ``Arguments`` command accepts scopes decoration to all grouping parentheses.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T164743Z" creationid="eldesh" creationdate="20220220T164743Z">
+        <seg>``Arguments`` コマンドは全てのグルーピングする括弧への修飾を受け付けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The ``Function`` construction also enjoys the ``with`` extension to define mutually recursive definitions.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T142946Z" creationid="eldesh" creationdate="20191221T213800Z">
         <seg>``Function`` による構成はさらに ``with`` 拡張により相互再帰定義を定義することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ``function_scope`` interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102916Z" creationid="eldesh" creationdate="20220223T102916Z">
+        <seg> 解釈スコープ ``function_scope``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ``type_scope`` interpretation scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102933Z" creationid="eldesh" creationdate="20220223T101621Z">
+        <seg>解釈スコープ ``type_scope``</seg>
       </tuv>
     </tu>
     <tu>
@@ -3648,6 +4112,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The command :cmd:`About` can be used to show the scopes bound to the arguments of a function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T171951Z" creationid="eldesh" creationdate="20220220T171951Z">
+        <seg>:cmd:`About` コマンドは関数の引数へ束縛されたスコープを表示するために使うことが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The command did not find the file foo.vo.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T213911Z" creationid="eldesh" creationdate="20200220T213911Z">
@@ -3660,6 +4132,30 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T132008Z" creationid="eldesh" creationdate="20191226T132008Z">
         <seg>そのためのコマンドは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The command is :n:`Arguments @qualid {+ @name%@scope}` where the list is a prefix of the arguments of ``qualid`` eventually annotated with their ``scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T163932Z" creationid="eldesh" creationdate="20220220T163932Z">
+        <seg>そのコマンドは :n:`Arguments @qualid {+ @name%@scope}` であり、ここでのリストは最終的にそれらの ``scope`` で注釈される引数 ``qualid`` の接頭辞です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The command to add a scope to the interpretation scope stack is :n:`Open Scope @scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121716Z" creationid="eldesh" creationdate="20220213T121716Z">
+        <seg>解釈スコープスタックにスコープを追加するコマンドは :n:`Open Scope @scope` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The command to do it is :n:`Bind Scope @scope with @class`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T100926Z" creationid="eldesh" creationdate="20220223T100926Z">
+        <seg>それをするためのコマンドは :n:`Bind Scope @scope with @class` です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3748,6 +4244,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191226T151338Z" creationid="eldesh" creationdate="20191226T132204Z">
         <seg>このコマンドの効果は `ident` で始まる (`ident` 自身または `ident` に一つ以上のシングルクォート、アンダースコア、数字が続く) 束縛変数の型を自動的に `type` (その束縛変数が明示的な型とともに既に定義されている場合でない限り、後者の型と見なされる) に設定するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The effect of the scope is limited to the argument itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T170237Z" creationid="eldesh" creationdate="20220220T170231Z">
+        <seg>そのスコープの効果はその引数自身に限定されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3860,6 +4364,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145822Z" creationid="yamarten" creationdate="20181104T145822Z">
         <seg>第5部では、型強制・正準構造・型クラス・プログラム抽出・特殊なソルバとタクティックといった、いくつかの高度な機能について説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The file :file:`String.v` shows an example that contains quotes, a newline and a beep (i.e. the ASCII character of code 7).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131414Z" creationid="eldesh" creationdate="20220226T131414Z">
+        <seg>:file:`String.v` ファイルでは引用符、改行、ビープ (つまり ASCII 文字の符号7) を含む例が示されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4035,6 +4547,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191222T133242Z" creationid="eldesh" creationdate="20191222T133242Z">
         <seg>帰納的 `R_ident` は (暗黙に) `ident` のグラフに対応します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The initial state of Coq declares three interpretation scopes and no lonely notations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121500Z" creationid="eldesh" creationdate="20220213T121500Z">
+        <seg>Coqの初期状態では3つの解釈スコープを宣言し、孤独な表記法はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4351,6 +4871,38 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The scope ``function_scope`` also has a special status.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T102954Z" creationid="eldesh" creationdate="20220223T102954Z">
+        <seg>スコープ ``function_scope`` もまた特別な状態を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The scope ``type_scope`` has a special status.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101642Z" creationid="eldesh" creationdate="20220223T101642Z">
+        <seg>スコープ ``type_scope`` は特別な状態を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The scope is delimited by the key ``nat``, and bound to the type :g:`nat` (see above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123940Z" creationid="eldesh" creationdate="20220226T123940Z">
+        <seg>スコープは ``nat`` キーで区切られ、:g:`nat` 型へ束縛されます(上を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The scopes ``type_scope`` and ``function_scope`` also have a local effect on interpretation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T101016Z" creationid="eldesh" creationdate="20220223T101016Z">
+        <seg>スコープ ``type_scope`` と ``function_scope`` はさらに解釈について局所的な効果を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second part describes the proof engine.</seg>
       </tuv>
       <tuv lang="JA" changeid="yamarten" changedate="20181104T145355Z" creationid="yamarten" creationdate="20181104T145355Z">
@@ -4463,6 +5015,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The top of the stack is displayed last.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135445Z" creationid="eldesh" creationdate="20220226T135445Z">
+        <seg>スタックのトップは最後に表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The transparency information of databases is used consistently for all hints declared in them.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T211537Z" creationid="eldesh" creationdate="20200103T211537Z">
@@ -4532,6 +5092,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T135902Z" creationid="eldesh" creationdate="20200103T135902Z">
         <seg>変数 |p_i| ``:`` |t_i| はクラスの *パラメータ* と呼ばれ、|f_i| ``:`` |t_i| は *メソッド* と呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Their respective denotations are the ASCII code of :g:`c`, the decimal ASCII code ``nnn``, or the ascii code of the character ``"`` (i.e. the ASCII code 34), all of them being represented in the type :g:`ascii`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135044Z" creationid="eldesh" creationdate="20220226T135044Z">
+        <seg>それぞれの表示は :g:`c` の ASCII コード、```nnn``` は ASCII コードの10進表記、文字 ``"`` の ASCII コード (つまり ASCII コード 34) であり、それら全ては :g:`ascii` 型で表現されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4706,6 +5274,30 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These scopes, in opening order, are ``core_scope``, ``type_scope`` and ``nat_scope``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T121544Z" creationid="eldesh" creationdate="20220213T121544Z">
+        <seg>これらのスコープは開いている順に、``core_scope``、``type_scope``、``nat_scope`` です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These variants are not exported to the modules that import the module where they occur, even if outside a section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092427Z" creationid="eldesh" creationdate="20220213T122651Z">
+        <seg>これらの派生はそれらが現れたモジュールをインポートするモジュールへエクスポートされません。セクションの外側でも同様です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These variants survive sections.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092455Z" creationid="eldesh" creationdate="20220213T122726Z">
+        <seg>これらの派生はセクションを超えて生き延びます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They also support implicit quantification on :ref:`superclasses`.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T152232Z" creationid="eldesh" creationdate="20200103T152232Z">
@@ -4742,6 +5334,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T151140Z" creationid="eldesh" creationdate="20200103T151140Z">
         <seg>それらは型クラスの引数の状態を自動的に最大限暗黙に設定し、クラスメソッドのように簡単に使える派生関数を作ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They behave as if Global were absent when not inside a section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T122959Z" creationid="eldesh" creationdate="20220213T122959Z">
+        <seg>セクション内でない時は Global が欠けているように振る舞います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4790,6 +5390,22 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200307T184333Z" creationid="eldesh" creationdate="20200106T195103Z">
         <seg>これはインスタンスを持ち出すことに関して更なる制御性をも提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This behaves like :n:`Arguments @qualid {+ @name%@scope}` but does not survive modules and files.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T171734Z" creationid="eldesh" creationdate="20220220T171734Z">
+        <seg>これは :n:`Arguments @qualid {+ @name%@scope}` のように振る舞いますが、モジュールやファイルを越えて生存しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This behaves like :n:`Arguments qualid {+ @name%@scope}` but survives when a section is closed instead of stopping working at section closing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T171543Z" creationid="eldesh" creationdate="20220220T171543Z">
+        <seg>これは :n:`Arguments qualid {+ @name%@scope}` のように振る舞いますが、セクションが閉じて動作が停止する代わりに、セクションが閉じたときにも生存します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4935,6 +5551,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T212519Z" creationid="eldesh" creationdate="20191221T212519Z">
         <seg>このコマンドは ``Fixpoint`` の一般化と見なすことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command can be used to clear argument scopes of :token:`qualid`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T090520Z" creationid="eldesh" creationdate="20220220T170936Z">
+        <seg>このコマンドは :token:`qualid` の引数スコープをクリアするのに使うことが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5099,6 +5723,38 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This displays all the notations defined in the interpretation scope :token:`scope`.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152108Z" creationid="eldesh" creationdate="20220226T152108Z">
+        <seg>これは解釈スコープ :token:`scope` 内で定義された表記法を全て表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This displays all the notations, delimiting keys and corresponding classes of all the existing interpretation scopes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T152017Z" creationid="eldesh" creationdate="20220226T152017Z">
+        <seg>これは既存の全ての解釈スコープの、全ての表記法、区切りキー、出現クラスを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This displays the current stack of notations in scopes and lonely notations assuming that :token:`scope` is pushed on top of the stack.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T151734Z" creationid="eldesh" creationdate="20220226T135739Z">
+        <seg>これはスコープ中の表記法と弧度な表記法について、その :token:`scope` がスタックのトップにプッシュされたと仮定して現在のスタックを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This displays the current stack of notations in scopes and lonely notations that is used to interpret a notation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T135428Z" creationid="eldesh" creationdate="20220226T135428Z">
+        <seg>これはスコープ中の表記法と、表記法を解釈するために使われる孤独な表記法の現在のスタックを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This displays the list of global names that are components of some canonical structure.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191225T185111Z" creationid="eldesh" creationdate="20191225T185111Z">
@@ -5207,6 +5863,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200220T221930Z" creationid="eldesh" creationdate="20200220T213834Z">
         <seg>これは :n:`@qualid` ライブラリがその絶対ルートを明示することによって与えられたパッケージに由来することを保証するために有用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is useful to know how a subterm locally occurring in the scope :token:`scope` is interpreted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T151926Z" creationid="eldesh" creationdate="20220226T151926Z">
+        <seg>これは :token:`scope` スコープ内でローカルに出現するサブタームがどのように解釈されるかを知るのに便利です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5357,6 +6021,118 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This scope includes infix * for product types and infix + for sum types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123530Z" creationid="eldesh" creationdate="20220226T123234Z">
+        <seg>このスコープには積型のための中置記号 * と和型のための中置記号 + が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes interpretation for all strings of the form ``"c"`` where :g:`c` is an ASCII character, or of the form ``"nnn"`` where nnn is a three-digits number (possibly with leading 0's), or of the form ``""""``.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T131705Z" creationid="eldesh" creationdate="20220226T131705Z">
+        <seg>このスコープは、``"c"`` 形式ここで :g:`c` は ASCII 文字、または ``"nnn"`` 形式ここで nnn は3桁の数字 (0続きでもよい)、または ``""""`` 形式の全ての文字列の解釈を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes notation for strings as elements of the type string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130856Z" creationid="eldesh" creationdate="20220226T130856Z">
+        <seg>このスコープは string 型の要素としての文字列のための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes notations for the boolean operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130703Z" creationid="eldesh" creationdate="20220226T130659Z">
+        <seg>このスコープはブーリアン演算のための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes notations for the list operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130745Z" creationid="eldesh" creationdate="20220226T130745Z">
+        <seg>このスコープはリスト演算のための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the notation for pairs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130824Z" creationid="eldesh" creationdate="20220226T130824Z">
+        <seg>このスコープはペアのための表記法を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on the type :g:`Qc` of rational numbers defined as the type of irreducible fractions of an integer and a strictly positive integer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130347Z" creationid="eldesh" creationdate="20220226T130347Z">
+        <seg>このスコープには正数と真の正数による既約分数の型として定義された有利数である :g:`Qc` 型上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`N` (binary natural numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124551Z" creationid="eldesh" creationdate="20220226T124034Z">
+        <seg>このスコープには :g:`N` 型 (2進自然数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`Q` (rational numbers defined as fractions of an integer and a strictly positive integer modulo the equality of the numerator- denominator cross-product).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T125430Z" creationid="eldesh" creationdate="20220226T125430Z">
+        <seg>このスコープには :g:`Q` 型 (整数と真の正数の分子-分母の外積の等値性によるモジュロの分数として定義された有理数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`R` (axiomatic real numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T130425Z" creationid="eldesh" creationdate="20220226T130425Z">
+        <seg>このスコープには :g:`R` 型 (公理的実数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`Z` (binary integer numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124611Z" creationid="eldesh" creationdate="20220226T124546Z">
+        <seg>このスコープには :g:`Z` 型 (2進整数) 上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type :g:`positive` (binary strictly positive numbers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T124951Z" creationid="eldesh" creationdate="20220226T124951Z">
+        <seg>このスコープには :g:`positive` 型 (2進の真の正数) 上の標準的な算術演算と関係を含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope includes the standard arithmetical operators and relations on type nat.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123634Z" creationid="eldesh" creationdate="20220226T123634Z">
+        <seg>このスコープには nat 型上の標準的な算術演算と関係が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This scope is delimited by the key ``function``, and bound to the coercion class ``Funclass``, as described above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T123518Z" creationid="eldesh" creationdate="20220226T123518Z">
+        <seg>このスコープは上で述べたように ``function`` キーで区切られ、コアーションクラス ``Funclass`` に束縛されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes the commands used to load compiled files (see Chapter :ref:`thecoqcommands` for documentation on how to compile a file).</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200223T172755Z" creationid="eldesh" creationdate="20200215T192221Z">
@@ -5478,6 +6254,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To bind a delimiting key to a scope, use the command :n:`Delimit Scope @scope with @ident`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T124054Z" creationid="eldesh" creationdate="20220213T124054Z">
+        <seg>区切りキーをスコープに束縛するには、コマンド :n:`Delimit Scope @scope with @ident` を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To build an object of type :n:`@ident`, one should provide the constructor :n:`@ident₀` with the appropriate number of terms filling the fields of the record.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191221T191844Z" creationid="eldesh" creationdate="20191221T191844Z">
@@ -5562,6 +6346,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20191227T101906Z" creationid="eldesh" creationdate="20191226T192844Z">
         <seg>高レベル表示機能を再度有効化するには、``Unset Printing All`` コマンドを使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To remove a delimiting key of a scope, use the command :n:`Undelimit Scope @scope`</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220213T124125Z" creationid="eldesh" creationdate="20220213T124125Z">
+        <seg>区切りキーをスコープから削除するには、コマンド :n:`Undelimit Scope @scope` を使います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5658,6 +6450,14 @@ Plural-Forms: nplurals=1; plural=0;</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200310T151815Z" creationid="eldesh" creationdate="20200310T151815Z">
         <seg>型</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Typically if a given notation is defined in some scope ``scope`` but has also an interpretation not assigned to a scope, then, if ``scope`` is open before the lonely interpretation is declared, then the lonely interpretation is used (and this is the case even if the interpretation of the notation in scope is given after the lonely interpretation: otherwise said, only the order of lonely interpretations and opening of scopes matters, and not the declaration of interpretations within a scope).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T091943Z" creationid="eldesh" creationdate="20220213T120620Z">
+        <seg>通常与えられた表記法がいくつかのスコープ ``scope`` 内で定義されているが、スコープに割り当てられていない解釈を持つ場合、孤独な解釈が宣言されるより前に ``scope`` が開かれると、その孤独な解釈が使われます (これは、スコープ内でその表記法の解釈が孤独な解釈より後に与えられたとしても同様です: 別の言い方をすると、孤独な解釈と、スコープ内の解釈の宣言ではなくスコープを開く順序のみが重要です)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5809,6 +6609,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We give an overview of the scopes used in the standard library of Coq.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220226T122936Z" creationid="eldesh" creationdate="20220226T122936Z">
+        <seg>Coqの標準ライブラリで使用されているスコープの概要を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We invite the interested reader to refer to this paper for all the details that are omitted here for brevity.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200102T125611Z" creationid="eldesh" creationdate="20191227T105020Z">
@@ -5897,6 +6705,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a scope ``scope`` is bound to a type ``type``, any new function defined later on gets its arguments of type ``type`` interpreted by default in scope scope (this default behavior can however be overwritten by explicitly using the command :cmd:`Arguments`).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T095229Z" creationid="eldesh" creationdate="20220223T095229Z">
+        <seg>スコープ ``scope`` が型 ``type`` に束縛されているとき、型 ``type`` の引数を受け取る後から定義される新しい関数はデフォルトでそのスコープ scope 中で解釈されます (しかしこのデフォルトの振る舞いはコマンド :cmd:`Arguments` を明示的に使用することで上書きすることが出来ます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When a solution to the typeclass goal of this class is found, we never backtrack on it, assuming that it is canonical.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T205007Z" creationid="eldesh" creationdate="20200106T205007Z">
@@ -5918,6 +6734,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T204558Z" creationid="eldesh" creationdate="20200106T204530Z">
         <seg>型クラス解決が起きた時、それが単一の解を持たないならば失敗することを保証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When an interpretation scope is naturally associated to a type (e.g.  the scope of operations on the natural numbers), it may be convenient to bind it to this type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T093841Z" creationid="eldesh" creationdate="20220223T093841Z">
+        <seg>ある解釈スコープが自然にある型を伴う場合 (例: 自然数上の操作のスコープ)、この型に束縛すると便利かもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5943,6 +6767,22 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200105T191119Z" creationid="eldesh" creationdate="20200103T211706Z">
         <seg>局所的な仮定を考えるとき、我々は与えられた最初のヒントデータベースの透過性状態を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When defined outside of a section, they are exported to the modules that import the module where they occur.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092408Z" creationid="eldesh" creationdate="20220213T122503Z">
+        <seg>セクションの外側で定義されたときは、それらが現れたモジュールをインポートしたモジュールへエクスポートされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When interpreting a term, if some of the arguments of qualid are built from a notation, then this notation is interpreted in the scope stack extended by the scope bound (if any) to this argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T165655Z" creationid="eldesh" creationdate="20220220T165538Z">
+        <seg>ある項を解釈するとき、修飾された識別子の引数が表記法から構築された場合、この表記法は(もしあれば)この引数に束縛されたスコープによって拡張されたスコープスタック内で解釈されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6011,10 +6851,34 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Whether the argument of a function has some type ``type`` is determined statically.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T095424Z" creationid="eldesh" creationdate="20220223T095424Z">
+        <seg>ある関数の引数が型 ``type`` を持つかどうかは静的に決定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>With this option on, when a unification fails, typeclass resolution is tried before launching unification once again.</seg>
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T202939Z" creationid="eldesh" creationdate="20200106T202939Z">
         <seg>このオプションが有効なことにより、単一化が失敗したとき、再度単一化を起動する前に型クラス解決が試行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without the ``Global`` modifier, the effect of the command stops when the section it belongs to ends.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T171656Z" creationid="eldesh" creationdate="20220220T171656Z">
+        <seg>``Global`` 修飾子が無い場合は、そのコマンドの効果はそれが所属しているセクションが終了した時に停止します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without the ``Local`` modifier, the effect of the command is visible from within other modules or files.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T171906Z" creationid="eldesh" creationdate="20220220T171906Z">
+        <seg>``Local`` 修飾子が無い場合は、そのコマンドの効果は他のモジュールやファイル内から可視となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6039,6 +6903,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200103T135758Z" creationid="eldesh" creationdate="20200103T135758Z">
         <seg>``Instance ident : Id`` |p_1| ``⋯`` |p_n| ``:= {`` |f_1| ``:=`` |t_1| ``; ⋮`` |f_m| ``:=`` |t_m| ``}.``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``Open Scope`` and ``Close Scope`` do not survive the end of sections where they occur.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220223T092321Z" creationid="eldesh" creationdate="20220213T122347Z">
+        <seg>``Open Scope`` と ``Close Scope`` それらの現れるセクションの終わりを超えて存続することはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6079,6 +6951,14 @@ Fail Check forall (le : type) (n m : obj le), n &lt;= m -&gt; m &lt;= n -&gt; n 
       </tuv>
       <tuv lang="JA" changeid="eldesh" changedate="20200106T211016Z" creationid="eldesh" creationdate="20200106T211016Z">
         <seg>``dfs, bfs`` これは検索戦略を深さ優先探索 (デフォルト) または幅優先探索に設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``scope`` can be either a scope name or its delimiting key.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="eldesh" changedate="20220220T164133Z" creationid="eldesh" creationdate="20220220T164133Z">
+        <seg>``scope`` はスコープ名あるいはその区切りキーのどちらかになることが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
